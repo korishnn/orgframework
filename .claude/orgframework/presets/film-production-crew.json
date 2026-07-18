@@ -1,0 +1,145 @@
+{
+  "preset": "film-production-crew",
+  "version": "1.0",
+  "name": "Film / TV Production Crew",
+  "description": "Project-based organizational structure for film and television production. Built around a clear creative and business command chain operating for the duration of production, then disbanding. Distinguishes between above-the-line (directors, producers, principal talent) and below-the-line (crew, technicians, crafts) personnel.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["film", "television", "entertainment", "media"], "stages": ["pre-production", "production", "post-production"] },
+  "headcount_range": "30-500",
+  "org_structure": {
+    "overview": "Film and TV productions are temporary, project-based organizations assembled for a specific production and dissolved upon completion. The structure follows a clear hierarchical command chain with two parallel leadership tracks: creative (Director) and business (Producer). Department heads manage specialized crews in their craft areas. Above-the-line roles include the director, producers, and principal cast; below-the-line encompasses all technical and craft crew. Reporting lines are direct during production but the entire organization is transient, with crew moving between projects.",
+    "departments": [
+      {
+        "name": "Executive / Above-the-Line",
+        "description": "Senior creative and business leadership responsible for the overall production vision, financing, and delivery. Includes the Director (creative authority), Producers (business and logistics authority), Writer(s), and Principal Cast.",
+        "headcount": "3-15",
+        "reports_to": "Studio / Network / Investors",
+        "roles": [
+          { "title": "Director", "count": 1, "level": "Executive", "reports_to": "Producers / Studio", "description": "Creative visionary responsible for storytelling, performances, visual style, and overall artistic direction of the production." },
+          { "title": "Producer", "count": "1-3", "level": "Executive", "reports_to": "Studio / Financiers", "description": "Oversees all business aspects: financing, scheduling, hiring key personnel, and ensuring the production delivers on time and on budget." },
+          { "title": "Executive Producer", "count": "1-4", "level": "Executive", "reports_to": "Studio", "description": "Senior financial or creative stakeholder; may secure funding, attach talent, or provide high-level oversight without day-to-day involvement." },
+          { "title": "Line Producer", "count": 1, "level": "Senior", "reports_to": "Producer", "description": "Manages the day-to-day physical production budget, logistics, and crew hiring; the bridge between creative ambitions and financial reality." },
+          { "title": "Screenwriter", "count": "1-3", "level": "Variable", "reports_to": "Director / Producers", "description": "Writes or adapts the screenplay; may be attached during pre-production and rewrites during production." },
+          { "title": "Unit Production Manager", "count": 1, "level": "Senior", "reports_to": "Line Producer", "description": "Oversees scheduling, location logistics, crew travel, and daily production operations." }
+        ]
+      },
+      {
+        "name": "Camera & Electrical",
+        "description": "Responsible for all visual capture, lighting, and on-set electrical work. Led by the Director of Photography (DP) who translates the director's vision into camera and lighting choices.",
+        "headcount": "5-30",
+        "reports_to": "Director / Producer",
+        "roles": [
+          { "title": "Director of Photography (DP/Cinematographer)", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Designs the visual look of the film: lighting, camera placement, lens choice, color palette. Supervises the entire camera and lighting crew." },
+          { "title": "Camera Operator", "count": "1-3", "level": "Senior", "reports_to": "Director of Photography", "description": "Physically operates the camera during takes, following blocking and framing instructions from the DP and director." },
+          { "title": "1st Assistant Camera (1st AC)", "count": 1, "level": "Skilled", "reports_to": "Director of Photography", "description": "Responsible for camera assembly, lens changes, pulling focus during takes, and managing camera prep and wrap." },
+          { "title": "2nd Assistant Camera (2nd AC)", "count": "1-2", "level": "Entry", "reports_to": "1st Assistant Camera", "description": "Loads magazines, operates clapperboard/slate, manages camera reports, and assists with media management." },
+          { "title": "Gaffer", "count": 1, "level": "Department Head", "reports_to": "Director of Photography", "description": "Head of electrical department; designs and executes lighting plans, manages generators, ballasts, and lighting crew." },
+          { "title": "Best Boy Electric", "count": 1, "level": "Senior", "reports_to": "Gaffer", "description": "Second-in-command of electrical; manages equipment rental, crew scheduling, and acts as gaffer's lead assistant." },
+          { "title": "Lighting Technician / Electrician", "count": "3-12", "level": "Skilled", "reports_to": "Best Boy Electric", "description": "Sets up, operates, and strikes lighting equipment; runs cable and maintains electrical safety on set." },
+          { "title": "Key Grip", "count": 1, "level": "Department Head", "reports_to": "Director of Photography", "description": "Leads grip department: manages non-electrical lighting support (diffusers, flags, stands), camera rigging (dolly, crane, stabilizers), and set shading." },
+          { "title": "Best Boy Grip", "count": 1, "level": "Senior", "reports_to": "Key Grip", "description": "Assistant to Key Grip; manages grip equipment inventory, crew assignments, and safety inspections." },
+          { "title": "Grip", "count": "3-10", "level": "Skilled", "reports_to": "Best Boy Grip", "description": "Builds and operates camera support equipment: dollies, cranes, tracks, tripods, and lighting modification rigs." }
+        ]
+      },
+      {
+        "name": "Art Department",
+        "description": "Designs and builds the physical environment of the film including sets, props, and visual aesthetic. Translates the director's vision into tangible spaces and objects.",
+        "headcount": "5-40",
+        "reports_to": "Director / Producer",
+        "roles": [
+          { "title": "Production Designer", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Creates the overall visual environment: set design, color palette, texture, and period accuracy. Supervises art, set decoration, and construction teams." },
+          { "title": "Art Director", "count": "1-2", "level": "Senior", "reports_to": "Production Designer", "description": "Manages the art department budget, schedules, and construction; translates designer concepts into buildable plans and supervises drafting and model-making." },
+          { "title": "Set Decorator", "count": 1, "level": "Senior", "reports_to": "Production Designer", "description": "Selects and arranges all furnishings, drapery, wallpaper, and decorative items that dress the set according to the period and story requirements." },
+          { "title": "Props Master", "count": 1, "level": "Senior", "reports_to": "Art Director", "description": "Acquires, builds, tracks, and maintains all hand props—objects actors handle during the production." },
+          { "title": "Set Dresser", "count": "2-10", "level": "Skilled", "reports_to": "Set Decorator", "description": "Places and arranges set decoration elements on set; handles dressing and striking sets between scenes." },
+          { "title": "Leadman", "count": 1, "level": "Senior", "reports_to": "Set Decorator", "description": "Supervises the set dressing crew on the floor; coordinates with construction and other departments on set dressing schedules." },
+          { "title": "Storyboard Artist", "count": "1-2", "level": "Skilled", "reports_to": "Director", "description": "Creates visual storyboards of key scenes illustrating camera angles, blocking, and composition for pre-visualization." },
+          { "title": "Construction Coordinator", "count": 1, "level": "Senior", "reports_to": "Production Designer", "description": "Oversees set construction: manages carpentry crews, materials purchasing, and ensures sets are built to spec and on schedule." },
+          { "title": "Greensperson", "count": "1-2", "level": "Skilled", "reports_to": "Set Decorator", "description": "Responsible for all live plant and floral elements on set; sources, installs, and maintains greenery." }
+        ]
+      },
+      {
+        "name": "Sound Department",
+        "description": "Captures all location audio including dialogue, ambient sound, and effects. Ensures clean, usable audio for post-production.",
+        "headcount": "2-8",
+        "reports_to": "Producer / Director",
+        "roles": [
+          { "title": "Production Sound Mixer", "count": 1, "level": "Department Head", "reports_to": "Director / Producer", "description": "Records all on-set audio; responsible for microphone selection, mixing multiple audio sources, and delivering clean production sound." },
+          { "title": "Boom Operator", "count": "1-2", "level": "Skilled", "reports_to": "Production Sound Mixer", "description": "Positions and operates the boom microphone to capture dialogue; monitors for unwanted noise and maintains microphone placement during takes." },
+          { "title": "Sound Utility", "count": 1, "level": "Entry", "reports_to": "Production Sound Mixer", "description": "Assists with wireless microphone setup (lavaliers), cable management, labeling, and sound department logistics." }
+        ]
+      },
+      {
+        "name": "Hair, Makeup & Wardrobe",
+        "description": "Responsible for actor appearance continuity including hairstyling, makeup application, special effects makeup, and costume management throughout the production.",
+        "headcount": "3-20",
+        "reports_to": "Director / Producer",
+        "roles": [
+          { "title": "Makeup Department Head", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Designs the makeup looks for all characters; manages makeup crew, product budgets, and ensures continuity of makeup across scenes." },
+          { "title": "Key Makeup Artist", "count": "1-3", "level": "Senior", "reports_to": "Makeup Department Head", "description": "Applies makeup to principal cast; maintains character looks and ensures screen-ready appearance for every take." },
+          { "title": "Special Effects Makeup Artist", "count": "1-3", "level": "Senior", "reports_to": "Makeup Department Head", "description": "Creates prosthetic appliances, wounds, aging effects, and creature makeup requiring advanced sculpting and application techniques." },
+          { "title": "Hair Department Head", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Designs and manages all hairstyling for the production; oversees wig creation, period styling, and hair continuity." },
+          { "title": "Key Hairstylist", "count": "1-3", "level": "Senior", "reports_to": "Hair Department Head", "description": "Styles and maintains principal cast hair; manages daily hair prep, wig application, and quick changes." },
+          { "title": "Costume Designer", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Researches, designs, and oversees creation of all costumes; establishes character wardrobe reflecting story, period, and personality." },
+          { "title": "Wardrobe Supervisor", "count": 1, "level": "Senior", "reports_to": "Costume Designer", "description": "Manages costume inventory, fittings, alterations, laundry, and continuity tracking for all wardrobe items across the shoot." },
+          { "title": "Set Costumer", "count": "2-6", "level": "Skilled", "reports_to": "Wardrobe Supervisor", "description": "Dresses actors on set, manages quick changes, maintains costume condition, and assists with continuity photos." }
+        ]
+      },
+      {
+        "name": "Stunts & Stunts Safety",
+        "description": "Plans, choreographs, and executes all action sequences and stunts safely. Manages risk assessment, rigging, and performer safety.",
+        "headcount": "2-20",
+        "reports_to": "Director / Producer",
+        "roles": [
+          { "title": "Stunt Coordinator", "count": 1, "level": "Department Head", "reports_to": "Director", "description": "Designs and supervises all stunt sequences; hires stunt performers, conducts safety briefings, and approves rigging and protection measures." },
+          { "title": "Stunt Performer / Double", "count": "2-15", "level": "Skilled", "reports_to": "Stunt Coordinator", "description": "Performs stunts including fights, falls, driving, fire, and high-risk action; may double for principal cast in dangerous scenes." },
+          { "title": "Stunt Rigging Technician", "count": "1-3", "level": "Skilled", "reports_to": "Stunt Coordinator", "description": "Installs and tests stunt rigging equipment: wires, harnesses, air rams, breakaway props, and safety systems." }
+        ]
+      },
+      {
+        "name": "Production Office & Logistics",
+        "description": "Handles the administrative, logistical, and operational backbone of the production including scheduling, locations, talent, and craft services.",
+        "headcount": "5-20",
+        "reports_to": "Line Producer",
+        "roles": [
+          { "title": "Production Coordinator", "count": "1-2", "level": "Senior", "reports_to": "Unit Production Manager", "description": "Central communications hub; manages call sheets, production reports, crew travel, and office coordination." },
+          { "title": "Assistant Director (1st AD)", "count": 1, "level": "Senior", "reports_to": "Director / UPM", "description": "Runs the set: creates the shooting schedule, manages crew calls, enforces safety, and ensures the day's work is completed on time." },
+          { "title": "2nd Assistant Director (2nd AD)", "count": 1, "level": "Skilled", "reports_to": "1st Assistant Director", "description": "Creates call sheets and daily production reports; wrangles background actors and manages set timing." },
+          { "title": "3rd Assistant Director (3rd AD)", "count": "1-2", "level": "Entry", "reports_to": "2nd Assistant Director", "description": "Assists with background actor management, set locking, and runner duties as directed by senior AD staff." },
+          { "title": "Location Manager", "count": 1, "level": "Senior", "reports_to": "Unit Production Manager", "description": "Secures filming locations, negotiates permits and fees, manages location logistics, and serves as liaison with local authorities and communities." },
+          { "title": "Location Assistant", "count": "1-3", "level": "Entry", "reports_to": "Location Manager", "description": "Supports location scouting, manages parking and base camp, directs crew and vehicles to locations, and handles crowd control." },
+          { "title": "Craft Service / Caterer", "count": "2-6", "level": "Skilled", "reports_to": "Unit Production Manager", "description": "Provides meals, snacks, and beverages for cast and crew throughout production days; manages dietary restrictions and set hospitality." },
+          { "title": "Casting Director", "count": "1-2", "level": "Senior", "reports_to": "Director / Producer", "description": "Auditions and selects actors for all roles; manages casting sessions, negotiates talent deals, and coordinates with agents." },
+          { "title": "Script Supervisor", "count": 1, "level": "Senior", "reports_to": "Director", "description": "Maintains script continuity across takes; tracks dialogue changes, screen direction, and ensures editorial consistency." },
+          { "title": "Transportation Coordinator", "count": 1, "level": "Senior", "reports_to": "Unit Production Manager", "description": "Manages all production vehicles including picture cars, crew vans, honeywagons, and equipment trucks; oversees drivers and fueling." }
+        ]
+      },
+      {
+        "name": "Post-Production",
+        "description": "Handles all work after principal photography: editing, visual effects, sound design, color grading, music composition, and final mastering.",
+        "headcount": "5-30",
+        "reports_to": "Director / Producer",
+        "roles": [
+          { "title": "Editor", "count": "1-3", "level": "Senior", "reports_to": "Director", "description": "Assembles footage into the final narrative; works with the director on pacing, performance selection, and structural edits." },
+          { "title": "Assistant Editor", "count": "1-3", "level": "Entry", "reports_to": "Editor", "description": "Ingests and syncs footage, organizes media, manages project files, preps sequences, and outputs review copies." },
+          { "title": "Visual Effects Supervisor", "count": 1, "level": "Department Head", "reports_to": "Director / Producer", "description": "Oversees all visual effects work: green screen, CGI, compositing; manages VFX vendors, bids, and creative direction of digital effects." },
+          { "title": "Composer", "count": "1-2", "level": "Senior", "reports_to": "Director / Producer", "description": "Creates original musical score for the film; works to picture to underscore emotional beats and narrative arcs." },
+          { "title": "Sound Designer / Re-recording Mixer", "count": "1-2", "level": "Senior", "reports_to": "Director / Producer", "description": "Creates the final audio landscape: dialogue clean-up, ADR, Foley, sound effects, and final mix balancing dialogue, music, and effects." },
+          { "title": "Colorist", "count": 1, "level": "Senior", "reports_to": "Director / DP", "description": "Performs color grading and correction; establishes the final color palette and visual tone of each scene in post-production." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Director and Director of Photography collaborate closely on visual storytelling and camera language throughout pre-production and production.",
+      "Producer and Line Producer maintain constant communication on budget status, schedule changes, and resource allocation.",
+      "Director and Editor work intensively during post-production to shape the final narrative from raw footage.",
+      "1st Assistant Director serves as the on-set operational leader, coordinating between all departments to keep the shooting schedule on track.",
+      "Production Designer and Costume Designer coordinate on color palettes and visual world-building to maintain cohesive aesthetic.",
+      "Gaffer and Key Grip work in tandem under the DP to achieve lighting setups, with electrical and grip equipment operating as complementary systems.",
+      "Stunt Coordinator coordinates with Director, 1st AD, and Safety Officer to ensure all action sequences are properly risk-assessed and rehearsed.",
+      "Makeup, Hair, and Wardrobe departments operate adjacent to each other, often sharing workspace and coordinating actor prep timelines.",
+      "Unit Production Manager coordinates with all department heads to align crew schedules, equipment needs, and location logistics.",
+      "Production Sound Mixer coordinates with the Director and 1st AD to manage quiet on set and ensure optimal audio capture conditions."
+    ],
+    "org_chart_text": "STUDIO / NETWORK / FINANCIERS\n        |\n   EXECUTIVE PRODUCER(S)\n        |\n    PRODUCER ----- DIRECTOR (Creative Authority)\n        |               |\n   LINE PRODUCER        |\n        |               |\n   UNIT PROD MGR        |\n        |               |\n   +-------+-----------+-------+\n   |       |           |       |\n   1ST AD  DP (Dep Head)  PD   CASTING\n   |       |           |       |\n   2ND AD  +----+------+---+   MGR\n   |       |    |      |   |\n   3RD AD  CAM GAFFER KEY |\n           OPS  +----+  GRIP\n                |    |\n              BEST  ELEC\n              BOY   TECHS\n              ELEC\n\n   ART DEPT: PD -> ART DIR -> SET DEC -> SET DRESSERS\n   \n   WARDROBE: COSTUME DES -> WARD SUP -> SET COSTUMERS\n   \n   MAKEUP/HAIR: MUA HEAD -> KEY MUA | HAIR HEAD -> KEY HAIR\n   \n   SOUND: PROD SOUND MIXER -> BOOM OP -> UTILITY\n   \n   STUNTS: STUNT COORD -> STUNT PERFORMERS / RIGGING\n   \n   POST (after wrap): EDITOR -> ASST EDITORS\n                       VFX SUP -> VFX TEAM\n                       COMPOSER\n                       SOUND DESIGNER -> MIX\n                       COLORIST"
+  }
+}

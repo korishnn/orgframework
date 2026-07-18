@@ -1,0 +1,115 @@
+{
+  "preset": "pharma-biotech-rd",
+  "version": "1.0",
+  "name": "Pharmaceutical / Biotech R&D Organization",
+  "description": "Research-driven pharmaceutical or biotechnology company organized around drug discovery, preclinical development, clinical trials, regulatory affairs, and quality assurance. Designed for organizations navigating the stage-gate pipeline from target identification through IND, clinical trials, and NDA/BLA approval.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare", "biotech", "pharmaceutical"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "10-5000+",
+  "org_structure": {
+    "overview": "The R&D organization follows a stage-gate pipeline model. Research (discovery) identifies and validates drug targets, then advances candidates through preclinical testing. Clinical Development manages human trials (Phase I-III), supported by Biostatistics and Data Management. Regulatory Affairs shepherds submissions through health authorities (FDA, EMA, PMDA). Quality Assurance ensures GLP, GCP, and GMP compliance throughout. The organization spans from PhD scientists at the bench to clinical operations specialists managing global trial sites. A CSO or Head of R&D leads the full pipeline with matrix collaboration between functions.",
+    "departments": [
+      {
+        "name": "R&D Executive Leadership",
+        "description": "Senior R&D leadership setting research strategy, pipeline prioritization, and resource allocation across the discovery-to-development continuum.",
+        "headcount": "2-6",
+        "reports_to": "CEO / Board of Directors",
+        "roles": [
+          { "title": "Chief Scientific Officer (CSO) / Head of R&D", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Overall R&D strategy, pipeline governance, scientific vision, and external scientific partnerships." },
+          { "title": "Chief Medical Officer (CMO)", "count": 1, "level": "Executive", "reports_to": "CEO / CSO", "description": "Clinical development strategy, late-stage trials, safety oversight, medical affairs, and regulatory interactions." },
+          { "title": "VP of Research (Discovery)", "count": 1, "level": "Executive", "reports_to": "CSO", "description": "Leads discovery biology, medicinal chemistry, DMPK, and preclinical pharmacology toward candidate nomination." },
+          { "title": "VP of Clinical Development", "count": 1, "level": "Executive", "reports_to": "CSO / CMO", "description": "Oversees clinical operations, clinical trial management, and clinical development strategy across all phases." }
+        ]
+      },
+      {
+        "name": "Discovery Research",
+        "description": "Early-stage drug discovery from target identification through hit-to-lead and lead optimization to candidate nomination.",
+        "headcount": "10-500",
+        "reports_to": "VP of Research",
+        "roles": [
+          { "title": "Executive Director / Director — Discovery Biology", "count": 1, "level": "Director", "reports_to": "VP of Research", "description": "Leads target identification, assay development, high-throughput screening, and in vitro pharmacology teams." },
+          { "title": "Executive Director / Director — Medicinal Chemistry", "count": 1, "level": "Director", "reports_to": "VP of Research", "description": "Leads medicinal chemistry, synthetic chemistry, and structure-activity relationship (SAR) optimization." },
+          { "title": "Principal Scientist — Biology", "count": "2-20", "level": "Senior IC", "reports_to": "Director — Discovery Biology", "description": "Designs and executes experiments for target validation, assay development, and mechanism-of-action studies. PhD-level independent investigator." },
+          { "title": "Principal Scientist — Chemistry", "count": "2-20", "level": "Senior IC", "reports_to": "Director — Medicinal Chemistry", "description": "Designs and synthesizes novel chemical entities; drives SAR and leads optimization campaigns." },
+          { "title": "Senior Scientist", "count": "5-50", "level": "IC", "reports_to": "Principal Scientist / Director", "description": "Conducts experiments, analyzes data, and contributes to research projects under senior scientific guidance." },
+          { "title": "Research Associate (RA)", "count": "5-100", "level": "IC", "reports_to": "Senior Scientist / Principal Scientist", "description": "Laboratory experimentation, compound screening, cell culture, biochemical assays, data collection and analysis." },
+          { "title": "Lab Manager", "count": "1-3", "level": "Manager", "reports_to": "Director", "description": "Laboratory operations, equipment maintenance, safety compliance, supply ordering, and EH&S coordination." },
+          { "title": "Scientist — DMPK", "count": "2-10", "level": "IC", "reports_to": "Director — DMPK", "description": "Drug metabolism and pharmacokinetics: ADME assays, bioanalysis, PK/PD modeling to support candidate selection." }
+        ]
+      },
+      {
+        "name": "Preclinical Development",
+        "description": "Nonclinical safety assessment, toxicology, formulation, and CMC (Chemistry, Manufacturing, and Controls) to enable First-in-Human trials.",
+        "headcount": "5-100",
+        "reports_to": "VP of Research / CSO",
+        "roles": [
+          { "title": "Director — Toxicology / Nonclinical Safety", "count": 1, "level": "Director", "reports_to": "VP of Research", "description": "GLP toxicology studies, safety pharmacology, genetic toxicology, and nonclinical safety strategy for regulatory filings." },
+          { "title": "Director — CMC / Pharmaceutical Sciences", "count": 1, "level": "Director", "reports_to": "CSO / Head of R&D", "description": "Drug substance and drug product development, formulation, analytical methods, and GMP manufacturing for clinical supply." },
+          { "title": "Toxicologist", "count": "2-10", "level": "IC", "reports_to": "Director — Toxicology", "description": "Designs, monitors, and interprets GLP toxicology studies; authors nonclinical sections of regulatory documents." },
+          { "title": "Formulation Scientist", "count": "2-10", "level": "IC", "reports_to": "Director — CMC", "description": "Develops and optimizes drug formulations for preclinical and clinical use (oral, IV, topical, etc.)." },
+          { "title": "Analytical Scientist", "count": "2-10", "level": "IC", "reports_to": "Director — CMC", "description": "Develops and validates analytical methods for drug substance and drug product testing; stability studies." }
+        ]
+      },
+      {
+        "name": "Clinical Development",
+        "description": "Designs, conducts, and manages human clinical trials from First-in-Human (Phase I) through registrational trials (Phase III).",
+        "headcount": "10-500",
+        "reports_to": "VP of Clinical Development / CMO",
+        "roles": [
+          { "title": "Executive Director / Director — Clinical Operations", "count": 1, "level": "Director", "reports_to": "VP of Clinical Development", "description": "Global clinical trial execution: site selection, CRO management, monitoring, patient recruitment, and trial budgets." },
+          { "title": "Clinical Trial Manager (CTM)", "count": "3-30", "level": "Manager", "reports_to": "Director — Clinical Operations", "description": "Day-to-day management of clinical studies; oversees CROs, timelines, enrollment, data flow, and site management." },
+          { "title": "Clinical Research Associate (CRA)", "count": "5-50", "level": "IC", "reports_to": "Clinical Trial Manager", "description": "Site monitoring, source data verification, regulatory document review, and site management. May be in-house or field-based." },
+          { "title": "Clinical Scientist", "count": "2-15", "level": "IC", "reports_to": "VP of Clinical Development", "description": "Provides scientific support for clinical protocols, data analysis, medical monitoring, and clinical study reports." },
+          { "title": "Medical Director / Clinical Development Physician", "count": "2-10", "level": "Director / Senior IC", "reports_to": "CMO / VP of Clinical Dev", "description": "Provides medical oversight for clinical trials: protocol design, safety monitoring, eligibility decisions, and regulatory interactions." },
+          { "title": "Safety / Pharmacovigilance Physician", "count": "1-5", "level": "IC", "reports_to": "CMO", "description": "Individual case safety report (ICSR) review, signal detection, risk management plans, DSMB support, and aggregate safety reporting." }
+        ]
+      },
+      {
+        "name": "Biostatistics & Data Management",
+        "description": "Statistical design, analysis, and data integrity for clinical trials. Essential for regulatory submissions and published results.",
+        "headcount": "5-50",
+        "reports_to": "VP of Clinical Development / CSO",
+        "roles": [
+          { "title": "Director — Biostatistics", "count": 1, "level": "Director", "reports_to": "VP of Clinical Development", "description": "Statistical strategy for clinical development, study design, sample size estimation, analysis plans, and regulatory statistical interactions." },
+          { "title": "Senior Biostatistician", "count": "2-15", "level": "Senior IC", "reports_to": "Director — Biostatistics", "description": "Statistical analysis plans (SAPs), SAS/R programming, interim analyses, final study reports, and exploratory analyses." },
+          { "title": "Director — Clinical Data Management", "count": 1, "level": "Director", "reports_to": "VP of Clinical Development", "description": "CRF design, database build, data validation, query management, and database lock for clinical studies." },
+          { "title": "Clinical Data Manager", "count": "2-15", "level": "IC", "reports_to": "Director — Clinical Data Management", "description": "eCRF design, data entry validation, query generation and resolution, medical coding (MedDRA, WHO Drug), and UAT." }
+        ]
+      },
+      {
+        "name": "Regulatory Affairs",
+        "description": "Navigates regulatory pathways, compiles and submits dossiers to health authorities, and maintains regulatory compliance throughout the product lifecycle.",
+        "headcount": "3-50",
+        "reports_to": "CSO / CEO",
+        "roles": [
+          { "title": "Head of Regulatory Affairs", "count": 1, "level": "Executive / Director", "reports_to": "CSO / CEO", "description": "Regulatory strategy, IND/CTA submissions, NDA/BLA/MAA filings, health authority interactions, and labeling negotiations." },
+          { "title": "Regulatory Affairs Manager", "count": "2-10", "level": "Manager", "reports_to": "Head of Regulatory Affairs", "description": "Manages regulatory submissions (IND amendments, annual reports, DSURs, IB updates) and tracks regulatory commitments." },
+          { "title": "Regulatory Affairs Specialist", "count": "2-15", "level": "IC", "reports_to": "Regulatory Affairs Manager", "description": "Authors and compiles regulatory documents; manages submission publishing, tracking, and archiving." },
+          { "title": "Regulatory Writer / Medical Writer", "count": "2-10", "level": "IC", "reports_to": "Head of Regulatory Affairs", "description": "Writes clinical study reports, investigator brochures, regulatory summaries, and submission modules in eCTD format." }
+        ]
+      },
+      {
+        "name": "Quality Assurance (QA)",
+        "description": "Independent quality oversight ensuring GLP, GCP, GMP, and 21 CFR Part 11 compliance across R&D activities.",
+        "headcount": "3-30",
+        "reports_to": "CEO / CSO (independent from R&D)",
+        "roles": [
+          { "title": "Head of Quality Assurance", "count": 1, "level": "Executive / Director", "reports_to": "CEO / CSO", "description": "QA strategy, quality management system, regulatory inspection readiness, and audit program." },
+          { "title": "QA Auditor — GCP", "count": "1-5", "level": "IC", "reports_to": "Head of QA", "description": "Clinical trial site audits, CRO audits, investigator audits, and GCP compliance assessments." },
+          { "title": "QA Auditor — GLP / GMP", "count": "1-5", "level": "IC", "reports_to": "Head of QA", "description": "Nonclinical lab audits, manufacturing site audits, vendor audits, and GLP/GMP compliance assessments." },
+          { "title": "QA Compliance Specialist", "count": "1-5", "level": "IC", "reports_to": "Head of QA", "description": "SOP management, CAPA tracking, deviation management, training records, and regulatory inspection support." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "CSO and CMO are the primary handoff between discovery research and clinical development — the pipeline governance (stage-gate) process manages this interface with clear criteria for moving candidates from preclinical to First-in-Human.",
+      "Director of Medicinal Chemistry maintains a tight feedback loop with Discovery Biology: biology assays inform chemistry SAR, and chemistry provides tool compounds for target validation.",
+      "Clinical Operations and Biostatistics co-author statistical analysis plans and collaborate on database design, interim analyses, and final study reporting.",
+      "Regulatory Affairs is the primary interface with health authorities; all major submission documents involve collaboration between Regulatory, Clinical, CMC, Nonclinical, and QA teams.",
+      "QA operates independently from the R&D functions it audits; the Head of QA typically reports to the CEO or a governance committee to maintain independence.",
+      "CMC (Pharmaceutical Sciences) supports both preclinical (toxicology formulation) and clinical (clinical supply) teams, requiring careful prioritization.",
+      "Pharmacovigilance coordinates with Clinical Operations for timely ICSR collection and with Regulatory Affairs for expedited and aggregate safety reporting.",
+      "Medical Writing is a shared service supporting Regulatory submissions, Clinical study reports, and publications — often matrixed across programs."
+    ],
+    "org_chart_text": "                                      ┌─────────────┐\n                                      │     CEO     │\n                                      └──┬──────┬───┘\n                                         │      │\n                    ┌────────────────────┘      └───────────────┐\n                    │                                            │\n           ┌────────┴────────┐                         ┌────────┴────────┐\n           │  CSO / Head of  │                         │  Head of QA     │\n           │  R&D            │                         │  (Independent)  │\n           └──┬────┬────┬────┘                         └─────────────────┘\n              │    │    │\n      ┌───────┘    │    └──────────┐\n      │            │               │\n  ┌───┴────┐  ┌───┴────┐  ┌───────┴───────┐   ┌───────────────┐\n  │VP Res. │  │VP Clin │  │Head of        │   │   CMO         │\n  │Discov. │  │Dev.    │  │Regulatory     │   │(Medical/      │\n  └───┬────┘  └───┬────┘  │Affairs        │   │ Safety)       │\n      │           │       └───────────────┘   └───────┬───────┘\n  ┌───┴─────┐ ┌───┴───────┐                          │\n  │Discovery│ │Clinical   │                  ┌────────┴────────┐\n  │Biology  │ │Operations │                  │Medical Directors│\n  │Med Chem │ │(CTMs,CRAs)│                  │Pharmacovigilance│\n  │DMPK     │ │           │                  └─────────────────┘\n  │Tox      │ └───┬───────┘\n  │CMC      │     │\n  └─────────┘ ┌───┴────────┐\n              │Biostatistics│\n              │Data Mgmt   │\n              └────────────┘"
+  }
+}

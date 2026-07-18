@@ -1,0 +1,65 @@
+{
+  "playbook": "emea-to-latam",
+  "version": "1.0",
+  "name": "EU Company → Latin America Expansion",
+  "overview": "For European companies, Latin America offers the most culturally familiar expansion corridor outside the Anglosphere. Shared Iberian heritage (Portugal for Brazil, Spain for most others) means similar legal structures, management styles, and business etiquette. The time zone advantage is significant for certain pairings: UK and Western Europe to Brazil (3-5 hours difference) enables same-day communication. This contrasts with the 7-10 hour gap between the US West Coast and Europe — European companies actually have better overlap with Latin America than US west coast firms do. Labor laws in Latin America are broadly similar to Southern European systems — strong employee protections, mandatory 13th salary, high severance costs, and union presence. For European companies used to French or Italian labor codes, the Brazilian CLT will feel familiar rather than alien. The VAT/GST landscape is complex (each country has multiple types of indirect taxes), but European finance teams familiar with EU VAT will adapt more easily than their US counterparts. Talent costs are significantly lower than Europe — a senior engineer in Sao Paulo or Mexico City costs 30-50% of a UK equivalent. Many European companies (particularly Spanish, Portuguese, and Italian firms) view LatAm as a natural second market due to language and cultural affinity.",
+  "entity_types": {
+    "recommended": "Brazil: Sociedade Limitada (LTDA). Mexico: Sociedad de Responsabilidad Limitada (SRL) or Sociedad Anonima (SA). Colombia: Sociedad por Acciones Simplificada (SAS). Argentina: Sociedad de Responsabilidad Limitada (SRL). Chile: Sociedad por Acciones (SpA). Peru: Sociedad Anonima Cerrada (SAC).",
+    "alternatives": [
+      "Brazil: EOR (essential for under 15-20 employees given administrative complexity)",
+      "Mexico: SAPI (Sociedad Anonima Promotora de Inversion) — flexible corporate governance, used by VC-backed startups",
+      "Argentina: Simplified Joint Stock Company (SAS) — simpler than SRL, lower capital requirements",
+      "Chile: EOR for first hires before establishing SpA (fast registration, 2-4 weeks)",
+      "All countries: Use EOR for first 5-10 hires while evaluating market; entity setup can proceed in parallel"
+    ]
+  },
+  "legal_requirements": [
+    "Brazil: CLT (Consolidation of Labor Laws) compliance — highly regulated; monthly eSocial filings; union contributions mandatory; annual labor law obligations (folha de pagamento, RAIS, DIRF); company must have a local legal representative",
+    "Brazil: Registration with CNPJ, State VAT (ICMS), Municipal services tax (ISS); complex tax regime — choose between Lucro Real, Lucro Presumido, or Simples Nacional (only for small revenue)",
+    "Mexico: RFC registration with SAT; IMSS (social security) and INFONAVIT (housing) registration; annual payroll tax filings (ISR, IVA); CFDI electronic invoicing mandatory for all payments",
+    "Mexico: Profit sharing (PTU) — 10% of taxable income distributed to employees; capped at 3 months' salary or 20% of the cap, whichever is less; unions can audit compliance",
+    "Colombia: NIT registration; Chamber of Commerce registration; mandatory social security (EPS, pension, ARL, CCF); prima de servicios (13th salary in two installments); cesantias (severance fund with 12% interest)",
+    "Chile: RUT registration via Servicio de Impuestos Internos (SII); AFP (pension) and health insurance (FONASA or ISAPRE) mandatory for employees; AFC (unemployment insurance) contribution required",
+    "Argentina: CUIT registration; mandatory severance fund (indemnizacion por antiguedad) — one month's salary per year of service; union agreements (convenios colectivos) apply by sector; high inflation complicates salary negotiation (quarterly adjustments expected)",
+    "All countries: Double taxation treaties vary — most EU countries have treaties with Mexico, Brazil (limited), Chile, and Colombia but terms differ; check treaty eligibility for reduced withholding taxes",
+    "Data protection: Brazil's LGPD (similar to GDPR) requires DPO appointment, data mapping, and cross-border transfer safeguards; Mexico's LFPDPPP requires consent for data processing; Argentina's PDPA is one of Latin America's most stringent data protection laws",
+    "Transfer pricing: Brazil's complex transfer pricing rules (being harmonised with OECD standards as of 2024-25) apply to cross-border services, royalties, and financing between related entities"
+  ],
+  "hiring_timeline": {
+    "phase_1": "Market entry and first hires (month 1-3): Use EOR to hire first 3-5 employees. Spanish/Portuguese companies have an advantage — send expatriate manager if applicable. Begin entity registration process. 4-8 weeks for first hires.",
+    "phase_2": "Establish entity and core team (month 3-8): Set up local entity (fastest in Chile at 2-4 weeks, slowest in Brazil at 4-6 months). Transition EOR employees. Hire local finance/compliance officer. Register for payroll, social security, and all tax regimes.",
+    "phase_3": "Scale and regional expansion (month 6-18): Build team to 15-50+ employees. Consider regional expansion to a second LatAm market. Develop local management team. Implement compliance automation (local payroll, e-invoicing, tax filing systems)."
+  },
+  "org_structure_adaptations": [
+    "Shared language heritage (Spanish/Portuguese) enables expatriate or regionally rotating management between Iberian Europe and LatAm — a natural edge over US competitors",
+    "Brazil typically requires a locally resident director or legal representative — this person has personal liability exposure and must be carefully selected",
+    "Hierarchy is more formal than in most European countries. Titles, formal address, and clear reporting lines are expected. Flat org structures common in Nordic/UK startups may struggle.",
+    "Union relations are important in Mexico (manufacturing) and Brazil (sector-specific). Companies should designate a labor relations manager, particularly in manufacturing or logistics.",
+    "Regional HQ structure: Many European companies locate their LatAm HQ in Mexico (proximity to US, USMCA benefits) or Brazil (largest market) with country managers in other locations.",
+    "Legal/compliance function requires local expertise in each country — the legal systems are distinct despite common roots. An employment lawyer in Spain cannot practice in Colombia."
+  ],
+  "compensation_notes": "Latin American compensation is significantly lower than European levels — typically 30-50% of Western European equivalents for professional roles. Engineering salaries in Brazil top out at roughly 50-70k USD equivalent; Mexico 40-60k USD; Colombia 30-50k USD; Chile 40-55k USD. Argentina is complicated by high inflation and parallel exchange rates, making compensation volatile. The 13th salary (aguinaldo in Mexico, decimo terceiro in Brazil, prima in Colombia) is mandatory across most countries, adding ~8.33% to annual cash cost. Social charges are substantial (Brazil 26-38% employer-side, Mexico 30-40%, Colombia ~30%). Benefits expectations include private health insurance (mandatory for many professional roles), meal/food vouchers, transportation subsidies, and in Brazil, mandatory FGTS (8% of salary deposited into a government-managed severance fund). Stock options are increasingly common in tech but still less prevalent than in Europe or the US. Executive compensation is significantly lower than European equivalents but is growing. Many European companies use a cost-plus approach: a premium over local market (to attract talent from local employers) that still represents a 40-60% savings vs. European costs. Perks like English classes, international training, and remote work are highly valued.",
+  "cultural_key_differences": [
+    "Personal relationships precede business. Trust is built through social interaction — long lunches, coffee meetings, and personal conversations before getting down to business. Europeans who jump straight to agenda items will be perceived as cold.",
+    "Time perception is more flexible than in Northern Europe. Meetings may start 15-30 minutes late in Brazil and Argentina. This is not disrespect — it is cultural. Punctuality norms are stricter in Mexico and Chile.",
+    "Hierarchy and formality are pronounced. Formal titles (Senhor, Doutor, Don, Licenciado, Ingeniero) are used extensively. Using first names immediately is presumptuous. Wait for the invitation to switch to first names.",
+    "Communication is indirect and context-dependent, particularly in Mexico and Colombia. Criticism in public causes loss of face. 'Yes' often means 'I hear you' not 'I agree.' Read between the lines.",
+    "Personal and professional life blend more than in Northern Europe. Inquiring about family, health, and weekend plans is normal business conversation. This is less true in the Southern Cone (Chile, Argentina) which is more reserved.",
+    "Negotiation style: Brazilians enjoy negotiation and will go through several rounds. Mexicans value harmony and may avoid direct confrontation in negotiation. Colombians appreciate detailed discussion. Chileans are more direct and contract-focused.",
+    "Loyalty to the manager (rather than the company) is common. Employees stay because of their relationship with a boss, not the brand. Manager turnover destabilizes teams more than in Europe.",
+    "Gender dynamics: Latin America is still more traditional in gender roles than Western Europe. Female executives may face different expectations. DEI programs are less developed than in EU or US contexts."
+  ],
+  "common_pitfalls": [
+    "Assuming US or EU employment contracts work in LatAm. Each country has mandatory contract provisions, statutory minimums, and language requirements. Portuguese for Brazil, Spanish for the rest.",
+    "Underestimating Brazil's tax complexity. Brazil has one of the most complex tax systems in the world. A full-time local accountant or outsourced accounting firm is not optional — it is essential.",
+    "Not anticipating inflation in Argentina. Salaries need quarterly or even monthly review due to 100%+ annual inflation. Contracts with fixed salaries for 12 months are unworkable. Indexation clauses or regular renegotiation cycles are needed.",
+    "Ignoring union requirements. In Mexico, unions (CTM, CROC, etc.) have significant power in manufacturing and some service industries. Collective bargaining agreements (CCTs) must be registered and recognized. In Brazil, union contributions are mandatory.",
+    "Treating all of Latin America as one market. Brazil and Mexico have different languages, currencies, legal systems, and business cultures. Argentina, Chile, and Colombia are distinct markets. What works in one may fail in another.",
+    "Overlooking CFDI e-invoicing in Mexico. All invoices (including payroll receipts) must be electronic and SAT-approved. Paper invoices are not valid for tax purposes. Non-compliance blocks tax deductions.",
+    "Assuming European IP protection extends to Latin America. Patents, trademarks, and copyrights must be registered separately in each country. Enforcement is inconsistent — particularly in Brazil (slow courts) and Argentina (weak IP enforcement).",
+    "Neglecting regional data protection laws. Brazil's LGPD imposes fines of up to 2% of revenue in Brazil. Argentina has strict consent requirements. Mexico requires notice and consent. A single privacy policy for all of Europe and Latin America is insufficient.",
+    "Underestimating severance costs. Brazil's severance (FGTS + 40% fine) and Mexico's 3 months + seniority premium create significant liabilities. Budget for potential terminations from day one.",
+    "Failing to adapt marketing and product to local preferences. What works in Spain does not automatically work in Mexico or Argentina. Localize pricing, branding, and positioning."
+  ],
+  "timeline_estimate": "6-18 months for full setup. Chile: 3-6 months (fastest). Colombia: 4-8 months. Mexico: 4-8 months. Brazil: 8-18 months (longest due to Brazil cost and complexity). Argentina: 6-12 months (mitigated by EOR given economic volatility). Recommended: start with EOR in target market, establish entity, then expand regionally."
+}

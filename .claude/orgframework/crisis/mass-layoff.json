@@ -1,0 +1,101 @@
+{
+  "preset": "mass-layoff",
+  "name": "Mass Layoff / Reduction in Force (RIF)",
+  "description": "Workforce reduction response structure. Activates when a mass layoff, reduction in force, or large-scale restructuring is approved by board/CEO. Emphasizes legal compliance (WARN Act), human dignity, notification sequencing, and organizational continuity.",
+  "trigger_conditions": [
+    "Board approves reduction in force affecting 10%+ or 50+ employees",
+    "Funding round fails and cash runway requires immediate headcount reduction",
+    "Merger or acquisition requires duplicate role elimination (above WARN thresholds)",
+    "Pandemic / market crash requires emergency downsizing",
+    "Pivot or shutdown of major product line or business unit",
+    "Site or facility closure requiring mass employee notification",
+    "Offshoring or outsourcing decision affecting large team",
+    "Chapter 11 restructuring with workforce reduction"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "CEO",
+      "responsibilities": [
+        "Overall decision authority on RIF scope, timing, and messaging",
+        "Final approval on severance package design",
+        "Deliver all-hands message and represent organizational direction",
+        "Approve impacted employee list after legal and HR review",
+        "Accept accountability for the decision — own the narrative",
+        "Set tone for remaining team — retention and motivation"
+      ]
+    },
+    "ops_lead": {
+      "role": "COO / Head of Operations",
+      "responsibilities": [
+        "Design notification sequencing — managers → impacted → retained → public",
+        "Coordinate logistics for notification day (rooms, IT access, security)",
+        "Manage facility operations — entry/exit, badge collection, equipment return",
+        "Business continuity planning — which roles are critical post-RIF",
+        "Workload redistribution among retained employees",
+        "Ensure payroll, benefits, and IT access transition timelines are executed"
+      ]
+    },
+    "comms_lead": {
+      "role": "CMO (internal communications) + Head of HR (individual notifications)",
+      "responsibilities": [
+        "[CMO] Draft all-hands email, FAQ, and public statement (if applicable)",
+        "[CMO] Manage timing of communications — no leaks before manager notifications",
+        "[CMO] Coordinate with PR if layoff is newsworthy (public company, large numbers)",
+        "[HR] Lead one-on-one notification meetings with impacted employees",
+        "[HR] Prepare separation packets (severance agreement, benefits info, COBRA)",
+        "[HR] Manage benefits transitions — health insurance, stock vesting, 401(k)",
+        "[HR] Coordinate EAP (Employee Assistance Program) access for impacted employees"
+      ]
+    },
+    "legal_lead": {
+      "role": "General Counsel + External Employment Counsel",
+      "responsibilities": [
+        "WARN Act compliance — 60-day advance notice (US), state-level WARN laws (CA, NY, etc.)",
+        "Review impacted employee list for disparate impact discrimination risk",
+        "Prepare separation agreements and release of claims",
+        "Advise on COBRA, continuation coverage, and benefits compliance",
+        "Ensure compliance with international employment laws for global workforce",
+        "Advise on public disclosure obligations (SEC for public companies)",
+        "Review retention agreements for key employees being retained"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. Legal review of WARN Act compliance — 60-day notice required (US). Check state-level WARN (CA: 60-day, NY: 90-day for certain cases)",
+    "2. Design notification sequence: Managers notified first (morning) → Impacted employees (mid-day, same day) → Retained (late day) → Public (after close)",
+    "3. NEVER notify on a Friday — best days are Tuesday through Thursday. Avoid Monday (start-of-week panic) and Friday (no support access over weekend)",
+    "4. Severance package design — minimum statutory, target competitive: 4-12 weeks salary + 1 week per year of service, COBRA coverage period, outplacement services",
+    "5. Notification logistics — private rooms, HR + manager paired for each impacted employee, 15-minute meetings, security escort if needed for access revocation",
+    "6. IT access revocation plan — revoke at time of notification, not before. Capture all company data. Coordinate with IT to avoid accidental lockout of retained employees",
+    "7. Retained employee communication — why them, new roles, workload plan, morale support. They will be scared and need reassurance immediately",
+    "8. EAP (Employee Assistance Program) activation — available for both impacted and retained employees. Grief, stress, and career transition counseling",
+    "9. Benefits transition — COBRA paperwork, 401(k) rollover information, unvested equity treatment (acceleration policy), final paycheck timing by state law",
+    "10. Outplacement services — engage firm (Lee Hecht Harrison, RiseSmart, etc.), resume support, career coaching, networking access",
+    "11. Public statement preparation — if required (public company with securities filing, or large enough to attract press). Do not use euphemisms ('streamlining,' 'synergies'). Own the decision",
+    "12. Manager training in advance — how to deliver the message, what to say/not say, how to handle emotional responses, what to do if employee becomes distressed"
+  ],
+  "communication_protocol": {
+    "internal": "Strict sequencing: Managers (before impacted) → Impacted employees (individual notification meetings, same day) → Retained employees (all-hands same day). CEO owns all-hands message. No advanced notice to anyone outside need-to-know (legal, HR, ops). Leak prevention is critical — accidental advance notice can trigger panic and legal exposure.",
+    "external": "Public statement only if legally required (SEC filing, WARN notice) or inevitable (press will find out). Factual, dignified, no euphemisms. No interviews with departing employees. No discussion of specific severance terms publicly.",
+    "cadence": "Notification day: Hourly standup with ops, IT, HR, legal. Following week: Daily HR standup for transition status. Weekly retained employee pulse check for 90 days."
+  },
+  "escalation_timeline": {
+    "t_minus_60d": "WARN Act notice filed (US) — start 60-day clock",
+    "t_minus_4wk": "Impacted employee list finalized → Legal/HR review for disparate impact → IT access plan designed",
+    "t_minus_2wk": "Severance packages finalized → Manager briefing materials prepared → Notification logistics confirmed",
+    "t_minus_1wk": "Managers trained → IT access revocation scripts tested → Separation packets printed",
+    "t0_notification_day": "AM: Managers notified → Mid-day: Impacted employees notified individually → PM: Retained all-hands → After close: Public statement (if needed)",
+    "t1_4wk": "Transition period — knowledge transfer, final pay, benefits transition, outplacement begins",
+    "t30_90d": "Retained employee pulse check → Org design stabilization → Backfill decisions for critical gaps → Post-RIF culture assessment"
+  },
+  "key_contacts": [
+    "External Employment Counsel: [phone]",
+    "WARN Act Filing Recipients (state dislocated worker units): [list maintained by Legal]",
+    "Outplacement Services Provider: [phone, account manager]",
+    "EAP Provider: [phone, admin portal]",
+    "COBRA Administration Vendor: [phone, portal]",
+    "Benefits Broker: [phone]",
+    "Payroll Provider (final pay processing): [phone]",
+    "IT Security Lead (access revocation): [phone]"
+  ]
+}

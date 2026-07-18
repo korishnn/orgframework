@@ -1,0 +1,17 @@
+{
+  "industry": "manufacturing",
+  "name": "Manufacturing & Industrial",
+  "shortcodes": ["@mfg", "@manufacturing", "@industrial", "@hardware"],
+  "key_metrics": ["OEE", "Lead time", "On-time delivery", "Yield/Defect rate", "Inventory turns", "Downtime %", "Scrap rate", "Cost per unit", "Safety incidents"],
+  "common_roles": ["Plant Manager", "Supply Chain Director", "Quality Manager", "Production Supervisor", "Industrial Engineer", "Process Engineer", "EHS Manager"],
+  "org_structure_note": "Plant-centric with centralized corporate functions. Strong operations hierarchy. Shift-based work adds complexity.",
+  "go_to_market": ["Direct sales (industrial)", "Distributor/reseller", "B2B contract bidding", "OEM supply agreements"],
+  "funding_stages": ["Bootstrapped/PE-backed", "Debt financing for CapEx", "Slower growth, higher barriers to entry."],
+  "regulatory": ["OSHA (safety)", "ISO 9001 (quality)", "ISO 14001 (environmental)", "REACH (EU chemicals)", "RoHS", "CE marking (EU)", "EPA (US emissions)"],
+  "regional_notes": {
+    "na": "Union presence varies by state (strong in auto). Rust Belt vs Sun Belt. OSHA strict.",
+    "emea": "Germany Industrie 4.0 leader. IG Metall strong union. EU environmental regulations strictest globally.",
+    "apac": "China: fastest manufacturing ecosystem. Japan: TPS/lean origin. Korea: advanced semiconductors. Vietnam: growing.",
+    "latam": "Mexico automotive/aerospace. Brazil industrial base. Nearshoring from US accelerating. Infrastructure challenges."
+  }
+}

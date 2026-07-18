@@ -1,0 +1,13 @@
+{
+  "stage": "enterprise",
+  "name": "Enterprise / Public Company",
+  "description": "Post-IPO or mature private. 500+ employees. Sustaining and optimizing at scale.",
+  "key_challenges": ["Innovation within a large org", "Bureaucracy and speed trade-off", "Regulatory and SOX compliance", "Matrix management complexity", "Talent retention at scale", "Legacy system modernization"],
+  "org_structure": "Deep hierarchy. Multiple layers (IC → Manager → Director → VP → SVP → EVP → C-suite). Matrix or business-unit structure.",
+  "decision_making": "Structured governance. Committees for key decisions. RACI frameworks. Quarterly business reviews.",
+  "hiring": "Formal hiring process. Multiple interview rounds. Panel decisions. Deep specialist roles. Internal mobility programs.",
+  "process_maturity": "Mature processes. SOPs for everything. Change management. Toll gates for releases. Compliance-driven controls.",
+  "compensation": "Top-of-market cash + RSUs (not options). Annual bonuses (target 10-30%). Extensive benefits. Perennial performance management.",
+  "survival_metrics": ["EPS", "Revenue growth %", "Operating margin", "Free cash flow", "Market share", "Employee attrition"],
+  "risk_factors": ["Disruption by smaller nimbler competitors", "Talent flight to growth companies", "Innovation stagnation", "Regulatory penalties", "Integration of acquired companies"]
+}

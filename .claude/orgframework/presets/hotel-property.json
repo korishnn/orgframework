@@ -1,0 +1,160 @@
+{
+  "preset": "hotel-property",
+  "version": "1.0",
+  "name": "Hotel / Resort Property",
+  "description": "Full-service hotel or resort organizational structure covering front office, housekeeping, food and beverage, engineering, sales and events, finance, and human resources. Led by a General Manager with department heads for each operational area. Scales from boutique properties to large convention resorts with 50-500+ staff.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["hospitality", "hotel", "resort", "lodging", "tourism"], "stages": ["pre-opening", "operations", "renovation"] },
+  "headcount_range": "50-500",
+  "org_structure": {
+    "overview": "Hotel properties operate as 24/7 hospitality operations with multiple interdependent departments. The General Manager is the senior on-property leader, often reporting to a regional VP or ownership group. Department heads manage Rooms (front office, housekeeping, concierge, reservations), Food & Beverage (restaurants, bars, banquets, room service, catering), Engineering & Maintenance, Sales & Marketing, Finance & Accounting, and Human Resources. Large resorts may add Recreation, Spa, Golf, and Kids Club departments. The structure is designed to deliver consistent guest experiences through standardized operating procedures across all shifts, 365 days a year.",
+    "departments": [
+      {
+        "name": "Executive Office / General Management",
+        "description": "Senior hotel leadership responsible for overall property performance, guest satisfaction, financial results, and brand standards. Sets strategic direction and coordinates all departments.",
+        "headcount": "2-6",
+        "reports_to": "Regional VP / Ownership / Board",
+        "roles": [
+          { "title": "General Manager", "count": 1, "level": "Executive", "reports_to": "Regional VP / Ownership", "description": "Senior on-property leader; accountable for all hotel operations, P&L, brand compliance, guest satisfaction scores, and team culture. Sets strategic direction." },
+          { "title": "Resident Manager", "count": "1-2", "level": "Executive", "reports_to": "General Manager", "description": "Assists the GM with day-to-day operations; often serves as GM-in-training and handles operational problem-solving across all departments." },
+          { "title": "Executive Assistant / Hotel Manager", "count": "1-2", "level": "Senior", "reports_to": "General Manager", "description": "Manages GM office operations, executive communications, board reporting, and special projects." },
+          { "title": "Quality Assurance Manager", "count": 1, "level": "Senior", "reports_to": "General Manager", "description": "Monitors guest satisfaction metrics, conducts property audits, manages brand standards compliance, and leads continuous improvement initiatives." }
+        ]
+      },
+      {
+        "name": "Rooms Division / Front Office",
+        "description": "Manages the entire guest journey from reservation to check-out: front desk, concierge, guest services, bell services, reservations, and guest recognition programs. The face of the hotel that sets the first and last impression.",
+        "headcount": "10-80",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Director of Rooms", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Senior leader for all rooms-related operations including front desk, housekeeping, concierge, reservations, and guest services." },
+          { "title": "Front Office Manager", "count": 1, "level": "Senior", "reports_to": "Director of Rooms", "description": "Manages front desk operations: check-in/out, guest assignment, billing, upsells, and lobby flow. Oversees front desk agents and shift supervisors." },
+          { "title": "Front Desk Supervisor", "count": "2-4", "level": "Supervisor", "reports_to": "Front Office Manager", "description": "Supervises front desk shifts; handles guest complaints, VIP arrivals, and ensures standard operating procedures are followed." },
+          { "title": "Front Desk Agent", "count": "5-25", "level": "Entry", "reports_to": "Front Desk Supervisor", "description": "First point of contact for guests: processes check-ins and check-outs, handles payments, assigns rooms, answers questions, and resolves issues." },
+          { "title": "Concierge", "count": "2-8", "level": "Skilled", "reports_to": "Front Office Manager", "description": "Provides guest services: restaurant reservations, tour bookings, transportation arrangements, local recommendations, and special requests." },
+          { "title": "Bell Captain", "count": 1, "level": "Supervisor", "reports_to": "Front Office Manager", "description": "Leads the bell and door team; manages luggage handling, valet, and guest transportation services." },
+          { "title": "Bellman / Door Attendant", "count": "3-12", "level": "Entry", "reports_to": "Bell Captain", "description": "Greets arriving guests, handles luggage, parks cars (valet), provides directions, and assists with guest transportation needs." },
+          { "title": "Reservations Manager", "count": 1, "level": "Senior", "reports_to": "Director of Rooms", "description": "Manages room inventory, pricing strategy, group bookings, and online distribution channels to maximize occupancy and revenue." },
+          { "title": "Reservations Agent", "count": "2-6", "level": "Entry", "reports_to": "Reservations Manager", "description": "Handles incoming reservation calls, email bookings, and group rooming lists; enters and maintains accurate booking details in the PMS." },
+          { "title": "Guest Recognition / Loyalty Coordinator", "count": 1, "level": "Skilled", "reports_to": "Front Office Manager", "description": "Manages loyalty program member experiences, VIP amenities, repeat guest preferences, and personalized service touches." }
+        ]
+      },
+      {
+        "name": "Housekeeping",
+        "description": "Responsible for cleanliness and maintenance of all guest rooms, public spaces, back-of-house areas, and laundry operations. Critical to guest satisfaction and room turnover efficiency.",
+        "headcount": "15-120",
+        "reports_to": "Director of Rooms",
+        "roles": [
+          { "title": "Executive Housekeeper", "count": 1, "level": "Department Head", "reports_to": "Director of Rooms", "description": "Leads the housekeeping department: manages cleaning standards, staffing, inventory, budget, and laundry operations for the entire property." },
+          { "title": "Assistant Executive Housekeeper", "count": "1-2", "level": "Senior", "reports_to": "Executive Housekeeper", "description": "Supports the executive housekeeper with scheduling, quality inspections, supply ordering, and supervisory duties across shifts." },
+          { "title": "Housekeeping Supervisor", "count": "2-6", "level": "Supervisor", "reports_to": "Assistant Executive Housekeeper", "description": "Inspects guest rooms after cleaning, assigns section workloads, manages lost and found, and ensures brand standards are met." },
+          { "title": "Room Attendant / Housekeeper", "count": "10-60", "level": "Entry", "reports_to": "Housekeeping Supervisor", "description": "Cleans and prepares guest rooms: makes beds, cleans bathrooms, vacuums, restocks amenities, and reports maintenance issues." },
+          { "title": "Houseperson / Houseman", "count": "3-15", "level": "Entry", "reports_to": "Housekeeping Supervisor", "description": "Supports room attendants by delivering linens, removing trash, cleaning public areas, vacuuming hallways, and assisting with deep cleaning projects." },
+          { "title": "Laundry Manager", "count": 1, "level": "Senior", "reports_to": "Executive Housekeeper", "description": "Manages the laundry facility: linen processing, uniform cleaning, chemical inventory, and equipment maintenance." },
+          { "title": "Laundry Attendant", "count": "3-15", "level": "Entry", "reports_to": "Laundry Manager", "description": "Operates industrial washing, drying, and folding equipment; sorts, treats stains, and distributes clean linens and uniforms." },
+          { "title": "Public Area Attendant", "count": "2-8", "level": "Entry", "reports_to": "Housekeeping Supervisor", "description": "Maintains cleanliness of lobbies, restrooms, hallways, fitness center, pool area, and all public spaces throughout the property." }
+        ]
+      },
+      {
+        "name": "Food & Beverage",
+        "description": "Operates all food and beverage outlets: restaurants, bars/lounges, room service, banquet/catering, minibars, and staff cafeteria. Major revenue center and guest experience driver.",
+        "headcount": "15-150",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Director of Food & Beverage", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Senior F&B leader overseeing all food and beverage outlets, catering, room service, and culinary operations. Manages revenue, cost control, and quality standards." },
+          { "title": "Executive Chef", "count": 1, "level": "Department Head", "reports_to": "Director of F&B", "description": "Leads all culinary operations: menu development, kitchen staffing, food cost management, and food quality across all outlets and banquets." },
+          { "title": "Sous Chef", "count": "2-4", "level": "Senior", "reports_to": "Executive Chef", "description": "Manages day-to-day kitchen operations, supervises line cooks, expedites during service, and ensures consistent food quality across all outlets." },
+          { "title": "Chef de Partie / Line Cook", "count": "4-20", "level": "Skilled", "reports_to": "Sous Chef", "description": "Station-specific cooks for banquets, restaurant, and room service; may include specialty stations within the hotel kitchen." },
+          { "title": "Outlet Manager / Restaurant Manager", "count": "2-6", "level": "Senior", "reports_to": "Director of F&B", "description": "Manages individual restaurant or bar outlets: service standards, staffing, inventory, P&L, and guest experience within each venue." },
+          { "title": "Server / Bartender", "count": "5-40", "level": "Skilled", "reports_to": "Outlet Manager", "description": "Serves guests in hotel restaurants, bars, and lounges; takes orders, delivers food and beverages, and ensures guest satisfaction." },
+          { "title": "Room Service Manager", "count": 1, "level": "Senior", "reports_to": "Director of F&B", "description": "Manages in-room dining operations: order taking, delivery timing, tray setup, and special amenity coordination." },
+          { "title": "Room Service Attendant", "count": "3-10", "level": "Entry", "reports_to": "Room Service Manager", "description": "Takes in-room dining orders, prepares trays and carts, delivers to guest rooms, and retrieves trays." },
+          { "title": "Banquet Manager", "count": "1-2", "level": "Senior", "reports_to": "Director of F&B", "description": "Oversees all banquet and catering events: room setup, food service timing, bar service, and event execution from small meetings to large galas." },
+          { "title": "Banquet Server", "count": "5-40", "level": "Entry", "reports_to": "Banquet Manager", "description": "Serves food and beverages at catered events; sets tables, clears plates, and provides service during banquets and meetings." },
+          { "title": "Steward / Dishwasher", "count": "3-15", "level": "Entry", "reports_to": "Executive Chef", "description": "Cleans kitchen equipment, dishes, and utensils; maintains kitchen sanitation and assists with basic food prep." },
+          { "title": "Minibar Attendant", "count": "1-3", "level": "Entry", "reports_to": "Director of F&B", "description": "Restocks and tracks minibar inventory in guest rooms; processes consumption charges and maintains stock levels." }
+        ]
+      },
+      {
+        "name": "Engineering & Maintenance",
+        "description": "Maintains the physical infrastructure of the property: HVAC, plumbing, electrical, pool, elevator, refrigeration, and building systems. Manages preventative maintenance, repairs, renovations, and energy conservation.",
+        "headcount": "4-25",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Chief Engineer / Director of Engineering", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Leads engineering and maintenance operations; manages building systems, preventative maintenance programs, capital projects, budget, and life safety compliance." },
+          { "title": "Assistant Chief Engineer", "count": "1-2", "level": "Senior", "reports_to": "Chief Engineer", "description": "Supports the chief engineer with shift supervision, project management, vendor coordination, and emergency repairs." },
+          { "title": "Maintenance Technician", "count": "2-10", "level": "Skilled", "reports_to": "Assistant Chief Engineer", "description": "Performs repairs and maintenance on HVAC, plumbing, electrical, carpentry, painting, and general building systems." },
+          { "title": "Pool / Spa Technician", "count": 1, "level": "Skilled", "reports_to": "Assistant Chief Engineer", "description": "Maintains pool and spa water chemistry, filtration systems, heating, and safety equipment." },
+          { "title": "Painter / Groundskeeper", "count": "1-4", "level": "Entry", "reports_to": "Assistant Chief Engineer", "description": "Handles painting, wall repair, and exterior/interior finishing; larger resorts may also include landscaping and grounds maintenance staff." },
+          { "title": "Sustainability / Energy Coordinator", "count": 1, "level": "Skilled", "reports_to": "Chief Engineer", "description": "Manages energy conservation programs, waste reduction, water usage tracking, and green certification compliance." }
+        ]
+      },
+      {
+        "name": "Sales, Marketing & Events",
+        "description": "Drives revenue through group sales, corporate accounts, weddings, social events, and transient demand. Manages brand marketing, public relations, digital presence, and event planning and execution.",
+        "headcount": "5-30",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Director of Sales & Marketing", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Leads all sales, marketing, and event strategy; manages group and corporate sales teams, marketing campaigns, and revenue-driving initiatives." },
+          { "title": "Sales Manager", "count": "2-6", "level": "Senior", "reports_to": "Director of Sales & Marketing", "description": "Develops and manages corporate accounts, group bookings, association business, and travel agent relationships to meet revenue targets." },
+          { "title": "Sales Coordinator", "count": "2-4", "level": "Entry", "reports_to": "Sales Manager", "description": "Supports the sales team with proposal creation, site inspections, contract management, lead tracking, and client communication." },
+          { "title": "Marketing Manager", "count": 1, "level": "Senior", "reports_to": "Director of Sales & Marketing", "description": "Manages brand marketing, advertising, social media, email campaigns, website content, PR, and property photography." },
+          { "title": "Events / Catering Manager", "count": "1-4", "level": "Senior", "reports_to": "Director of Sales & Marketing", "description": "Plans and coordinates events from initial inquiry through execution; manages BEOs (Banquet Event Orders), client communication, and day-of logistics." },
+          { "title": "Events Coordinator", "count": "1-3", "level": "Entry", "reports_to": "Events Manager", "description": "Supports event planning with administrative tasks, vendor coordination, guest communication, and on-site event support." }
+        ]
+      },
+      {
+        "name": "Finance & Accounting",
+        "description": "Manages all financial operations: accounts payable/receivable, payroll, night audit, purchasing, inventory control, and financial reporting. Ensures accurate financial records and internal controls.",
+        "headcount": "3-12",
+        "reports_to": "General Manager / Corporate Finance",
+        "roles": [
+          { "title": "Director of Finance / Controller", "count": 1, "level": "Department Head", "reports_to": "GM / Corporate Finance", "description": "Manages all hotel financial operations: P&L, budgeting, forecasting, cash management, internal controls, and financial reporting to ownership." },
+          { "title": "Assistant Controller", "count": 1, "level": "Senior", "reports_to": "Director of Finance", "description": "Supports financial management with month-end close, journal entries, balance sheet reconciliation, and audit preparation." },
+          { "title": "Accounting Clerk / Staff Accountant", "count": "2-4", "level": "Skilled", "reports_to": "Assistant Controller", "description": "Handles accounts payable, accounts receivable, invoice processing, vendor payments, and daily income audits." },
+          { "title": "Night Auditor", "count": "2-6", "level": "Skilled", "reports_to": "Front Office Manager / Controller", "description": "Completes overnight shift tasks: posts charges, reconciles daily transactions, runs night audit reports, and handles late check-ins." },
+          { "title": "Payroll Coordinator", "count": 1, "level": "Skilled", "reports_to": "Director of Finance", "description": "Processes payroll, manages time and attendance, handles tip distribution, and ensures labor cost reporting accuracy." },
+          { "title": "Purchasing Manager", "count": 1, "level": "Senior", "reports_to": "Director of Finance", "description": "Oversees hotel procurement: vendor selection, contract negotiation, purchase order management, and inventory cost control." }
+        ]
+      },
+      {
+        "name": "Human Resources",
+        "description": "Manages the full employee lifecycle: recruitment, onboarding, training, benefits, payroll support, employee relations, compliance, and workplace culture. Critical in a 24/7 operation with high turnover.",
+        "headcount": "2-8",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Director of Human Resources", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Leads all HR functions: recruitment strategy, employee relations, compensation, benefits administration, training and development, and compliance." },
+          { "title": "HR Manager", "count": 1, "level": "Senior", "reports_to": "Director of HR", "description": "Manages day-to-day HR operations: employee onboarding, investigations, policy enforcement, performance management, and turnover analysis." },
+          { "title": "HR Coordinator / Generalist", "count": "1-2", "level": "Entry", "reports_to": "HR Manager", "description": "Supports recruitment, new hire paperwork, benefits administration, employee records, and internal communications." },
+          { "title": "Training Manager", "count": 1, "level": "Senior", "reports_to": "Director of HR", "description": "Develops and delivers training programs: new hire orientation, service standards, brand training, leadership development, and compliance training." }
+        ]
+      },
+      {
+        "name": "Recreation & Amenities (Resort Only)",
+        "description": "Operates resort recreational facilities including spa, fitness center, pool area, kids club, golf course, tennis, and organized activities. Present primarily in resort and luxury properties.",
+        "headcount": "5-50",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Recreation Director", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Leads all recreational programming, spa, fitness, and activity operations; develops resort activity calendar and manages departmental budget." },
+          { "title": "Spa Manager", "count": 1, "level": "Senior", "reports_to": "Recreation Director", "description": "Manages spa operations: therapist scheduling, treatment menu, retail product sales, spa facility maintenance, and guest experience." },
+          { "title": "Spa Therapist / Massage Therapist", "count": "3-15", "level": "Skilled", "reports_to": "Spa Manager", "description": "Provides spa treatments including massage, facials, body treatments, and nail services to hotel guests." },
+          { "title": "Fitness Center Manager", "count": 1, "level": "Senior", "reports_to": "Recreation Director", "description": "Manages fitness facilities: equipment maintenance, class scheduling, personal training services, and gym cleanliness and safety." },
+          { "title": "Lifeguard / Pool Attendant", "count": "2-10", "level": "Entry", "reports_to": "Recreation Director", "description": "Ensures pool area safety, enforces pool rules, provides towels and amenities, and assists guests at the pool." },
+          { "title": "Kids Club / Activities Coordinator", "count": "2-8", "level": "Skilled", "reports_to": "Recreation Director", "description": "Plans and supervises children's activities, kids club programming, and family-friendly resort events." },
+          { "title": "Golf Course Superintendent (Golf Resorts)", "count": 1, "level": "Department Head", "reports_to": "General Manager", "description": "Manages golf course maintenance, grounds crew, irrigation, turf health, and golf course operations." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Front Office Manager and Executive Housekeeper coordinate daily on room status, VIP arrivals, early check-ins, and departure cleaning priorities.",
+      "Director of Sales & Marketing and Director of F&B collaborate on group booking proposals, catering menus, and event execution.",
+      "Chief Engineer coordinates with all department heads on preventative maintenance scheduling and capital improvement projects.",
+      "Director of Finance works with every department head on budget creation, cost control, and financial performance reviews.",
+      "Reservations Manager and Revenue Manager partner to optimize room pricing and distribution channel strategy.",
+      "Banquet Manager coordinates closely with Sales/Events on BEO execution, room setup, and event timelines.",
+      "Front Desk and Housekeeping communicate housekeeping status updates through the hotel PMS to maximize room turnover efficiency.",
+      "HR Director partners with all department heads on recruitment, employee relations, and compliance in a high-turnover environment.",
+      "Concierge and Recreation Director collaborate on guest activity bookings, tour recommendations, and special experience coordination."
+    ],
+    "org_chart_text": "                    REGIONAL VP / OWNERSHIP\n                           |\n                   GENERAL MANAGER\n        /         /          |           \\           \\\n   DIR OF     DIR OF     CHIEF       DIR OF        DIR OF\n   ROOMS      F&B        ENGINEER    SALES&MKTG    FINANCE\n      |         |           |           |             |\n   EXEC       EXEC       ASST CHIEF   SALES MGR    CONTROLLER\n   HOUSE-     CHEF       ENGINEER     (Corporate)     |\n   KEEPER        |          |         EVENTS MGR   ACCTG\n   FRONT       SOUS      MAINT       MKTG MGR      CLERKS\n   OFFICE      CHEFS     TECHS          |\n   MGR         /  \\                  SALES\n   CONCIERGE  BANQ F&B               COORDS\n   BELL       MGR  OUTLETS\n   RESERV       |\n              STEWARDS\n\n   HR: DIR HR -> HR MGR -> COORD\n   \n   (RESORT ADDITIONS: REC DIR -> SPA, FITNESS, POOL, KIDS CLUB)"
+  }
+}

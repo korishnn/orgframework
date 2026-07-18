@@ -1,0 +1,95 @@
+{
+  "preset": "founder-departure",
+  "name": "Founder / CEO Departure",
+  "description": "Executive transition response structure. Activates when a founder or CEO announces departure, is removed by board, or is incapacitated. Requires rapid governance action, clear succession messaging, and organization-wide stability communication.",
+  "trigger_conditions": [
+    "Founder/CEO announces resignation or retirement",
+    "Board votes to remove CEO for cause or performance",
+    "CEO incapacitated by medical emergency or death",
+    "CEO arrested or under criminal investigation",
+    "CEO misconduct allegation requiring leave or termination",
+    "Founder exercises contractual right to step back from operations (e.g., CTO → advisor)",
+    "Acquisition closes and CEO transition is planned",
+    "Co-founder dispute results in separation"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "Board Chair or Lead Independent Director",
+      "responsibilities": [
+        "Governance authority — convene board meeting within 24 hours",
+        "Lead CEO succession process (interim and permanent)",
+        "Approve all external communications about the transition",
+        "Manage board-level stakeholder communications",
+        "Ensure fiduciary duties are met (care, loyalty, disclosure)",
+        "Liaise with major investors and institutional shareholders"
+      ]
+    },
+    "ops_lead": {
+      "role": "COO (or most senior functional executive if no COO)",
+      "responsibilities": [
+        "Maintain operational continuity during transition",
+        "Manage day-to-day decision authority gaps",
+        "Coordinate with interim CEO on handover",
+        "Ensure employee stability — payroll, benefits, operations uninterrupted",
+        "Identify at-risk key talent who may depart during uncertainty",
+        "Run daily operations standup until new CEO is settled"
+      ]
+    },
+    "comms_lead": {
+      "role": "CMO / Head of Communications",
+      "responsibilities": [
+        "Craft internal and external messaging strategy",
+        "Draft press release announcing departure and transition plan",
+        "Coordinate staff town hall with outgoing and incoming leadership",
+        "Manage media narrative — frame departure on organizational terms",
+        "Customer reassurance messaging (email, partner outreach)",
+        "Social media transition plan (founder accounts, brand accounts)"
+      ]
+    },
+    "legal_lead": {
+      "role": "General Counsel + External Securities Counsel (if public)",
+      "responsibilities": [
+        "Review founder/CEO employment agreement for transition terms",
+        "Negotiate separation agreement (non-disparagement, transition period, equity treatment)",
+        "Prepare SEC 8-K filing (if public company) within 4 business days",
+        "Review board resolutions for CEO transition",
+        "Advise on fiduciary duties and conflict of interest during transition",
+        "Manage insider trading restrictions during material non-public information period"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. Board meeting within 24 hours — formalize departure, appoint interim CEO, authorize search committee",
+    "2. Review founder/CEO contract — equity vesting, severance, non-compete, board seat, transition period",
+    "3. Appoint interim CEO immediately — internal candidate preferred for stability",
+    "4. Draft press release coordinated with departing founder — agree on narrative and framing",
+    "5. Staff town hall within 48 hours — outgoing and incoming leadership address organization together",
+    "6. Customer reassurance email — emphasize stability, vision continuity, and service commitments",
+    "7. Investor call — institutional investors and major shareholders briefed before public announcement",
+    "8. Board communication sent to all directors with transition plan timeline",
+    "9. Launch permanent CEO search — engage executive search firm (Heidrick & Struggles, Spencer Stuart, etc.)",
+    "10. Retain departing founder as advisor if appropriate — knowledge transfer and continuity",
+    "11. Announce org structure stability — no immediate org changes during transition unless triggered by CEO departure",
+    "12. Monitor employee retention risk — identify and engage critical talent with retention packages if needed"
+  ],
+  "communication_protocol": {
+    "internal": "All-staff email from CEO/Interim CEO day of announcement. Town hall within 48 hours. Weekly all-hands during transition. Department-level Q&A sessions. Anonymous feedback channel for employee concerns. No speculation about future leadership decisions shared internally before board approval.",
+    "external": "Press release coordinated with departing founder. Single spokesperson (Board Chair or incoming CEO). No interviews without Comms Lead approval. Customer communication emphasizes continuity. Social media posts coordinated across founder, company, and leadership accounts.",
+    "cadence": "Crisis Lead — board updates daily during first week, then weekly. Staff town hall within 48 hours, then bi-weekly. Press statements as needed per news cycle."
+  },
+  "escalation_timeline": {
+    "t0_24hr": "Board meeting convened → Interim CEO appointed → Press release drafted → Key stakeholders identified for pre-notification",
+    "t24_48hr": "Public announcement → Staff town hall → Customer email → Key partners notified → Social media transition executed",
+    "t48hr_1wk": "Investor calls → Executive search initiated → Board committee formed → Employee Q&A sessions → Media monitoring",
+    "t1wk_30d": "Search process underway → Interim CEO settles → Org stability maintained → Succession plan timeline communicated",
+    "t30_90d": "Permanent CEO selected → Announcement → Onboarding → Transition from interim → Full handover"
+  },
+  "key_contacts": [
+    "Executive Search Firm: [contact at Heidrick, Spencer Stuart, etc.]",
+    "External Securities Counsel (if public): [phone]",
+    "Board of Directors Directory: [contact list maintained by Corporate Secretary]",
+    "Major Institutional Investors: [IR team maintains list]",
+    "PR Agency (executive comms): [phone]",
+    "Compensation Consultant (executive comp/severance): [phone]"
+  ]
+}

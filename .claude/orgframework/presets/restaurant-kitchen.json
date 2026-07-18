@@ -1,0 +1,84 @@
+{
+  "preset": "restaurant-kitchen",
+  "version": "1.0",
+  "name": "Restaurant / Kitchen Brigade System",
+  "description": "Classical French or modern kitchen brigade combined with front-of-house restaurant operations. Back-of-house runs on a strict hierarchy from Executive Chef down through Sous Chefs, Chef de Partie (line cooks by station), and Commis (apprentices). Front-of-house is led by the General Manager with Servers, Bartenders, and Bussers. The Owner or GM sits at the top, bridging both sides.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["restaurant", "hospitality", "food-service", "catering"], "stages": ["opening", "operations", "expansion"] },
+  "headcount_range": "10-100",
+  "org_structure": {
+    "overview": "The restaurant organizational structure is a dual-chain system: back-of-house (kitchen brigade) and front-of-house (service team) operate semi-independently but must coordinate tightly during service. The kitchen follows the classical brigade hierarchy originated by Escoffier, with each Chef de Partie owning a specific station. Modern kitchens may consolidate stations but retain the rank structure. Front-of-house manages guest experience from arrival through departure. The Owner or General Manager sits at the apex, with the Executive Chef and GM as the two senior operational leaders. The structure can flex from a 10-person fast-casual team to a 100-person fine-dining brigade.",
+    "departments": [
+      {
+        "name": "Executive Leadership / Ownership",
+        "description": "Highest-level decision makers setting the restaurant concept, financial strategy, culture, and standards. May be owner-operator or separate ownership and management.",
+        "headcount": "1-4",
+        "reports_to": "Investors / Board",
+        "roles": [
+          { "title": "Owner / Operator", "count": "1-2", "level": "Executive", "reports_to": "Investors / Board", "description": "Ultimate authority for the restaurant; sets concept, brand, financial targets, and major strategic decisions. May also serve as GM or Executive Chef in smaller operations." },
+          { "title": "General Manager", "count": 1, "level": "Executive", "reports_to": "Owner", "description": "Senior operational leader overseeing both front and back of house; manages P&L, staffing, guest experience standards, and vendor relationships." },
+          { "title": "Restaurant Manager", "count": "1-3", "level": "Senior", "reports_to": "General Manager", "description": "Supports the GM in daily operations; handles shift management, opening/closing procedures, inventory, and staff scheduling." },
+          { "title": "Sommelier / Beverage Director", "count": "1-2", "level": "Senior", "reports_to": "General Manager", "description": "Curates wine list and beverage program; trains staff on wine service, manages cellar inventory, and assists guests with pairings." }
+        ]
+      },
+      {
+        "name": "Back of House / Kitchen Brigade",
+        "description": "Heart of the restaurant operation; creates the menu, preps ingredients, and executes every dish to standard during service. Led by the Executive Chef with Sous Chefs as lieutenants and Chefs de Partie owning specific stations such as saute, grill, pastry, and cold kitchen.",
+        "headcount": "5-50",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Executive Chef", "count": 1, "level": "Executive", "reports_to": "Owner / GM", "description": "Creates the menu, sets culinary standards, manages kitchen budget and food cost, hires kitchen staff, and oversees all food output. The senior culinary authority." },
+          { "title": "Head Chef / Chef de Cuisine", "count": 1, "level": "Senior", "reports_to": "Executive Chef", "description": "Runs the kitchen day-to-day; manages service, enforces recipes and plating standards, oversees all stations, and handles kitchen administration." },
+          { "title": "Sous Chef", "count": "1-3", "level": "Senior", "reports_to": "Chef de Cuisine", "description": "Second-in-command in the kitchen; expedites during service, trains junior cooks, manages inventory and ordering, and covers any station as needed." },
+          { "title": "Junior Sous Chef", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Supports the Sous Chef with line management and service execution; typically responsible for specific sections or shifts." },
+          { "title": "Chef de Partie (Saute)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Owns the saute station: pan-frying, searing, and finishing proteins and sauces over high heat. Must work fast and precisely under pressure." },
+          { "title": "Chef de Partie (Grill)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Operates the grill station; responsible for cooking meats, fish, and vegetables over open flame or plancha to precise doneness specifications." },
+          { "title": "Chef de Partie (Garde Manger)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Runs the cold kitchen: salads, cold appetizers, charcuterie, terrines, and cold plated dishes. Also responsible for pantry organization." },
+          { "title": "Chef de Partie (Pastry)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Creates all desserts, baked goods, breads, and pastry components. May work separate hours from the main line." },
+          { "title": "Chef de Partie (Entremetier)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Manages vegetable, starch, and egg dishes; often prepares soups, stocks, and hot appetizers as well." },
+          { "title": "Chef de Partie (Poissonnier)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Specialist fish station; handles all seafood preparation and cooking including filleting, scaling, and precise fish cookery." },
+          { "title": "Chef de Partie (Tournant)", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef", "description": "Float/swing cook who can work any station; fills in for absences and covers the busiest sections during peak service." },
+          { "title": "Commis / Line Cook", "count": "2-8", "level": "Entry", "reports_to": "Chef de Partie", "description": "Entry-level kitchen position; assists the station's Chef de Partie with prep, mise en place, basic cooking tasks, and cleanup. Primary path to advancing in the brigade." },
+          { "title": "Kitchen Porter / Dishwasher", "count": "2-6", "level": "Entry", "reports_to": "Sous Chef", "description": "Maintains kitchen cleanliness, washes dishes and equipment, stocks supplies, and supports the kitchen team with basic prep and waste management." }
+        ]
+      },
+      {
+        "name": "Front of House",
+        "description": "Responsible for the entire guest-facing experience from arrival, seating, service, and departure. Sets the tone and pace of the dining experience and directly impacts guest satisfaction and revenue.",
+        "headcount": "4-40",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Head Server / Captain", "count": "1-3", "level": "Senior", "reports_to": "General Manager", "description": "Leads the service team during shifts; assigns sections, briefs on menu specials, handles VIP tables, and manages the flow of the floor." },
+          { "title": "Server / Waiter", "count": "3-20", "level": "Skilled", "reports_to": "Head Server", "description": "Primary guest contact: takes orders, describes menu items, delivers food and beverages, handles payment, and ensures guest satisfaction throughout the meal." },
+          { "title": "Server Assistant / Busser", "count": "2-8", "level": "Entry", "reports_to": "Head Server", "description": "Supports servers by clearing tables, refilling water, polishing silverware, resetting tables, and assisting with runner duties." },
+          { "title": "Expediter / Announcer", "count": "1-2", "level": "Skilled", "reports_to": "Sous Chef / Head Server", "description": "Bridges kitchen and front-of-house; calls out finished plates, checks plating quality, communicates modifications, and manages ticket timing." },
+          { "title": "Food Runner", "count": "2-6", "level": "Entry", "reports_to": "Expediter", "description": "Delivers finished plates from kitchen pass to the correct tables; communicates special requests and ensures hot food arrives immediately." },
+          { "title": "Host / Maitre d'Hotel", "count": "1-3", "level": "Skilled", "reports_to": "General Manager", "description": "Manages reservations, greets guests upon arrival, seats parties, controls dining room flow, and manages wait times." },
+          { "title": "Bartender", "count": "2-6", "level": "Skilled", "reports_to": "General Manager / Beverage Director", "description": "Prepares and serves alcoholic and non-alcoholic beverages; manages bar inventory, creates cocktail menus, and may serve bar-top guests directly." },
+          { "title": "Barback", "count": "1-3", "level": "Entry", "reports_to": "Bartender", "description": "Supports bartenders by restocking liquor, ice, and garnishes; cleans glassware, maintains bar cleanliness, and assists with keg changes." }
+        ]
+      },
+      {
+        "name": "Support / Admin",
+        "description": "Non-service staff that keep the business running: accounting, marketing, HR, and facilities management. Often shared across multiple locations in larger restaurant groups.",
+        "headcount": "2-8",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Restaurant Administrator", "count": 1, "level": "Senior", "reports_to": "General Manager", "description": "Handles payroll, accounts payable/receivable, vendor payments, and financial reporting. May also manage HR records and compliance." },
+          { "title": "Marketing Coordinator", "count": "1-2", "level": "Skilled", "reports_to": "General Manager", "description": "Manages social media, email campaigns, event promotion, PR relationships, and local advertising to drive traffic and brand awareness." },
+          { "title": "Facilities / Maintenance", "count": 1, "level": "Skilled", "reports_to": "General Manager", "description": "Maintains all restaurant equipment, HVAC, plumbing, electrical systems; manages repairs and vendor maintenance contracts." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Executive Chef and General Manager meet daily to align on food cost, labor targets, guest feedback, and operational issues.",
+      "Chef de Cuisine and Sous Chefs communicate constantly during service via the expo line to coordinate timing across all stations.",
+      "Expediter bridges front and back of house, communicating modifications, dietary restrictions, and service pace between the kitchen and serving team.",
+      "Sous Chef and Head Server coordinate on table timing and pacing to ensure the kitchen can handle the volume of incoming orders.",
+      "Chef de Partie and their Commis have a mentorship dynamic typical of the brigade system, with on-the-job training and skill progression.",
+      "Sommelier coordinates with both the kitchen (food pairings) and the service team (wine recommendations and service standards).",
+      "Bartender and Barback work in tandem during service, with the barback ensuring the bartender never runs out of stock.",
+      "Kitchen Porter and all Chefs de Partie depend on each other: cooks need clean equipment and the porter needs proper scraping and sorting from cooks."
+    ],
+    "org_chart_text": "                    OWNER / INVESTORS\n                           |\n                   GENERAL MANAGER\n                    /          \\\n          EXECUTIVE CHEF      GM / RESTAURANT MGR\n               |              /    |      |     \\\n        CHEF DE CUISINE   MGR   HEAD  HEAD   BEV\n               |                 SERVER HOST   DIR\n          SOUS CHEF               |     |\n      /   |    |    \\         SERVERS HOSTS\n      PM   GR   GM   PA\n      DEPT DEPT DEPT DEP\n      |    |    |    |\n      CDP  CDP  CDP  CDP (Saute, Grill, Garde Manger, Pastry, etc.)\n      |    |    |    |\n    COMMIS / LINE COOKS\n      |\n    KITCHEN PORTERS\n\n    FRONT OF HOUSE:\n    HEAD SERVER -> SERVERS -> RUNNERS\n    MAITRE D -> HOSTS\n    BARTENDER -> BARBACKS\n    EXPEDITER -> FOOD RUNNERS"
+  }
+}

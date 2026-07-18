@@ -1,0 +1,120 @@
+{
+  "preset": "hospital-system",
+  "version": "1.0",
+  "name": "Hospital / Health System",
+  "description": "Comprehensive hospital or multi-facility health system with full clinical, administrative, and support services. Designed for acute-care hospitals, medical centers, and integrated delivery networks operating under strict regulatory frameworks (HIPAA, JCI, CMS).",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["enterprise"] },
+  "headcount_range": "200-10000+",
+  "org_structure": {
+    "overview": "The hospital or health system is organized under a dual governance model balancing clinical authority (medical staff / chief of staff) with administrative leadership (CEO / hospital administration). Clinical chiefs report through the Chief of Staff for credentialing and clinical quality, while administrative leaders report through the CEO for operational and financial performance. This matrix creates shared accountability for patient outcomes, regulatory compliance, and fiscal stewardship. Departments span inpatient and outpatient care, diagnostic services, support services, and corporate functions.",
+    "departments": [
+      {
+        "name": "Executive Leadership",
+        "description": "C-suite and senior leadership setting strategic direction, financial performance, and organizational culture. Responsible for board reporting, community relations, and enterprise-wide decision-making.",
+        "headcount": "5-15",
+        "reports_to": "Board of Directors",
+        "roles": [
+          { "title": "Chief Executive Officer (CEO)", "count": 1, "level": "Executive", "reports_to": "Board of Directors", "description": "Overall strategic leader; ultimate accountability for quality of care, financial health, and regulatory compliance." },
+          { "title": "Chief Operating Officer (COO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Oversees day-to-day hospital operations, ancillaries, and support services through department directors." },
+          { "title": "Chief Financial Officer (CFO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Financial planning, revenue cycle management, budgeting, payer contracting, and treasury." },
+          { "title": "Chief Nursing Officer (CNO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Nursing practice standards, nursing workforce, patient care delivery across all inpatient units." },
+          { "title": "Chief Medical Officer / Chief of Staff", "count": 1, "level": "Executive", "reports_to": "CEO / Medical Board", "description": "Physician leadership, clinical quality, credentialing, medical staff governance." },
+          { "title": "Chief Information Officer (CIO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Health IT, EHR systems (Epic/Cerner), cybersecurity, data analytics." },
+          { "title": "Chief Compliance Officer", "count": 1, "level": "Executive", "reports_to": "CEO / Legal", "description": "Regulatory compliance, HIPAA privacy/security, accreditation, risk management." },
+          { "title": "Chief Human Resources Officer (CHRO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Workforce planning, labor relations, recruitment, benefits, employee health." }
+        ]
+      },
+      {
+        "name": "Clinical / Medical Staff",
+        "description": "Organized medical staff governing clinical care delivery. Department chairs oversee their specialty, while attending physicians, residents, and fellows provide direct patient care.",
+        "headcount": "50-2000+",
+        "reports_to": "Chief of Staff / Medical Board",
+        "roles": [
+          { "title": "Department Chair — Internal Medicine", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Clinical and administrative leadership for internal medicine; oversees hospitalists and subspecialties." },
+          { "title": "Department Chair — Surgery", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Clinical and administrative leadership for surgical services including general, orthopedic, cardiovascular, and neuro surgery." },
+          { "title": "Department Chair — Emergency Medicine", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Leadership of the emergency department; board-certified emergency physician managing ED physicians and throughput." },
+          { "title": "Department Chair — Pediatrics", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Clinical leadership for pediatric services including NICU if applicable." },
+          { "title": "Department Chair — OB/GYN", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Women's health services including labor and delivery, gynecologic surgery." },
+          { "title": "Department Chair — Radiology", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Imaging services oversight; ensures quality and safety of all diagnostic and interventional radiology." },
+          { "title": "Department Chair — Pathology & Laboratory Medicine", "count": 1, "level": "Chair", "reports_to": "Chief of Staff", "description": "Clinical pathology, anatomic pathology, transfusion services, and lab operations." },
+          { "title": "Attending Physician — Hospitalist", "count": "5-50", "level": "Attending / IC", "reports_to": "Department Chair — Internal Medicine", "description": "Inpatient internal medicine; manages hospitalized patients including admissions, daily rounds, and discharges." },
+          { "title": "Attending Physician — Specialist", "count": "5-100", "level": "Attending / IC", "reports_to": "Department Chair (respective)", "description": "Subspecialty physician (cardiology, neurology, oncology, gastroenterology, etc.) providing consultative and procedural care." },
+          { "title": "Resident Physician", "count": "10-100", "level": "Trainee", "reports_to": "Program Director / Attending", "description": "Physician in postgraduate training rotating through specialties under attending supervision." },
+          { "title": "Fellow", "count": "2-20", "level": "Trainee", "reports_to": "Program Director / Attending", "description": "Subspecialty trainee post-residency (e.g., cardiology, critical care, oncology)." }
+        ]
+      },
+      {
+        "name": "Nursing Services",
+        "description": "All inpatient and outpatient nursing units. Includes med-surg, ICU, ED, OR, maternal-child, and specialty nursing areas.",
+        "headcount": "100-2000+",
+        "reports_to": "CNO",
+        "roles": [
+          { "title": "Director of Nursing — Medical-Surgical", "count": 1, "level": "Director", "reports_to": "CNO", "description": "Oversees multiple med-surg units; manages nurse managers and patient throughput." },
+          { "title": "Director of Nursing — Critical Care", "count": 1, "level": "Director", "reports_to": "CNO", "description": "Oversees ICU, CCU, and intermediate care units; ensures staffing and quality in high-acuity areas." },
+          { "title": "Director of Nursing — Perioperative Services", "count": 1, "level": "Director", "reports_to": "CNO", "description": "Operating room, PACU, and ambulatory surgery nursing services." },
+          { "title": "Nurse Manager — Med-Surg Unit", "count": "3-10", "level": "Manager", "reports_to": "Director of Nursing", "description": "Day-to-day operations of a specific nursing unit; staffing, scheduling, patient safety, and unit budget." },
+          { "title": "Registered Nurse (RN) — Staff Nurse", "count": "50-1000", "level": "IC", "reports_to": "Nurse Manager", "description": "Direct patient care including assessment, medication administration, care planning, and patient education." },
+          { "title": "Licensed Practical Nurse (LPN)", "count": "10-100", "level": "IC", "reports_to": "Nurse Manager", "description": "Provides basic nursing care under RN supervision; vital signs, wound care, medication administration where licensed." },
+          { "title": "Certified Nursing Assistant (CNA)", "count": "20-200", "level": "IC", "reports_to": "Nurse Manager", "description": "ADL assistance, vital signs, mobility support, and basic patient care tasks under nursing supervision." },
+          { "title": "Clinical Nurse Educator", "count": "2-10", "level": "IC / Specialist", "reports_to": "CNO / Nursing Director", "description": "Orientation, continuing education, competency assessment, and evidence-based practice implementation for nursing staff." }
+        ]
+      },
+      {
+        "name": "Allied Health & Diagnostic Services",
+        "description": "Clinical services delivered by non-physician, non-nursing licensed professionals. Includes rehabilitation, respiratory therapy, imaging, and laboratory.",
+        "headcount": "30-300",
+        "reports_to": "COO / Clinical Operations",
+        "roles": [
+          { "title": "Director of Rehabilitation Services", "count": 1, "level": "Director", "reports_to": "COO", "description": "Oversees physical therapy, occupational therapy, and speech-language pathology." },
+          { "title": "Physical Therapist (PT)", "count": "5-30", "level": "IC", "reports_to": "Rehab Director", "description": "Evaluation and treatment of patients with mobility and functional limitations." },
+          { "title": "Occupational Therapist (OT)", "count": "3-15", "level": "IC", "reports_to": "Rehab Director", "description": "Helps patients regain daily living skills and functional independence." },
+          { "title": "Speech-Language Pathologist (SLP)", "count": "2-10", "level": "IC", "reports_to": "Rehab Director", "description": "Assessment and treatment of swallowing, communication, and cognitive-communication disorders." },
+          { "title": "Respiratory Therapist", "count": "5-30", "level": "IC", "reports_to": "Director of Respiratory Care", "description": "Pulmonary function testing, ventilator management, oxygen therapy, and emergency airway support." },
+          { "title": "Clinical Lab Scientist / Technologist", "count": "5-40", "level": "IC", "reports_to": "Pathology Chair / Lab Director", "description": "Performs diagnostic testing on patient specimens in hematology, chemistry, microbiology, and blood bank." },
+          { "title": "Radiologic Technologist", "count": "10-50", "level": "IC", "reports_to": "Radiology Chair / Imaging Director", "description": "Performs X-ray, CT, MRI, ultrasound, and other diagnostic imaging procedures." },
+          { "title": "Pharmacist — Clinical", "count": "5-20", "level": "IC", "reports_to": "Pharmacy Director", "description": "Medication order review, clinical consultation, pharmacokinetic dosing, antimicrobial stewardship, patient education." },
+          { "title": "Pharmacy Technician", "count": "5-20", "level": "IC", "reports_to": "Pharmacy Director", "description": "Medication preparation, inventory management, and pharmacy operations under pharmacist supervision." }
+        ]
+      },
+      {
+        "name": "Support & Ancillary Services",
+        "description": "Non-clinical services critical to hospital operations: dietary, environmental, facilities, security, supply chain.",
+        "headcount": "50-500",
+        "reports_to": "COO",
+        "roles": [
+          { "title": "Director of Environmental Services", "count": 1, "level": "Director", "reports_to": "COO", "description": "Housekeeping, linen, waste management, infection control support through environmental cleaning." },
+          { "title": "Director of Food & Nutrition Services", "count": 1, "level": "Director", "reports_to": "COO", "description": "Patient meal services, cafeteria operations, clinical nutrition / dietetics, and therapeutic diets." },
+          { "title": "Director of Facilities & Engineering", "count": 1, "level": "Director", "reports_to": "COO", "description": "Building maintenance, HVAC, medical gas systems, electrical, plumbing, life safety systems." },
+          { "title": "Director of Security & Safety", "count": 1, "level": "Director", "reports_to": "COO", "description": "Hospital security, access control, emergency preparedness, workplace violence prevention." },
+          { "title": "Registered Dietitian", "count": "3-15", "level": "IC", "reports_to": "Food & Nutrition Director", "description": "Medical nutrition therapy, patient nutritional assessment, enteral/parenteral nutrition support." },
+          { "title": "Environmental Services Technician", "count": "20-200", "level": "IC", "reports_to": "EVS Director", "description": "Room cleaning, waste disposal, terminal cleaning of patient rooms and OR suites." },
+          { "title": "Facilities Technician", "count": "5-30", "level": "IC", "reports_to": "Facilities Director", "description": "Maintenance and repair of hospital building systems and equipment." }
+        ]
+      },
+      {
+        "name": "Revenue Cycle & Finance",
+        "description": "Financial operations including patient billing, coding, insurance reimbursement, payer contracting, and materials management.",
+        "headcount": "20-200",
+        "reports_to": "CFO",
+        "roles": [
+          { "title": "Director of Revenue Cycle", "count": 1, "level": "Director", "reports_to": "CFO", "description": "Patient registration, charge capture, coding, billing, collections, and denial management." },
+          { "title": "Certified Medical Coder", "count": "5-30", "level": "IC", "reports_to": "Revenue Cycle Director", "description": "Translates clinical documentation into ICD-10 and CPT codes for billing and reimbursement." },
+          { "title": "Patient Account Representative", "count": "5-30", "level": "IC", "reports_to": "Revenue Cycle Director", "description": "Patient billing, insurance follow-up, payment posting, and account resolution." },
+          { "title": "Financial Analyst", "count": "2-10", "level": "IC", "reports_to": "CFO / Finance Director", "description": "Budgeting, financial modeling, cost accounting, variance analysis, and decision support." },
+          { "title": "Supply Chain Manager", "count": 1, "level": "Manager", "reports_to": "CFO / COO", "description": "Procurement, inventory management, group purchasing organization (GPO) administration, and vendor contracting." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Chief of Staff (physician leader) and CEO (administrative leader) share joint accountability for quality outcomes and patient safety — a foundational hospital governance relationship.",
+      "Department Chairs report to the Chief of Staff for clinical credentials and quality, but coordinate with the COO for resource allocation, staffing, and operational budget.",
+      "CNO and Chief of Staff collaborate on nurse-physician communication protocols, code response teams, and patient experience initiatives.",
+      "Compliance Officer works across all departments to ensure HIPAA privacy, JCI/CMS accreditation standards, and fraud/abuse prevention.",
+      "Revenue Cycle Director partners with Clinical Departments for accurate charge capture and documentation integrity (CDI).",
+      "Pharmacy Director reports to the Chief of Staff clinically but coordinates with COO on budget and operations; works closely with nursing on medication safety.",
+      "Environmental Services and Nursing collaborate daily on room turnaround, infection control, and isolation protocols.",
+      "Emergency Department Chair and Director of Nursing — Emergency maintain joint oversight of ED throughput, boarding, and disaster response."
+    ],
+    "org_chart_text": "                                       ┌─────────────────┐\n                                       │  Board of       │\n                                       │  Directors      │\n                                       └────────┬────────┘\n                                                │\n                                 ┌──────────────┼──────────────────┐\n                                 │              │                  │\n                    ┌────────────┴───┐   ┌──────┴──────┐   ┌──────┴──────────┐\n                    │  Chief of      │   │    CEO      │   │  Medical Board  │\n                    │  Staff         │   │             │   │  (Governance)   │\n                    └───────┬────────┘   └──┬───┬───┬──┘   └─────────────────┘\n                            │              │   │   │\n          ┌─────────────────┼──┐    ┌──────┘   │   └──────────┐\n          │                 │  │    │          │              │\n    ┌─────┴──────┐  ┌──────┴──┴──┐ │  ┌───────┴──────┐  ┌───┴──────────┐\n    │Dept. Chairs │  │Attending   │ │  │    CFO       │  │    CNO       │\n    │(IM, Surgery,│  │Physicians  │ │  │              │  │              │\n    │EM, Peds...) │  │+ Residents │ │  └──────┬───────┘  └──────┬───────┘\n    └──────┬──────┘  └────────────┘ │         │                 │\n           │                       │  ┌──────┴──────┐  ┌──────┴───────┐\n           │                       │  │Revenue Cycle│  │Nursing       │\n    ┌──────┴──────┐                │  │Finance      │  │Managers      │\n    │Pathology    │                │  │Supply Chain │  │Staff RNs     │\n    │Radiology    │                │  └─────────────┘  │CNAs, LPNs    │\n    │Pharmacy     │                │                   └──────────────┘\n    └─────────────┘                │\n                          ┌───────┴────────┐\n                          │      COO       │\n                          └──┬─────┬─────┬──┘\n                             │     │     │\n                    ┌────────┴┐ ┌──┴───┐ ┌┴──────────┐\n                    │Allied  │ │Lab + │ │Support:    │\n                    │Health  │ │Imaging│ │EVS, Food,  │\n                    │(PT, OT,│ └──────┘ │Facilities, │\n                    │RT, SLP)│          │Security    │\n                    └────────┘          └────────────┘"
+  }
+}

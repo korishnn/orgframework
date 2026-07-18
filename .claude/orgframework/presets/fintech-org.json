@@ -1,0 +1,208 @@
+{
+  "preset": "fintech-org",
+  "version": "1.0",
+  "name": "Fintech Organization",
+  "description": "For fintech companies at any stage where compliance, risk, and regulatory requirements are embedded in every department. Strong regulatory reporting lines with the Head of Compliance/Legal holding a dotted-line relationship to the board. KYC/AML, Fraud, and Payments teams are first-class citizens alongside product teams. Suitable for companies regulated by BaFin, FCA, SEC, or equivalent bodies.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["fintech"],
+    "stages": ["startup", "scaleup", "enterprise"]
+  },
+  "headcount_range": "10-500+",
+  "org_structure": {
+    "overview": "Fintech orgs are defined by the tension between speed and safety. The philosophy is 'compliance as a product enabler, not a blocker' — regulatory and risk functions are embedded in product teams rather than isolated in a separate silo that gates releases. The second line of defense (Risk, Compliance, Legal) has independence and authority, including the ability to stop a product launch. The third line (Internal Audit) reports independently to the board audit committee. Key functions unique to fintech include: KYC/AML operations, fraud detection and prevention, payments/financial operations (finops), and regulatory reporting. Technology teams must include deep security architecture and often require dedicated regulatory engineering (RegEng) to build compliance into the platform.",
+    "departments": [
+      {
+        "name": "Executive & Regulatory Leadership",
+        "description": "C-suite with regulatory accountability. The CEO often holds a regulated status (e.g., Approved Person under FCA). Direct regulatory reporting lines built into the org.",
+        "headcount": "2-5",
+        "reports_to": "Board of Directors",
+        "roles": [
+          {
+            "title": "Chief Executive Officer (CEO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "Board of Directors",
+            "description": "Ultimate regulatory accountability. Often a regulated individual under applicable financial services law. Owns the relationship with the primary regulator."
+          },
+          {
+            "title": "Chief Risk Officer (CRO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO (operational) / Board (fiduciary)",
+            "description": "Owns the enterprise risk management framework, including credit risk, operational risk, liquidity risk, and regulatory risk. Independent from revenue-generating functions."
+          },
+          {
+            "title": "Chief Compliance Officer (CCO)",
+            "count": 1,
+            "level": "C-Suite / VP",
+            "reports_to": "CEO / General Counsel",
+            "description": "Owns regulatory compliance program, AML/CFT framework, licensing obligations, and regulatory reporting. Dotted line to board."
+          }
+        ]
+      },
+      {
+        "name": "Legal & Compliance",
+        "description": "Legal advisory, regulatory compliance, and corporate governance. May be separate departments at scale, combined at earlier stages.",
+        "headcount": "3-20",
+        "reports_to": "CEO / Board",
+        "roles": [
+          {
+            "title": "General Counsel",
+            "count": 1,
+            "level": "Head / VP",
+            "reports_to": "CEO",
+            "description": "Corporate legal, contracts, IP, regulatory engagement, and litigation management. Advises board on governance."
+          },
+          {
+            "title": "Head of Regulatory Compliance",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "General Counsel / CCO",
+            "description": "Manages regulatory licensing, compliance monitoring, regulatory change management, and examiner relationships."
+          },
+          {
+            "title": "AML / KYC Officer",
+            "count": "1-3",
+            "level": "IC / Manager",
+            "reports_to": "Head of Regulatory Compliance",
+            "description": "Owns AML/CFT program, suspicious activity monitoring, KYC procedures, and sanctions screening."
+          },
+          {
+            "title": "Privacy Counsel / Data Protection Officer",
+            "count": 1,
+            "level": "IC / Head",
+            "reports_to": "General Counsel",
+            "description": "GDPR/CCPA compliance, data privacy framework, privacy impact assessments, and data subject request handling."
+          }
+        ]
+      },
+      {
+        "name": "Risk Management",
+        "description": "Independent risk function covering credit, fraud, operational, and liquidity risk. Develops risk appetite framework and monitors adherence.",
+        "headcount": "3-15",
+        "reports_to": "CRO",
+        "roles": [
+          {
+            "title": "Head of Credit Risk",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "CRO",
+            "description": "Credit underwriting strategy, credit scoring models, portfolio monitoring, and provisioning (IFRS 9 / CECL)."
+          },
+          {
+            "title": "Head of Fraud Risk",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "CRO",
+            "description": "Fraud detection strategy, fraud modeling, real-time transaction monitoring rules, and investigation team."
+          },
+          {
+            "title": "Fraud Analyst / Investigator",
+            "count": "2-8",
+            "level": "IC",
+            "reports_to": "Head of Fraud Risk",
+            "description": "Reviews flagged transactions, conducts investigations, files SARs, and tunes fraud detection rules."
+          },
+          {
+            "title": "Operational Risk Manager",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "CRO",
+            "description": "Risk and control self-assessments (RCSAs), loss event capture, business continuity planning, and third-party risk management."
+          }
+        ]
+      },
+      {
+        "name": "Payments & Financial Operations (FinOps)",
+        "description": "Owns the payment infrastructure, settlement, reconciliation, treasury, and banking partnerships. Critical for maintaining money transmission licenses.",
+        "headcount": "3-15",
+        "reports_to": "CFO / CRO",
+        "roles": [
+          {
+            "title": "Head of Payments / FinOps",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "CFO",
+            "description": "Payment operations, scheme relationships (Visa, Mastercard, SEPA, Swift), settlement, and reconciliation."
+          },
+          {
+            "title": "Treasury Manager",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "Head of Payments",
+            "description": "Liquidity management, bank account structure, payment routing optimization, and FX management."
+          },
+          {
+            "title": "Payments Operations Analyst",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "Head of Payments",
+            "description": "Daily reconciliation, exception handling, settlement monitoring, and payment failure investigation."
+          },
+          {
+            "title": "Banking Partnerships Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "CFO / Head of Payments",
+            "description": "Manages relationships with sponsor banks, correspondent banks, and payment partners. Leads due diligence and onboarding."
+          }
+        ]
+      },
+      {
+        "name": "Product & Engineering (Fintech)",
+        "description": "Product teams own customer-facing financial products (payments, lending, cards, investments). Strong security and compliance engineering practices embedded in each squad.",
+        "headcount": "15-200",
+        "reports_to": "CEO / CPTO",
+        "roles": [
+          {
+            "title": "VP of Product (Fintech)",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO / CPTO",
+            "description": "Product strategy for financial products. Deep understanding of financial regulation and market structure for each product line."
+          },
+          {
+            "title": "Product Manager (Lending / Payments / Cards / Investing)",
+            "count": "3-8",
+            "level": "IC",
+            "reports_to": "VP of Product",
+            "description": "Owns a specific financial product vertical. Must understand applicable regulations (e.g., Truth in Lending, PSD2, MiFID II)."
+          },
+          {
+            "title": "VP of Engineering (Fintech)",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CPTO / CEO",
+            "description": "Engineering strategy with emphasis on security, reliability, and auditability. Owns financial infrastructure architecture."
+          },
+          {
+            "title": "Security Engineer / Architect",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "VP of Engineering",
+            "description": "Application security, encryption standards, key management, penetration testing, and secure SDLC."
+          },
+          {
+            "title": "Regulatory Engineering (RegEng) Lead",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "VP of Engineering",
+            "description": "Builds compliance into the platform: automated regulatory reporting, transaction monitoring systems, KYC workflows, and audit trails."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The CRO and CCO have independent reporting lines to the board, not just to the CEO. The board's Risk Committee and Audit Committee provide direct oversight.",
+      "Compliance is embedded in product development: every new product feature undergoes a regulatory impact assessment before development begins.",
+      "Fraud and Risk teams have real-time access to engineering systems to tune detection rules without being gatekeepers to releases.",
+      "Payments/FinOps reconciles daily with the core ledger and reports to Finance — any discrepancy is escalated within 24 hours.",
+      "The CRO and CFO jointly review the liquidity position daily, with formal escalation triggers tied to regulatory capital requirements.",
+      "Internal Audit reports administratively to the CEO but functionally to the Board Audit Committee — they can audit any department including the CEO's office.",
+      "The MLRO (Money Laundering Reporting Officer) has direct access to the board and can file SARs without management approval.",
+      "Product Managers are required to complete regulatory training specific to their product area before assuming the role."
+    ],
+    "org_chart_text": "Board of Directors\n├── Risk Committee (Board)\n├── Audit Committee (Board)\n└── CEO\n    ├── General Counsel / CCO\n    │   ├── Head of Regulatory Compliance\n    │   │   └── AML/KYC Officer × 1-3\n    │   └── Privacy Counsel / DPO\n    ├── Chief Risk Officer (CRO) [dotted line to Board]\n    │   ├── Head of Credit Risk\n    │   ├── Head of Fraud Risk\n    │   │   └── Fraud Analyst × 2-8\n    │   └── Operational Risk Manager\n    ├── CFO\n    │   ├── [Standard Finance functions]\n    │   └── Head of Payments / FinOps\n    │       ├── Treasury Manager\n    │       ├── Payments Ops Analyst × 1-3\n    │       └── Banking Partnerships Manager\n    ├── CPTO / VP Engineering\n    │   ├── Security Engineer × 2-5\n    │   ├── RegEng Lead\n    │   └── [Standard Eng squads]\n    └── VP of Product\n        └── PM (Lending / Payments / Cards / Investing) × 3-8"
+  }
+}

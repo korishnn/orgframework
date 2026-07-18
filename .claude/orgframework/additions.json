@@ -1,0 +1,234 @@
+{
+  "version": "4.3.0",
+  "additions": [
+    {
+      "id": "org-architect",
+      "name": "Org Architect",
+      "tokens": "~60",
+      "description": "Dynamically constructs the optimal org structure for the request instead of using a fixed template",
+      "rules": {
+        "approach": "For every request, design the org structure from scratch. Consider the user's explicit language, the region, industry, and stage. The 103 reference roles are inspiration — you can use them, adapt them, combine them, or invent entirely new ones.",
+        "dimensions": {
+          "region": "Shapes hierarchy depth, legal context, reporting norms, communication style, benefits expectations",
+          "industry": "Shapes which departments exist, regulatory embedding, key metrics, operational patterns",
+          "stage": "Shapes org depth, process formality, decision-making speed, role specialization level",
+          "task_type": "Shapes which perspectives need to be involved (hiring=HR+department, launch=product+eng+marketing, compliance=legal+security+finance)"
+        },
+        "construction_heuristics": [
+          "Early-stage startups: founder-led, flat, multi-hat roles. No need for deep hierarchy.",
+          "Scaleups: emerging departments, first VPs hired, middle layer forming. Specialists start appearing.",
+          "Enterprise: matrix management, deep hierarchy, centers of excellence, shared services.",
+          "EMEA: flatter but more formal. Works councils in Germany/France. Stronger employment protection.",
+          "APAC: more hierarchical. Seniority respected. Relationship-based. Different platform ecosystems.",
+          "LATAM: nearshoring-friendly. Growing startup ecosystems. Different labor law frameworks.",
+          "Regulated industries (fintech, healthcare): embed compliance/regulatory into the org structure itself."
+        ]
+      },
+      "instruction": "1. Detect region, industry, stage from the input. 2. Synthesize an org structure that fits the task — create departments and roles that make sense for THIS request. 3. Announce the structure you've built. 4. Deliver the response through the lens of that structure. You are free to invent roles, departments, and reporting lines that don't exist in the reference files."
+    },
+    {
+      "id": "context-classifier",
+      "name": "Context Classifier",
+      "tokens": "~50",
+      "description": "Automatically detects region, industry, company stage, and task type from natural language input",
+      "rules": {
+        "detection_layers": ["region", "industry", "stage", "task_type"],
+        "task_types": ["hire", "reorg", "compliance", "launch", "budget", "strategy", "process", "culture", "risk"],
+        "confidence_format": "Region: [detected] (source: country/city keyword) | Industry: [detected] | Stage: [detected] | Task: [detected]",
+        "explicit_override": "If the user uses an @ shorthand, that value takes priority over auto-detection.",
+        "fallback": "Low confidence on any layer? Note the assumption and ask the user to correct."
+      },
+      "instruction": "Scan the user's input for all four context layers. Report the detected context at the start of the response. If a layer is unclear, flag it with a question rather than silently defaulting."
+    },
+    {
+      "id": "region-adapt",
+      "name": "Region Adapt",
+      "tokens": "~50",
+      "description": "Adapts org design and output for the detected region's employment laws, culture, and business norms",
+      "rules": {
+        "na": "At-will employment. Direct communication. 401(k)/health benefits. FLSA overtime. GAAP. USD. DEI programs standard.",
+        "emea": "Strong employment protection (works councils in DE/FR/NL). GDPR-critical. Notice periods. Multi-language. 20+ vacation days mandatory. IFRS. EUR/GBP. Right-to-disconnect laws.",
+        "apac": "Hierarchy respected. Bonus culture (2x/year). Social insurance mandates. Data localization laws (CN/IN). Different platform ecosystems. Local GAAP/IFRS. Seniority-based comp in JP/KR.",
+        "latam": "13th salary mandatory. CLT regime (Brazil). Strong union presence in manufacturing. CFDI invoicing (MX). Portuguese for Brazil, Spanish for rest. Nearshoring context. IFRS.",
+        "general": "Apply the region's employment framework, cultural norms, and business practices. Never suggest US-style benefits for non-US regions."
+      },
+      "instruction": "Load the region profile matching the detected region. Apply its employment laws, cultural norms, benefits expectations, currency, and reporting standards. If no region is detected, default to NA but note the assumption."
+    },
+    {
+      "id": "industry-adapt",
+      "name": "Industry Adapt",
+      "tokens": "~40",
+      "description": "Adjusts depth and focus based on the detected industry",
+      "rules": {
+        "saas": "MRR/ARR, churn, unit economics. PLG vs sales-led. SOC 2. Product-aligned squads.",
+        "fintech": "Regulatory-first. KYC/AML, PSD2, PCI DSS. Risk and compliance embedded in product teams. Different KPIs (TPV, take rate).",
+        "healthcare": "HIPAA/FDA/EU MDR. Clinical validation. Regulatory can block releases. Longer sales cycles. Patient outcomes focus.",
+        "manufacturing": "OEE, safety, yield. Plant-centric structure. Union relationships. ISO standards. Capital-heavy.",
+        "ecommerce": "GMV, AOV, conversion, returns. Seasonal peaks (BFCM, Singles Day). Marketplace vs D2C dynamics.",
+        "general": "Apply the industry's standard metrics, regulatory obligations, and operational patterns."
+      },
+      "instruction": "Apply the industry profile's metrics, regulatory framework, and operational patterns to shape the org structure and advice."
+    },
+    {
+      "id": "stage-adapt",
+      "name": "Stage Adapt",
+      "tokens": "~35",
+      "description": "Adjusts org depth and recommendations based on company stage",
+      "rules": {
+        "startup": "Flat org. Founder-led decisions. Multi-hat roles. Equity-heavy comp. Speed over process. First hires set culture.",
+        "scaleup": "Emerging departments. First VPs hired. Process introduced deliberately. Culture preservation challenge. System migrations.",
+        "enterprise": "Deep hierarchy. Committee governance. Specialized roles. Matrix management. SOPs for everything. RSUs not options.",
+        "general": "Match the org depth and decision-making style to the company's operational maturity."
+      },
+      "instruction": "Apply the stage profile to determine org depth, role specialization, decision speed, and compensation approach."
+    },
+    {
+      "id": "meeting-format",
+      "name": "Meeting Format",
+      "tokens": "~40",
+      "description": "Auto-formats output by meeting type with region-aware adaptations",
+      "rules": {
+        "standup": "What I did yesterday / What I'll do today / Blockers — max 3 bullet points each",
+        "sprint-planning": "Goal > Scope > Capacity check > Sprint backlog > Risk flags",
+        "quarterly-review": "OKR status > Key wins > Misses > Lessons learned > Next quarter priorities",
+        "one-on-one": "Topic > Context > Feedback (start/stop/continue) > Action items > Owner",
+        "all-hands": "Company update > Department highlights > Financial snapshot > Q&A digest > Next steps",
+        "retrospective": "What went well > What went wrong > What to change > Action items with owners",
+        "default": "Context > Agenda > Discussion > Decisions > Action items with owners and deadlines"
+      },
+      "instruction": "Detect meeting type signals and apply the format. Adjust formality to match the region (e.g., 'standup' → 'daily sync' in formal European contexts)."
+    },
+    {
+      "id": "scope-guard",
+      "name": "Scope Guard",
+      "tokens": "~35",
+      "description": "Ensures recommendations respect decision rights, budget authority, and regulatory boundaries",
+      "rules": {
+        "principle": "Every recommendation must include the decision rights holder within your constructed org.",
+        "escalation_path": "Flag when a recommendation crosses org boundaries you've defined. Note who needs to be involved.",
+        "budget_threshold": "Adjusted by stage: startup thresholds are lower with faster approval. Enterprise has higher thresholds but more layers.",
+        "regulatory_boundary": "Flag when regulatory approval is needed (e.g., BaFin for fintech hires, FDA for healthtech changes)."
+      },
+      "instruction": "Before delivering, check recommendations against the org structure you built. Flag cross-team dependencies, budget limits, and regulatory gates."
+    },
+    {
+      "id": "urgency-adapt",
+      "name": "Urgency Adapt",
+      "tokens": "~25",
+      "description": "Adjusts depth and format based on urgency signals",
+      "rules": {
+        "immediate_signals": ["urgent", "asap", "today", "hotfix", "blocker", "critical", "p0", "now"],
+        "immediate_format": "Blunt answer first. One actionable step. No diagrams. Speed over completeness.",
+        "planning_signals": ["strategy", "q1", "quarterly", "annual", "roadmap", "plan", "okr"],
+        "planning_format": "Context > Options > Recommendation > Timeline. Trade-offs. Success metrics.",
+        "learning_signals": ["learn", "understand", "explain", "how does", "what is"],
+        "learning_format": "Start simple. Layer detail. Analogies. End with 'want to go deeper?'",
+        "default_format": "Context (1 sentence) > Answer > Detail > Next step."
+      },
+      "instruction": "Detect urgency signals. Apply matching format. Default to balanced with direct answer first."
+    },
+    {
+      "id": "cross-function-weaver",
+      "name": "Cross-Function Weaver",
+      "tokens": "~45",
+      "description": "Dynamically weaves together the perspectives needed for multi-dimensional requests",
+      "rules": {
+        "approach": "For requests that span multiple domains, do not just chain roles sequentially. Instead, build a mini org chart for the task and show how each perspective feeds in.",
+        "examples": {
+          "launch_product": "Product defines scope → Engineering builds → Design crafts UX → Marketing plans GTM → Sales enables team → Support prepares for tickets → Legal reviews claims → Exec approves launch",
+          "international_expansion": "Exec decides market → Legal assesses regulatory → HR sets up entity → Finance plans budget → Ops finds office → Marketing localizes brand → Product adapts features",
+          "compliance_audit": "Security assesses controls → Legal reviews framework → Ops implements fixes → Finance audits books → HR trains staff → Exec signs off",
+          "hiring_campaign": "HR designs process → Department defines role → Exec approves budget → Legal drafts contract → HR sources/screens → Department interviews → HR extends offer → Ops provisions equipment"
+        }
+      },
+      "instruction": "For multi-dimensional requests, construct a task-specific mini-org. Show which perspective contributes what and in what order. Do not just list departments — show the flow of decisions and work between them."
+    },
+    {
+      "id": "auto-troubleshoot",
+      "name": "Auto Troubleshoot",
+      "tokens": "~45",
+      "description": "After every response, self-evaluates for correctness and auto-corrects when the user signals a mistake",
+      "rules": {
+        "post_response_checklist": [
+          "Did I detect the correct region? (If user corrects, learn the right one)",
+          "Did I detect the correct industry? (If user corrects, adjust industry context)",
+          "Did I pick the right preset or build the right structure?",
+          "Was the depth right? Too much? Too little?",
+          "Did any detection keyword miss the mark?"
+        ],
+        "correction_protocol": [
+          "When the user corrects you, immediately: 1) Acknowledge the correction, 2) Apply the fix in your next response, 3) Log the lesson so you don't repeat it in this session",
+          "If the user corrects your region detection, never make that same region mistake again",
+          "If the user says 'too much' or 'too little', adjust verbosity immediately and remember the preference",
+          "If a user rejects a preset, try a different approach next time — don't reuse the rejected preset"
+        ],
+        "adaptive_improvements": [
+          "After 2+ corrections in the same category, the system should auto-correct before the user has to say it again",
+          "If the user has a preferred region, future responses should default to that region",
+          "If the user consistently asks about the same departments (e.g., always engineering), prioritize those in context classification"
+        ],
+        "diagnostic_triggers": {
+          "explicit_request": "If user says 'diagnose', 'debug', 'why did you', 'you got it wrong', or 'that's not right', run full self-diagnostic",
+          "implicit_signal": "If user adds clarifying information that contradicts your initial classification, treat it as a correction signal",
+          "format_signal": "If user reformats your output or asks for a different structure, learn the format preference"
+        }
+      },
+      "instruction": "After each response, silently run the post-response checklist. If the user provides any correction signal, apply the correction protocol immediately. Track what you learn within the conversation so each subsequent response improves. Use the diagnostics/troubleshoot.json file as your reference for detection rules and resolution steps."
+    },
+    {
+      "id": "adaptive-learning",
+      "name": "Adaptive Learning Engine",
+      "tokens": "~50",
+      "description": "The skill grows with every interaction — learning user preferences, improving detection accuracy, and adapting its output style over time",
+      "rules": {
+        "session_memory": [
+          "Within a conversation, remember every correction the user makes and apply it going forward",
+          "Build a model of the user's context: their region, industry, company stage, preferred format",
+          "If user corrects something once, never repeat that mistake in the same session"
+        ],
+        "preference_learning": [
+          "Track depth preferences: if user keeps asking for more detail, increase default verbosity",
+          "Track format preferences: if user always reformats your output, adopt their preferred format",
+          "Track tone preferences: if user adjusts formality, match their communication style",
+          "Track domain focus: if user always asks about engineering, auto-prioritize engineering context"
+        ],
+        "detection_improvement": [
+          "If you miss a region signal once, add the missed keyword to your mental detection set",
+          "If you misclassify an industry, learn which signals distinguish it",
+          "If you pick the wrong preset, note which preset would have been better for next time"
+        ],
+        "self_improvement_loop": {
+          "after_each_interaction": "Evaluate: Did this go well? What would I do differently? Log the lesson.",
+          "after_correction": "Apply the fix + update your internal model of the user",
+          "after_session": "Summarize what you learned about this user's context and preferences"
+        }
+      },
+      "instruction": "Treat every interaction as training data. Build a mental model of the user's context, preferences, and communication style. The more you interact with a user, the better your outputs should become — fewer corrections, more accurate context detection, better format matching. Use profiles created in adaptations/adaptations.json structure to track what you learn. The goal: after 10 interactions, the system should anticipate the user's needs without being told."
+    },
+    {
+      "id": "systems-integration",
+      "name": "Systems Integration Hub",
+      "tokens": "~55",
+      "description": "Unified access to all orgframework systems — visualizer, comparison, relationship map, compensation, maturity, expansion, hiring, and diagnostics",
+      "rules": {
+        "available_systems": {
+          "visualizer": "Generate Mermaid.js org charts from any structure — use generate.js with a preset or custom structure. Multiple templates (hierarchical, functional, squad, matrix, board).",
+          "comparison": "Side-by-side diff of two org structures — use comparison.guidance.md to produce structured comparison with department-level deltas, trade-off analysis, and recommendation.",
+          "relationship_map": "Query role connections — use relationship-map.js to find who a role collaborates with and who references it. --stats shows most connected roles in the 11K network.",
+          "compensation": "Salary bands by role, region, and stage — use compensation/bands.json for ballpark compensation data across 50+ roles and 4 regions.",
+          "maturity_score": "Stage-appropriateness assessment — use maturity.guidance.md to evaluate if an org structure fits the company stage. Flags over/under-building, title inflation, missing functions.",
+          "expansion_playbooks": "Cross-region expansion guides — use expansion/*.json playbooks for US→EU, US→LATAM, EU→US, and general cross-border expansion.",
+          "hiring_plan": "Hiring sequence generation — use hiring.guidance.md to produce phase-by-phase hiring plans from any org structure.",
+          "diagnose": "Full system self-check — run bin/diagnose.js to verify all components are present and healthy."
+        },
+        "auto_selection": "When a user's request matches one of these systems, load that system's data or guidance and use it in the response",
+        "combo_rules": [
+          "Comparison + Visualizer: compare two structures and show Mermaid charts for both",
+          "Maturity + Hiring: assess org, then generate hiring plan to fix maturity gaps",
+          "Expansion + Compensation: generate expansion plan with comp adjustments for the target region"
+        ]
+      },
+      "instruction": "When the user's request involves any of: visualization, comparison, compensation, maturity assessment, expansion planning, hiring sequence, or role relationship queries — load the corresponding system data and use it. Combine systems when appropriate (e.g., maturity assessment leading to hiring plan). This unifies all 11+ additions and 7 systems into a seamless experience."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "preset": "urgent-care-clinic",
+  "version": "1.0",
+  "name": "Urgent Care / Outpatient Clinic",
+  "description": "Fast-paced walk-in clinic treating non-emergent acute conditions. Smaller than a hospital with streamlined operations focused on rapid patient turnover, extended hours, and convenient access. Typical for single-site or multi-site urgent care chains.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "5-50",
+  "org_structure": {
+    "overview": "The urgent care clinic is organized for speed and efficiency. A clinic manager or owner oversees business operations while a medical director provides clinical leadership. Providers (MDs, DOs, NPs, PAs) handle patient visits with support from medical assistants, front desk staff, and limited on-site lab and X-ray. Billing and insurance verification are handled by front office staff or a centralized billing team in multi-site organizations. The model emphasizes minimal hierarchy and rapid decision-making.",
+    "departments": [
+      {
+        "name": "Leadership & Management",
+        "description": "Clinic ownership/management and clinical leadership. Sets hours, staffing levels, payer contracts, and clinical protocols.",
+        "headcount": "1-3",
+        "reports_to": "Owner / Regional Manager / Board",
+        "roles": [
+          { "title": "Clinic Manager / Owner", "count": 1, "level": "Head", "reports_to": "Owner / Regional Director", "description": "Business operations: staffing, scheduling, P&L, supply ordering, facility management, payer contracting." },
+          { "title": "Medical Director", "count": 1, "level": "Head", "reports_to": "Owner / Regional Medical Director", "description": "Clinical oversight: protocols, peer review, provider credentialing, quality assurance. May also see patients." }
+        ]
+      },
+      {
+        "name": "Clinical Providers",
+        "description": "Clinicians delivering direct patient care. Mix of physicians and advanced practice providers for maximum flexibility and cost efficiency.",
+        "headcount": "2-15",
+        "reports_to": "Medical Director",
+        "roles": [
+          { "title": "Physician (MD/DO) — Urgent Care", "count": "1-5", "level": "Provider / IC", "reports_to": "Medical Director", "description": "Diagnoses and treats acute conditions (infections, minor injuries, lacerations, fractures). Performs procedures such as suturing, splinting, I&D." },
+          { "title": "Nurse Practitioner (NP)", "count": "1-5", "level": "Provider / IC", "reports_to": "Medical Director", "description": "Independent or collaborative practice managing patient visits, prescribing medications, ordering and interpreting tests." },
+          { "title": "Physician Assistant (PA)", "count": "1-5", "level": "Provider / IC", "reports_to": "Medical Director", "description": "Medical evaluation and treatment under physician supervision or collaborative agreement; suturing, casting, wound care." }
+        ]
+      },
+      {
+        "name": "Nursing & Clinical Support",
+        "description": "Clinical support staff assisting providers with patient care, procedures, and room turnover.",
+        "headcount": "2-10",
+        "reports_to": "Clinic Manager / Medical Director",
+        "roles": [
+          { "title": "Registered Nurse (RN) / Licensed Vocational Nurse (LVN)", "count": "1-5", "level": "IC", "reports_to": "Medical Director / Clinic Manager", "description": "Patient triage, intake, vital signs, medication administration, wound care, IV starts, assisting with procedures." },
+          { "title": "Medical Assistant (MA)", "count": "1-5", "level": "IC", "reports_to": "Clinic Manager", "description": "Rooming patients, vitals, EKGs, immunization administration, lab specimen collection, front-back support." }
+        ]
+      },
+      {
+        "name": "Radiology & Lab",
+        "description": "Point-of-care lab testing and limited X-ray services. Often cross-trained staff or outsourced to reference labs.",
+        "headcount": "1-4",
+        "reports_to": "Medical Director",
+        "roles": [
+          { "title": "X-Ray Technician / Radiologic Technologist", "count": "1-2", "level": "IC", "reports_to": "Medical Director", "description": "Performs and processes X-rays (chest, extremity); may be cross-trained as MA. Reports to Medical Director for protocol." },
+          { "title": "Lab Technician", "count": "0-2", "level": "IC", "reports_to": "Medical Director", "description": "Performs CLIA-waived point-of-care tests: strep, flu, UTI, pregnancy, glucose, mono, COVID-19. May be delegated to MAs." }
+        ]
+      },
+      {
+        "name": "Front Office & Billing",
+        "description": "Patient check-in, scheduling, phone management, insurance verification, and payment collection. Often the first and last impression.",
+        "headcount": "2-8",
+        "reports_to": "Clinic Manager",
+        "roles": [
+          { "title": "Front Desk / Patient Services Representative", "count": "1-4", "level": "IC", "reports_to": "Clinic Manager", "description": "Patient check-in/out, insurance verification, copay collection, appointment scheduling, phone and message management." },
+          { "title": "Medical Biller / Coder", "count": "1-2", "level": "IC", "reports_to": "Clinic Manager", "description": "Coding (CPT/ICD-10), claims submission, payment posting, denial management, patient statements. May be centralized in multi-site ops." },
+          { "title": "Referral Coordinator", "count": "0-1", "level": "IC", "reports_to": "Clinic Manager", "description": "Arranges specialist referrals, radiology referrals, and follow-up appointments for patients needing higher-level care." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Medical Director and Clinic Manager share joint responsibility for clinic performance — clinical quality alongside financial and operational results.",
+      "Providers and Medical Assistants work in paired teams for efficient room turnover and patient throughput (often 3-4 patients per hour per provider).",
+      "Front desk coordinates closely with clinical staff to manage wait times and communicate delays to patients.",
+      "Clinic Manager oversees supply ordering and facility maintenance; providers communicate supply and equipment needs through the manager.",
+      "X-Ray Tech and Lab staff support all providers equally, with protocols set by the Medical Director.",
+      "Billing team coordinates with front desk for accurate insurance capture at check-in to minimize claim denials."
+    ],
+    "org_chart_text": "                               ┌──────────────────────┐\n                               │   Owner / Regional    │\n                               │   Director            │\n                               └──────────┬───────────┘\n                                          │\n                          ┌───────────────┴────────────────┐\n                          │                                │\n                    ┌─────┴──────┐                 ┌───────┴────────┐\n                    │   Clinic   │                 │   Medical      │\n                    │   Manager  │                 │   Director     │\n                    └──┬────┬────┘                 └───┬────┬───────┘\n                       │    │                          │    │\n              ┌────────┘    │               ┌──────────┘    └──────────┐\n              │             │               │                          │\n    ┌─────────┴──┐  ┌──────┴──────┐  ┌──────┴──────┐          ┌───────┴───────┐\n    │Front Desk  │  │Medical      │  │ Physicians  │          │  NPs / PAs    │\n    │& Billing   │  │Billers      │  │ (MDs/DOs)   │          │               │\n    │(2-8)       │  │(1-2)        │  └──────┬──────┘          └───────┬───────┘\n    └────────────┘  └─────────────┘         │                         │\n                                            └──────────┬──────────────┘\n                                                       │\n                                              ┌────────┴────────┐\n                                              │   RNs / LVNs    │\n                                              │   Medical       │\n                                              │   Assistants    │\n                                              │   (2-10)        │\n                                              └────────┬────────┘\n                                                       │\n                                              ┌────────┴────────┐\n                                              │   X-Ray Tech    │\n                                              │   Lab Tech      │\n                                              │   (1-4)         │\n                                              └─────────────────┘"
+  }
+}

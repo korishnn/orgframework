@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "philosophy": "Every interaction is a training signal. This file stores diagnosed issues, pattern corrections, and self-improvement rules that the AI applies on subsequent requests. It grows more accurate with every use.",
+
+  "detection_rules": [
+    {
+      "id": "wrong-region",
+      "trigger": "User corrects region, or output mentions wrong currency/laws/culture for the context",
+      "fix": "Log the user's actual region. Add to region_autocorrect. Default to user's indicated region in future.",
+      "confidence": 0.9
+    },
+    {
+      "id": "wrong-industry",
+      "trigger": "User corrects industry, or output uses wrong metrics/regulations for the domain",
+      "fix": "Log the user's actual industry. Adjust metric references and regulatory context.",
+      "confidence": 0.85
+    },
+    {
+      "id": "wrong-depth",
+      "trigger": "User says 'too much' or 'too little' or asks for more/less detail",
+      "fix": "Adjust verbosity and section depth. Store user's preferred format style.",
+      "confidence": 0.9
+    },
+    {
+      "id": "wrong-preset",
+      "trigger": "User rejects the structure, asks for different departments or org shape",
+      "fix": "Flag that preset was wrong fit. Try alternative preset or build from scratch next time.",
+      "confidence": 0.8
+    },
+    {
+      "id": "missing-context",
+      "trigger": "User adds information that should have been detected (company size, location, etc.)",
+      "fix": "Log missed signals. Update detection patterns to catch those keywords.",
+      "confidence": 0.75
+    },
+    {
+      "id": "role-not-found",
+      "trigger": "AI references a reference role that doesn't exist or is wrong for the context",
+      "fix": "Flag role misalignment. Search definitions for better match. Log preferred role mapping.",
+      "confidence": 0.8
+    },
+    {
+      "id": "format-rejection",
+      "trigger": "User asks for different format (bullets vs prose, brief vs detailed, structure vs freeform)",
+      "fix": "Store user's format preference. Apply to all future outputs.",
+      "confidence": 0.85
+    },
+    {
+      "id": "tone-rejection",
+      "trigger": "User says 'too formal' or 'too casual' or adjusts tone",
+      "fix": "Store tone preference. Adjust formality level in subsequent responses.",
+      "confidence": 0.9
+    },
+    {
+      "id": "scope-creep",
+      "trigger": "User adds constraints mid-conversation that should have been in the initial request",
+      "fix": "Expand initial classification to catch those signals. Add to detection keywords.",
+      "confidence": 0.7
+    }
+  ],
+
+  "resolution_protocol": {
+    "steps": [
+      "1. Detect: Scan user's follow-up for correction signals (explicit or implicit)",
+      "2. Log: Record the issue in this file under issues_log with the rule_id that fired",
+      "3. Fix: Apply the corresponding fix immediately in the current response",
+      "4. Adapt: Update the adaptations profile so future requests avoid the same mistake",
+      "5. Verify: Check if the fix resolved the issue in the next user message"
+    ],
+    "correction_format": "When self-correcting, begin with: 'You're right. I [missed/misunderstood] [X]. I've corrected for this and logged the learning so it won't happen again.'"
+  },
+
+  "issues_log": [],
+
+  "autocorrect_preferences": {
+    "region": {},
+    "industry": {},
+    "stage": {},
+    "depth": null,
+    "format": null,
+    "tone": null,
+    "preset_preference": null
+  },
+
+  "diagnostic_commands": {
+    "/orgframework diagnose": "Run self-diagnostic: check issues_log, adaptations, and current detection accuracy",
+    "/orgframework reset-adaptations": "Clear all learned adaptations and start fresh",
+    "/orgframework show-adaptations": "Display the current adaptation profile and learned preferences",
+    "/orgframework feedback <message>": "Explicitly provide improvement feedback"
+  }
+}

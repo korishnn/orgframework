@@ -1,0 +1,17 @@
+{
+  "industry": "fintech",
+  "name": "Fintech / Financial Services",
+  "shortcodes": ["@fintech", "@finance", "@payments", "@banking"],
+  "key_metrics": ["TPV", "Take rate", "AUM", "Default rate", "Cost/income ratio", "NPS", "Regulatory capital", "Active users", "Loans originated"],
+  "common_roles": ["Chief Risk Officer", "Compliance Officer", "MLRO (Money Laundering)", "Quant", "Fraud Analyst", "Regulatory Affairs"],
+  "org_structure_note": "Strong compliance/risk functions embedded in product teams. Matrix reporting to regulators in some roles.",
+  "go_to_market": ["B2B2C partnerships", "Direct-to-consumer", "Embedded finance APIs", "White-label"],
+  "funding_stages": ["Seed → Series A → B → (regulatory heavy) → Growth → IPO", "Heavy due diligence on compliance readiness."],
+  "regulatory": ["KYC/AML", "PSD2/PSD3 (EU)", "PCI DSS", "SOX (public)", "MiFID II (investments)", "BAU (Basel III)", "EBA guidelines (EU)"],
+  "regional_notes": {
+    "na": "SEC/FINRA/SEC-regulated. OCC for banking. New York/SF hubs. Faster regulatory sandbox.",
+    "emea": "PSD2/PSD3 open banking. FCA (UK), BaFin (Germany), AMF (France). Strong consumer protection.",
+    "apac": "Singapore MAS leader. Hong Kong, Australia. China tightly controlled. India UPI open network.",
+    "latam": "Brazil leads (Pix, open finance). Mexico fintech law. Argentina crypto-friendly. Regulatory less mature."
+  }
+}

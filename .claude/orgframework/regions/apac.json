@@ -1,0 +1,31 @@
+{
+  "region": "apac",
+  "name": "Asia-Pacific",
+  "shortcodes": ["@apac", "@asia", "@india", "@japan", "@china", "@seA"],
+  "employment": {
+    "at_will": false,
+    "notice_period_days": 30,
+    "min_vacation_days": 10,
+    "mandatory_benefits": ["Social insurance (China)", "Health insurance (varies)", "Pension scheme", "Housing fund (China)", "Employment insurance"],
+    "common_benefits": ["Transportation allowance (Japan)", "Housing allowance", "Bonus culture (2x/year in Japan/Korea)", "Stock options (growing)", "Meal allowance", "Health checks"],
+    "contract_types": ["Permanent (regular)", "Fixed-term (common in Japan)", "Contractor", "派遣 (dispatched - Japan)", "Intern"],
+    "labor_laws": ["China: Labor Contract Law, Social Insurance Law", "Japan: Labor Standards Act, Part-Time Work Act", "India: Industrial Disputes Act, Shops & Establishments", "Korea: Labor Standards Act", "Australia: Fair Work Act", "Singapore: Employment Act"],
+    "work_culture": {
+      "communication": "Hierarchical. Indirect in Japan/Korea. Direct in Australia/India. 'Reading the air' (Japan).",
+      "hierarchy": "Strong hierarchy in Japan/Korea/China. Age and tenure respected. Formal titles always used.",
+      "hours": "Long hours in Japan/China/Korea (改善/加班). Australia: 38-hour norm. India: 9-hour+ in tech.",
+      "remote": "Varied. Japan reluctant. India/China hybrid. Australia flexible. Singapore open.",
+      "diversity_focus": "Gender diversity growing. Age hierarchy accepted. Less ethnic diversity focus than NA/Europe."
+    }
+  },
+  "industry_context": {
+    "saas": "India massive IT/services. China domestic giants (Alibaba, Tencent, Baidu). Japan slower SaaS adoption.",
+    "fintech": "China/Alipay+WeChat dominance. India UPI revolution. Singapore financial hub. Japan slower.",
+    "healthcare": "Japan aging population focus. India medical tourism. China digital health growing.",
+    "manufacturing": "China: world's factory. Japan/Korea: advanced manufacturing. Vietnam: growing manufacturing hub.",
+    "ecommerce": "Alibaba, JD (China). Flipkart, Meesho (India). Shopee (SEA). Rakuten (Japan). Coupang (Korea)."
+  },
+  "currency": "CNY / JPY / INR / KRW / SGD / AUD / IDR",
+  "tax_year": "Calendar (most) / India: Apr-Mar / Australia: Jul-Jun",
+  "reporting_standards": "IFRS-adopted (most) / Japan: JGAAP / China: CAS / India: Ind AS"
+}

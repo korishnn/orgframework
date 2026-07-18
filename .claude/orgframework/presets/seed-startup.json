@@ -1,0 +1,75 @@
+{
+  "preset": "seed-startup",
+  "version": "1.0",
+  "name": "Pre-Seed / Seed Startup",
+  "description": "For pre-seed and seed-stage startups with 1-10 people. Founder-led and flat — everyone wears multiple hats, no formal departments exist yet. Best suited for companies validating product-market fit before their first institutional round.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["saas", "fintech", "healthcare", "manufacturing", "ecommerce"],
+    "stages": ["startup"]
+  },
+  "headcount_range": "1-10",
+  "org_structure": {
+    "overview": "The seed-stage org is intentionally flat and role-based rather than department-based. Every person operates across functional boundaries, and reporting lines are direct to the CEO. The philosophy is maximum velocity: decisions are made by the person closest to the problem, communication is synchronous and informal, and structure is avoided until it creates a bottleneck. Titles are secondary to ownership areas.",
+    "departments": [
+      {
+        "name": "Founding Team",
+        "description": "The core founding group that sets vision, builds the product, finds first customers, and raises capital. In a seed startup the 'department' is just the company itself — all roles listed here constitute the entire org.",
+        "headcount": "1-10",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "CEO / Co-Founder",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "Board of Directors",
+            "description": "Sets overall vision, strategy, and culture. Owns fundraising, hiring, and external communications. Ultimately accountable for all outcomes."
+          },
+          {
+            "title": "CTO / Co-Founder",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Owns the technical vision and architecture. Builds the initial product alongside the engineering team and makes all technical decisions. Often ships code daily."
+          },
+          {
+            "title": "Product Lead",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Defines product strategy, prioritizes roadmap, conducts user research, and writes specs. At seed stage this may be the CEO or CTO wearing a second hat."
+          },
+          {
+            "title": "Full-Stack Engineer",
+            "count": "2-4",
+            "level": "IC",
+            "reports_to": "CTO",
+            "description": "Builds features across the entire stack. Expected to own features end-to-end from database schema to UI. Works directly with the CEO/CTO on priorities."
+          },
+          {
+            "title": "Marketing Lead",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Owns brand, messaging, content, and demand generation. Often runs paid acquisition, social media, and PR. May be a fractional or part-time hire at this stage."
+          },
+          {
+            "title": "Sales Lead",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Owns the sales process from pipeline generation through close. Handles early customer relationships and feeds product feedback into roadmap. May also serve as customer support."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "CEO and CTO meet daily for a 15-minute sync to align on product, hiring, and fundraising priorities.",
+      "Everyone attends a weekly all-hands standup — no information silos are tolerated at this stage.",
+      "Marketing and Sales sit together (often the same person) to ensure messaging consistency from first touch through close.",
+      "Every engineer has a direct line to customer feedback — engineers join sales calls regularly.",
+      "Decision-making is consultative but ultimately the CEO decides. The motto is 'disagree and commit.'"
+    ],
+    "org_chart_text": "CEO/Founder\n├── CTO/Co-Founder\n│   └── Full-Stack Engineers (2-4)\n├── Product Lead (may be CEO or CTO dual hat)\n├── Marketing Lead\n└── Sales Lead"
+  }
+}

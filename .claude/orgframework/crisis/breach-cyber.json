@@ -1,0 +1,90 @@
+{
+  "preset": "breach-cyber",
+  "name": "Data Breach / Cyber Incident",
+  "description": "Security incident response structure. Activates when a confirmed breach, ransomware, or unauthorized access is detected. Designed for rapid containment, evidence preservation, and regulatory compliance.",
+  "trigger_conditions": [
+    "Confirmed breach detected by SOC (unauthorized access to systems or data)",
+    "Ransomware note received on any production or internal system",
+    "Data leaked on dark web — confirmed as organization data",
+    "Regulatory notification received regarding a suspected breach",
+    "Third-party vendor breach that may impact organizational data",
+    "Insider threat — confirmed data exfiltration by employee or contractor",
+    "Loss or theft of company-issued device containing sensitive data"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "CISO / CTO",
+      "responsibilities": [
+        "Overall incident command and decision authority",
+        "Decide containment vs. investigation priority trade-offs",
+        "Resource allocation during response (personnel, budget, tools)",
+        "Approve external IR firm engagement",
+        "Declare incident resolved and authorize return to normal operations",
+        "Report to CEO and board on incident status"
+      ]
+    },
+    "ops_lead": {
+      "role": "Security Operations Manager / SOC Lead",
+      "responsibilities": [
+        "Technical containment — isolate affected systems, block IOCs",
+        "Evidence preservation — capture disk images, memory dumps, logs",
+        "System restoration coordination with IT/DevOps",
+        "Forensic investigation oversight (internal or external)",
+        "Track attacker TTPs and update detection rules",
+        "Maintain incident timeline and technical documentation"
+      ]
+    },
+    "comms_lead": {
+      "role": "General Counsel / CMO",
+      "responsibilities": [
+        "Regulatory notification (72-hour GDPR clock starts at detection)",
+        "Customer notification strategy and timing",
+        "Internal staff communications about the incident",
+        "Press statement preparation and approval",
+        "FAQ drafting for customers, partners, and press inquiries"
+      ]
+    },
+    "legal_lead": {
+      "role": "General Counsel",
+      "responsibilities": [
+        "Privilege management — ensure investigation runs under legal privilege",
+        "Law enforcement coordination (FBI, CISA, local authorities)",
+        "Liability assessment — contractual, regulatory, insurance",
+        "Data privacy compliance — GDPR, CCPA, HIPAA, SOX determinations",
+        "Insurance carrier notification within policy timelines",
+        "Third-party vendor contractual notification obligations"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. Isolate affected systems immediately — preserve evidence (do not power off; isolate network)",
+    "2. Engage incident response retainer (CrowdStrike, Mandiant, SecureWorks, etc.)",
+    "3. Determine if PII/PCI/PHI was exposed — scope the breach",
+    "4. Notify insurance carrier within policy timeline (typically 24-48 hours)",
+    "5. Prepare regulatory notification (72hr GDPR, 30-day CCPA, HIPAA 60-day, state breach laws)",
+    "6. Engage external counsel for privilege protection if internal GC is insufficient",
+    "7. Develop customer communication plan with legal approval",
+    "8. Begin forensic investigation — root cause, scope, timeline",
+    "9. Implement containment and eradication — remove attacker access",
+    "10. Post-incident review within 2 weeks — lessons learned, control improvements"
+  ],
+  "communication_protocol": {
+    "internal": "Crisis Lead sends daily update to board and CEO. Ops Lead sends hourly operational update to Crisis Lead during active containment. No technical details shared broadly — need-to-know basis only.",
+    "external": "All external communications must be approved by General Counsel. No technical staff authorized to speak to press, regulators, or law enforcement directly. Single designated spokesperson only.",
+    "cadence": "Standup every 2 hours during active response. Daily standup after containment is achieved. Weekly during remediation phase."
+  },
+  "escalation_timeline": {
+    "t0_30min": "Detect → Initial Triage → Activate Crisis Command → Engage Ops Lead",
+    "t30min_4hr": "Contain affected systems → Engage external counsel → Notify insurance carrier → Begin evidence preservation",
+    "t4_24hr": "Forensic investigation → Determine breach scope → Identify exposed data types → Prepare regulatory notifications",
+    "t24_72hr": "File regulatory notifications (GDPR: 72hr) → Prepare customer notification templates → Engage PR if public disclosure likely",
+    "t72hr_2wk": "Deliver customer notifications → Remediation and eradication → Implement security improvements → Begin post-incident review"
+  },
+  "key_contacts": [
+    "Incident Response Retainer (CrowdStrike/Mandiant): [phone]",
+    "Cyber Insurance Carrier: [policy #, phone, claims portal]",
+    "External Counsel (breach/regulatory): [phone]",
+    "FBI Cyber Task Force Field Office: [local phone]",
+    "CISA (US-CERT): 1-888-282-0870"
+  ]
+}

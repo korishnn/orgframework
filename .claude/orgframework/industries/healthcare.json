@@ -1,0 +1,17 @@
+{
+  "industry": "healthcare",
+  "name": "Healthcare & Life Sciences",
+  "shortcodes": ["@health", "@healthcare", "@biotech", "@medtech"],
+  "key_metrics": ["Patient outcomes", "Readmission rates", "Provider NPS", "Revenue per patient", "Clinical trial milestones", "FDA/CE mark timeline", "Coverage/Reimbursement status"],
+  "common_roles": ["Chief Medical Officer", "Regulatory Affairs Specialist", "Clinical Data Manager", "Health Outcomes Researcher", "Revenue Cycle Manager", "Medical Science Liaison"],
+  "org_structure_note": "Clinical + Tech + Business triple-bottom. Regulatory and medical affairs have authority to block product releases.",
+  "go_to_market": ["Provider sales (hospitals/clinics)", "Insurance/payer sales", "Direct-to-patient (DTC)", "Partnership with pharma", "Government contracts"],
+  "funding_stages": ["Seed → Series A → (FDA/clinical lengthy) → B → C → Exit", "Longer time to revenue. Deep science investors."],
+  "regulatory": ["HIPAA (US privacy)", "FDA 510(k)/PMA", "CE marking (EU MDR)", "HITRUST", "SOC 2", "ISO 13485 (meddev)", "GCP/GLP/GMP"],
+  "regional_notes": {
+    "na": "FDA-centered. HIPAA-critical. Fee-for-service vs value-based shift. VA as reference customer.",
+    "emea": "EU MDR 2017/745 stricter. CE marking. Public healthcare payers (NHS, statutory insurance). HTA bodies (NICE, IQWiG).",
+    "apac": "Japan PMDA fast-growing. China NMPA reform. India generic pharma giant. Japan/Korea aging-pop focus.",
+    "latam": "Mixed public/private. Brazil ANS for supplementary health. Mexico IMSS procurement. Growing medtech adoption."
+  }
+}

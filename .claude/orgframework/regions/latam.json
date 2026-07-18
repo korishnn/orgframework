@@ -1,0 +1,31 @@
+{
+  "region": "latam",
+  "name": "Latin America",
+  "shortcodes": ["@latam", "@brazil", "@mexico", "@latam"],
+  "employment": {
+    "at_will": false,
+    "notice_period_days": 30,
+    "min_vacation_days": 15,
+    "mandatory_benefits": ["13th salary (most countries)", "Social security/IMSS (Mexico)", "FGTS (Brazil severance fund)", "Vacation bonus (1/3 extra pay)", "Profit sharing (Mexico)"],
+    "common_benefits": ["Medical insurance", "Meal vouchers (Brazil)", "Transportation vouchers (Brazil)", "Grocery vouchers", "Life insurance", "Birthday day off (Brazil)"],
+    "contract_types": ["Indefinite (CLT in Brazil)", "Fixed-term", "Temporary", "Intern (estágio)", "Independent contractor (PJ in Brazil)"],
+    "labor_laws": ["Brazil: CLT consolidation, LGPD", "Mexico: LFT (Federal Labor Law), IMSS", "Argentina: Ley de Contrato de Trabajo", "Colombia: Código Sustantivo del Trabajo", "Chile: Código del Trabajo"],
+    "work_culture": {
+      "communication": "Relationship-first. Warm, personal. Formal titles used (Licenciado, Doctor). Portuguese in Brazil, Spanish elsewhere.",
+      "hierarchy": "Moderate to high hierarchy. Respect for seniority. Personal relationships matter more than process.",
+      "hours": "44 hours norm (some countries). Extended lunch (Brazil 1-2hrs). Office presence expected at growing companies.",
+      "remote": "Growing rapidly. Brazil/Mexico are major nearshoring destinations. Remote-first culture in tech startups.",
+      "diversity_focus": "Race/gender diversity growing. Class/economic inequality is a major factor. LGBTQ+ protections vary by country."
+    }
+  },
+  "industry_context": {
+    "saas": "Brazil dominant ($5B+ market). Mexico growing. Argentina strong dev talent. Nubank (Brazil) is global fintech case study.",
+    "fintech": "Nubank, PicPay, Mercado Pago. Brazil leads LATAM fintech. Mexico fintech law 2018. Argentina crypto adoption high.",
+    "healthcare": "Mixed public/private systems. Brazil SUS (public). Mexico IMSS. Growing healthtech investment.",
+    "manufacturing": "Mexico manufacturing hub (automotive/aerospace). Brazil industrial base. Nearshoring from US growing.",
+    "ecommerce": "MercadoLibre dominant. Magazine Luiza, Americanas (Brazil). Growing social commerce. Cross-border buying common."
+  },
+  "currency": "BRL / MXN / ARS / COP / CLP / PEN",
+  "tax_year": "Calendar (Jan-Dec) everywhere",
+  "reporting_standards": "IFRS (most) / Mexico: NIF / Brazil: CPC/IFRS converged"
+}

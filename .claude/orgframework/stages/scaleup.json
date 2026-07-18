@@ -1,0 +1,13 @@
+{
+  "stage": "scaleup",
+  "name": "Growth-Stage / Scale-Up",
+  "description": "Series B to Series D. 50-500 employees. Product-market fit found, scaling the business.",
+  "key_challenges": ["Maintaining culture while growing fast", "Process without bureaucracy", "Hiring experienced leaders", "Cross-functional alignment at scale", "International expansion", "System migration (building what you wished for)"],
+  "org_structure": "Functional departments emerging. VPs hired. Middle layer forms. Still relatively flat compared to enterprise.",
+  "decision_making": "Shift from founder-driven to leader-driven with delegation. Weekly exec staff meetings. OKRs adopted.",
+  "hiring": "Specialist hires begin. First dedicated HR/recruiting team. Levels and bands introduced. Performance reviews start.",
+  "process_maturity": "Process introduced deliberately — not too early, not too late. Playbooks written. CRM and tooling stack matures.",
+  "compensation": "Market-rate salaries + equity (now real paper value). Benefit packages compete with big company tiers.",
+  "survival_metrics": ["NRR", "CAC payback", "Gross margin trend", "Employee NPS", "Time-to-productivity for new hires"],
+  "risk_factors": ["Founder-CEO transition", "Scaling culture dilution", "Cash efficiency vs growth (Rule of 40)", "Key person dependencies", "Infrastructure debt"]
+}

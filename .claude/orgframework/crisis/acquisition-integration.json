@@ -1,0 +1,100 @@
+{
+  "preset": "acquisition-integration",
+  "name": "Acquisition / M&A Integration",
+  "description": "Post-acquisition integration response structure. Activates when an acquisition closes or is publicly announced. Speed matters — announce org structure within 30 days, execute 100-day integration plan. Focus on cultural alignment, talent retention, and operational integration.",
+  "trigger_conditions": [
+    "Acquisition deal signed and closing is imminent or completed",
+    "Asset purchase or business unit acquisition closes",
+    "Merger of equals announced and integration planning begins",
+    "Public announcement of acquisition triggers integration timeline",
+    "Reverse merger or SPAC transaction business combination closes",
+    "Majority stake acquisition requiring operational consolidation"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "CEO of Acquiring Company",
+      "responsibilities": [
+        "Overall integration vision and strategic direction",
+        "Communicate the 'new company story' to all stakeholders",
+        "Final authority on org design decisions",
+        "Set cultural integration priorities and tone",
+        "Approve 100-day plan and major milestones",
+        "Manage board and investor expectations on integration ROI"
+      ]
+    },
+    "ops_lead": {
+      "role": "Integration Lead (dedicated full-time role — not dual-hatted)",
+      "responsibilities": [
+        "Day-to-day management of integration workstreams",
+        "Design and track 100-day integration plan with milestones",
+        "Coordinate cross-functional integration teams (engineering, sales, finance, HR, legal)",
+        "Identify and escalate integration blockers",
+        "Manage integration budget and resource allocation",
+        "Run weekly integration steering committee",
+        "Systems integration timeline — CRM, ERP, HRIS, code repos, collaboration tools",
+        "Org design — role matching, title alignment, reporting structure"
+      ]
+    },
+    "comms_lead": {
+      "role": "CMO (external communications) + Internal Comms Lead",
+      "responsibilities": [
+        "[External] Brand decision — acquire, be acquired, or create new brand",
+        "[External] Customer communication — joint roadmap, product continuity, contract terms",
+        "[External] Press release strategy — announce deal, integration milestones",
+        "[External] Analyst and influencer relationship management during transition",
+        "[Internal] Employee integration communications — Day 1 email, weekly updates",
+        "[Internal] Executive visibility plan — roadshows, town halls, skip-levels",
+        "[Internal] Culture integration plan — shared values, norms, traditions",
+        "[Internal] FAQ management — every rumor addressed proactively"
+      ]
+    },
+    "legal_lead": {
+      "role": "General Counsel + Antitrust Counsel",
+      "responsibilities": [
+        "Antitrust/competition law compliance — ensure merger clearance conditions are met",
+        "Contract integration — assign or novate key contracts to acquiring entity",
+        "IP assignment and integration — patents, trademarks, copyrights",
+        "Employee transfer compliance — WARN Act, TUPE (UK/Europe), consultation obligations",
+        "Regulatory filings and ongoing compliance post-close",
+        "Litigation risk assessment — legacy disputes from acquired company",
+        "Corporate structure simplification — entity consolidation timeline"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. Day 1 ready — IT systems (email, Slack, payroll) integrated before close. Employees wake up as employees of new company",
+    "2. Announce org design within 30 days — no prolonged uncertainty. People need to know who they report to, what their title is, what their role is",
+    "3. 100-day integration plan with clear milestones — 13-week delivery focus with weekly tracking",
+    "4. Cultural assessment within first 2 weeks — intentional, led by HR. Identify integration risks (comp differences, decision-making styles, communication norms)",
+    "5. Role matching and talent mapping — every role assigned: retained, transitioned, redundant, or TBD. Be transparent about timeline for decisions",
+    "6. Retention packages for key talent from acquired company — identify top 20% within first week, offer retention equity/signing bonus before they get poached",
+    "7. Systems integration timeline — prioritize: comms (email/Slack), HR/payroll, finance/ERP, CRM, then all others. No system should remain separate beyond 90 days without good reason",
+    "8. Brand decision — acquired brand, acquiring brand, or house of brands. Make decision within 30 days and communicate rationale",
+    "9. Customer integration plan — contract migration, account management handover, product roadmap transparency. Joint customer communication within first week",
+    "10. Revenue synergy tracking — set baseline, define synergy metrics, assign owners, track monthly",
+    "11. Cross-company buddy program — pair employees from each company for mutual integration and knowledge sharing",
+    "12. Post-integration review at 100 days — what worked, what didn't, course correction for next phase"
+  ],
+  "communication_protocol": {
+    "internal": "Day 1 all-hands from both CEOs together within 1 hour of close. Weekly integration newsletter from Integration Lead. Org design announced within 30 days. Monthly all-hands from Integration Lead and CEO. Anonymous Q&A platform for uncomfortable questions.",
+    "external": "Joint press release on close. Customer email within 48 hours. Analyst briefing within 2 weeks. No individual communications about integration plans before org design is finalized. Single narrative across both companies — no mixed messages.",
+    "cadence": "Integration Lead — weekly steering committee. CEO/Integration Lead — monthly board update. Cross-functional workstreams — weekly standup. All-hands — monthly during first 90 days."
+  },
+  "escalation_timeline": {
+    "t_pre_close": "Integration planning — Day 1 readiness prep, cultural assessment, systems mapping, org design draft, retention packages identified",
+    "t0_day_1": "Close announced → Day 1 systems live → Joint all-hands → Customer email → Brand decision announced",
+    "t1_30d": "Org design announced → Role matching complete → Retention packages offered → Systems integration begun → 100-day plan published",
+    "t30_90d": "Systems integration (wave 1) → Revenue synergy tracking → Cultural integration activities → Executive roadshows",
+    "t90_100d": "100-day review → Milestone assessment → Course correction → Next phase planning → Org stability check"
+  },
+  "key_contacts": [
+    "Integration Management Office (IMO) Lead: [name, phone]",
+    "Executive Search Firm (retention/placement): [phone]",
+    "External Antitrust Counsel: [phone]",
+    "Systems Integration Vendor/Consultant: [phone]",
+    "Brand Agency (rebranding/brand architecture): [phone]",
+    "Investment Banker (deal team): [phone]",
+    "HR Integration Lead: [name, phone]",
+    "IT Integration Lead: [name, phone]"
+  ]
+}

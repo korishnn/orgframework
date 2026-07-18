@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "description": "Mermaid.js org chart templates for different visualization styles",
+  "templates": {
+    "default": {
+      "name": "Default org chart",
+      "direction": "TB",
+      "style": "Basic boxes with solid reporting lines, dotted cross-functional lines",
+      "mermaid_config": "%%{init: {'theme': 'default', 'themeVariables': { 'primaryColor': '#f0f0f0', 'lineColor': '#333'}}}%%"
+    },
+    "hierarchical": {
+      "name": "Strict hierarchy",
+      "direction": "TB",
+      "style": "Top-down pyramid, strict chain of command, no cross-functional lines",
+      "mermaid_config": "%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e8f0fe', 'lineColor': '#1a73e8'}}}%%"
+    },
+    "functional": {
+      "name": "Functional grouping",
+      "direction": "LR",
+      "style": "Left-to-right. Departments as columns. Highlights cross-functional collaboration.",
+      "mermaid_config": "%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e6f4ea', 'lineColor': '#34a853'}}}%%"
+    },
+    "squad": {
+      "name": "Squad/pod structure",
+      "direction": "TB",
+      "style": "Pods as subgraphs. Shows cross-functional teams rather than departments.",
+      "mermaid_config": "%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fce8e6', 'lineColor': '#ea4335'}}}%%"
+    },
+    "matrix": {
+      "name": "Matrix reporting",
+      "direction": "TB",
+      "style": "Dual reporting lines (solid = solid, dotted = dotted). Shows matrix structure.",
+      "mermaid_config": "%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fef7e0', 'lineColor': '#f9ab00'}}}%%"
+    },
+    "board": {
+      "name": "Board view",
+      "direction": "TB",
+      "style": "C-suite only. Clean executive overview with board of directors.",
+      "mermaid_config": "%%{init: {'theme': 'neutral'}}%%"
+    }
+  }
+}

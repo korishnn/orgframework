@@ -1,0 +1,104 @@
+{
+  "preset": "home-health-hospice",
+  "version": "1.0",
+  "name": "Home Health / Hospice Organization",
+  "description": "Field-based healthcare organization delivering skilled nursing, therapy, and personal care services in patients' homes or in hospice facilities. Designed for Medicare-certified home health agencies, hospice providers, and dual-licensed organizations serving patients with chronic conditions, post-acute needs, or end-of-life care.",
+  "applicability": { "regions": ["na"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "10-300",
+  "org_structure": {
+    "overview": "The home health and hospice organization is field-deployed: clinicians (RNs, CNAs, therapists) visit patients in their homes while clinical managers supervise from a central office. Scheduling is the most operationally critical function — matching the right clinician to the right patient at the right time across a geographic service area. Intake and referral coordinators manage incoming orders from hospitals, physicians, and skilled nursing facilities. Billing specializes in Medicare/Medicaid (PPS, PDGM, hospice per-diem) with specific expertise in cost reports and medical review. The organization is highly regulated by CMS, state health departments, and accrediting bodies (CHAP, ACHC, Joint Commission).",
+    "departments": [
+      {
+        "name": "Executive Leadership",
+        "description": "Senior leadership setting strategic direction, payer strategy, regulatory compliance, and organizational culture for the agency.",
+        "headcount": "2-5",
+        "reports_to": "Board of Directors / Ownership",
+        "roles": [
+          { "title": "Executive Director / Administrator", "count": 1, "level": "Executive", "reports_to": "Board / Owner", "description": "Overall agency leadership; licensure, regulatory compliance, payer contracting, community relations, and financial performance." },
+          { "title": "Clinical Director / Director of Clinical Services", "count": 1, "level": "Executive", "reports_to": "Executive Director", "description": "Clinical oversight of all patient care; policy development, quality improvement, clinical competency, and regulatory compliance for patient care." },
+          { "title": "Director of Operations", "count": 1, "level": "Executive", "reports_to": "Executive Director", "description": "Scheduling, intake, field staff productivity, geographic coverage, and operational efficiency across all service lines." }
+        ]
+      },
+      {
+        "name": "Clinical Field Services — Skilled Nursing",
+        "description": "RNs and LPNs providing in-home skilled care including wound care, medication management, infusion, patient education, and disease management.",
+        "headcount": "5-100",
+        "reports_to": "Clinical Director",
+        "roles": [
+          { "title": "Clinical Manager / Supervisor — Nursing", "count": "1-4", "level": "Manager", "reports_to": "Clinical Director", "description": "Supervises field RNs and LPNs; reviews OASIS assessments, manages clinician caseloads, conducts chart reviews, and performs field supervisory visits." },
+          { "title": "Registered Nurse (RN) — Home Health / Hospice", "count": "5-80", "level": "IC", "reports_to": "Clinical Manager", "description": "Skilled nursing visits: wound care, infusion, medication management, patient/caregiver education, OASIS assessment, care coordination with physicians." },
+          { "title": "Licensed Practical Nurse (LPN)", "count": "2-20", "level": "IC", "reports_to": "Clinical Manager", "description": "Provides skilled nursing visits under RN supervision; wound care, vital signs, catheter care, and patient observation." },
+          { "title": "On-Call RN / Triage Nurse", "count": "1-3", "level": "IC", "reports_to": "Clinical Manager", "description": "After-hours telephone triage, urgent visit coordination, and after-hours on-call patient visits (24/7 coverage required for hospice)." }
+        ]
+      },
+      {
+        "name": "Clinical Field Services — Therapy & Social Work",
+        "description": "Allied health professionals providing rehabilitation therapy and psychosocial support in the home setting.",
+        "headcount": "2-30",
+        "reports_to": "Clinical Director",
+        "roles": [
+          { "title": "Physical Therapist (PT)", "count": "1-10", "level": "IC", "reports_to": "Clinical Manager", "description": "In-home physical therapy: mobility assessment, fall prevention, therapeutic exercise, gait training, and functional improvement." },
+          { "title": "Occupational Therapist (OT)", "count": "1-8", "level": "IC", "reports_to": "Clinical Manager", "description": "In-home occupational therapy: ADL assessment, home safety evaluation, adaptive equipment, and functional rehabilitation." },
+          { "title": "Speech-Language Pathologist (SLP)", "count": "1-5", "level": "IC", "reports_to": "Clinical Manager", "description": "In-home speech, language, swallowing and cognitive-communication therapy." },
+          { "title": "Medical Social Worker (MSW)", "count": "1-5", "level": "IC", "reports_to": "Clinical Manager", "description": "Psychosocial assessment, counseling, advance care planning, caregiver support, community resource navigation, and bereavement counseling (hospice)." },
+          { "title": "Home Health Aide (HHA) / CNA", "count": "5-50", "level": "IC", "reports_to": "Clinical Manager", "description": "Personal care: bathing, dressing, grooming, light meal prep, companionship. Supervised by RN with periodic supervisory visits." }
+        ]
+      },
+      {
+        "name": "Hospice-Specific Services",
+        "description": "Interdisciplinary hospice team providing comfort-focused care for terminally ill patients and their families, including bereavement support.",
+        "headcount": "3-20",
+        "reports_to": "Clinical Director",
+        "roles": [
+          { "title": "Hospice Coordinator / Team Leader", "count": 1, "level": "Manager", "reports_to": "Clinical Director", "description": "Coordinates hospice interdisciplinary team (IDT); ensures hospice plan of care, regulatory compliance, and IDT meeting facilitation." },
+          { "title": "Chaplain / Spiritual Counselor", "count": "1-2", "level": "IC", "reports_to": "Hospice Coordinator", "description": "Spiritual assessment and counseling for patients and families; coordinates with community clergy and supports bereavement program." },
+          { "title": "Bereavement Coordinator", "count": "1", "level": "IC", "reports_to": "Hospice Coordinator", "description": "Bereavement risk assessment, grief counseling, support groups, memorial services, and 13-month bereavement follow-up per Medicare Conditions of Participation." },
+          { "title": "Volunteer Coordinator", "count": "1", "level": "IC", "reports_to": "Hospice Coordinator", "description": "Recruits, trains, and schedules hospice volunteers; ensures 5% of patient care hours are provided by volunteers (Medicare requirement)." }
+        ]
+      },
+      {
+        "name": "Intake & Scheduling",
+        "description": "Central operations hub managing referral intake, scheduling, and authorization. High-pressure function requiring real-time coordination.",
+        "headcount": "2-10",
+        "reports_to": "Director of Operations",
+        "roles": [
+          { "title": "Intake / Referral Coordinator", "count": "1-3", "level": "IC", "reports_to": "Director of Operations", "description": "Receives referrals from hospitals, physicians, and SNFs; collects clinical information, verifies benefits, obtains orders, and opens cases." },
+          { "title": "Scheduling Coordinator", "count": "1-5", "level": "IC", "reports_to": "Director of Operations", "description": "Assigns clinicians to patient visits based on geographic location, skill set, patient preferences, and visit frequency. The most operationally intense role." },
+          { "title": "Authorization Specialist", "count": "1-2", "level": "IC", "reports_to": "Director of Operations", "description": "Obtains and tracks payer authorizations for home health and hospice services; recertifications and continued stay approvals." }
+        ]
+      },
+      {
+        "name": "Billing & Finance",
+        "description": "Revenue cycle management specific to Medicare home health (PDGM) and hospice (per-diem) reimbursement, including cost reporting.",
+        "headcount": "2-8",
+        "reports_to": "Executive Director",
+        "roles": [
+          { "title": "Billing Manager", "count": 1, "level": "Manager", "reports_to": "Executive Director", "description": "Oversees claims submission (UB-04), payment posting, denial management, and revenue cycle KPIs." },
+          { "title": "Home Health & Hospice Biller", "count": "1-4", "level": "IC", "reports_to": "Billing Manager", "description": "Submits Medicare/Medicaid/insurance claims; manages HIPPS codes, PDGM episodes, hospice per-diem billing, and RAP/final claims." },
+          { "title": "Medical Records / Document Specialist", "count": "1-2", "level": "IC", "reports_to": "Billing Manager", "description": "Audits clinical documentation to support billing, responds to ADR requests, and ensures OASIS and COPs documents are complete." },
+          { "title": "Staff Accountant / Financial Analyst", "count": "1", "level": "IC", "reports_to": "Executive Director", "description": "A/P, payroll, financial reporting, cost reporting, budgeting, and analysis of payer mix and visit profitability." }
+        ]
+      },
+      {
+        "name": "Quality & Compliance",
+        "description": "Ensures regulatory compliance with Medicare Conditions of Participation, state licensure, and accreditation standards. Drives quality improvement and patient satisfaction.",
+        "headcount": "1-4",
+        "reports_to": "Executive Director / Clinical Director",
+        "roles": [
+          { "title": "Quality / Compliance Coordinator", "count": "1-2", "level": "IC", "reports_to": "Executive Director", "description": "Chart audits, OASIS accuracy, HHCAHPS, quality measure reporting, infection control, and policy management." },
+          { "title": "Clinical Educator", "count": "1", "level": "IC", "reports_to": "Clinical Director", "description": "Staff orientation, continuing education, competency assessment, OASIS training, and new regulation implementation." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Scheduling Coordinator and Clinical Managers work in daily tandem to match field staff availability with patient visit needs — scheduling is the heartbeat of the organization.",
+      "Intake Coordinator coordinates with hospital discharge planners, case managers, and physician offices to ensure timely referrals and smooth transitions of care.",
+      "Field RNs communicate with physicians for plan of care updates, verbal orders, and changes in patient condition — the physician is the ordering provider but the RN is the eyes and ears in the home.",
+      "Hospice IDT (Interdisciplinary Team) meets weekly with RN, MSW, Chaplain, Aide, and Volunteer Coordinator to coordinate the full plan of care for each hospice patient.",
+      "Billing team works closely with Clinical Manager to ensure documentation supports reimbursement — a primary risk area in Medicare home health audits and ADR reviews.",
+      "Quality Coordinator partners with Clinical Manager on OASIS accuracy, outcome measure improvement, and survey readiness for state and accreditation surveys.",
+      "Medical Social Worker bridges between clinical needs and social determinants: housing, food, transportation, caregiver resources, and advance care planning."
+    ],
+    "org_chart_text": "                              ┌──────────────────────────┐\n                              │  Executive Director /     │\n                              │  Administrator            │\n                              └──┬───────┬───────┬───────┬┘\n                                 │       │       │       │\n                    ┌────────────┘   ┌───┘       └───┐   └───────────────┐\n                    │               │               │                   │\n              ┌─────┴──────┐  ┌─────┴──────┐  ┌─────┴──────┐  ┌────────┴───────┐\n              │ Clinical   │  │ Director   │  │ Quality /  │  │ Billing        │\n              │ Director   │  │ of Ops     │  │ Compliance │  │ Manager        │\n              └──┬──┬──┬───┘  └──┬────┬────┘  └────────────┘  └───────┬───────┘\n                 │  │  │         │    │                                │\n             ┌───┘  │  └──┐   ┌──┘    └───┐                       ┌───┴───┐\n          ┌──┴──┐ ┌─┴──┐ ┌┴──┐ │           │                       │Billing│\n          │RN   │ │PT  │ │MSW│ │           │                       │Staff  │\n          │Clin.│ │OT  │ │Chap│ │           │                       │AR/Cred│\n          │Mgr  │ │SLP │ │HHA│ │           │                       └───────┘\n          └──┬──┘ └────┘ └───┘ │           │\n             │              ┌───┴──┐  ┌────┴─────┐\n          ┌──┴──┐           │Intake│  │Scheduling│\n          │Field│           │Coord │  │Coord     │\n          │RNs  │           └──────┘  └──────────┘\n          │LPNs │\n          └─────┘"
+  }
+}

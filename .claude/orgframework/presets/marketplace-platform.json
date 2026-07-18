@@ -1,0 +1,258 @@
+{
+  "preset": "marketplace-platform",
+  "version": "1.0",
+  "name": "Two-Sided Marketplace Platform",
+  "description": "For two-sided marketplace platforms that connect supply and demand. Distinct teams focus on supply-side growth and demand-side growth, each with their own strategy and metrics. Trust and Safety is a critical function, alongside payments/financial operations and community management. Deeply integrated data science teams drive matching, ranking, and personalization algorithms.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["ecommerce", "saas"],
+    "stages": ["startup", "scaleup", "enterprise"]
+  },
+  "headcount_range": "15-500+",
+  "org_structure": {
+    "overview": "Marketplaces are uniquely challenging because they must simultaneously grow two distinct user bases — supply and demand — while keeping them balanced. The philosophy is 'always bias toward liquidity' — every team's success is ultimately measured by transaction volume and marketplace health metrics. The org is structured around supply/demand specialization: separate growth teams for each side, separate product managers, and separate data scientists who live and breathe their side's unit economics. Trust and Safety operates as a critical enabling function — in a marketplace, a single bad experience can cause cascading churn on both sides. The marketplace team structure scales through 'squadification': cross-functional pods organized around marketplace levers (e.g., Search & Discovery, Transactions, Trust, Supply Growth) rather than by technical layer.",
+    "departments": [
+      {
+        "name": "Marketplace Leadership",
+        "description": "Executive team that balances supply and demand strategy, sets marketplace health metrics (liquidity, take rate, GMV/NMV), and ensures cross-side optimization.",
+        "headcount": "3-5",
+        "reports_to": "CEO / Board",
+        "roles": [
+          {
+            "title": "Chief Executive Officer (CEO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "Board of Directors",
+            "description": "Sets marketplace vision, owns the supply/demand balance, and is accountable for GMV, take rate, and marketplace liquidity."
+          },
+          {
+            "title": "Chief Operating Officer (COO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Operationalizes marketplace strategy. Owns marketplace health metrics, trust and safety, and community operations."
+          },
+          {
+            "title": "Chief Data Officer (CDO) / Head of Data Science",
+            "count": 1,
+            "level": "C-Suite / VP",
+            "reports_to": "CEO",
+            "description": "Owns data infrastructure, ML models for matching/ranking/recommendation, experimentation platform, and marketplace analytics."
+          }
+        ]
+      },
+      {
+        "name": "Supply-Side Growth",
+        "description": "Owns acquisition, onboarding, retention, and quality of supply-side participants (e.g., hosts, drivers, sellers, contractors). Deep focus on supply unit economics.",
+        "headcount": "5-30",
+        "reports_to": "COO / CEO",
+        "roles": [
+          {
+            "title": "VP of Supply Growth",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO / CEO",
+            "description": "Supply-side strategy, acquisition channels, onboarding funnel, and supply quality management."
+          },
+          {
+            "title": "Supply Acquisition Manager",
+            "count": "1-3",
+            "level": "IC / Manager",
+            "reports_to": "VP of Supply Growth",
+            "description": "Runs supply acquisition campaigns, referral programs, and supply-side marketing."
+          },
+          {
+            "title": "Supply Onboarding & Quality Lead",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "VP of Supply Growth",
+            "description": "Designs and optimizes supply onboarding flow. Manages supply vetting, verification, and quality scoring processes."
+          },
+          {
+            "title": "Supply-Side Product Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "VP of Supply Growth / Head of Product",
+            "description": "Builds tools for supply participants: dashboards, scheduling, earnings insights, and communication features."
+          }
+        ]
+      },
+      {
+        "name": "Demand-Side Growth",
+        "description": "Owns acquisition, activation, retention, and spend of demand-side users (e.g., guests, riders, buyers, seekers). Focuses on demand-side unit economics and LTV optimization.",
+        "headcount": "5-30",
+        "reports_to": "COO / CRO",
+        "roles": [
+          {
+            "title": "VP of Demand Growth",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO / CRO",
+            "description": "Demand-side strategy, user acquisition, SEO/SEM, lifecycle marketing, and retention optimization."
+          },
+          {
+            "title": "Performance Marketing Manager",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "VP of Demand Growth",
+            "description": "Paid acquisition across channels (Google, Facebook, TikTok, affiliates). Optimizes CAC by channel and segment."
+          },
+          {
+            "title": "Lifecycle Marketing Manager",
+            "count": "1-2",
+            "level": "IC",
+            "reports_to": "VP of Demand Growth",
+            "description": "Email, push, and in-app messaging campaigns to drive activation, repeat usage, and reactivation."
+          },
+          {
+            "title": "Demand-Side Product Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "VP of Demand Growth / Head of Product",
+            "description": "Builds consumer-facing product: search, browse, booking/purchase flow, and personalization."
+          }
+        ]
+      },
+      {
+        "name": "Trust & Safety",
+        "description": "Critical marketplace function that ensures safe interactions between supply and demand. Includes fraud prevention, content moderation, dispute resolution, and insurance/guarantees.",
+        "headcount": "5-50",
+        "reports_to": "COO / General Counsel",
+        "roles": [
+          {
+            "title": "Head of Trust & Safety",
+            "count": 1,
+            "level": "Head / VP",
+            "reports_to": "COO / General Counsel",
+            "description": "Trust and safety strategy, safety policies, risk scoring, and moderation operations."
+          },
+          {
+            "title": "Trust & Safety Operations Manager",
+            "count": "1-3",
+            "level": "Manager",
+            "reports_to": "Head of Trust & Safety",
+            "description": "Manages moderation team, dispute resolution, and fraud investigation workflows."
+          },
+          {
+            "title": "Content Moderator / Trust & Safety Specialist",
+            "count": "3-30",
+            "level": "IC",
+            "reports_to": "Trust & Safety Operations Manager",
+            "description": "Reviews listings, profiles, and transactions for policy violations. Handles user reports and escalations."
+          },
+          {
+            "title": "Trust & Safety Product Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Head of T&S / Head of Product",
+            "description": "Builds safety features: identity verification, reputation systems, reporting flows, and automated detection systems."
+          }
+        ]
+      },
+      {
+        "name": "Data Science & Marketplace Analytics",
+        "description": "Core to marketplace operations. Builds and maintains matching/ranking algorithms, dynamic pricing models, fraud detection ML, and experimentation infrastructure.",
+        "headcount": "5-30",
+        "reports_to": "CDO / VP Data",
+        "roles": [
+          {
+            "title": "Head of Data Science (Marketplace)",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "CDO / VP Data",
+            "description": "Data science strategy for marketplace algorithms: search ranking, matching, dynamic pricing, and personalization."
+          },
+          {
+            "title": "Data Scientist (Matching / Ranking)",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "Head of Data Science",
+            "description": "Builds and tunes ML models for search ranking, recommendation, and supply/demand matching."
+          },
+          {
+            "title": "Data Scientist (Pricing / Incentives)",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "Head of Data Science",
+            "description": "Develops dynamic pricing models, surge pricing, incentives optimization, and promotion effectiveness analysis."
+          },
+          {
+            "title": "Data Engineer",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "Head of Data Science",
+            "description": "Builds and maintains data pipelines, feature stores, experimentation framework, and business intelligence infrastructure."
+          },
+          {
+            "title": "Marketplace Analyst",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "Head of Data Science",
+            "description": "Produces marketplace health dashboards, liquidity metrics, funnel analysis, and ad-hoc business insights for leadership."
+          }
+        ]
+      },
+      {
+        "name": "Payments & Financial Operations",
+        "description": "Manages the payment flow between demand and supply participants. Handles payout timing, escrow, dispute holds, and marketplace financial reporting.",
+        "headcount": "3-10",
+        "reports_to": "CFO",
+        "roles": [
+          {
+            "title": "Head of Marketplace Payments",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "CFO",
+            "description": "Payment flow strategy, payout scheduling, payment method optimization, and cross-border payment setup."
+          },
+          {
+            "title": "Payments Operations Analyst",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "Head of Marketplace Payments",
+            "description": "Manages payment reconciliation, dispute holds, payout exceptions, and merchant onboarding/compliance."
+          },
+          {
+            "title": "Financial Reporting Analyst (Marketplace)",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "CFO / Controller",
+            "description": "Revenue recognition for marketplace fees/commissions, supply-side payouts accounting, and regulatory financial reporting."
+          }
+        ]
+      },
+      {
+        "name": "Community Management",
+        "description": "Builds and nurtures the marketplace community on both sides. Manages communication forums, events, ambassador programs, and user feedback loops.",
+        "headcount": "2-10",
+        "reports_to": "COO / Head of Marketing",
+        "roles": [
+          {
+            "title": "Head of Community",
+            "count": 1,
+            "level": "Head / Director",
+            "reports_to": "COO / Head of Marketing",
+            "description": "Community strategy, engagement programs, ambassador/advocate programs, and community health metrics."
+          },
+          {
+            "title": "Community Manager",
+            "count": "1-5",
+            "level": "IC",
+            "reports_to": "Head of Community",
+            "description": "Manages community forums, social media groups, events, and user feedback collection."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Supply Growth and Demand Growth teams are intentionally separate but must coordinate on marketplace balance and incentives to avoid subsidizing one side at the expense of the other.",
+      "Data Science is embedded in every major squad: matching/ranking DS works with Demand PM, pricing DS works with Supply and Finance, T&S DS works with Trust teams.",
+      "Trust and Safety has the authority to block a launch or feature release if safety requirements aren't met, with escalation to the COO/CEO.",
+      "Payments works closely with Trust & Safety on fraud detection and dispute resolution — the two teams share data and alerting systems.",
+      "Community Management feeds qualitative insights from both sides to Product teams, often surfacing issues before quantitative metrics show them.",
+      "The CEO or COO chairs a weekly Marketplace Health review where all teams review liquidity, conversion, take rate, and supply/demand balance metrics.",
+      "Marketplace analysts produce a single source of truth dashboard that all teams use, preventing metric fragmentation across side-specific reporting."
+    ],
+    "org_chart_text": "CEO\n├── Chief Data Officer (CDO) / VP Data\n│   └── Head of Data Science (Marketplace)\n│       ├── Data Scientist (Matching/Ranking) × 2-5\n│       ├── Data Scientist (Pricing/Incentives) × 1-3\n│       ├── Data Engineer × 2-5\n│       └── Marketplace Analyst × 2-5\n├── COO\n│   ├── VP of Supply Growth\n│   │   ├── Supply Acquisition Manager × 1-3\n│   │   ├── Supply Onboarding & Quality Lead\n│   │   └── Supply-Side PM\n│   ├── VP of Demand Growth\n│   │   ├── Performance Marketing Manager × 2-5\n│   │   ├── Lifecycle Marketing Manager × 1-2\n│   │   └── Demand-Side PM\n│   ├── Head of Trust & Safety\n│   │   ├── T&S Operations Manager\n│   │   │   └── Content Moderator / T&S Specialist × 3-30\n│   │   └── T&S Product Manager\n│   └── Head of Community\n│       └── Community Manager × 1-5\n├── CFO\n│   └── Head of Marketplace Payments\n│       ├── Payments Operations Analyst × 1-3\n│       └── Financial Reporting Analyst (Marketplace)\n├── CPTO / VP Engineering\n│   ├── [Platform, Mobile, Infrastructure teams]\n│   └── [Squad leads for Search, Booking, Payments, Trust]\n└── VP of Product\n    ├── [PMs aligned to squads]\n    └── [Supply-Side PM and Demand-Side PM may dual-report here and to Growth VPs]"
+  }
+}

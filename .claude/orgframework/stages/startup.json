@@ -1,0 +1,13 @@
+{
+  "stage": "startup",
+  "name": "Early-Stage Startup",
+  "description": "Pre-seed to Series A. 1-50 employees. Finding product-market fit.",
+  "key_challenges": ["Cash runway management", "PMF uncertainty", "Wearing multiple hats", "Building from scratch", "First hires critical", "Founder-market fit"],
+  "org_structure": "Flat or no formal org chart. Founders + early employees do everything. Roles blur.",
+  "decision_making": "Founder-led. Fast. Informal. Board has 1-3 seats (founders + VC).",
+  "hiring": "First 10 hires set culture. Generalists > specialists. Equity-heavy comp. No HR department — founder handles.",
+  "process_maturity": "Minimal process. Speed over rigor. Docs are sparse.",
+  "compensation": "Below market salary + significant equity. 4-year vest, 1-year cliff. 409A valuations.",
+  "survival_metrics": ["Burn rate", "Runway (months)", "Monthly growth %", "Activation rate", "NPS / qualitative feedback"],
+  "risk_factors": ["Running out of cash", "Co-founder conflict", "No PMF", "Hiring wrong early", "Legal/IP not set up"]
+}

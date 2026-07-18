@@ -1,0 +1,158 @@
+{
+  "preset": "university-higher-ed",
+  "version": "1.0",
+  "name": "University / Higher Education Institution",
+  "description": "Organization structure for a university, college, or higher education institution. Covers shared governance with faculty senate, academic affairs through deans and department chairs, research administration, and operational divisions. Tenure-track faculty, lecturers, adjuncts, graduate teaching assistants, and professional staff. Includes student affairs, athletics, development/alumni relations, admissions, registrar, and accreditation compliance. Designed for mid-to-large institutions serving 5,000-50,000 students.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["education", "research"], "stages": ["operational", "growth", "mature"] },
+  "headcount_range": "500-20,000",
+  "org_structure": {
+    "overview": "Universities operate under a dual structure of academic affairs and administration, led by a President/Chancellor with a Provost overseeing all academic functions and a VP of Administration handling operations. Academic departments enjoy significant autonomy in curriculum and hiring, while faculty governance bodies (Faculty Senate, department committees) share decision-making on academic policy, tenure, and promotion. Institutional accreditation (regional or national) is a binding framework that shapes processes across all units. Budget authority typically flows from the Board of Trustees through the President, with deans controlling school-level budgets and department chairs managing operational allocations. Research universities add a layer of sponsored programs administration, IRB/IACUC compliance, and technology transfer.",
+    "departments": [
+      {
+        "name": "Board of Trustees / Regents",
+        "description": "Governing board responsible for institutional mission, strategic direction, fiscal oversight, and presidential selection/evaluation. Fiduciary authority over endowment and major capital decisions.",
+        "headcount": "8-30",
+        "reports_to": "Constituency (state, church, or self-perpetuating)",
+        "roles": [
+          { "title": "Board Chair", "count": 1, "level": "Executive", "reports_to": "Board", "description": "Leads board meetings, works with President on strategy, chairs executive committee." },
+          { "title": "Trustee / Regent", "count": "7-29", "level": "Executive", "reports_to": "Constituency", "description": "Votes on major institutional decisions; serves on board committees (finance, academic, audit, advancement)." }
+        ]
+      },
+      {
+        "name": "Office of the President / Chancellor",
+        "description": "Chief executive office providing institutional vision, external representation, fundraising leadership, and executive oversight. Manages cabinet-level relationships with the board, faculty senate, and external partners.",
+        "headcount": "3-8",
+        "reports_to": "Board of Trustees",
+        "roles": [
+          { "title": "President / Chancellor", "count": 1, "level": "Executive", "reports_to": "Board of Trustees", "description": "Chief executive officer. Sets institutional vision, leads fundraising, represents the university externally." },
+          { "title": "Chief of Staff", "count": 1, "level": "Senior", "reports_to": "President", "description": "Manages the President's office, cabinet coordination, and strategic project execution." },
+          { "title": "Executive Assistant to the President", "count": 1, "level": "Professional", "reports_to": "Chief of Staff", "description": "Manages scheduling, correspondence, and board meeting logistics." },
+          { "title": "General Counsel", "count": 1, "level": "Senior", "reports_to": "President", "description": "Provides legal counsel on compliance, risk, employment, student affairs, and intellectual property." }
+        ]
+      },
+      {
+        "name": "Academic Affairs (Provost)",
+        "description": "The central academic administration led by the Provost, overseeing all schools/colleges, faculty hiring and tenure, curriculum, research, libraries, and academic policy. Partners with Faculty Senate on shared governance.",
+        "headcount": "50-500",
+        "reports_to": "President",
+        "roles": [
+          { "title": "Provost / Vice President for Academic Affairs", "count": 1, "level": "Executive", "reports_to": "President", "description": "Chief academic officer. Oversees all academic programs, faculty, research, and accreditation." },
+          { "title": "Vice Provost for Faculty Affairs", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Manages tenure and promotion processes, faculty development, and diversity initiatives." },
+          { "title": "Vice Provost for Research", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Oversees sponsored research, compliance (IRB, IACUC), tech transfer, and research development." },
+          { "title": "Vice Provost for Undergraduate Education", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Leads general education, advising, first-year experience, and undergraduate research programs." },
+          { "title": "Dean of Graduate Studies", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Oversees graduate program quality, graduate student funding, and thesis/dissertation policies." },
+          { "title": "Dean of Libraries", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Leads university library system, special collections, scholarly communication, and research support." },
+          { "title": "Director of Institutional Research / Accreditation", "count": 1, "level": "Professional", "reports_to": "Provost", "description": "Manages data reporting, accreditation self-studies, program review, and compliance." },
+          { "title": "Director of International Programs", "count": 1, "level": "Professional", "reports_to": "Provost", "description": "Oversees study abroad, international partnerships, and visa support for international scholars." }
+        ]
+      },
+      {
+        "name": "Colleges / Schools",
+        "description": "Academic units organized by discipline (e.g., College of Arts & Sciences, School of Engineering, Business School). Each led by a Dean who manages curriculum, faculty, budget, and strategic direction for the school.",
+        "headcount": "50-500",
+        "reports_to": "Provost",
+        "roles": [
+          { "title": "Dean", "count": 1, "level": "Senior", "reports_to": "Provost", "description": "Academic and administrative head of a college/school. Manages budget, faculty hiring, curriculum, and fundraising." },
+          { "title": "Associate Dean for Academic Affairs", "count": 1, "level": "Senior", "reports_to": "Dean", "description": "Oversees curriculum, scheduling, student academic affairs, and accreditation within the school." },
+          { "title": "Associate Dean for Research", "count": 1, "level": "Senior", "reports_to": "Dean", "description": "Supports faculty research development, grant administration, and lab facilities." },
+          { "title": "Department Chair", "count": "5-20", "level": "Professional", "reports_to": "Dean", "description": "Leads an academic department; manages faculty, course scheduling, and departmental budget." },
+          { "title": "Professor (Tenured)", "count": "10-80", "level": "Faculty", "reports_to": "Department Chair", "description": "Senior faculty with indefinite appointment. Teaches, conducts research, advises students, serves on committees." },
+          { "title": "Associate Professor (Tenure-Track)", "count": "10-50", "level": "Faculty", "reports_to": "Department Chair", "description": "Mid-career faculty on tenure track. Expected to demonstrate research productivity, teaching excellence, and service." },
+          { "title": "Assistant Professor (Tenure-Track)", "count": "10-50", "level": "Faculty", "reports_to": "Department Chair", "description": "Early-career faculty on tenure track. Focused on establishing research program and developing teaching portfolio." },
+          { "title": "Lecturer / Instructor (Non-Tenure Track)", "count": "10-100", "level": "Faculty", "reports_to": "Department Chair", "description": "Teaching-focused faculty on term contracts. May be full or part-time. Not on tenure track." },
+          { "title": "Adjunct Faculty", "count": "10-200", "level": "Faculty", "reports_to": "Department Chair", "description": "Part-time faculty hired per course. Typically practitioners or scholars at other institutions." },
+          { "title": "Graduate Teaching Assistant (TA)", "count": "20-200", "level": "Support", "reports_to": "Course Instructor / Department Chair", "description": "Graduate student who assists with teaching, grading, lab sections, or recitations." },
+          { "title": "Graduate Research Assistant (RA)", "count": "10-100", "level": "Support", "reports_to": "Faculty Supervisor", "description": "Graduate student funded on a research grant who conducts research under faculty supervision." }
+        ]
+      },
+      {
+        "name": "Administration & Finance",
+        "description": "Manages institutional budget, human resources, facilities, IT, and ancillary services. Ensures operational stability and regulatory compliance.",
+        "headcount": "100-500",
+        "reports_to": "President",
+        "roles": [
+          { "title": "VP for Administration & Finance / CFO", "count": 1, "level": "Executive", "reports_to": "President", "description": "Chief financial and administrative officer. Oversees budget, finance, HR, facilities, and IT." },
+          { "title": "Controller / Director of Finance", "count": 1, "level": "Senior", "reports_to": "VP Administration & Finance", "description": "Manages accounting, financial reporting, audit, and internal controls." },
+          { "title": "Director of Human Resources", "count": 1, "level": "Senior", "reports_to": "VP Administration & Finance", "description": "Leads recruitment, benefits, employee relations, training, and compliance." },
+          { "title": "Director of Facilities & Operations", "count": 1, "level": "Senior", "reports_to": "VP Administration & Finance", "description": "Manages campus buildings, grounds, custodial services, and capital projects." },
+          { "title": "CIO / Director of Information Technology", "count": 1, "level": "Senior", "reports_to": "VP Administration & Finance", "description": "Leads IT infrastructure, campus network, enterprise systems, and cybersecurity." },
+          { "title": "Director of Auxiliary Services", "count": 1, "level": "Professional", "reports_to": "VP Administration & Finance", "description": "Oversees housing/dining, bookstores, parking, and conference services." },
+          { "title": "Director of Public Safety / Campus Police", "count": 1, "level": "Professional", "reports_to": "VP Administration & Finance", "description": "Manages campus security, emergency response, and Clery Act compliance." }
+        ]
+      },
+      {
+        "name": "Enrollment Management & Student Affairs",
+        "description": "Manages the full student lifecycle from recruitment and admissions through registration and graduation. Includes academic advising, career services, housing, student activities, and wellness.",
+        "headcount": "50-200",
+        "reports_to": "President",
+        "roles": [
+          { "title": "VP for Enrollment Management / Student Affairs", "count": 1, "level": "Executive", "reports_to": "President", "description": "Leads admissions, financial aid, registrar, student life, and student support services." },
+          { "title": "Director of Admissions", "count": 1, "level": "Senior", "reports_to": "VP Enrollment Management", "description": "Manages recruitment, application processing, and admissions decisions." },
+          { "title": "Admissions Counselor", "count": "5-20", "level": "Professional", "reports_to": "Director of Admissions", "description": "Recruits prospective students, conducts campus tours, reviews applications." },
+          { "title": "Director of Financial Aid", "count": 1, "level": "Senior", "reports_to": "VP Enrollment Management", "description": "Manages scholarship, grant, and loan programs; ensures compliance with federal aid regulations." },
+          { "title": "Registrar", "count": 1, "level": "Senior", "reports_to": "VP Enrollment Management", "description": "Manages course registration, transcripts, degree audits, diplomas, and academic records." },
+          { "title": "Dean of Students", "count": 1, "level": "Senior", "reports_to": "VP Student Affairs", "description": "Oversees student conduct, crisis response, student organizations, and advocacy." },
+          { "title": "Director of Career Services", "count": 1, "level": "Professional", "reports_to": "VP Student Affairs", "description": "Provides career counseling, internship placement, employer relations, and job search support." },
+          { "title": "Director of Housing & Residence Life", "count": 1, "level": "Professional", "reports_to": "VP Student Affairs", "description": "Manages on-campus housing, resident advisors, and residential programming." },
+          { "title": "Director of Counseling & Wellness", "count": 1, "level": "Professional", "reports_to": "VP Student Affairs", "description": "Provides mental health counseling, health services, and wellness programming." }
+        ]
+      },
+      {
+        "name": "Research & Sponsored Programs",
+        "description": "Supports the research enterprise including grant administration, compliance, technology transfer, and research development. Manages relationships with funding agencies and industry partners.",
+        "headcount": "10-50",
+        "reports_to": "Provost / President",
+        "roles": [
+          { "title": "Director of Sponsored Programs", "count": 1, "level": "Senior", "reports_to": "Vice Provost for Research", "description": "Manages pre- and post-award grant administration, compliance, and reporting." },
+          { "title": "Grants & Contracts Administrator", "count": "3-15", "level": "Professional", "reports_to": "Director of Sponsored Programs", "description": "Processes grant proposals, manages award setup, financial reporting, and closeout." },
+          { "title": "Director of Research Compliance", "count": 1, "level": "Senior", "reports_to": "Vice Provost for Research", "description": "Oversees IRB, IACUC, export control, and research misconduct proceedings." },
+          { "title": "Director of Technology Transfer", "count": 1, "level": "Professional", "reports_to": "Vice Provost for Research", "description": "Manages patent filings, licensing, and commercialization of university inventions." },
+          { "title": "Research Development Officer", "count": "1-3", "level": "Professional", "reports_to": "Vice Provost for Research", "description": "Identifies funding opportunities, supports large grant proposals, and facilitates interdisciplinary teams." }
+        ]
+      },
+      {
+        "name": "University Advancement / Development",
+        "description": "Manages fundraising, alumni relations, and donor stewardship. Drives the campaign cycle including major gifts, annual giving, planned giving, and corporate/foundation relations.",
+        "headcount": "10-50",
+        "reports_to": "President",
+        "roles": [
+          { "title": "VP for University Advancement", "count": 1, "level": "Executive", "reports_to": "President", "description": "Leads all fundraising, alumni engagement, and donor relations strategy." },
+          { "title": "Director of Development / Major Gifts", "count": 1, "level": "Senior", "reports_to": "VP Advancement", "description": "Manages major gift officers and principal gift strategy." },
+          { "title": "Major Gift Officer", "count": "3-10", "level": "Professional", "reports_to": "Director of Development", "description": "Cultivates and solicits major gift prospects ($25K+). Manages donor portfolios." },
+          { "title": "Director of Annual Giving", "count": 1, "level": "Professional", "reports_to": "VP Advancement", "description": "Manages annual fund campaigns, direct mail, digital fundraising, and phonathon." },
+          { "title": "Director of Alumni Relations", "count": 1, "level": "Professional", "reports_to": "VP Advancement", "description": "Engages alumni through events, chapters, volunteer programs, and communications." },
+          { "title": "Director of Corporate & Foundation Relations", "count": 1, "level": "Professional", "reports_to": "VP Advancement", "description": "Builds partnerships with corporations and foundations for philanthropic support." },
+          { "title": "Advancement Communications Specialist", "count": "1-3", "level": "Professional", "reports_to": "VP Advancement", "description": "Writes proposals, stewardship reports, and alumni magazine content." }
+        ]
+      },
+      {
+        "name": "Athletics",
+        "description": "Manages intercollegiate athletic programs including coaching, compliance (NCAA/NAIA), sports medicine, facilities, and athletic scholarships. Significant variation based on divisional level (D1-D3).",
+        "headcount": "30-200",
+        "reports_to": "President",
+        "roles": [
+          { "title": "Athletic Director", "count": 1, "level": "Senior", "reports_to": "President", "description": "Leads the athletics department; manages coaches, budget, compliance, and facilities." },
+          { "title": "Head Coach (per sport)", "count": "5-20", "level": "Professional", "reports_to": "Athletic Director", "description": "Leads a specific sport program; responsible for coaching, recruiting, and player development." },
+          { "title": "Assistant Coach", "count": "5-30", "level": "Professional", "reports_to": "Head Coach", "description": "Assists with coaching, recruiting, training, and game preparation for a specific sport." },
+          { "title": "Athletic Trainer", "count": "2-8", "level": "Professional", "reports_to": "Athletic Director", "description": "Provides injury prevention, assessment, treatment, and rehabilitation for student-athletes." },
+          { "title": "Director of Sports Information", "count": 1, "level": "Professional", "reports_to": "Athletic Director", "description": "Manages media relations, statistics, game coverage, and athletic communications." },
+          { "title": "Compliance Officer", "count": 1, "level": "Professional", "reports_to": "Athletic Director", "description": "Ensures NCAA/NAIA compliance, eligibility, and rules education for staff and athletes." },
+          { "title": "Strength & Conditioning Coach", "count": "1-4", "level": "Professional", "reports_to": "Athletic Director", "description": "Designs and supervises athletic performance training programs." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Board of Trustees appoints and evaluates the President; the President reports to the Board and implements strategic direction.",
+      "Provost reports to the President and holds authority over all Deans; Deans manage Department Chairs who supervise faculty.",
+      "Faculty Senate is the primary shared governance body; the Provost and President consult the Senate on academic policy, curriculum changes, and tenure criteria.",
+      "VP for Administration & Finance partners with the Provost on budget allocation across academic and administrative units.",
+      "VP for Enrollment Management works closely with Deans on enrollment targets, admissions criteria, and retention strategies.",
+      "Graduate TAs and RAs are supervised by faculty but may receive funding through the Graduate School; the Dean of Graduate Studies sets policy.",
+      "Research & Sponsored Programs supports faculty in grant administration; the Vice Provost for Research advocates for research infrastructure.",
+      "University Advancement works with Deans and the President to align fundraising priorities with institutional needs.",
+      "Athletics reports to the President and coordinates with Admissions on athlete recruitment and with Student Affairs on athlete welfare.",
+      "Accreditation bodies (regional, programmatic) require institution-wide compliance; Institutional Research coordinates evidence collection across all units."
+    ],
+    "org_chart_text": "Board of Trustees\n  └── President / Chancellor\n        ├── General Counsel\n        ├── Chief of Staff\n        │\n        ├── Provost / VP Academic Affairs\n        │     ├── Vice Provost for Faculty Affairs\n        │     ├── Vice Provost for Research\n        │     │     ├── Director of Sponsored Programs\n        │     │     ├── Director of Research Compliance\n        │     │     ├── Director of Technology Transfer\n        │     │     └── Research Development Officers\n        │     ├── Vice Provost for Undergraduate Education\n        │     ├── Dean of Graduate Studies\n        │     ├── Dean of Libraries\n        │     ├── Director of Institutional Research\n        │     ├── Director of International Programs\n        │     └── Deans (Colleges/Schools)\n        │           ├── Associate Deans\n        │           ├── Department Chairs\n        │           │     ├── Professors (Tenured)\n        │           │     ├── Associate Professors\n        │           │     ├── Assistant Professors\n        │           │     ├── Lecturers / Adjuncts\n        │           │     ├── Graduate TAs\n        │           │     └── Graduate RAs\n        │           └── School-level staff\n        │\n        ├── VP Administration & Finance / CFO\n        │     ├── Controller\n        │     ├── Director of Human Resources\n        │     ├── Director of Facilities & Operations\n        │     ├── CIO / Director of IT\n        │     ├── Director of Auxiliary Services\n        │     └── Director of Public Safety\n        │\n        ├── VP Enrollment Management & Student Affairs\n        │     ├── Director of Admissions\n        │     │     └── Admissions Counselors\n        │     ├── Director of Financial Aid\n        │     ├── Registrar\n        │     ├── Dean of Students\n        │     ├── Director of Career Services\n        │     ├── Director of Housing & Residence Life\n        │     └── Director of Counseling & Wellness\n        │\n        ├── VP for University Advancement\n        │     ├── Director of Development / Major Gifts\n        │     │     └── Major Gift Officers\n        │     ├── Director of Annual Giving\n        │     ├── Director of Alumni Relations\n        │     └── Director of Corporate & Foundation Relations\n        │\n        └── Athletic Director\n              ├── Head Coaches\n              │     └── Assistant Coaches\n              ├── Athletic Trainers\n              ├── Sports Information Director\n              ├── Compliance Officer\n              └── Strength & Conditioning Coaches"
+  }
+}

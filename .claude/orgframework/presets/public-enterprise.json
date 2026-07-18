@@ -1,0 +1,286 @@
+{
+  "preset": "public-enterprise",
+  "version": "1.0",
+  "name": "Public Company / Enterprise",
+  "description": "For publicly traded or large enterprises with 500+ employees. Deep hierarchy from C-suite through individual contributors, multiple divisions or business units, matrix management structures, and robust shared services. Board of Directors oversight, SOX compliance, and investor relations are embedded in the org design.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["saas", "fintech", "healthcare", "manufacturing", "ecommerce"],
+    "stages": ["enterprise"]
+  },
+  "headcount_range": "500+",
+  "org_structure": {
+    "overview": "The enterprise org is designed for stability, control, and predictable execution at massive scale. The philosophy is 'delegated accountability with strong governance' — authority is pushed down through well-defined layers while centralized controls ensure compliance, risk management, and strategic alignment. Matrix management is common: employees may report to a functional manager while being 'dotted-lined' to a business unit or project. Shared services (HR, Finance, Legal, IT, Facilities) operate as centralized centers of excellence. The org is designed to survive any single person leaving. Public company requirements — quarterly earnings, SOX 404, board reporting, investor relations, ESG — add additional structural requirements beyond operational needs.",
+    "departments": [
+      {
+        "name": "Executive Office",
+        "description": "The C-suite and immediate supporting functions that set enterprise strategy, manage external stakeholders, and ensure governance.",
+        "headcount": "5-15",
+        "reports_to": "Board of Directors",
+        "roles": [
+          {
+            "title": "Chief Executive Officer (CEO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "Board of Directors",
+            "description": "Sets enterprise vision and strategy. Ultimate P&L accountability. Leads the executive team and serves as primary board and investor relations contact."
+          },
+          {
+            "title": "Chief of Staff",
+            "count": "1-2",
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Drives execution of CEO priorities, manages the executive office, coordinates board materials, and runs the operating rhythm."
+          },
+          {
+            "title": "Executive Assistant to CEO",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Chief of Staff",
+            "description": "Manages CEO calendar, travel, and communications. Coordinates executive team meetings."
+          }
+        ]
+      },
+      {
+        "name": "Board of Directors",
+        "description": "Governing body elected by shareholders. Provides oversight of strategy, risk, executive compensation, and audit. Independent directors chair key committees.",
+        "headcount": "7-12",
+        "reports_to": "Shareholders",
+        "roles": [
+          {
+            "title": "Chair of the Board",
+            "count": 1,
+            "level": "Board",
+            "reports_to": "Shareholders",
+            "description": "Leads board meetings, sets board agenda, and serves as the primary governance authority. Often independent (non-executive chair) in public companies."
+          },
+          {
+            "title": "Board Member",
+            "count": "6-11",
+            "level": "Board",
+            "reports_to": "Shareholders",
+            "description": "Fiduciary responsibility to shareholders. Serves on committees (Audit, Compensation, Nominating, Governance). Provides strategic guidance and oversight."
+          }
+        ]
+      },
+      {
+        "name": "Product & Engineering",
+        "description": "Organized into multiple divisions by product line or platform. EVP/SVP level leaders with significant P&L responsibility. Centralized platform teams support multiple product lines.",
+        "headcount": "100-300",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "Chief Product & Technology Officer (CPTO) / EVP Engineering",
+            "count": 1,
+            "level": "C-Suite / EVP",
+            "reports_to": "CEO",
+            "description": "Enterprise-wide technology and product strategy. Owns all R&D, platform architecture, and technical vision."
+          },
+          {
+            "title": "SVP of Product",
+            "count": 1,
+            "level": "SVP",
+            "reports_to": "CPTO",
+            "description": "Product strategy across all business lines. Manages VPs of Product for each division."
+          },
+          {
+            "title": "SVP of Engineering",
+            "count": 1,
+            "level": "SVP",
+            "reports_to": "CPTO",
+            "description": "Engineering delivery, platform reliability, and technical operations across all divisions."
+          },
+          {
+            "title": "VP of Product (Division)",
+            "count": "3-5",
+            "level": "VP",
+            "reports_to": "SVP of Product",
+            "description": "Product strategy and P&L for a specific business unit or product line."
+          },
+          {
+            "title": "VP of Engineering (Division)",
+            "count": "3-5",
+            "level": "VP",
+            "reports_to": "SVP of Engineering",
+            "description": "Engineering leadership for a specific business unit or product line."
+          },
+          {
+            "title": "Director of Product",
+            "count": "5-10",
+            "level": "Director",
+            "reports_to": "VP of Product",
+            "description": "Manages a product area within a division. Leads a team of Senior PMs and PMs."
+          },
+          {
+            "title": "Director of Engineering",
+            "count": "10-20",
+            "level": "Director",
+            "reports_to": "VP of Engineering",
+            "description": "Manages multiple engineering teams within a division through Engineering Managers."
+          },
+          {
+            "title": "Engineering Manager",
+            "count": "20-40",
+            "level": "Manager",
+            "reports_to": "Director of Engineering",
+            "description": "Manages a team of 5-8 engineers. Owns delivery, career development, and operational excellence."
+          },
+          {
+            "title": "Senior / Staff / Principal Engineer",
+            "count": "30-80",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Individual contributor track with increasing scope of technical leadership and architectural influence."
+          }
+        ]
+      },
+      {
+        "name": "Go-To-Market (Sales, Marketing, Customer Success)",
+        "description": "Revenue-facing organization responsible for pipeline generation, sales, customer retention, and expansion. Often organized by segment (Enterprise, Mid-Market, SMB) and geography.",
+        "headcount": "100-200",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "Chief Revenue Officer (CRO)",
+            "count": 1,
+            "level": "C-Suite / EVP",
+            "reports_to": "CEO",
+            "description": "Enterprise-wide revenue strategy. Owns all revenue-generating functions including sales, customer success, and sometimes marketing."
+          },
+          {
+            "title": "SVP of Sales",
+            "count": 1,
+            "level": "SVP",
+            "reports_to": "CRO",
+            "description": "Global sales strategy. Manages regional VPs of Sales and channel partners."
+          },
+          {
+            "title": "VP of Sales (Americas / EMEA / APAC)",
+            "count": "3-5",
+            "level": "VP",
+            "reports_to": "SVP of Sales",
+            "description": "Regional sales leadership. Manages Directors of Sales and carries regional quota."
+          },
+          {
+            "title": "Director of Enterprise Sales",
+            "count": "5-10",
+            "level": "Director",
+            "reports_to": "VP of Sales (Region)",
+            "description": "Manages a team of Enterprise AEs focusing on large strategic accounts."
+          },
+          {
+            "title": "Enterprise Account Executive",
+            "count": "20-40",
+            "level": "IC",
+            "reports_to": "Director of Enterprise Sales",
+            "description": "Hunts and closes large enterprise deals ($500K+ ACV). Manages complex buying processes with multiple stakeholders."
+          },
+          {
+            "title": "SVP of Marketing",
+            "count": 1,
+            "level": "SVP",
+            "reports_to": "CRO / CEO",
+            "description": "Enterprise brand, demand generation, product marketing, and corporate communications."
+          },
+          {
+            "title": "VP of Customer Success",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CRO",
+            "description": "Post-sales customer experience, NRR, churn reduction, and expansion revenue."
+          },
+          {
+            "title": "Customer Success Director",
+            "count": "4-8",
+            "level": "Director",
+            "reports_to": "VP of Customer Success",
+            "description": "Manages CSMs by segment or vertical."
+          }
+        ]
+      },
+      {
+        "name": "Shared Services (HR, Finance, Legal, IT, Facilities)",
+        "description": "Centralized corporate functions that serve the entire enterprise. Drive consistency, compliance, and economies of scale.",
+        "headcount": "50-100",
+        "reports_to": "CEO / CFO",
+        "roles": [
+          {
+            "title": "Chief Financial Officer (CFO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO & Audit Committee",
+            "description": "Enterprise financial strategy, FP&A, treasury, tax, audit, and investor relations. SOX compliance owner."
+          },
+          {
+            "title": "SVP / VP of Finance",
+            "count": 1,
+            "level": "SVP / VP",
+            "reports_to": "CFO",
+            "description": "Manages day-to-day finance operations, controllership, and FP&A teams."
+          },
+          {
+            "title": "Chief Human Resources Officer (CHRO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Enterprise people strategy, talent management, compensation, benefits, DEI, and employee relations."
+          },
+          {
+            "title": "SVP / VP of People",
+            "count": 1,
+            "level": "SVP / VP",
+            "reports_to": "CHRO",
+            "description": "Operationalizes people strategy across the enterprise."
+          },
+          {
+            "title": "General Counsel / Chief Legal Officer",
+            "count": 1,
+            "level": "C-Suite / EVP",
+            "reports_to": "CEO & Board",
+            "description": "Enterprise legal, compliance, IP, contracts, litigation, and corporate governance."
+          },
+          {
+            "title": "Chief Information Officer (CIO) / CTO (Internal)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Internal IT infrastructure, enterprise systems (ERP, HRIS), cybersecurity, and corporate technology."
+          }
+        ]
+      },
+      {
+        "name": "Strategy & Corporate Development",
+        "description": "Drives M&A, strategic partnerships, corporate strategy, and new market entry. Often sits under the CEO or CFO.",
+        "headcount": "5-15",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Corporate Development",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Owns M&A pipeline, deal execution, integration, and strategic partnerships."
+          },
+          {
+            "title": "Director of Strategy",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "CEO / CFO",
+            "description": "Corporate strategy, long-range planning, competitive analysis, and new business incubation."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "CEO reports to the Board of Directors and presents at every board meeting. Board committees (Audit, Compensation, Governance) have direct access to relevant executives.",
+      "CFO has a dotted-line reporting relationship to the Audit Committee, independent of the CEO, ensuring financial integrity.",
+      "General Counsel reports to both the CEO (operationally) and the Board (fiduciarily), with privileged communications protected.",
+      "Product & Engineering works in a matrix: engineers report to Engineering Managers but are assigned to product squads led by Product Managers.",
+      "The CRO owns the revenue number end-to-end, creating a single point of accountability from lead generation through renewal.",
+      "HR Business Partners (HRBPs) are embedded in each division while reporting through the CHRO center of excellence.",
+      "Finance Business Partners are embedded in product lines and geographies, providing decision support while maintaining corporate control.",
+      "IT runs as an internal service provider with SLAs, chargebacks, and a service catalog consumed by all departments."
+    ],
+    "org_chart_text": "Shareholders\n└── Board of Directors\n    ├── Audit Committee\n    ├── Compensation Committee\n    ├── Governance / Nominating Committee\n    └── CEO\n        ├── Chief of Staff\n        │   └── Executive Assistant\n        ├── Chief Product & Technology Officer (CPTO)\n        │   ├── SVP of Product\n        │   │   └── VP of Product (Division) × 3-5\n        │   │       └── Director of Product × 5-10\n        │   │           └── Senior PM / PM\n        │   └── SVP of Engineering\n        │       └── VP of Engineering (Division) × 3-5\n        │           └── Director of Engineering × 10-20\n        │               └── Engineering Manager × 20-40\n        │                   └── Staff / Sr / Engineer\n        ├── Chief Revenue Officer (CRO)\n        │   ├── SVP of Sales\n        │   │   └── VP of Sales (Region) × 3-5\n        │   │       └── Director of Enterprise Sales × 5-10\n        │   │           └── Enterprise AE × 20-40\n        │   ├── SVP of Marketing\n        │   │   └── [Marketing Directors: Demand Gen, Product Mktg, Comms]\n        │   └── VP of Customer Success\n        │       └── CS Director × 4-8\n        │           └── Customer Success Manager × 15-30\n        ├── Chief Financial Officer (CFO)\n        │   ├── VP of Finance (Controller, FP&A, Treasury, Tax, IR)\n        │   └── [Dotted line: Audit Committee]\n        ├── Chief Human Resources Officer (CHRO)\n        │   └── SVP of People\n        │       └── [HRBPs embedded in divisions]\n        ├── General Counsel / Chief Legal Officer\n        │   ├── Commercial Legal\n        │   ├── IP / Patent\n        │   ├── Compliance\n        │   └── [Dotted line: Board]\n        ├── Chief Information Officer (CIO)\n        │   ├── IT Operations\n        │   ├── Cybersecurity\n        │   └── Enterprise Systems\n        └── VP of Corporate Development\n            └── Director of Strategy"
+  }
+}

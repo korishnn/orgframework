@@ -1,0 +1,66 @@
+{
+  "playbook": "emea-to-us",
+  "version": "1.0",
+  "name": "EU Company → US Expansion",
+  "overview": "Expanding a European company into the United States presents a mirror image of the challenges European subsidiaries face when acquired by US companies, but viewed from the other side. The single biggest shock for European employers is at-will employment — the US has no statutory notice periods, no requirement for cause to terminate, and no mandatory severance. A European manager used to 3-month notice periods and works council consultation will find they can (and are expected to) terminate underperformers in days. However, this flexibility is balanced by significant litigation risk: US employment lawsuits are common, expensive, and often decided by juries. The US has no mandatory paid vacation, no federal paid sick leave, and a healthcare system tied to employment — a benefit European employers rarely need to provide. Compensation culture is different: higher base salaries, equity is expected at tech companies, and benefits (health, dental, vision, 401k matching) are a core part of the package. The US is not one labor market but 50 — state laws on minimum wage, paid leave, non-competes, and pay equity vary widely. Most European companies enter through Delaware (for incorporation) and start operations in New York, California, Texas, or Massachusetts.",
+  "entity_types": {
+    "recommended": "Delaware C-Corporation (most common for VC-backed and tech companies; preferred by investors for well-established corporate law and Court of Chancery).",
+    "alternatives": [
+      "Delaware LLC (pass-through taxation, simpler but less familiar to US investors; not ideal if seeking venture capital)",
+      "New York or California corporation (if primarily operating in one state initially — avoid double registration complexity)",
+      "S-Corporation (not available to non-US residents as shareholders — check shareholder structure)"
+    ]
+  },
+  "legal_requirements": [
+    "Incorporate in Delaware (most common) or the target operating state. File with Secretary of State, obtain EIN from IRS, register for state taxes.",
+    "Foreign qualification: If incorporating in Delaware but operating in another state (e.g., California), register as a foreign entity in that state — non-compliance triggers back taxes and penalties.",
+    "Federal EIN (Employer Identification Number) required for tax withholding, banking, and hiring. Obtain via IRS Form SS-4.",
+    "State-level registration for unemployment insurance tax (SUTA) and workers' compensation insurance — each state has a separate process.",
+    "New York: Register with NY Department of Labor for withholding; file New York Certificate of Authority for foreign entities; NYC has additional requirements (human rights law, paid safe/sick leave).",
+    "California: EDD (Employment Development Department) registration for payroll taxes; mandatory paid sick leave (minimum 40 hours per year for most employees); Cal-OSHA compliance; stringent pay data reporting (pay equity) for companies with 100+ employees.",
+    "Massachusetts: Paid family and medical leave (PFML) contributions mandatory; strict non-compete law (non-competes only enforceable with new consideration and limited to 12 months).",
+    "Federal: I-9 employment eligibility verification for all hires; E-Verify (mandatory in some states, federal contractors); W-4 and W-2 compliance.",
+    "Federal: FLSA (Fair Labor Standards Act) compliance — distinguish exempt (salaried, overtime-exempt) vs non-exempt (hourly, overtime-eligible) employees; minimum wage at federal level is $7.25 but state rates are higher (NY $15-16, CA $16, MA $15).",
+    "Immigration: L-1 visa for intracompany transferees (managerial, executive, or specialized knowledge) — requires qualifying relationship between EU entity and US entity; H-1B visa for specialty occupations (annual lottery, ~20-30% chance); E-2 treaty investor visa available for nationals of certain EU countries (Germany, UK, France, Italy, Netherlands, etc.) but requires substantial investment and no path to permanent residence.",
+    "ACA (Affordable Care Act) compliance: employers with 50+ full-time equivalents must offer minimum essential health coverage or face penalties (play-or-pay mandate).",
+    "State paid leave programs: New York (PFL), California (CFRA/PDL), Massachusetts (PFML), Washington (PFML), and others require employee-funded leave programs for family and medical leave. These are not optional and carry specific contribution rates."
+  ],
+  "hiring_timeline": {
+    "phase_1": "Founding team entry (month 1-3): Founders enter on ESTA/Visa Waiver or B-1 visa (for business activities, not productive work). Incorporate in Delaware. Open US bank account. Register for EIN. Use PEO/EOR (e.g., Rippling, TriNet, Justworks) for first US hires.",
+    "phase_2": "First US hires and office (month 3-8): Transition from PEO to direct employment. Hire US-based leadership (US country manager, sales lead, or general counsel). Lease office space (if not remote-first). Set up US health insurance, 401k plan. Register in applicable states.",
+    "phase_3": "Scale US operations (month 6-18): Build US team to 10-50+ employees. Consider establishing additional offices in other states. Implement US-style HR policies (performance reviews, PIPs, equity administration). Transition from EU-style management to US norms."
+  },
+  "org_structure_adaptations": [
+    "US subsidiary typically operates with more autonomy from European HQ than European subs receive — geographical distance and cultural differences demand more delegation",
+    "At-will employment means the US arm can hire/fire faster. European HQs often struggle to accept local management's recommendation to terminate someone on the basis of performance alone.",
+    "Add a US General Counsel or employment lawyer relationship from day one — employment litigation risk is much higher than in Europe",
+    "US entity needs a board (even if minimal) with at least one US-resident director; many European companies appoint a local advisory board for credibility",
+    "Equity compensation requires a US equity plan and 409A valuation (independent appraisal of common stock value) — costly but necessary",
+    "Head of People/HR function in the US needs US-specific expertise (benefits administration, compliance, state law complexity) — European HR generalists may lack this knowledge"
+  ],
+  "compensation_notes": "US compensation is higher than Europe in most professional roles, particularly in tech hubs (San Francisco, New York, Seattle, Boston, Austin). Base salaries are typically 20-50% higher than equivalent European roles. Equity compensation (stock options or RSUs) is standard at growth-stage tech companies and increasingly expected even at smaller startups. Total compensation benchmarking is critical — use Radford, Option Impact, or Pave surveys. Benefits are a major differentiator: health insurance (medical, dental, vision) costs $8-15k per employee annually (employer typically covers 70-85%). 401(k) matching (3-6% typical) is expected. There is no statutory holiday minimum (zero mandatory vacation days), but competitive companies offer 15-25 days PTO plus 10-11 federal holidays. Paid parental leave is increasingly common but not federally mandated — competitive companies offer 12-20 weeks. Performance bonuses (10-30% of base) are standard in professional services and sales. Sales commission structures are formulaic and transparent (vs. more discretionary in Europe). Overtime pay (1.5x for non-exempt employees over 40 hours/week) must be tracked. Pay equity laws in several states require proactive reporting and analysis.",
+  "cultural_key_differences": [
+    "At-will employment is shocking to Europeans — no notice period, no cause requirement, no works council. This is normal in the US and not indicative of a hostile work environment.",
+    "Work hours are longer in the US than in Europe. 50+ hour weeks are common in professional services and tech. Taking all your vacation is less common — there is a 'hustle culture' that values visible effort.",
+    "Direct communication: US managers give direct, candid feedback. PIPs (Performance Improvement Plans) are genuine termination processes, not improvement tools. This contrasts with Europe's longer coaching culture.",
+    "Healthcare is tied to employment. Europeans used to universal healthcare find this jarring. Explaining health insurance options during onboarding is a critical HR function.",
+    "Individualism: US workplace culture values individual achievement, self-promotion, and taking credit. This can seem arrogant to Europeans. Employees are expected to advocate for themselves in reviews and promotion cycles.",
+    "Customer service orientation: US culture emphasizes friendliness and enthusiasm in customer-facing roles. 'Have a great day' is genuine, not sarcastic. European directness can come across as rudeness.",
+    "Litigation culture: US employees are more likely to sue. Every HR decision (hiring, firing, promotion, compensation) must be defensible on non-discriminatory grounds. Documentation is critical.",
+    "Diversity, equity, and inclusion (DEI) is a central HR focus in US companies. European companies expanding to the US should prepare for expectations around DEI programs, reporting, and transparency that may exceed European norms.",
+    "Regional cultural differences are significant: New York is fast-paced and direct; San Francisco is more relaxed and informal; Boston is formal and academic; Texas is polite and relationship-oriented."
+  ],
+  "common_pitfalls": [
+    "Not budgeting for healthcare costs. US health insurance is $8-15k per employee annually. A team of 20 employees adds $160-300k in benefits cost alone.",
+    "Assuming non-compete agreements from Europe are enforceable in the US. Non-compete enforcement varies wildly by state (banned in California, Oklahoma, North Dakota; restricted in many others post-FTC 2024 rule).",
+    "Underestimating state-level compliance. Operating in 5 states means 5 sets of payroll tax registrations, 5 unemployment insurance systems, 5 sets of paid leave laws, and potentially 5 minimum wages.",
+    "Treating the entire US like one market. New York success does not predict Texas success. California regulations differ significantly from Florida or Georgia.",
+    "Failing to provide sexual harassment prevention training. Several states (CA, NY, CT, DE, IL) mandate annual or biennial training for all employees. Non-compliance carries fines.",
+    "Not having an at-will disclaimer in the employee handbook. Without explicit at-will language, courts may imply contractual employment rights — exactly what at-will is supposed to avoid.",
+    "Ignoring W-2 vs W-9 (1099) classification. Worker misclassification is aggressively enforced by the IRS and state agencies (California's Dynamex test is the strictest). Penalties include back taxes, interest, and fines.",
+    "Overlooking state paid family leave contributions. In New York, California, Massachusetts, and others, employers must deduct and remit contributions for paid leave programs. These are not optional opt-ins.",
+    "Assuming European employment documentation (contracts, handbooks) is sufficient for the US. US handbooks must cover: at-will employment, EEO/anti-discrimination policy, harassment policy, leave policies, code of conduct, confidentiality, and disclaimer language.",
+    "Not engaging US immigration counsel early enough. The H-1B lottery runs once a year (March). L-1 requires the US entity to already exist and have office space. Timing mismanagement frequently delays key intracompany transfers by 6-12 months."
+  ],
+  "timeline_estimate": "6-18 months for full US operational setup. Delaware incorporation: 1-2 weeks. EIN and bank account: 2-4 weeks. First hires via PEO: 1-2 months. Transition to direct employment: 3-6 months. Full compliance infrastructure (multi-state): 6-12 months."
+}

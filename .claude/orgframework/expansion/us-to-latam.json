@@ -1,0 +1,62 @@
+{
+  "playbook": "us-to-latam",
+  "version": "1.0",
+  "name": "US Company → Latin America Expansion",
+  "overview": "Expanding from the United States into Latin America — particularly Brazil, Mexico, and Colombia — offers significant advantages including substantial time zone overlap (1-3 hours difference with US time zones), a large and growing tech talent pool, and proximity that makes travel manageable. The region has become a popular nearshoring destination for US companies, especially for engineering, customer support, and back-office functions. However, each country has distinct employment laws that can surprise US companies. Brazil's CLT regime is famously employee-protective with high termination costs and complex monthly obligations. Mexico's labor environment is governed by the Federal Labor Law (LFT) with mandatory profit sharing and CFDI electronic invoicing. Colombia offers a more flexible but still regulated environment. The cost advantage is real — total employment costs are typically 40-60% of US equivalents — but the complexity of payroll taxes, mandatory bonuses (13th salary), and employment severance obligations must be factored in carefully.",
+  "entity_types": {
+    "recommended": "Brazil: Sociedade Limitada (LTDA). Mexico: Sociedad de Responsabilidad Limitada (SRL) for services, or Sociedad Anonima (SA) for larger operations. Colombia: Sociedad por Acciones Simplificada (SAS).",
+    "alternatives": [
+      "Brazil: EOR/subco arrangement (recommended for under 20 employees due to complexity)",
+      "Mexico: Branch of US entity (Sucursal) — simpler but exposes US parent to local liability",
+      "Colombia: Branch registration for temporary projects",
+      "All countries: EOR/PEO for first 5-10 hires before establishing entity"
+    ]
+  },
+  "legal_requirements": [
+    "Brazil: Register with CNPJ (federal tax ID), State and Municipal registrations; mandatory enrollment in Social Integration Program (PIS/PASEP); comply with CLT (Consolidated Labor Laws) regime",
+    "Brazil: Monthly FGTS (severance fund) deposit of 8% of salary; 13th salary (one extra month's pay divided into two installments, due November and December); 1/3 vacation bonus on top of 30 days' vacation",
+    "Brazil: C-level foreign employees need a permanent visa (authorized by Ministry of Labor); work visas are slow (6-12 months). Many use local directors with permanent residency.",
+    "Mexico: Register with SAT (tax authority); obtain RFC (tax ID); comply with IMSS (health insurance) and INFONAVIT (housing fund) registrations for all employees",
+    "Mexico: Mandatory profit sharing (PTU) — 10% of pre-tax profits distributed to employees, payable within 60 days of year-end; CFDI electronic invoicing required for all payroll and B2B transactions",
+    "Mexico: Employee stock ownership plans (ESOP) and options can be structured via Mexican trusts; tax treatment differs from US — seek local advice",
+    "Colombia: Register with Camara de Comercio (Chamber of Commerce); obtain NIT (tax ID); register with social security system (EPS pension, ARL workplace risk, CCF family compensation fund)",
+    "Colombia: Mandatory 13th salary (prima de servicios due June and December); severance contributions placed in a fund (cesantias, 8.33% of annual salary); interest on severance pays 12% annually to employee",
+    "Colombia: Work visas for foreign employees require an employment contract and are typically granted for 1-3 years; company must demonstrate the role cannot be filled locally",
+    "All countries: Transfer pricing documentation required for cross-border services between related entities; compliance with local data protection laws (LGPD in Brazil, LFPDPPP in Mexico)"
+  ],
+  "hiring_timeline": {
+    "phase_1": "First hires via EOR/PEO (month 1-2): Use an EOR to hire 2-5 employees. Start with engineering or customer support given the talent pool and nearshoring benefit. 30-60 day recruitment timeline for technical roles.",
+    "phase_2": "Establish entity and transition team (month 3-8): Set up legal entity (fastest in Colombia ~2 months, slowest in Brazil ~4-6 months). Transition employees from EOR. Hire local leadership (country manager, finance/legal). Set up local payroll and benefits.",
+    "phase_3": "Scale office and regional expansion (month 6-18): Grow to 15-50+ employees. Establish regional management. Consider adding a second LatAm country (e.g., adding Colombia after Mexico). Deepen compliance infrastructure (local tax, legal, HR team)."
+  },
+  "org_structure_adaptations": [
+    "Nearshoring centers are typically structured as cost centers or shared service centers within the US parent, not standalone profit centers",
+    "Brazil and Mexico require a local legal representative (director or officer) who resides in-country — this is a non-trivial compliance commitment",
+    "Union presence is significant in Mexico (especially manufacturing) and Brazil; collective bargaining agreements (CCT in Mexico, convencao coletiva in Brazil) may apply by industry",
+    "Management hierarchy tends to be more formal than in the US. Titles and clear reporting lines are expected.",
+    "Spanish/Portuguese language ability in US headquarters leadership is valuable but not required for day-to-day if local management is bilingual",
+    "Legal and compliance team needs local expertise — US employment lawyers cannot advise on CLT, LFT, or Colombian labor code"
+  ],
+  "compensation_notes": "Total compensation costs in Latin America are significantly lower than US equivalents (typically 40-60% less for equivalent roles), but the cost structure is different. Base salaries are the primary component. Mandatory bonuses (13th salary) in most countries add 8.33% to annual cost. Employer-side social charges are substantial: Brazil 26-38% of payroll (inclusive of FGTS, INSS social security, education contribution, and other levies), Mexico 30-40% (IMSS, INFONAVIT, SAR, and state payroll taxes), Colombia approximately 30% (health, pension, ARL, SENA, ICBF, family compensation fund). Stock options and RSUs are less common than in the US but growing in tech. Benefits expectations include private health insurance (standard for professional roles), meal/food vouchers (vale transporte/vale alimentacao in Brazil, vale de despensa in Mexico), and gym/wellness stipends in larger tech companies. Severance costs are substantial in Brazil (FGTS + 40% penalty on termination without cause) and Mexico (3 months' salary + 20 days per year of service for unjustified dismissal).",
+  "cultural_key_differences": [
+    "Relationship-building matters more than in the US. Business relationships are personal first. Expect longer trust-building periods.",
+    "Time zone overlap is a major advantage: Mexico aligns with US Central/CST; Colombia aligns with US Eastern; Brazil has multiple zones (BRT aligns with US Eastern for much of the year).",
+    "Communication is often indirect, particularly in Mexico and Colombia. Direct criticism in front of peers can cause loss of face. 'Yes' may mean 'I understand' rather than 'I agree.'",
+    "Hierarchy and formality: Use of formal titles (Senhor/Senhora, Licenciado/Doctor, Don/Dona) is expected. Addressing someone by their first name on day one is presumptuous.",
+    "Meeting culture: Punctuality varies — Brazil is more relaxed (15-30 minute delays are normal), Mexico is moderately relaxed (5-15 minutes), Colombia tends more punctual in business settings.",
+    "Holiday culture: Brazil has extensive public holidays (carnival, many religious holidays). Mexico also has many. Schedule major deadlines around holiday periods.",
+    "Work hours: Traditional workday in Brazil is 8 AM to 6 PM with a 1-2 hour lunch. Mexico is 9 AM to 7 PM with a late lunch. Colombia is closer to US hours (8 AM-5 PM).",
+    "Decision-making is slower and more relationship-dependent than in the US. Rushing decisions can be seen as disrespectful."
+  ],
+  "common_pitfalls": [
+    "Underestimating Brazil's administrative complexity. CLT compliance requires monthly obligations (termo de rescisao, eSocial filings, union contributions) that demand dedicated local payroll staff.",
+    "Misclassifying independent contractors. Brazil, Mexico, and Colombia all have stringent tests distinguishing contractors from employees; misclassification risk is high and penalties are severe.",
+    "Not understanding Mexico's profit-sharing (PTU) obligation. The 10% of pre-tax profits applies to the Mexican entity (not global), but the calculation is complex and unions audit compliance.",
+    "Assuming cheap labor = cheap total cost. Employer-side taxes and mandatory benefits add 50-100% to base salary in some countries.",
+    "failing to register properly with local tax authorities for transfer pricing. Intra-group services must be documented and priced at arm's length or face penalties.",
+    "Neglecting data transfer regulations. Brazil's LGPD is modeled on GDPR and restricts cross-border data transfers without adequate safeguards.",
+    "Overlooking CFDI compliance in Mexico. All invoices, payroll receipts (CFDI de nomina), and tax filings must use SAT-approved electronic formats with specific timestamps.",
+    "Assuming English fluency is universal for professional roles. In Brazil, English proficiency is less common than in Mexico or Colombia for mid-level roles. This limits hiring pools."
+  ],
+  "timeline_estimate": "3-18 months depending on country and scale. Colombia is fastest (entity in 2-4 months). Mexico is moderate (4-6 months). Brazil is slowest (6-12 months due to Brazil Cost bureaucracy). Using EOR first reduces initial timeline to 1-2 months for first hires."
+}

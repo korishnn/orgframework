@@ -1,0 +1,90 @@
+{
+  "preset": "dental-practice",
+  "version": "1.0",
+  "name": "Dental Practice / DSO (Dental Service Organization)",
+  "description": "General or specialty dental practice providing preventive, restorative, cosmetic, and surgical dental care. Suitable for solo private practices, multi-dentist group practices, and DSO (Dental Service Organization) managed practices with centralized administrative support.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "3-50",
+  "org_structure": {
+    "overview": "The dental practice is organized around the clinical team (dentists, hygienists, assistants) providing patient care, supported by front office and business operations. In a DSO model, the practice manager reports to a regional manager while the lead dentist reports to a clinical director — creating a matrix. The model supports general dentistry and/or specialties (orthodontics, endodontics, periodontics, oral surgery, pediatric dentistry). Lab work may be in-house or sent to a commercial dental lab. Revenue cycle focuses on dental insurance (procedure-code based with annual maximums) alongside fee-for-service patients.",
+    "departments": [
+      {
+        "name": "Practice Leadership",
+        "description": "Ownership or DSO management and clinical leadership. In solo practices the owner-dentist fills both roles.",
+        "headcount": "1-3",
+        "reports_to": "Owner / DSO Regional Director / Board",
+        "roles": [
+          { "title": "Owner Dentist / Lead Dentist", "count": 1, "level": "Head", "reports_to": "Owner / DSO Regional Director", "description": "Clinical oversight, treatment planning, complex case dentistry, and clinical quality. In solo practice, also handles business ownership." },
+          { "title": "Practice Manager", "count": "0-1", "level": "Head", "reports_to": "Owner / DSO Regional Manager", "description": "Business operations: scheduling, insurance billing, accounts receivable, payroll, supply ordering, staffing, and P&L management. May not exist in very small practices." },
+          { "title": "DSO Regional Manager (multi-site)", "count": "0-1", "level": "Manager", "reports_to": "DSO Vice President", "description": "Oversees multiple practice locations; KPIs on production, collections, patient satisfaction, and staffing. Only present in DSO models." }
+        ]
+      },
+      {
+        "name": "Clinical — Dentistry",
+        "description": "Dentists providing examination, diagnosis, treatment planning, and dental procedures.",
+        "headcount": "1-10",
+        "reports_to": "Lead Dentist / Owner",
+        "roles": [
+          { "title": "General Dentist", "count": "1-6", "level": "Provider / IC", "reports_to": "Lead Dentist / Owner", "description": "Comprehensive dental care: exams, fillings, crowns, bridges, extractions, root canals, dentures, and preventive care." },
+          { "title": "Specialist — Orthodontist", "count": "0-2", "level": "Provider / IC", "reports_to": "Lead Dentist", "description": "Braces, clear aligners (Invisalign), and orthognathic treatment planning. Often shared across multiple locations or visits weekly." },
+          { "title": "Specialist — Endodontist", "count": "0-1", "level": "Provider / IC", "reports_to": "Lead Dentist", "description": "Root canal therapy, endodontic retreatment, and microsurgery. Often a visiting specialist." },
+          { "title": "Specialist — Oral Surgeon", "count": "0-1", "level": "Provider / IC", "reports_to": "Lead Dentist", "description": "Tooth extractions (including wisdom teeth), dental implants, bone grafting, and oral pathology biopsy." },
+          { "title": "Specialist — Periodontist", "count": "0-1", "level": "Provider / IC", "reports_to": "Lead Dentist", "description": "Gum disease treatment, scaling/root planing, gum grafts, implant placement, and periodontal maintenance." },
+          { "title": "Specialist — Pediatric Dentist", "count": "0-1", "level": "Provider / IC", "reports_to": "Lead Dentist", "description": "Child and adolescent dentistry; behavior management, sedation, and treatment of pediatric dental disease." }
+        ]
+      },
+      {
+        "name": "Clinical — Dental Hygiene",
+        "description": "Licensed dental hygienists providing preventive care, periodontal therapy, and patient education.",
+        "headcount": "1-8",
+        "reports_to": "Lead Dentist / Practice Manager",
+        "roles": [
+          { "title": "Registered Dental Hygienist (RDH)", "count": "1-5", "level": "IC", "reports_to": "Lead Dentist", "description": "Prophylaxis, scaling/root planing, periodontal assessments, radiographs, fluoride application, sealants, and oral hygiene instruction." },
+          { "title": "Expanded Functions Dental Assistant (EFDA)", "count": "0-3", "level": "IC", "reports_to": "Lead Dentist", "description": "Placement of restorative materials, sealants, coronal polishing, and radiography under dentist supervision." }
+        ]
+      },
+      {
+        "name": "Clinical Support — Dental Assisting",
+        "description": "Dental assistants supporting dentists chairside, sterilizing instruments, and preparing treatment rooms.",
+        "headcount": "1-8",
+        "reports_to": "Lead Dentist / Practice Manager",
+        "roles": [
+          { "title": "Certified Dental Assistant (CDA)", "count": "1-5", "level": "IC", "reports_to": "Lead Dentist", "description": "Chairside assisting during procedures, instrument sterilization, room setup/breakdown, impression taking, and radiographs." },
+          { "title": "Sterilization Technician", "count": "0-2", "level": "IC", "reports_to": "Lead Dentist", "description": "Instrument processing, sterilization equipment management, infection control compliance, and supply inventory." }
+        ]
+      },
+      {
+        "name": "Dental Lab (In-House)",
+        "description": "On-site dental laboratory fabricating crowns, bridges, dentures, and orthodontic appliances. Many smaller practices outsource this function.",
+        "headcount": "0-4",
+        "reports_to": "Lead Dentist",
+        "roles": [
+          { "title": "Dental Laboratory Technician", "count": "0-3", "level": "IC", "reports_to": "Lead Dentist", "description": "Fabricates crowns, bridges, veneers, dentures, partials, and orthodontic models. May specialize in crown/bridge or denture work." },
+          { "title": "Digital Dentistry / CAD-CAM Specialist", "count": "0-1", "level": "IC", "reports_to": "Lead Dentist", "description": "Operates intraoral scanners, milling machines, and 3D printers for same-day restorations (CEREC) and digital workflow integration." }
+        ]
+      },
+      {
+        "name": "Front Office & Business Operations",
+        "description": "Patient scheduling, insurance verification, billing, collections, and front-desk patient experience.",
+        "headcount": "2-8",
+        "reports_to": "Practice Manager",
+        "roles": [
+          { "title": "Front Desk / Patient Coordinator", "count": "1-3", "level": "IC", "reports_to": "Practice Manager", "description": "Appointment scheduling, patient check-in/out, insurance verification, benefit explanation, co-pay collection, and phone management." },
+          { "title": "Treatment Plan Coordinator", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Presents treatment plans and financial arrangements to patients; discusses insurance coverage, payment options, and membership plans." },
+          { "title": "Dental Biller / Insurance Coordinator", "count": "1-2", "level": "IC", "reports_to": "Practice Manager", "description": "Dental claim submission (ADA 2015 form), payment posting, insurance follow-up, denial management, patient statements, and aging report management." },
+          { "title": "Marketing / Patient Engagement Coordinator", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Online reputation, Google reviews, social media, patient recall/reactivation campaigns, new patient acquisition, and community events." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Lead Dentist and Practice Manager are the two poles of the practice — clinical quality and business health. In a DSO, these may be separate reporting lines to the regional clinical director and regional operations manager.",
+      "Dentists and Dental Hygienists have interdependent schedules: the dentist performs the exam after the hygiene cleaning, so efficient hygiene-dentist handoff directly impacts production.",
+      "Dental Assistants are paired with specific dentists for chairside support; good assistant-dentist teams produce higher quality and volume.",
+      "Treatment Plan Coordinator bridges clinical recommendations (from the dentist) and patient financial decisions — a key role for case acceptance.",
+      "Front desk and hygiene team coordinate the all-annual-visit scheduling that forms the backbone of a recall-based practice.",
+      "Lab technician communicates with dentists on case specifications, material choices, shade matching, and delivery timelines.",
+      "Insurance/Billing team works with front desk to verify benefits before the patient is seated — preventing surprise denials and patient dissatisfaction."
+    ],
+    "org_chart_text": "                                ┌──────────────────────────┐\n                                │  Owner / DSO Regional    │\n                                │  Director                │\n                                └──────────┬───────────────┘\n                                           │\n                           ┌───────────────┴────────────────┐\n                           │                                │\n                     ┌─────┴──────┐                 ┌───────┴────────┐\n                     │   Lead     │                 │   Practice     │\n                     │   Dentist  │                 │   Manager      │\n                     └─┬──┬──┬───┬┘                 └───┬───────┬────┘\n                       │  │  │   │                      │       │\n           ┌───────────┘  │  │   │           ┌──────────┘       └─────────┐\n           │              │  │   │           │                            │\n      ┌────┴────┐  ┌─────┴──┴──┐│    ┌──────┴───────┐          ┌─────────┴──────────┐\n      │General  │  │Specialists││    │  Front Desk  │          │  Insurance/Billing  │\n      │Dentists │  │(Ortho,    ││    │  / Patient   │          │  / Treatment Plan   │\n      │(1-6)    │  │Endo, OS,  ││    │  Coordinators│          │  Coordinators       │\n      └─────────┘  │Perio, Ped)││    │  (2-6)       │          │  (1-3)              │\n                   └──────────┘│    └──────────────┘          └────────────────────┘\n                                │\n            ┌───────────────────┼───────────────────┐\n            │                   │                   │\n      ┌─────┴─────┐     ┌──────┴──────┐     ┌──────┴──────┐\n      │ Dental    │     │ Dental      │     │ Dental Lab  │\n      │ Hygienists│     │ Assistants  │     │ Technicians │\n      │ RDH (1-8) │    │ CDAs (1-8)  │     │ (0-4)       │\n      └───────────┘     └─────────────┘     └─────────────┘"
+  }
+}

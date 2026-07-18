@@ -1,0 +1,162 @@
+{
+  "preset": "sports-team",
+  "version": "1.0",
+  "name": "Professional Sports Team / Organization",
+  "description": "Organization structure for a professional sports team or club organization. Covers the General Manager and front office (scouting, analytics, player personnel, salary cap management), coaching staff (Head Coach, coordinators, position coaches), players (roster), and the business side (President, marketing, sales, ticketing, community relations, media, facilities). Designed for professional leagues including team sizes of 30-150 personnel on the roster side and 20-200 in the front office and business operations.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["sports", "entertainment"], "stages": ["operational", "growth", "mature"] },
+  "headcount_range": "50-400",
+  "org_structure": {
+    "overview": "Professional sports teams are structured around two parallel organizations: the business/front office side and the on-field/competitive side. The team President (or ownership) oversees both, with a General Manager typically managing the competitive side (roster construction and coaching staff) and a separate business executive managing revenue generation. The coaching staff led by the Head Coach focuses on player development and game strategy. Scouting and analytics support roster decisions. The business side drives ticket sales, sponsorships, merchandise, marketing, media, and community relations. League rules (salary caps, roster limits, draft rules, collective bargaining agreements) constrain all decisions. Player performance drives organizational success, supported by athletic training, strength & conditioning, and sports science staff.",
+    "departments": [
+      {
+        "name": "Ownership & Executive Leadership",
+        "description": "Team ownership and top executive leadership. Sets the vision, approves major financial decisions (player contracts, facilities), and represents the team in league governance matters.",
+        "headcount": "2-10",
+        "reports_to": "Owners / Board of Directors",
+        "roles": [
+          { "title": "Owner / Managing Partner", "count": 1, "level": "Executive", "reports_to": "League / Board", "description": "Principal owner and ultimate decision-maker. Represents the team at league owners meetings." },
+          { "title": "Team President / CEO", "count": 1, "level": "Executive", "reports_to": "Owner", "description": "Highest-ranking executive. Oversees both business operations and the General Manager. Sets organizational culture and strategy." },
+          { "title": "Chief Operating Officer (COO)", "count": 1, "level": "Executive", "reports_to": "President", "description": "Manages day-to-day operations across all departments; coordinates between business and competitive sides." },
+          { "title": "General Counsel", "count": 1, "level": "Senior", "reports_to": "President", "description": "Handles contracts, collective bargaining agreement compliance, risk management, and legal affairs." }
+        ]
+      },
+      {
+        "name": "General Manager / Player Personnel",
+        "description": "The front office engine responsible for constructing the roster, managing the salary cap, negotiating contracts, and directing the scouting and analytics departments. Works in close partnership with the Head Coach on personnel decisions.",
+        "headcount": "10-40",
+        "reports_to": "Team President / Owner",
+        "roles": [
+          { "title": "General Manager", "count": 1, "level": "Executive", "reports_to": "Team President", "description": "Chief architect of the roster. Makes final decisions on player acquisitions, trades, draft picks, and contract negotiations." },
+          { "title": "Assistant General Manager", "count": "1-2", "level": "Senior", "reports_to": "General Manager", "description": "Deputy GM involved in all personnel decisions; may oversee pro scouting or salary cap management." },
+          { "title": "Director of Player Personnel", "count": 1, "level": "Senior", "reports_to": "General Manager", "description": "Oversees college and professional scouting departments; manages scouting database and evaluations." },
+          { "title": "Salary Cap / Contracts Manager", "count": 1, "level": "Professional", "reports_to": "GM / Assistant GM", "description": "Models cap scenarios, manages contract compliance, and advises on roster financial strategy." },
+          { "title": "Contract / Roster Analyst", "count": "1-3", "level": "Professional", "reports_to": "Salary Cap Manager", "description": "Provides contract analysis, league rules research, and roster compliance tracking." },
+          { "title": "Scout (Professional)", "count": "3-8", "level": "Professional", "reports_to": "Director of Player Personnel", "description": "Evaluates players in professional leagues (other teams, free agents, minor leagues). Provides reports and recommendations." },
+          { "title": "Scout (Amateur / College)", "count": "5-15", "level": "Professional", "reports_to": "Director of Player Personnel", "description": "Evaluates draft-eligible players in college, high school, or international leagues. Provides draft board input." },
+          { "title": "International Scout", "count": "2-5", "level": "Professional", "reports_to": "Director of Player Personnel", "description": "Identifies and evaluates talent in international markets; builds relationships with foreign clubs and agents." }
+        ]
+      },
+      {
+        "name": "Analytics & Research",
+        "description": "Drives data-informed decision-making across player evaluation, game strategy, opponent analysis, and front office operations. Quantifies performance beyond traditional scouting.",
+        "headcount": "3-15",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Director of Analytics", "count": 1, "level": "Senior", "reports_to": "General Manager", "description": "Leads the analytics department; develops models for player evaluation, game strategy, and roster optimization." },
+          { "title": "Data Scientist / Analyst", "count": "2-8", "level": "Professional", "reports_to": "Director of Analytics", "description": "Builds predictive models, maintains data pipelines, and produces reports for coaching and front office." },
+          { "title": "Video / Opponent Analyst", "count": "1-4", "level": "Professional", "reports_to": "Director of Analytics", "description": "Breaks down opponent tendencies, creates scouting reports, and manages video database." },
+          { "title": "Sports Science Analyst", "count": "1-2", "level": "Professional", "reports_to": "Director of Analytics", "description": "Analyzes player load, injury risk, recovery metrics, and performance data from wearables." }
+        ]
+      },
+      {
+        "name": "Coaching Staff",
+        "description": "Responsible for team preparation, game strategy, in-game decision-making, and player development. Led by the Head Coach, with specialized coordinators and position coaches managing specific units.",
+        "headcount": "10-25",
+        "reports_to": "General Manager",
+        "roles": [
+          { "title": "Head Coach", "count": 1, "level": "Executive", "reports_to": "General Manager", "description": "Leads all on-field activities. Sets the team's system, culture, and game plans. Makes final in-game decisions." },
+          { "title": "Assistant Head Coach", "count": "0-1", "level": "Senior", "reports_to": "Head Coach", "description": "Senior assistant who may double as a coordinator; supports the head coach across all areas." },
+          { "title": "Offensive Coordinator", "count": 1, "level": "Senior", "reports_to": "Head Coach", "description": "Designs and calls offensive game plans; manages offensive position coaches and game preparation." },
+          { "title": "Defensive Coordinator", "count": 1, "level": "Senior", "reports_to": "Head Coach", "description": "Designs and calls defensive game plans; manages defensive position coaches and game preparation." },
+          { "title": "Special Teams Coordinator", "count": 1, "level": "Senior", "reports_to": "Head Coach", "description": "Manages kicking game, punts, kickoffs, and returns; coordinates special teams personnel usage." },
+          { "title": "Position Coach (Offensive/Defensive)", "count": "5-12", "level": "Professional", "reports_to": "Coordinator", "description": "Coaches a specific position group (QB, OL, WR, RB, DL, LB, DB, etc.). Leads film study, drills, and position meetings." },
+          { "title": "Assistant Position Coach / Quality Control", "count": "3-8", "level": "Professional", "reports_to": "Position Coach / Coordinator", "description": "Supports position coach with film breakdown, practice planning, and data tracking." },
+          { "title": "Coaching Analyst / Intern", "count": "1-4", "level": "Entry", "reports_to": "Quality Control Coach", "description": "Entry-level role assisting with film breakdown, data entry, and administrative support for coaching staff." }
+        ]
+      },
+      {
+        "name": "Players / Roster",
+        "description": "The active roster of players who compete. Managed by the General Manager and coached by the coaching staff. Includes active roster, injured list, practice squad, and reserve players.",
+        "headcount": "30-150",
+        "reports_to": "Head Coach / General Manager",
+        "roles": [
+          { "title": "Team Captain", "count": "2-6", "level": "Player / Leader", "reports_to": "Head Coach", "description": "Player leader elected or appointed. Liaises between players and coaching staff; leads locker room culture." },
+          { "title": "Active Roster Player", "count": "25-53", "level": "Player", "reports_to": "Head Coach / Position Coach", "description": "Professional athlete on the active roster. Competes in games, attends practices and meetings." },
+          { "title": "Practice Squad / Reserve Player", "count": "5-50", "level": "Player", "reports_to": "Head Coach / Position Coach", "description": "Non-active roster player who practices with team. Develops skills; eligible to be activated to active roster." },
+          { "title": "Player on Injured List", "count": "0-10", "level": "Player", "reports_to": "Athletic Training Staff", "description": "Player recovering from injury; ineligible to play for specified period." }
+        ]
+      },
+      {
+        "name": "Athletic Training & Performance",
+        "description": "Manages player health, injury prevention, treatment, rehabilitation, strength and conditioning, and nutrition. Critical for roster availability and player longevity.",
+        "headcount": "5-20",
+        "reports_to": "General Manager / Team President",
+        "roles": [
+          { "title": "Head Athletic Trainer", "count": 1, "level": "Senior", "reports_to": "General Manager", "description": "Leads the medical/training staff. Manages injury evaluation, treatment plans, and rehabilitation programs." },
+          { "title": "Assistant Athletic Trainer", "count": "2-6", "level": "Professional", "reports_to": "Head Athletic Trainer", "description": "Provides daily injury treatment, taping, rehabilitation, and practice/game coverage." },
+          { "title": "Team Physician / Medical Director", "count": "1-2", "level": "Senior (Contract/FT)", "reports_to": "General Manager", "description": "Physician responsible for medical decisions, surgeries (if needed), and clearance determinations." },
+          { "title": "Head Strength & Conditioning Coach", "count": 1, "level": "Professional", "reports_to": "Head Athletic Trainer", "description": "Designs and implements strength, conditioning, and agility programs for all players." },
+          { "title": "Assistant Strength & Conditioning Coach", "count": "1-3", "level": "Professional", "reports_to": "Head S&C Coach", "description": "Assists with training programs, workout supervision, and player monitoring." },
+          { "title": "Nutritionist / Dietitian", "count": "1-2", "level": "Professional", "reports_to": "Head Athletic Trainer", "description": "Develops meal plans, monitors player nutrition, and advises on dietary needs for performance and recovery." },
+          { "title": "Massage Therapist / Soft Tissue Specialist", "count": "1-3", "level": "Support", "reports_to": "Head Athletic Trainer", "description": "Provides soft tissue therapy, recovery treatments, and pre-game preparation." }
+        ]
+      },
+      {
+        "name": "Marketing, Sales & Ticketing",
+        "description": "Revenue-generating side of the organization. Drives ticket sales, season ticket memberships, corporate partnerships/sponsorships, merchandise, and brand marketing.",
+        "headcount": "10-50",
+        "reports_to": "Team President / COO",
+        "roles": [
+          { "title": "VP of Marketing & Revenue", "count": 1, "level": "Senior", "reports_to": "Team President", "description": "Leads all revenue-generating activities: ticket sales, sponsorships, and brand marketing." },
+          { "title": "Director of Ticket Sales", "count": 1, "level": "Senior", "reports_to": "VP of Marketing & Revenue", "description": "Manages season tickets, group sales, single-game sales, and ticket operations (including CRM)." },
+          { "title": "Ticket Sales Representative", "count": "3-15", "level": "Professional", "reports_to": "Director of Ticket Sales", "description": "Prospects and closes ticket sales; manages account relationships for season ticket holders." },
+          { "title": "Director of Corporate Partnerships / Sponsorships", "count": 1, "level": "Senior", "reports_to": "VP of Marketing & Revenue", "description": "Sells and manages corporate sponsorship packages including signage, media, and experiential assets." },
+          { "title": "Partnership Activation Manager", "count": "1-4", "level": "Professional", "reports_to": "Director of Corporate Partnerships", "description": "Executes sponsorship agreements, manages partner deliverables, and ensures contractual compliance." },
+          { "title": "Director of Marketing & Brand", "count": 1, "level": "Senior", "reports_to": "VP of Marketing & Revenue", "description": "Develops brand strategy, advertising campaigns, social media, and fan engagement initiatives." },
+          { "title": "Marketing / Social Media Coordinator", "count": "2-6", "level": "Professional", "reports_to": "Director of Marketing", "description": "Creates content, manages social platforms, and executes marketing campaigns." },
+          { "title": "Director of Merchandising / Retail", "count": 1, "level": "Professional", "reports_to": "VP of Marketing & Revenue", "description": "Oversees team store (physical and online), merchandise design partnerships, and apparel inventory." }
+        ]
+      },
+      {
+        "name": "Communications & Media Relations",
+        "description": "Manages the team's public image, media relationships, and internal communications. Handles press conferences, game day media access, player media training, and crisis communication.",
+        "headcount": "3-10",
+        "reports_to": "Team President",
+        "roles": [
+          { "title": "Director of Communications / Media Relations", "count": 1, "level": "Senior", "reports_to": "Team President", "description": "Manages all media relations, press releases, media credentials, and crisis communications." },
+          { "title": "Media Relations Manager", "count": "1-3", "level": "Professional", "reports_to": "Director of Communications", "description": "Coordinates game-day press operations, player interviews, and media requests." },
+          { "title": "Broadcast / Content Producer", "count": "1-3", "level": "Professional", "reports_to": "Director of Communications", "description": "Produces team content for broadcast partners, in-venue video, and digital platforms." },
+          { "title": "Team Reporter / Beat Writer", "count": "1-2", "level": "Professional", "reports_to": "Director of Communications", "description": "Creates editorial content covering the team for the team's owned media channels." }
+        ]
+      },
+      {
+        "name": "Community Relations & Fan Engagement",
+        "description": "Builds the team's connection with its community through charitable initiatives, player appearances, youth programs, and fan events. Enhances the team's reputation and social impact.",
+        "headcount": "2-8",
+        "reports_to": "Team President",
+        "roles": [
+          { "title": "Director of Community Relations", "count": 1, "level": "Senior", "reports_to": "Team President", "description": "Leads the team's charitable foundation, player community outreach, and fan engagement programs." },
+          { "title": "Community Relations Coordinator", "count": "1-4", "level": "Professional", "reports_to": "Director of Community Relations", "description": "Coordinates player appearances, charitable events, youth clinics, and fan activities." },
+          { "title": "Fan Experience / Game Entertainment Manager", "count": 1, "level": "Professional", "reports_to": "Director of Community Relations", "description": "Designs the in-venue fan experience including music, halftime shows, giveaways, and fan contests." }
+        ]
+      },
+      {
+        "name": "Facilities & Game Operations",
+        "description": "Manages the team's training facility, stadium/arena operations, equipment, travel logistics, and game-day operations. Ensures the infrastructure supports both the team and events.",
+        "headcount": "10-60",
+        "reports_to": "COO / President",
+        "roles": [
+          { "title": "Director of Facilities / Stadium Operations", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Oversees facility maintenance, event setup, security, and janitorial services for the venue." },
+          { "title": "Equipment Manager", "count": 1, "level": "Professional", "reports_to": "Director of Facilities", "description": "Manages all team equipment: uniforms, practice gear, game equipment, and player equipment needs." },
+          { "title": "Assistant Equipment Manager", "count": "2-5", "level": "Support", "reports_to": "Equipment Manager", "description": "Prepares and maintains equipment for practices and games; handles laundry and inventory." },
+          { "title": "Travel & Logistics Coordinator", "count": "1-2", "level": "Professional", "reports_to": "COO / Director of Facilities", "description": "Arranges team travel including flights, hotels, buses, and meal logistics for road games." },
+          { "title": "Head Groundskeeper / Field Manager", "count": 1, "level": "Professional", "reports_to": "Director of Facilities", "description": "Maintains the playing surface to professional standards; manages grounds crew." },
+          { "title": "Event / Game Day Staff", "count": "5-40", "level": "Support (Part-time/FT)", "reports_to": "Director of Facilities", "description": "Ushers, security, parking, and concessions staff who operate during events." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The General Manager and Head Coach form the most important partnership in the organization; the GM builds the roster, the Head Coach develops and deploys it.",
+      "The Team President oversees both the General Manager (competitive side) and the VP of Marketing & Revenue (business side), balancing winning with financial sustainability.",
+      "Scouting provides player evaluations to the GM; the GM makes the final call on acquisitions with input from the Head Coach on scheme fit.",
+      "Analytics informs both the front office (player valuation) and coaching staff (game strategy, opponent tendencies).",
+      "The Athletic Training staff works with the Head Coach and GM to manage player workload, injury return timelines, and load management.",
+      "Salary Cap / Contracts Manager advises the GM on financial implications of roster moves and ensures CBA compliance.",
+      "Sales and Marketing generate the revenue that funds player salaries and organizational growth; they work closely with the COO on pricing and promotions.",
+      "Community Relations coordinates player appearances and charitable work with the Head Coach to manage player availability and rest.",
+      "Equipment Manager works directly with players and coaching staff daily to ensure gear readiness for practices and games.",
+      "League office (central governance) sets rules that the General Manager and General Counsel must comply with regarding roster, salary cap, conduct, and branding."
+    ],
+    "org_chart_text": "Owner / Managing Partner\n  └── Team President / CEO\n        ├── General Counsel\n        │\n        ├── General Manager\n        │     ├── Assistant General Manager\n        │     ├── Director of Player Personnel\n        │     │     ├── Pro Scouts\n        │     │     ├── Amateur/College Scouts\n        │     │     └── International Scouts\n        │     ├── Salary Cap / Contracts Manager\n        │     ├── Director of Analytics\n        │     │     ├── Data Scientists / Analysts\n        │     │     ├── Video / Opponent Analysts\n        │     │     └── Sports Science Analyst\n        │     └── Head Coach\n        │           ├── Offensive Coordinator\n        │           │     └── Position Coaches (QB, OL, WR, RB)\n        │           ├── Defensive Coordinator\n        │           │     └── Position Coaches (DL, LB, DB)\n        │           ├── Special Teams Coordinator\n        │           ├── Quality Control Coaches\n        │           └── Assistant Position Coaches\n        │\n        ├── COO\n        │     ├── Head Athletic Trainer\n        │     │     ├── Assistant Athletic Trainers\n        │     │     ├── Strength & Conditioning Coach\n        │     │     └── Nutritionist\n        │     ├── Director of Facilities / Stadium Ops\n        │     │     ├── Equipment Manager\n        │     │     ├── Groundskeeper\n        │     │     └── Event Staff\n        │     └── Travel & Logistics Coordinator\n        │\n        ├── VP Marketing & Revenue\n        │     ├── Director of Ticket Sales\n        │     │     └── Sales Representatives\n        │     ├── Director of Corporate Partnerships\n        │     │     └── Partnership Activation Managers\n        │     ├── Director of Marketing & Brand\n        │     │     └── Marketing Coordinators\n        │     └── Director of Merchandising\n        │\n        ├── Director of Communications\n        │     ├── Media Relations Managers\n        │     ├── Broadcast / Content Producers\n        │     └── Team Reporter\n        │\n        ├── Director of Community Relations\n        │     ├── Community Relations Coordinators\n        │     └── Fan Experience Manager\n        │\n        └── Players / Roster\n              ├── Team Captains\n              ├── Active Roster Players\n              ├── Practice Squad / Reserves\n              └── Injured List Players"
+  }
+}

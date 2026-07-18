@@ -1,0 +1,94 @@
+{
+  "playbook": "any-to-any",
+  "version": "1.0",
+  "name": "Cross-Border Expansion General Checklist",
+  "overview": "This playbook provides a universal expansion checklist that applies to ANY cross-border expansion, regardless of source and destination region. While each corridor has specific legal, cultural, and market considerations, a core set of steps applies universally: legal entity setup, tax registration, banking, payroll and compliance infrastructure, hiring, benefits benchmarking, and cultural integration. This playbook is designed as the starting point for any expansion planning. It should be used in conjunction with a corridor-specific playbook (e.g., us-to-emea, emea-to-us) that addresses region-specific nuances. Following these steps in order minimizes common mistakes: underestimating compliance timelines, launching without proper tax advice, hiring without benefits benchmarking, and failing to build cultural bridges between HQ and the new market. The most successful expansions follow a phased approach: market validation and initial hires via EOR/PEO (Phase 1), entity establishment and transition (Phase 2), and scaling with local infrastructure and management (Phase 3). Rushing Phase 1 or attempting to skip Phase 2 by staying on EOR indefinitely creates compliance and cost risks of its own.",
+  "phase_1_market_and_strategy": [
+    "Conduct market validation: size the addressable market, assess competitive landscape, identify customer segments, validate product-market fit for the target country",
+    "Define expansion objectives: revenue generation vs talent access vs strategic positioning vs cost arbitrage. Each implies a different entity structure and hiring strategy.",
+    "Engage local legal and tax advisors in the target country. Do not rely on HQ-country advisors who claim to handle cross-border work without local partners.",
+    "Assess regulatory barriers: foreign ownership restrictions, visa regimes, import/export controls, sector-specific licensing, data localization requirements",
+    "Build a country business case: 3-year financial model including entity setup costs (-50k+), ongoing compliance costs, staffing costs, office costs, and revenue projections",
+    "Select market entry structure: direct subsidiary vs branch vs representative office vs joint venture vs acquisition vs EOR-only model. Decision matrix based on timeline, budget, and risk tolerance.",
+    "Evaluate tax treaty benefits between source and destination country for dividends, interest, royalties, and capital gains withholding rates",
+    "Determine initial target headcount: minimum viable team size to achieve Phase 1 objectives. Typical: 1-3 hires for market testing, 5-15 for operational launch."
+  ],
+  "phase_2_entity_and_infrastructure": [
+    "Register legal entity in target country: choose entity type based on liability protection, tax treatment, capital requirements, and governance needs",
+    "Appoint local directors/officers: many countries require locally resident directors (China, Singapore, UAE, Brazil) who may have personal liability exposure",
+    "Obtain tax identification numbers: federal tax ID, state/provincial tax ID, municipal tax ID as applicable",
+    "Open a local bank account in the entity's name. This is often the slowest step (1-3 months in some countries). Start early. Prepare for extensive due diligence documentation (source of funds, business plan, director IDs).",
+    "Register for payroll tax and social security: employer and employee contribution registration, work injury insurance, unemployment insurance",
+    "Register for indirect taxes: VAT/GST/HST registration (turnover-dependent in many countries), customs duties if importing goods",
+    "Establish transfer pricing documentation framework: intercompany agreements for services, IP licensing, financing. Prepare local country file and master file documentation.",
+    "Set up local accounting and tax compliance: bookkeeping in local GAAP, statutory audit requirements, tax filing calendar, withholding tax obligations",
+    "Implement HR infrastructure: local payroll system (or outsourced payroll provider), time tracking, expense management, leave management",
+    "Secure office space (if not remote-first): serviced office or lease. In some countries (China, Japan), a registered address and physical office are required for entity registration.",
+    "Obtain business licenses and permits: industry-specific licenses (financial services, healthcare, food, education), municipal operating permits, health and safety certifications"
+  ],
+  "phase_3_hiring_and_people": [
+    "Determine hiring strategy: EOR/PEO vs direct employment. Use EOR for first 3-10 hires while entity setup is in progress, then transition. This is the fastest path to first hire.",
+    "Benchmark compensation: use local salary surveys, Radford/Mercer data, or engage a local compensation consultancy. Account for employer-side social charges, mandatory benefits, and market premiums.",
+    "Draft local employment contracts: must comply with local labor law (written form, mandatory clauses, language requirements, probation periods, notice periods, termination provisions)",
+    "Register for mandatory benefits: social security, health insurance, pension, workers compensation, unemployment insurance. Each country has unique requirements and registration processes.",
+    "Set up voluntary benefits: private health insurance (expected in many markets), supplemental pension, life insurance, meal vouchers, transportation subsidies, gym memberships",
+    "Design employee handbook: adapted to local laws (anti-harassment policies, data privacy, code of conduct, social media policy, expense policy, remote work policy)",
+    "Implement HR technology: HRIS for employee records, payroll system, performance management, time tracking. Must comply with local data protection laws for employee data storage and processing.",
+    "Establish local management: country manager, finance/operations lead, compliance officer (the latter two can be fractional/shared in early stages)",
+    "Create onboarding program: cultural integration training, HQ visit (budget for this), product training, compliance training",
+    "Develop local performance management: adapted to local cultural norms (direct vs indirect feedback, public vs private recognition, goal-setting process)"
+  ],
+  "phase_4_compliance_and_risk": [
+    "Create a compliance calendar: all statutory deadlines (tax filings, payroll filings, annual returns, social security filings, data protection reports, works council consultations) in a single master calendar",
+    "Data protection compliance: register with local data protection authority if required; appoint DPO if needed; update privacy notices; implement data subject request process; ensure cross-border data transfer mechanism (SCCs, BCRs, adequacy decisions)",
+    "Employment law compliance: confirm at-will vs cause-based termination norms, notice periods, severance obligations, collective redundancy rules, works council/union consultation requirements, post-termination restrictions (non-competes, non-solicits)",
+    "Anti-corruption compliance: ensure compliance with FCPA (US), UK Bribery Act, local anti-corruption laws. Implement whistleblower hotline, anti-bribery policies, gift and entertainment policy, third-party due diligence.",
+    "Immigration compliance: right-to-work checks for all hires, visa sponsorship (if applicable), record-keeping for visa holders, reporting changes to immigration authorities",
+    "Financial compliance: local GAAP statutory audit, transfer pricing documentation (local file, master file, country-by-country reporting if revenue exceeds thresholds), related-party transaction reporting",
+    "Risk management: employment practices liability insurance (EPLI), directors and officers insurance (D&O), general liability insurance, workers compensation, cyber insurance",
+    "Entity maintenance: annual filings, board meeting minutes, shareholder registers, annual returns, registered agent renewal. Many companies neglect these and face penalties."
+  ],
+  "phase_5_scale_and_optimize": [
+    "Evaluate transitioning from EOR to direct employment: when headcount reaches 10-20, the cost of EOR (typically 10-15% of payroll) may exceed the cost of running your own entity",
+    "Standardize global HR policies: create a global employment framework that complies with each local jurisdiction while maintaining consistent culture and values",
+    "Build local management bench: develop local leaders who can operate independently of HQ. Over-reliance on expatriates is expensive and limits scaling.",
+    "Implement global payroll consolidation: centralize payroll data for global reporting while maintaining local compliance. Global payroll platforms (CloudPay, Papaya Global, Deel) enable this.",
+    "Global equity plan: implement a global option/RSU plan that works in all employee jurisdictions. Consider local sub-plans, tax-equalization policies, and securities law compliance.",
+    "Establish shared services: centralize back-office functions (finance, HR, legal, IT) at regional HQ level to serve multiple country entities",
+    "Annual global compliance audit: review entity status, payroll compliance, tax filings, data protection compliance, employment contracts, and benefit programs across all jurisdictions",
+    "Develop exit strategy: document options for exiting the market if needed (entity dissolution, employee termination costs, lease breakage, tax exit implications)"
+  ],
+  "peo_eor_vs_entity_comparison": "PEO/EOR (Professional Employer Organization / Employer of Record) is the fastest path to hiring in a new country. The EOR is the legal employer; you direct the work. Costs are typically 10-15% of gross payroll per employee. PEO/EOR is ideal for: first 3-10 hires in a new country, market testing before committing to entity setup, countries with very complex or slow entity registration (Brazil, China, India), and teams under 20 total in a country. Establishing your own entity is recommended for: 10+ employees in a country (cost crossover point), companies seeking permanent local presence and brand credibility, businesses requiring local contracts, IP ownership, or direct customer billing, and companies needing full control over payroll, benefits, and compliance. The transition from EOR to entity involves: setting up the entity, registering for payroll/tax, issuing new employment contracts, transferring employment from EOR (may trigger severance/continuity obligations depending on country), closing EOR agreement.",
+  "budget_considerations": "Entity setup costs: ,000-50,000 per country depending on complexity (legal fees, registration fees, notary fees, registered capital where required). Ongoing compliance costs: ,000-40,000 per year per country (local accountant, tax filing, legal fees, registered agent, audit). Payroll provider: -200 per employee per month (or bundled in EOR fee). EOR/PEO fees: 10-15% of gross annual payroll per employee per year. Benefits costs: 15-50% of base salary (employer-side social charges + voluntary benefits). Office costs: depends on market (Coworking -2,000/desk/year in most markets). Contingency: add 20-30% to all estimates for unexpected fees, exchange rate movements, and timeline overruns.",
+  "legal_entity_types_worldwide": {
+    "common": [
+      "Private Limited Company (Ltd, GmbH, SL, Pvt Ltd, Pty Ltd, LLC)",
+      "Public Limited Company (PLC, AG, SA, NV, Corp)",
+      "Branch Office (full parent liability)",
+      "Representative Office (limited activities, no revenue)",
+      "Joint Venture (shared ownership with local partner)"
+    ],
+    "factors": [
+      "Liability protection (limited vs unlimited)",
+      "Minimum capital requirements (0 in many countries, 25k EUR in Germany GmbH, 1m JPY for Japan KK reputationally)",
+      "Local director/residency requirements",
+      "Tax treatment (separate entity vs flow-through)",
+      "Conversion path from representative office to full entity",
+      "Time to register (2 weeks in Singapore to 6 months in China)"
+    ]
+  },
+  "cultural_training_recommendation": "Cross-cultural training is not optional — it is essential for any expansion. At minimum: (1) All HQ employees who will interact with the new market should receive cultural awareness training before Day 1 of the expansion. (2) The country manager and any expatriates should receive in-depth cultural training (2-3 days) covering communication styles, hierarchy expectations, business etiquette, negotiation norms, and common misunderstandings. (3) Consider a cultural liaison or integration partner who has lived and worked in both cultures. (4) Schedule regular HQ-team-building sessions that bring new-market team members to HQ within the first 6 months. (5) Establish norms for cross-cultural communication: when to use email vs chat vs in-person, how to handle time zone differences, meeting etiquette, feedback protocols. Budget ,000-5,000 per key employee for comprehensive cross-cultural training and integration support.",
+  "common_general_pitfalls": [
+    "Rushing entity setup without proper legal and tax advice. Cutting corners on entity type selection leads to costly restructuring later.",
+    "Using a single provider for everything. EOR providers, law firms, and accounting firms each have their strengths; bundling services with one vendor may sacrifice quality in some areas.",
+    "Assuming HQ-country employment practices transfer. Every country has unique labor laws, notice periods, termination costs, and benefit expectations.",
+    "Not budgeting for the full cost of employment. Base salary is only 50-70% of total cost in many countries after employer social charges, mandatory benefits, and compliance costs.",
+    "Hiring too fast before infrastructure is ready. Hiring without payroll, benefits, and compliance infrastructure creates legal risk and a poor employee experience.",
+    "Neglecting entity maintenance. Once the entity is set up, annual filings, tax returns, and compliance obligations continue. Ignoring them leads to penalties, interest, and potential director liability.",
+    "Not investing in local management. The best-run subsidiaries have empowered local leaders. Micromanagement from HQ is the #1 cause of expatriate failure and local team turnover.",
+    "Ignoring currency risk. Exchange rate fluctuations can significantly impact budgeted costs. Consider hedging strategies or local-currency revenue generation.",
+    "Underestimating timeline. Everything takes longer than expected in a new market: entity registration (2-6 months), bank account opening (1-3 months), hiring (2-4 months for first hire, 3-6 months for key leadership).",
+    "Failing to plan for exit. Entity dissolution can take 6-24 months in some countries (Brazil, India, China). Plan exit costs and timelines from the beginning."
+  ],
+  "timeline_estimate": "4-24 months depending on country and scope. Phase 1 (validation + first hires via EOR): 1-3 months. Phase 2 (entity setup + infrastructure): 2-8 months. Phase 3 (team build): ongoing. Phase 4 (compliance): ongoing. Recommend planning for 12 months from decision to operational launch with first 3-5 direct employees."
+}

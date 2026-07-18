@@ -1,0 +1,62 @@
+{
+  "playbook": "us-to-emea",
+  "version": "1.0",
+  "name": "US Company → EMEA Expansion",
+  "overview": "Expanding from the United States into Europe (EMEA) is one of the most common cross-border moves, but it presents significant structural and cultural challenges. The US at-will employment model does not exist in Europe; almost every country has strong employee protections, mandatory works councils or unions, and statutory minimum vacation days (typically 20+). Payroll complexity increases dramatically with social security systems, VAT (20%+ in most countries), and strict data privacy laws under GDPR. Companies often underestimate the cost and timeline of setting up a legal entity, hiring their first local employee, and adapting US-style management to European norms. The UK is the easiest entry point due to language and common law heritage, while Germany and France present higher friction but larger talent pools. A phased approach — starting with an Employer of Record (EOR) in one country, then establishing a实体, then expanding to additional countries — is the most capital-efficient path.",
+  "entity_types": {
+    "recommended": "For the UK: Private Limited Company (Ltd). For Germany: Gesellschaft mit beschraenkter Haftung (GmbH). For France: Societe par Actions Simplifiee (SAS). For the Netherlands: Besloten Vennootschap (BV).",
+    "alternatives": [
+      "UK: Branch of US entity (simpler but unlimited liability)",
+      "Germany: Unternehmergesellschaft (mini-GmbH) with lower minimum capital (1 EUR)",
+      "France: EURL (one-person SAS equivalent) for single owner",
+      "Netherlands: Branch or Stichting + BV structure for holding companies"
+    ]
+  },
+  "legal_requirements": [
+    "GDPR compliance program — appoint a Data Protection Officer (DPO) if processing EU resident data at scale; map all data flows; update privacy policies and consent mechanisms",
+    "UK: Register with Companies House, register for PAYE (payroll tax), VAT if turnover exceeds 90,000 GBP, comply with IR35 off-payroll working rules for contractors",
+    "Germany: Minimum share capital of 25,000 EUR for GmbH; mandatory commercial register entry; trade office registration (Gewerbeanmeldung); membership in IHK (Chamber of Commerce)",
+    "Germany: Works council (Betriebsrat) formation rights for employees; mandatory social security registration (health, pension, unemployment, long-term care insurance)",
+    "France: Register with RCS (Registre du Commerce et des Societes); URSSAF registration for social contributions; mandatory supplementary health insurance (mutuelle) for all employees",
+    "France: 35-hour workweek reference (though annualized hours agreements are common); mandatory profit-sharing (interessement/participation) for companies with 50+ employees",
+    "Netherlands: Register with KVK (Chamber of Commerce); mandatory payroll tax registration; Dutch WNT Act limits executive pay in certain sectors",
+    "UK: Auto-enrollment pension scheme for all eligible employees; right-to-work checks before hiring",
+    "All EU countries: GDPR data transfer mechanism (Standard Contractual Clauses or Binding Corporate Rules) for data flowing from EU to US",
+    "VAT registration required once local sales exceed thresholds (varies by country); reverse-charge mechanism for B2B services simplifies cross-border VAT"
+  ],
+  "hiring_timeline": {
+    "phase_1": "First local hire (month 1-3): Use an EOR to hire your first employee in the target country while entity setup is in progress. Recruit a country manager or first sales/support hire. 3-month probation period typical.",
+    "phase_2": "Small team (month 3-8): Establish legal entity. Transition EOR employees to your entity. Hire 3-5 additional staff. Register for payroll, social security, and VAT. Set up local benefits (pension, health insurance).",
+    "phase_3": "Full office (month 8-18): Scale to 10-20+ employees. Navigate works council formation if in Germany/France. Implement GDPR-compliant HR systems. Consider expansion to second EMEA country via EOR or additional entity."
+  },
+  "org_structure_adaptations": [
+    "Flatten decision-making — European employees expect more autonomy and less top-down command than typical US management styles",
+    "Add a Data Protection Officer role (mandatory in many cases under GDPR)",
+    "Consider a VP EMEA or regional managing director who bridges US headquarters and local teams",
+    "European subsidiaries typically need their own board or management structure (Geschaeftsfuehrer in Germany, President in France) with local residency requirements in some countries",
+    "Works council or employee representative bodies must be consulted on major decisions (restructuring, location changes, mass hiring/firing)",
+    "Legal/Compliance function must be stronger in Europe than typical US operations — employment law risk is higher"
+  ],
+  "compensation_notes": "European compensation packages look different from US equivalents. Base salaries are often lower than US tech hub levels, but total cost to employer can be similar or higher due to mandatory social contributions (employer-side social security: ~20% UK, ~21% Germany, ~45% France). Stock options and RSUs are common in tech but less universally expected than in the US. Performance-based bonuses are common (10-20% of base). Benefits include mandatory health insurance (varies by country), 20-30 vacation days minimum, 13th/14th month salary in some countries (Germany often, Spain/Italy mandatory), and generous parental leave (Germany: 14 months shared, paid). Pension contributions are mandatory via state systems; company pension schemes (betriebliche Altersvorsorge in Germany) are valued perks. Executive compensation faces more scrutiny and, in some countries (Netherlands, France), caps or disclosure requirements. Equity compensation is more complex and less tax-favorable than in the US; seek local tax advice before granting options or RSUs to European employees.",
+  "cultural_key_differences": [
+    "Work-life balance is a legal right, not a perk. Late-night emails and weekend work are frowned upon and, in France, legally restricted (right to disconnect law).",
+    "Holiday entitlement of 20-30 days is mandatory; taking less than the full allotment is unusual and sometimes legally prohibited.",
+    "Notice periods are long (1-3 months for both sides) and firing is difficult — performance improvement plans (PIPs) rarely lead to termination in Germany or France.",
+    "Direct communication style varies: Germans are direct but formal; British use more indirect, polite language (criticism is softened); French value intellectual debate before decisions.",
+    "Meeting culture: European meetings tend to be more structured, with agendas circulated in advance. Small talk is shorter than in the US.",
+    "Hierarchy is more formal in Germany and France than in the US or UK. Titles matter. Use of 'Herr/Frau' vs first names varies by company maturity.",
+    "Lunch breaks are longer (30-60 minutes minimum) and often taken away from the desk. Eating at your desk is less common.",
+    "Union presence varies: strong in Germany and France, weaker in the UK and Netherlands. Industry-wide collective bargaining agreements (Tarifvertrag in Germany) may apply automatically."
+  ],
+  "common_pitfalls": [
+    "Assuming US employment contracts work in Europe — European contracts must comply with local labor law (written form, mandatory clauses, statutory minimums).",
+    "Underestimating GDPR. Fines are up to 4% of global revenue. Many US companies treat it as an IT issue when it is also a legal and operational one.",
+    "Ignoring works council rights in Germany. Even a small office can trigger works council formation, and they must be consulted on hours, remote work policies, and performance reviews.",
+    "Misclassifying contractors under IR35 (UK) or similar tests (Scheinselbstaendigkeit in Germany). Fines and back taxes can be substantial.",
+    "Failing to adapt US sales and marketing to local languages and cultural norms — English-only approaches fail in France, Germany, and Southern Europe.",
+    "Not budgeting for VAT cash flow impact. VAT is collected and remitted monthly/quarterly, creating administrative burden and cash flow timing issues.",
+    "Assuming remote/hybrid work norms transfer directly. European countries often have stricter rules on home office equipment, expense reimbursement, and data security for remote workers.",
+    "Neglecting transfer pricing documentation. Cross-border transactions between US parent and EU subsidiary must be at arm's length; documentation must be prepared annually."
+  ],
+  "timeline_estimate": "6-24 months for full entity setup and initial team, depending on country complexity. UK: 3-6 months. Germany: 6-12 months (notary process adds time). France: 6-12 months. Netherlands: 4-8 months."
+}

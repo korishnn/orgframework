@@ -1,0 +1,2018 @@
+{
+  "version": "1.0.0",
+  "currency": "USD (NA) / EUR (EMEA) / Local (APAC/LATAM)",
+  "last_updated": "2026-07-18",
+  "notes": "NA ranges are total comp (base + bonus + equity). EMEA ranges are typically base + small bonus, less equity. APAC and LATAM ranges are in USD equivalent for normalization; actual local currency may vary by market. NA leadership roles include significant equity (RSU/options) as noted.",
+  "bands": {
+    "eng-backend": {
+      "name": "Backend Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "mid": {
+          "na": "120K-180K",
+          "emea": "74K-112K EUR",
+          "apac": "38K-58K USD equiv",
+          "latam": "50K-76K USD equiv"
+        },
+        "senior": {
+          "na": "180K-280K",
+          "emea": "112K-174K EUR",
+          "apac": "58K-90K USD equiv",
+          "latam": "76K-118K USD equiv"
+        },
+        "lead": {
+          "na": "250K-400K",
+          "emea": "155K-248K EUR",
+          "apac": "80K-128K USD equiv",
+          "latam": "105K-168K USD equiv"
+        }
+      },
+      "notes": "Core software engineering role. NA total comp includes base + bonus + equity (RSUs at mid+)."
+    },
+    "eng-sre": {
+      "name": "Site Reliability Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "mid": {
+          "na": "130K-190K",
+          "emea": "81K-118K EUR",
+          "apac": "42K-61K USD equiv",
+          "latam": "55K-80K USD equiv"
+        },
+        "senior": {
+          "na": "190K-300K",
+          "emea": "118K-186K EUR",
+          "apac": "61K-96K USD equiv",
+          "latam": "80K-126K USD equiv"
+        },
+        "lead": {
+          "na": "270K-420K",
+          "emea": "167K-260K EUR",
+          "apac": "86K-134K USD equiv",
+          "latam": "113K-176K USD equiv"
+        }
+      },
+      "notes": "On-call rotation typical. May include 10-15% on-call premium."
+    },
+    "eng-frontend": {
+      "name": "Frontend Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "mid": {
+          "na": "110K-170K",
+          "emea": "68K-105K EUR",
+          "apac": "35K-54K USD equiv",
+          "latam": "46K-71K USD equiv"
+        },
+        "senior": {
+          "na": "170K-260K",
+          "emea": "105K-161K EUR",
+          "apac": "54K-83K USD equiv",
+          "latam": "71K-109K USD equiv"
+        },
+        "lead": {
+          "na": "240K-380K",
+          "emea": "149K-236K EUR",
+          "apac": "77K-122K USD equiv",
+          "latam": "101K-160K USD equiv"
+        }
+      },
+      "notes": "Slightly lower ceiling than backend at senior+ at some firms."
+    },
+    "eng-mobile": {
+      "name": "Mobile Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "mid": {
+          "na": "120K-180K",
+          "emea": "74K-112K EUR",
+          "apac": "38K-58K USD equiv",
+          "latam": "50K-76K USD equiv"
+        },
+        "senior": {
+          "na": "180K-275K",
+          "emea": "112K-170K EUR",
+          "apac": "58K-88K USD equiv",
+          "latam": "76K-116K USD equiv"
+        },
+        "lead": {
+          "na": "250K-400K",
+          "emea": "155K-248K EUR",
+          "apac": "80K-128K USD equiv",
+          "latam": "105K-168K USD equiv"
+        }
+      },
+      "notes": "Comparable to backend. iOS/Android specialization premium at senior level."
+    },
+    "eng-data": {
+      "name": "Data Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-125K",
+          "emea": "53K-78K EUR",
+          "apac": "27K-40K USD equiv",
+          "latam": "36K-52K USD equiv"
+        },
+        "mid": {
+          "na": "125K-185K",
+          "emea": "78K-115K EUR",
+          "apac": "40K-59K USD equiv",
+          "latam": "52K-78K USD equiv"
+        },
+        "senior": {
+          "na": "185K-280K",
+          "emea": "115K-174K EUR",
+          "apac": "59K-90K USD equiv",
+          "latam": "78K-118K USD equiv"
+        },
+        "lead": {
+          "na": "255K-400K",
+          "emea": "158K-248K EUR",
+          "apac": "82K-128K USD equiv",
+          "latam": "107K-168K USD equiv"
+        }
+      },
+      "notes": "Growing demand driving comp closer to backend ranges."
+    },
+    "eng-qa": {
+      "name": "QA / Test Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "60K-95K",
+          "emea": "37K-59K EUR",
+          "apac": "19K-30K USD equiv",
+          "latam": "25K-40K USD equiv"
+        },
+        "mid": {
+          "na": "95K-140K",
+          "emea": "59K-87K EUR",
+          "apac": "30K-45K USD equiv",
+          "latam": "40K-59K USD equiv"
+        },
+        "senior": {
+          "na": "140K-200K",
+          "emea": "87K-124K EUR",
+          "apac": "45K-64K USD equiv",
+          "latam": "59K-84K USD equiv"
+        },
+        "lead": {
+          "na": "180K-260K",
+          "emea": "112K-161K EUR",
+          "apac": "58K-83K USD equiv",
+          "latam": "76K-109K USD equiv"
+        }
+      },
+      "notes": "Manual QA at low end, SDET (automation-focused) at high end."
+    },
+    "eng-devops": {
+      "name": "DevOps Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "mid": {
+          "na": "130K-190K",
+          "emea": "81K-118K EUR",
+          "apac": "42K-61K USD equiv",
+          "latam": "55K-80K USD equiv"
+        },
+        "senior": {
+          "na": "190K-290K",
+          "emea": "118K-180K EUR",
+          "apac": "61K-93K USD equiv",
+          "latam": "80K-122K USD equiv"
+        },
+        "lead": {
+          "na": "260K-410K",
+          "emea": "161K-254K EUR",
+          "apac": "83K-131K USD equiv",
+          "latam": "109K-172K USD equiv"
+        }
+      },
+      "notes": "High demand. Infrastructure automation and CI/CD expertise."
+    },
+    "eng-platform": {
+      "name": "Platform Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "mid": {
+          "na": "130K-190K",
+          "emea": "81K-118K EUR",
+          "apac": "42K-61K USD equiv",
+          "latam": "55K-80K USD equiv"
+        },
+        "senior": {
+          "na": "190K-290K",
+          "emea": "118K-180K EUR",
+          "apac": "61K-93K USD equiv",
+          "latam": "80K-122K USD equiv"
+        },
+        "lead": {
+          "na": "260K-410K",
+          "emea": "161K-254K EUR",
+          "apac": "83K-131K USD equiv",
+          "latam": "109K-172K USD equiv"
+        }
+      },
+      "notes": "Internal developer platform focus. Comparable to DevOps."
+    },
+    "eng-arch": {
+      "name": "Software Architect",
+      "breakdown": {
+        "junior": {
+          "na": "130K-180K",
+          "emea": "81K-112K EUR",
+          "apac": "42K-58K USD equiv",
+          "latam": "55K-76K USD equiv"
+        },
+        "mid": {
+          "na": "180K-260K",
+          "emea": "112K-161K EUR",
+          "apac": "58K-83K USD equiv",
+          "latam": "76K-109K USD equiv"
+        },
+        "senior": {
+          "na": "260K-380K",
+          "emea": "161K-236K EUR",
+          "apac": "83K-122K USD equiv",
+          "latam": "109K-160K USD equiv"
+        },
+        "lead": {
+          "na": "350K-500K",
+          "emea": "217K-310K EUR",
+          "apac": "112K-160K USD equiv",
+          "latam": "147K-210K USD equiv"
+        }
+      },
+      "notes": "Technical leadership. Requires system design expertise. Equity-heavy at top end."
+    },
+    "eng-ml": {
+      "name": "ML/AI Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "100K-150K",
+          "emea": "62K-93K EUR",
+          "apac": "32K-48K USD equiv",
+          "latam": "42K-63K USD equiv"
+        },
+        "mid": {
+          "na": "150K-230K",
+          "emea": "93K-143K EUR",
+          "apac": "48K-74K USD equiv",
+          "latam": "63K-97K USD equiv"
+        },
+        "senior": {
+          "na": "230K-350K",
+          "emea": "143K-217K EUR",
+          "apac": "74K-112K USD equiv",
+          "latam": "97K-147K USD equiv"
+        },
+        "lead": {
+          "na": "320K-500K",
+          "emea": "198K-310K EUR",
+          "apac": "102K-160K USD equiv",
+          "latam": "134K-210K USD equiv"
+        }
+      },
+      "notes": "Premium over backend. PhD or MS often required for senior+. Includes 50K-200K equity."
+    },
+    "eng-infrastructure": {
+      "name": "Infrastructure Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "mid": {
+          "na": "130K-190K",
+          "emea": "81K-118K EUR",
+          "apac": "42K-61K USD equiv",
+          "latam": "55K-80K USD equiv"
+        },
+        "senior": {
+          "na": "190K-290K",
+          "emea": "118K-180K EUR",
+          "apac": "61K-93K USD equiv",
+          "latam": "80K-122K USD equiv"
+        },
+        "lead": {
+          "na": "260K-410K",
+          "emea": "161K-254K EUR",
+          "apac": "83K-131K USD equiv",
+          "latam": "109K-172K USD equiv"
+        }
+      },
+      "notes": "Cloud infrastructure, networking, and systems. On-call common."
+    },
+    "tech-net-admin": {
+      "name": "Network Administrator",
+      "breakdown": {
+        "junior": {
+          "na": "55K-85K",
+          "emea": "34K-53K EUR",
+          "apac": "18K-27K USD equiv",
+          "latam": "23K-36K USD equiv"
+        },
+        "mid": {
+          "na": "85K-120K",
+          "emea": "53K-74K EUR",
+          "apac": "27K-38K USD equiv",
+          "latam": "36K-50K USD equiv"
+        },
+        "senior": {
+          "na": "120K-170K",
+          "emea": "74K-105K EUR",
+          "apac": "38K-54K USD equiv",
+          "latam": "50K-71K USD equiv"
+        },
+        "lead": {
+          "na": "150K-210K",
+          "emea": "93K-130K EUR",
+          "apac": "48K-67K USD equiv",
+          "latam": "63K-88K USD equiv"
+        }
+      },
+      "notes": "Network hardware, routing, switching. Certifications (CCNA/CCNP) boost comp."
+    },
+    "tech-sys-admin": {
+      "name": "Systems Administrator",
+      "breakdown": {
+        "junior": {
+          "na": "50K-80K",
+          "emea": "31K-50K EUR",
+          "apac": "16K-26K USD equiv",
+          "latam": "21K-34K USD equiv"
+        },
+        "mid": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "senior": {
+          "na": "120K-165K",
+          "emea": "74K-102K EUR",
+          "apac": "38K-53K USD equiv",
+          "latam": "50K-69K USD equiv"
+        },
+        "lead": {
+          "na": "150K-200K",
+          "emea": "93K-124K EUR",
+          "apac": "48K-64K USD equiv",
+          "latam": "63K-84K USD equiv"
+        }
+      },
+      "notes": "Server management, OS administration. DevOps/SRE skills increase ceiling."
+    },
+    "tech-dba": {
+      "name": "Database Administrator",
+      "breakdown": {
+        "junior": {
+          "na": "70K-105K",
+          "emea": "43K-65K EUR",
+          "apac": "22K-34K USD equiv",
+          "latam": "29K-44K USD equiv"
+        },
+        "mid": {
+          "na": "105K-155K",
+          "emea": "65K-96K EUR",
+          "apac": "34K-50K USD equiv",
+          "latam": "44K-65K USD equiv"
+        },
+        "senior": {
+          "na": "155K-220K",
+          "emea": "96K-136K EUR",
+          "apac": "50K-70K USD equiv",
+          "latam": "65K-92K USD equiv"
+        },
+        "lead": {
+          "na": "200K-280K",
+          "emea": "124K-174K EUR",
+          "apac": "64K-90K USD equiv",
+          "latam": "84K-118K USD equiv"
+        }
+      },
+      "notes": "SQL, NoSQL, performance tuning. Cloud DB (RDS, Aurora, BigQuery) skills add premium."
+    },
+    "tech-cloud-architect": {
+      "name": "Cloud Architect",
+      "breakdown": {
+        "junior": {
+          "na": "120K-170K",
+          "emea": "74K-105K EUR",
+          "apac": "38K-54K USD equiv",
+          "latam": "50K-71K USD equiv"
+        },
+        "mid": {
+          "na": "170K-250K",
+          "emea": "105K-155K EUR",
+          "apac": "54K-80K USD equiv",
+          "latam": "71K-105K USD equiv"
+        },
+        "senior": {
+          "na": "250K-370K",
+          "emea": "155K-229K EUR",
+          "apac": "80K-118K USD equiv",
+          "latam": "105K-155K USD equiv"
+        },
+        "lead": {
+          "na": "340K-480K",
+          "emea": "211K-298K EUR",
+          "apac": "109K-154K USD equiv",
+          "latam": "143K-202K USD equiv"
+        }
+      },
+      "notes": "Multi-cloud design, migration strategy, cost optimization. Certifications valued."
+    },
+    "tech-ai-engineer": {
+      "name": "AI Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "100K-150K",
+          "emea": "62K-93K EUR",
+          "apac": "32K-48K USD equiv",
+          "latam": "42K-63K USD equiv"
+        },
+        "mid": {
+          "na": "150K-240K",
+          "emea": "93K-149K EUR",
+          "apac": "48K-77K USD equiv",
+          "latam": "63K-101K USD equiv"
+        },
+        "senior": {
+          "na": "240K-360K",
+          "emea": "149K-223K EUR",
+          "apac": "77K-115K USD equiv",
+          "latam": "101K-151K USD equiv"
+        },
+        "lead": {
+          "na": "330K-520K",
+          "emea": "205K-322K EUR",
+          "apac": "106K-166K USD equiv",
+          "latam": "139K-218K USD equiv"
+        }
+      },
+      "notes": "LLMs, RAG, prompt engineering, model deployment. Cutting-edge premium."
+    },
+    "tech-robotics-engineer": {
+      "name": "Robotics Engineer",
+      "breakdown": {
+        "junior": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "mid": {
+          "na": "130K-200K",
+          "emea": "81K-124K EUR",
+          "apac": "42K-64K USD equiv",
+          "latam": "55K-84K USD equiv"
+        },
+        "senior": {
+          "na": "200K-300K",
+          "emea": "124K-186K EUR",
+          "apac": "64K-96K USD equiv",
+          "latam": "84K-126K USD equiv"
+        },
+        "lead": {
+          "na": "280K-420K",
+          "emea": "174K-260K EUR",
+          "apac": "90K-134K USD equiv",
+          "latam": "118K-176K USD equiv"
+        }
+      },
+      "notes": "ROS, embedded systems, computer vision. Hardware+software hybrid. Niche premium."
+    },
+    "exec-ceo": {
+      "name": "Chief Executive Officer",
+      "breakdown": {
+        "junior": {
+          "na": "150K-250K",
+          "emea": "93K-155K EUR",
+          "apac": "48K-80K USD equiv",
+          "latam": "63K-105K USD equiv"
+        },
+        "mid": {
+          "na": "250K-500K",
+          "emea": "155K-310K EUR",
+          "apac": "80K-160K USD equiv",
+          "latam": "105K-210K USD equiv"
+        },
+        "senior": {
+          "na": "500K-1000K",
+          "emea": "310K-620K EUR",
+          "apac": "160K-320K USD equiv",
+          "latam": "210K-420K USD equiv"
+        },
+        "lead": {
+          "na": "800K-5000K",
+          "emea": "496K-3100K EUR",
+          "apac": "256K-1600K USD equiv",
+          "latam": "336K-2100K USD equiv"
+        }
+      },
+      "notes": "Highly variable by company stage. Seed: 150K-250K, Series A: 250K-500K, Public: 1M-50M+. Significant equity component (often 50-80% of total)."
+    },
+    "exec-cto": {
+      "name": "Chief Technology Officer",
+      "breakdown": {
+        "junior": {
+          "na": "140K-220K",
+          "emea": "87K-136K EUR",
+          "apac": "45K-70K USD equiv",
+          "latam": "59K-92K USD equiv"
+        },
+        "mid": {
+          "na": "220K-400K",
+          "emea": "136K-248K EUR",
+          "apac": "70K-128K USD equiv",
+          "latam": "92K-168K USD equiv"
+        },
+        "senior": {
+          "na": "400K-700K",
+          "emea": "248K-434K EUR",
+          "apac": "128K-224K USD equiv",
+          "latam": "168K-294K USD equiv"
+        },
+        "lead": {
+          "na": "600K-2000K",
+          "emea": "372K-1240K EUR",
+          "apac": "192K-640K USD equiv",
+          "latam": "252K-840K USD equiv"
+        }
+      },
+      "notes": "Equity-heavy for early-stage. Public company CTO: 60-80% equity. VP/Director-level for larger firms."
+    },
+    "exec-cfo": {
+      "name": "Chief Financial Officer",
+      "breakdown": {
+        "junior": {
+          "na": "140K-220K",
+          "emea": "87K-136K EUR",
+          "apac": "45K-70K USD equiv",
+          "latam": "59K-92K USD equiv"
+        },
+        "mid": {
+          "na": "220K-400K",
+          "emea": "136K-248K EUR",
+          "apac": "70K-128K USD equiv",
+          "latam": "92K-168K USD equiv"
+        },
+        "senior": {
+          "na": "400K-700K",
+          "emea": "248K-434K EUR",
+          "apac": "128K-224K USD equiv",
+          "latam": "168K-294K USD equiv"
+        },
+        "lead": {
+          "na": "600K-2000K",
+          "emea": "372K-1240K EUR",
+          "apac": "192K-640K USD equiv",
+          "latam": "252K-840K USD equiv"
+        }
+      },
+      "notes": "Public company CFO: significant equity. Private: base-heavy with performance bonus."
+    },
+    "exec-coo": {
+      "name": "Chief Operating Officer",
+      "breakdown": {
+        "junior": {
+          "na": "130K-210K",
+          "emea": "81K-130K EUR",
+          "apac": "42K-67K USD equiv",
+          "latam": "55K-88K USD equiv"
+        },
+        "mid": {
+          "na": "210K-380K",
+          "emea": "130K-236K EUR",
+          "apac": "67K-122K USD equiv",
+          "latam": "88K-160K USD equiv"
+        },
+        "senior": {
+          "na": "380K-650K",
+          "emea": "236K-403K EUR",
+          "apac": "122K-208K USD equiv",
+          "latam": "160K-273K USD equiv"
+        },
+        "lead": {
+          "na": "550K-1800K",
+          "emea": "341K-1116K EUR",
+          "apac": "176K-576K USD equiv",
+          "latam": "231K-756K USD equiv"
+        }
+      },
+      "notes": "Often second-in-command. Variable by industry (tech, manufacturing, services)."
+    },
+    "exec-cmo": {
+      "name": "Chief Marketing Officer",
+      "breakdown": {
+        "junior": {
+          "na": "130K-200K",
+          "emea": "81K-124K EUR",
+          "apac": "42K-64K USD equiv",
+          "latam": "55K-84K USD equiv"
+        },
+        "mid": {
+          "na": "200K-350K",
+          "emea": "124K-217K EUR",
+          "apac": "64K-112K USD equiv",
+          "latam": "84K-147K USD equiv"
+        },
+        "senior": {
+          "na": "350K-600K",
+          "emea": "217K-372K EUR",
+          "apac": "112K-192K USD equiv",
+          "latam": "147K-252K USD equiv"
+        },
+        "lead": {
+          "na": "500K-1500K",
+          "emea": "310K-930K EUR",
+          "apac": "160K-480K USD equiv",
+          "latam": "210K-630K USD equiv"
+        }
+      },
+      "notes": "Brand marketing, demand gen, growth responsibilities. Tech CMO premium over traditional."
+    },
+    "exec-chief-staff": {
+      "name": "Chief of Staff",
+      "breakdown": {
+        "junior": {
+          "na": "90K-140K",
+          "emea": "56K-87K EUR",
+          "apac": "29K-45K USD equiv",
+          "latam": "38K-59K USD equiv"
+        },
+        "mid": {
+          "na": "140K-200K",
+          "emea": "87K-124K EUR",
+          "apac": "45K-64K USD equiv",
+          "latam": "59K-84K USD equiv"
+        },
+        "senior": {
+          "na": "200K-300K",
+          "emea": "124K-186K EUR",
+          "apac": "64K-96K USD equiv",
+          "latam": "84K-126K USD equiv"
+        },
+        "lead": {
+          "na": "280K-400K",
+          "emea": "174K-248K EUR",
+          "apac": "90K-128K USD equiv",
+          "latam": "118K-168K USD equiv"
+        }
+      },
+      "notes": "Strategic operations role. Often path to VP/C-suite. Common in tech and consulting."
+    },
+    "prd-manager": {
+      "name": "Product Manager",
+      "breakdown": {
+        "junior": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "mid": {
+          "na": "120K-175K",
+          "emea": "74K-108K EUR",
+          "apac": "38K-56K USD equiv",
+          "latam": "50K-74K USD equiv"
+        },
+        "senior": {
+          "na": "175K-270K",
+          "emea": "108K-167K EUR",
+          "apac": "56K-86K USD equiv",
+          "latam": "74K-113K USD equiv"
+        },
+        "lead": {
+          "na": "250K-380K",
+          "emea": "155K-236K EUR",
+          "apac": "80K-122K USD equiv",
+          "latam": "105K-160K USD equiv"
+        }
+      },
+      "notes": "Technical PMs at top end. FAANG PM: premium over product-focused PM."
+    },
+    "prd-owner": {
+      "name": "Product Owner",
+      "breakdown": {
+        "junior": {
+          "na": "65K-100K",
+          "emea": "40K-62K EUR",
+          "apac": "21K-32K USD equiv",
+          "latam": "27K-42K USD equiv"
+        },
+        "mid": {
+          "na": "100K-145K",
+          "emea": "62K-90K EUR",
+          "apac": "32K-46K USD equiv",
+          "latam": "42K-61K USD equiv"
+        },
+        "senior": {
+          "na": "145K-210K",
+          "emea": "90K-130K EUR",
+          "apac": "46K-67K USD equiv",
+          "latam": "61K-88K USD equiv"
+        },
+        "lead": {
+          "na": "200K-280K",
+          "emea": "124K-174K EUR",
+          "apac": "64K-90K USD equiv",
+          "latam": "84K-118K USD equiv"
+        }
+      },
+      "notes": "Scrum-focused. Typically lower than Product Manager. Common in agencies/enterprise."
+    },
+    "prd-strategy": {
+      "name": "Product Strategist",
+      "breakdown": {
+        "junior": {
+          "na": "90K-140K",
+          "emea": "56K-87K EUR",
+          "apac": "29K-45K USD equiv",
+          "latam": "38K-59K USD equiv"
+        },
+        "mid": {
+          "na": "140K-200K",
+          "emea": "87K-124K EUR",
+          "apac": "45K-64K USD equiv",
+          "latam": "59K-84K USD equiv"
+        },
+        "senior": {
+          "na": "200K-300K",
+          "emea": "124K-186K EUR",
+          "apac": "64K-96K USD equiv",
+          "latam": "84K-126K USD equiv"
+        },
+        "lead": {
+          "na": "280K-420K",
+          "emea": "174K-260K EUR",
+          "apac": "90K-134K USD equiv",
+          "latam": "118K-176K USD equiv"
+        }
+      },
+      "notes": "Senior IC role. Roadmap, market analysis, competitive intelligence. Sometimes called Principal Product Manager."
+    },
+    "dsg-ux": {
+      "name": "UX Researcher / Designer",
+      "breakdown": {
+        "junior": {
+          "na": "70K-105K",
+          "emea": "43K-65K EUR",
+          "apac": "22K-34K USD equiv",
+          "latam": "29K-44K USD equiv"
+        },
+        "mid": {
+          "na": "105K-155K",
+          "emea": "65K-96K EUR",
+          "apac": "34K-50K USD equiv",
+          "latam": "44K-65K USD equiv"
+        },
+        "senior": {
+          "na": "155K-230K",
+          "emea": "96K-143K EUR",
+          "apac": "50K-74K USD equiv",
+          "latam": "65K-97K USD equiv"
+        },
+        "lead": {
+          "na": "220K-320K",
+          "emea": "136K-198K EUR",
+          "apac": "70K-102K USD equiv",
+          "latam": "92K-134K USD equiv"
+        }
+      },
+      "notes": "UX research premium over pure visual design. Portfolio-driven."
+    },
+    "dsg-ui": {
+      "name": "UI / Visual Designer",
+      "breakdown": {
+        "junior": {
+          "na": "55K-90K",
+          "emea": "34K-56K EUR",
+          "apac": "18K-29K USD equiv",
+          "latam": "23K-38K USD equiv"
+        },
+        "mid": {
+          "na": "90K-135K",
+          "emea": "56K-84K EUR",
+          "apac": "29K-43K USD equiv",
+          "latam": "38K-57K USD equiv"
+        },
+        "senior": {
+          "na": "135K-200K",
+          "emea": "84K-124K EUR",
+          "apac": "43K-64K USD equiv",
+          "latam": "57K-84K USD equiv"
+        },
+        "lead": {
+          "na": "190K-270K",
+          "emea": "118K-167K EUR",
+          "apac": "61K-86K USD equiv",
+          "latam": "80K-113K USD equiv"
+        }
+      },
+      "notes": "Visual design, design systems. Coding ability (HTML/CSS) increases ceiling."
+    },
+    "dsg-brand": {
+      "name": "Brand Designer",
+      "breakdown": {
+        "junior": {
+          "na": "55K-90K",
+          "emea": "34K-56K EUR",
+          "apac": "18K-29K USD equiv",
+          "latam": "23K-38K USD equiv"
+        },
+        "mid": {
+          "na": "90K-135K",
+          "emea": "56K-84K EUR",
+          "apac": "29K-43K USD equiv",
+          "latam": "38K-57K USD equiv"
+        },
+        "senior": {
+          "na": "135K-200K",
+          "emea": "84K-124K EUR",
+          "apac": "43K-64K USD equiv",
+          "latam": "57K-84K USD equiv"
+        },
+        "lead": {
+          "na": "190K-270K",
+          "emea": "118K-167K EUR",
+          "apac": "61K-86K USD equiv",
+          "latam": "80K-113K USD equiv"
+        }
+      },
+      "notes": "Brand identity, logo design, guidelines. Agency vs in-house varies widely."
+    },
+    "mkt-content": {
+      "name": "Content Marketer",
+      "breakdown": {
+        "junior": {
+          "na": "45K-75K",
+          "emea": "28K-46K EUR",
+          "apac": "14K-24K USD equiv",
+          "latam": "19K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-160K",
+          "emea": "68K-99K EUR",
+          "apac": "35K-51K USD equiv",
+          "latam": "46K-67K USD equiv"
+        },
+        "lead": {
+          "na": "150K-210K",
+          "emea": "93K-130K EUR",
+          "apac": "48K-67K USD equiv",
+          "latam": "63K-88K USD equiv"
+        }
+      },
+      "notes": "Writing, SEO content, thought leadership. Senior roles require strategy + team management."
+    },
+    "mkt-seo": {
+      "name": "SEO Specialist",
+      "breakdown": {
+        "junior": {
+          "na": "45K-75K",
+          "emea": "28K-46K EUR",
+          "apac": "14K-24K USD equiv",
+          "latam": "19K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-165K",
+          "emea": "68K-102K EUR",
+          "apac": "35K-53K USD equiv",
+          "latam": "46K-69K USD equiv"
+        },
+        "lead": {
+          "na": "155K-220K",
+          "emea": "96K-136K EUR",
+          "apac": "50K-70K USD equiv",
+          "latam": "65K-92K USD equiv"
+        }
+      },
+      "notes": "Technical SEO and content SEO. Analytics skills command premium. Performance bonuses common."
+    },
+    "mkt-growth": {
+      "name": "Growth Marketer",
+      "breakdown": {
+        "junior": {
+          "na": "65K-100K",
+          "emea": "40K-62K EUR",
+          "apac": "21K-32K USD equiv",
+          "latam": "27K-42K USD equiv"
+        },
+        "mid": {
+          "na": "100K-160K",
+          "emea": "62K-99K EUR",
+          "apac": "32K-51K USD equiv",
+          "latam": "42K-67K USD equiv"
+        },
+        "senior": {
+          "na": "160K-240K",
+          "emea": "99K-149K EUR",
+          "apac": "51K-77K USD equiv",
+          "latam": "67K-101K USD equiv"
+        },
+        "lead": {
+          "na": "220K-330K",
+          "emea": "136K-205K EUR",
+          "apac": "70K-106K USD equiv",
+          "latam": "92K-139K USD equiv"
+        }
+      },
+      "notes": "Data-driven growth, experimentation, paid acquisition. Performance bonus heavy."
+    },
+    "mkt-analytics": {
+      "name": "Marketing Analytics Manager",
+      "breakdown": {
+        "junior": {
+          "na": "65K-100K",
+          "emea": "40K-62K EUR",
+          "apac": "21K-32K USD equiv",
+          "latam": "27K-42K USD equiv"
+        },
+        "mid": {
+          "na": "100K-150K",
+          "emea": "62K-93K EUR",
+          "apac": "32K-48K USD equiv",
+          "latam": "42K-63K USD equiv"
+        },
+        "senior": {
+          "na": "150K-220K",
+          "emea": "93K-136K EUR",
+          "apac": "48K-70K USD equiv",
+          "latam": "63K-92K USD equiv"
+        },
+        "lead": {
+          "na": "210K-300K",
+          "emea": "130K-186K EUR",
+          "apac": "67K-96K USD equiv",
+          "latam": "88K-126K USD equiv"
+        }
+      },
+      "notes": "Marketing mix modeling, attribution, dashboards. SQL/Python skills valued."
+    },
+    "sls-ae": {
+      "name": "Account Executive",
+      "breakdown": {
+        "junior": {
+          "na": "50K-80K",
+          "emea": "31K-50K EUR",
+          "apac": "16K-26K USD equiv",
+          "latam": "21K-34K USD equiv"
+        },
+        "mid": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "senior": {
+          "na": "120K-200K",
+          "emea": "74K-124K EUR",
+          "apac": "38K-64K USD equiv",
+          "latam": "50K-84K USD equiv"
+        },
+        "lead": {
+          "na": "200K-350K",
+          "emea": "124K-217K EUR",
+          "apac": "64K-112K USD equiv",
+          "latam": "84K-147K USD equiv"
+        }
+      },
+      "notes": "Base + commission (variable often 50-100% of base). OTE (on-target earnings) listed. Enterprise AE at high end."
+    },
+    "sls-bdr": {
+      "name": "BDR / SDR",
+      "breakdown": {
+        "junior": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "mid": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-110K",
+          "emea": "50K-68K EUR",
+          "apac": "26K-35K USD equiv",
+          "latam": "34K-46K USD equiv"
+        },
+        "lead": {
+          "na": "100K-140K",
+          "emea": "62K-87K EUR",
+          "apac": "32K-45K USD equiv",
+          "latam": "42K-59K USD equiv"
+        }
+      },
+      "notes": "Base + commission. Entry-level sales role. Promotion path to AE in 12-24 months."
+    },
+    "sls-customer-success": {
+      "name": "Customer Success Manager",
+      "breakdown": {
+        "junior": {
+          "na": "50K-80K",
+          "emea": "31K-50K EUR",
+          "apac": "16K-26K USD equiv",
+          "latam": "21K-34K USD equiv"
+        },
+        "mid": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "senior": {
+          "na": "120K-180K",
+          "emea": "74K-112K EUR",
+          "apac": "38K-58K USD equiv",
+          "latam": "50K-76K USD equiv"
+        },
+        "lead": {
+          "na": "170K-250K",
+          "emea": "105K-155K EUR",
+          "apac": "54K-80K USD equiv",
+          "latam": "71K-105K USD equiv"
+        }
+      },
+      "notes": "Retention, expansion revenue, QBRs. Outcome-based bonus structure."
+    },
+    "hr-recruiting": {
+      "name": "Recruiter",
+      "breakdown": {
+        "junior": {
+          "na": "45K-70K",
+          "emea": "28K-43K EUR",
+          "apac": "14K-22K USD equiv",
+          "latam": "19K-29K USD equiv"
+        },
+        "mid": {
+          "na": "70K-110K",
+          "emea": "43K-68K EUR",
+          "apac": "22K-35K USD equiv",
+          "latam": "29K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-160K",
+          "emea": "68K-99K EUR",
+          "apac": "35K-51K USD equiv",
+          "latam": "46K-67K USD equiv"
+        },
+        "lead": {
+          "na": "150K-210K",
+          "emea": "93K-130K EUR",
+          "apac": "48K-67K USD equiv",
+          "latam": "63K-88K USD equiv"
+        }
+      },
+      "notes": "Agency vs in-house. Tech recruiter premium. Contingency vs retained search varies."
+    },
+    "hr-talent": {
+      "name": "Talent Management / HRBP",
+      "breakdown": {
+        "junior": {
+          "na": "55K-85K",
+          "emea": "34K-53K EUR",
+          "apac": "18K-27K USD equiv",
+          "latam": "23K-36K USD equiv"
+        },
+        "mid": {
+          "na": "85K-130K",
+          "emea": "53K-81K EUR",
+          "apac": "27K-42K USD equiv",
+          "latam": "36K-55K USD equiv"
+        },
+        "senior": {
+          "na": "130K-190K",
+          "emea": "81K-118K EUR",
+          "apac": "42K-61K USD equiv",
+          "latam": "55K-80K USD equiv"
+        },
+        "lead": {
+          "na": "180K-260K",
+          "emea": "112K-161K EUR",
+          "apac": "58K-83K USD equiv",
+          "latam": "76K-109K USD equiv"
+        }
+      },
+      "notes": "HR Business Partner or Talent Development. Strategic roles command premium."
+    },
+    "fin-fpa": {
+      "name": "FP&A Analyst",
+      "breakdown": {
+        "junior": {
+          "na": "55K-90K",
+          "emea": "34K-56K EUR",
+          "apac": "18K-29K USD equiv",
+          "latam": "23K-38K USD equiv"
+        },
+        "mid": {
+          "na": "90K-140K",
+          "emea": "56K-87K EUR",
+          "apac": "29K-45K USD equiv",
+          "latam": "38K-59K USD equiv"
+        },
+        "senior": {
+          "na": "140K-200K",
+          "emea": "87K-124K EUR",
+          "apac": "45K-64K USD equiv",
+          "latam": "59K-84K USD equiv"
+        },
+        "lead": {
+          "na": "190K-270K",
+          "emea": "118K-167K EUR",
+          "apac": "61K-86K USD equiv",
+          "latam": "80K-113K USD equiv"
+        }
+      },
+      "notes": "Financial planning, budgeting, forecasting. CFO track. SaaS metrics expertise valued."
+    },
+    "fin-accounting": {
+      "name": "Accountant",
+      "breakdown": {
+        "junior": {
+          "na": "45K-75K",
+          "emea": "28K-46K EUR",
+          "apac": "14K-24K USD equiv",
+          "latam": "19K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-160K",
+          "emea": "68K-99K EUR",
+          "apac": "35K-51K USD equiv",
+          "latam": "46K-67K USD equiv"
+        },
+        "lead": {
+          "na": "150K-210K",
+          "emea": "93K-130K EUR",
+          "apac": "48K-67K USD equiv",
+          "latam": "63K-88K USD equiv"
+        }
+      },
+      "notes": "Public accounting vs corporate. CPA certification adds 10-15%. Audit/prepare financial statements."
+    },
+    "fin-audit": {
+      "name": "Auditor",
+      "breakdown": {
+        "junior": {
+          "na": "45K-75K",
+          "emea": "28K-46K EUR",
+          "apac": "14K-24K USD equiv",
+          "latam": "19K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-160K",
+          "emea": "68K-99K EUR",
+          "apac": "35K-51K USD equiv",
+          "latam": "46K-67K USD equiv"
+        },
+        "lead": {
+          "na": "150K-210K",
+          "emea": "93K-130K EUR",
+          "apac": "48K-67K USD equiv",
+          "latam": "63K-88K USD equiv"
+        }
+      },
+      "notes": "Internal or external audit. Big 4 premium then exit to industry. CPA required for senior."
+    },
+    "lgl-contracts": {
+      "name": "Contracts Attorney",
+      "breakdown": {
+        "junior": {
+          "na": "80K-120K",
+          "emea": "50K-74K EUR",
+          "apac": "26K-38K USD equiv",
+          "latam": "34K-50K USD equiv"
+        },
+        "mid": {
+          "na": "120K-175K",
+          "emea": "74K-108K EUR",
+          "apac": "38K-56K USD equiv",
+          "latam": "50K-74K USD equiv"
+        },
+        "senior": {
+          "na": "175K-250K",
+          "emea": "108K-155K EUR",
+          "apac": "56K-80K USD equiv",
+          "latam": "74K-105K USD equiv"
+        },
+        "lead": {
+          "na": "240K-330K",
+          "emea": "149K-205K EUR",
+          "apac": "77K-106K USD equiv",
+          "latam": "101K-139K USD equiv"
+        }
+      },
+      "notes": "Negotiation, drafting, compliance. In-house counsel at tech firms on higher end."
+    },
+    "lgl-privacy": {
+      "name": "Privacy Attorney",
+      "breakdown": {
+        "junior": {
+          "na": "90K-140K",
+          "emea": "56K-87K EUR",
+          "apac": "29K-45K USD equiv",
+          "latam": "38K-59K USD equiv"
+        },
+        "mid": {
+          "na": "140K-200K",
+          "emea": "87K-124K EUR",
+          "apac": "45K-64K USD equiv",
+          "latam": "59K-84K USD equiv"
+        },
+        "senior": {
+          "na": "200K-300K",
+          "emea": "124K-186K EUR",
+          "apac": "64K-96K USD equiv",
+          "latam": "84K-126K USD equiv"
+        },
+        "lead": {
+          "na": "280K-400K",
+          "emea": "174K-248K EUR",
+          "apac": "90K-128K USD equiv",
+          "latam": "118K-168K USD equiv"
+        }
+      },
+      "notes": "GDPR, CCPA, data protection. High demand. Tech and healthcare premium."
+    },
+    "lgl-employment": {
+      "name": "Employment Attorney",
+      "breakdown": {
+        "junior": {
+          "na": "80K-125K",
+          "emea": "50K-78K EUR",
+          "apac": "26K-40K USD equiv",
+          "latam": "34K-52K USD equiv"
+        },
+        "mid": {
+          "na": "125K-180K",
+          "emea": "78K-112K EUR",
+          "apac": "40K-58K USD equiv",
+          "latam": "52K-76K USD equiv"
+        },
+        "senior": {
+          "na": "180K-260K",
+          "emea": "112K-161K EUR",
+          "apac": "58K-83K USD equiv",
+          "latam": "76K-109K USD equiv"
+        },
+        "lead": {
+          "na": "250K-350K",
+          "emea": "155K-217K EUR",
+          "apac": "80K-112K USD equiv",
+          "latam": "105K-147K USD equiv"
+        }
+      },
+      "notes": "Employment law, compliance, disputes. In-house at large companies vs law firm."
+    },
+    "hlth-physician": {
+      "name": "Physician (MD)",
+      "breakdown": {
+        "junior": {
+          "na": "150K-220K",
+          "emea": "93K-136K EUR",
+          "apac": "48K-70K USD equiv",
+          "latam": "63K-92K USD equiv"
+        },
+        "mid": {
+          "na": "220K-300K",
+          "emea": "136K-186K EUR",
+          "apac": "70K-96K USD equiv",
+          "latam": "92K-126K USD equiv"
+        },
+        "senior": {
+          "na": "300K-400K",
+          "emea": "186K-248K EUR",
+          "apac": "96K-128K USD equiv",
+          "latam": "126K-168K USD equiv"
+        },
+        "lead": {
+          "na": "400K-600K",
+          "emea": "248K-372K EUR",
+          "apac": "128K-192K USD equiv",
+          "latam": "168K-252K USD equiv"
+        }
+      },
+      "notes": "Highly specialty-dependent. Primary care at low end, specialists (derm, radiology, cardiology) at high end."
+    },
+    "hlth-nurse": {
+      "name": "Registered Nurse",
+      "breakdown": {
+        "junior": {
+          "na": "50K-75K",
+          "emea": "31K-46K EUR",
+          "apac": "16K-24K USD equiv",
+          "latam": "21K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-100K",
+          "emea": "46K-62K EUR",
+          "apac": "24K-32K USD equiv",
+          "latam": "32K-42K USD equiv"
+        },
+        "senior": {
+          "na": "100K-130K",
+          "emea": "62K-81K EUR",
+          "apac": "32K-42K USD equiv",
+          "latam": "42K-55K USD equiv"
+        },
+        "lead": {
+          "na": "120K-160K",
+          "emea": "74K-99K EUR",
+          "apac": "38K-51K USD equiv",
+          "latam": "50K-67K USD equiv"
+        }
+      },
+      "notes": "RN: base hourly. NP/APRN (Nurse Practitioner) at higher end. Shift differentials add 10-20%."
+    },
+    "hlth-surgeon": {
+      "name": "Surgeon",
+      "breakdown": {
+        "junior": {
+          "na": "250K-350K",
+          "emea": "155K-217K EUR",
+          "apac": "80K-112K USD equiv",
+          "latam": "105K-147K USD equiv"
+        },
+        "mid": {
+          "na": "350K-500K",
+          "emea": "217K-310K EUR",
+          "apac": "112K-160K USD equiv",
+          "latam": "147K-210K USD equiv"
+        },
+        "senior": {
+          "na": "500K-700K",
+          "emea": "310K-434K EUR",
+          "apac": "160K-224K USD equiv",
+          "latam": "210K-294K USD equiv"
+        },
+        "lead": {
+          "na": "650K-1000K",
+          "emea": "403K-620K EUR",
+          "apac": "208K-320K USD equiv",
+          "latam": "273K-420K USD equiv"
+        }
+      },
+      "notes": "Years of training (5-10 years residency/fellowship). Specialty: ortho, neuro, cardiac at top end."
+    },
+    "hlth-dentist": {
+      "name": "Dentist",
+      "breakdown": {
+        "junior": {
+          "na": "100K-150K",
+          "emea": "62K-93K EUR",
+          "apac": "32K-48K USD equiv",
+          "latam": "42K-63K USD equiv"
+        },
+        "mid": {
+          "na": "150K-220K",
+          "emea": "93K-136K EUR",
+          "apac": "48K-70K USD equiv",
+          "latam": "63K-92K USD equiv"
+        },
+        "senior": {
+          "na": "220K-300K",
+          "emea": "136K-186K EUR",
+          "apac": "70K-96K USD equiv",
+          "latam": "92K-126K USD equiv"
+        },
+        "lead": {
+          "na": "280K-400K",
+          "emea": "174K-248K EUR",
+          "apac": "90K-128K USD equiv",
+          "latam": "118K-168K USD equiv"
+        }
+      },
+      "notes": "Private practice vs corporate. Specialists (ortho, oral surgery) at high end. DDS/DMD required."
+    },
+    "hlth-pharmacist": {
+      "name": "Pharmacist",
+      "breakdown": {
+        "junior": {
+          "na": "80K-115K",
+          "emea": "50K-71K EUR",
+          "apac": "26K-37K USD equiv",
+          "latam": "34K-48K USD equiv"
+        },
+        "mid": {
+          "na": "115K-150K",
+          "emea": "71K-93K EUR",
+          "apac": "37K-48K USD equiv",
+          "latam": "48K-63K USD equiv"
+        },
+        "senior": {
+          "na": "150K-180K",
+          "emea": "93K-112K EUR",
+          "apac": "48K-58K USD equiv",
+          "latam": "63K-76K USD equiv"
+        },
+        "lead": {
+          "na": "175K-220K",
+          "emea": "108K-136K EUR",
+          "apac": "56K-70K USD equiv",
+          "latam": "74K-92K USD equiv"
+        }
+      },
+      "notes": "Retail vs clinical. PharmD required. Hospital and industry roles at higher end."
+    },
+    "hlth-veterinarian": {
+      "name": "Veterinarian",
+      "breakdown": {
+        "junior": {
+          "na": "65K-95K",
+          "emea": "40K-59K EUR",
+          "apac": "21K-30K USD equiv",
+          "latam": "27K-40K USD equiv"
+        },
+        "mid": {
+          "na": "95K-130K",
+          "emea": "59K-81K EUR",
+          "apac": "30K-42K USD equiv",
+          "latam": "40K-55K USD equiv"
+        },
+        "senior": {
+          "na": "130K-170K",
+          "emea": "81K-105K EUR",
+          "apac": "42K-54K USD equiv",
+          "latam": "55K-71K USD equiv"
+        },
+        "lead": {
+          "na": "160K-220K",
+          "emea": "99K-136K EUR",
+          "apac": "51K-70K USD equiv",
+          "latam": "67K-92K USD equiv"
+        }
+      },
+      "notes": "DVM required. Small animal vs large animal vs specialty (surgery, neurology) varies. Lower pay than human med."
+    },
+    "cre-art-director": {
+      "name": "Art Director",
+      "breakdown": {
+        "junior": {
+          "na": "60K-95K",
+          "emea": "37K-59K EUR",
+          "apac": "19K-30K USD equiv",
+          "latam": "25K-40K USD equiv"
+        },
+        "mid": {
+          "na": "95K-140K",
+          "emea": "59K-87K EUR",
+          "apac": "30K-45K USD equiv",
+          "latam": "40K-59K USD equiv"
+        },
+        "senior": {
+          "na": "140K-190K",
+          "emea": "87K-118K EUR",
+          "apac": "45K-61K USD equiv",
+          "latam": "59K-80K USD equiv"
+        },
+        "lead": {
+          "na": "180K-250K",
+          "emea": "112K-155K EUR",
+          "apac": "58K-80K USD equiv",
+          "latam": "76K-105K USD equiv"
+        }
+      },
+      "notes": "Creative lead on projects. Agency background common. Team management at senior level."
+    },
+    "cre-graphic-designer": {
+      "name": "Graphic Designer",
+      "breakdown": {
+        "junior": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "mid": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-115K",
+          "emea": "50K-71K EUR",
+          "apac": "26K-37K USD equiv",
+          "latam": "34K-48K USD equiv"
+        },
+        "lead": {
+          "na": "110K-150K",
+          "emea": "68K-93K EUR",
+          "apac": "35K-48K USD equiv",
+          "latam": "46K-63K USD equiv"
+        }
+      },
+      "notes": "Print, digital, branding. Portfolio-driven. UX crossover increases ceiling."
+    },
+    "cre-content-creator": {
+      "name": "Content Creator / Influencer",
+      "breakdown": {
+        "junior": {
+          "na": "25K-50K",
+          "emea": "16K-31K EUR",
+          "apac": "8K-16K USD equiv",
+          "latam": "10K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-100K",
+          "emea": "31K-62K EUR",
+          "apac": "16K-32K USD equiv",
+          "latam": "21K-42K USD equiv"
+        },
+        "senior": {
+          "na": "100K-200K",
+          "emea": "62K-124K EUR",
+          "apac": "32K-64K USD equiv",
+          "latam": "42K-84K USD equiv"
+        },
+        "lead": {
+          "na": "200K-500K",
+          "emea": "124K-310K EUR",
+          "apac": "64K-160K USD equiv",
+          "latam": "84K-210K USD equiv"
+        }
+      },
+      "notes": "Highly variable. Platform (YouTube, TikTok, IG), audience size, sponsorship revenue. Not salary but annualized earnings."
+    },
+    "cre-film-director": {
+      "name": "Film / Video Director",
+      "breakdown": {
+        "junior": {
+          "na": "50K-90K",
+          "emea": "31K-56K EUR",
+          "apac": "16K-29K USD equiv",
+          "latam": "21K-38K USD equiv"
+        },
+        "mid": {
+          "na": "90K-150K",
+          "emea": "56K-93K EUR",
+          "apac": "29K-48K USD equiv",
+          "latam": "38K-63K USD equiv"
+        },
+        "senior": {
+          "na": "150K-250K",
+          "emea": "93K-155K EUR",
+          "apac": "48K-80K USD equiv",
+          "latam": "63K-105K USD equiv"
+        },
+        "lead": {
+          "na": "250K-500K",
+          "emea": "155K-310K EUR",
+          "apac": "80K-160K USD equiv",
+          "latam": "105K-210K USD equiv"
+        }
+      },
+      "notes": "Commercial, film, TV. Project-based often. Day rates common. Top-tier can earn >1M annually."
+    },
+    "cre-game-designer": {
+      "name": "Game Designer",
+      "breakdown": {
+        "junior": {
+          "na": "50K-80K",
+          "emea": "31K-50K EUR",
+          "apac": "16K-26K USD equiv",
+          "latam": "21K-34K USD equiv"
+        },
+        "mid": {
+          "na": "80K-130K",
+          "emea": "50K-81K EUR",
+          "apac": "26K-42K USD equiv",
+          "latam": "34K-55K USD equiv"
+        },
+        "senior": {
+          "na": "130K-200K",
+          "emea": "81K-124K EUR",
+          "apac": "42K-64K USD equiv",
+          "latam": "55K-84K USD equiv"
+        },
+        "lead": {
+          "na": "190K-280K",
+          "emea": "118K-174K EUR",
+          "apac": "61K-90K USD equiv",
+          "latam": "80K-118K USD equiv"
+        }
+      },
+      "notes": "Game mechanics, level design, systems design. Mobile gaming vs AAA console. Unity/Unreal skills."
+    },
+    "trade-carpenter": {
+      "name": "Carpenter",
+      "breakdown": {
+        "junior": {
+          "na": "30K-50K",
+          "emea": "19K-31K EUR",
+          "apac": "10K-16K USD equiv",
+          "latam": "13K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-70K",
+          "emea": "31K-43K EUR",
+          "apac": "16K-22K USD equiv",
+          "latam": "21K-29K USD equiv"
+        },
+        "senior": {
+          "na": "70K-95K",
+          "emea": "43K-59K EUR",
+          "apac": "22K-30K USD equiv",
+          "latam": "29K-40K USD equiv"
+        },
+        "lead": {
+          "na": "90K-120K",
+          "emea": "56K-74K EUR",
+          "apac": "29K-38K USD equiv",
+          "latam": "38K-50K USD equiv"
+        }
+      },
+      "notes": "Union vs non-union. Commercial vs residential. Master carpenter premium."
+    },
+    "trade-electrician": {
+      "name": "Electrician",
+      "breakdown": {
+        "junior": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "mid": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-105K",
+          "emea": "50K-65K EUR",
+          "apac": "26K-34K USD equiv",
+          "latam": "34K-44K USD equiv"
+        },
+        "lead": {
+          "na": "100K-130K",
+          "emea": "62K-81K EUR",
+          "apac": "32K-42K USD equiv",
+          "latam": "42K-55K USD equiv"
+        }
+      },
+      "notes": "Licensed journeyman. Union scale varies by region. Master electrician at top end."
+    },
+    "trade-plumber": {
+      "name": "Plumber",
+      "breakdown": {
+        "junior": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "mid": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-105K",
+          "emea": "50K-65K EUR",
+          "apac": "26K-34K USD equiv",
+          "latam": "34K-44K USD equiv"
+        },
+        "lead": {
+          "na": "100K-130K",
+          "emea": "62K-81K EUR",
+          "apac": "32K-42K USD equiv",
+          "latam": "42K-55K USD equiv"
+        }
+      },
+      "notes": "Licensed journeyman. Union scale varies. Emergency services can add significant overtime."
+    },
+    "trade-machinist": {
+      "name": "Machinist / CNC Operator",
+      "breakdown": {
+        "junior": {
+          "na": "30K-50K",
+          "emea": "19K-31K EUR",
+          "apac": "10K-16K USD equiv",
+          "latam": "13K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-75K",
+          "emea": "31K-46K EUR",
+          "apac": "16K-24K USD equiv",
+          "latam": "21K-32K USD equiv"
+        },
+        "senior": {
+          "na": "75K-100K",
+          "emea": "46K-62K EUR",
+          "apac": "24K-32K USD equiv",
+          "latam": "32K-42K USD equiv"
+        },
+        "lead": {
+          "na": "95K-125K",
+          "emea": "59K-78K EUR",
+          "apac": "30K-40K USD equiv",
+          "latam": "40K-52K USD equiv"
+        }
+      },
+      "notes": "Manual and CNC machining. Aerospace and precision manufacturing premium. Certification valued."
+    },
+    "edu-teacher": {
+      "name": "Teacher (K-12)",
+      "breakdown": {
+        "junior": {
+          "na": "35K-50K",
+          "emea": "22K-31K EUR",
+          "apac": "11K-16K USD equiv",
+          "latam": "15K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-70K",
+          "emea": "31K-43K EUR",
+          "apac": "16K-22K USD equiv",
+          "latam": "21K-29K USD equiv"
+        },
+        "senior": {
+          "na": "70K-90K",
+          "emea": "43K-56K EUR",
+          "apac": "22K-29K USD equiv",
+          "latam": "29K-38K USD equiv"
+        },
+        "lead": {
+          "na": "80K-110K",
+          "emea": "50K-68K EUR",
+          "apac": "26K-35K USD equiv",
+          "latam": "34K-46K USD equiv"
+        }
+      },
+      "notes": "Public school salary schedules by district + years of experience. Master degree add-on. Private school varies."
+    },
+    "edu-professor": {
+      "name": "Professor (University)",
+      "breakdown": {
+        "junior": {
+          "na": "50K-75K",
+          "emea": "31K-46K EUR",
+          "apac": "16K-24K USD equiv",
+          "latam": "21K-32K USD equiv"
+        },
+        "mid": {
+          "na": "75K-110K",
+          "emea": "46K-68K EUR",
+          "apac": "24K-35K USD equiv",
+          "latam": "32K-46K USD equiv"
+        },
+        "senior": {
+          "na": "110K-160K",
+          "emea": "68K-99K EUR",
+          "apac": "35K-51K USD equiv",
+          "latam": "46K-67K USD equiv"
+        },
+        "lead": {
+          "na": "150K-220K",
+          "emea": "93K-136K EUR",
+          "apac": "48K-70K USD equiv",
+          "latam": "63K-92K USD equiv"
+        }
+      },
+      "notes": "Tenure track vs adjunct (adjunct much lower). By rank: Assistant, Associate, Full. Research grants supplement."
+    },
+    "govt-police-officer": {
+      "name": "Police Officer",
+      "breakdown": {
+        "junior": {
+          "na": "40K-60K",
+          "emea": "25K-37K EUR",
+          "apac": "13K-19K USD equiv",
+          "latam": "17K-25K USD equiv"
+        },
+        "mid": {
+          "na": "60K-80K",
+          "emea": "37K-50K EUR",
+          "apac": "19K-26K USD equiv",
+          "latam": "25K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-100K",
+          "emea": "50K-62K EUR",
+          "apac": "26K-32K USD equiv",
+          "latam": "34K-42K USD equiv"
+        },
+        "lead": {
+          "na": "95K-130K",
+          "emea": "59K-81K EUR",
+          "apac": "30K-42K USD equiv",
+          "latam": "40K-55K USD equiv"
+        }
+      },
+      "notes": "Union scale, locality adjustments. Overtime common. Rank: officer, sergeant, lieutenant, captain."
+    },
+    "govt-firefighter": {
+      "name": "Firefighter",
+      "breakdown": {
+        "junior": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "mid": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "senior": {
+          "na": "75K-95K",
+          "emea": "46K-59K EUR",
+          "apac": "24K-30K USD equiv",
+          "latam": "32K-40K USD equiv"
+        },
+        "lead": {
+          "na": "90K-120K",
+          "emea": "56K-74K EUR",
+          "apac": "29K-38K USD equiv",
+          "latam": "38K-50K USD equiv"
+        }
+      },
+      "notes": "Civil service scale. 24/48 or 48/96 schedules. Paramedic certification adds premium."
+    },
+    "hosp-chef": {
+      "name": "Chef",
+      "breakdown": {
+        "junior": {
+          "na": "30K-50K",
+          "emea": "19K-31K EUR",
+          "apac": "10K-16K USD equiv",
+          "latam": "13K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-75K",
+          "emea": "31K-46K EUR",
+          "apac": "16K-24K USD equiv",
+          "latam": "21K-32K USD equiv"
+        },
+        "senior": {
+          "na": "75K-100K",
+          "emea": "46K-62K EUR",
+          "apac": "24K-32K USD equiv",
+          "latam": "32K-42K USD equiv"
+        },
+        "lead": {
+          "na": "95K-140K",
+          "emea": "59K-87K EUR",
+          "apac": "30K-45K USD equiv",
+          "latam": "40K-59K USD equiv"
+        }
+      },
+      "notes": "CDC (executive chef) at top end. Fine dining vs casual. Michelin prestige can command premium."
+    },
+    "hosp-hotel-manager": {
+      "name": "Hotel Manager",
+      "breakdown": {
+        "junior": {
+          "na": "40K-60K",
+          "emea": "25K-37K EUR",
+          "apac": "13K-19K USD equiv",
+          "latam": "17K-25K USD equiv"
+        },
+        "mid": {
+          "na": "60K-90K",
+          "emea": "37K-56K EUR",
+          "apac": "19K-29K USD equiv",
+          "latam": "25K-38K USD equiv"
+        },
+        "senior": {
+          "na": "90K-130K",
+          "emea": "56K-81K EUR",
+          "apac": "29K-42K USD equiv",
+          "latam": "38K-55K USD equiv"
+        },
+        "lead": {
+          "na": "120K-180K",
+          "emea": "74K-112K EUR",
+          "apac": "38K-58K USD equiv",
+          "latam": "50K-76K USD equiv"
+        }
+      },
+      "notes": "Hospitality management. Property size and tier (luxury, select-service) drive comp. GM role at top end."
+    },
+    "beauty-hairstylist": {
+      "name": "Hairstylist",
+      "breakdown": {
+        "junior": {
+          "na": "20K-35K",
+          "emea": "12K-22K EUR",
+          "apac": "6K-11K USD equiv",
+          "latam": "8K-15K USD equiv"
+        },
+        "mid": {
+          "na": "35K-55K",
+          "emea": "22K-34K EUR",
+          "apac": "11K-18K USD equiv",
+          "latam": "15K-23K USD equiv"
+        },
+        "senior": {
+          "na": "55K-80K",
+          "emea": "34K-50K EUR",
+          "apac": "18K-26K USD equiv",
+          "latam": "23K-34K USD equiv"
+        },
+        "lead": {
+          "na": "70K-100K",
+          "emea": "43K-62K EUR",
+          "apac": "22K-32K USD equiv",
+          "latam": "29K-42K USD equiv"
+        }
+      },
+      "notes": "Commission-based (40-60% of service revenue). Tips add 15-25%. Salon owner/rental chair model higher."
+    },
+    "sport-coach": {
+      "name": "Coach (Professional)",
+      "breakdown": {
+        "junior": {
+          "na": "30K-50K",
+          "emea": "19K-31K EUR",
+          "apac": "10K-16K USD equiv",
+          "latam": "13K-21K USD equiv"
+        },
+        "mid": {
+          "na": "50K-80K",
+          "emea": "31K-50K EUR",
+          "apac": "16K-26K USD equiv",
+          "latam": "21K-34K USD equiv"
+        },
+        "senior": {
+          "na": "80K-150K",
+          "emea": "50K-93K EUR",
+          "apac": "26K-48K USD equiv",
+          "latam": "34K-63K USD equiv"
+        },
+        "lead": {
+          "na": "150K-500K",
+          "emea": "93K-310K EUR",
+          "apac": "48K-160K USD equiv",
+          "latam": "63K-210K USD equiv"
+        }
+      },
+      "notes": "Widely variable. High school/college: 30K-150K. Professional: 500K-10M+. NCAA Division I on high end."
+    }
+  }
+}

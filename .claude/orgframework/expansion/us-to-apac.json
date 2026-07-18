@@ -1,0 +1,71 @@
+{
+  "playbook": "us-to-apac",
+  "version": "1.0",
+  "name": "US Company → Asia-Pacific Expansion",
+  "overview": "Expanding from the United States into the Asia-Pacific region presents the widest diversity of legal systems, cultural norms, and business environments of any expansion corridor. APAC encompasses common law systems (Singapore, Australia, India), civil law systems (Japan, China), and hybrid systems. The talent pools are enormous — India produces millions of engineers annually; China and Japan have deep technical workforces; Singapore serves as a regional hub for headquarters and finance; Australia offers a familiar common law environment with its own regulatory nuances. Data localization laws in China and India impose significant operational requirements. Cultural expectations around hierarchy, loyalty, and communication differ substantially from US norms — Japan's seniority-based work culture and consensus decision-making (nemawashi) can frustrate US managers accustomed to speed. China's guanxi relationship network is essential for business development. A hub-and-spoke model with a Singapore regional headquarters is a common strategy for covering multiple APAC markets.",
+  "entity_types": {
+    "recommended": "Singapore: Private Limited Company (Pte Ltd). Japan: Kabushiki Kaisha (KK). India: Private Limited Company. China: Wholly Foreign-Owned Enterprise (WFOE). Australia: Proprietary Limited (Pty Ltd). South Korea: Yuhan Hoesa (Limited Liability Company).",
+    "alternatives": [
+      "Singapore: Branch office (simpler but full liability of parent)",
+      "Japan: Godo Kaisha (GK) — simpler than KK but less prestige with banks and partners",
+      "India: Liaison office (for market research only, no revenue-generating activity) or Branch office (limited scope)",
+      "China: Representative office (very limited — cannot generate revenue or hire directly); Joint Venture (required in restricted sectors)",
+      "Australia: Branch of foreign company (simpler registration but full liability)",
+      "South Korea: Branch office or Liaison office for limited activities"
+    ]
+  },
+  "legal_requirements": [
+    "China: WFOE registration requires Ministry of Commerce (MOFCOM) approval; registered capital (no longer required minimum in most sectors but should be sufficient for operational needs); lease agreement required before registration",
+    "China: Mandatory social insurance (wuxian yijin) including pension, medical, unemployment, workers' compensation, maternity, and housing fund; contributions are 30-40% of salary (split employer/employee)",
+    "China: Data localization under the Cybersecurity Law and Personal Information Protection Law (PIPL) — certain data must be stored in China; cross-border data transfers require security assessments or standard contracts",
+    "China: Strict labor law — written contracts mandatory; fixed-term contracts convert to indefinite after two renewals or 10 years; termination is very difficult and expensive (economic compensation + notice period + potential reinstatement)",
+    "India: Register with Ministry of Corporate Affairs (MCA); obtain Director Identification Number (DIN) and Digital Signature Certificate (DSC); comply with Companies Act 2013",
+    "India: PF (Provident Fund) and ESI (Employee State Insurance) mandatory for eligible employees; professional tax varies by state; Labor Codes (2020-2021) consolidate 29 central labor laws into 4 codes",
+    "India: Data localization requirements under the Digital Personal Data Protection Act (2023) — sensitive personal data must be stored in India; significant personal data may require local storage with conditional cross-border transfers",
+    "Japan: Register with Legal Affairs Bureau; appoint a statutory representative (daihyo torishimariyaku) who is a Japan resident; minimum capital no longer required for KK but reputationally 1+ million JPY common",
+    "Japan: Mandatory social insurance (shakai hoken) including health, pension, employment insurance, and workers' compensation; labor and social security office registration required",
+    "Japan: Labor Standards Act mandates written employment rules (shugyo kisoku) filed with the Labor Standards Inspection Office; 30-day notice period standard; fixed-term contracts limited to 3 years (5 years for specialists)",
+    "Singapore: Register with ACRA (Accounting and Corporate Regulatory Authority); appoint a locally resident director; maintain a local company secretary; comply with IRAS (Inland Revenue) tax registration",
+    "Singapore: CPF (Central Provident Fund) contributions mandatory (employer 17% of ordinary wages up to cap); annual filing with MOM (Ministry of Manpower) for employment data",
+    "Australia: Register with ASIC (Australian Securities and Investments Commission); obtain ABN (Australian Business Number) and PAYG withholding registration; mandatory superannuation (11% of ordinary earnings into employee's super fund)",
+    "Australia: Fair Work Act compliance — National Employment Standards (NES) provide 10 minimum entitlements; modern awards may apply by industry and set minimum pay rates and conditions"
+  ],
+  "hiring_timeline": {
+    "phase_1": "First hires in accessible markets (month 1-3): Use EOR in Singapore or Australia for quickest time-to-hire. Singapore and Australia have straightforward labor markets with English proficiency. Begin market research in target countries. 4-8 week recruitment timeline.",
+    "phase_2": "Establish entity and build team (month 3-10): Establish main operating entity (Singapore Pte Ltd is fastest at 2-4 weeks; WFOE in China takes 3-6 months; India Pvt Ltd 2-4 months). Hire country manager and initial team. Register for payroll, social insurance, and tax.",
+    "phase_3": "Multi-country scale (month 6-24): Expand to additional APAC markets. Consider regional HQ in Singapore that oversees China, India, and Southeast Asian operations. Build local compliance, HR, and legal teams. Navigate data localization requirements in China and India."
+  },
+  "org_structure_adaptations": [
+    "Regional HQ structure common: Singapore as APAC headquarters overseeing country-level subsidiaries in China, Japan, India, Korea, and Australia",
+    "Japan and Korea require flatter-looking hierarchy with strong seniority-based expectations — younger managers over older staff causes friction",
+    "China: Local legal representative (fading dai biao ren) must be an individual (often foreign) with personal liability exposure — difficult to recruit for",
+    "Japan: Ringi decision-making (bottom-up consensus) conflicts with US top-down management; patience and relationship building are essential",
+    "India: Offices often have a managing director who is the senior-most local executive with significant autonomy from global HQ",
+    "Communications: English is sufficient in Singapore, India, Australia, but local language is critical for China, Japan, Korea (English-only limits talent pool to <5% of professionals)",
+    "Compliance and legal teams need to be larger in APAC than in US operations — regulatory complexity is substantially higher"
+  ],
+  "compensation_notes": "Compensation across APAC varies dramatically. Singapore and Australia have the highest costs, comparable to US metro areas for senior talent (engineers: 80-120k USD equivalent). India offers the lowest cash compensation (engineers: 15-40k USD) but total cost including benefits, training, and attrition management may narrow the gap. China compensation has risen sharply; tier-1 city tech salaries approach 50-80k USD for senior engineers. Japan has relatively flat compensation structures by seniority; foreign firms pay a premium over local firms. Korea compensation includes significant bonus components (200-400% of base at some chaebols). Stock options and RSUs are expected in Indian and Singaporean tech but less common in Japan and Korea. Benefits across the region include mandatory social insurance (significant cost in China and Japan), housing funds, transportation allowances, and meal subsidies. Executive pay in Japan and Korea is more moderate than US equivalents. Australia's superannuation (11% employer contribution into pension fund) is a significant additional cost. Bonus culture varies: performance-based bonuses are common in Singapore and India, less so in Japan (where bonuses are often fixed and paid biannually as part of total compensation).",
+  "cultural_key_differences": [
+    "Japan: Consensus decision-making (nemawashi) is slow — decisions are discussed informally before formal meetings. Pushing for quick decisions backfires. Hierarchy and respect for age/seniority are absolute.",
+    "China: Guanxi (relationship network) is essential for business. Trust is built through social interaction (meals, banquets) before business is discussed. Face (mianzi) — never cause someone public embarrassment.",
+    "India: Hierarchy is respected but communication can be indirect. 'Yes' often means 'I heard you' rather than 'I agree.' Do not equate head nods with commitment. Criticism should be private and constructive.",
+    "Singapore: Most Westernized APAC market. English is the business language. Direct communication is accepted. Efficiency-oriented. Status and titles still matter but less than in China or Japan.",
+    "South Korea: Age and hierarchy dominate workplace dynamics. Use of formal language (honorifics) is mandatory. Seniority determines who speaks first, sits where, and whose opinion carries weight. Drinking culture (hoesik) is a key bonding ritual.",
+    "Australia: Most culturally similar to US/UK among APAC markets. Flat hierarchy, informal communication (first names), and direct feedback style. Work-life balance is valued. 'Tall poppy syndrome' — don't show off success.",
+    "Business card etiquette is critical in Japan, China, and Korea. Present and receive cards with both hands, study the card before putting it away. Never write on a business card in front of the giver.",
+    "Gift-giving is expected in Japan and China for relationship building. In Japan, gifts should be wrapped and presented with both hands. In China, avoid clocks, white flowers (funeral associations), and sharp objects (severed relationships)."
+  ],
+  "common_pitfalls": [
+    "Assuming English-only operations work in China/Japan/Korea. Local language talent is essential for operations, legal compliance, and relationship building.",
+    "Underestimating China's social insurance costs and labor law protections. Terminating Chinese employees is extremely difficult — fixed-term contracts effectively become permanent after two renewals.",
+    "Ignoring data localization in China and India. Storing HR data, customer data, or financial records outside the country without proper authorization can result in business suspension and fines.",
+    "Rushing into China without a thorough market assessment. WFOE setup costs ($10-30k), ongoing compliance burden, and market competition should be carefully evaluated.",
+    "Misunderstanding Japan's hiring cycle. New graduate (shin-sotsu) hiring follows a rigid annual cycle (graduation in March, joining in April). Mid-career hiring is less developed. Recruitment takes 3-6 months.",
+    "Neglecting India's state-level complexity. Labor laws, professional tax, and compliance differ by state. GST (Goods and Services Tax) registration is state-specific.",
+    "Not understanding Korea's 52-hour workweek law (enacted 2018, modified 2023) — maximum 52 hours per week including overtime; violations carry criminal penalties.",
+    "Assuming IP protection works the same as in the US. China's IP enforcement has improved but remains inconsistent. Register patents and trademarks in China separately.",
+    "Treating ASEAN as a single market. Each country (Thailand, Vietnam, Indonesia, Philippines, Malaysia) has separate labor laws, visa regimes, and cultural norms.",
+    "Overlooking Australia's superannuation compliance. Employers must pay super into a compliant fund of the employee's choice. Failure to pay on time results in the Superannuation Guarantee Charge (penalty)."
+  ],
+  "timeline_estimate": "6-24 months for multi-country APAC expansion. Singapore: 3-6 months to entity + initial hires. India: 4-8 months. Japan: 6-12 months (registration + visa + cultural integration). China: 6-12 months (WFOE registration + operational setup). Australia: 3-6 months. Recommended: start in Singapore or Australia, then expand to harder markets."
+}

@@ -1,0 +1,93 @@
+{
+  "preset": "research-lab",
+  "version": "1.0",
+  "name": "Scientific Research Laboratory / Institute",
+  "description": "Organization structure for a scientific research laboratory, academic research group, or independent research institute. Covers the Principal Investigator (PI) / Lab Director leadership model, research scientists (postdocs, staff scientists), graduate students (PhD and masters), research assistants, and lab management. Grant-funded positions with collaborative but PI-driven research direction. Designed for wet labs, dry labs, computational groups, and social science research settings. 3-30 people with roles varying by career stage and funding source.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["research", "academia", "biotech", "science"], "stages": ["startup", "operational"] },
+  "headcount_range": "3-30",
+  "org_structure": {
+    "overview": "Research laboratories are centered around a Principal Investigator (PI) who secures funding, sets the scientific direction, and mentors the lab team. The PI is typically a tenured/tenure-track professor (university-based) or a senior scientist (institute-based). The lab is a flat, mentorship-driven organization where senior members (postdocs, staff scientists) lead specific projects with significant autonomy while training junior members (graduate students, research assistants, undergraduates). Grant funding determines lab size and research scope; members are often funded on specific grants and may rotate on/off projects as funding cycles change. The lab operates collaboratively — shared data, group meetings, journal clubs, and co-authored publications. Unlike corporate hierarchies, the lab structure is intentionally fluid to foster scientific creativity and mentoring relationships. Lab Manager handles administrative, safety, and operational tasks so scientists can focus on research.",
+    "departments": [
+      {
+        "name": "Lab Leadership (Principal Investigator)",
+        "description": "The PI / Lab Director is the lab's leader, founder, and primary grant-getter. Sets the research agenda, mentors all lab members, manages the lab budget, and represents the lab to the scientific community. Typically a faculty member (university) or senior staff scientist (institute).",
+        "headcount": "1-2",
+        "reports_to": "Department Chair / Institute Director / Funding Agency",
+        "roles": [
+          { "title": "Principal Investigator (PI) / Lab Director", "count": 1, "level": "Professor / Senior Scientist", "reports_to": "Department Chair / Institute Director", "description": "Establishes research vision, secures grant funding, mentors lab members, publishes findings, and manages lab budget and compliance." },
+          { "title": "Co-PI / Co-Director (if applicable)", "count": "0-1", "level": "Professor / Senior Scientist", "reports_to": "PI", "description": "Co-leads the lab with the PI; may bring complementary expertise or co-manage a specific research area within the lab." }
+        ]
+      },
+      {
+        "name": "Research Scientists (Postdocs & Staff Scientists)",
+        "description": "PhD-level researchers who drive major research projects with significant independence. Postdocs are early-career scientists gaining additional training before independent positions. Staff scientists are career researchers providing deep technical expertise and continuity. Both mentor junior lab members and contribute to grant writing and publications.",
+        "headcount": "1-10",
+        "reports_to": "Principal Investigator",
+        "roles": [
+          { "title": "Senior / Staff Scientist", "count": "0-3", "level": "Senior Researcher (PhD+)", "reports_to": "PI", "description": "Career research scientist who leads complex projects, provides technical expertise, and ensures lab continuity across funding and personnel changes." },
+          { "title": "Postdoctoral Fellow / Research Associate", "count": "1-6", "level": "Early-Career Researcher (PhD)", "reports_to": "PI", "description": "PhD-level trainee conducting independent research within the lab's scope. Expected to publish first-author papers, develop grant writing skills, and transition to an independent position." },
+          { "title": "Senior Postdoctoral Fellow", "count": "0-2", "level": "Advanced Postdoc (PhD 3+ years)", "reports_to": "PI", "description": "Experienced postdoc who leads a sub-program, mentors junior members, and may co-supervise graduate students." },
+          { "title": "Research Scientist (Non-PhD, M.Sc./B.Sc. level)", "count": "0-3", "level": "Professional Researcher", "reports_to": "PI", "description": "Research professional with advanced degree who executes experiments, manages specialized equipment, and supports lab operations." }
+        ]
+      },
+      {
+        "name": "Graduate Students",
+        "description": "PhD and Masters students who conduct research as part of their academic training. PhD students typically spend 4-7 years in the lab working toward dissertation. Master's students spend 1-2 years on a focused project. Students are jointly mentored by the PI and senior lab members.",
+        "headcount": "2-12",
+        "reports_to": "Principal Investigator (academic advisor)",
+        "roles": [
+          { "title": "PhD Student (Senior / Advanced)", "count": "1-4", "level": "Doctoral Candidate (Year 3+)", "reports_to": "PI", "description": "Advanced doctoral student nearing dissertation. Leads their own research project, publishes manuscripts, and may mentor newer students." },
+          { "title": "PhD Student (Junior / Rotating)", "count": "2-6", "level": "Doctoral Student (Year 1-2)", "reports_to": "PI / Senior PhD Student", "description": "Early doctoral student developing their research project, completing coursework, and learning lab techniques under mentorship." },
+          { "title": "Masters Student (M.Sc.)", "count": "0-3", "level": "Graduate Student", "reports_to": "PI / Designated Mentor", "description": "Short-term (1-2 year) graduate student conducting a defined research project for their thesis." }
+        ]
+      },
+      {
+        "name": "Research Assistants & Technical Staff",
+        "description": "Non-independent researchers who provide technical support, execute standardized experiments, manage lab inventory, and maintain equipment. Includes both full-time staff and part-time student workers.",
+        "headcount": "1-8",
+        "reports_to": "PI / Lab Manager / Senior Scientist",
+        "roles": [
+          { "title": "Research Assistant (Full-Time, Post-Baccalaureate)", "count": "1-4", "level": "Professional", "reports_to": "PI / Staff Scientist", "description": "Recent graduate (B.Sc./B.A.) working full-time in the lab before graduate school or as a career. Executes experiments and manages lab tasks." },
+          { "title": "Research Technician", "count": "1-3", "level": "Technical Staff", "reports_to": "PI / Lab Manager", "description": "Career technical staff performing specialized assays, managing animal colonies, operating core equipment, and maintaining lab compliance." },
+          { "title": "Undergraduate Research Assistant", "count": "1-6", "level": "Trainee (Part-time)", "reports_to": "Graduate Student / Postdoc", "description": "Undergraduate student gaining research experience. Works on a defined sub-project under direct mentorship of a senior lab member." },
+          { "title": "Hourly / Part-time Lab Aide", "count": "0-3", "level": "Entry", "reports_to": "Lab Manager / Research Assistant", "description": "Performs basic lab maintenance: glassware washing, solution preparation, inventory organization, and equipment cleaning." }
+        ]
+      },
+      {
+        "name": "Lab Administration & Operations",
+        "description": "Provides operational support that enables the lab to function efficiently. Handles ordering, compliance, safety, equipment maintenance, scheduling, and budgeting. In smaller labs, the PI handles admin; in larger labs, a dedicated Lab Manager is essential.",
+        "headcount": "0-3",
+        "reports_to": "PI",
+        "roles": [
+          { "title": "Lab Manager", "count": "0-1", "level": "Professional", "reports_to": "PI", "description": "Manages lab operations: orders supplies, maintains equipment, ensures safety compliance, manages lab budget, and coordinates with university/institute administration." },
+          { "title": "Lab Safety Officer (role, may be held by lab member)", "count": 1, "level": "Rotating / Designated", "reports_to": "Lab Manager / PI", "description": "Ensures lab compliance with biosafety, chemical safety, radiation safety, and animal care regulations. May be a lab member with safety responsibilities." },
+          { "title": "Administrative Assistant / Grants Coordinator", "count": "0-1", "level": "Professional", "reports_to": "PI", "description": "Assists with grant submission, progress reports, travel arrangements, meeting scheduling, and publication coordination." },
+          { "title": "IT / Computational Support Administrator", "count": "0-1", "level": "Professional", "reports_to": "PI", "description": "Maintains lab servers, workstations, software licenses, data storage, and bioinformatics/computational infrastructure (critical for dry/comp labs)." }
+        ]
+      },
+      {
+        "name": "Core Facilities & Shared Resources (Institute level)",
+        "description": "Centralized shared facilities that the lab accesses as a service. Not part of the lab itself but critical to its operation. May include imaging, genomics, proteomics, animal facilities, and data science cores. (Listed for context but members are institute staff, not lab members.)",
+        "headcount": "0-5 (used by lab, not staffed by lab)",
+        "reports_to": "Institute Administration",
+        "roles": [
+          { "title": "Core Facility Director (e.g., Imaging Core, Sequencing Core)", "count": "0-1", "level": "Senior Staff (Institute)", "reports_to": "Institute Director / Dean of Research", "description": "Manages a shared core facility that the lab pays to access. Not a lab member but provides training and support to lab users." },
+          { "title": "Core Facility Technician / Specialist", "count": "0-3", "level": "Technical Staff (Institute)", "reports_to": "Core Facility Director", "description": "Provides training, technical support, and equipment maintenance for shared core instrumentation." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The PI is the central node: they secure funding that pays everyone's salaries, set the scientific direction, and mentor all lab members. The lab's success depends on the PI's ability to win and sustain grants.",
+      "Postdocs operate semi-independently: they design their experiments, write papers, and develop their own research trajectory within the PI's lab scope.",
+      "PhD students are co-mentored by the PI and a senior lab member (postdoc or staff scientist); the senior member provides day-to-day guidance while the PI provides strategic direction.",
+      "Research Assistants and Technicians support the experiments of more senior lab members; they may be assigned to a specific project or PI.",
+      "Lab Manager reports to the PI and handles all non-research tasks so scientists can focus on their work; critical for labs over 10 people.",
+      "Graduate students and postdocs co-author publications; authorship order reflects contribution, and it is a recurring topic of lab discussions.",
+      "Collaborations with other labs (internal and external) are common; lab members may co-author papers with other groups and share reagents, data, or equipment.",
+      "Funding agencies (NIH, NSF, ERC, Wellcome, etc.) provide the grants that support the lab; the PI reports progress and results to them via annual reports and publications.",
+      "The lab's host institution (university or institute) provides infrastructure, core facilities, administrative services, and compliance oversight.",
+      "Lab members present at weekly group meetings, journal clubs, and departmental seminars; these are the primary internal communication and feedback mechanisms."
+    ],
+    "org_chart_text": "Principal Investigator (PI) / Lab Director\n│\n├── Co-PI / Co-Director (if applicable)\n│\n├── Research Scientists\n│     ├── Senior / Staff Scientist(s)\n│     ├── Senior Postdoctoral Fellow(s)\n│     └── Postdoctoral Fellow(s) / Research Associates\n│\n├── Graduate Students\n│     ├── Senior / Advanced PhD Students\n│     │     └── (may co-mentor junior students)\n│     ├── Junior PhD Students\n│     └── Masters Students\n│\n├── Research Assistants & Technical Staff\n│     ├── Research Assistants (Full-time, B.Sc./B.A.)\n│     ├── Research Technician(s)\n│     ├── Undergraduate Research Assistants\n│     └── Lab Aides (Hourly)\n│\n└── Lab Administration & Operations\n      ├── Lab Manager\n      ├── Safety Officer (role, may be lab member)\n      ├── Admin Assistant / Grants Coordinator\n      └── IT / Computational Support (if applicable)\n\nNote: Structure is flat and mentorship-driven. Senior lab members\n(postdocs, staff scientists) mentor junior ones (grad students,\nundergrads) regardless of formal reporting lines. \n\nThe lab is a collaborative team, not a strict hierarchy.\nWork is organized by project, not department."
+  }
+}

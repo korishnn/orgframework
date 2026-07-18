@@ -1,0 +1,17 @@
+{
+  "industry": "ecommerce",
+  "name": "E-commerce & Retail",
+  "shortcodes": ["@ecom", "@ecommerce", "@retail", "@d2c"],
+  "key_metrics": ["GMV", "AOV", "Conversion rate", "CAC", "LTV", "Return rate", "Cart abandonment", "Customer acquisition cost", "Repeat purchase rate", "Inventory turnover"],
+  "common_roles": ["E-commerce Director", "Growth Marketing Manager", "Supply Chain Planner", "Marketplace Manager", "Digital Merchandiser", "Customer Experience Lead"],
+  "org_structure_note": "Fast-paced. Seasonal peaks (Black Friday, Singles Day). Strong integration between marketing and operations.",
+  "go_to_market": ["D2C online", "Marketplace (Amazon, MercadoLibre)", "Omnichannel retail", "Social commerce", "Wholesale/B2B"],
+  "funding_stages": ["Seed → Series A → (unit economics focus) → B → C → IPO", "Tight margins. Logistics/fulfillment CapEx heavy."],
+  "regulatory": ["Consumer protection laws", "PCI DSS (payments)", "Product safety regulations", "Cross-border customs/tariffs", "Data privacy (GDPR, CCPA)"],
+  "regional_notes": {
+    "na": "Amazon dominated. Shopify ecosystem. D2C boom. Stripe/Shopify Payments standard.",
+    "emea": "Cross-border EU commerce. Marketplace regulation (DMA). UK independent. Different payment preferences.",
+    "apac": "Alibaba/JD (China). Shopee/Lazada (SEA). Rakuten (Japan). Coupang (Korea). Flipkart/Meesho (India). Social commerce huge.",
+    "latam": "MercadoLibre dominates. Magalu, B2W. Social commerce via WhatsApp/Instagram. Cash payments still significant."
+  }
+}

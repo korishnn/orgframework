@@ -1,0 +1,110 @@
+{
+  "preset": "construction-site",
+  "version": "1.0",
+  "name": "Construction Site / Project",
+  "description": "Project-based organizational structure for commercial or residential construction sites. Built around a clear hierarchy from General Contractor through Project Manager, Superintendent, Foreman, and Trades. Includes dedicated Safety Officer (OSHA compliance), Project Engineer, and subcontractor coordination. Temporary organization lasting the duration of the construction project, typically 10-200 people on site.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["construction", "general-contracting", "commercial-construction", "residential-development", "civil-engineering"], "stages": ["pre-construction", "site-work", "construction", "closeout"] },
+  "headcount_range": "10-200",
+  "org_structure": {
+    "overview": "Construction sites operate as temporary, project-based organizations with a clear chain of command emphasizing safety, quality, schedule, and budget. The General Contractor (prime contractor) leads the project and manages both direct-hire trades and subcontractors. The Project Manager handles the business and client side, while the Superintendent runs the day-to-day site operations. Foremen lead crews of skilled tradespeople, and the Safety Officer ensures OSHA compliance independent of production pressure. The organization forms at project mobilization and dissolves at project closeout, with key personnel often rotating to new projects.",
+    "departments": [
+      {
+        "name": "Project Leadership",
+        "description": "Senior management team responsible for overall project delivery: budget, schedule, quality, safety, and client relationship. Includes the General Contractor's senior representatives on site.",
+        "headcount": "2-5",
+        "reports_to": "General Contractor Corporate / Owner",
+        "roles": [
+          { "title": "General Contractor / Project Executive", "count": 1, "level": "Executive", "reports_to": "Company Ownership", "description": "Senior leader responsible for the entire project; manages client relationship, contract terms, financial performance, and strategic decisions. May oversee multiple projects simultaneously." },
+          { "title": "Project Manager", "count": 1, "level": "Senior", "reports_to": "Project Executive", "description": "Manages the project budget, schedule, procurement, contracts, change orders, and client communications. The primary point of contact for the owner/architect." },
+          { "title": "Assistant Project Manager", "count": "1-2", "level": "Skilled", "reports_to": "Project Manager", "description": "Supports the PM with submittals, RFIs, change order processing, meeting minutes, and document control." },
+          { "title": "Project Engineer", "count": "1-2", "level": "Skilled", "reports_to": "Project Manager", "description": "Handles technical aspects: reviews drawings and specs, manages RFI/submittal log, coordinates quality control testing, and assists with field engineering." }
+        ]
+      },
+      {
+        "name": "Site Operations",
+        "description": "Runs the day-to-day construction activities on site. The Superintendent is the senior field leader, managing all site personnel, schedules, logistics, and coordination between trades.",
+        "headcount": "3-10",
+        "reports_to": "Project Manager",
+        "roles": [
+          { "title": "Superintendent", "count": 1, "level": "Senior", "reports_to": "Project Manager", "description": "Senior field leader responsible for all on-site construction activities: schedule execution, trade coordination, safety enforcement, quality control, and site logistics." },
+          { "title": "Assistant Superintendent", "count": "1-2", "level": "Skilled", "reports_to": "Superintendent", "description": "Supports the superintendent with daily field coordination, inspection scheduling, material tracking, and specific area or phase supervision." },
+          { "title": "Field Engineer", "count": "1-2", "level": "Skilled", "reports_to": "Superintendent", "description": "Performs layout, grade checks, as-built verification, concrete testing, and technical quality control inspections in the field." },
+          { "title": "Project Coordinator / Admin", "count": 1, "level": "Entry", "reports_to": "Project Manager", "description": "Handles project documentation, meeting minutes, permit tracking, material deliveries, and general office administration on site." }
+        ]
+      },
+      {
+        "name": "Trades Supervision & Crews",
+        "description": "Skilled craft workers organized by trade under working foremen. These are the hands-on builders: carpenters, electricians, plumbers, ironworkers, equipment operators, and laborers. May be direct-hire or subcontractor personnel.",
+        "headcount": "10-150",
+        "reports_to": "Superintendent",
+        "roles": [
+          { "title": "General Foreman", "count": "1-2", "level": "Senior", "reports_to": "Superintendent", "description": "Senior foreman coordinating multiple crews across trades; ensures daily work plans are executed and material/logistical needs are met." },
+          { "title": "Carpenter Foreman", "count": "1-2", "level": "Supervisor", "reports_to": "General Foreman", "description": "Leads carpentry crew: formwork, framing, trim, millwork installation, and rough carpentry. Assigns tasks and inspects quality." },
+          { "title": "Carpenter", "count": "3-20", "level": "Skilled", "reports_to": "Carpenter Foreman", "description": "Performs rough and finish carpentry: builds forms, frames walls, installs doors, hardware, trim, and cabinetry." },
+          { "title": "Concrete Foreman", "count": 1, "level": "Supervisor", "reports_to": "General Foreman", "description": "Leads concrete crew: form placement, rebar tying, pouring, finishing, and curing operations." },
+          { "title": "Concrete Finisher / Laborer", "count": "3-15", "level": "Skilled", "reports_to": "Concrete Foreman", "description": "Places, finishes, and cures concrete; operates power trowels, sets forms, and performs concrete patching and repair." },
+          { "title": "Ironworker Foreman", "count": 1, "level": "Supervisor", "reports_to": "General Foreman", "description": "Leads ironworker crew: structural steel erection, rebar installation, welding, and rigging operations." },
+          { "title": "Ironworker", "count": "3-12", "level": "Skilled", "reports_to": "Ironworker Foreman", "description": "Erects structural steel, places rebar, welds connections, and operates rigging equipment for steel installation." },
+          { "title": "Equipment Operator Foreman", "count": 1, "level": "Supervisor", "reports_to": "General Foreman", "description": "Leads equipment operators: assigns machinery, coordinates earthwork, and ensures safe equipment operation." },
+          { "title": "Heavy Equipment Operator", "count": "2-10", "level": "Skilled", "reports_to": "Equipment Operator Foreman", "description": "Operates excavators, bulldozers, cranes, loaders, graders, and other heavy construction equipment." },
+          { "title": "Laborer Foreman", "count": 1, "level": "Supervisor", "reports_to": "General Foreman", "description": "Leads general labor crew: site cleanup, material handling, excavation support, and general site maintenance." },
+          { "title": "General Laborer", "count": "5-30", "level": "Entry", "reports_to": "Laborer Foreman", "description": "Performs general site labor: digging, material handling, cleanup, traffic control, and assisting skilled trades." },
+          { "title": "Truck Driver", "count": "2-8", "level": "Entry", "reports_to": "General Foreman", "description": "Drives dump trucks, concrete mixers, and material delivery vehicles; manages site haul routes and material logistics." }
+        ]
+      },
+      {
+        "name": "Safety & Quality",
+        "description": "Ensures regulatory compliance and safe work practices on site. The Safety Officer has authority to stop unsafe work independent of production schedule pressures. Quality control ensures work meets specifications.",
+        "headcount": "1-4",
+        "reports_to": "Project Manager",
+        "roles": [
+          { "title": "Safety Officer / Site Safety Manager", "count": 1, "level": "Senior", "reports_to": "Project Manager", "description": "Enforces OSHA and company safety standards; conducts daily safety inspections, incident investigations, safety training, and has stop-work authority." },
+          { "title": "Safety Coordinator", "count": "1-2", "level": "Skilled", "reports_to": "Safety Officer", "description": "Assists with safety inspections, PPE enforcement, toolbox talks, safety documentation, and hazard assessments." },
+          { "title": "Quality Control Manager", "count": 1, "level": "Senior", "reports_to": "Project Executive", "description": "Ensures work meets drawings, specifications, and quality standards; conducts inspections, manages punch lists, and coordinates third-party testing." }
+        ]
+      },
+      {
+        "name": "Subcontractors (Managed Trades)",
+        "description": "Specialty trade contractors hired by the General Contractor to perform specific scopes of work. Subcontractors bring their own supervision and crews but operate under the GC's site management and safety protocols.",
+        "headcount": "10-100",
+        "reports_to": "Superintendent / Project Manager",
+        "roles": [
+          { "title": "Electrical Subcontractor Foreman", "count": 1, "level": "Supervisor", "reports_to": "Superintendent (GC)", "description": "Leads the electrical crew on site; coordinates rough-in, conduit, wiring, panels, and trim-out with GC schedule." },
+          { "title": "Electrician", "count": "3-20", "level": "Skilled", "reports_to": "Electrical Foreman", "description": "Installs conduit, wiring, outlets, switches, panels, fixtures, and performs electrical system testing and troubleshooting." },
+          { "title": "Plumbing Subcontractor Foreman", "count": 1, "level": "Supervisor", "reports_to": "Superintendent (GC)", "description": "Leads the plumbing crew; coordinates underground rough-in, piping, fixtures, and mechanical trim-out." },
+          { "title": "Plumber", "count": "3-15", "level": "Skilled", "reports_to": "Plumbing Foreman", "description": "Installs piping, fixtures, water heaters, drainage systems, and performs pressure testing and plumbing rough-in." },
+          { "title": "HVAC Subcontractor Foreman", "count": 1, "level": "Supervisor", "reports_to": "Superintendent (GC)", "description": "Leads the HVAC crew; coordinates ductwork, equipment installation, and commissioning." },
+          { "title": "HVAC Technician", "count": "3-12", "level": "Skilled", "reports_to": "HVAC Foreman", "description": "Installs ductwork, refrigeration lines, air handlers, rooftop units, and performs system start-up and testing." },
+          { "title": "Drywall / Finishing Foreman", "count": 1, "level": "Supervisor", "reports_to": "Superintendent (GC)", "description": "Leads drywall, insulation, and finish carpentry crew." },
+          { "title": "Drywall Installer / Finisher", "count": "3-15", "level": "Skilled", "reports_to": "Drywall Foreman", "description": "Hangs and finishes drywall: taping, mudding, sanding, and preparing surfaces for paint." },
+          { "title": "Painting Foreman", "count": 1, "level": "Supervisor", "reports_to": "Superintendent (GC)", "description": "Leads painting crew; coordinates surface preparation, painting, and coating application schedules." },
+          { "title": "Painter", "count": "3-12", "level": "Skilled", "reports_to": "Painting Foreman", "description": "Prepares surfaces, applies paint, stain, and coatings; operates spray equipment and performs touch-up and finishing work." }
+        ]
+      },
+      {
+        "name": "Administration & Support",
+        "description": "Provides logistical and administrative support to the project team including procurement, timekeeping, document control, and site security.",
+        "headcount": "2-6",
+        "reports_to": "Project Manager",
+        "roles": [
+          { "title": "Purchasing / Procurement Coordinator", "count": 1, "level": "Senior", "reports_to": "Project Manager", "description": "Manages material procurement, vendor bids, purchase orders, delivery schedules, and material submittals." },
+          { "title": "Timekeeper / Payroll Clerk", "count": 1, "level": "Entry", "reports_to": "Project Manager", "description": "Tracks crew hours, processes timesheets, manages certified payroll reporting, and supports labor cost tracking." },
+          { "title": "Document Controller", "count": 1, "level": "Entry", "reports_to": "Project Engineer", "description": "Manages drawings, RFIs, submittals, as-builts, and project correspondence through the document control system." },
+          { "title": "Site Security / Gate Attendant", "count": "1-3", "level": "Entry", "reports_to": "Superintendent", "description": "Controls site access, checks credentials, logs deliveries, and secures the site after hours." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Project Manager and Superintendent are the core leadership pair: PM handles contracts and client, Superintendent handles field execution; they meet daily to align on progress, issues, and changes.",
+      "Safety Officer reports independently and has stop-work authority over all site personnel, including subcontractors, independent of the Superintendent.",
+      "Project Engineer coordinates daily with trade foremen on drawing interpretations, RFI responses, and quality inspections.",
+      "General Foreman serves as the direct link between the Superintendent and all trade crews, translating schedule requirements into daily work plans.",
+      "Subcontractor foremen attend daily coordination meetings with the GC Superintendent to align on sequencing, access, and safety.",
+      "Project Manager coordinates with design team (architects, engineers) on RFIs, change orders, and design clarifications impacting schedule and cost.",
+      "Quality Control Manager works alongside trade foremen to identify and correct deficiencies before they are covered by subsequent work.",
+      "Purchasing Coordinator works with the PM and trade foremen to ensure materials arrive on time and within budget.",
+      "Equipment Operator Foreman coordinates with all trade foremen for crane lifts, excavation support, and material handling needs."
+    ],
+    "org_chart_text": "               GENERAL CONTRACTOR / COMPANY OWNERSHIP\n                           |\n                   PROJECT EXECUTIVE\n                           |\n                    PROJECT MANAGER\n                    /              \\\n          SUPERINTENDENT      ASST PROJECT MANAGER\n          /    |       \\      PROJECT ENGINEER\n       GEN   SAFETY   QC     FIELD ENGINEER\n       FOREMAN OFFICER MGR       |\n       /    |    |             DOC CONTROL\n   CARP   CONC  IRON\n   FOREMAN     FOREMAN\n     |           |\n   CARPENTERS  IRONWORKERS\n\n   EQUIP OP FOREMAN -> OPERATORS\n   LABORER FOREMAN -> LABORERS\n\n   SUBCONTRACTORS (coordinated by SUPERINTENDENT):\n   ELEC FOREMAN -> ELECTRICIANS\n   PLUMB FOREMAN -> PLUMBERS\n   HVAC FOREMAN -> TECHS\n   DRYWALL FOREMAN -> INSTALLERS\n   PAINT FOREMAN -> PAINTERS\n\n   ADMIN: PURCHASING, TIMEKEEPER, SECURITY"
+  }
+}

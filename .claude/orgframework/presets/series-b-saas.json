@@ -1,0 +1,257 @@
+{
+  "preset": "series-b-saas",
+  "version": "1.0",
+  "name": "Series B SaaS",
+  "description": "For SaaS companies at Series B stage with 30-80 people. Formal departments with dedicated heads, VP-level leadership, and the first COO or Chief of Staff hire. Product-market fit is proven and the focus shifts to scalable growth, team specialization, and operational discipline.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["saas"],
+    "stages": ["scaleup"]
+  },
+  "headcount_range": "30-80",
+  "org_structure": {
+    "overview": "At Series B the company organizes into full departments led by VP-level leaders. The philosophy is 'scalable accountability' — each department owns its metrics and operating plan. Engineering scales into multiple teams with dedicated EMs. Design becomes a distinct function. Customer Success formalizes as a revenue-critical department separate from Support. The CEO adds a COO or Chief of Staff to manage operations, allowing the CEO to focus on strategy, board relations, and fundraising. Processes for planning, reviews, and cross-functional coordination become institutionalized.",
+    "departments": [
+      {
+        "name": "Engineering",
+        "description": "Multiple teams organized by product area or platform. Dedicated infrastructure/DevOps role. Established on-call, incident response, and release engineering practices.",
+        "headcount": "15-25",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Engineering",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Sets engineering strategy, grows the organization, and ensures delivery against the product roadmap. Manages multiple Engineering Managers. Owns engineering budget and tooling decisions."
+          },
+          {
+            "title": "Engineering Manager",
+            "count": "3-5",
+            "level": "Manager",
+            "reports_to": "VP of Engineering",
+            "description": "Leads a team of 4-6 engineers in a specific area (e.g., backend, frontend, platform, data). Conducts sprint planning, 1:1s, and career development."
+          },
+          {
+            "title": "Senior Software Engineer",
+            "count": "5-8",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Leads technical design for major initiatives. Mentors junior team members and drives code quality standards."
+          },
+          {
+            "title": "Software Engineer",
+            "count": "5-8",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Delivers features and improvements across the codebase. Participates in on-call rotation."
+          },
+          {
+            "title": "DevOps / Infrastructure Engineer",
+            "count": "2-3",
+            "level": "IC",
+            "reports_to": "Engineering Manager (Platform)",
+            "description": "Owns cloud infrastructure, CI/CD pipelines, monitoring, and incident response. Ensures uptime and scalability."
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "description": "Multiple PMs each owning a product area. Establishes data-informed product practices including experimentation and user research.",
+        "headcount": "4-6",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Product",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Owns product vision, strategy, and roadmap across the entire platform. Manages Product Directors/Managers and partners with Engineering and Design leadership."
+          },
+          {
+            "title": "Director of Product",
+            "count": "1-2",
+            "level": "Head",
+            "reports_to": "VP of Product",
+            "description": "Owns product strategy for a major area (e.g., core product, growth, platform). Manages a team of PMs."
+          },
+          {
+            "title": "Product Manager",
+            "count": "2-3",
+            "level": "IC",
+            "reports_to": "Director of Product",
+            "description": "Defines features, writes specs, manages backlog, runs A/B tests, and coordinates with engineering and design."
+          }
+        ]
+      },
+      {
+        "name": "Design",
+        "description": "Establishes design systems, user research, and visual brand standards. Partners with Product and Engineering on every initiative.",
+        "headcount": "3-4",
+        "reports_to": "VP of Product",
+        "roles": [
+          {
+            "title": "Design Lead / Director of Design",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "VP of Product",
+            "description": "Establishes design vision, design system, and user research practice. Manages the design team and ensures brand consistency."
+          },
+          {
+            "title": "Product Designer",
+            "count": "2-3",
+            "level": "IC",
+            "reports_to": "Design Lead",
+            "description": "Creates wireframes, prototypes, and high-fidelity designs. Conducts user testing and iterates on feedback."
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "description": "Multi-channel demand generation with dedicated content, product marketing, and brand functions. Supports pipeline generation and revenue targets.",
+        "headcount": "5-8",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Marketing",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Owns brand, demand generation, content, product marketing, and communications. Drives marketing OKRs and budget."
+          },
+          {
+            "title": "Director of Demand Generation",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "VP of Marketing",
+            "description": "Owns paid acquisition, SEO, events, and inbound funnel. Optimizes conversion from lead to MQL to SQL."
+          },
+          {
+            "title": "Product Marketing Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "VP of Marketing",
+            "description": "Owns positioning, messaging, competitive intelligence, and go-to-market launches."
+          },
+          {
+            "title": "Content Marketing Manager",
+            "count": "1-2",
+            "level": "IC",
+            "reports_to": "VP of Marketing",
+            "description": "Creates blog posts, whitepapers, case studies, and social content to drive organic reach."
+          },
+          {
+            "title": "Marketing Operations Specialist",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Demand Generation",
+            "description": "Manages marketing tech stack (HubSpot/Marketo), attribution, reporting, and campaign analytics."
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "description": "Scaled sales organization with multiple AEs and first SDRs. Defined sales methodology, territories, and compensation plans.",
+        "headcount": "8-12",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Sales",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CEO",
+            "description": "Owns revenue targets, sales strategy, team hiring, and forecasting. Manages directors and carries overall quota responsibility."
+          },
+          {
+            "title": "Director of Sales",
+            "count": "1-2",
+            "level": "Head",
+            "reports_to": "VP of Sales",
+            "description": "Manages a pod of AEs. Coaches on deals, runs forecast reviews, and helps close strategic opportunities."
+          },
+          {
+            "title": "Account Executive",
+            "count": "4-6",
+            "level": "IC",
+            "reports_to": "Director of Sales",
+            "description": "Runs full-cycle sales. Manages pipeline, delivers demos, negotiates, and closes."
+          },
+          {
+            "title": "Sales Development Representative (SDR)",
+            "count": "2-3",
+            "level": "IC",
+            "reports_to": "Director of Sales",
+            "description": "Prospects and qualifies inbound leads to create pipeline for AEs. First human touchpoint for many prospects."
+          }
+        ]
+      },
+      {
+        "name": "Customer Success",
+        "description": "Drives adoption, retention, and expansion across the customer base. Separate from Support, focused on outcomes and renewals.",
+        "headcount": "5-8",
+        "reports_to": "COO / CEO",
+        "roles": [
+          {
+            "title": "VP of Customer Success",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO / CEO",
+            "description": "Owns customer health, NRR, churn, and expansion revenue. Builds the CS playbook and team."
+          },
+          {
+            "title": "Customer Success Manager",
+            "count": "3-5",
+            "level": "IC",
+            "reports_to": "VP of Customer Success",
+            "description": "Manages a portfolio of customer accounts. Drives onboarding, adoption, QBRs, and renewal conversations."
+          },
+          {
+            "title": "Customer Support Lead",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "VP of Customer Success",
+            "description": "Manages support ticketing, SLAs, and support team. Ensures timely resolution and customer satisfaction."
+          },
+          {
+            "title": "Customer Support Specialist",
+            "count": "1-2",
+            "level": "IC",
+            "reports_to": "Customer Support Lead",
+            "description": "Responds to support tickets, troubleshoots issues, and escalates to engineering when needed."
+          }
+        ]
+      },
+      {
+        "name": "People / HR",
+        "description": "Establishes HR infrastructure: performance reviews, compensation bands, benefits, compliance, and culture programs.",
+        "headcount": "2",
+        "reports_to": "COO / CEO",
+        "roles": [
+          {
+            "title": "Head of People",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "COO / CEO",
+            "description": "Builds people strategy, manages recruiting pipeline, establishes performance management, and shapes company culture."
+          },
+          {
+            "title": "People Operations Generalist",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Head of People",
+            "description": "Handles payroll, benefits administration, onboarding, offboarding, and employee relations."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "VP Product, VP Engineering, and Design Lead form the 'product triad' that jointly owns feature delivery from concept to shipped.",
+      "VP Marketing and VP Sales meet weekly on funnel metrics and hold a joint quarterly planning session.",
+      "Customer Success feeds product feedback directly into Product's roadmap prioritization.",
+      "COO (if hired) runs the weekly leadership team meeting and owns cross-functional planning and OKR tracking.",
+      "Head of People partners with all VPs on hiring plans, retention, and organizational design.",
+      "Engineering Managers and Product Managers pair up per squad — no PM is assigned without a corresponding EM."
+    ],
+    "org_chart_text": "CEO\n├── VP of Engineering\n│   ├── Engineering Manager (3-5 pods)\n│   │   ├── Senior Software Engineer\n│   │   ├── Software Engineer\n│   │   └── [DevOps/Infra in platform pod]\n│   └── DevOps/Infrastructure Engineer (2-3)\n├── VP of Product\n│   ├── Director of Product (1-2)\n│   │   └── Product Manager (2-3)\n│   └── Design Lead\n│       └── Product Designer (2-3)\n├── VP of Marketing\n│   ├── Director of Demand Generation\n│   │   ├── Content Marketing Manager (1-2)\n│   │   └── Marketing Ops Specialist\n│   └── Product Marketing Manager\n├── VP of Sales\n│   ├── Director of Sales (1-2)\n│   │   ├── Account Executive (4-6)\n│   │   └── SDR (2-3)\n│   └── [SDR team]\n├── VP of Customer Success\n│   ├── Customer Success Manager (3-5)\n│   └── Customer Support Lead\n│       └── Customer Support Specialist (1-2)\n├── Head of People\n│   └── People Operations Generalist\n└── COO / Chief of Staff (if hired)"
+  }
+}

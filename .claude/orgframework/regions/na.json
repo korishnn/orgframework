@@ -1,0 +1,36 @@
+{
+  "region": "na",
+  "name": "North America",
+  "shortcodes": ["@na", "@us", "@canada"],
+  "employment": {
+    "at_will": true,
+    "notice_period_days": 0,
+    "min_vacation_days": 0,
+    "mandatory_benefits": ["Social Security", "Medicare", "Unemployment Insurance", "Workers Compensation", "FMLA (unpaid)"],
+    "common_benefits": ["Health Insurance (group)", "401(k) matching", "Dental/Vision", "STD/LTD", "HSA/FSA"],
+    "contract_types": ["At-will employment", "Fixed-term (rare)", "Contract/1099", "C2C"],
+    "labor_laws": ["FLSA (overtime)", "Title VII (discrimination)", "ADA", "FMLA", "HIPAA", "COBRA", "SOX (public)"],
+    "work_culture": {
+      "communication": "Direct, informal, fast-paced",
+      "hierarchy": "Flat to moderate. First-name basis with executives.",
+      "hours": "40-hour norm. Startup culture may expect more.",
+      "remote": "Widespread remote/hybrid adoption. Top talent market is national.",
+      "diversity_focus": "DEI programs standard. Pay equity reporting in some states."
+    },
+    "managerial_authority": {
+      "budget_thresholds": "Department heads: $50K-$250K. Directors: $250K-$1M. VP+: $1M+. CFO/CEO approval above thresholds.",
+      "hiring_authority": "No formal notice period. Quick hires. At-will termination.",
+      "termination": "At-will. No statutory severance. WARN Act for mass layoffs (60 days)."
+    }
+  },
+  "industry_context": {
+    "saas": "Silicon Valley standard. ARR-driven. Board-controlled governance.",
+    "fintech": "SEC/FINRA regulated. New York/San Francisco hubs.",
+    "healthcare": "HIPAA critical. FDA for healthtech. Boston/Minnesota hubs.",
+    "manufacturing": "Midwest and Sun Belt. Union presence varies by state.",
+    "ecommerce": "Seattle/Bay Area/NYC. Amazon-influenced logistics standards."
+  },
+  "currency": "USD",
+  "tax_year": "Calendar (Jan-Dec)",
+  "reporting_standards": "GAAP (US) / IFRS (Canada)"
+}

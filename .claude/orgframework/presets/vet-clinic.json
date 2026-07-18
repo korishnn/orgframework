@@ -1,0 +1,76 @@
+{
+  "preset": "vet-clinic",
+  "version": "1.0",
+  "name": "Veterinary Clinic / Animal Hospital",
+  "description": "Small animal or mixed-animal veterinary practice providing wellness care, medical treatment, surgery, dentistry, and emergency services for companion animals and/or livestock. Suitable for solo vet practices, multi-vet animal hospitals, and corporate-owned veterinary chains.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare", "veterinary"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "3-30",
+  "org_structure": {
+    "overview": "The veterinary clinic is organized around the medical team (veterinarians, vet technicians, assistants) providing compassionate care for animals, with strong front-office and client-relations support. The practice manager oversees business operations while the medical director or lead veterinarian sets clinical standards. The model typically includes exam-room consultations, in-house laboratory, digital radiography, surgical suite, pharmacy/dispensary, and hospitalization/kennel areas. Revenue comes from exam fees, procedures, diagnostics, pharmacy, and retail (pet food, preventatives). Scheduling must accommodate both appointments and same-day urgent visits.",
+    "departments": [
+      {
+        "name": "Practice Leadership",
+        "description": "Veterinary leadership and practice management setting medical standards and business direction.",
+        "headcount": "1-3",
+        "reports_to": "Owner / Corporate Regional Director",
+        "roles": [
+          { "title": "Medical Director / Lead Veterinarian", "count": 1, "level": "Head", "reports_to": "Owner / Corporate Regional Director", "description": "Medical quality, protocol development, peer review, complex case consultation, and veterinary team mentorship." },
+          { "title": "Practice Manager", "count": "0-1", "level": "Head", "reports_to": "Owner / Corporate Regional Director", "description": "Business operations: staffing, scheduling, P&L, inventory, payroll, facility management, and client experience." }
+        ]
+      },
+      {
+        "name": "Veterinary Medical Team",
+        "description": "Licensed veterinarians providing medical and surgical care for animal patients.",
+        "headcount": "1-10",
+        "reports_to": "Medical Director",
+        "roles": [
+          { "title": "Associate Veterinarian (DVM / VMD)", "count": "1-6", "level": "Provider / IC", "reports_to": "Medical Director", "description": "Wellness exams, vaccination, diagnosis and treatment of medical conditions, surgery (spay/neuter, soft tissue, orthopedics), dentistry, and client education." },
+          { "title": "Veterinary Specialist (Internal Medicine, Surgery, etc.)", "count": "0-2", "level": "Provider / IC", "reports_to": "Medical Director", "description": "Board-certified specialist handling advanced medical and surgical cases; typically at larger referral hospitals or specialty practices." }
+        ]
+      },
+      {
+        "name": "Veterinary Technicians & Nursing",
+        "description": "Credentialed veterinary technicians and assistants supporting veterinarians in patient care, procedures, and hospitalization.",
+        "headcount": "1-10",
+        "reports_to": "Medical Director / Practice Manager",
+        "roles": [
+          { "title": "Registered / Licensed Veterinary Technician (RVT/LVT)", "count": "1-5", "level": "IC", "reports_to": "Medical Director", "description": "Medical procedures: IV catheter placement, blood draw, anesthesia monitoring, radiography, lab testing, dental scaling, and hospitalized patient care." },
+          { "title": "Veterinary Assistant", "count": "1-5", "level": "IC", "reports_to": "Practice Manager / Lead Tech", "description": "Restraint, exam room preparation, lab sample collection, surgical prep, instrument sterilization, and kennel care support." },
+          { "title": "Kennel Technician / Hospital Care Attendant", "count": "1-4", "level": "IC", "reports_to": "Practice Manager", "description": "Animal housing care: feeding, walking, cleaning kennels/runs, administering medications as directed, and monitoring hospitalized patients." }
+        ]
+      },
+      {
+        "name": "Diagnostic & Support Services",
+        "description": "In-house laboratory, imaging, pharmacy, and surgical support functions.",
+        "headcount": "1-4",
+        "reports_to": "Medical Director",
+        "roles": [
+          { "title": "Veterinary Lab Technician", "count": "0-2", "level": "IC", "reports_to": "Medical Director", "description": "In-house lab testing (blood chemistry, hematology, urinalysis, fecal, cytology, microbiology) and reference lab coordination (IDEXX, Antech)." },
+          { "title": "Veterinary Pharmacy / Dispensary Coordinator", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Pharmacy inventory management, prescription dispensing, controlled substance logs, and client medication instructions." }
+        ]
+      },
+      {
+        "name": "Front Office & Client Relations",
+        "description": "Client-facing and administrative roles managing scheduling, communication, financial transactions, and client education.",
+        "headcount": "2-8",
+        "reports_to": "Practice Manager",
+        "roles": [
+          { "title": "Client Service Representative (CSR) / Receptionist", "count": "1-4", "level": "IC", "reports_to": "Practice Manager", "description": "Phone management, appointment scheduling, client check-in/out, payment processing, and client communication (reminders, follow-ups)." },
+          { "title": "Treatment Plan / Financial Coordinator", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Presents treatment estimates to clients, discusses financial options (CareCredit, insurance claims), and manages payment plans." },
+          { "title": "Inventory / Retail Coordinator", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Manages retail inventory (prescription diets, preventatives, pet supplies), vendor ordering, and retail merchandising." },
+          { "title": "Medical Records / Data Entry Clerk", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Maintains paper and electronic medical records, scans records, manages lab results filing, and supports documentation compliance." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Medical Director and Practice Manager are the dual leadership of the clinic — medical quality and business performance are equally important and interdependent.",
+      "Associate Veterinarians and Veterinary Technicians work in exam-room teams — efficient tech support directly increases exam throughput and client satisfaction.",
+      "Veterinary Assistant and Kennel Tech support the entire medical team; they are the eyes-on for hospitalized patients and report changes in condition to the veterinarian.",
+      "Client Service Representatives (CSRs) are the first and last point of client contact; they coordinate closely with the medical team on appointment flow and wait-time management.",
+      "Lab Technician provides results that drive real-time medical decision-making; quick in-house lab turnaround enables same-visit diagnosis and treatment.",
+      "Treatment Plan Coordinator bridges the veterinarian's recommended care plan with the client's financial situation — case acceptance often depends on this role's communication skills.",
+      "Pharmacy/Retail Coordinator and Inventory Coordinator ensure that prescribed medications, prescription diets, and preventatives are in stock when needed."
+    ],
+    "org_chart_text": "                              ┌──────────────────────────┐\n                              │     Owner / Corporate     │\n                              │     Regional Director     │\n                              └──────────┬───────────────┘\n                                         │\n                         ┌───────────────┴────────────────┐\n                         │                                │\n                   ┌─────┴──────┐                 ┌───────┴────────┐\n                   │  Medical   │                 │   Practice     │\n                   │  Director  │                 │   Manager      │\n                   └──┬────┬────┘                 └───┬───────┬────┘\n                      │    │                          │       │\n        ┌─────────────┘    └──────────┐     ┌────────┘       └──────────┐\n        │                             │     │                            │\n   ┌────┴─────┐             ┌────────┴┐ ┌──┴────────┐          ┌───────┴──────────┐\n   │Associate │             │Vet Tech │ │Front Desk │          │  Inventory /     │\n   │Veterinar-│             │(RVT/LVT)│ │CSRs       │          │  Retail / Billing │\n   │ians (DVM)│             │(1-5)    │ │(1-4)      │          │  Coordinators    │\n   │(1-6)     │             └────┬────┘ └───────────┘          └──────────────────┘\n   └──────────┘                  │\n                          ┌──────┴───────┐\n                          │Vet Assistant │\n                          │Kennel Tech   │\n                          │Lab Tech      │\n                          │(2-8)         │\n                          └──────────────┘"
+  }
+}

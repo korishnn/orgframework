@@ -1,0 +1,302 @@
+{
+  "preset": "hardware-medical-device",
+  "version": "1.0",
+  "name": "Hardware / Medical Device Company",
+  "description": "For hardware and medical device companies where engineering spans mechanical, electrical, firmware, and software. QA/Regulatory Affairs and Clinical Affairs are critical departments with authority to stop releases. Manufacturing, supply chain, and field service operations are core functions. Designed for longer development cycles (12-48 months), FDA/CE regulatory processes, and post-market surveillance requirements.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["healthcare", "manufacturing"],
+    "stages": ["startup", "scaleup", "enterprise"]
+  },
+  "headcount_range": "20-5,000+",
+  "org_structure": {
+    "overview": "Hardware and medical device companies operate on fundamentally different cadences than pure software businesses. The philosophy is 'quality is not negotiable' — regulatory and quality functions have independent authority, including the ability to halt shipments and recall products. Development cycles are measured in years, not weeks, and the org must support漫长的 design, verification, validation, and regulatory submission phases. The org structure reflects the product lifecycle: R&D (hardware, firmware, software) feeds into Regulatory/Clinical for clearance, then into Manufacturing for production, then into Field Service for ongoing support. A Design History File (DHF) and Device Master Record (DMR) govern every product change. Post-market surveillance and complaint handling are mandatory ongoing functions, not afterthoughts.",
+    "departments": [
+      {
+        "name": "Executive Leadership",
+        "description": "C-suite that manages the balance between innovation velocity and regulatory/compliance rigor. Often includes a Chief Medical Officer or Chief Scientific Officer.",
+        "headcount": "3-7",
+        "reports_to": "Board of Directors",
+        "roles": [
+          {
+            "title": "Chief Executive Officer (CEO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "Board of Directors",
+            "description": "Sets company vision and strategy. Ultimately responsible for product safety, quality, and regulatory compliance."
+          },
+          {
+            "title": "Chief Technology Officer (CTO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Technology and product roadmap, architecture across hardware/firmware/software, and R&D strategy."
+          },
+          {
+            "title": "Chief Medical Officer (CMO) / Chief Scientific Officer",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Clinical strategy, key opinion leader (KOL) relationships, clinical evidence generation, and medical safety."
+          },
+          {
+            "title": "Chief Quality & Regulatory Officer (CQRO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Enterprise quality system, regulatory strategy, and compliance. Has authority to stop shipments and manufacturing."
+          }
+        ]
+      },
+      {
+        "name": "Research & Development (R&D)",
+        "description": "Multi-disciplinary engineering organization combining hardware, electronics, firmware, and software teams. Organized around product platforms or subsystems.",
+        "headcount": "20-500",
+        "reports_to": "CTO",
+        "roles": [
+          {
+            "title": "VP of R&D",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CTO",
+            "description": "R&D strategy, product development lifecycle, and cross-disciplinary engineering management."
+          },
+          {
+            "title": "Director of Hardware Engineering",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "VP of R&D",
+            "description": "Mechanical and electrical engineering. Owns mechanical design, enclosures, PCBA, sensors, and actuators."
+          },
+          {
+            "title": "Senior Mechanical Engineer",
+            "count": "3-10",
+            "level": "IC",
+            "reports_to": "Director of Hardware Engineering",
+            "description": "Designs mechanical systems, CAD modeling, thermal analysis, tolerance analysis, and DFM (design for manufacturing)."
+          },
+          {
+            "title": "Senior Electrical Engineer",
+            "count": "2-8",
+            "level": "IC",
+            "reports_to": "Director of Hardware Engineering",
+            "description": "Circuit design, PCB layout, power management, signal integrity, and EMC compliance design."
+          },
+          {
+            "title": "Director of Firmware Engineering",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "VP of R&D",
+            "description": "Embedded software running on the device. Real-time systems, device drivers, bootloader, and firmware update mechanisms."
+          },
+          {
+            "title": "Firmware Engineer",
+            "count": "3-10",
+            "level": "IC",
+            "reports_to": "Director of Firmware Engineering",
+            "description": "Develops embedded software in C/C++/Rust. Works closely with hardware team on integration and testing."
+          },
+          {
+            "title": "Director of Software Engineering (MedTech)",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "VP of R&D",
+            "description": "Application software, cloud platform, mobile apps, and connectivity software for the device ecosystem."
+          },
+          {
+            "title": "Software Engineer (MedTech)",
+            "count": "5-20",
+            "level": "IC",
+            "reports_to": "Director of Software Engineering",
+            "description": "Builds software under design controls. Must follow IEC 62304 software lifecycle processes."
+          },
+          {
+            "title": "Systems Engineer",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "VP of R&D",
+            "description": "Systems-level architecture, requirements management, interface definition between subsystems, and system verification."
+          }
+        ]
+      },
+      {
+        "name": "Quality Assurance & Regulatory Affairs (QA/RA)",
+        "description": "Independent function with authority to stop releases. Manages the Quality Management System (QMS), regulatory submissions, and compliance with ISO 13485, FDA 21 CFR 820, EU MDR, and other applicable standards.",
+        "headcount": "5-50",
+        "reports_to": "CQRO",
+        "roles": [
+          {
+            "title": "VP of Quality Assurance",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CQRO",
+            "description": "QMS strategy, quality culture, audit management, and continuous improvement. Authority to stop shipments."
+          },
+          {
+            "title": "VP of Regulatory Affairs",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CQRO",
+            "description": "Regulatory submission strategy (510(k), PMA, CE Mark, De Novo), international registrations, and regulatory intelligence."
+          },
+          {
+            "title": "Regulatory Affairs Specialist",
+            "count": "2-8",
+            "level": "IC",
+            "reports_to": "VP of Regulatory Affairs",
+            "description": "Prepares regulatory submissions, tracks submissions, manages regulatory correspondence, and maintains registrations."
+          },
+          {
+            "title": "Quality Engineer",
+            "count": "2-8",
+            "level": "IC",
+            "reports_to": "VP of Quality Assurance",
+            "description": "Design assurance, risk management (ISO 14971), CAPA, supplier quality, and process validation."
+          },
+          {
+            "title": "Document Control Specialist",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "VP of Quality Assurance",
+            "description": "Manages the Document Control system, DMR/DHF maintenance, change control workflows, and record retention."
+          },
+          {
+            "title": "Internal Auditor",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "VP of Quality Assurance",
+            "description": "Conducts internal audits against ISO 13485, 21 CFR 820, and company procedures. Supports regulatory agency audits."
+          }
+        ]
+      },
+      {
+        "name": "Clinical Affairs",
+        "description": "Designs and executes clinical studies to generate evidence for regulatory clearance, market adoption, and reimbursement. Manages investigator sites and clinical data.",
+        "headcount": "3-20",
+        "reports_to": "CMO / CEO",
+        "roles": [
+          {
+            "title": "VP / Director of Clinical Affairs",
+            "count": 1,
+            "level": "VP / Director",
+            "reports_to": "CMO / CEO",
+            "description": "Clinical study strategy, protocol design, investigator selection, and clinical evidence generation plan."
+          },
+          {
+            "title": "Clinical Study Manager",
+            "count": "1-4",
+            "level": "IC / Manager",
+            "reports_to": "Director of Clinical Affairs",
+            "description": "Manages day-to-day execution of clinical studies, site monitoring, data collection, and regulatory reporting."
+          },
+          {
+            "title": "Clinical Data Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Clinical Affairs",
+            "description": "Clinical database design, data cleaning, query management, and statistical analysis support."
+          },
+          {
+            "title": "Biostatistician",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Clinical Affairs",
+            "description": "Statistical analysis plans, sample size calculations, statistical reports for submissions, and publications."
+          }
+        ]
+      },
+      {
+        "name": "Manufacturing & Supply Chain",
+        "description": "Transforms design into physical product at scale. Includes production, test engineering, supply chain procurement, and supplier quality.",
+        "headcount": "20-1,000",
+        "reports_to": "COO / SVP Operations",
+        "roles": [
+          {
+            "title": "VP of Manufacturing",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO / SVP Operations",
+            "description": "Manufacturing strategy, production planning, and operations. Manages production lines, test, and NPI (new product introduction)."
+          },
+          {
+            "title": "Director of NPI (New Product Introduction)",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "VP of Manufacturing",
+            "description": "Bridges R&D and manufacturing. Manages design transfer, production readiness, and pilot runs for new products."
+          },
+          {
+            "title": "Manufacturing Engineer",
+            "count": "3-15",
+            "level": "IC",
+            "reports_to": "Director of NPI / Production Manager",
+            "description": "Process development, assembly line design, tooling, and manufacturing test fixtures. DFM feedback to R&D."
+          },
+          {
+            "title": "Production Manager",
+            "count": "1-5",
+            "level": "Manager",
+            "reports_to": "VP of Manufacturing",
+            "description": "Manages day-to-day production operations, shift supervisors, and manufacturing associates."
+          },
+          {
+            "title": "Supply Chain / Procurement Manager",
+            "count": 1,
+            "level": "Manager",
+            "reports_to": "VP of Manufacturing",
+            "description": "Sourcing strategy, supplier management, component procurement, and supply continuity planning."
+          },
+          {
+            "title": "Supplier Quality Engineer",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "VP of Quality Assurance (matrix) / VP Mfg (operational)",
+            "description": "Supplier qualification, incoming inspection, supplier audits, and corrective action management."
+          }
+        ]
+      },
+      {
+        "name": "Field Service & Post-Market Surveillance",
+        "description": "Supports deployed devices in the field. Manages field service technicians, customer training, complaint handling, and post-market surveillance required by regulators.",
+        "headcount": "5-200",
+        "reports_to": "COO / VP of Service",
+        "roles": [
+          {
+            "title": "VP / Director of Field Service",
+            "count": 1,
+            "level": "VP / Director",
+            "reports_to": "COO",
+            "description": "Field service strategy, service contracts, technician deployment, and customer training programs."
+          },
+          {
+            "title": "Field Service Engineer / Technician",
+            "count": "3-100",
+            "level": "IC",
+            "reports_to": "Field Service Manager",
+            "description": "Installation, preventive maintenance, repair, and troubleshooting of devices at customer sites."
+          },
+          {
+            "title": "Complaint Handling / Post-Market Surveillance Lead",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "VP of QA / VP of Service",
+            "description": "Receives, triages, and investigates complaints. Determines if events are reportable to regulators (MDR, Adverse Event). Tracks post-market surveillance data."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "QA/RA has authority to stop any release, shipment, or clinical study initiation — this authority is independent of R&D and Operations, with direct escalation to the CEO and Board.",
+      "R&D and Manufacturing are bridged by the NPI (New Product Introduction) team, which manages design transfer and ensures products are designed for manufacturability.",
+      "Clinical Affairs works closely with Regulatory Affairs on submission strategy — clinical evidence requirements are defined by regulatory pathway (510(k) vs PMA vs CE Mark).",
+      "Systems Engineering coordinates requirements across all engineering disciplines and maintains the Design History File (DHF) as the single source of truth.",
+      "Complaint Handling feeds data back to QA (for CAPA), R&D (for design improvements), and Regulatory (for post-market surveillance reporting).",
+      "Supplier Quality reports dually to Manufacturing (operational) and QA (compliance), ensuring supplier issues are managed with appropriate rigor.",
+      "Field Service provides critical feedback to R&D about real-world device performance, reliability issues, and usability problems that may not surface in controlled testing.",
+      "The CQRO reports to the CEO but has a statutory reporting obligation to regulatory agencies — they can report safety issues independent of management direction.",
+      "All engineering changes go through a Change Control Board (CCB) with representatives from R&D, QA, Regulatory, and Manufacturing before implementation.",
+      "The Risk Management process (ISO 14971) is integrated into every stage of product development and is reviewed by both R&D and QA jointly."
+    ],
+    "org_chart_text": "CEO\n├── Chief Technology Officer (CTO)\n│   └── VP of R&D\n│       ├── Director of Hardware Engineering\n│       │   ├── Senior Mechanical Engineer × 3-10\n│       │   └── Senior Electrical Engineer × 2-8\n│       ├── Director of Firmware Engineering\n│       │   └── Firmware Engineer × 3-10\n│       ├── Director of Software Engineering (MedTech)\n│       │   └── Software Engineer × 5-20\n│       └── Systems Engineer × 2-5\n├── Chief Medical Officer (CMO)\n│   └── VP / Director of Clinical Affairs\n│       ├── Clinical Study Manager × 1-4\n│       ├── Clinical Data Manager\n│       └── Biostatistician\n├── Chief Quality & Regulatory Officer (CQRO) [dotted line to Board]\n│   ├── VP of Quality Assurance\n│   │   ├── Quality Engineer × 2-8\n│   │   ├── Document Control Specialist\n│   │   └── Internal Auditor × 1-3\n│   └── VP of Regulatory Affairs\n│       └── Regulatory Affairs Specialist × 2-8\n├── COO / SVP Operations\n│   ├── VP of Manufacturing\n│   │   ├── Director of NPI\n│   │   │   └── Manufacturing Engineer × 3-15\n│   │   ├── Production Manager × 1-5\n│   │   └── Supply Chain / Procurement Manager\n│   │       └── [Supplier Quality Engineer — dual report to QA]\n│   └── VP / Director of Field Service\n│       ├── Field Service Engineer / Technician × 3-100\n│       └── Complaint Handling / PMS Lead\n└── [CFO, CHRO, General Counsel — standard corporate functions]"
+  }
+}

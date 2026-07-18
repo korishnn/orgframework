@@ -1,0 +1,116 @@
+{
+  "preset": "military-unit",
+  "version": "1.0",
+  "name": "Military Unit (Battalion)",
+  "description": "Organization structure for a military battalion-level unit with approximately 300-1,200 personnel. Covers the full chain of command from Battalion Commander through Company Commanders, Platoon Leaders, Squad Leaders, and Team Leaders to individual Soldiers. Includes parallel officer and enlisted chains, battalion staff sections (S1 through S6), and support elements. Representative of U.S. Army organizational patterns but adaptable to other military services and nations.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["defense", "government"], "stages": ["operational"] },
+  "headcount_range": "300-1,200",
+  "org_structure": {
+    "overview": "Military units operate on a strict hierarchical chain of command with well-defined authority, responsibility, and accountability. The battalion is the basic tactical unit capable of independent operations, commanded by a Lieutenant Colonel (O-5) with a Command Sergeant Major (E-9) as the senior enlisted advisor. A parallel officer and enlisted structure ensures leadership at every level: officers command and set intent, non-commissioned officers (NCOs) execute and enforce standards. Battalion staff sections (numbered S1-S6) handle administration, intelligence, operations, logistics, and communications. Discipline, readiness, and training are continuous priorities. The unit is designed for mission execution under a clear hierarchy with rapid decision-making capability.",
+    "departments": [
+      {
+        "name": "Command Group",
+        "description": "The battalion's senior leadership: the Commander (primary), Executive Officer (second-in-command), Command Sergeant Major (senior enlisted advisor), and command staff. Sets the vision, enforces standards, and makes all strategic/tactical decisions.",
+        "headcount": "3-5",
+        "reports_to": "Higher Headquarters (Brigade)",
+        "roles": [
+          { "title": "Battalion Commander", "count": 1, "level": "Field Grade Officer (O-5, LTC)", "reports_to": "Brigade Commander", "description": "Commanding officer with overall authority and responsibility for the battalion's readiness, training, discipline, and mission execution." },
+          { "title": "Executive Officer (XO)", "count": 1, "level": "Field Grade Officer (O-4, MAJ)", "reports_to": "Battalion Commander", "description": "Second-in-command. Runs day-to-day operations, logistics, and staff coordination. Acts as commander in their absence." },
+          { "title": "Command Sergeant Major (CSM)", "count": 1, "level": "Senior Enlisted (E-9)", "reports_to": "Battalion Commander", "description": "Senior enlisted advisor to the commander. Responsible for enlisted professional development, discipline, standards, and morale." },
+          { "title": "Command Chaplain", "count": "0-1", "level": "Officer (O-3/O-4)", "reports_to": "Battalion Commander", "description": "Provides religious support, counseling, and spiritual guidance to unit members. Typically from a higher echelon." }
+        ]
+      },
+      {
+        "name": "Battalion Staff (S Sections)",
+        "description": "The coordinating staff that enables the commander to make decisions and the unit to function. Each numbered section handles a specific warfighting function. Led by the XO who synchronizes staff work.",
+        "headcount": "10-25",
+        "reports_to": "Executive Officer",
+        "roles": [
+          { "title": "S1 / Adjutant (Personnel/Admin)", "count": 1, "level": "Officer (O-2/O-3)", "reports_to": "XO", "description": "Manages personnel readiness, manning, awards, promotions, leaves, and administrative actions." },
+          { "title": "S1 NCOIC / Senior HR Sergeant", "count": 1, "level": "NCO (E-7/E-8)", "reports_to": "S1 Officer", "description": "Senior enlisted in personnel section; oversees administrative NCOs and HR operations." },
+          { "title": "S2 / Intelligence Officer", "count": 1, "level": "Officer (O-2/O-3)", "reports_to": "XO", "description": "Analyzes threat, provides intelligence summaries, manages security clearances and classified material." },
+          { "title": "S2 NCOIC / Intelligence Sergeant", "count": 1, "level": "NCO (E-6/E-7)", "reports_to": "S2 Officer", "description": "Manages intelligence collection, analysis, and dissemination at the battalion level." },
+          { "title": "S3 / Operations Officer", "count": 1, "level": "Major / Senior Captain (O-3/O-4)", "reports_to": "XO", "description": "Plans and coordinates all battalion training, operations, and tactical movement. The commander's primary planner." },
+          { "title": "S3 Assistant Operations Officer", "count": "1-2", "level": "Officer (O-1/O-2)", "reports_to": "S3", "description": "Assists with operations planning, graphics, and orders production." },
+          { "title": "S3 NCOIC / Operations Sergeant (NCO)", "count": 1, "level": "NCO (E-7/E-8)", "reports_to": "S3", "description": "Senior enlisted in operations; oversees the tactical operations center (TOC) and operational NCOs." },
+          { "title": "S4 / Logistics Officer", "count": 1, "level": "Officer (O-2/O-3)", "reports_to": "XO", "description": "Manages supply, maintenance, transportation, and logistics planning for the battalion." },
+          { "title": "S4 NCOIC / Logistics Senior Sergeant", "count": 1, "level": "NCO (E-7/E-8)", "reports_to": "S4 Officer", "description": "Senior enlisted in logistics; oversees supply, maintenance, and fuel/ammo NCOs." },
+          { "title": "S6 / Communications Officer", "count": 1, "level": "Officer (O-2/O-3)", "reports_to": "XO", "description": "Manages radio, data, and satellite communications networks for the battalion." },
+          { "title": "S6 NCOIC / Communications Sergeant", "count": 1, "level": "NCO (E-6/E-7)", "reports_to": "S6 Officer", "description": "Leads signal NCOs in maintaining and operating communications equipment." }
+        ]
+      },
+      {
+        "name": "Headquarters & Headquarters Company (HHC)",
+        "description": "The battalion's organic headquarters company containing the command group, staff sections, and specialized platoons (scout, mortar, medical). Led by the HHC Commander who handles base-level admin for the headquarters element.",
+        "headcount": "50-100",
+        "reports_to": "Battalion Commander",
+        "roles": [
+          { "title": "HHC Commander", "count": 1, "level": "Company Grade Officer (O-3, CPT)", "reports_to": "Battalion Commander", "description": "Commands the headquarters company; responsible for admin, discipline, and training of HHC personnel." },
+          { "title": "HHC First Sergeant", "count": 1, "level": "Senior NCO (E-8)", "reports_to": "HHC Commander", "description": "Senior enlisted advisor to HHC commander; handles enlisted discipline, readiness, and morale." },
+          { "title": "Scout Platoon Leader", "count": 1, "level": "Officer (O-1/O-2)", "reports_to": "S3", "description": "Leads reconnaissance/scout platoon; conducts route and area reconnaissance for the battalion." },
+          { "title": "Mortar Platoon Leader", "count": 1, "level": "Officer (O-1/O-2)", "reports_to": "S3", "description": "Leads the heavy mortar platoon; provides indirect fire support to maneuver companies." },
+          { "title": "Medical Platoon Leader / Battalion Surgeon", "count": 1, "level": "Officer (O-3, physician)", "reports_to": "Battalion Commander", "description": "Leads medical platoon; provides combat medicine, sick call, and medical evacuation coordination." },
+          { "title": "Physician Assistant", "count": 1, "level": "Warrant Officer / Officer", "reports_to": "Battalion Surgeon", "description": "Provides advanced medical care, diagnosis, and treatment for battalion personnel." },
+          { "title": "Senior Line Medic / NCO", "count": "1-2", "level": "NCO (E-5/E-6)", "reports_to": "Medical Platoon Leader", "description": "Supervises combat medics assigned to line companies and manages medical supplies." }
+        ]
+      },
+      {
+        "name": "Line Companies (Alpha, Bravo, Charlie)",
+        "description": "The battalion's primary maneuver elements. Each company is commanded by a Captain with a First Sergeant as senior enlisted. Companies are the basic tactical and administrative unit where Soldiers live, train, and fight.",
+        "headcount": "80-200",
+        "reports_to": "Battalion Commander",
+        "roles": [
+          { "title": "Company Commander", "count": 1, "level": "Company Grade Officer (O-3, CPT)", "reports_to": "Battalion Commander", "description": "Commands the company. Responsible for all aspects of company readiness, training, discipline, and morale." },
+          { "title": "Executive Officer (Company XO)", "count": 1, "level": "Officer (O-1/O-2, 1LT/2LT)", "reports_to": "Company Commander", "description": "Assists the commander with logistics, maintenance, and administrative tasks." },
+          { "title": "First Sergeant (1SG)", "count": 1, "level": "Senior NCO (E-8)", "reports_to": "Company Commander", "description": "Senior enlisted advisor to the company commander. Responsible for NCO development, discipline, and enlisted readiness." },
+          { "title": "Platoon Leader", "count": "3-4", "level": "Officer (O-1/O-2, 2LT/1LT)", "reports_to": "Company Commander", "description": "Leads a platoon of 30-50 Soldiers. Responsible for platoon training, discipline, welfare, and tactical employment." },
+          { "title": "Platoon Sergeant", "count": "3-4", "level": "Senior NCO (E-7, SFC)", "reports_to": "Platoon Leader", "description": "Senior enlisted of the platoon. Advises the platoon leader and handles enlisted discipline, training, and logistics at platoon level." },
+          { "title": "Squad Leader", "count": "9-12", "level": "NCO (E-6, SSG)", "reports_to": "Platoon Leader / Platoon Sergeant", "description": "Leads a squad of 8-12 Soldiers. Responsible for individual training, discipline, and welfare of squad members." },
+          { "title": "Team Leader", "count": "18-36", "level": "Junior NCO (E-5, SGT)", "reports_to": "Squad Leader", "description": "Leads a 4-person fire team. Senior enlisted in direct contact with Soldiers; responsible for team-level tactics and discipline." },
+          { "title": "Soldier / Specialist", "count": "40-100", "level": "Junior Enlisted (E-1 to E-4)", "reports_to": "Team Leader", "description": "Individual contributor; executes assigned duties, maintains equipment, and follows orders." }
+        ]
+      },
+      {
+        "name": "Weapons Company (Heavy / Support)",
+        "description": "Provides heavy direct and indirect fire support to the maneuver battalions. Contains heavy weapons systems (medium machine guns, anti-tank guided missiles, heavy mortars depending on unit type).",
+        "headcount": "80-150",
+        "reports_to": "Battalion Commander",
+        "roles": [
+          { "title": "Weapons Company Commander", "count": 1, "level": "Company Grade Officer (O-3, CPT)", "reports_to": "Battalion Commander", "description": "Commands the weapons company; responsible for heavy weapons readiness and fire support coordination." },
+          { "title": "Weapons Company XO", "count": 1, "level": "Officer (O-1/O-2)", "reports_to": "Weapons Company Commander", "description": "Assists with logistics, maintenance, and admin for the weapons company." },
+          { "title": "Weapons Company First Sergeant", "count": 1, "level": "Senior NCO (E-8)", "reports_to": "Weapons Company Commander", "description": "Senior enlisted advisor; handles NCO development and company discipline." },
+          { "title": "Heavy Weapons Platoon Leader", "count": "1-2", "level": "Officer (O-1/O-2)", "reports_to": "Weapons Company Commander", "description": "Leads a heavy weapons platoon (anti-tank or heavy machine gun)." },
+          { "title": "Section Leader", "count": "6-12", "level": "NCO (E-6/E-7)", "reports_to": "Platoon Leader", "description": "Leads a weapons section (crew-served weapon team). Responsible for crew proficiency and equipment readiness." },
+          { "title": "Gunner", "count": "6-12", "level": "Junior NCO (E-4/E-5)", "reports_to": "Section Leader", "description": "Operates the primary weapon system (machine gun, missile launcher, mortar)." },
+          { "title": "Assistant Gunner / Ammo Bearer", "count": "12-24", "level": "Junior Enlisted (E-1 to E-4)", "reports_to": "Gunner / Section Leader", "description": "Assists the gunner with ammunition, target acquisition, and weapon system operation." }
+        ]
+      },
+      {
+        "name": "Battalion Support / Logistics",
+        "description": "Provides maintenance, supply, and transportation support across the battalion. Includes field maintenance teams, supply sergeants, and fuel/water/ammunition distribution elements.",
+        "headcount": "20-50",
+        "reports_to": "Battalion S4 / XO",
+        "roles": [
+          { "title": "Battalion Maintenance Officer", "count": 1, "level": "Warrant Officer (WO1-CW3)", "reports_to": "S4", "description": "Manages all battalion-level equipment maintenance, repair priorities, and recovery operations." },
+          { "title": "Battalion Supply Sergeant", "count": 1, "level": "Senior NCO (E-7/E-8)", "reports_to": "S4", "description": "Manages battalion supply room, equipment inventories, and Class IX (spare parts) operations." },
+          { "title": "Unit Supply Specialist", "count": "2-5", "level": "Junior NCO / Enlisted (E-3 to E-5)", "reports_to": "Supply Sergeant", "description": "Processes supply requests, manages inventory, and issues equipment and supplies." },
+          { "title": "Armorer", "count": "1-2", "level": "Enlisted (E-4/E-5)", "reports_to": "Supply Sergeant / S4", "description": "Manages weapon storage, maintenance, and turn-in for the unit's small arms." },
+          { "title": "Maintenance Technician / Mechanic", "count": "5-15", "level": "Enlisted (E-3 to E-6)", "reports_to": "Maintenance Warrant Officer", "description": "Performs preventive maintenance and repairs on vehicles, generators, and equipment." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The Battalion Commander holds overall command authority; the XO runs staff and operations; the CSM advises on all enlisted matters. All three work as a leadership triad.",
+      "Company Commanders report directly to the Battalion Commander and have authority over all personnel and equipment in their company.",
+      "Platoon Leaders report to their Company Commander; their Platoon Sergeant (senior NCO) is their enlisted counterpart and advisor.",
+      "Squad Leaders report to the Platoon Sergeant; they are the primary NCO responsible for individual Soldier performance.",
+      "Team Leaders report to Squad Leaders; they lead fire teams of 4 Soldiers in tactical operations.",
+      "Battalion staff sections (S1-S6) work for the XO but provide their expertise directly to the Commander and subordinate units.",
+      "The S3 (Operations) is the commander's primary planner and coordinates all training and tactical operations with company commanders.",
+      "The S4 (Logistics) coordinates supply, maintenance, and transportation support with company XOs and supply sergeants.",
+      "The Medical Platoon provides health support to all companies; medics may be attached to line platoons while administratively assigned to HHC.",
+      "Enlisted NCOs at every level (Team Leader up to CSM) form the backbone: they train, lead, and discipline Soldiers day-to-day."
+    ],
+    "org_chart_text": "Battalion Commander (LTC)\n├── Command Sergeant Major (CSM, E-9)\n├── Executive Officer (MAJ)\n│     ├── S1 Adjutant (Personnel)\n│     ├── S2 Intelligence\n│     ├── S3 Operations\n│     │     ├── Assistant S3\n│     │     └── Operations NCOIC\n│     ├── S4 Logistics\n│     ├── S6 Communications\n│     └── Staff NCOs\n├── HHC Commander (CPT)\n│     ├── HHC 1SG\n│     ├── Scout Platoon\n│     │     ├── PL → Squad Leaders → Team Leaders → Soldiers\n│     │     └── PSG → Squad Leaders → Team Leaders → Soldiers\n│     ├── Mortar Platoon\n│     │     ├── PL → Section Leaders → Gunners → A-gunners\n│     │     └── PSG\n│     └── Medical Platoon\n│           ├── Battalion Surgeon\n│           └── Medical NCO → Medics\n├── Alpha Company (CPT)\n│     ├── Company XO\n│     ├── First Sergeant (1SG, E-8)\n│     ├── 1st Platoon\n│     │     └── PL → PSG → Squad Leaders → Team Leaders → Soldiers\n│     ├── 2nd Platoon\n│     │     └── PL → PSG → Squad Leaders → Team Leaders → Soldiers\n│     ├── 3rd Platoon\n│     │     └── PL → PSG → Squad Leaders → Team Leaders → Soldiers\n│     └── Heavy Weapons Section\n├── Bravo Company (same structure as Alpha)\n├── Charlie Company (same structure as Alpha)\n├── Weapons Company (CPT)\n│     ├── Company XO\n│     ├── First Sergeant\n│     ├── Anti-Tank Platoon\n│     │     └── PL → Section Leaders → Gunners → A-gunners\n│     ├── Heavy Machine Gun Platoon\n│     │     └── PL → Section Leaders → Gunners → A-gunners\n│     └── (Mortar Platoon, if not in HHC)\n└── Battalion Support / Maintenance\n      ├── Maintenance Warrant Officer\n      ├── Supply Sergeant\n      └── Maintenance Technicians"
+  }
+}

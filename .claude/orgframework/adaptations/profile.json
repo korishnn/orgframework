@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "last_updated": null,
+  "total_interactions": 0,
+  "total_corrections": 0,
+
+  "user": {
+    "familiarity": "initial",
+    "typical_contexts": [],
+    "preferred_departments": [],
+    "preferred_regions": [],
+    "preferred_industries": [],
+    "preferred_stages": []
+  },
+
+  "preferences": {
+    "depth": {
+      "current": "balanced",
+      "history": [],
+      "trend": null
+    },
+    "format": {
+      "current": "auto",
+      "history": [],
+      "trend": null
+    },
+    "tone": {
+      "current": "professional",
+      "history": [],
+      "trend": null
+    },
+    "verbosity": {
+      "current": "medium",
+      "history": [],
+      "trend": null
+    }
+  },
+
+  "detection_accuracy": {
+    "region": { "attempts": 0, "correct": 0, "last_5": [] },
+    "industry": { "attempts": 0, "correct": 0, "last_5": [] },
+    "stage": { "attempts": 0, "correct": 0, "last_5": [] },
+    "preset_match": { "attempts": 0, "correct": 0, "last_5": [] }
+  },
+
+  "preset_usage": {
+    "most_used": [],
+    "never_used": [],
+    "customized": [],
+    "rejected": []
+  },
+
+  "learned_keywords": {
+    "region_signals": [],
+    "industry_signals": [],
+    "stage_signals": [],
+    "user_specific_terms": []
+  },
+
+  "correction_patterns": [
+    {
+      "pattern": "User corrected region",
+      "count": 0,
+      "last_missed_signal": null,
+      "resolved": true
+    }
+  ],
+
+  "session_state": {
+    "current_conversation_topic": null,
+    "last_output_type": null,
+    "pending_correction": null
+  }
+}

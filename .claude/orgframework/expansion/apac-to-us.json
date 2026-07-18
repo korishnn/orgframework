@@ -1,0 +1,65 @@
+{
+  "playbook": "apac-to-us",
+  "version": "1.0",
+  "name": "APAC Company → US Expansion",
+  "overview": "Expanding from Asia-Pacific (Japan, China, India, South Korea, Australia) into the United States presents unique challenges that differ from European-to-US expansion. The cultural gap is wider — differences in hierarchy, communication style (high-context vs low-context), and business norms are more pronounced. For Japanese and Korean companies, the shift from seniority-based, consensus-driven management to the US individualistic, merit-based, at-will culture is particularly jarring. For Indian companies, the transition is easier due to English fluency and prior exposure to US business culture, but visa pathways remain constrained. For Chinese companies, geopolitical tensions add an extra layer of scrutiny and regulatory complexity (CFIUS, sanctions screening, technology export controls). The US legal system — particularly its litigiousness, federal-state interplay, and class action mechanisms — is unfamiliar to most APAC companies. Regulatory compliance areas like Sarbanes-Oxley (if seeking US listing), OFAC sanctions compliance, and SEC reporting are entirely new domains. On the positive side, the US market offers the deepest capital markets, the largest tech ecosystem, and the highest concentration of global customers. For many APAC companies, the US expansion is driven by a strategic need to be where the customers are, not just a talent or cost play.",
+  "entity_types": {
+    "recommended": "Delaware C-Corporation (standard for virtually all non-US companies entering the US market, especially those seeking US investment or eventual IPO).",
+    "alternatives": [
+      "New York or California corporation (if the primary business is state-specific and Delaware double registration is undesirable)",
+      "Delaware LLC (simpler, pass-through taxation, but less familiar to investors; not suitable if IPO is planned)",
+      "Nevada or Wyoming corporation (lower franchise taxes, popular for holding companies)"
+    ]
+  },
+  "legal_requirements": [
+    "Delaware incorporation: File Certificate of Incorporation, appoint registered agent, adopt bylaws, issue stock, hold organizational meeting",
+    "Federal EIN (IRS Form SS-4) — required for banking, tax withholding, and hiring",
+    "State-level foreign qualification in every state where business is conducted (physical presence, employees, or significant revenue)",
+    "Employment: I-9 verification for all hires, E-Verify (mandatory in some states), state-specific wage and hour laws, workers compensation insurance",
+    "Immigration: L-1A (manager/executive) or L-1B (specialized knowledge) intracompany transfer visas — requires qualifying parent-subsidiary relationship and US office space; H-1B specialty occupation visa (annual lottery); E-1/E-2 treaty visas (for nationals of treaty countries: Japan, Korea, Australia, Singapore, not China or India)",
+    "Sarbanes-Oxley Act (SOX) compliance — applies to any company listed on a US exchange or with registered securities; internal controls (Section 404), CEO/CFO certification (Section 302), whistleblower protections",
+    "CFIUS (Committee on Foreign Investment in the United States) — mandatory filing (as of 2018 FIRRMA) for certain Chinese investments and acquisitions in critical technology, infrastructure, or sensitive data sectors; voluntary filing recommended for other APAC acquirers",
+    "OFAC sanctions screening — ensure no business with sanctioned countries/entities; particularly important for Chinese companies with diverse supply chains",
+    "SEC reporting — if publicly listed or with 2000+ shareholders (500+ non-accredited); annual 10-K, quarterly 10-Q, current 8-K reporting; IFRS to US GAAP reconciliation required",
+    "State-specific: California requires annual pay data reporting (100+ employees); New York mandates sexual harassment prevention training; Massachusetts restricts non-compete agreements; Washington has strict paid family leave"
+  ],
+  "hiring_timeline": {
+    "phase_1": "Initial US presence (month 1-4): Send initial executive via L-1 or E-2 visa. Incorporate in Delaware. Open US bank account. Register EIN. Engage PEO for first US hires. Establish US office (sublease or serviced office).",
+    "phase_2": "Build US team (month 3-10): Hire US country manager (may be internal transferee or local hire). Recruit initial sales, marketing, and customer support team. Transition from PEO to direct employment. Establish benefits (health insurance, 401k). Register in additional operating states.",
+    "phase_3": "Scale and integrate (month 8-24): Grow US team to 20-100+ employees. Develop US-specific HR policies and compliance program. Consider US board members and advisors. Potentially prepare for US listing if that is a strategic goal."
+  },
+  "org_structure_adaptations": [
+    "Japanese and Korean companies: Must accept that US subsidiary managers need significant autonomy. Ringi (consensus) decision-making does not work for US day-to-day operations. Set strategic direction from HQ but delegate operational decisions.",
+    "Chinese companies: US subsidiary should have a compliance and legal function that is independent of Chinese HQ operational pressures. Board-level independent directors (US nationals) add credibility and regulatory protection.",
+    "Indian companies: Transition is generally smoother. Indian managers are familiar with US culture. Ensure US entity has its own P&L and reporting structure rather than being a branch of India operations.",
+    "All APAC companies: The US entity needs at least one US-resident officer with authority to make employment decisions. Do not try to manage US employees directly from Asia.",
+    "Equity compensation requires a US-compliant equity plan with 409A valuation. APAC-parent stock options granted to US employees must comply with US securities laws (Rule 701 exemption or SEC registration).",
+    "Cultural liaison role: Consider hiring a bicultural manager (e.g., Japanese-American) who can bridge HQ and US subsidiary communication gaps.",
+    "US subsidiary board should include US nationals with relevant industry or legal expertise — this signals commitment to American market and governance standards."
+  ],
+  "compensation_notes": "US compensation is substantially higher than APAC levels for equivalent roles. For Japanese companies, the gap is stark: a senior engineer in Tokyo (80-120k USD equivalent) vs San Francisco (180-250k+ USD). For Indian companies, the multiple can be 3-5x. For Australian companies, the gap is narrower (perhaps 15-25% higher in the US). This creates internal equity challenges — APAC-based employees may resent US counterparts earning more for similar work. Expect to pay US market rates, not APAC rates adjusted upward. Health insurance is a major additional employer cost (-15k per employee annually). 401(k) matching (3-6%) is standard. Equity compensation is expected in US tech — RSUs for public companies, stock options for private. There are zero mandatory vacation days federally; competitive companies offer 15-25 days PTO. At-will employment means severance is not legally required, but it is market practice to offer 2-4 weeks per year of service in a layoff context. Sales commissions in the US are typically formulaic and transparent, unlike the more discretionary bonus culture in Japan and Korea. Executive compensation in the US is significantly higher and more equity-heavy than APAC norms — this can be a shock for APAC parent boards approving US CEO compensation packages.",
+  "cultural_key_differences": [
+    "At-will employment: In Japan and Korea, employment has traditionally been seen as a lifetime commitment (shushin koyo / jeongyong). In the US, employees can be terminated at any time for any non-discriminatory reason. This is a fundamental mindset shift.",
+    "Individualism vs collectivism: US culture rewards individual achievement, self-promotion, and taking initiative. Japanese and Korean cultures prioritize group harmony, consensus, and deference to seniority. US managers who speak up in meetings are seen as leaders, not rude.",
+    "Communication: US communication is direct and low-context (meaning is in the words). Asian communication is often high-context (meaning is in context, tone, and non-verbal cues). US directness can seem rude to Japanese and Korean employees. Asian indirectness can seem evasive to US managers.",
+    "Decision-making: US culture values speed and decisiveness. Japanese nemawashi (consensus building) and Korean top-down but relationship-mediated decision-making are both slower. US teams may interpret slower decisions as incompetence.",
+    "Feedback culture: US managers give candid, direct feedback (compliment sandwhich: positive-critique-positive). Japanese managers give implicit, subtle feedback. Korean managers may give very direct criticism in private but never in public. Misunderstandings are common.",
+    "Work hours and vacation: Japan has a culture of long hours (though reforms are happening). Korea introduced a 52-hour maximum work week in 2018. The US has no statutory maximum. However, US workers actually take less vacation than legally entitled Japanese workers (who often leave vacation unused due to workplace pressure).",
+    "Hierarchy and titles: Japanese and Korean workplaces are strongly hierarchical. Age and tenure determine status. US workplaces are flatter; even junior employees are expected to challenge ideas. Japanese expatriate managers in the US often struggle with this.",
+    "Business entertainment: In Japan, drinking after work (nominication = nomu + communication) is a key bonding ritual. In Korea, hoesik (company dinners with heavy drinking) serves a similar function. US business socializing is less ritualized and less central to advancement.",
+    "Loyalty and turnover: Japanese companies traditionally expected lifetime employment. US companies expect turnover (10-20% annual is normal in tech). Japanese companies expanding to the US should not be offended by US employees leaving after 2-3 years."
+  ],
+  "common_pitfalls": [
+    "Expecting Japanese/Korean management styles (nemawashi, ringi, seniority-based promotion) to transfer directly to the US. US employees need autonomy and decisiveness; imported consensus processes will paralyze the US subsidiary.",
+    "Underestimating US employment litigation risk. US employees sue far more than in any APAC country. Discrimination, harassment, wage-and-hour, and wrongful termination claims are expensive. Employment practices liability insurance (EPLI) is essential.",
+    "Not engaging US immigration counsel early. L-1 and H-1B processes are complex and slow. For Chinese companies, visa scrutiny is higher. For Indian companies, H-1B wait times for Indian nationals can be 5-10+ years for green cards.",
+    "Ignoring CFIUS risks for Chinese companies. Even minority investments or joint ventures in certain US sectors (technology, infrastructure, data) may require CFIUS filing. Failure to file can result in forced divestment.",
+    "Neglecting sanctions and export control compliance. Chinese APAC companies must ensure IT systems, personnel, and customers do not touch OFAC-sanctioned countries (Iran, North Korea, Syria, Russia/Crimea, etc.). US export restrictions on technology (EAR, ITAR) are complex and carry criminal penalties.",
+    "Assuming US GAAP or IFRS familiarity. Financial reporting in the US uses US GAAP, not IFRS. Reconciliation is required for SEC reporting. This is a significant adjustment for non-US finance teams.",
+    "Failing to adapt products and marketing to US tastes. A product successful in Japan or India does not automatically succeed in the US. Invest in US market research, US brand positioning, and US-specific product features.",
+    "Overlooking Sarbanes-Oxley requirements even for private companies. If the APAC parent plans to list on a US exchange via ADR or direct listing, SOX compliance history matters. Start building SOX-compatible internal controls early.",
+    "Not having a US board or advisory board. US partners, customers, and investors expect local oversight. A board composed entirely of APAC-based executives is a red flag to US counterparties.",
+    "Cultural friction between HQ expats and local US team. Japanese expatriate managers who micro-manage and do not delegate cause high turnover. Indian expatriates who treat US posting as a perk rather than a strategic role create disconnects. Formal cross-cultural training for all expatriates before posting is critical."
+  ],
+  "timeline_estimate": "6-24 months for full operational setup. Delaware incorporation: 1-2 weeks. Visa processing: 2-6 months. First hires via PEO: 1-3 months. Establish office: 1-3 months. Full compliance and multi-state registration: 6-12 months. Significant US revenue generation: 12-24 months."
+}

@@ -1,0 +1,138 @@
+{
+  "preset": "agency-creative-digital",
+  "version": "1.0",
+  "name": "Creative / Digital Agency",
+  "description": "Organization structure for a creative, digital, or advertising agency operating on a client service model. Covers the dual structure of Account/Client Services (managing client relationships) and Creative/Production (delivering the work). Includes strategy and planning, creative direction, design and copywriting, production and project management, finance, and new business development. Designed for agencies of 10-300 people serving multiple clients across campaigns, branding, digital products, and content.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["advertising", "marketing", "creative-services", "digital-services"], "stages": ["startup", "growth", "operational", "mature"] },
+  "headcount_range": "10-300",
+  "org_structure": {
+    "overview": "Creative agencies operate on a client service model where Account/Client Services teams manage client relationships, scope, and expectations while Creative and Production teams execute the work. The agency is typically organized into departments (Account, Creative, Strategy, Production, Finance, New Business) but staff are assembled into cross-functional project teams for each client or campaign. The agency model is relationship-driven: Account Directors own the client relationship, Creative Directors own the creative vision, and Project Managers keep everything on time and on budget. Agencies must balance high-quality creative output with profitability, making resource management and scope control critical. New business (pitching and winning new clients) is a continuous priority that cuts across all departments.",
+    "departments": [
+      {
+        "name": "Agency Leadership",
+        "description": "Executive team that sets the agency's creative vision, business strategy, and culture. Manages the agency's P&L, key client relationships, and new business direction. Typically founded or led by creative and business partners.",
+        "headcount": "2-6",
+        "reports_to": "Owners / Board / Holding Company",
+        "roles": [
+          { "title": "CEO / Managing Director", "count": 1, "level": "Executive", "reports_to": "Owners / Board", "description": "Sets agency vision, culture, and strategy. Manages the P&L, key client relationships, and executive team." },
+          { "title": "Chief Creative Officer (CCO) / Executive Creative Director", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Sets the agency's creative vision and quality standards. Leads creative department and oversees creative output across all clients." },
+          { "title": "Chief Strategy Officer (CSO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads strategy/planning discipline. Sets the agency's strategic approach and ensures strategies drive creative work." },
+          { "title": "Chief Operating Officer (COO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Manages agency operations, resourcing, finance, and systems. Ensures projects are profitable and processes scale." },
+          { "title": "Chief Growth Officer (CGO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads new business development, pitches, and agency marketing. Drives revenue growth through new client acquisition." }
+        ]
+      },
+      {
+        "name": "Account / Client Services",
+        "description": "The client-facing team that manages relationships, defines scope, handles budgets and timelines, and ensures client satisfaction. Account people are the bridge between the client and the internal creative/production teams.",
+        "headcount": "5-40",
+        "reports_to": "CEO / COO",
+        "roles": [
+          { "title": "Director of Account / Client Services", "count": 1, "level": "Senior", "reports_to": "CEO / COO", "description": "Leads the account management discipline. Sets client service standards, manages account directors, and oversees client portfolio." },
+          { "title": "Account Director / Group Account Director", "count": "1-5", "level": "Senior", "reports_to": "Director of Account Services", "description": "Owns the relationship with one or more major clients. Leads strategic conversations, manages contracts, and ensures client satisfaction and retention." },
+          { "title": "Account Manager", "count": "2-10", "level": "Professional", "reports_to": "Account Director", "description": "Manages day-to-day client communication, project briefs, status reports, and scope change requests." },
+          { "title": "Account Executive", "count": "2-15", "level": "Entry/Professional", "reports_to": "Account Manager", "description": "Supports account team with meeting coordination, status updates, timesheet management, and administrative tasks." },
+          { "title": "Account Coordinator / Junior AE", "count": "1-5", "level": "Entry", "reports_to": "Account Executive / Manager", "description": "Entry-level support role: maintains contact reports, tracks budgets, and organizes client materials." }
+        ]
+      },
+      {
+        "name": "Strategy & Planning",
+        "description": "Provides the strategic foundation for creative work. Conducts audience research, competitive analysis, brand positioning, and messaging strategy. Ensures creative work is grounded in data and insights.",
+        "headcount": "2-15",
+        "reports_to": "CSO / CEO",
+        "roles": [
+          { "title": "Strategy Director / Head of Planning", "count": 1, "level": "Senior", "reports_to": "CSO / CEO", "description": "Leads the strategy discipline; sets strategic approach for client engagements and new business pitches." },
+          { "title": "Brand Strategist", "count": "1-4", "level": "Professional", "reports_to": "Strategy Director", "description": "Develops brand positioning, messaging architecture, and brand strategy for clients." },
+          { "title": "Communications / Media Strategist", "count": "1-3", "level": "Professional", "reports_to": "Strategy Director", "description": "Develops channel strategy, media plans, and audience targeting strategies." },
+          { "title": "Cultural / Consumer Insights Strategist", "count": "1-3", "level": "Professional", "reports_to": "Strategy Director", "description": "Conducts consumer research, trend analysis, and cultural insights to inform creative strategy." },
+          { "title": "Data / Analytics Strategist", "count": "1-3", "level": "Professional", "reports_to": "Strategy Director", "description": "Analyzes campaign performance data, conducts quantitative research, and generates actionable insights." }
+        ]
+      },
+      {
+        "name": "Creative",
+        "description": "The core creative engine of the agency. Produces advertising concepts, design, copywriting, and visual content across all media. Organized into creative teams (art director + copywriter pairs) overseen by creative directors.",
+        "headcount": "5-80",
+        "reports_to": "CCO / Executive Creative Director",
+        "roles": [
+          { "title": "Creative Director", "count": "1-4", "level": "Senior", "reports_to": "CCO / Executive Creative Director", "description": "Leads the creative vision for a client or set of accounts. Guides creative teams and approves creative output." },
+          { "title": "Associate Creative Director", "count": "1-4", "level": "Senior", "reports_to": "Creative Director", "description": "Manages day-to-day creative output of assigned teams; develops concepts and oversees execution." },
+          { "title": "Art Director", "count": "2-15", "level": "Professional", "reports_to": "Creative Director / ACD", "description": "Creates visual concepts and designs for campaigns, digital experiences, branding, and advertising." },
+          { "title": "Copywriter", "count": "2-15", "level": "Professional", "reports_to": "Creative Director / ACD", "description": "Writes advertising copy, headlines, social content, video scripts, and brand messaging." },
+          { "title": "Senior Designer", "count": "2-10", "level": "Professional", "reports_to": "Creative Director", "description": "Produces high-quality design across print, digital, and motion. Mentors junior designers." },
+          { "title": "Designer", "count": "3-20", "level": "Entry/Professional", "reports_to": "Creative Director / Senior Designer", "description": "Executes design assets for campaigns, social media, presentations, and other deliverables." },
+          { "title": "Junior Designer / Design Intern", "count": "1-5", "level": "Entry", "reports_to": "Senior Designer", "description": "Entry-level designer supporting the creative team with production tasks, asset creation, and file preparation." },
+          { "title": "Motion Designer / Animator", "count": "1-5", "level": "Professional", "reports_to": "Creative Director", "description": "Creates animated content, motion graphics, video editing, and visual effects for campaigns." },
+          { "title": "Junior / Associate Creative Team (Art + Copy)", "count": "1-3", "level": "Entry", "reports_to": "Creative Director / ACD", "description": "Early-career art director and copywriter pair developing concepts under senior guidance." }
+        ]
+      },
+      {
+        "name": "Production & Project Management",
+        "description": "Ensures creative projects are delivered on time, on budget, and at quality. Manages project timelines, resources, vendor relationships, and production workflows across all media types.",
+        "headcount": "5-30",
+        "reports_to": "COO / Director of Project Management",
+        "roles": [
+          { "title": "Director of Project Management / Production", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Leads project management discipline; establishes workflows, tools, and standards for project delivery." },
+          { "title": "Senior Project Manager / Producer", "count": "2-8", "level": "Professional", "reports_to": "Director of PM", "description": "Manages complex, multi-workstream projects for major clients. Owns timeline, budget tracking, and resource coordination." },
+          { "title": "Project Manager", "count": "3-15", "level": "Professional", "reports_to": "Senior PM / Director of PM", "description": "Manages individual projects or workstreams; creates timelines, manages budgets, and facilitates team communication." },
+          { "title": "Traffic Manager / Resource Coordinator", "count": "1-3", "level": "Professional", "reports_to": "Director of PM", "description": "Manages resource allocation and routing of work across creative teams; ensures balanced workloads." },
+          { "title": "Junior Project Manager / Coordinator", "count": "1-4", "level": "Entry", "reports_to": "Senior PM / Director of PM", "description": "Supports project managers with timeline tracking, status updates, and administrative tasks." },
+          { "title": "Digital / Interactive Producer", "count": "1-5", "level": "Professional", "reports_to": "Director of PM", "description": "Produces digital deliverables including websites, apps, and digital campaigns; coordinates with developers." },
+          { "title": "Print / Broadcast Producer", "count": "1-3", "level": "Professional", "reports_to": "Director of PM", "description": "Manages production of print, video, or audio assets; hires and directs external vendors and production partners." },
+          { "title": "QA / Proofreader", "count": "1-2", "level": "Professional", "reports_to": "Director of PM", "description": "Reviews all deliverables for accuracy, consistency, and quality before client delivery." }
+        ]
+      },
+      {
+        "name": "Digital / Technology",
+        "description": "Provides technical expertise for digital projects including web development, app development, CRM/email platforms, and technical architecture. May be embedded in creative teams for digital-first projects.",
+        "headcount": "5-40",
+        "reports_to": "COO / CTO",
+        "roles": [
+          { "title": "Director of Technology / Digital", "count": 1, "level": "Senior", "reports_to": "COO / CEO", "description": "Leads the technology discipline; sets technical standards, tooling, and capability." },
+          { "title": "Technical / Creative Developer", "count": "2-15", "level": "Professional", "reports_to": "Director of Technology", "description": "Builds websites, interactive experiences, and digital campaigns using front-end technologies." },
+          { "title": "Backend / Full-Stack Developer", "count": "2-10", "level": "Professional", "reports_to": "Director of Technology", "description": "Builds server-side applications, APIs, and integrations for client projects." },
+          { "title": "UX / Interaction Designer", "count": "1-5", "level": "Professional", "reports_to": "Director of Technology", "description": "Designs user flows, wireframes, and prototypes for digital products and experiences." },
+          { "title": "Technology / Solutions Architect", "count": "0-2", "level": "Senior", "reports_to": "Director of Technology", "description": "Designs technical architecture for complex digital projects and platforms." },
+          { "title": "QA / Tester (Digital)", "count": "1-4", "level": "Professional", "reports_to": "Director of Technology", "description": "Tests digital deliverables across browsers and devices; manages bug tracking and quality." },
+          { "title": "CRM / Marketing Automation Specialist", "count": "1-3", "level": "Professional", "reports_to": "Director of Technology", "description": "Implements and manages CRM platforms, email marketing tools, and marketing automation systems." }
+        ]
+      },
+      {
+        "name": "New Business / Growth",
+        "description": "Drives agency growth by identifying and winning new clients. Manages the pitch process, agency marketing / PR, thought leadership, and proposal development. Requires collaboration across all departments to produce winning pitches.",
+        "headcount": "2-10",
+        "reports_to": "CEO / CGO",
+        "roles": [
+          { "title": "Director of New Business / Growth", "count": 1, "level": "Senior", "reports_to": "CEO / CGO", "description": "Leads new business pipeline; identifies opportunities, manages pitch process, and coordinates proposal teams." },
+          { "title": "New Business Manager", "count": "1-3", "level": "Professional", "reports_to": "Director of New Business", "description": "Researches prospects, manages CRM pipeline, and coordinates RFP responses and pitch materials." },
+          { "title": "Agency Marketing / PR Manager", "count": "1-2", "level": "Professional", "reports_to": "Director of New Business", "description": "Promotes the agency through PR, award show entries, case studies, social media, and events." },
+          { "title": "Proposal / Pitch Coordinator", "count": "1-2", "level": "Professional", "reports_to": "Director of New Business", "description": "Coordinates logistics and production of pitch presentations and proposal documents." }
+        ]
+      },
+      {
+        "name": "Finance & Operations",
+        "description": "Manages agency financial health: billing, payroll, budgeting, forecasting, and profitability analysis. Tracks utilization rates, project profitability, and overhead. May also manage HR for smaller agencies.",
+        "headcount": "2-10",
+        "reports_to": "CEO / COO",
+        "roles": [
+          { "title": "Finance Director / Controller", "count": 1, "level": "Senior", "reports_to": "CEO / COO", "description": "Oversees agency financial management including P&L, cash flow, billing, and financial reporting." },
+          { "title": "Accountant / Bookkeeper", "count": "1-3", "level": "Professional", "reports_to": "Finance Director", "description": "Processes invoices, payroll, expense reports, and accounts payable/receivable." },
+          { "title": "Billing / Revenue Manager", "count": "1-2", "level": "Professional", "reports_to": "Finance Director", "description": "Manages client billing, timesheet reconciliation, and revenue recognition." },
+          { "title": "HR / People Manager", "count": "1-2", "level": "Professional", "reports_to": "Finance Director / CEO", "description": "Manages hiring, onboarding, benefits, performance reviews, and agency culture." },
+          { "title": "Office / Facilities Manager", "count": "0-1", "level": "Support", "reports_to": "Finance Director / COO", "description": "Manages office operations, supplies, and vendor relationships for physical workspace." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Account Directors are the primary client relationship owners; they brief Creative teams and manage scope and budget with client sign-off.",
+      "Creative Directors set the creative vision and quality bar; they partner with Account Directors to sell work to clients and defend creative concepts.",
+      "Strategy informs creative briefs; Creative teams depend on Strategy for the insights and positioning that inspire great work.",
+      "Project Managers are the hub of every project: they coordinate timelines between Account, Creative, and Production, and escalate risks to Account and agency leadership.",
+      "New Business pitches involve Account, Creative, Strategy, and Production teams working intensively together under tight deadlines; the pitch team is assembled cross-functionally.",
+      "Finance tracks project profitability and utilization; Account Directors and Project Managers must maintain margin targets and flag over-servicing.",
+      "Production/Resource Management assigns creative teams to projects based on skills, availability, and budget; Traffic Manager balances workloads across the department.",
+      "Digital/Technology collaborates with Creative on interactive and digital projects; a Creative Technologist or Developer may be embedded in the creative team.",
+      "Media/Communications Strategist partners with the Account team on media buying, channel planning, and campaign performance reporting for clients that need media execution.",
+      "External vendors (photographers, video production, printers, developers) are managed by Production; the Account team ensures vendor costs are covered in client scope."
+    ],
+    "org_chart_text": "CEO / Managing Director\n├── Chief Creative Officer (CCO)\n│     └── Creative Directors\n│           ├── Associate Creative Directors\n│           │     ├── Art Directors\n│           │     ├── Copywriters\n│           │     ├── Senior Designers\n│           │     │     └── Designers / Junior Designers\n│           │     ├── Motion Designers\n│           │     └── Junior Creative Teams\n│           └── (per client/account)\n│\n├── Chief Strategy Officer (CSO)\n│     ├── Strategy Director / Head of Planning\n│     │     ├── Brand Strategists\n│     │     ├── Communications / Media Strategists\n│     │     ├── Consumer Insights Strategists\n│     │     └── Data / Analytics Strategists\n│     └── ...\n│\n├── Director of Account / Client Services\n│     ├── Account Directors\n│     │     ├── Account Managers\n│     │     │     ├── Account Executives\n│     │     │     └── Account Coordinators\n│     │     └── (per client/account)\n│     └── ...\n│\n├── COO / Director of Operations\n│     ├── Director of Project Management / Production\n│     │     ├── Senior Project Managers / Producers\n│     │     │     ├── Project Managers\n│     │     │     └── Junior PMs / Coordinators\n│     │     ├── Traffic Manager / Resource Coordinator\n│     │     ├── Digital / Interactive Producers\n│     │     ├── Print / Broadcast Producers\n│     │     └── QA / Proofreader\n│     ├── Director of Technology / Digital\n│     │     ├── Creative Developers\n│     │     ├── Backend / Full-Stack Developers\n│     │     ├── UX / Interaction Designers\n│     │     ├── Solutions Architect\n│     │     └── QA / Tester (Digital)\n│     └── Finance Director / Controller\n│           ├── Accountant / Bookkeeper\n│           ├── Billing / Revenue Manager\n│           ├── HR / People Manager\n│           └── Office / Facilities Manager\n│\n└── Chief Growth Officer / Director of New Business\n      ├── New Business Manager\n      ├── Agency Marketing / PR Manager\n      └── Proposal / Pitch Coordinator\n\nNote: Cross-functional teams assemble per client. Each client has an Account Director,\nCreative Director, and Project Manager as the core team leads."
+  }
+}

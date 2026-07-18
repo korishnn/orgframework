@@ -1,0 +1,101 @@
+{
+  "preset": "consulting-firm",
+  "version": "1.0",
+  "name": "Management Consulting Firm",
+  "description": "Partner-model management consulting firm organized around practice areas and project staffing. Structured hierarchy from Managing Partner through Partners, Engagement Managers, Consultants, and Associates/Analysts. Consultants are staffed to client engagements on a project basis, with up-or-out promotion culture. Practice areas cover strategy, operations, digital, M&A, and industry specialties.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["consulting", "management-consulting", "professional-services", "advisory", "strategy"], "stages": ["startup", "growth", "established", "restructuring"] },
+  "headcount_range": "10-5000",
+  "org_structure": {
+    "overview": "Management consulting firms operate on a partnership model with practice areas (talent pools) and a project staffing model (client engagements). The hierarchy is clearly defined: Partners originate and sell work, Engagement Managers lead project teams, Consultants and Associates perform analysis and develop recommendations. The culture is famously 'up or out': professionals are expected to advance within defined timeframes or exit the firm. Staff are assigned to projects based on skills and availability, often rotating between engagements. The firm is organized by practice area (strategy, operations, technology, M&A, etc.) and often by industry (financial services, healthcare, technology, public sector). The Managing Partner leads the firm with support from a management committee and practice area leaders.",
+    "departments": [
+      {
+        "name": "Firm Leadership & Governance",
+        "description": "Senior executives responsible for firm strategy, performance, culture, and governance. Sets direction, manages partner group, and oversees firm operations globally.",
+        "headcount": "3-20",
+        "reports_to": "Partnership / Board",
+        "roles": [
+          { "title": "Managing Partner / CEO", "count": 1, "level": "Executive", "reports_to": "Partnership / Board", "description": "Senior leader elected by partners; sets firm strategy, manages partner group, drives growth, and represents the firm externally. Ultimate authority on firm direction." },
+          { "title": "Management Committee Member", "count": "5-15", "level": "Executive", "reports_to": "Managing Partner", "description": "Senior partners elected or appointed to govern the firm; sets policy on strategy, compensation, partner promotion, practice investment, and firm operations." },
+          { "title": "Chief Operating Officer", "count": 1, "level": "Executive", "reports_to": "Managing Partner", "description": "Senior non-partner executive managing firm operations including finance, HR, IT, marketing, and knowledge management." },
+          { "title": "Chief Talent Officer / HR Partner", "count": 1, "level": "Executive", "reports_to": "COO / Managing Partner", "description": "Leads recruitment, professional development, performance management, diversity, and retention strategies including the up-or-out system." }
+        ]
+      },
+      {
+        "name": "Practice Areas",
+        "description": "Specialized consulting groups organized by capability (strategy, operations, digital, M&A) and/or industry (financial services, healthcare, technology, public sector). Each practice is led by a Senior Partner and staffed by partners, managers, and consultants with relevant expertise.",
+        "headcount": "10-1000",
+        "reports_to": "Management Committee",
+        "roles": [
+          { "title": "Senior Partner / Practice Leader", "count": "2-20", "level": "Partner", "reports_to": "Managing Partner", "description": "Senior partner leading a practice area; responsible for revenue, thought leadership, capability building, and practice strategy. Originates large client relationships." },
+          { "title": "Partner", "count": "5-100", "level": "Partner", "reports_to": "Senior Partner / Practice Leader", "description": "Originates and sells consulting engagements, manages key client relationships, leads business development, and builds the firm's intellectual capital and market presence." },
+          { "title": "Associate Partner / Principal", "count": "5-100", "level": "Partner Track", "reports_to": "Partner", "description": "Senior manager on partnership track; leads large workstreams, manages client relationships day-to-day, develops proposals, and demonstrates partner-level capabilities." },
+          { "title": "Practice Manager / Capability Lead", "count": "2-20", "level": "Senior", "reports_to": "Practice Leader", "description": "Manages practice operations: knowledge management, methodology development, training, and practice resource planning and staffing." }
+        ]
+      },
+      {
+        "name": "Project Delivery / Consulting Staff",
+        "description": "Consultants and managers staffed to client engagements who perform the core analytical and advisory work. Engagement Managers lead project teams, Consultants and Associates perform analysis, and Analysts handle data and research. Staff are deployed to projects based on skills fit and availability.",
+        "headcount": "10-2000",
+        "reports_to": "Partners / Practice Leaders",
+        "roles": [
+          { "title": "Engagement Manager / Project Leader", "count": "5-100", "level": "Senior", "reports_to": "Partner", "description": "Leads client project teams day-to-day; manages workstreams, client relationships, team members, budget, and deliverables. Ensures quality and timeliness of project output." },
+          { "title": "Senior Consultant / Consultant", "count": "10-500", "level": "Skilled", "reports_to": "Engagement Manager", "description": "Core analytical and advisory staff; conducts analysis, builds models, develops recommendations, prepares client presentations, and manages specific workstreams within projects." },
+          { "title": "Associate / Business Analyst", "count": "10-500", "level": "Entry", "reports_to": "Senior Consultant / Engagement Manager", "description": "Entry-level consulting staff; performs data gathering, quantitative analysis, market research, financial modeling, and supports client deliverable creation." },
+          { "title": "Summer Associate / Intern", "count": "3-50", "level": "Temporary", "reports_to": "Engagement Manager", "description": "MBA or advanced-degree intern; works on a project team for 8-12 weeks, performing analysis and contributing to client deliverables. Evaluated for full-time offer." }
+        ]
+      },
+      {
+        "name": "Industry & Capability Groups",
+        "description": "Cross-cutting practices organized by industry sector (financial services, healthcare, technology, industrial, consumer, public sector) and capability (strategy, operations, digital, M&A, organizational change). Consultants may belong to multiple groups.",
+        "headcount": "5-500",
+        "reports_to": "Practice Leaders",
+        "roles": [
+          { "title": "Strategy Practice", "count": "5-200", "level": "Practice", "reports_to": "Strategy Practice Leader", "description": "Corporate and business unit strategy, growth strategy, market entry, competitive analysis, and strategic due diligence." },
+          { "title": "Operations Practice", "count": "5-200", "level": "Practice", "reports_to": "Operations Practice Leader", "description": "Supply chain, procurement, manufacturing, operations improvement, cost reduction, and operational due diligence." },
+          { "title": "Digital / Technology Practice", "count": "5-200", "level": "Practice", "reports_to": "Digital Practice Leader", "description": "Digital transformation, IT strategy, technology architecture, data analytics, AI, and cybersecurity consulting." },
+          { "title": "M&A / Transaction Advisory Practice", "count": "5-100", "level": "Practice", "reports_to": "M&A Practice Leader", "description": "M&A strategy, due diligence, post-merger integration, carve-outs, and transaction support." },
+          { "title": "Organizational Change / HR Practice", "count": "3-50", "level": "Practice", "reports_to": "Change Practice Leader", "description": "Organizational design, change management, culture transformation, leadership development, and HR strategy." },
+          { "title": "Industry Specialist", "count": "3-30", "level": "Senior", "reports_to": "Industry Practice Leader", "description": "Deep subject matter expert in a specific industry (healthcare, financial services, etc.); provides industry insight, client relationships, and sector-specific methodology." }
+        ]
+      },
+      {
+        "name": "Business Services / Firm Operations",
+        "description": "Non-consulting professional staff that support the firm's operations: finance, HR, recruiting, IT, marketing, knowledge management, and facilities.",
+        "headcount": "5-200",
+        "reports_to": "COO",
+        "roles": [
+          { "title": "Finance Manager / Director", "count": 1, "level": "Senior", "reports_to": "COO / CFO", "description": "Manages firm financials: revenue tracking, project profitability, partner compensation calculations, budgeting, and financial reporting." },
+          { "title": "HR / Recruiting Manager", "count": "2-10", "level": "Senior", "reports_to": "Chief Talent Officer", "description": "Manages campus and experienced-hire recruiting, onboarding, performance management, and professional development programs, including the annual up-or-out review cycle." },
+          { "title": "Recruiting Coordinator", "count": "2-6", "level": "Entry", "reports_to": "HR / Recruiting Manager", "description": "Coordinates interview schedules, manages candidate pipelines, supports campus recruiting events, and handles offer processes." },
+          { "title": "Marketing & Communications Director", "count": 1, "level": "Senior", "reports_to": "COO / Managing Partner", "description": "Manages firm brand, thought leadership publishing, digital presence, PR, event marketing, and partner business development support." },
+          { "title": "Knowledge Management Director", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Manages intellectual capital: methodology libraries, case studies, market research databases, and knowledge-sharing platforms." },
+          { "title": "IT Director", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Manages technology infrastructure, cybersecurity, analytics tools, collaboration platforms, and IT support for consultants." },
+          { "title": "Staffing / Resource Manager", "count": "1-5", "level": "Senior", "reports_to": "Practice Manager", "description": "Matches consultants to projects based on skills, availability, and development needs; manages staffing requests and utilization tracking." }
+        ]
+      },
+      {
+        "name": "Alumni Network & Thought Leadership",
+        "description": "The firm maintains relationships with former consultants (alumni) who often become clients, referral sources, or future partners. Thought leadership (research, publications, methodologies) drives brand and business development.",
+        "headcount": "2-20",
+        "reports_to": "Marketing Director",
+        "roles": [
+          { "title": "Thought Leadership Director", "count": 1, "level": "Senior", "reports_to": "Marketing Director", "description": "Directs the firm's research agenda, publications, surveys, and intellectual capital development. Ensures the firm's ideas influence the market and drive client conversations." },
+          { "title": "Alumni Relations Manager", "count": 1, "level": "Senior", "reports_to": "Marketing Director", "description": "Maintains alumni network, organizes alumni events, tracks alumni career moves for business development, and manages referral programs." },
+          { "title": "Research Analyst", "count": "2-8", "level": "Skilled", "reports_to": "Thought Leadership Director", "description": "Conducts market research, data analysis, and content development for thought leadership publications and practice development." },
+          { "title": "Editor / Content Manager", "count": "1-3", "level": "Skilled", "reports_to": "Thought Leadership Director", "description": "Edits and produces thought leadership content: white papers, articles, surveys, and digital content for publication and distribution." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Partner and Engagement Manager form the core project leadership pair: Partner sells the work and owns the client relationship, EM runs the project day-to-day and manages the team.",
+      "Engagement Manager works closely with the client's project sponsor to align on scope, progress, and deliverables throughout the engagement.",
+      "Senior Consultant manages specific workstreams and reports to the Engagement Manager, with dotted-line mentorship from a Practice Partner for career development.",
+      "Associates and Analysts are staffed to projects by the Resource Manager but have a 'career advisor' (usually a Senior Consultant or Manager) for professional development.",
+      "Practice Leader coordinates partner-level business development and thought leadership within the practice while managing practice P&L.",
+      "Staffing Manager works with all Engagement Managers and Practice Leaders to optimize utilization and match consultant skills to project needs.",
+      "Recruiting team coordinates heavily with Practice Leaders to identify hiring needs and target specific schools and experience profiles.",
+      "Alumni network feeds business development: former consultants often become clients, referral sources, or acquisition targets."
+    ],
+    "org_chart_text": "                    PARTNERSHIP / BOARD\n                           |\n                 MANAGEMENT COMMITTEE\n                           |\n                   MANAGING PARTNER / CEO\n                    /          |         \\\n             COO           GENERAL        CHIEF\n               |          COUNSEL        TALENT\n        +------+------+                   OFFICER\n        |      |      |                    |\n      FINANCE  HR   MARKETING          RECRUITING\n        |      |      |              TRAINING\n        IT     KM   THOUGHT\n                    LEADERSHIP\n\n     PRACTICE AREA (repeat for each practice):\n        SENIOR PARTNER / PRACTICE LEADER\n               |\n            PARTNER(S)\n               |\n        ASSOCIATE PARTNER(S)\n               |\n       ENGAGEMENT MANAGER(S)\n            /         \\\n    SENIOR CONSULTANT   CONSULTANT\n           |\n    ASSOCIATE / ANALYST\n\n     PRACTICE GROUPS:\n     Strategy | Operations | Digital | M&A | Org Change\n     \n     STAFFING: Resource Manager (matches consultants to projects)\n     \n     CULTURE: Up-or-out evaluation cycle"
+  }
+}

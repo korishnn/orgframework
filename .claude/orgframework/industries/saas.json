@@ -1,0 +1,17 @@
+{
+  "industry": "saas",
+  "name": "SaaS / Software-as-a-Service",
+  "shortcodes": ["@saas", "@software", "@cloud"],
+  "key_metrics": ["MRR", "ARR", "NRR", "CAC", "LTV", "Churn rate", "Net Revenue Retention", "Gross Margin", "Burn Multiple", "Rule of 40"],
+  "common_roles": ["VP Engineering", "CTO", "CPO", "SDR/BDR", "AE", "Customer Success", "Product Manager", "Data Analyst"],
+  "org_structure_note": "Typically product-aligned (squads/pods). Strong PM function. Growth teams common post-PMF.",
+  "go_to_market": ["Self-serve (PLG)", "Sales-led (Enterprise)", "Hybrid product-led sales"],
+  "funding_stages": ["Seed → Series A → B → C → D → IPO", "Venture-backed. Board-driven milestones."],
+  "regulatory": ["SOC 2 (standard)", "GDPR (if EU customers)", "CCPA (if California)", "ISO 27001 (enterprise)"],
+  "regional_notes": {
+    "na": "Silicon Valley playbook. ARR-driven fundraising. Heavy sales investment.",
+    "emea": "Berlin/London/Paris hubs. More conservative enterprise buying. Multi-language required.",
+    "apac": "India: massive services/IT. China: domestic giants dominate. Japan: relationship-heavy sales.",
+    "latam": "Brazil leads. US dollar pricing common for B2B. Payment gateway complexity."
+  }
+}

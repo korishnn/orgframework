@@ -1,0 +1,127 @@
+{
+  "preset": "series-a-saas",
+  "version": "1.0",
+  "name": "Series A SaaS",
+  "description": "For SaaS companies at Series A stage with 10-30 people. The first functional departments are emerging, replacing the flat founder-led structure. VPs or Directors lead functions while the CEO builds their first management layer. Suitable for companies with early product-market fit and growing revenue.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["saas"],
+    "stages": ["startup", "scaleup"]
+  },
+  "headcount_range": "10-30",
+  "org_structure": {
+    "overview": "At Series A the startup formalizes into functional areas while preserving cross-functional speed. The philosophy is 'minimum viable hierarchy' — create a management layer only where the CEO has become a bottleneck. Engineering typically formalizes first because it's the largest group. Product management separates from engineering to ensure independent customer advocacy. Marketing and Sales grow from single contributors into small teams. The CEO shifts from doing to leading.",
+    "departments": [
+      {
+        "name": "Engineering",
+        "description": "The largest department. Builds and ships the product, maintains infrastructure, and establishes development practices including code review, CI/CD, and on-call rotations.",
+        "headcount": "4-8",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "VP of Engineering",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Leads engineering strategy, hiring, and delivery. Establishes engineering culture and processes. May still write code but primarily manages and recruits."
+          },
+          {
+            "title": "Engineering Manager",
+            "count": "1-2",
+            "level": "Manager",
+            "reports_to": "VP of Engineering",
+            "description": "Manages a pod of 3-5 engineers. Handles sprint planning, performance reviews, and career growth. Shields the team from context switching."
+          },
+          {
+            "title": "Senior Software Engineer",
+            "count": "2-4",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Owns major features or services. Mentors junior engineers, leads architecture discussions, and sets technical standards."
+          },
+          {
+            "title": "Software Engineer",
+            "count": "2-3",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Builds features, fixes bugs, and writes tests. Growing toward senior-level ownership."
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "description": "Owns the roadmap, user research, and feature definition. Ensures engineering builds the right things. Works at the intersection of business goals and user needs.",
+        "headcount": "2",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "Director of Product",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Defines product strategy and roadmap. Conducts user research, prioritizes initiatives, and aligns stakeholders. Partners closely with VP Engineering and Marketing."
+          },
+          {
+            "title": "Product Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Product",
+            "description": "Writes specs, manages sprint backlog, coordinates releases, and validates solutions with users."
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "description": "Generates demand, builds brand awareness, and supports sales with content and campaigns. Establishes the company's voice and positioning.",
+        "headcount": "2",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "Director of Marketing",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Owns marketing strategy, brand positioning, content strategy, and demand generation. Manages campaigns and metrics."
+          },
+          {
+            "title": "Marketing Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Marketing",
+            "description": "Executes campaigns, creates content, manages social media, and runs analytics on marketing performance."
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "description": "Converts leads into customers. Defines and refines the sales process, handles demos and negotiations, and feeds customer signal back to product.",
+        "headcount": "2",
+        "reports_to": "CEO",
+        "roles": [
+          {
+            "title": "Director of Sales",
+            "count": 1,
+            "level": "Head",
+            "reports_to": "CEO",
+            "description": "Builds the sales playbook, hires and trains the sales team, sets quotas, and forecasts revenue. Carries a bag alongside the team at this stage."
+          },
+          {
+            "title": "Account Executive",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of Sales",
+            "description": "Runs the full sales cycle from discovery to close. Manages pipeline in CRM and delivers demos."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Product and Engineering are co-located (same pod structure) with PMs attending engineering standups and planning.",
+      "Marketing and Sales meet weekly on funnel metrics — Marketing generates leads, Sales converts them.",
+      "CEO holds weekly 1:1s with each department head and a monthly all-hands review.",
+      "VP Engineering and Director of Product jointly prioritize the roadmap in a weekly product council.",
+      "All department heads attend a Monday morning leadership sync to align on priorities for the week."
+    ],
+    "org_chart_text": "CEO\n├── VP of Engineering\n│   ├── Engineering Manager\n│   │   ├── Senior Software Engineer (2-4)\n│   │   └── Software Engineer (2-3)\n│   └── [additional EM pod if size warrants]\n├── Director of Product\n│   └── Product Manager\n├── Director of Marketing\n│   └── Marketing Manager\n└── Director of Sales\n    └── Account Executive"
+  }
+}

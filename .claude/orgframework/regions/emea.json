@@ -1,0 +1,36 @@
+{
+  "region": "emea",
+  "name": "Europe, Middle East & Africa",
+  "shortcodes": ["@emea", "@eu", "@uk", "@europe", "@germany"],
+  "employment": {
+    "at_will": false,
+    "notice_period_days": 30,
+    "min_vacation_days": 20,
+    "mandatory_benefits": ["National health insurance", "State pension", "Unemployment insurance", "Statutory sick pay", "Parental leave (extensive)"],
+    "common_benefits": ["Private health insurance (UK/IE)", "Company pension matching", "Meal vouchers (France)", "13th/14th salary (some countries)", "Company car (Germany)", "Wellness benefits", "Stock options (less common)"],
+    "contract_types": ["Indefinite (CDI in France)", "Fixed-term (CDD)", "Contractor (IR35 in UK)", "Freelance", " Werkstudent (Germany student)"],
+    "labor_laws": ["GDPR (privacy)", "Working Time Directive (48hr max)", "EU Works Council directive", "German BetrVG (Works Council)", "French Code du Travail", "UK Employment Rights Act", "Agency Workers Directive", "TUPE (UK)", "IR35 (UK contractor)"],
+    "work_culture": {
+      "communication": "Formal in Germany/France. Direct but polite in Nordics/Netherlands. Hierarchical titles matter in DACH.",
+      "hierarchy": "More formal than NA. Titles used. Consensus-building expected (Scandinavia, Netherlands).",
+      "hours": "35-40 hour norm. Overtime compensated or time-off-in-lieu. German 'Feierabend' culture — work ends at work end.",
+      "remote": "Growing but slower than NA. Germany/France have right-to-disconnect laws. Cross-border hiring complex (tax/social security).",
+      "diversity_focus": "Gender quota for boards (Germany, France, Norway). Age discrimination focus. Less ethnicity-focused than NA."
+    },
+    "managerial_authority": {
+      "budget_thresholds": "Department heads: €20K-€100K. Directors: €100K-€500K. VP+: €500K+. Works council may need to approve certain decisions.",
+      "hiring_authority": "Long process. Works council involvement (Germany). Notice period means delayed starts.",
+      "termination": "Very difficult in Germany/France/Netherlands. Severance formulas common. Social plans for mass layoffs. Works council must be consulted."
+    }
+  },
+  "industry_context": {
+    "saas": "Berlin/London/Paris/Stockholm hubs. Slower enterprise adoption than US.",
+    "fintech": "London, Berlin, Stockholm, Amsterdam. PSD2 regulation. Stronger banking partnerships.",
+    "healthcare": "Public healthcare systems mean different go-to-market. Strong medtech in Germany/Switzerland.",
+    "manufacturing": "Germany industrial heartland. Industry 4.0 leadership. Strong unions (IG Metall).",
+    "ecommerce": "Different marketplaces. Cross-border EU commerce. VAT MOSS complexity."
+  },
+  "currency": "EUR (EU) / GBP (UK) / CHF (Switzerland) / SEK (Sweden)",
+  "tax_year": "Calendar (Jan-Dec) / UK: Apr-Mar for corporation tax",
+  "reporting_standards": "IFRS (EU/UK) / HGB (Germany) / local GAAP variants"
+}

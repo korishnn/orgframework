@@ -1,0 +1,100 @@
+{
+  "preset": "regulatory-investigation",
+  "name": "Regulatory Investigation / Subpoena",
+  "description": "Regulatory inquiry response structure. Activates when a government regulator, agency, or enforcement authority issues a subpoena, CID (Civil Investigative Demand), formal inquiry, or announces an investigation. Legal-led response with strict document preservation obligations.",
+  "trigger_conditions": [
+    "Subpoena or CID received from government agency (SEC, DOJ, FTC, CFPB, state AG, etc.)",
+    "Regulatory agency announces formal investigation into the organization",
+    "Search warrant executed at organization premises",
+    "Grand jury subpoena for documents or testimony",
+    "Regulatory information request that signals an enforcement investigation",
+    "Whistleblower complaint filed with regulator that triggers inquiry",
+    "Audit findings referred to enforcement division of regulator",
+    "Foreign regulator investigation (FCA, ESMA, CNIL, ICO, etc.)"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "General Counsel (leads response; CEO is informed, not operational)",
+      "responsibilities": [
+        "Overall command of legal response strategy",
+        "Direct internal investigation scope and priorities",
+        "Manage regulator relationships — single point of contact for regulator communications",
+        "Control information flow — lawyer-to-lawyer communications preferred",
+        "Assess legal exposure and develop defense strategy",
+        "Report to CEO and board on investigation status (privileged)",
+        "Decide when to engage external regulatory counsel"
+      ]
+    },
+    "ops_lead": {
+      "role": "VP of Relevant Function (Compliance, Finance, Operations, etc.)",
+      "responsibilities": [
+        "Coordinate document collection and data production under legal direction",
+        "Manage employee interviews and fact-gathering under privilege",
+        "Ensure business operations continue during investigation",
+        "Track investigation timeline and key deadlines (subpoena return dates)",
+        "Coordinate with IT on data preservation and e-discovery",
+        "Liaise with business teams to minimize disruption during document review"
+      ]
+    },
+    "comms_lead": {
+      "role": "General Counsel (external) / CMO (internal)",
+      "responsibilities": [
+        "[GC] All external communications about investigation — single spokesperson is GC or designated external counsel",
+        "[GC] Liaise with SEC disclosure counsel for public company filing obligations (8-K, 10-Q contingency disclosures)",
+        "[GC] Manage press inquiries — typically 'we are cooperating fully with the investigation' only",
+        "[CMO] Internal communications to employees about the investigation",
+        "[CMO] Employee guidance on what to say/not say externally about the investigation",
+        "[CMO] Customer and partner talking points if investigation becomes public"
+      ]
+    },
+    "legal_lead": {
+      "role": "External Regulatory Counsel (specialist law firm)",
+      "responsibilities": [
+        "Lead defense strategy and regulatory engagement",
+        "Prepare and manage document productions, privilege logs, and rolling productions",
+        "Conduct internal investigation interviews under Upjohn warnings",
+        "Prepare employees for testimony or depositions with regulator",
+        "Negotiate scope of investigation with regulator (narrowing, timing, burden)",
+        "Advise on self-disclosure obligations and cooperation credit",
+        "Manage parallel proceedings (civil, criminal, administrative)",
+        "Coordinate with criminal defense counsel if criminal exposure exists"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. PRESERVE ALL DOCUMENTS — Issue litigation hold immediately. No document destruction under any circumstances. Destruction of documents = obstruction of justice (criminal offense, separate from underlying violation)",
+    "2. Designate single point of contact for all regulator communications — no one else speaks to the regulator without explicit authorization from General Counsel",
+    "3. Engage external regulatory counsel immediately — specialist firm with regulator-specific experience (SEC, DOJ, FTC, etc.)",
+    "4. Legal hold notice to all employees and IT — preserve all relevant documents, emails, Slack messages, Teams chats, and electronic records. Suspend auto-deletion policies and recycling of backups",
+    "5. Prepare data room for document production — e-discovery platform, collection protocols, review team, production format specifications",
+    "6. Employee interview preparation — Upjohn warnings before any internal interviews. Employees should understand they are represented by company counsel, not individually represented",
+    "7. Privilege log planning — identify all potentially privileged documents, track claimed privilege basis, be prepared to defend privilege claims if challenged",
+    "8. Assess self-disclosure or cooperation strategy — investigate whether voluntary disclosure or cooperation credit is available under applicable regulatory framework",
+    "9. Parallel proceedings assessment — identify any simultaneous civil litigation, criminal investigation, or other regulatory proceedings that create risk or strategy implications",
+    "10. SEC disclosure assessment (if public) — evaluate 8-K filing obligation, 10-Q/10-K disclosure requirements for material investigations, risk factor updates",
+    "11. Employee communication and training — do not discuss investigation externally. No social media posts. No discussions with former employees who may be contacted by regulator",
+    "12. Board notification and reporting — privileged update to board within 72 hours. Ongoing privileged reporting throughout investigation"
+  ],
+  "communication_protocol": {
+    "internal": "Strict need-to-know. General Counsel controls all information flow. Legal hold notice sent to affected departments. No discussion of investigation details in unsecured channels. No internal discussion of investigation strategy on email or Slack (privilege risk). Employees directed to refer any regulator inquiries to General Counsel immediately.",
+    "external": "Single external spokesperson: General Counsel or designated external counsel. Standard response: 'We are cooperating fully with the investigation and cannot comment further on an ongoing matter.' No public discussion of facts, legal strategy, or investigation status. No press interviews. No analyst briefings about the investigation.",
+    "cadence": "GC leads daily internal standup during active investigation phases. Weekly privileged reporting to CEO. Monthly privileged reporting to board (or more frequently if material). Document production deadlines driven by subpoena/CID return dates."
+  },
+  "escalation_timeline": {
+    "t0_24hr": "Receive subpoena/CID/inquiry notification → Engage external counsel → Issue legal hold → Designate SPOC for regulator → Brief CEO",
+    "t24_72hr": "Internal investigation kickoff → Data collection begins → Employee Upjohn interviews → Board notification (privileged) → Preliminary exposure assessment",
+    "t1_2wk": "Document collection and review → Privilege log preparation → Regulator kickoff meeting (if appropriate) → Initial production or response deadline",
+    "t2_8wk": "Rolling document productions → Employee testimony preparation → Factual investigation continues → Defense strategy refinement → Settlement evaluation (if applicable)",
+    "t2_6mo": "Ongoing productions → Regulatory meetings and presentations → Privilege log challenges → Parallel proceedings coordination → Resolution negotiations or litigation preparation"
+  },
+  "key_contacts": [
+    "External Regulatory Counsel (SEC/DOJ/FTC specialist): [phone, engagement letter]",
+    "E-Discovery Vendor: [phone, account manager, platform URL]",
+    "Litigation Hold Software Admin: [contact, portal]",
+    "Criminal Defense Counsel (if criminal exposure): [phone]",
+    "Insurance Carrier (D&O / E&O policy): [policy #, claims phone]",
+    "Former Employees Contact Info (for interview coordination): [HR maintains]",
+    "IT Data Preservation Lead: [phone]",
+    "Forensic Data Collection Vendor: [phone]"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "orgframework",
+  "version": "3.0.0",
+  "description": "537 hand-written reference roles + 31 org presets + compensation data + crisis templates. Reference material for building org structures with Claude Code.",
+  "keywords": ["org-framework", "company-structure", "roles", "presets", "claude-code"],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korishnn/orgframework"
+  },
+  "bin": {
+    "orgframework": "bin/install.sh"
+  },
+  "scripts": {
+    "test": "node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
+    "diagnose": "node bin/diagnose.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

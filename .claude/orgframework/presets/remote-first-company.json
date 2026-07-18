@@ -1,0 +1,136 @@
+{
+  "preset": "remote-first-company",
+  "version": "1.0",
+  "name": "Remote-First / Distributed Company",
+  "description": "Organization structure for a remote-first or fully distributed company with no physical headquarters. Emphasizes async-first communication, flat(er) hierarchy, functional teams with high autonomy, heavy documentation, and time zone-based coordination. Inspired by GitLab-style handbook culture. Designed for companies of 10-500 people who treat remote as a competitive advantage rather than a necessity. Covers the full functional organization: engineering, product, design, go-to-market, people ops, finance, and leadership.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["technology", "saas", "software", "consulting"], "stages": ["startup", "growth", "operational"] },
+  "headcount_range": "10-500",
+  "org_structure": {
+    "overview": "Remote-first companies are built around asynchronous communication, written documentation, and high-trust autonomy rather than physical presence, meetings, or command-and-control management. The org is intentionally flatter than traditional companies, with team leads instead of hierarchical managers. Every process, decision, and policy is documented in a company handbook (like GitLab's). Functional teams (engineering, product, design, marketing, sales, people ops, finance) operate with clear ownership and minimal dependencies. Time zone pods or cohorts ensure global coverage for customer-facing roles while allowing deep focus time for builders. Company culture is intentionally cultivated through written values, virtual events, and transparent internal communications. Results are measured by output and impact, not hours worked or time zones.",
+    "departments": [
+      {
+        "name": "Executive / Leadership Team",
+        "description": "Small, lean executive team that sets company strategy, culture, and resource allocation. Operates transparently with company-wide async updates. Minimal hierarchy; leads manage through context-setting rather than micromanagement.",
+        "headcount": "2-6",
+        "reports_to": "Board of Directors / Founders",
+        "roles": [
+          { "title": "Chief Executive Officer (CEO) / Co-Founder", "count": 1, "level": "Executive", "reports_to": "Board of Directors", "description": "Sets company vision, strategy, and culture. Leads executive team, fundraising, and board relationships. Communicates via regular async updates." },
+          { "title": "Chief Operating Officer (COO) / GM", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Oversees day-to-day operations, cross-functional coordination, and operational efficiency in a distributed context." },
+          { "title": "Chief Technology Officer (CTO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads engineering, technical strategy, architecture, and infrastructure. Ensures the engineering team can operate async effectively." },
+          { "title": "Chief Product Officer (CPO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads product management, product strategy, and product design. Sets the product roadmap based on customer needs." },
+          { "title": "Chief Revenue Officer (CRO) / VP Sales", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads go-to-market: sales, customer success, marketing, and revenue operations." }
+        ]
+      },
+      {
+        "name": "Engineering",
+        "description": "Builds and maintains the product. Organized into small, autonomous teams (squads/pods) aligned by product area. Heavy emphasis on written RFCs, async code review, CI/CD, and minimal synchronous meetings.",
+        "headcount": "5-150",
+        "reports_to": "CTO / VP Engineering",
+        "roles": [
+          { "title": "VP of Engineering / Engineering Director", "count": "0-1", "level": "Senior", "reports_to": "CTO", "description": "Leads engineering organization; sets technical culture, hiring standards, and engineering process." },
+          { "title": "Engineering Manager / Team Lead", "count": "1-10", "level": "Senior", "reports_to": "VP Engineering / CTO", "description": "Leads an engineering team/pod. Focuses on people development, project management, and unblocking engineers rather than micromanaging." },
+          { "title": "Staff / Principal Engineer", "count": "0-5", "level": "Senior (IC)", "reports_to": "VP Engineering", "description": "Senior individual contributor (IC) who sets technical direction, mentors engineers, and drives cross-team architecture decisions." },
+          { "title": "Senior Software Engineer", "count": "3-40", "level": "Professional (IC)", "reports_to": "Engineering Manager", "description": "Experienced IC who owns substantial features or systems independently. Mentors junior engineers." },
+          { "title": "Software Engineer", "count": "3-60", "level": "Professional (IC)", "reports_to": "Engineering Manager", "description": "IC who implements features, fixes bugs, and participates in code review and on-call rotation." },
+          { "title": "Junior / Associate Engineer", "count": "0-15", "level": "Entry (IC)", "reports_to": "Engineering Manager", "description": "Early-career engineer learning the codebase and best practices. Works with mentorship from senior engineers." },
+          { "title": "Site Reliability Engineer (SRE) / DevOps", "count": "0-10", "level": "Professional (IC)", "reports_to": "Engineering Manager / VP Eng", "description": "Manages infrastructure, CI/CD pipelines, monitoring, incident response, and cloud costs." },
+          { "title": "QA / Test Engineer", "count": "0-10", "level": "Professional (IC)", "reports_to": "Engineering Manager", "description": "Builds automated test frameworks, performs exploratory testing, and ensures quality standards." },
+          { "title": "Security Engineer", "count": "0-3", "level": "Professional (IC)", "reports_to": "VP Engineering / CTO", "description": "Manages security practices, vulnerability management, penetration testing, and compliance (SOC 2, ISO 27001)." },
+          { "title": "Data Engineer", "count": "0-5", "level": "Professional (IC)", "reports_to": "Engineering Manager", "description": "Builds data pipelines, maintains the data warehouse, and supports analytics infrastructure." }
+        ]
+      },
+      {
+        "name": "Product",
+        "description": "Defines what to build and why. Discovers customer needs through async research, defines product strategy, prioritizes the roadmap, and writes detailed specifications for engineering. Works async with engineering and design.",
+        "headcount": "5-30",
+        "reports_to": "CEO / CPO",
+        "roles": [
+          { "title": "VP of Product / Head of Product", "count": "0-1", "level": "Senior", "reports_to": "CEO / CPO", "description": "Leads the product organization; sets product vision, strategy, and roadmap." },
+          { "title": "Product Manager", "count": "2-15", "level": "Professional", "reports_to": "VP Product", "description": "Owns a product area: conducts user research, writes specs, prioritizes backlog, and measures outcomes." },
+          { "title": "Associate Product Manager", "count": "0-5", "level": "Entry", "reports_to": "Senior Product Manager", "description": "Supports product managers with research, data analysis, and specification writing." },
+          { "title": "Product Operations Manager", "count": "0-2", "level": "Professional", "reports_to": "VP Product", "description": "Manages product tools, user research programs, beta programs, and cross-product communication." }
+        ]
+      },
+      {
+        "name": "Design",
+        "description": "Creates the user experience and visual design of the product. Practices async design critique, maintains a design system, and collaborates closely with product and engineering through written specs and annotated Figma files.",
+        "headcount": "2-20",
+        "reports_to": "CEO / CPO",
+        "roles": [
+          { "title": "VP / Director of Design", "count": "0-1", "level": "Senior", "reports_to": "CEO / CPO", "description": "Leads design; sets design vision, design system direction, and design culture." },
+          { "title": "Staff / Lead Product Designer", "count": "0-3", "level": "Senior (IC)", "reports_to": "Director of Design", "description": "Senior IC leading design for major product areas; sets interaction patterns and design standards." },
+          { "title": "Product Designer", "count": "2-12", "level": "Professional (IC)", "reports_to": "Director of Design", "description": "Designs product features from wireframes to high-fidelity mockups; conducts user testing." },
+          { "title": "UX Researcher", "count": "0-3", "level": "Professional (IC)", "reports_to": "Director of Design", "description": "Conducts user research studies, usability testing, and competitive analysis to inform product decisions." },
+          { "title": "Design Systems Designer", "count": "0-2", "level": "Professional (IC)", "reports_to": "Director of Design", "description": "Builds and maintains the design system / component library used across all products." },
+          { "title": "Content Designer / UX Writer", "count": "0-2", "level": "Professional (IC)", "reports_to": "Director of Design", "description": "Writes product copy, error messages, onboarding flows, and documentation from a UX perspective." }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "description": "Drives awareness, demand generation, and brand positioning. Operates async with documented content strategies, SEO focus, and data-driven campaigns.",
+        "headcount": "3-25",
+        "reports_to": "CEO / CRO",
+        "roles": [
+          { "title": "VP / Director of Marketing", "count": 1, "level": "Senior", "reports_to": "CEO / CRO", "description": "Leads marketing strategy, brand, demand generation, and content." },
+          { "title": "Content Marketing Manager", "count": "1-5", "level": "Professional", "reports_to": "Director of Marketing", "description": "Produces blog posts, whitepapers, case studies, and thought leadership content." },
+          { "title": "Growth / Demand Generation Manager", "count": "1-4", "level": "Professional", "reports_to": "Director of Marketing", "description": "Runs paid advertising, SEO, email campaigns, and funnel optimization." },
+          { "title": "Product Marketing Manager", "count": "1-3", "level": "Professional", "reports_to": "Director of Marketing", "description": "Positions the product for target markets, creates sales enablement materials, and manages product launches." },
+          { "title": "Brand / Visual Designer (Marketing)", "count": "0-2", "level": "Professional", "reports_to": "Director of Marketing", "description": "Creates marketing visuals, landing pages, social media graphics, and brand assets." },
+          { "title": "Marketing Operations Manager", "count": "0-2", "level": "Professional", "reports_to": "Director of Marketing", "description": "Manages marketing tech stack (CRM, email tool, analytics) and campaign reporting." }
+        ]
+      },
+      {
+        "name": "Sales",
+        "description": "Drives revenue through inbound and outbound sales. Organized by time zone or region for customer coverage. Heavy use of async demos, recorded product tours, and CRM-driven processes.",
+        "headcount": "5-60",
+        "reports_to": "CRO / VP Sales",
+        "roles": [
+          { "title": "VP of Sales / CRO", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads the sales organization; sets sales strategy, targets, and comp plans." },
+          { "title": "Regional Sales Director / Time Zone Lead", "count": "1-3", "level": "Senior", "reports_to": "VP Sales", "description": "Manages a sales team by region/time zone (e.g., Americas, EMEA, APAC)." },
+          { "title": "Account Executive (AE)", "count": "3-30", "level": "Professional", "reports_to": "Sales Director", "description": "Owns the full sales cycle from prospecting to close for assigned accounts/territories." },
+          { "title": "Sales Development Representative (SDR)", "count": "2-15", "level": "Entry/Professional", "reports_to": "Sales Director / SDR Manager", "description": "Outbound prospecting and inbound lead qualification; sets meetings for AEs." },
+          { "title": "Sales Engineer / Solutions Consultant", "count": "1-8", "level": "Professional", "reports_to": "VP Sales", "description": "Technical pre-sales resource; conducts demos, designs solutions, and supports proof-of-concept engagements." },
+          { "title": "Customer Success Manager (CSM)", "count": "2-15", "level": "Professional", "reports_to": "VP Customer Success / VP Sales", "description": "Ensures customer adoption, retention, and expansion post-sale. Handles onboarding and ongoing support." }
+        ]
+      },
+      {
+        "name": "People Operations / Culture",
+        "description": "Handles hiring, onboarding, benefits, payroll, compliance, and culture in a distributed context. Designs and maintains the company handbook, manages async performance reviews, and coordinates global team events.",
+        "headcount": "2-8",
+        "reports_to": "CEO / COO",
+        "roles": [
+          { "title": "VP / Head of People", "count": 1, "level": "Senior", "reports_to": "CEO / COO", "description": "Leads people operations; sets people strategy, compensation philosophy, and culture initiatives." },
+          { "title": "People Operations / HR Generalist", "count": "1-4", "level": "Professional", "reports_to": "Head of People", "description": "Manages hiring processes, onboarding, benefits administration, payroll, and compliance across multiple jurisdictions." },
+          { "title": "Talent Acquisition / Recruiting Lead", "count": "1-3", "level": "Professional", "reports_to": "Head of People", "description": "Manages the full-cycle recruiting process including sourcing, interviewing, and offer negotiation." },
+          { "title": "Culture / Engagement Manager", "count": "0-2", "level": "Professional", "reports_to": "Head of People", "description": "Designs virtual team-building, manages the company handbook, coordinates all-hands meetings, and measures engagement." },
+          { "title": "Learning & Development Specialist", "count": "0-1", "level": "Professional", "reports_to": "Head of People", "description": "Develops onboarding programs, manager training, and professional development resources." }
+        ]
+      },
+      {
+        "name": "Finance & Operations",
+        "description": "Manages company finances, budgeting, forecasting, legal, compliance, and tooling procurement. Handles the operational complexity of a distributed workforce including multi-country payroll, contractor agreements, and tax compliance.",
+        "headcount": "2-8",
+        "reports_to": "CEO / COO",
+        "roles": [
+          { "title": "VP / Head of Finance", "count": "0-1", "level": "Senior", "reports_to": "CEO", "description": "Manages financial planning, budgeting, forecasting, fundraising, and board reporting." },
+          { "title": "Financial Analyst / Accountant", "count": "1-3", "level": "Professional", "reports_to": "VP Finance", "description": "Handles accounting, reconciliations, financial reporting, and tax filings." },
+          { "title": "Operations / BizOps Manager", "count": "1-2", "level": "Professional", "reports_to": "CEO / COO", "description": "Manages cross-functional operational projects, tooling procurement/audit, and vendor management." },
+          { "title": "Legal / Compliance Manager", "count": "0-2", "level": "Professional", "reports_to": "CEO", "description": "Handles contracts, data privacy (GDPR, CCPA), IP, and compliance programs (SOC 2, ISO)." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The CEO writes an async weekly update visible to the entire company, replacing all-hands meetings. Every team lead writes their own weekly update linked from it.",
+      "Product Managers write one-pagers (RFCs) and get async feedback from Engineering and Design before specs are finalized; synchronous meetings are the exception, not the rule.",
+      "Engineering Teams operate with async code review (merge request comments), CI/CD pipelines, and shared on-call rotation. Documentation is a first-class deliverable for every feature.",
+      "Customer Success coordinates with Sales and Product via shared CRM and product feedback channels (not meetings) to relay customer needs.",
+      "Time zone pods ensure global customers get coverage; pod leads coordinate handoff between regions with async shift logs.",
+      "People Operations maintains the company handbook as a single source of truth for all policies, procedures, and role expectations. Handbook changes are merge requests reviewed asynchronously.",
+      "Marketing produces content and campaigns that feed leads to Sales; SDRs qualify leads and pass them to AEs. All handoffs are documented in the CRM.",
+      "The Leadership Team makes strategic decisions and documents them in the handbook; individual teams have autonomy to make tactical decisions within their domain.",
+      "All-hands occurs asynchronously (recorded video + Q&A doc) rather than a live meeting, though optional synchronous social events are scheduled across time zones periodically.",
+      "Contractors and full-time employees are treated the same in culture and tools; the handbook covers policies for both."
+    ],
+    "org_chart_text": "CEO\n├── Head of People\n│     ├── People Ops / HR Generalists\n│     ├── Recruiting / Talent Acquisition\n│     └── Culture & Engagement Manager\n│\n├── CTO / VP Engineering\n│     ├── Engineering Managers / Team Leads\n│     │     ├── Staff / Principal Engineers (IC)\n│     │     ├── Senior Software Engineers (IC)\n│     │     ├── Software Engineers (IC)\n│     │     └── Junior / Associate Engineers (IC)\n│     ├── SRE / DevOps (IC)\n│     ├── Security Engineer (IC)\n│     └── Data Engineer (IC)\n│\n├── CPO / Head of Product\n│     ├── Product Managers\n│     │     └── Associate PMs\n│     └── Product Operations\n│\n├── Head of Design\n│     ├── Staff / Lead Product Designers (IC)\n│     ├── Product Designers (IC)\n│     ├── UX Researchers (IC)\n│     ├── Design Systems Designer (IC)\n│     └── Content Designer / UX Writer (IC)\n│\n├── CRO / VP Sales\n│     ├── Regional Sales Directors\n│     │     ├── Account Executives\n│     │     └── SDRs\n│     ├── Sales Engineers (IC)\n│     └── Customer Success Managers\n│\n├── Head of Marketing\n│     ├── Content Marketing Manager\n│     ├── Demand Generation / Growth Manager\n│     ├── Product Marketing Manager\n│     ├── Brand Designer (IC)\n│     └── Marketing Operations Manager\n│\n└── Head of Finance & Operations\n      ├── Financial Analyst / Accountant\n      ├── BizOps Manager\n      └── Legal / Compliance Manager\n\nNote: Heavy IC culture. Managers focus on coaching and unblocking, not directing.\nAll processes documented in the company handbook."
+  }
+}

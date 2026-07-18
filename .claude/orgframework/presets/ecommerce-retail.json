@@ -1,0 +1,286 @@
+{
+  "preset": "ecommerce-retail",
+  "version": "1.0",
+  "name": "E-Commerce / Retail Company",
+  "description": "For e-commerce and retail companies where merchandising, supply chain, logistics, and fulfillment are core operational functions. Warehouse operations, inventory planning, and customer experience teams are central to the org structure. Designed for seasonal staffing surges (Black Friday/Cyber Monday) and strong integration between online and physical retail channels.",
+  "applicability": {
+    "regions": ["na", "emea", "apac", "latam"],
+    "industries": ["ecommerce"],
+    "stages": ["scaleup", "enterprise"]
+  },
+  "headcount_range": "30-10,000+",
+  "org_structure": {
+    "overview": "E-commerce orgs are operations-heavy with a strong focus on the physical flow of goods alongside the digital customer experience. The philosophy is 'bits and atoms' — technology and operations must be deeply integrated because a beautiful online store is useless if inventory is wrong or delivery fails. Supply chain, logistics, and fulfillment are first-class departments on par with Engineering and Product, not back-office functions. Seasonal demand patterns require flexible staffing models and surge capacity planning. The org typically divides into three major pillars: Commercial (merchandising, buying, marketplace), Operations (supply chain, fulfillment, customer service), and Technology (platform, data, product). At companies with physical stores, store operations adds a fourth pillar with district/regional management layers.",
+    "departments": [
+      {
+        "name": "Executive Leadership",
+        "description": "C-suite that balances commercial performance (revenue, margin) with operational excellence (delivery speed, inventory efficiency).",
+        "headcount": "3-8",
+        "reports_to": "Board of Directors",
+        "roles": [
+          {
+            "title": "Chief Executive Officer (CEO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "Board of Directors",
+            "description": "Sets overall strategy, brand vision, and company culture. Ultimate accountability for revenue, margin, and customer experience."
+          },
+          {
+            "title": "Chief Operating Officer (COO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Owns supply chain, fulfillment, logistics, customer service, and store operations. Critical during peak season execution."
+          },
+          {
+            "title": "Chief Commercial Officer (CCO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Owns merchandising, buying, pricing, revenue growth, and marketplace (if applicable). Drives margin optimization."
+          },
+          {
+            "title": "Chief Technology Officer (CTO)",
+            "count": 1,
+            "level": "C-Suite",
+            "reports_to": "CEO",
+            "description": "Owns e-commerce platform, mobile apps, data infrastructure, and technology strategy. Builds the digital storefront and backend systems."
+          }
+        ]
+      },
+      {
+        "name": "Merchandising & Buying",
+        "description": "Core commercial function that selects products, manages inventory assortment, negotiates with suppliers, and sets pricing and promotions.",
+        "headcount": "10-100",
+        "reports_to": "CCO",
+        "roles": [
+          {
+            "title": "SVP / VP of Merchandising",
+            "count": 1,
+            "level": "SVP / VP",
+            "reports_to": "CCO",
+            "description": "Sets merchandising strategy, assortment planning, and vendor strategy. Owns gross margin by category."
+          },
+          {
+            "title": "Director of Buying",
+            "count": "3-10",
+            "level": "Director",
+            "reports_to": "VP of Merchandising",
+            "description": "Leads buying teams by category (e.g., apparel, electronics, home goods). Negotiates with vendors and manages open-to-buy budgets."
+          },
+          {
+            "title": "Buyer / Merchandiser",
+            "count": "5-40",
+            "level": "IC",
+            "reports_to": "Director of Buying",
+            "description": "Selects products, negotiates terms, manages inventory allocation, and plans promotions for assigned categories."
+          },
+          {
+            "title": "Pricing & Promotions Manager",
+            "count": "1-3",
+            "level": "IC / Manager",
+            "reports_to": "VP of Merchandising",
+            "description": "Develops pricing strategy, competitive price monitoring, promotion calendar, and markdown optimization."
+          },
+          {
+            "title": "Private Label / Product Development Manager",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "VP of Merchandising",
+            "description": "Develops private label products, manages supplier relationships for owned brands, and coordinates with design and sourcing."
+          }
+        ]
+      },
+      {
+        "name": "Supply Chain & Logistics",
+        "description": "End-to-end supply chain from supplier to customer doorstep. Includes inbound logistics, warehouse operations, inventory planning, and last-mile delivery.",
+        "headcount": "20-2,000",
+        "reports_to": "COO",
+        "roles": [
+          {
+            "title": "VP of Supply Chain",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO",
+            "description": "Supply chain strategy, network design, carrier relationships, and end-to-end supply chain performance."
+          },
+          {
+            "title": "Director of Warehouse Operations",
+            "count": "1-5",
+            "level": "Director",
+            "reports_to": "VP of Supply Chain",
+            "description": "Manages fulfillment centers / warehouses. Responsible for pick/pack/ship accuracy, throughput, and labor management."
+          },
+          {
+            "title": "Warehouse Manager",
+            "count": "2-20",
+            "level": "Manager",
+            "reports_to": "Director of Warehouse Operations",
+            "description": "Day-to-day management of shift operations in a fulfillment center. Manages team leads and associates."
+          },
+          {
+            "title": "Inventory Planning Manager",
+            "count": 1,
+            "level": "Manager",
+            "reports_to": "VP of Supply Chain",
+            "description": "Demand forecasting, inventory allocation across fulfillment nodes, safety stock optimization, and inventory aging management."
+          },
+          {
+            "title": "Logistics / Carrier Manager",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "VP of Supply Chain",
+            "description": "Manages carrier relationships (FedEx, UPS, USPS, regional carriers), shipping cost optimization, and last-mile performance."
+          },
+          {
+            "title": "Supply Chain Analyst",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "VP of Supply Chain",
+            "description": "Analyzes supply chain KPIs, supports network modeling, tracks carrier performance, and builds reporting dashboards."
+          }
+        ]
+      },
+      {
+        "name": "E-Commerce & Product Technology",
+        "description": "Builds and maintains the digital commerce platform: website, mobile app, checkout, personalization, search, and recommendation systems.",
+        "headcount": "20-200",
+        "reports_to": "CTO",
+        "roles": [
+          {
+            "title": "VP of E-Commerce Technology",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "CTO",
+            "description": "Technology strategy for the e-commerce platform. Owns architecture, platform reliability, and engineering delivery for customer-facing systems."
+          },
+          {
+            "title": "Director of Product (E-Commerce)",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "CTO / CCO",
+            "description": "Product strategy for the e-commerce experience: browse, search, PDP, cart, checkout, and post-purchase."
+          },
+          {
+            "title": "Product Manager (E-Commerce)",
+            "count": "3-8",
+            "level": "IC",
+            "reports_to": "Director of Product",
+            "description": "Owns a specific area of the e-commerce experience (e.g., search, checkout, my account, mobile app)."
+          },
+          {
+            "title": "Engineering Manager (E-Commerce)",
+            "count": "3-8",
+            "level": "Manager",
+            "reports_to": "VP of E-Commerce Technology",
+            "description": "Manages engineering squads for areas like storefront, checkout, personalization, or CMS."
+          },
+          {
+            "title": "Frontend Engineer (Web / Mobile)",
+            "count": "5-30",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Builds customer-facing UI. Deep expertise in performance (Core Web Vitals, page load) and conversion optimization."
+          },
+          {
+            "title": "Backend Engineer (E-Commerce Platform)",
+            "count": "5-20",
+            "level": "IC",
+            "reports_to": "Engineering Manager",
+            "description": "Builds APIs for product catalog, cart, pricing, inventory, and order management systems."
+          }
+        ]
+      },
+      {
+        "name": "Customer Experience & Service",
+        "description": "Post-purchase customer support, returns management, and VOC (voice of customer) programs. Critical during peak season when support volume surges.",
+        "headcount": "10-1,000",
+        "reports_to": "COO / VP of CX",
+        "roles": [
+          {
+            "title": "VP of Customer Experience",
+            "count": 1,
+            "level": "VP",
+            "reports_to": "COO",
+            "description": "Customer experience strategy, service design, support operations, and NPS / CSAT ownership."
+          },
+          {
+            "title": "Director of Customer Support",
+            "count": 1,
+            "level": "Director",
+            "reports_to": "VP of Customer Experience",
+            "description": "Manages support centers, staffing models, quality assurance, and knowledge base. Owns SLAs and resolution times."
+          },
+          {
+            "title": "Customer Support Manager",
+            "count": "3-20",
+            "level": "Manager",
+            "reports_to": "Director of Customer Support",
+            "description": "Manages shifts of support agents. Handles escalations and team performance."
+          },
+          {
+            "title": "Returns & Refunds Operations Lead",
+            "count": 1,
+            "level": "IC / Manager",
+            "reports_to": "Director of Customer Support",
+            "description": "Owns returns process, refund processing, reverse logistics, and return fraud detection."
+          }
+        ]
+      },
+      {
+        "name": "Marketing (E-Commerce)",
+        "description": "Demand generation specific to e-commerce: paid social, paid search, email/SMS, affiliates, and CRM. Strong focus on ROAS and customer acquisition cost.",
+        "headcount": "5-30",
+        "reports_to": "CCO / CMO",
+        "roles": [
+          {
+            "title": "VP / Director of E-Commerce Marketing",
+            "count": 1,
+            "level": "VP / Director",
+            "reports_to": "CCO / CMO",
+            "description": "Digital marketing strategy, channel mix, budget allocation, and ROAS targets."
+          },
+          {
+            "title": "Performance Marketing Manager",
+            "count": "2-5",
+            "level": "IC",
+            "reports_to": "Director of E-Commerce Marketing",
+            "description": "Paid search (Google Shopping, Bing), paid social (Meta, TikTok, Pinterest), and affiliate marketing."
+          },
+          {
+            "title": "Email & SMS Marketing Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of E-Commerce Marketing",
+            "description": "Lifecycle email/SMS campaigns, abandoned cart recovery, post-purchase flows, and segmentation."
+          },
+          {
+            "title": "CRM / Retention Marketing Manager",
+            "count": 1,
+            "level": "IC",
+            "reports_to": "Director of E-Commerce Marketing",
+            "description": "Customer loyalty program, VIP tiers, personalized recommendations via email, and reactivation campaigns."
+          },
+          {
+            "title": "Creative / Content Producer",
+            "count": "1-3",
+            "level": "IC",
+            "reports_to": "Director of E-Commerce Marketing",
+            "description": "Creates ad creative, product photography, video content, and social media content for campaigns."
+          }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Merchandising and Supply Chain are tightly coupled — inventory buys must align with warehouse capacity and delivery timelines. Weekly cross-functional review of open-to-buy vs. fulfillment capacity.",
+      "E-Commerce Product and Technology work as integrated squads with shared OKRs around conversion rate, average order value, and page load speed.",
+      "Marketing coordinates closely with Merchandising on promotion calendar and inventory availability — no promotion is launched without confirmed stock levels.",
+      "Customer Experience feeds returns and complaint data back to Merchandising (product quality issues) and Supply Chain (delivery issues).",
+      "A peak season (BFCM) cross-functional task force forms 3 months in advance, including representatives from every department.",
+      "The CCO and COO hold a weekly joint operations review covering inventory turns, fulfillment accuracy, on-time delivery, and customer satisfaction.",
+      "Data Science supports all teams with demand forecasting, personalized recommendations, price optimization, and customer churn prediction.",
+      "Warehouse Operations and Customer Support share a real-time dashboard during peak season, so support knows about shipping delays before customers call."
+    ],
+    "org_chart_text": "CEO\n├── Chief Commercial Officer (CCO)\n│   ├── SVP / VP of Merchandising\n│   │   ├── Director of Buying × 3-10\n│   │   │   └── Buyer / Merchandiser × 5-40\n│   │   ├── Pricing & Promotions Manager\n│   │   └── Private Label / PD Manager\n│   └── VP / Director of E-Commerce Marketing\n│       ├── Performance Marketing Manager × 2-5\n│       ├── Email & SMS Marketing Manager\n│       ├── CRM / Retention Marketing Manager\n│       └── Creative / Content Producer × 1-3\n├── Chief Operating Officer (COO)\n│   ├── VP of Supply Chain\n│   │   ├── Director of Warehouse Operations × 1-5\n│   │   │   └── Warehouse Manager × 2-20\n│   │   ├── Inventory Planning Manager\n│   │   ├── Logistics / Carrier Manager\n│   │   └── Supply Chain Analyst × 2-5\n│   └── VP of Customer Experience\n│       └── Director of Customer Support\n│           ├── Customer Support Manager × 3-20\n│           └── Returns & Refunds Ops Lead\n├── Chief Technology Officer (CTO)\n│   └── VP of E-Commerce Technology\n│       ├── Director of Product (E-Commerce)\n│       │   └── Product Manager × 3-8\n│       └── Engineering Manager × 3-8\n│           ├── Frontend Engineer × 5-30\n│           └── Backend Engineer × 5-20\n└── [CFO, CHRO, General Counsel — standard corporate functions]"
+  }
+}

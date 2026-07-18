@@ -1,0 +1,102 @@
+{
+  "preset": "architecture-firm",
+  "version": "1.0",
+  "name": "Architecture / Design Firm",
+  "description": "Architecture and design firm organized around the studio model with a structured licensure track. Built on a hierarchy from Principals/Partners through Project Architects, Architectural Designers, and Interns/Drafters. Studios specialize by sector (residential, commercial, institutional, healthcare, etc.) with shared services in marketing, finance, and operations. Professionals progress through a defined track from intern through licensed architect to principal.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["architecture", "design", "engineering", "construction", "interior-design"], "stages": ["startup", "growth", "established", "merger"] },
+  "headcount_range": "5-500",
+  "org_structure": {
+    "overview": "Architecture firms typically follow a studio model where teams specialize in building types or sectors. The organization is led by Principals or Partners who own the firm and set strategic direction. Project Architects lead the design and documentation of individual projects supported by Architectural Designers and Interns. The profession has a structured licensure track: graduates complete the Architectural Experience Program (AXP), pass the Architect Registration Examination (ARE), and become licensed architects. Many firms offer multiple disciplines under one roof including architecture, interior design, landscape architecture, urban planning, and sometimes structural engineering. Studios operate semi-autonomously within the firm, sharing administrative services and cross-staffing as needed.",
+    "departments": [
+      {
+        "name": "Firm Leadership / Principals",
+        "description": "Owners and senior leaders who set firm vision, manage business performance, and maintain client relationships. Principals are typically licensed architects who have advanced through the ranks or founded the firm.",
+        "headcount": "2-15",
+        "reports_to": "Partnership / Board",
+        "roles": [
+          { "title": "Principal / Partner", "count": "2-10", "level": "Executive", "reports_to": "Partnership", "description": "Owner of the firm; responsible for firm strategy, financial performance, major client relationships, design vision, and culture. Often serves as the 'name' on the door." },
+          { "title": "Managing Principal", "count": 1, "level": "Executive", "reports_to": "Partnership", "description": "Senior principal responsible for firm operations; manages other principals, firm finances, strategic planning, and day-to-day business leadership." },
+          { "title": "Studio Director", "count": "2-6", "level": "Senior", "reports_to": "Managing Principal", "description": "Principal or senior associate leading a specific studio (e.g., Healthcare, Commercial, Education); responsible for studio P&L, staff, project delivery, and business development within the sector." }
+        ]
+      },
+      {
+        "name": "Project Architecture Teams",
+        "description": "The core project delivery teams within each studio. Licensed architects lead projects, with designers and interns supporting design development, construction documents, and construction administration.",
+        "headcount": "5-200",
+        "reports_to": "Studio Director",
+        "roles": [
+          { "title": "Project Architect", "count": "2-20", "level": "Senior", "reports_to": "Studio Director / Principal", "description": "Licensed architect leading project delivery: manages design development, construction documents, code compliance, consultant coordination, and construction administration." },
+          { "title": "Senior Architectural Designer", "count": "2-15", "level": "Skilled", "reports_to": "Project Architect", "description": "Experienced designer contributing to concept design, schematic design, design development, and visualization. May be on licensure track or a specialist designer." },
+          { "title": "Architectural Designer / Drafter", "count": "5-30", "level": "Skilled", "reports_to": "Project Architect", "description": "Produces architectural drawings, 3D models, renderings, and technical documentation under the supervision of a licensed architect. Developing toward licensure." },
+          { "title": "Intern Architect / Architectural Associate", "count": "3-20", "level": "Entry", "reports_to": "Project Architect", "description": "Recent graduate completing AXP hours toward licensure; performs drafting, modeling, research, code analysis, and basic design tasks under supervision." },
+          { "title": "BIM / Revit Specialist", "count": "1-5", "level": "Skilled", "reports_to": "Project Architect", "description": "Specialist in Building Information Modeling software; manages model standards, family creation, clash detection, and BIM execution plans." },
+          { "title": "Specifications Writer", "count": "1-3", "level": "Senior", "reports_to": "Principal", "description": "Specializes in writing project specifications: material selections, performance criteria, quality standards, and construction administration requirements." }
+        ]
+      },
+      {
+        "name": "Design Studios",
+        "description": "Sector-focused semi-autonomous teams that specialize in specific building types: commercial, residential, healthcare, education, institutional, interior design, landscape, urban planning. Each studio has a director and dedicated project teams.",
+        "headcount": "5-100",
+        "reports_to": "Managing Principal",
+        "roles": [
+          { "title": "Commercial / Office Studio", "count": "5-50", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in commercial office buildings, mixed-use developments, corporate campuses, and workplace design." },
+          { "title": "Residential Studio", "count": "5-30", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in single-family, multi-family, condominium, and luxury residential design." },
+          { "title": "Healthcare Studio", "count": "5-40", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in hospitals, clinics, medical offices, and healthcare facilities with expertise in complex regulatory and operational requirements." },
+          { "title": "Education / Institutional Studio", "count": "5-40", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in K-12 schools, universities, libraries, museums, and public institutional buildings." },
+          { "title": "Interior Design Studio", "count": "3-20", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in interior architecture, space planning, finishes selection, FF&E, and workplace strategy for interior environments." },
+          { "title": "Urban Design / Planning Studio", "count": "3-15", "level": "Studio", "reports_to": "Studio Director", "description": "Specializes in master planning, urban design, zoning analysis, land use planning, and community development projects." }
+        ]
+      },
+      {
+        "name": "Sustainability & Technical Specialists",
+        "description": "Cross-studio experts who provide specialized technical knowledge to all projects: sustainable design, building performance, structural engineering, and building envelope design.",
+        "headcount": "2-15",
+        "reports_to": "Principal",
+        "roles": [
+          { "title": "Sustainability Director", "count": 1, "level": "Senior", "reports_to": "Principal", "description": "Leads sustainable design initiatives: LEED certification, energy modeling, net-zero design, material health, and firm sustainability strategy." },
+          { "title": "Building Performance Analyst", "count": "1-3", "level": "Skilled", "reports_to": "Sustainability Director", "description": "Performs energy modeling, daylight analysis, thermal comfort studies, and building performance simulations to optimize design." },
+          { "title": "Structural Engineer (In-House)", "count": "1-5", "level": "Senior", "reports_to": "Principal", "description": "Provides in-house structural engineering for projects; coordinates with architectural teams on structural systems design and documentation." },
+          { "title": "Landscape Architect", "count": "1-5", "level": "Skilled", "reports_to": "Studio Director", "description": "Designs site landscapes, hardscapes, planting plans, green infrastructure, and outdoor spaces in coordination with architectural teams." }
+        ]
+      },
+      {
+        "name": "Business Development & Marketing",
+        "description": "Drives firm growth through proposal development, client relationships, industry events, and brand management. In architecture, business development is heavily relationship-driven and often led by principals with marketer support.",
+        "headcount": "2-10",
+        "reports_to": "Managing Principal",
+        "roles": [
+          { "title": "Marketing Director / BD Manager", "count": 1, "level": "Senior", "reports_to": "Managing Principal", "description": "Leads business development and marketing: RFP responses, proposal strategy, client relationship management, industry events, and firm brand." },
+          { "title": "Proposal Coordinator / Marketer", "count": "2-5", "level": "Skilled", "reports_to": "Marketing Director", "description": "Coordinates proposal responses, prepares marketing collateral, maintains project photography, manages awards submissions, and supports BD efforts." },
+          { "title": "Client Relationship Manager", "count": "1-3", "level": "Senior", "reports_to": "Marketing Director", "description": "Develops and maintains relationships with key clients, tracks client satisfaction, identifies follow-on opportunities, and manages CRM systems." },
+          { "title": "Communications / PR Coordinator", "count": 1, "level": "Skilled", "reports_to": "Marketing Director", "description": "Manages firm website, social media, press releases, publications, and internal communications." }
+        ]
+      },
+      {
+        "name": "Firm Operations & Support",
+        "description": "Shared services that support all studios: finance/accounting, HR, IT, and office management. Handle the business side so studio teams can focus on project delivery.",
+        "headcount": "3-20",
+        "reports_to": "Managing Principal",
+        "roles": [
+          { "title": "Finance / Accounting Manager", "count": 1, "level": "Senior", "reports_to": "Managing Principal", "description": "Manges firm financials: billing, accounts receivable, project profitability tracking, payroll, and financial reporting." },
+          { "title": "Project Accountant", "count": "1-3", "level": "Skilled", "reports_to": "Finance Manager", "description": "Tracks project budgets, invoices, billable hours, consultant payments, and revenue recognition for individual projects." },
+          { "title": "HR Manager", "count": 1, "level": "Senior", "reports_to": "Managing Principal", "description": "Manges recruitment, professional development, performance reviews, benefits administration, and licensure support programs." },
+          { "title": "IT / Technology Manager", "count": 1, "level": "Senior", "reports_to": "Managing Principal", "description": "Manges IT infrastructure, BIM/Revit server management, software licenses, file sharing systems, and technology support." },
+          { "title": "Office Manager / Administrator", "count": 1, "level": "Skilled", "reports_to": "Managing Principal", "description": "Manges office operations: reception, supplies, mailing, vendor relationships, and general administrative support." },
+          { "title": "Librarian / Resource Specialist", "count": 1, "level": "Skilled", "reports_to": "Office Manager", "description": "Maintains material sample library, product literature, digital resources, and specification reference materials for design teams." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Project Architect reports to the Studio Director but works closely with the Principal-in-Charge on design vision, client communication, and project financials.",
+      "Intern Architect is directly supervised by a licensed Project Architect who signs off on AXP experience hours required for licensure.",
+      "Studio Directors collaborate on cross-studio staffing when projects require specialized expertise from multiple sectors.",
+      "Marketing Director works with each Studio Director and Principal to develop sector-specific proposals and client targeting strategies.",
+      "Sustainability Director collaborates with all studios to incorporate sustainable design strategies into every project phase.",
+      "BIM/Revit Specialist supports all studios and project teams with model management and technology training.",
+      "Project Accountant partners with each Project Architect to track project profitability, billing milestones, and change order impact.",
+      "HR Manager coordinates with Studio Directors on recruitment needs, intern development programs, and licensure support.",
+      "Specifications Writer coordinates with Project Architects and consultants to ensure construction documents accurately reflect design intent."
+    ],
+    "org_chart_text": "                    PARTNERSHIP / PRINCIPALS\n                           |\n                   MANAGING PRINCIPAL\n           /        /        |         \\          \\\n     STUDIO    STUDIO    STUDIO     STUDIO      SUSTAIN\n     DIRECTOR  DIRECTOR  DIRECTOR   DIRECTOR    DIRECTOR\n     (Comm)    (Health)  (Edu)      (Res)          |\n        |         |         |         |         BUILDING\n        +---------+---------+---------+         PERFORMANCE\n        |                                    STRUCTURAL ENG\n   PROJECT ARCHITECT(S)                      LANDSCAPE\n        |\n   SR. ARCHITECTURAL DESIGNER(S)\n        |\n   ARCHITECTURAL DESIGNER(S) / DRAFTER(S)\n        |\n   INTERN ARCHITECT(S) / ARCHITECTURAL ASSOCIATE(S)\n\n   SHARED SERVICES (support all studios):\n   MARKETING DIR -> Proposals, Communications\n   FINANCE MGR -> Accounting, Project Accounting\n   HR MANAGER -> Recruiting, Licensure, Benefits\n   IT MANAGER -> Technology, BIM Support\n   OFFICE MGR -> Admin, Library\n\n   STUDIOS:\n   Commercial | Residential | Healthcare | Education | Interiors | Urban Planning"
+  }
+}

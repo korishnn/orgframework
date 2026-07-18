@@ -1,0 +1,127 @@
+{
+  "preset": "school-k12",
+  "version": "1.0",
+  "name": "K-12 School / School District",
+  "description": "Organization structure for a K-12 school district or individual school. Covers governance through the school board, district-level administration, school-site leadership, instructional staff by grade and subject, student support services, and operations including facilities, cafeteria, and transportation. Designed for public, private, and charter school settings serving approximately 500-5,000 students across multiple grade bands.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["education"], "stages": ["operational", "growth"] },
+  "headcount_range": "50-500",
+  "org_structure": {
+    "overview": "K-12 schools operate under a governance model where an elected or appointed school board sets policy and a Superintendent (district) or Head of School (single site) executes. The organization is split into instructional delivery (teaching and learning), student support services (counseling, special education, health), and operations (facilities, transportation, food service). School-site leadership follows a Principal-to-teacher reporting structure with department or grade-level leads coordinating curriculum. Compliance with state/national education standards is a cross-cutting concern. Budget authority flows from the board through the Superintendent, with school-site budgets managed by Principals.",
+    "departments": [
+      {
+        "name": "School Board / Board of Trustees",
+        "description": "Governing body that sets district policy, approves the budget, hires/evaluates the Superintendent, and represents the community. Meets publicly on a regular cadence. Not involved in daily operations.",
+        "headcount": "5-9",
+        "reports_to": "Community / Electorate",
+        "roles": [
+          { "title": "Board Chair", "count": 1, "level": "Executive", "reports_to": "Electorate", "description": "Presides over board meetings, sets agenda with Superintendent, signs official documents." },
+          { "title": "Board Member", "count": "4-8", "level": "Executive", "reports_to": "Electorate", "description": "Votes on policy, budget, and personnel decisions; serves on committees." }
+        ]
+      },
+      {
+        "name": "Superintendent's Office / Central Administration",
+        "description": "District-level executive leadership responsible for strategic direction, finance, HR, curriculum standards, and community relations. Sets the vision aligned to board policy and state requirements.",
+        "headcount": "3-15",
+        "reports_to": "School Board",
+        "roles": [
+          { "title": "Superintendent / Head of School", "count": 1, "level": "Executive", "reports_to": "School Board", "description": "Chief executive of the district or school. Oversees all operations, instructional quality, and strategic planning." },
+          { "title": "Deputy Superintendent", "count": "1-2", "level": "Senior", "reports_to": "Superintendent", "description": "Deputy responsible for day-to-day operations and board relations. Acts as Superintendent in their absence." },
+          { "title": "Chief Financial Officer / Business Manager", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Manages district budget, payroll, procurement, and financial reporting to the board and state." },
+          { "title": "Director of Human Resources", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Oversees hiring, licensure compliance, employee relations, benefits, and professional development." },
+          { "title": "Director of Communications", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Manages district messaging, crisis communication, website, social media, and media relations." }
+        ]
+      },
+      {
+        "name": "Curriculum & Instruction",
+        "description": "Sets academic standards, selects curricula and textbooks, provides professional development, and oversees assessment programs. Ensures alignment with state/national standards.",
+        "headcount": "3-10",
+        "reports_to": "Superintendent / Deputy Superintendent",
+        "roles": [
+          { "title": "Director of Curriculum & Instruction", "count": 1, "level": "Senior", "reports_to": "Deputy Superintendent", "description": "Leads curriculum adoption, instructional frameworks, and professional development strategy." },
+          { "title": "Instructional Coach", "count": "1-3", "level": "Professional", "reports_to": "Director of Curriculum & Instruction", "description": "Provides in-class coaching, modeling lessons, and data-driven support to teachers." },
+          { "title": "Assessment Coordinator", "count": 1, "level": "Professional", "reports_to": "Director of Curriculum & Instruction", "description": "Manages standardized testing logistics, data analysis, and reporting." }
+        ]
+      },
+      {
+        "name": "Student Services & Special Education",
+        "description": "Ensures compliance with IDEA/Equity Act and provides specialized instruction, accommodations, and related services for students with disabilities. Also oversees counseling, health services, and 504 plans.",
+        "headcount": "10-60",
+        "reports_to": "Superintendent",
+        "roles": [
+          { "title": "Director of Student Services / Special Education", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Oversees special education compliance, IEP processes, and student support programs." },
+          { "title": "Special Education Teacher", "count": "5-30", "level": "Professional", "reports_to": "Director of Student Services", "description": "Provides specialized instruction per IEPs; co-teaches or runs resource rooms." },
+          { "title": "School Psychologist", "count": "1-4", "level": "Professional", "reports_to": "Director of Student Services", "description": "Conducts psycho-educational evaluations, counsels students, consults on behavior plans." },
+          { "title": "Speech-Language Pathologist", "count": "1-3", "level": "Professional", "reports_to": "Director of Student Services", "description": "Assesses and treats speech/language disorders as part of special education services." },
+          { "title": "Occupational Therapist", "count": "1-2", "level": "Professional", "reports_to": "Director of Student Services", "description": "Provides fine-motor and sensory integration therapy for students with disabilities." },
+          { "title": "School Counselor", "count": "1-5", "level": "Professional", "reports_to": "Director of Student Services", "description": "Provides academic, career, and social-emotional counseling to students." },
+          { "title": "School Nurse", "count": "1-3", "level": "Professional", "reports_to": "Director of Student Services", "description": "Manages student health records, medication administration, and emergency care." }
+        ]
+      },
+      {
+        "name": "School Site – Elementary (Grades K-5)",
+        "description": "School-level instructional delivery for primary grades. Self-contained classrooms with one teacher covering most subjects per class. Specialists for art, music, and PE.",
+        "headcount": "20-80",
+        "reports_to": "Superintendent's Office",
+        "roles": [
+          { "title": "Principal", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Instructional leader of the school. Manages staff, budget, discipline, parent relations, and school culture." },
+          { "title": "Assistant Principal", "count": "1-2", "level": "Professional", "reports_to": "Principal", "description": "Supports principal with discipline, scheduling, teacher evaluation, and operations." },
+          { "title": "Classroom Teacher (K-5)", "count": "10-40", "level": "Professional", "reports_to": "Principal", "description": "Teaches all core subjects to a self-contained class of 20-30 students." },
+          { "title": "Specialist Teacher (Art/Music/PE)", "count": "2-5", "level": "Professional", "reports_to": "Principal", "description": "Provides specialized instruction in art, music, or physical education across grade levels." },
+          { "title": "Instructional Aide / Paraprofessional", "count": "3-10", "level": "Support", "reports_to": "Principal", "description": "Supports classroom teachers with small-group instruction, supervision, and clerical tasks." }
+        ]
+      },
+      {
+        "name": "School Site – Secondary (Grades 6-12)",
+        "description": "School-level instructional delivery for middle and high school. Department-based subject matter instruction. Includes elective programs, advanced placement, and extracurricular oversight.",
+        "headcount": "30-150",
+        "reports_to": "Superintendent's Office",
+        "roles": [
+          { "title": "Principal", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Instructional leader of the secondary school. Manages staff, budget, discipline, scheduling, and school culture." },
+          { "title": "Assistant Principal", "count": "1-3", "level": "Professional", "reports_to": "Principal", "description": "Oversees grade-level teams, discipline, attendance, and operations." },
+          { "title": "Department Chair", "count": "5-10", "level": "Professional", "reports_to": "Principal", "description": "Leads a subject department (Math, Science, English, Social Studies, etc.) and mentors department teachers." },
+          { "title": "Subject Teacher", "count": "20-80", "level": "Professional", "reports_to": "Department Chair", "description": "Teaches subject-specific courses across grade levels; may teach AP/IB/Honors sections." },
+          { "title": "Elective / CTE Teacher", "count": "2-10", "level": "Professional", "reports_to": "Principal", "description": "Teaches career and technical education, STEM electives, or fine arts." },
+          { "title": "Athletic Director", "count": 1, "level": "Professional", "reports_to": "Principal", "description": "Manages school sports programs, scheduling, coaching staff, and compliance." }
+        ]
+      },
+      {
+        "name": "Operations & Facilities",
+        "description": "Manages the physical plant, custodial services, maintenance, transportation fleet, food service, and safety/security. Ensures safe, clean learning environments.",
+        "headcount": "10-50",
+        "reports_to": "Chief Financial Officer / Business Manager",
+        "roles": [
+          { "title": "Director of Operations / Facilities", "count": 1, "level": "Senior", "reports_to": "CFO / Business Manager", "description": "Oversees all facilities, maintenance, custodial, and safety operations across the district." },
+          { "title": "Custodial / Maintenance Staff", "count": "5-25", "level": "Support", "reports_to": "Director of Operations", "description": "Cleans and maintains school buildings and grounds; performs minor repairs." },
+          { "title": "Transportation Director / Fleet Manager", "count": 1, "level": "Professional", "reports_to": "Director of Operations", "description": "Manages bus routes, fleet maintenance, driver hiring/training, and compliance." },
+          { "title": "Bus Driver", "count": "5-20", "level": "Support", "reports_to": "Transportation Director", "description": "Drives scheduled bus routes and field trips; ensures student safety during transport." },
+          { "title": "Food Service Manager", "count": 1, "level": "Professional", "reports_to": "Director of Operations", "description": "Manages school meal programs, menu planning, nutrition compliance, and kitchen staff." },
+          { "title": "Kitchen / Cafeteria Staff", "count": "3-15", "level": "Support", "reports_to": "Food Service Manager", "description": "Prepares and serves meals; maintains kitchen sanitation and inventory." }
+        ]
+      },
+      {
+        "name": "Technology",
+        "description": "Supports instructional and administrative technology including network infrastructure, device management (1:1 programs), learning management systems, and IT help desk.",
+        "headcount": "2-10",
+        "reports_to": "Superintendent / CFO",
+        "roles": [
+          { "title": "Director of Technology", "count": 1, "level": "Senior", "reports_to": "Superintendent", "description": "Leads IT strategy, infrastructure, security, and educational technology integration." },
+          { "title": "IT Support Specialist", "count": "1-5", "level": "Professional", "reports_to": "Director of Technology", "description": "Provides help desk support, device deployment and repair, and network maintenance." },
+          { "title": "EdTech / Instructional Technology Coach", "count": "1-2", "level": "Professional", "reports_to": "Director of Technology", "description": "Trains teachers on technology integration tools, LMS administration, and digital citizenship." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "School Board hires, evaluates, and can terminate the Superintendent; the Superintendent implements board policy and advises the board.",
+      "Principals report to the Superintendent (or Deputy) and are the primary link between central administration and school-site staff.",
+      "Director of Student Services coordinates closely with Principals to place and support students with IEPs at school sites.",
+      "Curriculum & Instruction team provides professional development and instructional materials that teachers implement in the classroom.",
+      "Operations supports all school sites with transportation, meals, and facility maintenance; Principals communicate site-level needs to Operations.",
+      "Technology provides devices, infrastructure, and LMS support to all instructional staff and administrators.",
+      "School Counselors support both students and teachers and report to Student Services while embedded at school sites.",
+      "Grade-level or department teams within each school coordinate horizontally on instruction, assessment, and student progress.",
+      "State education agency and accrediting bodies set standards that the district must meet; the Director of Curriculum & Instruction leads compliance efforts.",
+      "Parent-Teacher Organizations (PTO/PTA) and site councils provide community input to Principals and the Board."
+    ],
+    "org_chart_text": "School Board\n  └── Superintendent\n        ├── Deputy Superintendent\n        │     ├── Director of Curriculum & Instruction\n        │     │     ├── Instructional Coaches\n        │     │     └── Assessment Coordinator\n        │     └── Director of Technology\n        │           ├── IT Support Specialists\n        │           └── EdTech Coach\n        ├── CFO / Business Manager\n        │     ├── HR Director\n        │     ├── Director of Operations & Facilities\n        │     │     ├── Custodial/Maintenance Staff\n        │     │     ├── Transportation Director\n        │     │     │     └── Bus Drivers\n        │     │     └── Food Service Manager\n        │     │           └── Kitchen Staff\n        │     └── Communications Director\n        └── Director of Student Services\n              ├── Special Education Teachers\n              ├── School Psychologists\n              ├── Speech-Language Pathologists\n              ├── Occupational Therapists\n              ├── Counselors\n              └── School Nurses\n\nSchool Sites:\n  Elementary School                     Secondary School\n    Principal                             Principal\n    ├── Assistant Principal(s)            ├── Assistant Principal(s)\n    ├── Classroom Teachers (K-5)          ├── Department Chairs\n    ├── Specialist Teachers               │     └── Subject Teachers\n    │     (Art, Music, PE)                ├── Elective/CTE Teachers\n    └── Instructional Aides               └── Athletic Director"
+  }
+}

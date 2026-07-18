@@ -1,0 +1,76 @@
+{
+  "preset": "mental-health-practice",
+  "version": "1.0",
+  "name": "Mental Health Private / Group Practice",
+  "description": "Outpatient mental health practice offering therapy, counseling, psychiatric medication management, and increasingly telehealth services. Suitable for solo private practices, group practices, and community mental health centers serving children, adults, or specialized populations.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
+  "headcount_range": "3-50",
+  "org_structure": {
+    "overview": "The mental health practice is organized around licensed clinicians providing billable direct care, supported by administrative and billing infrastructure. A clinical director oversees treatment quality, licensing compliance, and supervision for associate-level clinicians, while a practice manager handles business operations, scheduling, and payer relations. The model scales from solo practitioners with part-time billers to large multidisciplinary group practices with dozens of therapists, psychiatric providers, and specialized programs (child/adolescent, substance use, trauma, eating disorders). Telehealth is a growing modality requiring additional technology and scheduling coordination.",
+    "departments": [
+      {
+        "name": "Leadership & Administration",
+        "description": "Practice leadership setting clinical standards and managing business operations. May be the same person in smaller practices.",
+        "headcount": "1-3",
+        "reports_to": "Owner / Board of Directors",
+        "roles": [
+          { "title": "Practice Manager / Owner", "count": 1, "level": "Head", "reports_to": "Owner / Board", "description": "Business operations: scheduling, payroll, facilities, payer credentialing, financial performance, and staff management." },
+          { "title": "Director of Clinical Services", "count": 1, "level": "Head", "reports_to": "Owner / Practice Manager", "description": "Clinical supervision, treatment protocols, licensing compliance, associate supervision hours, and quality assurance." }
+        ]
+      },
+      {
+        "name": "Clinical Services — Therapy & Counseling",
+        "description": "Licensed mental health professionals providing individual, group, couples, and family therapy.",
+        "headcount": "2-25",
+        "reports_to": "Director of Clinical Services",
+        "roles": [
+          { "title": "Licensed Clinical Social Worker (LCSW)", "count": "1-10", "level": "IC", "reports_to": "Director of Clinical Services", "description": "Psychotherapy, crisis intervention, case management, and resource coordination. Often the largest clinician group." },
+          { "title": "Licensed Professional Counselor (LPC / LCPC)", "count": "1-10", "level": "IC", "reports_to": "Director of Clinical Services", "description": "Individual and group counseling using evidence-based modalities (CBT, DBT, EMDR, ACT)." },
+          { "title": "Licensed Marriage & Family Therapist (LMFT)", "count": "1-5", "level": "IC", "reports_to": "Director of Clinical Services", "description": "Couples and family therapy; relational and systemic treatment approaches." },
+          { "title": "Psychologist (PhD / PsyD)", "count": "1-5", "level": "IC", "reports_to": "Director of Clinical Services", "description": "Psychological assessment, testing, diagnosis, and specialized psychotherapy. May supervise postdoctoral fellows." },
+          { "title": "Associate / Pre-Licensed Clinician", "count": "1-5", "level": "IC (Supervised)", "reports_to": "Director of Clinical Services", "description": "Provisionally licensed (LCSW-A, LPC-A, MFT-A) providing therapy under clinical supervision toward full licensure." }
+        ]
+      },
+      {
+        "name": "Psychiatry & Medication Management",
+        "description": "Medical providers prescribing and managing psychotropic medications. May also provide brief supportive therapy.",
+        "headcount": "1-6",
+        "reports_to": "Director of Clinical Services",
+        "roles": [
+          { "title": "Psychiatrist (MD/DO)", "count": "1-3", "level": "Provider / IC", "reports_to": "Director of Clinical Services", "description": "Diagnostic evaluation, medication management, psychopharmacology, and medical oversight of psychiatric care." },
+          { "title": "Psychiatric Mental Health Nurse Practitioner (PMHNP)", "count": "1-3", "level": "Provider / IC", "reports_to": "Director of Clinical Services", "description": "Medication management and prescribing for mental health conditions; increasingly the primary psychiatric provider in many practices." }
+        ]
+      },
+      {
+        "name": "Intake & Administrative Support",
+        "description": "Patient onboarding, scheduling, referral management, and administrative coordination.",
+        "headcount": "1-5",
+        "reports_to": "Practice Manager",
+        "roles": [
+          { "title": "Intake Coordinator", "count": "1-2", "level": "IC", "reports_to": "Practice Manager", "description": "Initial patient contact, insurance verification, intake scheduling, matching patients to appropriate clinicians, and handling referrals." },
+          { "title": "Administrative Assistant / Front Desk", "count": "1-3", "level": "IC", "reports_to": "Practice Manager", "description": "Scheduling, phone coverage, patient check-in/check-out, managing no-show calls, and maintaining patient records (HIPAA compliance)." }
+        ]
+      },
+      {
+        "name": "Billing & Credentialing",
+        "description": "Insurance claims, payment posting, patient billing, and provider credentialing with payers. Often a specialized role given complexity of mental health parity laws.",
+        "headcount": "1-4",
+        "reports_to": "Practice Manager",
+        "roles": [
+          { "title": "Medical Biller / Revenue Cycle Specialist", "count": "1-2", "level": "IC", "reports_to": "Practice Manager", "description": "Claims submission (HCFA-1500), payment posting, denial management, patient statements, and ERA/EFT reconciliation." },
+          { "title": "Credentialing Specialist", "count": "0-1", "level": "IC", "reports_to": "Practice Manager", "description": "Provider enrollment with insurance panels, CAQH management, recredentialing, and payer contract maintenance." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Director of Clinical Services and Practice Manager share joint stewardship of the practice — clinical quality and business health are interdependent.",
+      "Therapists and psychiatrists collaborate on shared patients; therapists provide psychotherapy while psychiatrists manage medication, with regular communication about treatment progress.",
+      "Intake Coordinator works closely with all clinicians to manage referral volume and ensure appropriate patient-clinician matching.",
+      "Billing team coordinates with Practice Manager on payer contract performance, denial trends, and revenue cycle optimization.",
+      "Associate/pre-licensed clinicians receive structured supervision from the Director of Clinical Services or senior licensed clinicians per state licensing board requirements.",
+      "All clinicians coordinate with front desk on scheduling preferences, cancellation fill-in, and documentation deadlines.",
+      "Telehealth-enabled clinicians partner with administrative staff to manage technology platforms, HIPAA-compliant video platforms, and out-of-state licensure compliance."
+    ],
+    "org_chart_text": "                         ┌──────────────────────────┐\n                         │      Owner / Board       │\n                         └────────────┬─────────────┘\n                                      │\n              ┌───────────────────────┼───────────────────────┐\n              │                       │                       │\n    ┌─────────┴──────────┐  ┌─────────┴──────────┐\n    │   Practice Manager │  │   Director of      │\n    │                    │  │   Clinical Services │\n    └──┬──────┬──────┬───┘  └──┬──────┬──────┬────┘\n       │      │      │         │      │      │\n  ┌────┴──┐ ┌─┴────┐ ┌┴────┐ ┌┴────┐ ┌┴────┐ ┌┴────────┐\n  │Intake │ │Admin │ │Bill-│ │LCSW │ │LPC  │ │Psychia- │\n  │Coord  │ │Asst  │ │ing  │ │LMFT │ │PsyD │ │trist    │\n  │(1-2)  │ │(1-3) │ │(1-2)│ │(2+) │ │(2+) │ │PMHNP    │\n  └───────┘ └──────┘ └─────┘ └─────┘ └─────┘ └────┬────┘\n                                                   │\n                                            ┌──────┴──────┐\n                                            │  Associate  │\n                                            │  Clinicians │\n                                            │  (Pre-lic.) │\n                                            └─────────────┘"
+  }
+}

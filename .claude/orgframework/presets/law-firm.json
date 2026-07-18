@@ -1,0 +1,107 @@
+{
+  "preset": "law-firm",
+  "version": "1.0",
+  "name": "Law Firm (Private Practice)",
+  "description": "Traditional private practice law firm organized as a partnership. Built on a strict hierarchy: Equity Partners, Non-Equity Partners, Senior Associates, Associates, Paralegals, and Legal Assistants. Practice groups are organized by specialization (corporate, litigation, IP, real estate, etc.) with a Managing Partner and Executive Committee providing firm-wide governance. Compensation and advancement are driven by billable hours, origination, and book of business.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["legal", "law", "professional-services"], "stages": ["startup", "growth", "established", "merger"] },
+  "headcount_range": "10-2000",
+  "org_structure": {
+    "overview": "Law firms in private practice follow a partnership model with a clear hierarchy based on experience, billable hours, and business origination. At the top, equity partners own the firm and share profits. Non-equity partners (income partners) are salaried senior lawyers on track to equity or serving as permanent senior associates. Associates are salaried lawyers working toward partnership, typically in a structured 6-10 year track. Paralegals and legal assistants provide critical support, often specializing in specific practice areas. The firm is governed by a Managing Partner and Executive Committee who handle strategic direction, while practice group leaders manage day-to-day operations within their specialties. Billable hour targets, origination credit, and realization rates drive compensation and advancement.",
+    "departments": [
+      {
+        "name": "Firm Governance & Executive",
+        "description": "Highest leadership level responsible for firm strategy, financial performance, partner compensation, risk management, and firm-wide policy. Sets the vision and manages the business of the firm.",
+        "headcount": "3-15",
+        "reports_to": "Partnership / Board",
+        "roles": [
+          { "title": "Managing Partner / Chair", "count": 1, "level": "Executive", "reports_to": "Partnership", "description": "Senior executive elected by partners to lead the firm; sets strategic direction, manages firm finances, oversees partner compensation, and represents the firm externally." },
+          { "title": "Executive Committee Member", "count": "3-10", "level": "Executive", "reports_to": "Partnership", "description": "Elected partners who serve as the firm's governing board; makes major decisions on strategy, compensation, partner admissions, and firm policy." },
+          { "title": "Chief Operating Officer (COO)", "count": 1, "level": "Executive", "reports_to": "Managing Partner", "description": "Non-lawyer senior executive responsible for firm operations: finance, HR, IT, facilities, marketing, and practice management." },
+          { "title": "Chief Financial Officer (CFO)", "count": 1, "level": "Executive", "reports_to": "Managing Partner / COO", "description": "Manages firm financials: revenue forecasting, billing and collections, partner compensation calculations, budgeting, and financial reporting." },
+          { "title": "General Counsel (Firm)", "count": 1, "level": "Executive", "reports_to": "Managing Partner", "description": "In-house lawyer advising the firm on ethics, conflicts of interest, risk management, professional liability, and regulatory compliance." }
+        ]
+      },
+      {
+        "name": "Partners",
+        "description": "Licensed attorneys who are owners (equity) or senior salaried (non-equity) members of the firm. Partners originate business, lead client relationships, supervise matters, and mentor junior lawyers. Equity partners share firm profits; non-equity partners receive a salary plus bonus.",
+        "headcount": "5-100",
+        "reports_to": "Managing Partner / Executive Committee",
+        "roles": [
+          { "title": "Equity Partner", "count": "5-50", "level": "Partner", "reports_to": "Managing Partner / Executive Committee", "description": "Owner of the firm; shares in profits, originates business, leads client relationships, supervises matters, and participates in firm governance. Highest rank in the firm." },
+          { "title": "Non-Equity / Income Partner", "count": "3-30", "level": "Partner", "reports_to": "Equity Partners / Executive Committee", "description": "Senior salaried attorney with partnership title but no ownership stake; typically on track for equity or serving a permanent senior role. May originate business and lead matters." },
+          { "title": "Of Counsel", "count": "2-10", "level": "Partner", "reports_to": "Practice Group Leader", "description": "Senior attorney with specialized expertise; not on partnership track. Serves in an advisory capacity, often on complex matters, transitions, or specific practice niches." },
+          { "title": "Practice Group Leader", "count": "3-15", "level": "Partner", "reports_to": "Managing Partner", "description": "Partner responsible for a specific practice area (e.g., Corporate, Litigation); manages group strategy, attorney deployment, business development, and professional development within the practice." }
+        ]
+      },
+      {
+        "name": "Associates",
+        "description": "Salaried attorneys working toward partnership. Organized by class year (first-year through senior). Expected to bill a target number of hours annually, develop legal skills, and build client relationships. Evaluated annually for advancement.",
+        "headcount": "5-500",
+        "reports_to": "Partners / Practice Group Leader",
+        "roles": [
+          { "title": "Senior Associate / Supervising Associate", "count": "2-50", "level": "Senior", "reports_to": "Partners", "description": "Most senior associate level; manages complex matters independently, supervises junior associates, has significant client contact, and is actively considered for partnership." },
+          { "title": "Mid-Level Associate", "count": "3-100", "level": "Skilled", "reports_to": "Senior Associate / Partner", "description": "Typically 3-5 years in; handles matters with substantial independence, manages discovery and drafting, and begins developing a practice niche." },
+          { "title": "Junior Associate", "count": "3-100", "level": "Entry", "reports_to": "Mid-Level Associate / Partner", "description": "Typically 1-3 years in; performs legal research, drafts motions and briefs, handles document review, conducts due diligence, and supports senior team members." },
+          { "title": "First-Year Associate", "count": "2-50", "level": "Entry", "reports_to": "Mid-Level Associate / Partner", "description": "Newly barred attorney in first year; participates in training rotations, basic research, drafting, and learns firm practice under close supervision." },
+          { "title": "Summer Associate", "count": "2-30", "level": "Temporary", "reports_to": "Recruiting Committee", "description": "Law student in summer program; works on projects across practice groups, evaluated for post-graduation associate offer. Temporary position." }
+        ]
+      },
+      {
+        "name": "Practice Groups",
+        "description": "Specialized legal practice areas organized as semi-autonomous groups within the firm. Each group has a leader (partner), dedicated associates, and support staff. Common groups include Corporate, Litigation, IP, Real Estate, Tax, Employment, and Trusts & Estates.",
+        "headcount": "5-200",
+        "reports_to": "Firm Leadership",
+        "roles": [
+          { "title": "Corporate Practice Group", "count": "5-100", "level": "Department", "reports_to": "Practice Group Leader", "description": "Handles M&A, venture capital, private equity, securities, corporate governance, and general business counseling. May include sub-specialties." },
+          { "title": "Litigation Practice Group", "count": "5-100", "level": "Department", "reports_to": "Practice Group Leader", "description": "Handles civil litigation, trials, appeals, arbitration, and dispute resolution across practice areas. Includes specialized sub-groups (commercial, product liability, white collar)." },
+          { "title": "Intellectual Property Group", "count": "5-50", "level": "Department", "reports_to": "Practice Group Leader", "description": "Handles patents, trademarks, copyrights, trade secrets, IP litigation, patent prosecution, and IP licensing." },
+          { "title": "Real Estate Group", "count": "3-30", "level": "Department", "reports_to": "Practice Group Leader", "description": "Handles real estate transactions, development, leasing, finance, land use, and zoning matters." },
+          { "title": "Tax & Estates Group", "count": "3-30", "level": "Department", "reports_to": "Practice Group Leader", "description": "Handles tax planning, tax controversy, estate planning, trust administration, and wealth management for high-net-worth individuals and businesses." }
+        ]
+      },
+      {
+        "name": "Paralegals & Legal Support",
+        "description": "Non-lawyer professionals who provide essential legal support under attorney supervision. Paralegals handle document management, due diligence, filings, and case coordination. Often specialized by practice group.",
+        "headcount": "5-100",
+        "reports_to": "Partners / Associates",
+        "roles": [
+          { "title": "Senior Paralegal / Paralegal Manager", "count": "2-10", "level": "Senior", "reports_to": "Partners / Practice Group Leader", "description": "Most experienced paralegals; manage complex document projects, supervise junior paralegals, and handle specialized tasks like trial preparation or due diligence management." },
+          { "title": "Paralegal / Legal Assistant", "count": "5-60", "level": "Skilled", "reports_to": "Senior Paralegal / Attorneys", "description": "Prepares and files legal documents, manages discovery, conducts factual research, organizes case files, drafts correspondence, and assists with trial preparation." },
+          { "title": "Junior Paralegal", "count": "2-20", "level": "Entry", "reports_to": "Paralegal / Senior Paralegal", "description": "Supports senior paralegals with document review, filing, database management, and administrative legal tasks." },
+          { "title": "Docketing / Calendar Clerk", "count": "1-5", "level": "Skilled", "reports_to": "Operations Manager", "description": "Manages court deadlines, filing calendars, scheduling, and docketing for litigation and transactional matters." },
+          { "title": "Document Review Attorney", "count": "2-50", "level": "Temporary", "reports_to": "Associate / Partner", "description": "Contract attorney reviewing documents in discovery for privilege, relevance, and confidentiality. Often project-based." }
+        ]
+      },
+      {
+        "name": "Firm Operations / Business Services",
+        "description": "Non-legal professional staff who run the business operations of the firm: finance, HR, IT, marketing, facilities, and knowledge management.",
+        "headcount": "5-100",
+        "reports_to": "COO / CFO",
+        "roles": [
+          { "title": "Finance Director / Controller", "count": 1, "level": "Senior", "reports_to": "CFO", "description": "Manages billing, collections, accounts payable, trust accounting, and financial reporting. Ensures compliance with bar trust accounting rules." },
+          { "title": "Billing Specialist", "count": "2-10", "level": "Skilled", "reports_to": "Finance Director", "description": "Prepares and sends client invoices, processes billing adjustments, manages e-billing portals, and follows up on accounts receivable." },
+          { "title": "HR Director", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Manages attorney and staff recruitment, benefits, performance management, professional development, diversity initiatives, and employee relations." },
+          { "title": "HR Coordinator / Recruiter", "count": "2-6", "level": "Skilled", "reports_to": "HR Director", "description": "Coordinates recruiting, onboards new hires, manages summer associate programs, and supports performance review processes." },
+          { "title": "IT Director / CIO", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Manages technology infrastructure, cybersecurity, practice management software, document management systems, and IT support." },
+          { "title": "IT Support Specialist", "count": "2-10", "level": "Skilled", "reports_to": "IT Director", "description": "Provides desktop support, manages user accounts, troubleshoots software and hardware issues, and supports remote access." },
+          { "title": "Marketing & Business Development Director", "count": 1, "level": "Senior", "reports_to": "COO / Managing Partner", "description": "Develops firm brand, manages website and social media, coordinates events, supports partner BD efforts, and manages PR and firm communications." },
+          { "title": "Marketing Coordinator", "count": "1-4", "level": "Skilled", "reports_to": "Marketing Director", "description": "Supports marketing initiatives: event coordination, content creation, social media management, and directory submissions." },
+          { "title": "Knowledge Management / Librarian", "count": "1-3", "level": "Skilled", "reports_to": "COO", "description": "Manages legal research resources, precedent libraries, practice guides, and knowledge-sharing platforms." },
+          { "title": "Office Services / Facilities Manager", "count": 1, "level": "Senior", "reports_to": "COO", "description": "Manues office facilities, reception, mail room, supplies, vendor relationships, and office space planning." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Equity Partner and their supervising associates form the core client service team; the Partner originates and oversees, associates execute, and all billable hours flow to the partner's matters.",
+      "Managing Partner and Executive Committee meet regularly to govern the firm; major decisions (compensation, partner admission, strategy) require committee approval.",
+      "Practice Group Leader coordinates with the Managing Partner on group performance, staffing, and strategic direction while managing their own associate team.",
+      "Senior Associate serves as the primary bridge between Partners and Junior Associates, reviewing work product and managing day-to-case execution.",
+      "Paralegals report to attorneys on specific matters but may have a dotted line to a Paralegal Manager for workload and professional development.",
+      "Billing Specialist works closely with assigned partners and associates to ensure timely and accurate client invoicing and collections.",
+      "Marketing Director supports each Practice Group Leader with business development initiatives, pitch materials, and market positioning.",
+      "Recruiting team partners with Practice Group Leaders to identify hiring needs and manage the associate recruiting and summer program pipeline.",
+      "IT and Knowledge Management teams support all attorneys with technology tools, research resources, and practice efficiency systems."
+    ],
+    "org_chart_text": "                    PARTNERSHIP / OWNERS\n                           |\n              EXECUTIVE COMMITTEE / MANAGING PARTNER\n                    /               |          \\\n        PRACTICE GROUP       COO / CFO      GENERAL\n           LEADERS                              COUNSEL\n         /    |     \\           |\n     CORP  LIT    IP       OPERATIONS / BIZ SVCS\n      PG    PG     PG       (Finance, HR, IT, Mktg)\n       |     |      |\n   +---+--+  |      |\n   |      |  |      |\n   EQ P  NEQ P\n   |\n   +---------+-----------+\n   |         |           |\n  SENIOR   MID-LEVEL   JUNIOR\n  ASSOC    ASSOC       ASSOC\n   |\n   +---------+\n   |         |\n  SR PARA   PARA / LEGAL ASST\n\n   SUPPORT: Billing, Docketing, Doc Review\n   OPS: Finance, HR, IT, Marketing, KM, Facilities\n\n   PRACTICE GROUPS (each mirrors the above):\n   Corporate | Litigation | IP | Real Estate | Tax & Estates"
+  }
+}

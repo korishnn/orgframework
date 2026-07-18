@@ -1,0 +1,93 @@
+{
+  "preset": "pr-crisis",
+  "name": "PR / Reputation Crisis",
+  "description": "Reputation management response structure. Activates when negative media attention, public controversy, or social media firestorm threatens organizational reputation. Time-sensitive — response within 1 hour of detection.",
+  "trigger_conditions": [
+    "Negative story published in major media outlet about the organization",
+    "Viral social media backlash (#cancel culture, boycott calls, employee misconduct video)",
+    "Executive misconduct allegation (harassment, fraud, ethics violation)",
+    "Product safety or quality issue receiving public attention",
+    "Customer data incident with public awareness (even before confirmation)",
+    "Offensive or insensitive content published by organization or on its platforms",
+    "Regulatory action or investigation reported in press",
+    "Partner or supplier controversy that reflects on the organization"
+  ],
+  "command_structure": {
+    "crisis_lead": {
+      "role": "CMO",
+      "responsibilities": [
+        "Overall crisis command and strategic direction",
+        "Approve all external statements and positioning",
+        "Decide spokesperson assignments",
+        "Liaise with CEO and board on reputation strategy",
+        "Determine whether to proactively engage press or let story cycle pass",
+        "Authorize paid media, earned media, and owned media responses"
+      ]
+    },
+    "ops_lead": {
+      "role": "Communications Director / Head of Corporate Communications",
+      "responsibilities": [
+        "Media monitoring — track story across all outlets and social platforms",
+        "Statement drafting and rapid iteration with legal review",
+        "Spokesperson preparation including Q&A documents",
+        "Manage press inquiries queue and response tracking",
+        "Coordinate media training for executives before interviews",
+        "Run rapid-response war room"
+      ]
+    },
+    "comms_lead": {
+      "role": "Head of PR / External Communications",
+      "responsibilities": [
+        "Media relationship management — contact editors and journalists directly",
+        "Press release distribution and media list management",
+        "Social media content strategy and posting cadence",
+        "Analyst and influencer outreach for third-party validation",
+        "Internal communications alignment so staff hears from org first, not from press",
+        "Coordinate with investor relations if public company"
+      ]
+    },
+    "legal_lead": {
+      "role": "General Counsel",
+      "responsibilities": [
+        "Statement legal review — liability assessment, admissions, confidentiality",
+        "Advise on legal risk of proactive vs. reactive communications",
+        "Coordinate with external counsel if litigation is anticipated",
+        "Ensure regulatory disclosure obligations are met (SEC, etc.)",
+        "Employee communication legal guardrails (no retaliation, confidentiality)"
+      ]
+    }
+  },
+  "key_actions": [
+    "1. Confirm facts within 1 hour — what happened, when, who is involved, what is known vs. unknown",
+    "2. Draft initial holding statement acknowledging awareness without accepting liability",
+    "3. Never say 'no comment' — use 'We are gathering the facts and will share more as soon as possible'",
+    "4. Place social media hold on all scheduled posts — review and pause all organic and paid campaigns",
+    "5. Activate media monitoring — set up keyword alerts, social listening dashboards",
+    "6. Brief CEO and board within 2 hours with situation assessment and response plan",
+    "7. Prepare FAQ document — anticipate every question from press, customers, employees, investors",
+    "8. Identify and brief designated spokesperson(s) — limit to 1-2 trained individuals",
+    "9. Target external stakeholders: customers (email), partners (direct outreach), investors (call)",
+    "10. Plan for 24-hour news cycle escalation — prepare updated statements for each development",
+    "11. Monitor employee sentiment on internal channels — address misinformation internally first",
+    "12. Post-crisis reputation audit within 30 days — trust recovery metrics, media sentiment analysis"
+  ],
+  "communication_protocol": {
+    "internal": "CEO sends all-staff email within 2 hours of crisis activation — informs before press does. Ops Lead sends daily internal Q&A updates. Department heads cascade to teams. All employee social media guidance issued immediately.",
+    "external": "Single designated spokesperson only. All statements approved by Comms Lead + Legal Lead before release. No off-the-record briefings without explicit approval. Press inquiries logged and responded to within 2 hours. Never speculate — if unknown, say 'we are investigating.'",
+    "cadence": "War room standup every 1 hour during first 8 hours. Every 2 hours for remainder of first 48 hours. Standup daily until story cycle demonstrably declines."
+  },
+  "escalation_timeline": {
+    "t0_1hr": "Detect → Confirm facts → Activate crisis command → Place social media hold → Draft holding statement",
+    "t1_4hr": "Brief CEO/board → Deploy holding statement → Activate media monitoring → Brief spokesperson → Begin stakeholder outreach",
+    "t4_24hr": "Full Q&A prepared → First customer communication sent → Internal town hall if warranted → Respond to incoming press inquiries",
+    "t24_72hr": "Analyze media sentiment → Adjust strategy → Second-wave statements if needed → Analyst and influencer outreach",
+    "t72hr_1wk": "Monitor for story resurgence → Begin reputation repair → Relationship management with key media → Post-crisis assessment"
+  },
+  "key_contacts": [
+    "Crisis PR Agency Retainer: [phone]",
+    "Media Monitoring Tool Admin: [contact]",
+    "Key Journalists/Editors Coverage List: [maintained in Comms directory]",
+    "External Legal Counsel (litigation/defamation): [phone]",
+    "Social Media Platform Emergency Contact: [per platform escalation form]"
+  ]
+}
