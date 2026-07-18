@@ -1,3 +1,4 @@
+This is for Claude Code
 # orgframework
 
 **537 hand-written reference roles — 31 org presets — crisis templates — compensation data — region/industry/stage adaptation**
