@@ -1,0 +1,102 @@
+{
+  "preset": "ai-lab",
+  "version": "1.0",
+  "name": "AI Research Lab",
+  "description": "Organization structure for an AI research and applied ML organization — balancing cutting-edge research with product delivery. Covers the tension between research autonomy and engineering discipline, compute resource allocation, safety infrastructure, and the unique talent dynamics of the AI field. Inspired by structures at DeepMind, OpenAI, Anthropic, and AI-first startups. Designed for 20-500 people.",
+  "applicability": { "regions": ["na", "emea", "apac"], "industries": ["ai-labs", "technology", "research"], "stages": ["startup", "scaleup", "enterprise"] },
+  "headcount_range": "200-5000",
+  "org_structure": {
+    "overview": "AI research labs face a unique organizational challenge: balancing long-term research (which requires autonomy, patience, and academic-style freedom) with product delivery (which requires deadlines, reliability, and engineering discipline). The best labs separate these explicitly: a Research group explores the frontier with minimal constraints, while an Applied group productizes and ships. A shared ML Platform / Infrastructure team serves both. Safety and ethics are not afterthoughts — they are embedded from the start with dedicated teams and governance. Compute is the scarcest resource and must be managed strategically. Culture is shaped by the tension between publication-driven research (academic norms, openness) and product secrecy (competitive advantage, safety considerations).",
+    "departments": [
+      {
+        "name": "Leadership / Founders",
+        "description": "Sets research direction, fundraising, compute budget, and safety philosophy. Often includes the founding researchers who define the lab's approach to AI development.",
+        "headcount": "2-6",
+        "reports_to": "Board of Directors",
+        "roles": [
+          { "title": "CEO / Executive Director", "count": 1, "level": "Executive", "reports_to": "Board", "description": "Sets overall mission, strategy, funding, and public positioning. Often a prominent AI researcher." },
+          { "title": "Chief Scientist / Head of Research", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Leads research agenda, sets scientific direction, embodies research culture. Often the lab's most respected researcher." },
+          { "title": "CTO / Head of Engineering", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads engineering, infrastructure, and product delivery. Bridges research and production." },
+          { "title": "Chief AI Safety Officer", "count": "0-1", "level": "Executive", "reports_to": "CEO / Board", "description": "Oversees safety research, alignment, governance, and responsible deployment. Independent from product pressure." },
+          { "title": "COO / Chief of Staff", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Handles operations, compute procurement, HR, facilities, and cross-functional coordination." }
+        ]
+      },
+      {
+        "name": "Research",
+        "description": "Pushes the frontier of AI capabilities. Organized by research themes rather than product features. Publishes papers, open-sources models and code, attends conferences. Researchers have high autonomy but participate in regular science reviews.",
+        "headcount": "10-100",
+        "reports_to": "Chief Scientist",
+        "roles": [
+          { "title": "Research Director / Head of Research", "count": 1, "level": "Executive", "reports_to": "Chief Scientist", "description": "Sets research priorities, allocates compute resources, hires researchers, manages research culture." },
+          { "title": "Senior Research Scientist", "count": "3-30", "level": "Senior (Research)", "reports_to": "Research Director", "description": "Leads research directions, proposes and runs experiments, publishes papers. PhD + significant publication record. High autonomy." },
+          { "title": "Research Scientist", "count": "5-40", "level": "Professional (Research)", "reports_to": "Research Director", "description": "Conducts research under a senior scientist's direction or independently on well-defined problems. Publishes papers." },
+          { "title": "Research Engineer", "count": "5-30", "level": "Professional (IC)", "reports_to": "Research Director", "description": "Builds and maintains research codebases, runs large-scale experiments, implements novel architectures. The bridge between research ideas and working code." },
+          { "title": "Research Intern", "count": "0-20", "level": "Entry (Temp)", "reports_to": "Research Scientist", "description": "PhD student or postdoc working on a focused research project for 3-6 months. Often leads to full-time offers." }
+        ]
+      },
+      {
+        "name": "AI Safety & Alignment",
+        "description": "Ensures AI systems are aligned with human values, robust against misuse, and developed responsibly. This team operates with independence from product pressure and reports to the safety executive.",
+        "headcount": "5-40",
+        "reports_to": "Chief AI Safety Officer / CEO",
+        "roles": [
+          { "title": "Head of AI Safety / Alignment", "count": 1, "level": "Senior", "reports_to": "Chief AI Safety Officer", "description": "Sets safety research agenda, leads alignment team, coordinates with policy and research teams." },
+          { "title": "Alignment Researcher", "count": "2-15", "level": "Senior/Professional (Research)", "reports_to": "Head of AI Safety", "description": "Researches alignment techniques: RLHF, constitutional AI, interpretability, oversight, value learning." },
+          { "title": "Red Teamer / Safety Evaluator", "count": "2-10", "level": "Professional", "reports_to": "Head of AI Safety", "description": "Probes models for vulnerabilities, jailbreaks, biases, and harmful capabilities. Designs evaluation benchmarks." },
+          { "title": "AI Governance Specialist", "count": "1-5", "level": "Professional", "reports_to": "Head of AI Safety", "description": "Develops governance frameworks, manages regulatory engagement, creates deployment policies and transparency documentation." },
+          { "title": "Interpretability Researcher", "count": "2-10", "level": "Senior/Professional (Research)", "reports_to": "Head of AI Safety", "description": "Studies model internals — mechanistic interpretability, activation patching, feature visualization — to understand and verify model behavior." }
+        ]
+      },
+      {
+        "name": "Applied / Product Engineering",
+        "description": "Turns research breakthroughs into products and APIs. Ships models, builds inference infrastructure, creates developer platforms, and manages production AI systems. Organized around product lines or API surfaces.",
+        "headcount": "10-100",
+        "reports_to": "CTO / Head of Engineering",
+        "roles": [
+          { "title": "VP Engineering / Head of Product", "count": "0-1", "level": "Senior", "reports_to": "CTO", "description": "Leads product engineering organization. Sets technical direction for productizing AI capabilities." },
+          { "title": "Engineering Manager", "count": "2-10", "level": "Senior", "reports_to": "VP Engineering", "description": "Leads engineering teams focused on specific product areas (API platform, chatbot, code generation, etc.)." },
+          { "title": "Applied ML Engineer", "count": "5-40", "level": "Professional", "reports_to": "Engineering Manager", "description": "Fine-tunes models, builds RAG pipelines, optimizes prompts, integrates AI into products. Deploys and monitors production AI features." },
+          { "title": "Backend / API Engineer", "count": "5-30", "level": "Professional", "reports_to": "Engineering Manager", "description": "Builds and scales API infrastructure, handles request routing, manages model serving endpoints, implements rate limiting and auth." },
+          { "title": "Frontend Engineer (Product)", "count": "2-15", "level": "Professional", "reports_to": "Engineering Manager", "description": "Builds user-facing products — chat interfaces, developer dashboards, playgrounds, and AI-powered features." },
+          { "title": "Prompt Engineer / LLM Interaction Designer", "count": "2-10", "level": "Professional", "reports_to": "Engineering Manager", "description": "Designs, tests, and version-controls prompts for production features. Builds prompt chains and evaluation frameworks." }
+        ]
+      },
+      {
+        "name": "ML Platform & Infrastructure",
+        "description": "Builds and operates the foundation that research and product teams depend on: compute clusters, training infrastructure, data pipelines, experiment tracking, and model serving. A platform product used by everyone else in the org.",
+        "headcount": "10-50",
+        "reports_to": "CTO / Chief Scientist",
+        "roles": [
+          { "title": "Head of ML Platform", "count": 1, "level": "Senior", "reports_to": "CTO", "description": "Leads the platform team. Treats internal researchers and engineers as customers. Sets platform roadmap and SLAs." },
+          { "title": "ML Infrastructure Engineer", "count": "3-15", "level": "Professional", "reports_to": "Head of ML Platform", "description": "Manages GPU/TPU clusters, training orchestration (Kubernetes + GPUs), distributed training frameworks, job scheduling." },
+          { "title": "Data Engineer", "count": "3-10", "level": "Professional", "reports_to": "Head of ML Platform", "description": "Builds and maintains data pipelines, manages training datasets, implements data quality and governance." },
+          { "title": "ML Platform Software Engineer", "count": "3-15", "level": "Professional", "reports_to": "Head of ML Platform", "description": "Builds internal tools: experiment tracking (MLflow, Weights & Biases), model registry, dataset management, training dashboards." },
+          { "title": "Inference Platform Engineer", "count": "2-8", "level": "Professional", "reports_to": "Head of ML Platform", "description": "Optimizes model serving infrastructure (vLLM, Triton, TGI, TensorRT). Manages GPU inference clusters, batching, quantization." }
+        ]
+      },
+      {
+        "name": "Policy & Communications",
+        "description": "Navigates the complex public policy landscape around AI. Engages with regulators, manages media relations, publishes safety research, and communicates the lab's mission and approach to the world.",
+        "headcount": "3-15",
+        "reports_to": "CEO",
+        "roles": [
+          { "title": "Head of Policy / Government Affairs", "count": 1, "level": "Senior", "reports_to": "CEO", "description": "Leads engagement with policymakers, regulators, and standards bodies. Shapes AI policy landscape." },
+          { "title": "Policy Analyst / Advisor", "count": "1-5", "level": "Professional", "reports_to": "Head of Policy", "description": "Analyzes AI legislation, prepares policy positions, coordinates with industry groups and civil society." },
+          { "title": "Head of Communications", "count": 1, "level": "Senior", "reports_to": "CEO", "description": "Manages media relations, public statements, crisis communications, and thought leadership." },
+          { "title": "Technical Writer / Publications Manager", "count": "1-3", "level": "Professional", "reports_to": "Head of Communications", "description": "Manages paper publications, blog posts, technical reports, and transparency documentation." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Research proposes new capabilities; ML Platform provides the infrastructure to scale them; Applied Product turns them into products. This flow must be bidirectional — product feedback informs research priorities.",
+      "AI Safety evaluates every model before deployment. They have veto power over releases. This creates inherent tension with product deadlines.",
+      "Compute budget is allocated quarterly by a compute committee (Chief Scientist + CTO + Head of ML Platform). Research gets X%, Product gets Y%, Safety gets Z%.",
+      "Researchers are encouraged to publish but must undergo safety review before releasing papers or models. The publication vs. safety balance is a recurring tension.",
+      "Product teams consume models as APIs from the inference platform. They don't deploy models directly — they integrate through a standardized model serving layer.",
+      "Policy & Communications team coordinates with Safety for all public communications about capabilities, risks, and deployments.",
+      "There is an internal research-to-product pipeline: research develops a capability → safety evaluates → product builds around it → ML Platform serves it at scale.",
+      "Culture is shaped by the scientist-engineer spectrum. Researchers need freedom; product engineers need deadlines. The tension is managed through shared values and mutual respect."
+    ],
+    "org_chart_text": "CEO / Executive Director\n├── Chief Scientist / Head of Research\n│     ├── Research Director\n│     │     ├── Senior Research Scientists\n│     │     ├── Research Scientists\n│     │     ├── Research Engineers\n│     │     └── Research Interns\n│     └── Head of ML Platform\n│           ├── ML Infrastructure Engineers\n│           ├── Data Engineers\n│           ├── ML Platform Engineers\n│           └── Inference Platform Engineers\n│\n├── CTO / Head of Engineering\n│     └── VP Engineering\n│           ├── Engineering Manager (API Platform)\n│           │     ├── Applied ML Engineers\n│           │     ├── Backend/API Engineers\n│           │     └── Prompt Engineers\n│           ├── Engineering Manager (Products)\n│           │     ├── Applied ML Engineers\n│           │     ├── Full-Stack Engineers\n│           │     └── Frontend Engineers\n│           └── Engineering Manager (Research Engineering)\n│                 └── Research Engineers\n│\n├── Chief AI Safety Officer\n│     ├── Head of AI Safety / Alignment\n│     │     ├── Alignment Researchers\n│     │     └── Interpretability Researchers\n│     ├── Red Team / Safety Evaluation\n│     └── AI Governance Specialist\n│\n├── Head of Policy & Communications\n│     ├── Policy Analysts\n│     ├── Communications Team\n│     └── Technical Publications\n│\n└── COO / Chief of Staff\n      ├── People / HR\n      ├── Finance\n      └── Legal\n\nNote: Safety has independent reporting line — not through product or research leadership.\nCompute allocation is a strategic decision made jointly by Chief Scientist, CTO, and Safety lead."
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "ceo": {
+    "urgency": "critical",
+    "coverage": "Board appoints interim CEO. COO or Chair steps in.",
+    "timeframe": "1-3 months to replace",
+    "risk": "Strategic paralysis. Board confidence. Investor relations."
+  },
+  "cto": {
+    "urgency": "critical",
+    "coverage": "VP Engineering or senior architect can cover technical decisions.",
+    "timeframe": "2-4 months to replace",
+    "risk": "Architecture stagnation. Engineer retention risk. Technical debt."
+  },
+  "cfo": {
+    "urgency": "high",
+    "coverage": "FP&A Director or Controller can cover reporting and banking.",
+    "timeframe": "2-3 months to replace",
+    "risk": "Audit delays. Investor confidence. Board reporting."
+  },
+  "coo": {
+    "urgency": "medium",
+    "coverage": "Department heads absorb operational duties. Chief of Staff can coordinate.",
+    "timeframe": "2-4 months to replace",
+    "risk": "Operational drift. Cross-functional alignment."
+  },
+  "cmo": {
+    "urgency": "medium",
+    "coverage": "Marketing Director can maintain campaigns. Brand Manager can cover.",
+    "timeframe": "2-3 months to replace",
+    "risk": "Brand consistency. Pipeline generation. Campaign momentum."
+  },
+  "vp": {
+    "urgency": "high",
+    "coverage": "Senior director or next-level manager can cover strategy.",
+    "timeframe": "1-3 months",
+    "risk": "Strategic gaps. Team morale. Cross-team coordination."
+  },
+  "director": {
+    "urgency": "high",
+    "coverage": "Senior manager or team lead can absorb reporting and operational duties.",
+    "timeframe": "1-3 months",
+    "risk": "Operational slowdown. Reporting gaps. Decision bottlenecks."
+  },
+  "manager": {
+    "urgency": "medium",
+    "coverage": "Senior ICs can distribute duties. Peer managers can cover standups.",
+    "timeframe": "2-6 weeks",
+    "risk": "Team velocity. Career development pauses. Coverage gaps."
+  },
+  "head of engineering": {
+    "urgency": "critical",
+    "coverage": "Senior engineers share tech lead duties. CTO covers gaps.",
+    "timeframe": "1-3 months",
+    "risk": "Sprint velocity drops 30-50%. Architecture inconsistency."
+  },
+  "engineer": {
+    "urgency": "medium",
+    "coverage": "Work is redistributed among remaining engineers. Focus on critical path.",
+    "timeframe": "2-4 weeks",
+    "risk": "Velocity drop. Knowledge silo gaps. Feature delays."
+  },
+  "architect": {
+    "urgency": "high",
+    "coverage": "Senior engineers can maintain architectural decisions temporarily.",
+    "timeframe": "1-3 months",
+    "risk": "Architecture drift. Technical debt accumulation."
+  },
+  "devops": {
+    "urgency": "high",
+    "coverage": "Platform team can cover CI/CD and infrastructure. SRE may need to rebalance.",
+    "timeframe": "1-4 weeks",
+    "risk": "Deployment delays. Infrastructure instability."
+  },
+  "data": {
+    "urgency": "medium",
+    "coverage": "Analytics and reporting may slow. Critical data pipelines kept running.",
+    "timeframe": "2-6 weeks",
+    "risk": "Reporting delays. Data quality. Decision latency."
+  },
+  "head of sales": {
+    "urgency": "critical",
+    "coverage": "Senior AEs cover deals. Revenue operations maintains pipeline.",
+    "timeframe": "1-2 months",
+    "risk": "Revenue cliff after 60 days. Team morale. Key accounts."
+  },
+  "sales": {
+    "urgency": "medium",
+    "coverage": "Territories redistributed. Manager carries larger quota temporarily.",
+    "timeframe": "2-6 weeks",
+    "risk": "Pipeline coverage. Customer relationships. Quota attainment."
+  },
+  "account": {
+    "urgency": "medium",
+    "coverage": "Cross-functional team absorbs account management. Priority on top accounts.",
+    "timeframe": "2-6 weeks",
+    "risk": "Account churn. Upsell delays. Customer satisfaction."
+  },
+  "success": {
+    "urgency": "medium",
+    "coverage": "Support and account teams split coverage. Health checks may slip.",
+    "timeframe": "2-6 weeks",
+    "risk": "Renewal risk. NPS decline. Escalation volume increase."
+  },
+  "head of product": {
+    "urgency": "high",
+    "coverage": "Senior PMs maintain roadmap. CPO/CEO covers strategy.",
+    "timeframe": "1-3 months",
+    "risk": "Roadmap drift. Engineering misalignment. Feature delays."
+  },
+  "product": {
+    "urgency": "medium",
+    "coverage": "Peer PMs absorb backlog grooming. Engineering lead may cover prioritization.",
+    "timeframe": "2-6 weeks",
+    "risk": "Feature consistency. Stakeholder alignment. Delivery timelines."
+  },
+  "marketing": {
+    "urgency": "medium",
+    "coverage": "Campaigns continue. Output may slow. Agency partners can supplement.",
+    "timeframe": "2-6 weeks",
+    "risk": "Brand consistency. Campaign momentum. Pipeline generation."
+  },
+  "content": {
+    "urgency": "low",
+    "coverage": "Editorial calendar may slow. Freelancers can fill gap for critical pieces.",
+    "timeframe": "1-4 weeks",
+    "risk": "Content velocity. SEO momentum. Thought leadership gaps."
+  },
+  "doctor": {
+    "urgency": "critical",
+    "coverage": "Locum tenens or per-diem coverage. Other providers absorb patient load.",
+    "timeframe": "1-4 weeks (locum)",
+    "risk": "Patient safety. Revenue loss. Staff burnout."
+  },
+  "nurse": {
+    "urgency": "critical",
+    "coverage": "Agency/travel nurses. Overtime for existing staff. Ratios may be compromised.",
+    "timeframe": "2-8 weeks",
+    "risk": "Patient ratios. Staff burnout. Quality of care."
+  },
+  "physician": {
+    "urgency": "critical",
+    "coverage": "Locum tenens. Hospitalist group covers. Nearby practices may help.",
+    "timeframe": "1-6 weeks",
+    "risk": "Patient access. Revenue per physician. Panel coverage."
+  },
+  "clinician": {
+    "urgency": "high",
+    "coverage": "Mid-level providers (NP/PA) can expand scope temporarily.",
+    "timeframe": "2-6 weeks",
+    "risk": "Care continuity. Patient wait times. Staff satisfaction."
+  },
+  "chef": {
+    "urgency": "high",
+    "coverage": "Sous chef steps up. May need to simplify menu.",
+    "timeframe": "2-4 weeks",
+    "risk": "Menu consistency. Kitchen morale. Food quality."
+  },
+  "server": {
+    "urgency": "medium",
+    "coverage": "Other servers split sections. Host can assist with running food.",
+    "timeframe": "1-2 weeks",
+    "risk": "Service speed. Table turns. Tip pool impact."
+  },
+  "bartender": {
+    "urgency": "medium",
+    "coverage": "Other bartenders cover shifts. Service bar may take priority over craft.",
+    "timeframe": "1-2 weeks",
+    "risk": "Bar revenue. Customer experience. Tip pool impact."
+  },
+  "teacher": {
+    "urgency": "high",
+    "coverage": "Substitute teacher. Other teachers absorb during prep periods.",
+    "timeframe": "1-4 weeks",
+    "risk": "Student learning continuity. Classroom management."
+  },
+  "professor": {
+    "urgency": "high",
+    "coverage": "Department chair arranges coverage. Adjunct or colleague fills in.",
+    "timeframe": "2-8 weeks",
+    "risk": "Student progress. Research continuity. Department reputation."
+  },
+  "electrician": {
+    "urgency": "high",
+    "coverage": "Other electricians redistribute work. Overtime or temp agency.",
+    "timeframe": "1-4 weeks",
+    "risk": "Project delays. Code compliance. Safety supervision."
+  },
+  "plumber": {
+    "urgency": "high",
+    "coverage": "Other plumbers absorb urgent calls. Non-critical work rescheduled.",
+    "timeframe": "1-4 weeks",
+    "risk": "Service response times. Customer satisfaction. Revenue."
+  },
+  "hr": {
+    "urgency": "medium",
+    "coverage": "Payroll and compliance outsourced. Recruitment may pause.",
+    "timeframe": "2-6 weeks",
+    "risk": "Hiring freeze. Compliance gaps. Employee relations."
+  },
+  "recruit": {
+    "urgency": "medium",
+    "coverage": "Hiring managers take over screening. Agency partners used.",
+    "timeframe": "2-6 weeks",
+    "risk": "Time-to-hire extends. Pipeline dries up. Offer acceptance drops."
+  },
+  "finance": {
+    "urgency": "medium",
+    "coverage": "AP/AR can continue. Reporting may be delayed. Controller checks.",
+    "timeframe": "2-6 weeks",
+    "risk": "Month-end close delay. Budget variance. Audit readiness."
+  },
+  "accountant": {
+    "urgency": "medium",
+    "coverage": "Senior accountant covers close. Lower-priority reconciliations deferred.",
+    "timeframe": "2-6 weeks",
+    "risk": "Close delay. Reconciliation gaps. Audit findings."
+  },
+  "legal": {
+    "urgency": "high",
+    "coverage": "Outside counsel covers urgent matters. Internal work deferred.",
+    "timeframe": "2-8 weeks",
+    "risk": "Contract delays. Compliance gaps. Litigation risk."
+  },
+  "compliance": {
+    "urgency": "high",
+    "coverage": "External compliance consultant. Automated monitoring continues.",
+    "timeframe": "4-12 weeks",
+    "risk": "Regulatory findings. Audit delays. Reporting gaps."
+  },
+  "data scientist": {
+    "urgency": "high",
+    "coverage": "Data engineers maintain pipelines. Analytics team covers reporting.",
+    "timeframe": "2-6 weeks",
+    "risk": "Model drift. Reporting delays. Decision support gaps."
+  },
+  "ml engineer": {
+    "urgency": "high",
+    "coverage": "MLOps team maintains deployed models. Research may pause.",
+    "timeframe": "2-8 weeks",
+    "risk": "Model stagnation. Pipeline breaks. Competitive gap."
+  },
+  "scientist": {
+    "urgency": "high",
+    "coverage": "Cross-functional team absorbs analysis. Critical projects prioritized.",
+    "timeframe": "2-6 weeks",
+    "risk": "Research delays. Grant continuity. Publication pipeline."
+  },
+  "security": {
+    "urgency": "critical",
+    "coverage": "MSSP or external SOC covers monitoring. Incident response retainer.",
+    "timeframe": "2-8 weeks",
+    "risk": "Breach risk. Compliance findings. Audit failures."
+  },
+  "soc": {
+    "urgency": "critical",
+    "coverage": "MSSP provides 24/7 coverage. Incident response retainer activated.",
+    "timeframe": "2-8 weeks",
+    "risk": "Detection gaps. Response delays. Compliance violations."
+  },
+  "design": {
+    "urgency": "medium",
+    "coverage": "Freelance or agency partners. Existing team triages critical work.",
+    "timeframe": "2-6 weeks",
+    "risk": "Product velocity. Brand consistency. UX debt."
+  },
+  "ux": {
+    "urgency": "medium",
+    "coverage": "Product manager can cover wireframes. Agency supplement.",
+    "timeframe": "2-6 weeks",
+    "risk": "User research gaps. Design debt. Accessibility risk."
+  },
+  "scrum": {
+    "urgency": "medium",
+    "coverage": "Senior ICs self-organize. Engineering manager facilitates ceremonies.",
+    "timeframe": "1-3 weeks",
+    "risk": "Team velocity. Ceremony drift. Impediment resolution."
+  },
+  "agile": {
+    "urgency": "medium",
+    "coverage": "Existing Scrum Masters cover. Coaching may pause.",
+    "timeframe": "2-6 weeks",
+    "risk": "Process degradation. Team morale. Transformation pause."
+  },
+  "support": {
+    "urgency": "medium",
+    "coverage": "Tier-1 support covers L1. Engineering team handles escalations.",
+    "timeframe": "2-4 weeks",
+    "risk": "Response times. Customer dissatisfaction. Escalation volume."
+  },
+  "sre": {
+    "urgency": "high",
+    "coverage": "Platform engineers cover on-call. DevOps team handles incidents.",
+    "timeframe": "1-4 weeks",
+    "risk": "Incident response gaps. Reliability degradation. Pager fatigue."
+  },
+  "platform": {
+    "urgency": "high",
+    "coverage": "Senior engineers maintain core infrastructure. DevOps rebalances.",
+    "timeframe": "2-6 weeks",
+    "risk": "Platform stability. Developer productivity. Migration delays."
+  },
+  "growth": {
+    "urgency": "medium",
+    "coverage": "Marketing team maintains campaigns. CRO may slow.",
+    "timeframe": "2-6 weeks",
+    "risk": "Growth velocity. Experiment pipeline. Conversion rates."
+  },
+  "community": {
+    "urgency": "low",
+    "coverage": "Community moderators handle day-to-day. Strategic initiatives pause.",
+    "timeframe": "2-6 weeks",
+    "risk": "Community engagement. Brand advocacy. Support deflection."
+  },
+  "chief of staff": {
+    "urgency": "high",
+    "coverage": "EA and department heads absorb coordination. Strategic planning slows.",
+    "timeframe": "2-6 weeks",
+    "risk": "Executive bandwidth. Cross-functional alignment. OKR progress."
+  },
+  "ea": {
+    "urgency": "low",
+    "coverage": "Temporary EA or exec team shares calendar and travel management.",
+    "timeframe": "1-3 weeks",
+    "risk": "Executive scheduling. Meeting coordination. Travel logistics."
+  },
+  "investor": {
+    "urgency": "high",
+    "coverage": "CFO or CEO handles investor communications. Existing materials reused.",
+    "timeframe": "2-6 weeks",
+    "risk": "Investor confidence. Fundraising delays. Board reporting."
+  },
+  "writer": {
+    "urgency": "low",
+    "coverage": "Engineers contribute docs directly. Freelance technical writer.",
+    "timeframe": "2-6 weeks",
+    "risk": "Documentation gaps. Developer onboarding. API reference lag."
+  },
+  "technical writer": {
+    "urgency": "low",
+    "coverage": "SMEs fill critical doc gaps. Freelance writer for priority projects.",
+    "timeframe": "2-6 weeks",
+    "risk": "User docs quality. API reference. Compliance documentation."
+  },
+  "counsel": {
+    "urgency": "high",
+    "coverage": "Outside counsel handles urgent matters. Paralegal maintains filings.",
+    "timeframe": "2-8 weeks",
+    "risk": "Contract risk. Litigation exposure. Regulatory filings."
+  },
+  "paralegal": {
+    "urgency": "medium",
+    "coverage": "Outside counsel absorbs filing work. Legal ops maintains calendar.",
+    "timeframe": "2-6 weeks",
+    "risk": "Filing delays. Document management. Discovery readiness."
+  },
+  "board": {
+    "urgency": "high",
+    "coverage": "Chair or lead independent director convenes board. CEO covers operations.",
+    "timeframe": "4-12 weeks",
+    "risk": "Governance gaps. Strategic guidance. Fiduciary oversight."
+  },
+  "property": {
+    "urgency": "medium",
+    "coverage": "Property management firm handles daily ops. Owner covers strategic.",
+    "timeframe": "2-6 weeks",
+    "risk": "Tenant satisfaction. Maintenance delays. Revenue impact."
+  },
+  "agent": {
+    "urgency": "medium",
+    "coverage": "Other agents split territory. Broker covers critical transactions.",
+    "timeframe": "2-6 weeks",
+    "risk": "Pipeline coverage. Client relationships. Revenue impact."
+  },
+  "pharmacist": {
+    "urgency": "high",
+    "coverage": "Techs fill routine prescriptions. Neighboring pharmacy may assist.",
+    "timeframe": "1-4 weeks",
+    "risk": "Medication safety. Patient wait times. Regulatory compliance."
+  },
+  "radiologist": {
+    "urgency": "critical",
+    "coverage": "Teleradiology service covers reads. AI-assisted prioritization.",
+    "timeframe": "1-4 weeks",
+    "risk": "Diagnostic delays. Reading backlog. Patient outcomes."
+  },
+  "lab": {
+    "urgency": "medium",
+    "coverage": "Automated analyzers continue. Other techs split the workload.",
+    "timeframe": "2-6 weeks",
+    "risk": "Result turnaround. Test menu limitations. Quality control."
+  },
+  "pilot": {
+    "urgency": "critical",
+    "coverage": "Reserve pilot called up. Operations may reduce schedule.",
+    "timeframe": "1-8 weeks",
+    "risk": "Flight cancellations. Regulatory compliance. Safety coverage."
+  }
+}

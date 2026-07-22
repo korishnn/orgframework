@@ -97,7 +97,7 @@
 - **Product Management (prd-manager, prd-strategy):** Customer pain point advocacy in product decisions. Supportability requirements for new features
 
 ## Regional Nuances
-- **NA:** Highest concentration of escalation engineering roles. Compensation $100K-$180K+. Strong engineering culture with code-level debugging expectations. Tier 3 often includes former SDEs. Clear career path into engineering. Deep specialization in specific technology domains.
+- **NA:** Highest concentration of escalation engineering roles. Compensation $1000K-$1800K+. Strong engineering culture with code-level debugging expectations. Tier 3 often includes former SDEs. Clear career path into engineering. Deep specialization in specific technology domains.
 - **EMEA:** Growing Tier 3 presence particularly in London, Berlin, and Amsterdam. Strong open-source culture influences debugging approaches. Infrastructure and platform specialization is common. GDPR-aware debugging approaches. Compensation lower than NA but strong benefits.
 - **APAC:** India is a major escalation engineering hub with strong talent pool. Time zone advantages for follow-the-sun escalation coverage. High technical skill levels with strong engineering backgrounds. Singapore and Australia have smaller but high-quality Tier 3 talent pools.
 - **LATAM:** Emerging Tier 3 capability as technical support engineering moves up the value chain. Strong talent in Brazil and Argentina. Nearshore advantage for NA customer time zones. Growing but limited senior talent pool. Compensation lower than NA but competitive locally.

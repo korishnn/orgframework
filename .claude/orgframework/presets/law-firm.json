@@ -4,7 +4,7 @@
   "name": "Law Firm (Private Practice)",
   "description": "Traditional private practice law firm organized as a partnership. Built on a strict hierarchy: Equity Partners, Non-Equity Partners, Senior Associates, Associates, Paralegals, and Legal Assistants. Practice groups are organized by specialization (corporate, litigation, IP, real estate, etc.) with a Managing Partner and Executive Committee providing firm-wide governance. Compensation and advancement are driven by billable hours, origination, and book of business.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["legal", "law", "professional-services"], "stages": ["startup", "growth", "established", "merger"] },
-  "headcount_range": "10-2000",
+  "headcount_range": "100-20000",
   "org_structure": {
     "overview": "Law firms in private practice follow a partnership model with a clear hierarchy based on experience, billable hours, and business origination. At the top, equity partners own the firm and share profits. Non-equity partners (income partners) are salaried senior lawyers on track to equity or serving as permanent senior associates. Associates are salaried lawyers working toward partnership, typically in a structured 6-10 year track. Paralegals and legal assistants provide critical support, often specializing in specific practice areas. The firm is governed by a Managing Partner and Executive Committee who handle strategic direction, while practice group leaders manage day-to-day operations within their specialties. Billable hour targets, origination credit, and realization rates drive compensation and advancement.",
     "departments": [

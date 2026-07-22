@@ -3,8 +3,23 @@
   "version": "1.0",
   "name": "Government Agency / Department",
   "description": "Organization structure for a government agency, department, or ministry at the federal, state, or local level. Covers political leadership (Secretary, Deputy Secretaries), career civil service hierarchy (Bureau Directors, Office Directors, Section Chiefs, Individual Contributors), independent oversight (Inspector General), and administrative support functions. Designed for agencies with strong hierarchical structure, detailed procedures, legislative budget authority, and public accountability requirements. 50-5,000 personnel.",
-  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["government", "public-sector"], "stages": ["operational", "mature"] },
-  "headcount_range": "50-5,000",
+  "applicability": {
+    "regions": [
+      "na",
+      "emea",
+      "apac",
+      "latam"
+    ],
+    "industries": [
+      "government",
+      "public-sector"
+    ],
+    "stages": [
+      "operational",
+      "mature"
+    ]
+  },
+  "headcount_range": "500-50,000",
   "org_structure": {
     "overview": "Government agencies operate under a dual structure of political leadership and career civil service. Political appointees (Secretary, Deputy Secretaries, Assistant Secretaries) set policy direction and are accountable to the legislature/executive. Career civil servants provide institutional knowledge, continuity, and impartial execution of programs. The organization is strongly hierarchical with formal delegations of authority, detailed standard operating procedures, and a strict chain of command. Budget authority originates from legislative appropriation and flows through the agency head to program managers. An independent Inspector General provides oversight and investigates waste, fraud, and abuse. Public accountability, transparency, and legal compliance are paramount.",
     "departments": [
@@ -14,12 +29,48 @@
         "headcount": "5-15",
         "reports_to": "President / Governor / Mayor / Board",
         "roles": [
-          { "title": "Secretary / Commissioner / Director", "count": 1, "level": "Executive (Political)", "reports_to": "President / Governor / Mayor", "description": "Agency head appointed by the executive and confirmed by the legislature. Sets policy, manages the agency, and represents it publicly." },
-          { "title": "Deputy Secretary / Deputy Commissioner", "count": "1-2", "level": "Executive (Political/Career)", "reports_to": "Secretary", "description": "Second-in-command. Oversees day-to-day operations and acts as Secretary in their absence." },
-          { "title": "Chief of Staff", "count": 1, "level": "Senior (Political/Career)", "reports_to": "Secretary", "description": "Manages the Secretary's schedule, priorities, and internal coordination across the agency." },
-          { "title": "Senior Policy Advisor", "count": "2-5", "level": "Senior (Political/Career)", "reports_to": "Secretary", "description": "Provides expert policy analysis and advice on specific issue areas within the agency's mission." },
-          { "title": "Director of Communications / Press Secretary", "count": 1, "level": "Senior (Political/Career)", "reports_to": "Secretary", "description": "Manages media relations, press releases, public statements, and crisis communications." },
-          { "title": "Director of Legislative Affairs", "count": 1, "level": "Senior (Political/Career)", "reports_to": "Secretary", "description": "Liaises with legislature on the agency's budget, legislative priorities, and oversight hearings." }
+          {
+            "title": "Secretary / Commissioner / Director",
+            "count": 1,
+            "level": "Executive (Political)",
+            "reports_to": "President / Governor / Mayor",
+            "description": "Agency head appointed by the executive and confirmed by the legislature. Sets policy, manages the agency, and represents it publicly."
+          },
+          {
+            "title": "Deputy Secretary / Deputy Commissioner",
+            "count": "1-2",
+            "level": "Executive (Political/Career)",
+            "reports_to": "Secretary",
+            "description": "Second-in-command. Oversees day-to-day operations and acts as Secretary in their absence."
+          },
+          {
+            "title": "Chief of Staff",
+            "count": 1,
+            "level": "Senior (Political/Career)",
+            "reports_to": "Secretary",
+            "description": "Manages the Secretary's schedule, priorities, and internal coordination across the agency."
+          },
+          {
+            "title": "Senior Policy Advisor",
+            "count": "2-5",
+            "level": "Senior (Political/Career)",
+            "reports_to": "Secretary",
+            "description": "Provides expert policy analysis and advice on specific issue areas within the agency's mission."
+          },
+          {
+            "title": "Director of Communications / Press Secretary",
+            "count": 1,
+            "level": "Senior (Political/Career)",
+            "reports_to": "Secretary",
+            "description": "Manages media relations, press releases, public statements, and crisis communications."
+          },
+          {
+            "title": "Director of Legislative Affairs",
+            "count": 1,
+            "level": "Senior (Political/Career)",
+            "reports_to": "Secretary",
+            "description": "Liaises with legislature on the agency's budget, legislative priorities, and oversight hearings."
+          }
         ]
       },
       {
@@ -28,11 +79,41 @@
         "headcount": "5-50",
         "reports_to": "Secretary / Legislature",
         "roles": [
-          { "title": "Inspector General", "count": 1, "level": "Executive (Appointed)", "reports_to": "Secretary / Legislature", "description": "Independent oversight head. Directs audits, investigations, and reviews of agency programs and operations." },
-          { "title": "Deputy Inspector General", "count": 1, "level": "Senior", "reports_to": "Inspector General", "description": "Manages day-to-day OIG operations and oversees audit and investigation divisions." },
-          { "title": "Senior Auditor", "count": "2-15", "level": "Professional", "reports_to": "Deputy Inspector General", "description": "Conducts performance and financial audits of agency programs and contractors." },
-          { "title": "Senior Investigator", "count": "2-15", "level": "Professional", "reports_to": "Deputy Inspector General", "description": "Investigates allegations of fraud, waste, abuse, and misconduct within the agency." },
-          { "title": "Counsel to the Inspector General", "count": "1-2", "level": "Professional", "reports_to": "Inspector General", "description": "Provides legal advice on investigations, subpoenas, and OIG operations." }
+          {
+            "title": "Inspector General",
+            "count": 1,
+            "level": "Executive (Appointed)",
+            "reports_to": "Secretary / Legislature",
+            "description": "Independent oversight head. Directs audits, investigations, and reviews of agency programs and operations."
+          },
+          {
+            "title": "Deputy Inspector General",
+            "count": 1,
+            "level": "Senior",
+            "reports_to": "Inspector General",
+            "description": "Manages day-to-day OIG operations and oversees audit and investigation divisions."
+          },
+          {
+            "title": "Senior Auditor",
+            "count": "2-15",
+            "level": "Professional",
+            "reports_to": "Deputy Inspector General",
+            "description": "Conducts performance and financial audits of agency programs and contractors."
+          },
+          {
+            "title": "Senior Investigator",
+            "count": "2-15",
+            "level": "Professional",
+            "reports_to": "Deputy Inspector General",
+            "description": "Investigates allegations of fraud, waste, abuse, and misconduct within the agency."
+          },
+          {
+            "title": "Counsel to the Inspector General",
+            "count": "1-2",
+            "level": "Professional",
+            "reports_to": "Inspector General",
+            "description": "Provides legal advice on investigations, subpoenas, and OIG operations."
+          }
         ]
       },
       {
@@ -41,11 +122,41 @@
         "headcount": "10-100",
         "reports_to": "Secretary",
         "roles": [
-          { "title": "General Counsel", "count": 1, "level": "Senior (Appointed/Career)", "reports_to": "Secretary", "description": "Chief legal officer of the agency. Oversees all legal work, regulations, and litigation." },
-          { "title": "Deputy General Counsel", "count": "1-3", "level": "Senior", "reports_to": "General Counsel", "description": "Oversees specific legal practice areas (litigation, ethics, regulations, enforcement)." },
-          { "title": "Attorney / Legal Advisor", "count": "5-50", "level": "Professional", "reports_to": "Deputy General Counsel", "description": "Provides legal advice, drafts regulations, handles FOIA requests, and manages cases." },
-          { "title": "Paralegal", "count": "2-20", "level": "Support", "reports_to": "Supervising Attorney", "description": "Supports attorneys with case management, document review, and legal research." },
-          { "title": "FOIA Officer", "count": "1-5", "level": "Professional", "reports_to": "Deputy General Counsel", "description": "Processes Freedom of Information Act requests and manages agency transparency compliance." }
+          {
+            "title": "General Counsel",
+            "count": 1,
+            "level": "Senior (Appointed/Career)",
+            "reports_to": "Secretary",
+            "description": "Chief legal officer of the agency. Oversees all legal work, regulations, and litigation."
+          },
+          {
+            "title": "Deputy General Counsel",
+            "count": "1-3",
+            "level": "Senior",
+            "reports_to": "General Counsel",
+            "description": "Oversees specific legal practice areas (litigation, ethics, regulations, enforcement)."
+          },
+          {
+            "title": "Attorney / Legal Advisor",
+            "count": "5-50",
+            "level": "Professional",
+            "reports_to": "Deputy General Counsel",
+            "description": "Provides legal advice, drafts regulations, handles FOIA requests, and manages cases."
+          },
+          {
+            "title": "Paralegal",
+            "count": "2-20",
+            "level": "Support",
+            "reports_to": "Supervising Attorney",
+            "description": "Supports attorneys with case management, document review, and legal research."
+          },
+          {
+            "title": "FOIA Officer",
+            "count": "1-5",
+            "level": "Professional",
+            "reports_to": "Deputy General Counsel",
+            "description": "Processes Freedom of Information Act requests and manages agency transparency compliance."
+          }
         ]
       },
       {
@@ -54,15 +165,69 @@
         "headcount": "20-2,000",
         "reports_to": "Deputy Secretary",
         "roles": [
-          { "title": "Bureau / Division Director", "count": "3-15", "level": "Senior (Career/Political)", "reports_to": "Deputy Secretary", "description": "Leads a major program bureau. Manages policy development, program implementation, and bureau budget." },
-          { "title": "Deputy Bureau Director", "count": "1-2", "level": "Senior (Career)", "reports_to": "Bureau Director", "description": "Assists the bureau director with operations, budget, and staff management." },
-          { "title": "Office Director", "count": "5-30", "level": "Senior (Career)", "reports_to": "Bureau Director", "description": "Leads a specific office within a bureau (e.g., Office of Policy Analysis, Office of Field Operations)." },
-          { "title": "Section Chief / Branch Chief", "count": "10-80", "level": "Professional (Career)", "reports_to": "Office Director", "description": "Manages a section of 3-15 individual contributors within an office." },
-          { "title": "Senior Policy Analyst", "count": "10-200", "level": "Professional (Career)", "reports_to": "Section Chief", "description": "Conducts policy analysis, develops regulations, drafts reports, and supports program implementation." },
-          { "title": "Program Manager", "count": "5-50", "level": "Professional (Career)", "reports_to": "Office Director / Section Chief", "description": "Manages specific grant, contract, or regulatory programs; oversees compliance and reporting." },
-          { "title": "Field / Regional Director", "count": "3-15", "level": "Senior (Career)", "reports_to": "Bureau Director", "description": "Leads a regional or field office executing agency programs at the local level." },
-          { "title": "Field Staff / Program Specialist", "count": "10-500", "level": "Professional (Career)", "reports_to": "Field Director / Section Chief", "description": "Delivers services, conducts inspections, processes applications, or performs outreach in the field." },
-          { "title": "Data Analyst", "count": "5-50", "level": "Professional (Career)", "reports_to": "Section Chief", "description": "Analyzes program data, produces reports, and supports evidence-based policy decisions." }
+          {
+            "title": "Bureau / Division Director",
+            "count": "3-15",
+            "level": "Senior (Career/Political)",
+            "reports_to": "Deputy Secretary",
+            "description": "Leads a major program bureau. Manages policy development, program implementation, and bureau budget."
+          },
+          {
+            "title": "Deputy Bureau Director",
+            "count": "1-2",
+            "level": "Senior (Career)",
+            "reports_to": "Bureau Director",
+            "description": "Assists the bureau director with operations, budget, and staff management."
+          },
+          {
+            "title": "Office Director",
+            "count": "5-30",
+            "level": "Senior (Career)",
+            "reports_to": "Bureau Director",
+            "description": "Leads a specific office within a bureau (e.g., Office of Policy Analysis, Office of Field Operations)."
+          },
+          {
+            "title": "Section Chief / Branch Chief",
+            "count": "10-80",
+            "level": "Professional (Career)",
+            "reports_to": "Office Director",
+            "description": "Manages a section of 3-15 individual contributors within an office."
+          },
+          {
+            "title": "Senior Policy Analyst",
+            "count": "10-200",
+            "level": "Professional (Career)",
+            "reports_to": "Section Chief",
+            "description": "Conducts policy analysis, develops regulations, drafts reports, and supports program implementation."
+          },
+          {
+            "title": "Program Manager",
+            "count": "5-50",
+            "level": "Professional (Career)",
+            "reports_to": "Office Director / Section Chief",
+            "description": "Manages specific grant, contract, or regulatory programs; oversees compliance and reporting."
+          },
+          {
+            "title": "Field / Regional Director",
+            "count": "3-15",
+            "level": "Senior (Career)",
+            "reports_to": "Bureau Director",
+            "description": "Leads a regional or field office executing agency programs at the local level."
+          },
+          {
+            "title": "Field Staff / Program Specialist",
+            "count": "10-500",
+            "level": "Professional (Career)",
+            "reports_to": "Field Director / Section Chief",
+            "description": "Delivers services, conducts inspections, processes applications, or performs outreach in the field."
+          },
+          {
+            "title": "Data Analyst",
+            "count": "5-50",
+            "level": "Professional (Career)",
+            "reports_to": "Section Chief",
+            "description": "Analyzes program data, produces reports, and supports evidence-based policy decisions."
+          }
         ]
       },
       {
@@ -71,16 +236,76 @@
         "headcount": "20-200",
         "reports_to": "Deputy Secretary / Chief Administrative Officer",
         "roles": [
-          { "title": "Chief Administrative Officer / Director of Administration", "count": 1, "level": "Senior (Career)", "reports_to": "Deputy Secretary", "description": "Oversees all administrative functions: HR, budget, IT, facilities, and procurement." },
-          { "title": "Chief Financial Officer / Budget Director", "count": 1, "level": "Senior (Career)", "reports_to": "CAO / Deputy Secretary", "description": "Manages the agency budget formulation, execution, accounting, and financial reporting." },
-          { "title": "Budget Analyst", "count": "3-20", "level": "Professional (Career)", "reports_to": "CFO / Budget Director", "description": "Develops budget justifications, monitors expenditures, and prepares financial reports." },
-          { "title": "Director of Human Resources", "count": 1, "level": "Senior (Career)", "reports_to": "CAO", "description": "Manages hiring, classification, pay, benefits, labor relations, and employee development." },
-          { "title": "HR Specialist", "count": "3-20", "level": "Professional (Career)", "reports_to": "Director of HR", "description": "Processes personnel actions, recruitment, benefits administration, and employee records." },
-          { "title": "Chief Information Officer (CIO)", "count": 1, "level": "Senior (Career)", "reports_to": "CAO", "description": "Leads IT strategy, cybersecurity, enterprise systems, and technology infrastructure." },
-          { "title": "IT Specialist", "count": "5-40", "level": "Professional (Career)", "reports_to": "CIO", "description": "Provides IT support, network administration, systems management, and cybersecurity operations." },
-          { "title": "Director of Procurement / Contracts", "count": 1, "level": "Senior (Career)", "reports_to": "CAO", "description": "Manages procurement, contracting, grants administration, and vendor management." },
-          { "title": "Contract Specialist", "count": "3-20", "level": "Professional (Career)", "reports_to": "Director of Procurement", "description": "Develops and administers contracts and grants in compliance with procurement regulations." },
-          { "title": "Director of Facilities & Security", "count": 1, "level": "Senior (Career)", "reports_to": "CAO", "description": "Manages office space, physical security, building operations, and continuity of operations planning." }
+          {
+            "title": "Chief Administrative Officer / Director of Administration",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "Deputy Secretary",
+            "description": "Oversees all administrative functions: HR, budget, IT, facilities, and procurement."
+          },
+          {
+            "title": "Chief Financial Officer / Budget Director",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "CAO / Deputy Secretary",
+            "description": "Manages the agency budget formulation, execution, accounting, and financial reporting."
+          },
+          {
+            "title": "Budget Analyst",
+            "count": "3-20",
+            "level": "Professional (Career)",
+            "reports_to": "CFO / Budget Director",
+            "description": "Develops budget justifications, monitors expenditures, and prepares financial reports."
+          },
+          {
+            "title": "Director of Human Resources",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "CAO",
+            "description": "Manages hiring, classification, pay, benefits, labor relations, and employee development."
+          },
+          {
+            "title": "HR Specialist",
+            "count": "3-20",
+            "level": "Professional (Career)",
+            "reports_to": "Director of HR",
+            "description": "Processes personnel actions, recruitment, benefits administration, and employee records."
+          },
+          {
+            "title": "Chief Information Officer (CIO)",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "CAO",
+            "description": "Leads IT strategy, cybersecurity, enterprise systems, and technology infrastructure."
+          },
+          {
+            "title": "IT Specialist",
+            "count": "5-40",
+            "level": "Professional (Career)",
+            "reports_to": "CIO",
+            "description": "Provides IT support, network administration, systems management, and cybersecurity operations."
+          },
+          {
+            "title": "Director of Procurement / Contracts",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "CAO",
+            "description": "Manages procurement, contracting, grants administration, and vendor management."
+          },
+          {
+            "title": "Contract Specialist",
+            "count": "3-20",
+            "level": "Professional (Career)",
+            "reports_to": "Director of Procurement",
+            "description": "Develops and administers contracts and grants in compliance with procurement regulations."
+          },
+          {
+            "title": "Director of Facilities & Security",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "CAO",
+            "description": "Manages office space, physical security, building operations, and continuity of operations planning."
+          }
         ]
       },
       {
@@ -89,9 +314,27 @@
         "headcount": "3-15",
         "reports_to": "Secretary",
         "roles": [
-          { "title": "Director of Civil Rights / EEO", "count": 1, "level": "Senior (Career)", "reports_to": "Secretary", "description": "Leads the agency's civil rights program, EEO compliance, and discrimination complaint processing." },
-          { "title": "Civil Rights Investigator", "count": "1-5", "level": "Professional (Career)", "reports_to": "Director of Civil Rights", "description": "Investigates discrimination complaints in employment and program delivery." },
-          { "title": "EEO / Diversity Specialist", "count": "1-5", "level": "Professional (Career)", "reports_to": "Director of Civil Rights", "description": "Conducts EEO training, analyzes workforce diversity data, and supports inclusion initiatives." }
+          {
+            "title": "Director of Civil Rights / EEO",
+            "count": 1,
+            "level": "Senior (Career)",
+            "reports_to": "Secretary",
+            "description": "Leads the agency's civil rights program, EEO compliance, and discrimination complaint processing."
+          },
+          {
+            "title": "Civil Rights Investigator",
+            "count": "1-5",
+            "level": "Professional (Career)",
+            "reports_to": "Director of Civil Rights",
+            "description": "Investigates discrimination complaints in employment and program delivery."
+          },
+          {
+            "title": "EEO / Diversity Specialist",
+            "count": "1-5",
+            "level": "Professional (Career)",
+            "reports_to": "Director of Civil Rights",
+            "description": "Conducts EEO training, analyzes workforce diversity data, and supports inclusion initiatives."
+          }
         ]
       }
     ],
@@ -108,6 +351,6 @@
       "Procurement supports all offices in contracting; all contracts must follow Federal/State Acquisition Regulations.",
       "Civil Rights / EEO provides independent oversight of the agency's compliance with equal employment opportunity and non-discrimination requirements."
     ],
-    "org_chart_text": "Secretary / Commissioner\n├── Chief of Staff\n├── Policy Advisors\n├── Director of Communications\n├── Director of Legislative Affairs\n│\n├── Inspector General (Independent)\n│     ├── Deputy Inspector General\n│     ├── Senior Auditors\n│     ├── Senior Investigators\n│     └── Counsel to the IG\n│\n├── General Counsel\n│     ├── Deputy General Counsels\n│     ├── Attorneys / Legal Advisors\n│     ├── Paralegals\n│     └── FOIA Officers\n│\n├── Director of Civil Rights / EEO\n│     ├── Civil Rights Investigators\n│     └── EEO Specialists\n│\n├── Deputy Secretary (Operations / Programs)\n│     ├── Bureau / Division Directors\n│     │     ├── Deputy Bureau Directors\n│     │     ├── Office Directors\n│     │     │     ├── Section Chiefs\n│     │     │     │     ├── Senior Policy Analysts\n│     │     │     │     ├── Program Managers\n│     │     │     │     ├── Data Analysts\n│     │     │     │     └── Program Specialists\n│     │     │     └── (additional sections)\n│     │     └── Regional / Field Directors\n│     │           └── Field Staff\n│     ├── (Additional Bureaus)\n│     └── ...\n│\n└── Deputy Secretary (Administration) / CAO\n      ├── CFO / Budget Director\n      │     └── Budget Analysts\n      ├── Director of Human Resources\n      │     └── HR Specialists\n      ├── Chief Information Officer\n      │     └── IT Specialists\n      ├── Director of Procurement\n      │     └── Contract Specialists\n      └── Director of Facilities & Security"
+    "org_chart_text": "Secretary / Commissioner\n\u251c\u2500\u2500 Chief of Staff\n\u251c\u2500\u2500 Policy Advisors\n\u251c\u2500\u2500 Director of Communications\n\u251c\u2500\u2500 Director of Legislative Affairs\n\u2502\n\u251c\u2500\u2500 Inspector General (Independent)\n\u2502     \u251c\u2500\u2500 Deputy Inspector General\n\u2502     \u251c\u2500\u2500 Senior Auditors\n\u2502     \u251c\u2500\u2500 Senior Investigators\n\u2502     \u2514\u2500\u2500 Counsel to the IG\n\u2502\n\u251c\u2500\u2500 General Counsel\n\u2502     \u251c\u2500\u2500 Deputy General Counsels\n\u2502     \u251c\u2500\u2500 Attorneys / Legal Advisors\n\u2502     \u251c\u2500\u2500 Paralegals\n\u2502     \u2514\u2500\u2500 FOIA Officers\n\u2502\n\u251c\u2500\u2500 Director of Civil Rights / EEO\n\u2502     \u251c\u2500\u2500 Civil Rights Investigators\n\u2502     \u2514\u2500\u2500 EEO Specialists\n\u2502\n\u251c\u2500\u2500 Deputy Secretary (Operations / Programs)\n\u2502     \u251c\u2500\u2500 Bureau / Division Directors\n\u2502     \u2502     \u251c\u2500\u2500 Deputy Bureau Directors\n\u2502     \u2502     \u251c\u2500\u2500 Office Directors\n\u2502     \u2502     \u2502     \u251c\u2500\u2500 Section Chiefs\n\u2502     \u2502     \u2502     \u2502     \u251c\u2500\u2500 Senior Policy Analysts\n\u2502     \u2502     \u2502     \u2502     \u251c\u2500\u2500 Program Managers\n\u2502     \u2502     \u2502     \u2502     \u251c\u2500\u2500 Data Analysts\n\u2502     \u2502     \u2502     \u2502     \u2514\u2500\u2500 Program Specialists\n\u2502     \u2502     \u2502     \u2514\u2500\u2500 (additional sections)\n\u2502     \u2502     \u2514\u2500\u2500 Regional / Field Directors\n\u2502     \u2502           \u2514\u2500\u2500 Field Staff\n\u2502     \u251c\u2500\u2500 (Additional Bureaus)\n\u2502     \u2514\u2500\u2500 ...\n\u2502\n\u2514\u2500\u2500 Deputy Secretary (Administration) / CAO\n      \u251c\u2500\u2500 CFO / Budget Director\n      \u2502     \u2514\u2500\u2500 Budget Analysts\n      \u251c\u2500\u2500 Director of Human Resources\n      \u2502     \u2514\u2500\u2500 HR Specialists\n      \u251c\u2500\u2500 Chief Information Officer\n      \u2502     \u2514\u2500\u2500 IT Specialists\n      \u251c\u2500\u2500 Director of Procurement\n      \u2502     \u2514\u2500\u2500 Contract Specialists\n      \u2514\u2500\u2500 Director of Facilities & Security"
   }
 }

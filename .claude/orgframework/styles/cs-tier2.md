@@ -96,7 +96,7 @@
 - **Data Engineering (da-engineer):** Coordinates on data pipeline issues affecting customer reporting and analytics features
 
 ## Regional Nuances
-- **NA:** Specialized Tier 2 roles with clear career tracks. Compensation $55K-$90K. Strong emphasis on process and documentation. Higher technical bar with API and integration troubleshooting expected. 24/7 operations common in enterprise support organizations.
+- **NA:** Specialized Tier 2 roles with clear career tracks. Compensation $550K-$900K. Strong emphasis on process and documentation. Higher technical bar with API and integration troubleshooting expected. 24/7 operations common in enterprise support organizations.
 - **EMEA:** Multi-language Tier 2 support is common — resolving escalations in English plus local languages. Strong product knowledge expected across broader feature sets. GDPR expertise integrated into technical troubleshooting. Lower compensation than NA but strong benefits.
 - **APAC:** India is a major Tier 2 hub with strong technical talent at competitive costs. Japan and Korea require deep localized product knowledge. Time zone advantages for follow-the-sun support models. High demand for experienced Tier 2 talent. Technical skill levels are strong.
 - **LATAM:** Growing Tier 2 capability as nearshore technical support for NA companies. Bilingual technical skills are in high demand. Lower compensation than NA but competitive within region. Strong talent pool in Brazil, Argentina, and Mexico.

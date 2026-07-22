@@ -4,7 +4,7 @@
   "name": "Remote-First / Distributed Company",
   "description": "Organization structure for a remote-first or fully distributed company with no physical headquarters. Emphasizes async-first communication, flat(er) hierarchy, functional teams with high autonomy, heavy documentation, and time zone-based coordination. Inspired by GitLab-style handbook culture. Designed for companies of 10-500 people who treat remote as a competitive advantage rather than a necessity. Covers the full functional organization: engineering, product, design, go-to-market, people ops, finance, and leadership.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["technology", "saas", "software", "consulting"], "stages": ["startup", "growth", "operational"] },
-  "headcount_range": "10-500",
+  "headcount_range": "100-5000",
   "org_structure": {
     "overview": "Remote-first companies are built around asynchronous communication, written documentation, and high-trust autonomy rather than physical presence, meetings, or command-and-control management. The org is intentionally flatter than traditional companies, with team leads instead of hierarchical managers. Every process, decision, and policy is documented in a company handbook (like GitLab's). Functional teams (engineering, product, design, marketing, sales, people ops, finance) operate with clear ownership and minimal dependencies. Time zone pods or cohorts ensure global coverage for customer-facing roles while allowing deep focus time for builders. Company culture is intentionally cultivated through written values, virtual events, and transparent internal communications. Results are measured by output and impact, not hours worked or time zones.",
     "departments": [

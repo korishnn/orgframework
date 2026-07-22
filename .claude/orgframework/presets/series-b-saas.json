@@ -8,7 +8,7 @@
     "industries": ["saas"],
     "stages": ["scaleup"]
   },
-  "headcount_range": "30-80",
+  "headcount_range": "300-800",
   "org_structure": {
     "overview": "At Series B the company organizes into full departments led by VP-level leaders. The philosophy is 'scalable accountability' — each department owns its metrics and operating plan. Engineering scales into multiple teams with dedicated EMs. Design becomes a distinct function. Customer Success formalizes as a revenue-critical department separate from Support. The CEO adds a COO or Chief of Staff to manage operations, allowing the CEO to focus on strategy, board relations, and fundraising. Processes for planning, reviews, and cross-functional coordination become institutionalized.",
     "departments": [

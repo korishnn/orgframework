@@ -4,7 +4,7 @@
   "name": "Dental Practice / DSO (Dental Service Organization)",
   "description": "General or specialty dental practice providing preventive, restorative, cosmetic, and surgical dental care. Suitable for solo private practices, multi-dentist group practices, and DSO (Dental Service Organization) managed practices with centralized administrative support.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "3-50",
+  "headcount_range": "30-500",
   "org_structure": {
     "overview": "The dental practice is organized around the clinical team (dentists, hygienists, assistants) providing patient care, supported by front office and business operations. In a DSO model, the practice manager reports to a regional manager while the lead dentist reports to a clinical director — creating a matrix. The model supports general dentistry and/or specialties (orthodontics, endodontics, periodontics, oral surgery, pediatric dentistry). Lab work may be in-house or sent to a commercial dental lab. Revenue cycle focuses on dental insurance (procedure-code based with annual maximums) alongside fee-for-service patients.",
     "departments": [

@@ -8,7 +8,7 @@
     "industries": ["saas", "fintech", "healthcare", "manufacturing", "ecommerce"],
     "stages": ["enterprise"]
   },
-  "headcount_range": "500+",
+  "headcount_range": "5000+",
   "org_structure": {
     "overview": "The enterprise org is designed for stability, control, and predictable execution at massive scale. The philosophy is 'delegated accountability with strong governance' — authority is pushed down through well-defined layers while centralized controls ensure compliance, risk management, and strategic alignment. Matrix management is common: employees may report to a functional manager while being 'dotted-lined' to a business unit or project. Shared services (HR, Finance, Legal, IT, Facilities) operate as centralized centers of excellence. The org is designed to survive any single person leaving. Public company requirements — quarterly earnings, SOX 404, board reporting, investor relations, ESG — add additional structural requirements beyond operational needs.",
     "departments": [

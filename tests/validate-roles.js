@@ -2,18 +2,17 @@
 // validate-roles.js — Verify all role files exist and match the reference list
 
 import { existsSync, readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { getDataPath } from './lib/utils.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
-const INDEX_PATH = join(ROOT, '.claude', 'orgframework', 'index.json');
-const STYLES_DIR = join(ROOT, '.claude', 'orgframework', 'styles');
+const INDEX_PATH = getDataPath('index.json');
+const STYLES_DIR = getDataPath('styles');
 
 const index = JSON.parse(readFileSync(INDEX_PATH, 'utf-8'));
 const referenceRoles = new Set(index.reference_roles || []);
+const deprecatedRoles = new Set(index.deprecated_roles || []);
 
-console.log(`Index references ${referenceRoles.size} roles.\n`);
+console.log(`Index references ${referenceRoles.size} roles (${deprecatedRoles.size} deprecated).\n`);
 
 // Check every reference role has a file
 let missing = 0;
@@ -38,7 +37,7 @@ for (const role of referenceRoles) {
 const actualFiles = readdirSync(STYLES_DIR).filter(f => f.endsWith('.md'));
 const extraFiles = actualFiles
   .map(f => f.replace(/\.md$/, ''))
-  .filter(name => !referenceRoles.has(name));
+  .filter(name => !referenceRoles.has(name) && !deprecatedRoles.has(name));
 
 if (missing > 0) {
   console.log(`\n✗ ${missing} role files MISSING!`);

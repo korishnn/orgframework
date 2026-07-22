@@ -1,6 +1,7 @@
 {
-  "version": "3.0.0",
+  "version": "5.0.0",
   "philosophy": "537 hand-crafted reference roles spanning multiple domains of human work. Each role includes responsibilities, competencies, career progression, cross-functional relationships, and regional/industry variations. These are reference material — the AI constructs custom org structures for each request, using these roles as inspiration rather than prescription.",
+  "philosophy_v3": "LLM Council + organizational intelligence. The skill simulates a multi-perspective council that deliberates on every org design. Divergence is a feature — alternatives are always presented. Truth emerges from productive disagreement.",
   "regions": {
     "default": "na",
     "options": [
@@ -96,7 +97,10 @@
       "fintech",
       "healthcare",
       "manufacturing",
-      "ecommerce"
+      "ecommerce",
+      "web3",
+      "climate",
+      "ai-labs"
     ],
     "detection": {
       "saas": [
@@ -154,6 +158,48 @@
         "consumer goods",
         "wholesale",
         "shopify"
+      ],
+      "web3": [
+        "web3",
+        "dao",
+        "defi",
+        "decentralized",
+        "protocol",
+        "token",
+        "nft",
+        "blockchain",
+        "crypto",
+        "wallet",
+        "layer 2",
+        "ethereum",
+        "solana",
+        "smart contract"
+      ],
+      "climate": [
+        "climate",
+        "carbon",
+        "sustainability",
+        "esg",
+        "clean energy",
+        "renewable",
+        "net zero",
+        "green tech",
+        "environmental",
+        "carbon offset",
+        "circular economy"
+      ],
+      "ai-labs": [
+        "ai lab",
+        "ai research",
+        "llm",
+        "foundation model",
+        "machine learning",
+        "deep learning",
+        "ai safety",
+        "transformer",
+        "artificial general intelligence",
+        "ml research",
+        "ai startup"
       ]
     }
   },
@@ -200,6 +246,79 @@
       ]
     }
   },
+  "council_file": "council/100-members.json",
+  "core_members": [
+    {
+      "id": "strategist",
+      "name": "The Strategist",
+      "signature_question": "Does this structure serve our 3-year strategy?",
+      "focus": "Long-term vision, market fit, competitive positioning, strategic optionality"
+    },
+    {
+      "id": "operator",
+      "name": "The Operator",
+      "signature_question": "Who actually does the work and where does it get stuck?",
+      "focus": "Execution, bottlenecks, spans of control, operational flow"
+    },
+    {
+      "id": "financial-controller",
+      "name": "The Financial Controller",
+      "signature_question": "What does this cost and is it sustainable?",
+      "focus": "Budget, burn rate, comp sanity, unit economics, ROI"
+    },
+    {
+      "id": "culture-keeper",
+      "name": "The Culture Keeper",
+      "signature_question": "What culture does this structure produce?",
+      "focus": "Values, psychological safety, rituals, inclusion, belonging"
+    },
+    {
+      "id": "pessimist",
+      "name": "The Pessimist",
+      "signature_question": "What breaks first and who do we lose?",
+      "focus": "Failure modes, single points of failure, risk, second-order effects"
+    },
+    {
+      "id": "regulatory-hawk",
+      "name": "The Regulatory Hawk",
+      "signature_question": "Which regulator knocks on our door first?",
+      "focus": "Compliance, law, jurisdiction, regulatory risk"
+    },
+    {
+      "id": "talent-scout",
+      "name": "The Talent Scout",
+      "signature_question": "Can we actually hire these people, here, now?",
+      "focus": "Hiring feasibility, market fit, talent availability, comp competitiveness"
+    },
+    {
+      "id": "systems-architect",
+      "name": "The Systems Architect",
+      "signature_question": "What system architecture does this org produce?",
+      "focus": "Conway's Law, team topology, coupling, cohesion, platform design"
+    }
+  ],
+  "simulation_scenarios": [
+    "hypergrowth",
+    "recession",
+    "key_departure",
+    "acquisition",
+    "breach",
+    "ipo",
+    "remote_shift",
+    "ai_augmentation"
+  ],
+  "deprecated_roles": [
+    "sport-nutritionist-sports",
+    "sci-data-scientist-rd",
+    "govt-budget-analyst-govt",
+    "govt-paramedic-govt",
+    "hlth-nurse-practitioner",
+    "hlth-marriage-counselor",
+    "sec-ethical-hacker",
+    "edu-flight-instructor",
+    "cre-qa-tester",
+    "govt-tax-examiner"
+  ],
   "reference_roles": [
     "acad-anthropologist",
     "acad-archaeologist",
@@ -302,7 +421,6 @@
     "cre-production-designer",
     "cre-proofreader",
     "cre-publisher",
-    "cre-qa-tester",
     "cre-screenwriter",
     "cre-set-designer",
     "cre-sound-designer",
@@ -341,7 +459,6 @@
     "edu-dean",
     "edu-driving-instructor",
     "edu-esl-teacher",
-    "edu-flight-instructor",
     "edu-guidance-counselor",
     "edu-instructional-designer",
     "edu-librarian",
@@ -410,7 +527,6 @@
     "fun-funeral-director",
     "fun-grief-counselor",
     "fun-mortician",
-    "govt-budget-analyst-govt",
     "govt-city-planner",
     "govt-civil-servant",
     "govt-court-clerk",
@@ -420,12 +536,10 @@
     "govt-firefighter",
     "govt-foreign-service",
     "govt-inspector",
-    "govt-paramedic-govt",
     "govt-police-officer",
     "govt-policy-analyst",
     "govt-postal-worker",
     "govt-public-administrator",
-    "govt-tax-examiner",
     "govt-urban-planner",
     "hlth-acupuncturist",
     "hlth-animal-caretaker",
@@ -440,14 +554,12 @@
     "hlth-health-informaticist",
     "hlth-hospital-administrator",
     "hlth-lab-technician",
-    "hlth-marriage-counselor",
     "hlth-medical-biller",
     "hlth-medical-records",
     "hlth-medical-transcriber",
     "hlth-midwife",
     "hlth-naturopath",
     "hlth-nurse",
-    "hlth-nurse-practitioner",
     "hlth-nutritionist",
     "hlth-occupational-therapist",
     "hlth-ophthalmologist",
@@ -621,7 +733,6 @@
     "sci-biologist",
     "sci-chemist",
     "sci-clinical-researcher",
-    "sci-data-scientist-rd",
     "sci-environmental-scientist",
     "sci-food-scientist",
     "sci-forensic-scientist",
@@ -640,7 +751,6 @@
     "sec-bodyguard",
     "sec-ciso",
     "sec-cybersecurity-analyst",
-    "sec-ethical-hacker",
     "sec-forensics",
     "sec-grc",
     "sec-guard",
@@ -668,7 +778,6 @@
     "sport-fitness-trainer",
     "sport-general-manager",
     "sport-nutritionist",
-    "sport-nutritionist-sports",
     "sport-pilates-instructor",
     "sport-referee",
     "sport-scout",
@@ -737,10 +846,28 @@
     "tran-train-conductor",
     "tran-train-engineer",
     "tran-truck-driver",
-    "tran-warehouse-manager"
+    "tran-warehouse-manager",
+    "tech-ai-ops",
+    "tech-prompt-engineer",
+    "tech-dx-engineer",
+    "exec-ai-ethics",
+    "hr-remote-culture",
+    "hr-neurodiversity",
+    "sust-climate-head",
+    "web3-community",
+    "web3-tokenomics",
+    "prd-growth-engineer",
+    "sec-data-privacy",
+    "ops-fractional-cxo",
+    "mkt-internal-creator",
+    "dsg-human-ai",
+    "eng-ai-safety",
+    "da-vector",
+    "fin-crypto-treasury",
+    "lgl-ai-governance"
   ],
   "org_construction_guidance": {
-    "how_it_works": "For each request, construct an org structure from scratch across ANY domain. You have three tools: (1) 35+ presets for common scenarios (load and adapt), (2) 11,277 reference roles for depth (read the .md files), (3) definitions with 100+ words per role (open definitions/definitions.json when you need deep context). Use what fits, invent what doesn't exist.",
+    "how_it_works": "For each request, construct an org structure from scratch across ANY domain. You have three tools: (1) 360+ presets for common scenarios (load and adapt), (2) 5550+ reference roles for depth (read the .md files), (3) the LLM Council system that stress-tests every design through 80 perspectives. Use what fits, invent what doesn't exist.",
     "what_to_consider": [
       "What the user explicitly asks for — their language signals the structure",
       "Region — shapes hierarchy, legal context, reporting norms, communication style",
@@ -748,15 +875,19 @@
       "Stage — startup flat vs enterprise deep hierarchy vs project-based crews",
       "Scale — 3 people vs 300 vs 30,000 changes everything",
       "Domain-specific norms — hospitals, film crews, military units have unique structures",
-      "Available presets — check presets/ directory for a template close to the user's need"
+      "Available presets — check presets/ directory for a template close to the user's need",
+      "Council input — if not @fast, run the council deliberation before finalizing structure"
     ],
     "what_you_can_create": [
-      "Any role in any sector — across 11,277 reference roles or invent new ones",
+      "Any role in any sector — across 5550+ reference roles or invent new ones",
       "Any team structure — hierarchies, guilds, squads, pods, crews, shifts, departments, clinics, studios, labs",
       "New roles not in the reference list — guided by the definitions file for depth",
       "Cross-domain structures — hospital with tech teams, film with marketing",
       "Temporary structures — project crews, event teams, crisis response",
-      "Compensation models from any sector — salary, hourly, tips, commission, equity, per-diem"
+      "Compensation models from any sector — salary, hourly, tips, commission, equity, per-diem",
+      "Council-deliberated structures — stress-tested by 8 perspectives before delivery",
+      "Divergent alternatives — 3 philosophically different orgs for the same brief using @alternatives",
+      "Future-state orgs — structures that don't exist yet, designed for AI-augmented workforces"
     ]
   }
 }

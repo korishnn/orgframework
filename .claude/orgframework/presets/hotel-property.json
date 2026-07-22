@@ -4,7 +4,7 @@
   "name": "Hotel / Resort Property",
   "description": "Full-service hotel or resort organizational structure covering front office, housekeeping, food and beverage, engineering, sales and events, finance, and human resources. Led by a General Manager with department heads for each operational area. Scales from boutique properties to large convention resorts with 50-500+ staff.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["hospitality", "hotel", "resort", "lodging", "tourism"], "stages": ["pre-opening", "operations", "renovation"] },
-  "headcount_range": "50-500",
+  "headcount_range": "500-5000",
   "org_structure": {
     "overview": "Hotel properties operate as 24/7 hospitality operations with multiple interdependent departments. The General Manager is the senior on-property leader, often reporting to a regional VP or ownership group. Department heads manage Rooms (front office, housekeeping, concierge, reservations), Food & Beverage (restaurants, bars, banquets, room service, catering), Engineering & Maintenance, Sales & Marketing, Finance & Accounting, and Human Resources. Large resorts may add Recreation, Spa, Golf, and Kids Club departments. The structure is designed to deliver consistent guest experiences through standardized operating procedures across all shifts, 365 days a year.",
     "departments": [

@@ -4,7 +4,7 @@
   "name": "Architecture / Design Firm",
   "description": "Architecture and design firm organized around the studio model with a structured licensure track. Built on a hierarchy from Principals/Partners through Project Architects, Architectural Designers, and Interns/Drafters. Studios specialize by sector (residential, commercial, institutional, healthcare, etc.) with shared services in marketing, finance, and operations. Professionals progress through a defined track from intern through licensed architect to principal.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["architecture", "design", "engineering", "construction", "interior-design"], "stages": ["startup", "growth", "established", "merger"] },
-  "headcount_range": "5-500",
+  "headcount_range": "50-5000",
   "org_structure": {
     "overview": "Architecture firms typically follow a studio model where teams specialize in building types or sectors. The organization is led by Principals or Partners who own the firm and set strategic direction. Project Architects lead the design and documentation of individual projects supported by Architectural Designers and Interns. The profession has a structured licensure track: graduates complete the Architectural Experience Program (AXP), pass the Architect Registration Examination (ARE), and become licensed architects. Many firms offer multiple disciplines under one roof including architecture, interior design, landscape architecture, urban planning, and sometimes structural engineering. Studios operate semi-autonomously within the firm, sharing administrative services and cross-staffing as needed.",
     "departments": [

@@ -10,7 +10,10 @@ CLAUDE_DIR="$TARGET/.claude"
 SKILL_DIR="$CLAUDE_DIR/skills"
 ORG_DIR="$CLAUDE_DIR/orgframework"
 
-echo "Installing orgframework into $TARGET..."
+# Read version from package.json
+VERSION=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$(dirname "$0")/../package.json','utf-8')).version)")
+
+echo "Installing orgframework v$VERSION into $TARGET..."
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
@@ -49,7 +52,7 @@ if [ -f "$SCRIPT_DIR/.claude/skills/orgframework/SKILL.md" ]; then
 fi
 
 # Copy index and additions
-cp "$SCRIPT_DIR/.claude/orgframework/index.json" "$ORG_DIR/index.json" 2>/dev/null && echo "  ✓ Index: index.json (v4.1)" || true
+cp "$SCRIPT_DIR/.claude/orgframework/index.json" "$ORG_DIR/index.json" 2>/dev/null && echo "  ✓ Index: index.json (v$VERSION)" || true
 cp "$SCRIPT_DIR/.claude/orgframework/additions.json" "$ORG_DIR/additions.json" 2>/dev/null && echo "  ✓ Additions: additions.json" || true
 
 # Copy region profiles
@@ -116,7 +119,7 @@ COUNT=$(ls "$ORG_DIR/styles/"*.md 2>/dev/null | wc -l | tr -d ' ')
 echo "  ✓ Roles: $COUNT reference role files"
 
 echo ""
-echo "Done! orgframework v4.1 installed."
+echo "Done! orgframework v$VERSION installed."
 echo ""
 echo "Quick start:"
 echo "  /orgframework I need to hire a senior backend engineer in Berlin"

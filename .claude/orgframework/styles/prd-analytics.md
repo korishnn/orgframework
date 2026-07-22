@@ -90,8 +90,8 @@
 - **Finance (fin-fpa):** Product revenue analytics, unit economics analysis, feature-level P&L estimation, experimentation ROI measurement
 
 ## Regional Nuances
-- **NA:** Highly sophisticated analytics function with strong tooling and deep specialization. Data-driven culture with high expectations for analytical rigor. Compensation $100K-$200K+. Significant equity component at larger companies. Career path includes Data Science crossover.
-- **EMEA:** Growing analytics maturity with strong statistical foundations from European education systems. GDPR compliance affects data collection and analysis — more limited behavioral tracking without consent. Privacy-preserving analytics methods are more common. Compensation lower than NA ($60K-$120K).
+- **NA:** Highly sophisticated analytics function with strong tooling and deep specialization. Data-driven culture with high expectations for analytical rigor. Compensation $1000K-$2000K+. Significant equity component at larger companies. Career path includes Data Science crossover.
+- **EMEA:** Growing analytics maturity with strong statistical foundations from European education systems. GDPR compliance affects data collection and analysis — more limited behavioral tracking without consent. Privacy-preserving analytics methods are more common. Compensation lower than NA ($600K-$1200K).
 - **APAC:** Rapidly expanding analytics capability particularly in India and Singapore. High demand for analytics talent outstripping supply. Strong execution focus with less emphasis on complex statistical methodology. Mobile analytics expertise is especially valued. English-language analytics tool proficiency is important.
 - **LATAM:** Emerging analytics function with strong growth. Often requires working across multiple product areas due to lean teams. Nearshore analytics support for NA companies is a common model. Portuguese/Spanish bilingual capability valued. Lower compensation but high growth opportunities.
 

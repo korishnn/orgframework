@@ -2,23 +2,24 @@
   "preset": "nonprofit-ngo",
   "version": "1.0",
   "name": "Nonprofit / NGO Organization",
-  "description": "Mission-driven organization structure for nonprofits, NGOs, and charitable foundations. Executive Director leads with program directors managing thematic or geographic initiatives. Development/fundraising team is revenue engine.",
+  "description": "Mission-driven organization structure for nonprofits, NGOs, and charitable foundations. Executive Director leads with program directors managing thematic or geographic initiatives. Development/fundraising team is revenue engine. Designed for organizations focused on social, environmental, or humanitarian impact.",
   "applicability": {
     "regions": ["na", "emea", "apac", "latam"],
     "industries": [],
     "stages": ["startup", "scaleup", "enterprise"]
   },
-  "headcount_range": "5-500+",
+  "headcount_range": "50-5000+",
   "org_structure": {
-    "overview": "Nonprofits are mission-driven organizations where every role connects back to the organization's social or environmental purpose. The revenue engine (development/fundraising) exists to fund programs, not generate profit. Board of Directors provides fiduciary oversight. Funding is typically grants, individual donations, corporate sponsorships, and earned revenue.",
+    "overview": "Nonprofits are mission-driven organizations where every role connects back to the organization's social or environmental purpose. The revenue engine (development/fundraising) exists to fund programs, not generate profit. Board of Directors provides fiduciary oversight. Funding is typically grants, individual donations, corporate sponsorships, and earned revenue. Organizational culture centers on mission alignment, volunteer engagement, and measurable impact outcomes. Smaller organizations collapse multiple roles into the Executive Office and rely heavily on volunteers and part-time staff. Growth-stage nonprofits professionalize their Development team and add M&E (Monitoring & Evaluation) functions to satisfy major institutional donors.",
     "departments": [
       {
         "name": "Executive Office",
         "headcount": "1-3",
         "reports_to": "Board of Directors",
         "roles": [
-          { "title": "Executive Director", "count": 1, "level": "Executive", "reports_to": "Board", "description": "Sets vision, leads fundraising strategy, manages board relations, represents externally." },
-          { "title": "Deputy Director", "count": 1, "level": "Executive", "reports_to": "Executive Director", "description": "Oversees day-to-day operations, coordinates across departments, ensures program goals." }
+          { "title": "Executive Director", "count": 1, "level": "Executive", "reports_to": "Board of Directors", "description": "Sets vision, leads fundraising strategy, manages board relations, represents organization externally to media, government, and major partners." },
+          { "title": "Deputy Director", "count": 1, "level": "Executive", "reports_to": "Executive Director", "description": "Oversees day-to-day operations, coordinates across departments, ensures program goals are met, and manages crisis response." },
+          { "title": "Chief of Staff", "count": "0-1", "level": "Director", "reports_to": "Executive Director", "description": "Manages board communications, executive scheduling, strategic planning processes, and cross-department initiatives." }
         ]
       },
       {
@@ -26,9 +27,12 @@
         "headcount": "3-20",
         "reports_to": "Executive Director",
         "roles": [
-          { "title": "Director of Development", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Leads fundraising strategy, cultivates major donors, sets revenue targets." },
-          { "title": "Grant Writer", "count": "1-3", "level": "IC", "reports_to": "Director of Development", "description": "Researches and writes grant proposals, manages grant calendar and compliance." },
-          { "title": "Major Gifts Officer", "count": "1-2", "level": "IC", "reports_to": "Director of Development", "description": "Cultivates and solicits major donors, manages portfolios and stewardship." }
+          { "title": "Director of Development", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Leads fundraising strategy, cultivates major donors, manages development team, and sets annual revenue targets across all channels." },
+          { "title": "Grant Writer", "count": "1-3", "level": "IC", "reports_to": "Director of Development", "description": "Researches and writes grant proposals, manages grant calendar and compliance, and cultivates foundation relationships." },
+          { "title": "Major Gifts Officer", "count": "1-2", "level": "IC", "reports_to": "Director of Development", "description": "Cultivates and solicits major donors ($10K+), manages donor portfolios, and designs stewardship plans." },
+          { "title": "Annual Giving Manager", "count": 1, "level": "IC", "reports_to": "Director of Development", "description": "Manages direct mail, email appeals, monthly giving programs, and donor acquisition campaigns." },
+          { "title": "Corporate Partnerships Manager", "count": "0-1", "level": "IC", "reports_to": "Director of Development", "description": "Develops and manages corporate sponsorship relationships, cause marketing campaigns, and workplace giving programs." },
+          { "title": "Donor Database Administrator", "count": "0-1", "level": "IC", "reports_to": "Director of Development", "description": "Manages CRM (Salesforce, Raiser's Edge), donor records, gift processing, reconciliation, and reporting." }
         ]
       },
       {
@@ -36,34 +40,67 @@
         "headcount": "5-200+",
         "reports_to": "Deputy Director",
         "roles": [
-          { "title": "Program Director", "count": "1-3", "level": "Director", "reports_to": "Deputy Director", "description": "Leads a program area, designs strategy, manages managers, ensures outcomes." },
-          { "title": "Program Manager", "count": "2-10", "level": "Manager", "reports_to": "Program Director", "description": "Manages specific initiatives, coordinates field staff, tracks metrics." },
-          { "title": "Field Staff", "count": "5-100+", "level": "IC", "reports_to": "Program Manager", "description": "Delivers direct services to beneficiaries." }
+          { "title": "Program Director", "count": "1-3", "level": "Director", "reports_to": "Deputy Director", "description": "Leads a program area (e.g. Education, Health, Environment), designs strategy, manages program managers, and ensures measurable outcomes." },
+          { "title": "Program Manager", "count": "2-10", "level": "Manager", "reports_to": "Program Director", "description": "Manages specific initiatives, coordinates field staff, tracks metrics and deliverables, and reports to funders." },
+          { "title": "Field Staff / Community Coordinator", "count": "5-100+", "level": "IC", "reports_to": "Program Manager", "description": "Delivers direct services to beneficiaries, coordinates with community partners, collects program data, and provides feedback for program improvement." },
+          { "title": "Monitoring & Evaluation (M&E) Officer", "count": "1-2", "level": "IC", "reports_to": "Program Director", "description": "Designs M&E frameworks, collects and analyzes program data, prepares impact reports, and ensures evidence-based program adaptations." }
         ]
       },
       {
-        "name": "Communications",
+        "name": "Advocacy & Policy",
+        "headcount": "1-8",
+        "reports_to": "Executive Director",
+        "roles": [
+          { "title": "Director of Advocacy", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Leads policy agenda, government relations, coalition building, and public policy positions." },
+          { "title": "Policy Analyst", "count": "1-2", "level": "IC", "reports_to": "Director of Advocacy", "description": "Researches policy issues, drafts position papers, analyzes legislation, and prepares briefs for policymakers." },
+          { "title": "Community Organizer", "count": "1-3", "level": "IC", "reports_to": "Director of Advocacy", "description": "Mobilizes grassroots supporters, organizes events and campaigns, trains volunteer advocates, and builds coalitions." }
+        ]
+      },
+      {
+        "name": "Communications & Marketing",
         "headcount": "2-8",
         "reports_to": "Executive Director",
         "roles": [
-          { "title": "Communications Director", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Leads communications strategy, brand, media relations." },
-          { "title": "Digital Marketing Manager", "count": 1, "level": "IC", "reports_to": "Communications Director", "description": "Manages social media, email campaigns, website content." }
+          { "title": "Communications Director", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Leads communications strategy, brand management, media relations, and crisis communications." },
+          { "title": "Digital Marketing Manager", "count": "1-2", "level": "IC", "reports_to": "Communications Director", "description": "Manages social media, email campaigns, website content, SEO, and digital advertising." },
+          { "title": "Content Writer / Storyteller", "count": "1-2", "level": "IC", "reports_to": "Communications Director", "description": "Produces impact stories, newsletters, annual reports, donor communications, and multimedia content." }
         ]
       },
       {
-        "name": "Finance & Grants",
+        "name": "Finance & Grants Management",
         "headcount": "2-6",
         "reports_to": "Executive Director",
         "roles": [
-          { "title": "Finance Director", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Oversees financial operations, grant compliance, audit." },
-          { "title": "Grants Manager", "count": 1, "level": "IC", "reports_to": "Finance Director", "description": "Tracks grant budgets, ensures funder compliance, prepares reports." }
+          { "title": "Finance Director / Controller", "count": 1, "level": "Director", "reports_to": "Executive Director", "description": "Oversees financial operations, grant compliance, annual audit, board financial reporting, and internal controls." },
+          { "title": "Grants Manager", "count": "1-2", "level": "IC", "reports_to": "Finance Director", "description": "Tracks grant budgets, ensures funder compliance, prepares financial reports for donors, and manages grant closeout." },
+          { "title": "Staff Accountant", "count": "1-2", "level": "IC", "reports_to": "Finance Director", "description": "AP/AR, bank reconciliations, payroll support, and month-end close." }
+        ]
+      },
+      {
+        "name": "Human Resources & Volunteers",
+        "headcount": "1-4",
+        "reports_to": "Deputy Director",
+        "roles": [
+          { "title": "HR Manager", "count": 1, "level": "Manager", "reports_to": "Deputy Director", "description": "Manages recruitment, onboarding, benefits administration, employee relations, and HR compliance." },
+          { "title": "Volunteer Coordinator", "count": "1-2", "level": "IC", "reports_to": "HR Manager", "description": "Recruits, trains, schedules, and manages volunteers; ensures volunteer engagement and retention." }
         ]
       }
     ],
     "key_relationships": [
-      "Program and Development must be tightly aligned — programs provide impact stories that fuel fundraising",
-      "Finance works with Programs to ensure grant compliance and accurate spending",
-      "Board provides fiduciary oversight and often includes key donors"
-    ]
+      "Program and Development must be tightly aligned — programs provide impact stories that fuel fundraising, and funder requirements shape program design",
+      "Finance works with Programs to ensure grant compliance, accurate spending, and timely reporting to donors",
+      "Advocacy and Communications partner closely — policy wins need public visibility, and communications supports advocacy campaigns",
+      "M&E Officer provides evidence that both Programs (for improvement) and Development (for donor reporting) rely on",
+      "Board provides fiduciary oversight and often includes key donors who open doors to new funding sources",
+      "Volunteer Coordinator partners with all departments to deploy volunteers effectively across programs and events",
+      "Executive Director personally manages the top 10-20 donor relationships and board member cultivation"
+    ],
+    "org_chart_text": "Board of Directors\n└── Executive Director\n    ├── Deputy Director\n    │   ├── Program Director(s)\n    │   │   ├── Program Managers\n    │   │   ├── Field Staff / Community Coordinators\n    │   │   └── M&E Officer\n    │   └── HR Manager\n    │       └── Volunteer Coordinator\n    ├── Director of Development\n    │   ├── Grant Writer\n    │   ├── Major Gifts Officer\n    │   ├── Annual Giving Manager\n    │   ├── Corporate Partnerships Manager\n    │   └── Donor Database Admin\n    ├── Director of Advocacy\n    │   ├── Policy Analyst\n    │   └── Community Organizer\n    ├── Communications Director\n    │   ├── Digital Marketing Manager\n    │   └── Content Writer / Storyteller\n    ├── Finance Director / Controller\n    │   ├── Grants Manager\n    │   └── Staff Accountant\n    └── Chief of Staff (optional)"
+  },
+  "culture_notes": {
+    "type": "Mission-Driven / Values-Based",
+    "traits": ["Mission alignment over financial incentives", "High empathy and emotional intelligence required", "Resource-constrained creativity is a core competency", "Volunteer engagement is part of everyone's role", "Burnout risk is elevated — mission passion can mask overwork"],
+    "challenges": ["Funding volatility creates boom/bust hiring cycles", "Passion can mask underinvestment in systems and infrastructure", "Board governance varies widely in sophistication", "Succession planning is often deprioritized", "Measuring impact rigorously while resources are limited"],
+    "best_practices": ["Invest in donor CRM early — it pays for itself", "Build unrestricted reserves for stability", "Diversify funding across grants, individuals, earned revenue", "Professionalize HR as soon as headcount exceeds 20", "Create clear boundaries to prevent mission-driven burnout"]
   }
 }

@@ -97,7 +97,7 @@
 - **Localization / Internationalization:** Multi-language content strategy. Translation vendor management. Glossary management across languages. Cultural adaptation of documentation
 
 ## Regional Nuances
-- **NA:** Established technical writing profession with clear career paths. Docs-as-code approach is increasingly standard. API documentation and developer docs are high priority. Compensation $70K-$130K. Strong emphasis on SEO and content analytics-driven performance.
+- **NA:** Established technical writing profession with clear career paths. Docs-as-code approach is increasingly standard. API documentation and developer docs are high priority. Compensation $700K-$1300K. Strong emphasis on SEO and content analytics-driven performance.
 - **EMEA:** Multi-language documentation is a core requirement. English-first with translation to 5+ European languages common. Strong content strategy practices. EMEA-based technical writers often manage localization. GDPR-aware documentation practices. Compensation lower than NA with strong benefits.
 - **APAC:** Growing technical writing profession. Multi-language documentation for APAC languages is critical (Japanese, Korean, Chinese, Thai, Vietnamese). Documentation quality needs to be high for Japanese and Korean markets where expectations are exacting. India has strong English-language technical writing talent.
 - **LATAM:** Spanish and Portuguese documentation creation is essential. Often supports localization from English source content. Growing technical writing profession with increasing professionalization. Bilingual writers are highly valued. Lower compensation than NA.

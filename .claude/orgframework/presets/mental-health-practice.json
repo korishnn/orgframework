@@ -4,7 +4,7 @@
   "name": "Mental Health Private / Group Practice",
   "description": "Outpatient mental health practice offering therapy, counseling, psychiatric medication management, and increasingly telehealth services. Suitable for solo private practices, group practices, and community mental health centers serving children, adults, or specialized populations.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "3-50",
+  "headcount_range": "30-500",
   "org_structure": {
     "overview": "The mental health practice is organized around licensed clinicians providing billable direct care, supported by administrative and billing infrastructure. A clinical director oversees treatment quality, licensing compliance, and supervision for associate-level clinicians, while a practice manager handles business operations, scheduling, and payer relations. The model scales from solo practitioners with part-time billers to large multidisciplinary group practices with dozens of therapists, psychiatric providers, and specialized programs (child/adolescent, substance use, trauma, eating disorders). Telehealth is a growing modality requiring additional technology and scheduling coordination.",
     "departments": [

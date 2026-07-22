@@ -89,8 +89,8 @@
 - **Legal (lgl-contracts, lgl-compliance):** Roadmap commitment risk assessment, contractual obligations reflected in roadmap, compliance feature delivery timelines
 
 ## Regional Nuances
-- **NA:** Structured roadmap processes with clear SAFe or similar framework adoption. Strong emphasis on predictability and commitment accuracy. Executive stakeholders expect high-confidence delivery dates. Compensation $110K-$180K. Roadmap tooling is sophisticated.
-- **EMEA:** More flexible and adaptive roadmap approaches with less rigid commitment culture. Theme-based roadmaps preferred over date-driven. Emphasis on outcomes over output. Stronger agile and lean influences from European methodology origins. Works Council consultation may affect planning timelines. Compensation $70K-$120K.
+- **NA:** Structured roadmap processes with clear SAFe or similar framework adoption. Strong emphasis on predictability and commitment accuracy. Executive stakeholders expect high-confidence delivery dates. Compensation $1100K-$1800K. Roadmap tooling is sophisticated.
+- **EMEA:** More flexible and adaptive roadmap approaches with less rigid commitment culture. Theme-based roadmaps preferred over date-driven. Emphasis on outcomes over output. Stronger agile and lean influences from European methodology origins. Works Council consultation may affect planning timelines. Compensation $700K-$1200K.
 - **APAC:** Execution-heavy roadmap culture in India with strong delivery focus. In Singapore and Australia, roadmap practices are more mature. Time zone challenges for global roadmap coordination. Rapidly changing priorities common in high-growth markets. Quarterly planning cycles may be compressed.
 - **LATAM:** Less formalized roadmap processes in many organizations. Adaptable and flexible planning approaches. Nearshore coordination with NA teams requires roadmap visibility across time zones. Exchange rate and economic volatility can disrupt resource planning. Growing adoption of structured roadmapping practices.
 

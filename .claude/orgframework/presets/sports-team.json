@@ -4,7 +4,7 @@
   "name": "Professional Sports Team / Organization",
   "description": "Organization structure for a professional sports team or club organization. Covers the General Manager and front office (scouting, analytics, player personnel, salary cap management), coaching staff (Head Coach, coordinators, position coaches), players (roster), and the business side (President, marketing, sales, ticketing, community relations, media, facilities). Designed for professional leagues including team sizes of 30-150 personnel on the roster side and 20-200 in the front office and business operations.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["sports", "entertainment"], "stages": ["operational", "growth", "mature"] },
-  "headcount_range": "50-400",
+  "headcount_range": "500-4000",
   "org_structure": {
     "overview": "Professional sports teams are structured around two parallel organizations: the business/front office side and the on-field/competitive side. The team President (or ownership) oversees both, with a General Manager typically managing the competitive side (roster construction and coaching staff) and a separate business executive managing revenue generation. The coaching staff led by the Head Coach focuses on player development and game strategy. Scouting and analytics support roster decisions. The business side drives ticket sales, sponsorships, merchandise, marketing, media, and community relations. League rules (salary caps, roster limits, draft rules, collective bargaining agreements) constrain all decisions. Player performance drives organizational success, supported by athletic training, strength & conditioning, and sports science staff.",
     "departments": [

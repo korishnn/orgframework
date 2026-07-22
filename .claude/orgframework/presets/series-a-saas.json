@@ -8,7 +8,7 @@
     "industries": ["saas"],
     "stages": ["startup", "scaleup"]
   },
-  "headcount_range": "10-30",
+  "headcount_range": "100-300",
   "org_structure": {
     "overview": "At Series A the startup formalizes into functional areas while preserving cross-functional speed. The philosophy is 'minimum viable hierarchy' — create a management layer only where the CEO has become a bottleneck. Engineering typically formalizes first because it's the largest group. Product management separates from engineering to ensure independent customer advocacy. Marketing and Sales grow from single contributors into small teams. The CEO shifts from doing to leading.",
     "departments": [

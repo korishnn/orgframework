@@ -4,7 +4,7 @@
   "name": "Home Health / Hospice Organization",
   "description": "Field-based healthcare organization delivering skilled nursing, therapy, and personal care services in patients' homes or in hospice facilities. Designed for Medicare-certified home health agencies, hospice providers, and dual-licensed organizations serving patients with chronic conditions, post-acute needs, or end-of-life care.",
   "applicability": { "regions": ["na"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "10-300",
+  "headcount_range": "100-3000",
   "org_structure": {
     "overview": "The home health and hospice organization is field-deployed: clinicians (RNs, CNAs, therapists) visit patients in their homes while clinical managers supervise from a central office. Scheduling is the most operationally critical function — matching the right clinician to the right patient at the right time across a geographic service area. Intake and referral coordinators manage incoming orders from hospitals, physicians, and skilled nursing facilities. Billing specializes in Medicare/Medicaid (PPS, PDGM, hospice per-diem) with specific expertise in cost reports and medical review. The organization is highly regulated by CMS, state health departments, and accrediting bodies (CHAP, ACHC, Joint Commission).",
     "departments": [

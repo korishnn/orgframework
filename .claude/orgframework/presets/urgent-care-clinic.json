@@ -4,7 +4,7 @@
   "name": "Urgent Care / Outpatient Clinic",
   "description": "Fast-paced walk-in clinic treating non-emergent acute conditions. Smaller than a hospital with streamlined operations focused on rapid patient turnover, extended hours, and convenient access. Typical for single-site or multi-site urgent care chains.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "5-50",
+  "headcount_range": "50-500",
   "org_structure": {
     "overview": "The urgent care clinic is organized for speed and efficiency. A clinic manager or owner oversees business operations while a medical director provides clinical leadership. Providers (MDs, DOs, NPs, PAs) handle patient visits with support from medical assistants, front desk staff, and limited on-site lab and X-ray. Billing and insurance verification are handled by front office staff or a centralized billing team in multi-site organizations. The model emphasizes minimal hierarchy and rapid decision-making.",
     "departments": [

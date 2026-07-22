@@ -77,7 +77,7 @@ if (existsSync(PRESETS_DIR)) {
           totalRoles += d.roles?.length || 0;
         }
       }
-    } catch {}
+    } catch { /* ignore parse errors */ }
   }
   console.log(`\n🏗️  Presets:`);
   console.log(`  Templates:           ${files.length}`);

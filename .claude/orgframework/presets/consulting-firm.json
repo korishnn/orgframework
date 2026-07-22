@@ -4,7 +4,7 @@
   "name": "Management Consulting Firm",
   "description": "Partner-model management consulting firm organized around practice areas and project staffing. Structured hierarchy from Managing Partner through Partners, Engagement Managers, Consultants, and Associates/Analysts. Consultants are staffed to client engagements on a project basis, with up-or-out promotion culture. Practice areas cover strategy, operations, digital, M&A, and industry specialties.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["consulting", "management-consulting", "professional-services", "advisory", "strategy"], "stages": ["startup", "growth", "established", "restructuring"] },
-  "headcount_range": "10-5000",
+  "headcount_range": "100-50000",
   "org_structure": {
     "overview": "Management consulting firms operate on a partnership model with practice areas (talent pools) and a project staffing model (client engagements). The hierarchy is clearly defined: Partners originate and sell work, Engagement Managers lead project teams, Consultants and Associates perform analysis and develop recommendations. The culture is famously 'up or out': professionals are expected to advance within defined timeframes or exit the firm. Staff are assigned to projects based on skills and availability, often rotating between engagements. The firm is organized by practice area (strategy, operations, technology, M&A, etc.) and often by industry (financial services, healthcare, technology, public sector). The Managing Partner leads the firm with support from a management committee and practice area leaders.",
     "departments": [

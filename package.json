@@ -1,8 +1,17 @@
 {
   "name": "orgframework",
-  "version": "3.0.0",
-  "description": "537 hand-written reference roles + 31 org presets + compensation data + crisis templates. Reference material for building org structures with Claude Code.",
-  "keywords": ["org-framework", "company-structure", "roles", "presets", "claude-code"],
+  "version": "5.0.0",
+  "description": "555 reference roles + 35 org presets + LLM Council architecture. Organizational design engine for Claude Code.",
+  "keywords": [
+    "org-framework",
+    "company-structure",
+    "roles",
+    "presets",
+    "claude-code",
+    "llm-council",
+    "org-intelligence",
+    "organizational-design"
+  ],
   "license": "MIT",
   "author": "",
   "repository": {
@@ -12,12 +21,45 @@
   "bin": {
     "orgframework": "bin/install.sh"
   },
+  "files": [
+    "bin/",
+    ".claude/",
+    "tests/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./reverse-org": "./.claude/orgframework/reverse-org/designer.js",
+    "./vacancy": "./.claude/orgframework/vacancy/simulator.js",
+    "./similarity": "./.claude/orgframework/similarity/search.js",
+    "./role-to-task": "./.claude/orgframework/role-to-task/generate.js",
+    "./comparison": "./.claude/orgframework/comparison/comparison.js",
+    "./visualizer": "./.claude/orgframework/visualizer/generate.js",
+    "./relationship-map": "./.claude/orgframework/relationship-map/relationship-map.js",
+    "./diagnose": "./bin/diagnose.js"
+  },
   "scripts": {
-    "test": "node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:validate": "node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
+    "test:unit": "vitest run",
+    "test:integration": "vitest run tests/integration/",
+    "test:all": "vitest run && node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
+    "lint": "eslint . --ignore-pattern node_modules --ignore-pattern .git",
+    "typecheck": "tsc --noEmit",
     "diagnose": "node bin/diagnose.js"
   },
   "type": "module",
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
+    "ajv": "^8.20.0",
+    "eslint": "^10.7.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
   }
 }

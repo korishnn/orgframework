@@ -1,0 +1,84 @@
+{
+  "preset": "dao-org",
+  "version": "1.0",
+  "name": "DAO / Decentralized Organization",
+  "description": "Organization structure for a Decentralized Autonomous Organization or network state. Covers the unique structural elements of token-based governance, contributor coordination without employment relationships, treasury management, community voting, and the tension between decentralization and execution speed. Designed for protocols, DAOs, and Web3-native organizations of 5-200 active contributors plus a wider community of token holders.",
+  "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["web3", "technology", "finance"], "stages": ["startup", "scaleup"] },
+  "headcount_range": "50-2000 (core contributors) + 10,000-100,000 (community/token holders)",
+  "org_structure": {
+    "overview": "DAOs are organizations governed by token holders through on-chain voting, with day-to-day execution handled by core contributors (sometimes employed by a foundation, sometimes fully decentralized). The structure has three layers: Foundation/Legal Entity (handles legal, payroll, grants), Core Contributors (build the product, manage the protocol, grow the community), and the Token Holder Community (governs through proposal voting, delegation, and discussion forums). The key challenge is balancing decentralization (anyone can propose anything) with execution efficiency (someone needs to actually do the work). Compensation is a mix of salary, token grants, and bounties. There is no traditional manager hierarchy — contributors self-organize into squads/guilds around priorities.",
+    "departments": [
+      {
+        "name": "Foundation / Legal Entity",
+        "description": "The legal wrapper around the DAO. Handles legal compliance, payroll for core contributors, grantmaking, treasury management, and relationships with exchanges, custodians, and regulators.",
+        "headcount": "3-10",
+        "reports_to": "DAO (via governance vote) / Board of Foundation",
+        "roles": [
+          { "title": "Foundation Director / Executive Director", "count": 1, "level": "Executive", "reports_to": "Foundation Board", "description": "Leads the legal entity, manages regulatory relationships, oversees grant programs, and represents the DAO in legal contexts." },
+          { "title": "Treasury Manager", "count": "0-1", "level": "Professional", "reports_to": "Foundation Director", "description": "Manages multi-sig treasury operations, DeFi yield strategies, stablecoin reserves, and fiat on/off ramps." },
+          { "title": "Legal Counsel (Web3)", "count": "1-2", "level": "Professional", "reports_to": "Foundation Director", "description": "Handles DAO legal structure, token classification advice, smart contract audits coordination, and regulatory compliance." },
+          { "title": "Grants & Ecosystem Manager", "count": "1-3", "level": "Professional", "reports_to": "Foundation Director", "description": "Manages the grant program — processes applications, tracks milestones, distributes funds, reports to the DAO on grant impact." },
+          { "title": "People Ops / Contributor Coordinator", "count": "1-2", "level": "Professional", "reports_to": "Foundation Director", "description": "Handles contributor onboarding, offboarding, compensation, token grant administration, and coordination across time zones." }
+        ]
+      },
+      {
+        "name": "Core Protocol / Smart Contract Engineering",
+        "description": "Builds and maintains the core smart contracts, blockchain integrations, and protocol upgrades. This is the most technically specialized group — changes are slow, careful, and heavily audited.",
+        "headcount": "5-20",
+        "reports_to": "DAO (via governance) / Lead Maintainer",
+        "roles": [
+          { "title": "Lead Protocol Engineer / Lead Maintainer", "count": "0-1", "level": "Senior", "reports_to": "DAO", "description": "Sets technical direction for the protocol, reviews all major changes, coordinates with auditors, and manages the protocol roadmap." },
+          { "title": "Solidity / Smart Contract Engineer", "count": "2-8", "level": "Professional", "reports_to": "Lead Protocol Engineer", "description": "Writes, tests, and deploys smart contracts. Deep knowledge of EVM, gas optimization, and common vulnerability patterns." },
+          { "title": "Rust / Protocol Engineer", "count": "0-5", "level": "Professional", "reports_to": "Lead Protocol Engineer", "description": "Works on substrate-based chains, Solana programs, or other non-EVM blockchain development. Systems-level blockchain engineering." },
+          { "title": "Security Engineer / Smart Contract Auditor", "count": "1-3", "level": "Professional", "reports_to": "Lead Protocol Engineer", "description": "Performs internal audits, fuzz testing, formal verification, and coordinates external audit engagements." },
+          { "title": "QA / Test Engineer (Blockchain)", "count": "1-3", "level": "Professional", "reports_to": "Lead Protocol Engineer", "description": "Builds test suites, integration tests, fork testing environments, and CI/CD for smart contract deployments." }
+        ]
+      },
+      {
+        "name": "Product & Frontend (dApps)",
+        "description": "Builds the user-facing products — dApps, dashboards, wallets, explorers, and interfaces that users interact with. Faster iteration than protocol engineering.",
+        "headcount": "5-20",
+        "reports_to": "DAO / Product Lead",
+        "roles": [
+          { "title": "Product Lead / Head of Product", "count": "0-1", "level": "Senior", "reports_to": "DAO", "description": "Sets product direction, prioritizes features, manages the product roadmap, balances community requests with strategic vision." },
+          { "title": "Full-Stack Engineer (dApps)", "count": "3-8", "level": "Professional", "reports_to": "Product Lead", "description": "Builds web3 dApps — React/Next.js frontends, wagmi/ethers integrations, wallet connections, transaction UX." },
+          { "title": "UX Designer (Web3)", "count": "1-3", "level": "Professional", "reports_to": "Product Lead", "description": "Designs web3 user experiences — wallet interactions, transaction flows, gas management, bridge UX, and self-custody patterns." },
+          { "title": "Mobile Engineer (Web3)", "count": "0-3", "level": "Professional", "reports_to": "Product Lead", "description": "Builds mobile dApps (React Native, Flutter) with wallet integration, push notifications for on-chain events, and biometric security." }
+        ]
+      },
+      {
+        "name": "Community & Governance",
+        "description": "Grows and manages the community, facilitates governance processes, and bridges between token holders and core contributors.",
+        "headcount": "3-15",
+        "reports_to": "DAO / Foundation Director",
+        "roles": [
+          { "title": "Head of Community", "count": 1, "level": "Senior", "reports_to": "Foundation Director / DAO", "description": "Sets community strategy, manages community team, coordinates with governance working groups." },
+          { "title": "Community Manager", "count": "2-8", "level": "Professional", "reports_to": "Head of Community", "description": "Moderates Discord, Telegram, Discourse, and governance forums. Manages community events, AMAs, and engagement initiatives." },
+          { "title": "Governance Facilitator", "count": "1-3", "level": "Professional", "reports_to": "Head of Community", "description": "Helps community members write and refine proposals, manages Snapshot/Tally voting rounds, tracks proposal execution, reports outcomes." },
+          { "title": "Content / Education Lead", "count": "1-3", "level": "Professional", "reports_to": "Head of Community", "description": "Creates documentation, tutorials, blog posts, and videos explaining the protocol, governance, and how to contribute." }
+        ]
+      },
+      {
+        "name": "Tokenomics & Economic Design",
+        "description": "Researches, models, and optimizes the token economic system. Designs incentive structures, analyzes on-chain data, and makes recommendations to the DAO.",
+        "headcount": "2-8",
+        "reports_to": "DAO / Foundation Director",
+        "roles": [
+          { "title": "Tokenomics Lead / Economist", "count": "1", "level": "Senior", "reports_to": "Foundation Director", "description": "Leads token economic design, incentive modeling, and economic research. Proposes parameter changes to the DAO." },
+          { "title": "Data Analyst (On-Chain)", "count": "1-4", "level": "Professional", "reports_to": "Tokenomics Lead", "description": "Analyzes on-chain data — Dune Analytics, The Graph, custom dashboards. Tracks token velocity, holder distribution, governance participation." },
+          { "title": "Incentive Designer", "count": "0-2", "level": "Professional", "reports_to": "Tokenomics Lead", "description": "Designs staking mechanics, liquidity mining programs, yield optimization, and community rewards systems." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "The Foundation does not control the protocol — it executes the will of the DAO as expressed through governance votes. Major protocol changes require a governance proposal and vote.",
+      "Core contributors propose their own work through 'curation' or 'grants' mechanisms — there is no manager assigning tasks. Contributors self-organize into working groups.",
+      "Community votes on: protocol upgrades, treasury allocations, grant recipients, parameter changes, and foundation director appointments.",
+      "The treasury is managed through multi-sig wallets controlled by elected signers from the community. The Foundation executes transactions but cannot unilaterally move funds.",
+      "Governance power is proportional to token holdings (or delegated tokens). Whale concentration is a known risk addressed through delegation, quadratic voting, or conviction voting.",
+      "Contributors are compensated through a mix of: base salary (stablecoins), token grants (vesting), and bounties/gigs (one-off payments for specific deliverables).",
+      "Culture is transparency-first: all treasury transactions are on-chain, all governance votes are public, all core contributor compensation is disclosed."
+    ],
+    "org_chart_text": "DAO Token Holders (Governance)\n├── Delegate / Representative Layer\n│     └── Elected Delegates\n│\n├── Foundation (Legal Entity)\n│     ├── Foundation Director\n│     │     ├── Treasury Manager\n│     │     ├── Legal Counsel\n│     │     ├── Grants & Ecosystem Manager\n│     │     └── Contributor Coordinator / People Ops\n│     └── Governance Facilitator(s)\n│\n├── Core Contributors (Self-Organizing Squads)\n│     ├── Protocol Engineering Squad\n│     │     ├── Lead Protocol Engineer\n│     │     ├── Smart Contract Engineers\n│     │     ├── Rust/Protocol Engineers\n│     │     └── Security / Audit Engineers\n│     ├── Product & dApps Squad\n│     │     ├── Product Lead\n│     │     ├── Full-Stack Engineers (dApps)\n│     │     ├── UX Designers\n│     │     └── Mobile Engineers\n│     ├── Community & Governance Squad\n│     │     ├── Head of Community\n│     │     ├── Community Managers\n│     │     └── Content / Education Lead\n│     └── Tokenomics & Data Squad\n│           ├── Tokenomics Lead\n│           └── On-Chain Data Analysts\n│\n└── Working Groups (Temporary, Mission-Based)\n      ├── Security Working Group\n      ├── Liquidity Working Group\n      ├── International Expansion Working Group\n      └── [Other temp groups as needed]\n\nNote: This is NOT a traditional hierarchy. Core contributors self-select into work.\nThe Foundation coordinates but does not command. The DAO votes on major decisions.\nAnyone can form a working group; they dissolve when the mission is complete."
+  }
+}

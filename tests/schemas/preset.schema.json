@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://orgframework.dev/schemas/preset.schema.json",
+  "title": "Org Preset",
+  "description": "Schema for orgframework preset JSON files",
+  "type": "object",
+  "required": ["preset", "name", "description", "applicability", "headcount_range", "org_structure"],
+  "properties": {
+    "preset": {
+      "type": "string",
+      "description": "Unique preset identifier (kebab-case)",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable preset name"
+    },
+    "description": {
+      "type": "string",
+      "description": "One-line description of the preset"
+    },
+    "applicability": {
+      "description": "When/where this preset applies (string or structured object)",
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "regions": { "type": "array", "items": { "type": "string" } },
+            "industries": { "type": "array", "items": { "type": "string" } },
+            "stages": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      ]
+    },
+    "headcount_range": {
+      "type": "string",
+      "description": "Headcount range, e.g. '50-150'"
+    },
+    "org_structure": {
+      "type": "object",
+      "required": ["overview", "departments"],
+      "properties": {
+        "overview": {
+          "type": "string",
+          "description": "Overview of the org structure"
+        },
+        "departments": {
+          "type": "array",
+          "description": "List of departments",
+          "items": {
+            "type": "object",
+            "required": ["name", "roles"],
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "reports_to": { "type": "string" },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "count", "level", "reports_to", "description"],
+                  "properties": {
+                    "title": { "type": "string" },
+                    "count": {
+                      "description": "Number of people in this role (integer or range string like '2-4')",
+                      "oneOf": [
+                        { "type": "integer", "minimum": 0 },
+                        { "type": "string" }
+                      ]
+                    },
+                    "level": { "type": "string" },
+                    "reports_to": { "type": "string" },
+                    "description": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "culture_notes": {
+      "type": "object",
+      "description": "Optional cultural context",
+      "properties": {
+        "type": { "type": "string" },
+        "traits": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

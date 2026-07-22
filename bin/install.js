@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// orgframework — Node.js installer (alternative to install.sh)
+// orgframework — Node.js installer (equivalent to install.sh)
+// Usage: node bin/install.js [target-dir]
 
-import { existsSync, mkdirSync, copyFileSync, readdirSync } from 'fs';
+import { existsSync, mkdirSync, copyFileSync, readdirSync, statSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,46 +10,92 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const SCRIPT_DIR = join(__dirname, '..');
 const TARGET = process.argv[2] || process.cwd();
 
+const pkg = JSON.parse(readFileSync(join(SCRIPT_DIR, 'package.json'), 'utf-8'));
+const VERSION = pkg.version || '5.0.0';
+
 const CLAUDE_DIR = join(TARGET, '.claude');
 const SKILL_DIR = join(CLAUDE_DIR, 'skills', 'orgframework');
 const ORG_DIR = join(CLAUDE_DIR, 'orgframework');
-const STYLES_DIR = join(ORG_DIR, 'styles');
 
-console.log(`Installing orgframework into ${TARGET}...`);
+// All subdirectories to create under ORG_DIR
+const SUBDIRS = [
+  'styles', 'regions', 'industries', 'stages', 'presets', 'definitions',
+  'adaptations', 'diagnostics', 'visualizer', 'comparison', 'relationship-map',
+  'compensation', 'maturity', 'expansion', 'hiring', 'role-to-task', 'crisis',
+  'raci', 'reverse-org', 'budget', 'similarity', 'timeline', 'culture',
+  'vacancy', 'health-monitor', 'conway', 'topologies', 'simulation', 'council',
+];
 
-// Create dirs
+// Directories that contain files to copy (relative to .claude/orgframework)
+const DATA_DIRS = [
+  'regions', 'industries', 'stages', 'presets', 'styles',
+  'adaptations', 'diagnostics', 'visualizer', 'comparison', 'relationship-map',
+  'compensation', 'maturity', 'expansion', 'hiring', 'role-to-task', 'crisis',
+  'raci', 'reverse-org', 'budget', 'similarity', 'timeline', 'culture',
+  'vacancy', 'health-monitor', 'conway', 'topologies', 'simulation', 'council',
+];
+
+// Individual files to copy (relative to .claude/orgframework)
+const DATA_FILES = [
+  'index.json', 'additions.json', 'recommendations.md',
+];
+
+console.log(`Installing orgframework into ${TARGET}...\n`);
+
+// Create all directories
 mkdirSync(SKILL_DIR, { recursive: true });
-mkdirSync(STYLES_DIR, { recursive: true });
+for (const subdir of SUBDIRS) {
+  mkdirSync(join(ORG_DIR, subdir), { recursive: true });
+}
 
-// Copy skill
+// Copy skill definition
 const skillSrc = join(SCRIPT_DIR, '.claude', 'skills', 'orgframework', 'SKILL.md');
 if (existsSync(skillSrc)) {
   copyFileSync(skillSrc, join(SKILL_DIR, 'SKILL.md'));
   console.log('  ✓ Skill: .claude/skills/orgframework/SKILL.md');
 }
 
-// Copy index
-const indexSrc = join(SCRIPT_DIR, '.claude', 'orgframework', 'index.json');
-if (existsSync(indexSrc)) {
-  copyFileSync(indexSrc, join(ORG_DIR, 'index.json'));
-  console.log('  ✓ Index: index.json');
+// Copy individual data files
+for (const file of DATA_FILES) {
+  const src = join(SCRIPT_DIR, '.claude', 'orgframework', file);
+  if (existsSync(src)) {
+    copyFileSync(src, join(ORG_DIR, file));
+    console.log(`  ✓ ${file}`);
+  }
 }
 
-// Copy additions
-const additionsSrc = join(SCRIPT_DIR, '.claude', 'orgframework', 'additions.json');
-if (existsSync(additionsSrc)) {
-  copyFileSync(additionsSrc, join(ORG_DIR, 'additions.json'));
-  console.log('  ✓ Additions: additions.json');
+// Copy directory contents
+for (const dir of DATA_DIRS) {
+  const srcDir = join(SCRIPT_DIR, '.claude', 'orgframework', dir);
+  const dstDir = join(ORG_DIR, dir);
+  if (!existsSync(srcDir)) continue;
+
+  const entries = readdirSync(srcDir);
+  let count = 0;
+  for (const entry of entries) {
+    const srcPath = join(srcDir, entry);
+    if (statSync(srcPath).isFile()) {
+      copyFileSync(srcPath, join(dstDir, entry));
+      count++;
+    }
+  }
+  if (count > 0) {
+    console.log(`  ✓ ${dir}: ${count} files`);
+  }
 }
 
-// Copy role files
+// Count role files specifically
 const allStyles = join(SCRIPT_DIR, '.claude', 'orgframework', 'styles');
 if (existsSync(allStyles)) {
-  const files = readdirSync(allStyles).filter(f => f.endsWith('.md'));
-  for (const f of files) {
-    copyFileSync(join(allStyles, f), join(STYLES_DIR, f));
-  }
-  console.log(`  ✓ Roles: ${files.length} role files`);
+  const roleFiles = readdirSync(allStyles).filter(f => f.endsWith('.md'));
+  console.log(`  ✓ Roles: ${roleFiles.length} reference role files`);
 }
 
-console.log('\nDone! Use /orgframework in your Claude Code project.');
+console.log(`\nDone! orgframework v${VERSION} installed.`);
+console.log('');
+console.log('Quick start:');
+console.log('  /orgframework I need to hire a senior backend engineer in Berlin');
+console.log('  /orgframework we\'re launching a new product in Brazil, what\'s the org plan');
+console.log('  /orgframework our Series B fintech needs a compliance structure');
+console.log('  /orgframework design a hospital respiratory therapy department');
+console.log('  /orgframework what team structure for a remote-first design agency');

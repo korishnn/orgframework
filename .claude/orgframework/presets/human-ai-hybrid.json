@@ -1,0 +1,77 @@
+{
+  "preset": "human-ai-hybrid",
+  "version": "1.0",
+  "name": "Human-AI Hybrid Organization",
+  "description": "Forward-looking organization structure designed for a workforce where humans and AI agents work side-by-side. Covers the radical implications of AI-augmented work: layer collapse (fewer managers needed), span expansion (humans manage larger teams with AI support), new org functions (AI ops, prompt engineering, model monitoring), and human-AI team composition (1 human + multiple AI agents as a unit). Designed for AI-first companies, AI startups, and forward-thinking enterprises exploring deep AI integration. For 10-500 total 'workers' (human + AI agents).",
+  "applicability": { "regions": ["na", "emea", "apac"], "industries": ["ai-labs", "technology", "saas"], "stages": ["startup", "scaleup"] },
+  "headcount_range": "100-5000 (human + AI agent count)",
+  "org_structure": {
+    "overview": "The Human-AI Hybrid Org is a radical reimagining of the company structure for a world where AI agents are not just tools but team members. This structure assumes: AI agents can handle 30-70% of current knowledge worker tasks; humans shift from doing to orchestrating; the org chart becomes flatter because AI handles coordination; new roles emerge around AI workforce management. The org is organized around 'pods' — a human lead + 3-10 specialized AI agents — rather than traditional departments. Layer collapse means 2-3 layers max from IC to CEO. AI agents have defined roles, responsibilities, and 'on-call' rotations just like humans. The biggest culture shift: humans manage AI agents, AI agents coordinate with each other, and humans focus on judgment, creativity, relationships, and exception handling.",
+    "departments": [
+      {
+        "name": "Executive / AI Strategy",
+        "description": "Sets the AI-first vision, decides which work stays human and which goes to AI, manages the AI workforce budget (token/compute costs), and defines the ethical boundaries of AI delegation.",
+        "headcount": "2-4 (human only)",
+        "reports_to": "Board of Directors",
+        "roles": [
+          { "title": "Chief Executive Officer (CEO) — Human", "count": 1, "level": "Executive", "reports_to": "Board", "description": "Sets AI-first vision, culture, and strategy. Makes final decisions on AI delegation boundaries. The most human-centric role in the org." },
+          { "title": "Chief AI Officer (CAIO)", "count": 1, "level": "Executive", "reports_to": "CEO", "description": "Leads AI workforce strategy, model selection, AI safety, and AI team performance. The executive responsible for AI agent hiring (training/fine-tuning) and deployment." },
+          { "title": "Chief Operating Officer (COO) — AI-Augmented", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Manages human+AI operations, resource allocation, token/compute budgeting, and cross-pod coordination. AI assistants handle 80% of reporting." },
+          { "title": "Chief AI Ethics Officer", "count": "0-1", "level": "Executive", "reports_to": "CEO / Board", "description": "Governs AI agent behavior, ensures alignment, handles AI-related incidents, manages AI workforce rights and transparency." }
+        ]
+      },
+      {
+        "name": "AI Operations & Platform",
+        "description": "The 'HR department for AI agents.' Manages the AI workforce lifecycle: model selection, fine-tuning, prompt management, agent monitoring, and agent performance evaluation. Also manages the infrastructure that AI agents run on.",
+        "headcount": "5-20 (human) + unlimited AI agents",
+        "reports_to": "CAIO",
+        "roles": [
+          { "title": "Head of AI Operations", "count": 1, "level": "Senior (Human)", "reports_to": "CAIO", "description": "Manages the AI operations team. Responsible for AI agent uptime, performance, quality, and cost. The 'VP of AI Talent.'" },
+          { "title": "AI Agent Manager", "count": "2-8", "level": "Professional (Human)", "reports_to": "Head of AI Operations", "description": "Manages a fleet of AI agents — assigns them to pods, monitors their performance, handles failures, and manages their 'training' (prompt updates, RAG refreshes)." },
+          { "title": "Prompt Engineer / AI Trainer", "count": "2-10", "level": "Professional (Human)", "reports_to": "Head of AI Operations", "description": "Designs, tests, and version-controls prompts and RAG configurations for AI agents. The equivalent of AI 'L&D.' Runs evaluations and continuous improvement." },
+          { "title": "AI Infrastructure Engineer", "count": "2-8", "level": "Professional (Human)", "reports_to": "Head of AI Operations", "description": "Manages model serving infrastructure, token quotas, latency SLAs, cost tracking, and AI agent orchestration platforms." },
+          { "title": "AI Safety & Monitoring Specialist", "count": "1-4", "level": "Professional (Human)", "reports_to": "Head of AI Operations", "description": "Monitors AI agent behavior for drift, safety violations, and quality degradation. Manages guardrails and incident response for AI failures." },
+          { "title": "AI Agents (various specialties)", "count": "10-100+", "level": "AI Agent", "reports_to": "AI Agent Manager", "description": "Specialized AI agents serving in pods across the org. Examples: Code Agent, Research Agent, Content Agent, Data Agent, Support Agent, Design Agent." }
+        ]
+      },
+      {
+        "name": "Product Development (Human-AI Pods)",
+        "description": "The core product development engine — organized as human-led pods with AI agent team members. Each pod has a human lead who sets direction and handles judgment calls, while AI agents handle implementation, testing, documentation, and analysis.",
+        "headcount": "10-100 (human) + 30-300 (AI agents)",
+        "reports_to": "CAIO / CTO",
+        "roles": [
+          { "title": "VP Product Development", "count": "0-1", "level": "Senior (Human)", "reports_to": "CAIO / CTO", "description": "Leads product development organization. Manages pod leads, sets quality standards for human-AI collaboration." },
+          { "title": "Pod Lead / Human Team Lead", "count": "3-15", "level": "Senior (Human)", "reports_to": "VP Product Development", "description": "Leads a human-AI pod. Sets direction, handles ambiguity, makes judgment calls, reviews AI output. The most critical human role — manages 3-10 AI agents." },
+          { "title": "Human Product Manager", "count": "2-8", "level": "Professional (Human)", "reports_to": "VP Product Development", "description": "Defines product requirements, user research, prioritization. Works with AI agents to generate specs, analyze data, and track outcomes." },
+          { "title": "Human Designer", "count": "1-6", "level": "Professional (Human)", "reports_to": "VP Product Development", "description": "Sets design direction, creates design systems, handles creative strategy. AI agents generate design variants, assets, and prototypes to their direction." },
+          { "title": "Human Reviewer / Quality Lead", "count": "1-5", "level": "Professional (Human)", "reports_to": "VP Product Development", "description": "Reviews all AI agent output before it reaches customers. The 'human in the loop' for critical quality and safety gates." },
+          { "title": "Pod AI Agents", "count": "0-0", "level": "AI Agent", "reports_to": "Pod Lead", "description": "Code agents (implement features, write tests), document agents (write docs, update specs), test agents (run tests, check quality), analysis agents (review data, find issues), communication agents (write updates, summarize meetings)." }
+        ]
+      },
+      {
+        "name": "Human-Centric Functions",
+        "description": "Roles that remain inherently human — strategy, relationships, creativity, leadership, ethics, and culture. These functions are AI-augmented (AI helps analyze, draft, summarize) but human-led.",
+        "headcount": "5-30 (human only)",
+        "reports_to": "CEO",
+        "roles": [
+          { "title": "Head of People & Culture (Human)", "count": 1, "level": "Senior (Human)", "reports_to": "CEO", "description": "Manages human employee experience, culture, development, and well-being. Manages the unique dynamics of humans working alongside AI agents." },
+          { "title": "Human Strategist / BizOps", "count": "2-6", "level": "Professional (Human)", "reports_to": "CEO / COO", "description": "Strategic analysis, competitive intelligence, business planning. Uses AI agents for research and modeling but makes strategic recommendations independently." },
+          { "title": "Human Relationship Manager / Sales", "count": "3-15", "level": "Professional (Human)", "reports_to": "CEO / CRO", "description": "Handles customer relationships, enterprise sales, partnerships, and high-stakes negotiations. AI supports with research, proposals, and follow-ups." },
+          { "title": "Human Ethics & Culture Lead", "count": "1-3", "level": "Professional (Human)", "reports_to": "Head of People", "description": "Maintains human-centric culture, manages human-AI collaboration norms, handles human concerns about AI replacement, runs inclusion initiatives." },
+          { "title": "Legal & Compliance (Human)", "count": "1-4", "level": "Professional (Human)", "reports_to": "CEO", "description": "Handles contracts, compliance, IP, regulatory matters. Uses AI for contract review and research but makes all determinations independently." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Pod leads are the most critical human role — they manage 3-10 AI agents and make the judgment calls. Their effectiveness determines the org's output quality.",
+      "AI Operations acts as 'HR for AI' — it trains, assigns, monitors, and retires AI agents. Pod leads request agents from AI Ops rather than hiring them directly.",
+      "Humans review AI output before it reaches customers. The review-to-release ratio should be 1:3 (one human review per 3 AI-produced outputs) and decreasing as trust grows.",
+      "AI agents have defined 'on-call' rotations just like humans. They self-monitor and escalate to human handlers when they detect errors or ambiguity.",
+      "The org chart has only 2-3 layers because AI handles coordination, reporting, and status tracking — traditional middle management is largely eliminated.",
+      "Talent strategy is radically different: hiring for judgment, creativity, and relationship skills over procedural execution. AI handles the execution.",
+      "Culture must actively prevent 'AI creep' — the gradual replacement of human judgment with AI recommendations. Humans are required to question AI output.",
+      "Compensation is different: humans get salary + equity + AI productivity bonus (share of value created by their AI agent team)."
+    ],
+    "org_chart_text": "CEO (Human)\n├── CAIO (Chief AI Officer — Human)\n│     ├── Head of AI Operations (Human)\n│     │     ├── AI Agent Managers (Human)\n│     │     │     ├── Code Agents (AI)\n│     │     │     ├── Research Agents (AI)\n│     │     │     ├── Content Agents (AI)\n│     │     │     ├── Support Agents (AI)\n│     │     │     └── Data Agents (AI)\n│     │     ├── Prompt Engineers / AI Trainers (Human)\n│     │     └── AI Safety & Monitoring (Human)\n│     └── VP Product Development (Human)\n│           ├── Pod Lead — Product (Human)\n│           │     ├── Human PM\n│           │     ├── Code Agents (AI)\n│           │     ├── Test Agents (AI)\n│           │     └── Doc Agents (AI)\n│           ├── Pod Lead — Platform (Human)\n│           │     ├── Human Designer\n│           │     ├── Code Agents (AI)\n│           │     └── Analysis Agents (AI)\n│           └── Human Reviewers / Quality (Human)\n│\n├── COO (Human, AI-Augmented)\n│     ├── Head of People & Culture (Human)\n│     ├── Human Strategists / BizOps (Human)\n│     ├── Sales / Relationships (Human)\n│     └── Legal & Compliance (Human)\n│\n└── Chief AI Ethics Officer (Human)\n      └── AI Ethics Board (Human + AI Advisors)\n\nNote: AI agents are not direct reports in the traditional sense — they are assigned\nby AI Ops to pods based on capability requirements. Humans manage AI agents;\nAI agents coordinate with each other. Middle management is radically reduced.\nEvery human role is AI-augmented — but humans always make the final call."
+  }
+}

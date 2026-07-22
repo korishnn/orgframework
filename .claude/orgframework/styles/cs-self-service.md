@@ -95,7 +95,7 @@
 - **Legal (lgl-privacy, lgl-compliance):] AI/automation compliance. Data privacy for chatbot transcripts. Consent management for automated interactions. Regulatory compliance for automated customer communications
 
 ## Regional Nuances
-- **NA:** Highest self-service adoption and most sophisticated automation. LLM-powered chatbots are rapidly adopted. Strong investment in AI support automation. Self-service is the default first channel. Compensation $100K-$170K. Heavy emphasis on data-driven optimization.
+- **NA:** Highest self-service adoption and most sophisticated automation. LLM-powered chatbots are rapidly adopted. Strong investment in AI support automation. Self-service is the default first channel. Compensation $1000K-$1700K. Heavy emphasis on data-driven optimization.
 - **EMEA:** GDPR compliance significantly impacts self-service design — chatbot transparency requirements, data handling disclosures, consent for automated interactions. Language diversity requires multi-language NLU models. Lower automation adoption due to regulatory caution. Strong worker consultation requirements for automation that affects support jobs.
 - **APAC:** High self-service adoption in mobile-first markets. Chat preference over voice in many markets. Messaging-based automation (WhatsApp, LINE, WeChat, Kakao) is critical. Language complexity requires NLU sophistication. India has advanced chatbot development talent.
 - **LATAM:** Growing self-service adoption with mobile-first approach. WhatsApp automation is particularly important — dominant communication channel. Lower initial automation investment but rapid growth. Cultural preference for human interaction requires careful escalation design. Spanish and Portuguese NLU requirements.

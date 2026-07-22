@@ -8,7 +8,7 @@
     "industries": ["ecommerce", "saas"],
     "stages": ["startup", "scaleup", "enterprise"]
   },
-  "headcount_range": "15-500+",
+  "headcount_range": "150-5000+",
   "org_structure": {
     "overview": "Marketplaces are uniquely challenging because they must simultaneously grow two distinct user bases — supply and demand — while keeping them balanced. The philosophy is 'always bias toward liquidity' — every team's success is ultimately measured by transaction volume and marketplace health metrics. The org is structured around supply/demand specialization: separate growth teams for each side, separate product managers, and separate data scientists who live and breathe their side's unit economics. Trust and Safety operates as a critical enabling function — in a marketplace, a single bad experience can cause cascading churn on both sides. The marketplace team structure scales through 'squadification': cross-functional pods organized around marketplace levers (e.g., Search & Discovery, Transactions, Trust, Supply Growth) rather than by technical layer.",
     "departments": [

@@ -1,78 +1,138 @@
 #!/usr/bin/env node
 // vacancy.js — Simulate what happens when a key role goes vacant
-// node bin/vacancy.js <preset> <role-id>
+// node .claude/orgframework/vacancy/simulator.js <preset> <role-id>
 
-import { readFileSync, readdirSync, existsSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { Result } from '../lib/errors.js';
+import { readPresetFile, readDataFile } from '../lib/fs.js';
+import { MAX_COVERAGE_OPTIONS } from '../lib/constants.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
-const PRESETS_DIR = join(ROOT, '.claude', 'orgframework', 'presets');
-const STYLES_DIR = join(ROOT, '.claude', 'orgframework', 'styles');
 
-const roleImpact = {
-  'ceo': { urgency: 'critical', coverage: 'Board appoints interim CEO. COO or Chair steps in.', timeframe: '1-3 months to replace', risk: 'Strategic paralysis. Board confidence. Investor relations.' },
-  'cto': { urgency: 'critical', coverage: 'VP Engineering or senior architect can cover technical decisions.', timeframe: '2-4 months to replace', risk: 'Architecture stagnation. Engineer retention risk. Technical debt.' },
-  'cfo': { urgency: 'high', coverage: 'FP&A Director or Controller can cover reporting and banking.', timeframe: '2-3 months to replace', risk: 'Audit delays. Investor confidence. Board reporting.' },
-  'coo': { urgency: 'medium', coverage: 'Department heads absorb operational duties. Chief of Staff can coordinate.', timeframe: '2-4 months to replace', risk: 'Operational drift. Cross-functional alignment.' },
-  'cmo': { urgency: 'medium', coverage: 'Marketing Director can maintain campaigns. Brand Manager can cover.', timeframe: '2-3 months to replace', risk: 'Brand consistency. Pipeline generation. Campaign momentum.' },
-  'head of engineering': { urgency: 'critical', coverage: 'Senior engineers share tech lead duties. CTO covers gaps.', timeframe: '1-3 months', risk: 'Sprint velocity drops 30-50%. Architecture inconsistency.' },
-  'head of sales': { urgency: 'critical', coverage: 'Senior AEs cover deals. Revenue operations maintains pipeline.', timeframe: '1-2 months', risk: 'Revenue cliff after 60 days. Team morale. Key accounts.' },
-  'head of product': { urgency: 'high', coverage: 'Senior PMs maintain roadmap. CPO/CEO covers strategy.', timeframe: '1-3 months', risk: 'Roadmap drift. Engineering misalignment. Feature delays.' },
-  'doctor': { urgency: 'critical', coverage: 'Locum tenens or per-diem coverage. Other providers absorb patient load.', timeframe: '1-4 weeks (locum)', risk: 'Patient safety. Revenue loss. Staff burnout.' },
-  'nurse': { urgency: 'critical', coverage: 'Agency/travel nurses. Overtime for existing staff. Ratios may be compromised.', timeframe: '2-8 weeks', risk: 'Patient ratios. Staff burnout. Quality of care.' },
-  'chef': { urgency: 'high', coverage: 'Sous chef steps up. May need to simplify menu.', timeframe: '2-4 weeks', risk: 'Menu consistency. Kitchen morale. Food quality.' },
-  'teacher': { urgency: 'high', coverage: 'Substitute teacher. Other teachers absorb during prep periods.', timeframe: '1-4 weeks', risk: 'Student learning continuity. Classroom management.' },
-};
+// ── Role impact database ──────────────────────────────────────────────
+// Loaded from data/impact-db.json at module init.
+/** @type {{ [key: string]: { urgency: string, coverage: string, timeframe: string, risk: string } }} */
+let roleImpact = {};
 
+/**
+ * Initialize the impact database. Called once at module load.
+ * Falls back gracefully if the data file is missing.
+ */
+function loadImpactDb() {
+  const result = readDataFile('data/impact-db.json');
+  if (result.isOk) {
+    roleImpact = result.value;
+  }
+}
+loadImpactDb();
+
+/**
+ * Resolve a role title against the impact database using fuzzy matching.
+ * @param {string} titleLower
+ * @returns {{ urgency: string, coverage: string, timeframe: string, risk: string }}
+ */
+function resolveImpact(titleLower) {
+  // First try exact match
+  if (roleImpact[titleLower]) return roleImpact[titleLower];
+
+  // Try prefix/keyword matching
+  for (const [key, impact] of Object.entries(roleImpact)) {
+    if (titleLower.includes(key) || key.includes(titleLower)) return impact;
+  }
+
+  // Default fallback based on level hints in the title
+  if (/^(head|chief|svp|evp|president)/i.test(titleLower)) {
+    return { urgency: 'critical', coverage: 'Executive search needed. Board or senior team covers strategy temporarily.',       timeframe: '2-4 months',              risk: 'Strategic drift. Team uncertainty. External perception.' };
+  }
+  if (/^(vp|director|senior|lead)/i.test(titleLower)) {
+    return { urgency: 'high',     coverage: 'Next-level leader or senior IC can absorb. Formal backfill process starts.',       timeframe: '1-3 months',              risk: 'Team morale. Cross-functional coordination. Decision speed.' };
+  }
+  if (/^(manager|supervisor|coordinator)/i.test(titleLower)) {
+    return { urgency: 'medium',   coverage: 'Senior team members distribute duties. Peer managers help with coverage.',         timeframe: '2-6 weeks',               risk: 'Operational continuity. Team velocity. Career development pauses.' };
+  }
+
+  return { urgency: 'high', coverage: 'Cross-training needed. Backfill ASAP. Consider contractor for interim coverage.', timeframe: '4-12 weeks', risk: 'Operational disruption. Team morale. Knowledge loss.' };
+}
+
+/**
+ * Enhanced urgency computation that combines role level, count, and department criticality.
+ * @param {string} titleLower - Lowercase role title
+ * @param {string} [level] - Role level from preset
+ * @param {number} [count] - Headcount for this role
+ * @param {string} [_dept] - Department name
+ * @returns {{ urgency: string, coverage: string, timeframe: string, risk: string }}
+ */
+function computeEnhancedImpact(titleLower, level, count, _dept) {
+  // Start with the base fuzzy match
+  const base = resolveImpact(titleLower);
+  let urgency = base.urgency;
+
+  // Elevate urgency if count === 1 (single point of failure)
+  if (count === 1) {
+    if (urgency === 'medium') urgency = 'high';
+    else if (urgency === 'low') urgency = 'medium';
+  }
+
+  // Elevate urgency for executive/leadership levels
+  if (level && /^(head|vp|director|chief|executive|cxo)/i.test(level)) {
+    if (urgency !== 'critical') urgency = urgency === 'low' ? 'medium' : 'high';
+  }
+
+  // De-escalate urgency if multiple people fill this role
+  if (count && count >= 3 && urgency === 'critical') urgency = 'high';
+  if (count && count >= 5 && urgency === 'high') urgency = 'medium';
+
+  return { ...base, urgency };
+}
+
+/**
+ * Simulate what happens when a key role goes vacant in an org preset.
+ * @param {string} presetName - Preset file name (without .json)
+ * @param {string} vacantRoleTitle - Role title to simulate vacancy for
+ * @returns {Result<Object, string>} Impact assessment object, or error string if not found
+ */
 export function simulateVacancy(presetName, vacantRoleTitle) {
-  const presetPath = join(PRESETS_DIR, `${presetName}.json`);
-  if (!existsSync(presetPath)) return `Preset "${presetName}" not found.`;
+  if (!presetName) return Result.fail('Preset name is required.');
+  if (!vacantRoleTitle) return Result.fail('Role title is required.');
 
-  const preset = JSON.parse(readFileSync(presetPath, 'utf-8'));
+  const presetResult = readPresetFile(presetName);
+  if (presetResult.isFail) {
+    const isNotFound = presetResult.error?.message?.includes('ENOENT') || presetResult.error?.message?.includes('no such file');
+    return Result.fail(isNotFound ? `Preset "${presetName}" not found.` : `Cannot read preset "${presetName}": ${presetResult.error?.message ?? presetResult.error}`);
+  }
+  const preset = presetResult.value;
+
   const titleLower = vacantRoleTitle.toLowerCase();
 
   // Find the role in the structure
   let foundRole = null;
   let foundDept = null;
-  for (const dept of (preset.org_structure?.departments || [])) {
-    const match = dept.roles.find(r => r.title.toLowerCase().includes(titleLower));
+  const departments = preset.org_structure?.departments || [];
+  for (const dept of departments) {
+    const match = dept.roles.find(/** @param {{title: string}} r */ r => r.title.toLowerCase().includes(titleLower));
     if (match) { foundRole = match; foundDept = dept; break; }
   }
 
-  if (!foundRole) return `Role "${vacantRoleTitle}" not found in ${presetName} preset.`;
+  if (!foundRole) return Result.fail(`Role "${vacantRoleTitle}" not found in ${presetName} preset.`);
 
-  // Find impact data
-  let impact = { urgency: 'high', coverage: 'Cross-training needed. Backfill ASAP.', timeframe: '4-12 weeks', risk: 'Operational disruption. Team morale.' };
-  for (const [key, val] of Object.entries(roleImpact)) {
-    if (titleLower.includes(key)) { impact = val; break; }
-  }
+  // Resolve impact data
+  const impact = computeEnhancedImpact(titleLower, foundRole.level, foundRole.count, foundDept?.name);
 
-  // Find potential coverage
+  // Find potential coverage from same department
   const deptRoles = foundDept?.roles || [];
-  const coverageOptions = deptRoles.filter(r => r.title !== foundRole.title).slice(0, 3);
+  const coverageOptions = deptRoles.filter(/** @param {{title: string}} r */ r => r.title !== foundRole.title).slice(0, MAX_COVERAGE_OPTIONS);
 
-  return {
+  return Result.ok({
     role: foundRole.title,
     dept: foundDept?.name,
     level: foundRole.level,
     urgency: impact.urgency,
     impact_assessment: `Losing your ${foundRole.title} is ${impact.urgency} urgency. ${impact.coverage}`,
-    coverage: coverageOptions.map(r => `${r.title} (${r.level}) — could cover with ${r.count >= 2 ? 'shared load' : 'some gaps'}`),
+    coverage: coverageOptions.map(/** @param {{title: string, level?: string, count?: number}} r */ r => `${r.title} (${r.level}) — could cover with ${(r.count ?? 1) >= 2 ? 'shared load' : 'some gaps'}`),
     replacement_timeframe: impact.timeframe,
     risks: impact.risk.split('. ').filter(Boolean),
     recommendation: coverageOptions.length > 0
       ? `Immediately reassign ${coverageOptions[0].title} as interim. Begin recruitment within 1 week. Target: ${impact.timeframe} replacement window.`
       : `No internal coverage. Engage external recruiter immediately. Consider contractor/consultant for 90-day bridge.`
-  };
+  });
 }
 
-const [presetName, roleTitle] = process.argv.slice(2);
-if (presetName && roleTitle) {
-  const result = simulateVacancy(presetName, roleTitle);
-  console.log(JSON.stringify(result, null, 2));
-} else {
-  console.log('Usage: node bin/vacancy.js <preset-name> <role-title>');
-  console.log('Example: node bin/vacancy.js series-b-saas CTO');
-}
+// ── CLI is in bin/cli/vacancy.js ───────────────────────────────────

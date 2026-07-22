@@ -2,19 +2,32 @@
 // validate-index.js — Verify index.json and all profile files have correct structure
 
 import { existsSync, readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { getRootDir, getDataPath } from './lib/utils.js';
+import Ajv from 'ajv';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
-const INDEX_PATH = join(ROOT, '.claude', 'orgframework', 'index.json');
-const ADDITIONS_PATH = join(ROOT, '.claude', 'orgframework', 'additions.json');
+const ROOT = getRootDir();
+const INDEX_PATH = getDataPath('index.json');
+const ADDITIONS_PATH = getDataPath('additions.json');
+
+// Load JSON Schemas
+const indexSchema = JSON.parse(readFileSync(join(ROOT, 'tests', 'schemas', 'index.schema.json'), 'utf-8'));
+const additionSchema = JSON.parse(readFileSync(join(ROOT, 'tests', 'schemas', 'addition.schema.json'), 'utf-8'));
+const ajv = new Ajv();
+const validateIndex = ajv.compile(indexSchema);
+const validateAddition = ajv.compile(additionSchema);
 
 let errors = 0;
 
-// Validate index.json
+// Validate index.json against schema
 try {
   const index = JSON.parse(readFileSync(INDEX_PATH, 'utf-8'));
+  if (!validateIndex(index)) {
+    for (const err of validateIndex.errors) {
+      console.log(`✗ index.json: schema${err.instancePath} ${err.message}`);
+      errors++;
+    }
+  }
 
   if (!index.version) { console.log('✗ index.json missing version'); errors++; }
   if (!index.philosophy) { console.log('✗ index.json missing philosophy'); errors++; }
@@ -57,7 +70,7 @@ try {
   else if (!Array.isArray(index.reference_roles)) { console.log('✗ reference_roles not an array'); errors++; }
   else {
     for (const role of index.reference_roles) {
-      if (!role.match(/^[a-z]+-[a-z0-9-]+$/)) {
+      if (!role.match(/^[a-z0-9]+-[a-z0-9-]+$/)) {
         console.log(`  ✗ Invalid role ID format: ${role}`);
         errors++;
       }
@@ -84,7 +97,7 @@ try {
   errors++;
 }
 
-// Validate additions.json
+// Validate additions.json against schema
 try {
   const additions = JSON.parse(readFileSync(ADDITIONS_PATH, 'utf-8'));
 
@@ -95,6 +108,13 @@ try {
     if (!add.id) { console.log('✗ addition missing id'); errors++; }
     if (!add.name) { console.log(`✗ addition ${add.id} missing name`); errors++; }
     if (!add.instruction) { console.log(`✗ addition ${add.id} missing instruction`); errors++; }
+
+    if (!validateAddition(add)) {
+      for (const err of validateAddition.errors) {
+        console.log(`✗ addition ${add.id}: schema${err.instancePath} ${err.message}`);
+        errors++;
+      }
+    }
   }
 
   console.log(`  ✓ ${additions.additions.length} additions (v${additions.version})`);
@@ -104,7 +124,7 @@ try {
 }
 
 // Validate region profile files exist
-const regionsDir = join(ROOT, '.claude', 'orgframework', 'regions');
+const regionsDir = getDataPath('regions');
 if (existsSync(regionsDir)) {
   const files = readdirSync(regionsDir).filter(f => f.endsWith('.json'));
   console.log(`  ✓ ${files.length} region profile files: ${files.join(', ')}`);
@@ -114,7 +134,7 @@ if (existsSync(regionsDir)) {
 }
 
 // Validate industry profile files exist
-const industriesDir = join(ROOT, '.claude', 'orgframework', 'industries');
+const industriesDir = getDataPath('industries');
 if (existsSync(industriesDir)) {
   const files = readdirSync(industriesDir).filter(f => f.endsWith('.json'));
   console.log(`  ✓ ${files.length} industry profile files: ${files.join(', ')}`);
@@ -124,7 +144,7 @@ if (existsSync(industriesDir)) {
 }
 
 // Validate stage profile files exist
-const stagesDir = join(ROOT, '.claude', 'orgframework', 'stages');
+const stagesDir = getDataPath('stages');
 if (existsSync(stagesDir)) {
   const files = readdirSync(stagesDir).filter(f => f.endsWith('.json'));
   console.log(`  ✓ ${files.length} stage profile files: ${files.join(', ')}`);
@@ -137,7 +157,7 @@ if (existsSync(stagesDir)) {
 // No separate definitions file is needed — each .md file IS the definition
 
 // Validate presets exist
-const presetsDir = join(ROOT, '.claude', 'orgframework', 'presets');
+const presetsDir = getDataPath('presets');
 if (existsSync(presetsDir)) {
   const files = readdirSync(presetsDir).filter(f => f.endsWith('.json'));
   console.log(`  ✓ Presets: ${files.length} org structure templates`);

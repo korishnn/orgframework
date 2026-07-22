@@ -1,5 +1,5 @@
 {
-  "version": "4.3.0",
+  "version": "5.0.0",
   "additions": [
     {
       "id": "org-architect",
@@ -65,6 +65,9 @@
         "healthcare": "HIPAA/FDA/EU MDR. Clinical validation. Regulatory can block releases. Longer sales cycles. Patient outcomes focus.",
         "manufacturing": "OEE, safety, yield. Plant-centric structure. Union relationships. ISO standards. Capital-heavy.",
         "ecommerce": "GMV, AOV, conversion, returns. Seasonal peaks (BFCM, Singles Day). Marketplace vs D2C dynamics.",
+        "web3": "Tokenomics, governance, treasury management. DAO vs foundation vs corp structures. Smart contract audits. Community-governed. Protocol-first.",
+        "climate": "Carbon accounting, regulatory reporting (SEC, EU CSRD). Grant funding vs commercial revenue. Policy-driven. Scientific validation.",
+        "ai-labs": "Research vs product balance. Compute budget is existential. Safety/capabilities tension. Talent war. Publication vs secrecy strategy.",
         "general": "Apply the industry's standard metrics, regulatory obligations, and operational patterns."
       },
       "instruction": "Apply the industry profile's metrics, regulatory framework, and operational patterns to shape the org structure and advice."
@@ -72,7 +75,7 @@
     {
       "id": "stage-adapt",
       "name": "Stage Adapt",
-      "tokens": "~35",
+      "tokens": "~350",
       "description": "Adjusts org depth and recommendations based on company stage",
       "rules": {
         "startup": "Flat org. Founder-led decisions. Multi-hat roles. Equity-heavy comp. Speed over process. First hires set culture.",
@@ -101,7 +104,7 @@
     {
       "id": "scope-guard",
       "name": "Scope Guard",
-      "tokens": "~35",
+      "tokens": "~350",
       "description": "Ensures recommendations respect decision rights, budget authority, and regulatory boundaries",
       "rules": {
         "principle": "Every recommendation must include the decision rights holder within your constructed org.",
@@ -130,7 +133,7 @@
     {
       "id": "cross-function-weaver",
       "name": "Cross-Function Weaver",
-      "tokens": "~45",
+      "tokens": "~450",
       "description": "Dynamically weaves together the perspectives needed for multi-dimensional requests",
       "rules": {
         "approach": "For requests that span multiple domains, do not just chain roles sequentially. Instead, build a mini org chart for the task and show how each perspective feeds in.",
@@ -146,7 +149,7 @@
     {
       "id": "auto-troubleshoot",
       "name": "Auto Troubleshoot",
-      "tokens": "~45",
+      "tokens": "~450",
       "description": "After every response, self-evaluates for correctness and auto-corrects when the user signals a mistake",
       "rules": {
         "post_response_checklist": [
@@ -229,6 +232,269 @@
         ]
       },
       "instruction": "When the user's request involves any of: visualization, comparison, compensation, maturity assessment, expansion planning, hiring sequence, or role relationship queries — load the corresponding system data and use it. Combine systems when appropriate (e.g., maturity assessment leading to hiring plan). This unifies all 11+ additions and 7 systems into a seamless experience."
+    },
+    {
+      "id": "llm-council",
+      "name": "LLM Council Orchestrator",
+      "tokens": "~80",
+      "description": "Orchestrates the multi-perspective council deliberation — selects members, runs rounds, synthesizes output with divergence notes",
+      "rules": {
+        "members": {
+          "strategist": "Asks: Does this structure serve our 3-year strategy? Focus: long-term vision, market fit, competitive positioning.",
+          "operator": "Asks: Who does the work and where does it get stuck? Focus: execution, bottlenecks, spans of control.",
+          "financial-controller": "Asks: What does this cost and is it sustainable? Focus: budget, burn, comp sanity, unit economics.",
+          "culture-keeper": "Asks: What culture does this structure produce? Focus: values, psychological safety, rituals.",
+          "pessimist": "Asks: What breaks first and who do we lose? Focus: failure modes, single points of failure, risk.",
+          "regulatory-hawk": "Asks: Which regulator knocks on our door first? Focus: compliance, law, jurisdiction.",
+          "talent-scout": "Asks: Can we hire these people, here, now? Focus: hiring feasibility, talent availability.",
+          "systems-architect": "Asks: What system architecture does this org produce? Focus: Conway's Law, coupling, platform design."
+        },
+        "members_file": "council/100-members.json (100 members across 10 domains)",
+        "member_selection": "Select 6-8 members from the pool of 100 across 10 domains using domain-based selection. Detect which domains are relevant from request keywords/context (industry, stage, region, task type), then pick 1-2 members per triggered domain. Guardrail domains (culture-belonging, risk-resilience) should almost always have at least 1 member selected. Cap at 2 members per domain. Use trigger_keywords, trigger_industries, and trigger_stages on each member for dynamic matching. Higher selection_weight increases likelihood of being picked. Use natural_ally and natural_counter to pair opposing views when @debate is active.",
+        "rounds": {
+          "default": 2,
+          "deep": 3,
+          "fast": 0
+        },
+        "round_1_proposal": "Each selected member gives initial take (1-2 sentences) from their perspective on the proposed structure.",
+        "round_2_critique": "Members respond to each other's concerns. The Pessimist leads off. Flag contradictions and tensions between perspectives.",
+        "round_3_synthesis": "Converge on final structure with dissenting notes preserved. Include a Divergence Note documenting: assumptions made, alternatives considered, what would change the recommendation.",
+        "output_format": "1. Council members convened (list) 2. Round 1: Initial proposals 3. Round 2: Cross-critique 4. Round 3: Synthesis (if @deep) 5. Final structure 6. Divergence Note"
+      },
+      "instruction": "When the user's request does not include @fast: 1. Load the 100-member pool from council/100-members.json. 2. Detect context (region/industry/stage). 3. Select 6-8 relevant council members using domain-based selection: match trigger_keywords, trigger_industries, and trigger_stages against the request. Prioritize higher selection_weight members. Always include at least 1 from culture-belonging and risk-resilience guardrail domains. 4. Run proposal round — each member gives a 1-2 sentence take from their perspective. 5. Run critique round — members respond to tensions, use natural_counter for debate pairings. 6. If @deep, run synthesis round with dissenting notes. 7. Deliver final org structure with the council's reasoning and a Divergence Note. All perspectives are simulated — you role-play each member sequentially."
+    },
+    {
+      "id": "divergence-engine",
+      "name": "Divergence Engine",
+      "tokens": "~40",
+      "description": "Produces alternative org structures with explicit trade-off analysis — embraces divergence over dogma",
+      "rules": {
+        "modes": {
+          "alternatives": "Generate 3 viable but philosophically different org structures for the same brief. Examples: hierarchical vs holacratic vs squad-matrix. Label the philosophy of each.",
+          "debate": "Two council members argue opposite positions (e.g., centralised vs distributed), then converge on a recommendation.",
+          "default": "Every council-invoked output includes a Divergence Note rather than presenting the structure as the single 'correct' answer."
+        },
+        "divergence_note_format": "**Assumptions Made:** [list] **Alternatives Considered:** [list] **What Would Change the Recommendation:** [conditions]",
+        "always_include": "When using @alternatives, each option must include: philosophy, org structure, best-fit scenario, trade-offs."
+      },
+      "instruction": "When @alternatives is detected, generate 3 structurally different org charts for the same brief. Label each with its organizational philosophy (e.g., 'Command Hierarchy', 'Holacratic Pods', 'Squad-Matrix'). For each, note the trade-off (speed vs resilience, autonomy vs alignment). When @debate is detected, pick two council members with opposing natural positions and run a structured debate between them, then converge. Always include a Divergence Note on every council deliberation output."
+    },
+    {
+      "id": "stress-simulator",
+      "name": "Stress Simulator",
+      "tokens": "~50",
+      "description": "Runs org structures through failure scenarios — identifies single points of failure, cascade effects, and resilience gaps",
+      "rules": {
+        "scenarios": {
+          "hypergrowth": "Double headcount in 6 months. Which roles break? Where do spans become unmanageable? What cultural erosion happens?",
+          "recession": "30% budget cut. Where do you cut? Who do you keep? What reorg is needed for survival?",
+          "key_departure": "CEO, CTO, or Head of Sales leaves without notice. What breaks? Succession plan? Single point of failure?",
+          "acquisition": "You're acquired by a larger company. Org structure collision. Duplicate roles. Culture integration.",
+          "breach": "Major security breach. Incident command structure. Who communicates? Who investigates? Regulatory reporting.",
+          "ipo": "Public company requirements. SOX compliance. Investor relations. Board structure. Quarterly reporting rhythm.",
+          "remote_shift": "Forced to go fully remote. What hierarchies flatten? What async processes need to be created?",
+          "ai_augmentation": "AI agents replace 30% of current roles. Which org layers collapse? What new roles emerge?"
+        },
+        "input_format": "Org structure description (text or JSON) + scenario name (from the 8 above)",
+        "output_format": "1. Scenario applied 2. First roles to break 3. Cascade effects 4. Recovery timeline 5. Structural buffers recommended 6. Fragility heatmap",
+        "severity_scale": "Critical (org-wide failure) / High (department-level failure) / Medium (team-level friction) / Low (individual stress)"
+      },
+      "instruction": "When @simulate <scenario> is detected: 1. Parse the scenario name from the input. 2. Apply the scenario's failure logic to the proposed or existing org structure. 3. Identify which roles break first (single points of failure). 4. Describe cascade effects — when one role/team fails, what else fails. 5. Estimate recovery timeline. 6. Recommend structural buffers (backups, cross-training, redundancy, slack). 7. Produce a fragility heatmap using the severity scale. If no structure is provided by the user, build one from context and then simulate on it."
+    },
+    {
+      "id": "conway-mapper",
+      "name": "Conway Mapper",
+      "tokens": "~40",
+      "description": "Applies Conway's Law and its reverse — predicts system architecture from org structure and vice versa",
+      "rules": {
+        "conways_law": "Organizations design systems that mirror their communication structures. Given an org structure, predict: module boundaries, API interfaces, coupling patterns, integration overhead.",
+        "reverse_conway": "Given a desired system architecture, propose the org structure that naturally produces it. Orgs must be restructured to produce the architecture they want.",
+        "mapping_dimensions": [
+          "Team boundaries → Module/service boundaries",
+          "Communication paths → API/integration surfaces",
+          "Reporting lines → Data flow authority",
+          "Cross-team coordination → Integration complexity",
+          "Org layers → System abstraction layers"
+        ],
+        "assessment_questions": [
+          "Does each team own a complete service/module they control end-to-end?",
+          "Do inter-team dependencies mirror inter-service APIs?",
+          "Is there a single team whose communication load exceeds Dunbar limits?",
+          "Would you deploy a monolith or microservices based on this org?",
+          "How many teams touch a single deployable unit?"
+        ],
+        "output_format": "1. Current org communication map 2. Predicted system architecture (from Conway) 3. System architecture goal (from reverse Conway) 4. Alignment gaps 5. Recommended org changes for target architecture"
+      },
+      "instruction": "When @conway is detected: 1. If the user provides an org structure, apply Conway's Law to predict what system architecture this org will produce. Include coupling analysis, likely service boundaries, and integration points. 2. If the user provides a desired system architecture, apply reverse Conway to propose the org structure that would produce it. 3. If both are provided, identify the alignment gap. 4. Map each dimension (team boundaries → module boundaries, etc.) with specific examples from the user's context."
+    },
+    {
+      "id": "dunbar-auditor",
+      "name": "Dunbar Auditor",
+      "tokens": "~300",
+      "description": "Checks spans, team sizes, and organizational layers against Dunbar's cognitive limits",
+      "rules": {
+        "dunbar_layers": {
+          "50": "Close support group — intimate relationships, deep trust",
+          "150": "Sympathy group — people you'd trust with a personal problem",
+          "500": "Band group — people you have regular social contact with",
+          "1500": "Tribal group — people you can maintain stable relationships with",
+          "5000": "Mega-band — people you recognize and have a sense of relationship with",
+          "15000": "Cognitive limit for a cohesive community"
+        },
+        "org_warnings": {
+          "team_gt_150": "Team exceeds sympathy group limit (150). Communication quality degrades. Sub-groups form.",
+          "direct_reports_gt_150": "Span of control exceeds cognitive limit. Manager cannot effectively support all reports.",
+          "tribe_gt_5000": "Department/site exceeds the mega-band. Sub-cultures and silos emerge.",
+          "org_gt_1500": "Company/organization exceeds Dunbar's number (~1500). Formal processes needed; trust-based coordination breaks down.",
+          "no_1500_unit": "Org > 1500 and still organized as a single unit. Need subdivision."
+        }
+      },
+      "instruction": "When @dunbar is detected: 1. Parse the org structure (team sizes, spans of control, department sizes). 2. Check each unit against Dunbar's cognitive layers. 3. Flag any team/unit exceeding a layer limit. 4. For each flag, explain the risk (sub-group formation, communication degradation, silo emergence, manager overload). 5. Recommend structural adjustments to bring units within cognitive limits."
+    },
+    {
+      "id": "team-topologies",
+      "name": "Team Topologies Mapper",
+      "tokens": "~450",
+      "description": "Classifies teams into the 4 fundamental topologies and recommends interaction modes",
+      "rules": {
+        "topology_types": {
+          "stream-aligned": "Team aligned to a single, valuable stream of work (product, service, feature, mission). Owns the full lifecycle. This should be the DEFAULT team type for most teams. They are responsible for delivering value directly to customers or users.",
+          "enabling": "Helps stream-aligned teams acquire missing capabilities. Composed of experts in specific practices/tools/technologies. They mentor, coach, and support — they don't do the work for stream teams. Their goal is to make stream teams self-sufficient.",
+          "complicated-subsystem": "Focuses on a subsystem that requires deep, specialized expertise that most stream-aligned teams wouldn't develop. Example: video encoding engine, physics simulation kernel, payment processing core. They serve multiple stream-aligned teams.",
+          "platform": "Provides a curated internal platform that reduces cognitive load for stream-aligned teams. The platform is a product consumed by other teams. APIs, self-service tools, shared infrastructure. They must treat their consumers as customers."
+        },
+        "interaction_modes": {
+          "collaboration": "Two teams work closely together on a shared goal. High bandwidth, high trust. Use for discovery, integration, or when boundaries are unclear. Time-box this mode — it doesn't scale.",
+          "x-as-a-service": "One team provides something (API, tool, service) to another team with minimal collaboration. Low bandwidth, high autonomy. The consumer has clear SLAs and documentation. The default interaction mode.",
+          "facilitation": "One team helps another team learn or adopt a capability. Enabling teams use this. It's temporary — the goal is independence."
+        },
+        "org_diagnosis_questions": [
+          "Are most teams stream-aligned? They should be — if most teams are 'enabling' or 'platform', redistribution of purpose is needed.",
+          "Does each stream-aligned team own its work end-to-end? Or are there handoffs creating delays and blame?",
+          "Is the platform team building what stream teams need, or what it wants to build? Platform must serve its customers.",
+          "Are complicated-subsystem teams isolated from the rest? They shouldn't block stream-aligned teams.",
+          "Is 'collaboration' the permanent mode between teams? It shouldn't be — move to X-as-a-Service or define clearer boundaries."
+        ]
+      },
+      "instruction": "When @topologies is detected: 1. Classify each team in the structure into one of the 4 topology types (stream-aligned, enabling, complicated-subsystem, platform). 2. Identify which interaction modes (collaboration, X-as-a-Service, facilitation) are currently used between teams and which SHOULD be used. 3. Flag teams that are misclassified (e.g., a team doing enabling work labeled as a platform team). 4. Assess whether most teams are stream-aligned (they should be). 5. Produce a topology map showing each team's type and its interaction modes with adjacent teams."
+    },
+    {
+      "id": "culture-genome",
+      "name": "Culture Genome Mapper",
+      "tokens": "~450",
+      "description": "Maps org structure to predicted cultural traits using Westrum's typology, DORA metrics, and sociotechnical patterns",
+      "rules": {
+        "westrum_typology": {
+          "pathological": "Power-oriented. Information is hoarded for personal advantage. Failures are hidden. New ideas are crushed. Characterized by: fear, blame, silos, CYA culture. Common in: highly hierarchical, top-down, authoritarian structures. High span of control, low trust.",
+          "bureaucratic": "Rule-oriented. Information flows through proper channels. Failures are processed through procedures. New ideas are treated as threats to process. Characterized by: process, forms, sign-offs, slow decisions. Common in: matrix orgs, multi-layered approvals, heavy process documentation.",
+          "generative": "Performance-oriented. Information flows freely. Failures lead to inquiry and learning. New ideas are welcomed. Characterized by: high trust, psychological safety, experimentation, learning. Common in: flat structures, high autonomy, blameless cultures."
+        },
+        "structural_indicators": {
+          "high_bureaucracy_risk": ["more than 5 layers of management", "sign-off requirements > 2 deep", "cross-team dependencies > 5 per team", "centralized decision-making", "policy per process"],
+          "high_generative_potential": ["flat hierarchy (max 3 layers)", "high team autonomy (teams own product end-to-end)", "cross-functional teams", "low handoff density", "blameless post-mortems in job descriptions"],
+          "high_pathological_risk": ["CEO:direct ratio > 1:50", "no skip-level meetings", "no anonymous feedback channels", "fear of failure mentioned in risk section", "layers with no direct value-add"]
+        },
+        "dora_mapping": {
+          "elite": "Teams deploy on demand. Lead time < 1 day. Change failure rate < 5%. MTTR < 1 hour. Structure correlates: small autonomous teams, platform team, test in CI/CD.",
+          "high": "Deploy weekly. Lead time < 1 week. Change failure rate < 10%. MTTR < 1 day. Structure correlates: dedicated DevOps, feature teams, some autonomy.",
+          "medium": "Deploy monthly. Lead time < 1 month. Change failure rate < 15%. MTTR < 1 week. Structure correlates: separate dev+ops teams, release managers, gatekeepers.",
+          "low": "Deploy quarterly or less. Lead time > 1 month. Change failure rate > 15%. MTTR > 1 week. Structure correlates: heavy hierarchy, handoffs > 3 between code and prod, no embedded SRE."
+        },
+        "culture_output_sections": [
+          "Predicted Westrum typology",
+          "Cultural indicators found in structure",
+          "Psychological safety zones and risk areas",
+          "Innovation velocity projection",
+          "Information flow quality assessment",
+          "Recommended structural changes for target culture",
+          "Blame culture risk score (low/medium/high)"
+        ]
+      },
+      "instruction": "When @culture-genome is detected: 1. Analyze the org structure for cultural indicators. 2. Predict the Westrum typology (pathological/bureaucratic/generative) the structure would produce. 3. Map structural features to DORA performance metrics. 4. Identify zones of psychological safety and blame culture risk. 5. Project innovation velocity. 6. Recommend structural changes to move toward a generative culture. Use the structural indicators as guidelines — they are signals, not definitive."
+    },
+    {
+      "id": "succession-analyzer",
+      "name": "Succession Analyzer",
+      "tokens": "~350",
+      "description": "Identifies single points of failure in an org structure — finds every role where bus factor = 1",
+      "rules": {
+        "analysis_dimensions": [
+          "Knowledge concentration: roles where unique knowledge exists only in one person",
+          "External relationship concentration: roles where key customer/vendor/partner relationships are held by one person",
+          "Technical single points: systems/services owned by one person with no backup",
+          "Decision bottlenecks: decisions that can only be made by one person",
+          "Institutional memory: people who hold unwritten history, context, and why-decisions",
+          "Compliance risk: roles where regulatory requirements mandate a named person (e.g., MLRO in fintech)"
+        ],
+        "output_sections": [
+          "Single points of failure (ranked by impact)",
+          "Succession readiness by role (ready now / ready in 6mo / gap)",
+          "Knowledge transfer recommendations",
+          "Cross-training priorities",
+          "Structural recommendations to eliminate SPOFs"
+        ],
+        "urgency_classification": {
+          "critical": "Sole person in a mission-critical role with no documentation, no backup, no succession plan. Risk: org failure if they leave.",
+          "high": "Sole person with some documentation but no backup. Risk: significant disruption if they leave.",
+          "medium": "Sole person with good documentation and a partial backup. Risk: manageable disruption.",
+          "low": "Multiple people with overlapping knowledge. Redundancy exists."
+        }
+      },
+      "instruction": "When @succession is detected: 1. Analyze the org structure for single points of failure. 2. For each role, assess: is there only one person with this knowledge/expertise/relationship? 3. Classify each SPOF by urgency. 4. Recommend knowledge transfer priorities. 5. Suggest structural changes to add redundancy (e.g., pair roles, create deputies, document playbooks)."
+    },
+    {
+      "id": "burnout-index",
+      "name": "Burnout Index",
+      "tokens": "~350",
+      "description": "Scores each role for burnout risk based on span of control, isolation, role ambiguity, and cognitive load",
+      "rules": {
+        "risk_factors": {
+          "span_of_control": "High: >15 direct reports. Medium: 8-15. Low: <8.",
+          "isolation": "High: role has no peers in same function or location. Medium: fewer than 3 peers. Low: part of a team of 5+.",
+          "role_ambiguity": "High: new role, no predecessor, no documented processes. Medium: recently changed scope. Low: well-established role.",
+          "cognitive_load": "High: role spans 3+ domains (e.g., eng+support+sales). Medium: spans 2 domains. Low: single domain.",
+          "emotional_labor": "High: customer-facing support, HR/relations, trust/safety. Medium: occasional conflict. Low: internal IC.",
+          "on_call_duty": "High: 24/7 on-call rotation. Medium: business-hours only. Low: no on-call.",
+          "decision_fatigue": "High: role makes 20+ significant decisions per day. Medium: 10-20. Low: <10.",
+          "change_frequency": "High: role has changed scope 3+ times in 12 months. Medium: 1-2 changes. Low: stable scope."
+        },
+        "output_format": {
+          "role_scores": "List each role with risk score (critical / high / medium / low) and primary risk factors",
+          "org_heatmap": "Visual/text heatmap of burnout risk across the org",
+          "top_3_risks": "Three roles most at risk with specific recommendations",
+          "systemic_risks": "Structural patterns that increase burnout organization-wide (e.g., 'all managers have 12+ reports')"
+        }
+      },
+      "instruction": "When @burnout is detected: 1. For each role in the org structure, assess burnout risk across all 8 factors. 2. Assign a composite risk score (critical/high/medium/low). 3. Identify the primary risk drivers for high-risk roles. 4. Produce an org-wide heatmap. 5. Recommend specific changes to reduce burnout risk (e.g., reduce span, add peer support, clarify role, create rotation)."
+    },
+    {
+      "id": "ai-augmentation",
+      "name": "AI Augmentation Designer",
+      "tokens": "~50",
+      "description": "Designs org structures for human+AI hybrid workforces — where AI agents augment, replace, or create new roles",
+      "rules": {
+        "ai_workforce_dimensions": {
+          "replacement": "Roles or tasks fully automated by AI agents. Examples: tier-1 support, data entry, basic content generation, monitoring.",
+          "augmentation": "Roles where AI increases human capability. Examples: AI pair programmer, AI-assisted diagnosis, AI writing co-pilot, AI research assistant.",
+          "new_creation": "Roles that only exist because of AI. Examples: prompt engineer, AI safety engineer, human-AI collaboration designer, AI ethicist.",
+          "transformation": "Existing roles fundamentally changed by AI. Examples: radiologist shifts from image reader to AI model supervisor, CS rep becomes AI-escaped-case handler."
+        },
+        "org_implications": {
+          "layer_collapse": "AI removes middle layers — fewer managers needed when AI handles coordination, reporting, and status tracking.",
+          "span_expansion": "Humans can manage broader spans with AI support (AI handles 90% of status updates and flagging).",
+          "team_composition": "Teams become human+AI pods: 1 human + 3-10 AI agents vs 10 humans.",
+          "new_org_functions": "New departments: AI operations, prompt engineering, model monitoring, AI ethics, human-AI experience design.",
+          "communication_shift": "Human-to-human decreases, human-AI interaction increases. Documentation becomes code. Chat becomes API calls."
+        },
+        "design_questions": [
+          "Which tasks in each role can be automated? Which must remain human?",
+          "Where does AI reduce cognitive load vs where does it increase coordination overhead?",
+          "How does the chain of command change when AI agents have decision rights?",
+          "What new roles need to be created to manage AI workforce?",
+          "How does compensation change when humans manage AI teams?"
+        ]
+      },
+      "instruction": "When @ai-native is detected: 1. Start from the user's org context (human team size, AI agent count, domains). 2. Design a hybrid structure where humans and AI agents work together. 3. Classify each existing role into replacement/augmentation/transformation. 4. Propose new roles needed for AI workforce management. 5. Show how layers collapse, spans expand, and team composition changes. 6. Flag the highest-risk assumptions about AI capability."
     }
   ]
 }

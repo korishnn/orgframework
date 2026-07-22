@@ -4,7 +4,7 @@
   "name": "Film / TV Production Crew",
   "description": "Project-based organizational structure for film and television production. Built around a clear creative and business command chain operating for the duration of production, then disbanding. Distinguishes between above-the-line (directors, producers, principal talent) and below-the-line (crew, technicians, crafts) personnel.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["film", "television", "entertainment", "media"], "stages": ["pre-production", "production", "post-production"] },
-  "headcount_range": "30-500",
+  "headcount_range": "300-5000",
   "org_structure": {
     "overview": "Film and TV productions are temporary, project-based organizations assembled for a specific production and dissolved upon completion. The structure follows a clear hierarchical command chain with two parallel leadership tracks: creative (Director) and business (Producer). Department heads manage specialized crews in their craft areas. Above-the-line roles include the director, producers, and principal cast; below-the-line encompasses all technical and craft crew. Reporting lines are direct during production but the entire organization is transient, with crew moving between projects.",
     "departments": [

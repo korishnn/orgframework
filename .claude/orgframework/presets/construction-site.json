@@ -4,7 +4,7 @@
   "name": "Construction Site / Project",
   "description": "Project-based organizational structure for commercial or residential construction sites. Built around a clear hierarchy from General Contractor through Project Manager, Superintendent, Foreman, and Trades. Includes dedicated Safety Officer (OSHA compliance), Project Engineer, and subcontractor coordination. Temporary organization lasting the duration of the construction project, typically 10-200 people on site.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["construction", "general-contracting", "commercial-construction", "residential-development", "civil-engineering"], "stages": ["pre-construction", "site-work", "construction", "closeout"] },
-  "headcount_range": "10-200",
+  "headcount_range": "100-2000",
   "org_structure": {
     "overview": "Construction sites operate as temporary, project-based organizations with a clear chain of command emphasizing safety, quality, schedule, and budget. The General Contractor (prime contractor) leads the project and manages both direct-hire trades and subcontractors. The Project Manager handles the business and client side, while the Superintendent runs the day-to-day site operations. Foremen lead crews of skilled tradespeople, and the Safety Officer ensures OSHA compliance independent of production pressure. The organization forms at project mobilization and dissolves at project closeout, with key personnel often rotating to new projects.",
     "departments": [

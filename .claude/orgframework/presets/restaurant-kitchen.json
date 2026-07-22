@@ -4,7 +4,7 @@
   "name": "Restaurant / Kitchen Brigade System",
   "description": "Classical French or modern kitchen brigade combined with front-of-house restaurant operations. Back-of-house runs on a strict hierarchy from Executive Chef down through Sous Chefs, Chef de Partie (line cooks by station), and Commis (apprentices). Front-of-house is led by the General Manager with Servers, Bartenders, and Bussers. The Owner or GM sits at the top, bridging both sides.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["restaurant", "hospitality", "food-service", "catering"], "stages": ["opening", "operations", "expansion"] },
-  "headcount_range": "10-100",
+  "headcount_range": "100-1000",
   "org_structure": {
     "overview": "The restaurant organizational structure is a dual-chain system: back-of-house (kitchen brigade) and front-of-house (service team) operate semi-independently but must coordinate tightly during service. The kitchen follows the classical brigade hierarchy originated by Escoffier, with each Chef de Partie owning a specific station. Modern kitchens may consolidate stations but retain the rank structure. Front-of-house manages guest experience from arrival through departure. The Owner or General Manager sits at the apex, with the Executive Chef and GM as the two senior operational leaders. The structure can flex from a 10-person fast-casual team to a 100-person fine-dining brigade.",
     "departments": [

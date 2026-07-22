@@ -1,0 +1,19 @@
+[
+  { "keywords": ["engineer", "developer", "architect", "sre", "devops", "qa", "data", "software"], "dept": "Engineering" },
+  { "keywords": ["product", "pm ", "owner"], "dept": "Product" },
+  { "keywords": ["design", "ux", "ui"], "dept": "Design" },
+  { "keywords": ["market", "content", "seo", "social", "brand", "pr ", "growth"], "dept": "Marketing" },
+  { "keywords": ["sales", "account", "bdr", "revenue", "success"], "dept": "Sales" },
+  { "keywords": ["hr", "recruit", "talent", "people"], "dept": "HR" },
+  { "keywords": ["fin", "accountant", "budget", "audit", "tax", "treasury", "controller"], "dept": "Finance" },
+  { "keywords": ["legal", "counsel", "attorney", "contract", "compliance", "paralegal"], "dept": "Legal" },
+  { "keywords": ["oper", "supply", "logistics", "facility", "vendor"], "dept": "Operations" },
+  { "keywords": ["support", "tier", "cs-", "docs", "customer"], "dept": "Customer Support" },
+  { "keywords": ["exec", "ceo", "cto", "cfo", "coo", "chief"], "dept": "Executive" },
+  { "keywords": ["nurse", "doctor", "physician", "clinician", "medic", "patient", "health"], "dept": "Healthcare" },
+  { "keywords": ["carpenter", "electrician", "plumber", "mason", "welder", "machinist"], "dept": "Trades" },
+  { "keywords": ["chef", "server", "bartender", "cook", "kitchen", "restaurant"], "dept": "Hospitality" },
+  { "keywords": ["teacher", "professor", "instructor", "educator", "curriculum"], "dept": "Education" },
+  { "keywords": ["officer", "inspector", "analyst-govt", "government", "public"], "dept": "Government" },
+  { "keywords": ["scientist", "researcher", "lab", "biologist", "chemist", "physicist"], "dept": "R&D" }
+]

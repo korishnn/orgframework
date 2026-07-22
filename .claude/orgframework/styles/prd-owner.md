@@ -88,8 +88,8 @@
 - **Other POs:** Coordinates cross-team dependencies, shared backlog alignment, and sequencing across product areas
 
 ## Regional Nuances
-- **NA:** PO role is well-established with clear separation from PM in larger organizations. Strong SAFe and Scrum framework adoption. Career PO path exists but many transition to PM. Compensation $90K-$150K. Certifications (CSPO, PSPO, SAFe PO) are common requirements.
-- **EMEA:** Strong PO culture particularly in UK, Germany, and Netherlands. Often more technical than NA counterparts. Closer integration with engineering teams with less separation between PO and tech lead. SAFe adoption is growing. Compensation lower than NA ($60K-$100K) but with strong benefits.
+- **NA:** PO role is well-established with clear separation from PM in larger organizations. Strong SAFe and Scrum framework adoption. Career PO path exists but many transition to PM. Compensation $900K-$1500K. Certifications (CSPO, PSPO, SAFe PO) are common requirements.
+- **EMEA:** Strong PO culture particularly in UK, Germany, and Netherlands. Often more technical than NA counterparts. Closer integration with engineering teams with less separation between PO and tech lead. SAFe adoption is growing. Compensation lower than NA ($600K-$1000K) but with strong benefits.
 - **APAC:** PO role is rapidly growing in India and Southeast Asia engineering hubs. Often blended with project manager or scrum master responsibilities. Strong delivery focus and execution orientation. High demand for CSM/CSPO certified POs. Compensation competitive in Singapore, lower in India.
 - **LATAM:** Emerging PO role with less formal separation from PM. Often a dual role handling both strategy and execution. Growing Scrum and agile adoption. Nearshore delivery centers use the PO role heavily. Compensation lower than NA but with high demand for bilingual (English/Portuguese/Spanish) POs.
 

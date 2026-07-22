@@ -4,7 +4,7 @@
   "name": "Hospital / Health System",
   "description": "Comprehensive hospital or multi-facility health system with full clinical, administrative, and support services. Designed for acute-care hospitals, medical centers, and integrated delivery networks operating under strict regulatory frameworks (HIPAA, JCI, CMS).",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare"], "stages": ["enterprise"] },
-  "headcount_range": "200-10000+",
+  "headcount_range": "2000-100000+",
   "org_structure": {
     "overview": "The hospital or health system is organized under a dual governance model balancing clinical authority (medical staff / chief of staff) with administrative leadership (CEO / hospital administration). Clinical chiefs report through the Chief of Staff for credentialing and clinical quality, while administrative leaders report through the CEO for operational and financial performance. This matrix creates shared accountability for patient outcomes, regulatory compliance, and fiscal stewardship. Departments span inpatient and outpatient care, diagnostic services, support services, and corporate functions.",
     "departments": [

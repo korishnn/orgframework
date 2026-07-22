@@ -4,7 +4,7 @@
   "name": "K-12 School / School District",
   "description": "Organization structure for a K-12 school district or individual school. Covers governance through the school board, district-level administration, school-site leadership, instructional staff by grade and subject, student support services, and operations including facilities, cafeteria, and transportation. Designed for public, private, and charter school settings serving approximately 500-5,000 students across multiple grade bands.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["education"], "stages": ["operational", "growth"] },
-  "headcount_range": "50-500",
+  "headcount_range": "500-5000",
   "org_structure": {
     "overview": "K-12 schools operate under a governance model where an elected or appointed school board sets policy and a Superintendent (district) or Head of School (single site) executes. The organization is split into instructional delivery (teaching and learning), student support services (counseling, special education, health), and operations (facilities, transportation, food service). School-site leadership follows a Principal-to-teacher reporting structure with department or grade-level leads coordinating curriculum. Compliance with state/national education standards is a cross-cutting concern. Budget authority flows from the board through the Superintendent, with school-site budgets managed by Principals.",
     "departments": [

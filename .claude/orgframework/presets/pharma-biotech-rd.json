@@ -4,7 +4,7 @@
   "name": "Pharmaceutical / Biotech R&D Organization",
   "description": "Research-driven pharmaceutical or biotechnology company organized around drug discovery, preclinical development, clinical trials, regulatory affairs, and quality assurance. Designed for organizations navigating the stage-gate pipeline from target identification through IND, clinical trials, and NDA/BLA approval.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare", "biotech", "pharmaceutical"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "10-5000+",
+  "headcount_range": "100-50000+",
   "org_structure": {
     "overview": "The R&D organization follows a stage-gate pipeline model. Research (discovery) identifies and validates drug targets, then advances candidates through preclinical testing. Clinical Development manages human trials (Phase I-III), supported by Biostatistics and Data Management. Regulatory Affairs shepherds submissions through health authorities (FDA, EMA, PMDA). Quality Assurance ensures GLP, GCP, and GMP compliance throughout. The organization spans from PhD scientists at the bench to clinical operations specialists managing global trial sites. A CSO or Head of R&D leads the full pipeline with matrix collaboration between functions.",
     "departments": [

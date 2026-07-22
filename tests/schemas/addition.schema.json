@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://orgframework.dev/schemas/addition.schema.json",
+  "title": "Guidance Addition",
+  "description": "Schema for entries in additions.json",
+  "type": "object",
+  "required": ["id", "name", "instruction"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique addition identifier (kebab-case)",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable addition name"
+    },
+    "instruction": {
+      "type": "string",
+      "description": "Guidance instruction text"
+    },
+    "tokens": {
+      "description": "Token count for the instruction (integer or short string like '~60')",
+      "oneOf": [
+        { "type": "integer" },
+        { "type": "string" }
+      ]
+    }
+  }
+}

@@ -5,16 +5,16 @@
   "description": "For pre-seed and seed-stage startups with 1-10 people. Founder-led and flat — everyone wears multiple hats, no formal departments exist yet. Best suited for companies validating product-market fit before their first institutional round.",
   "applicability": {
     "regions": ["na", "emea", "apac", "latam"],
-    "industries": ["saas", "fintech", "healthcare", "manufacturing", "ecommerce"],
+    "industries": ["saas", "fintech", "healthcare", "manufacturing", "ecommerce", "web3", "climate", "ai-labs"],
     "stages": ["startup"]
   },
   "headcount_range": "1-10",
   "org_structure": {
-    "overview": "The seed-stage org is intentionally flat and role-based rather than department-based. Every person operates across functional boundaries, and reporting lines are direct to the CEO. The philosophy is maximum velocity: decisions are made by the person closest to the problem, communication is synchronous and informal, and structure is avoided until it creates a bottleneck. Titles are secondary to ownership areas.",
+    "overview": "The seed-stage org is intentionally flat and role-based rather than department-based. Every person operates across functional boundaries, and reporting lines are direct to the CEO. The philosophy is maximum velocity: decisions are made by the person closest to the problem, communication is synchronous and informal, and structure is avoided until it creates a bottleneck. Titles are secondary to ownership areas. Speed of iteration is the only competitive advantage — formal processes, handoffs, and approvals are deferred until they become the bottleneck. The founding team typically consists of 2-3 co-founders who together cover product, engineering, and go-to-market. Early hires (employees 1-10) are generalists who can operate in ambiguity and adapt as priorities shift weekly. Funding is typically angel/seed ($500K-$3M) providing 12-18 months of runway to reach product-market fit or a Series A milestone.",
     "departments": [
       {
         "name": "Founding Team",
-        "description": "The core founding group that sets vision, builds the product, finds first customers, and raises capital. In a seed startup the 'department' is just the company itself — all roles listed here constitute the entire org.",
+        "description": "The core founding group that sets vision, builds the product, finds first customers, and raises capital. In a seed startup the 'department' is just the company itself — all roles listed here constitute the entire org. Every team member operates as a generalist capable of contributing across functions, and functional specialization is a luxury reserved for later stages. The founding team meets daily for a 15-minute standup and communicates primarily through Slack and shared documents rather than formal meetings.",
         "headcount": "1-10",
         "reports_to": "CEO",
         "roles": [
@@ -23,42 +23,49 @@
             "count": 1,
             "level": "Head",
             "reports_to": "Board of Directors",
-            "description": "Sets overall vision, strategy, and culture. Owns fundraising, hiring, and external communications. Ultimately accountable for all outcomes."
+            "description": "Sets overall vision, strategy, and culture. Owns fundraising, hiring, external communications, and investor relations. Ultimately accountable for all outcomes. At seed stage, the CEO also does sales, customer discovery, and product specification."
           },
           {
             "title": "CTO / Co-Founder",
             "count": 1,
             "level": "Head",
             "reports_to": "CEO",
-            "description": "Owns the technical vision and architecture. Builds the initial product alongside the engineering team and makes all technical decisions. Often ships code daily."
+            "description": "Owns the technical vision and architecture. Builds the initial product alongside the engineering team and makes all technical decisions. Often ships code daily and participates in customer calls to understand pain points firsthand."
           },
           {
             "title": "Product Lead",
             "count": 1,
             "level": "Head",
             "reports_to": "CEO",
-            "description": "Defines product strategy, prioritizes roadmap, conducts user research, and writes specs. At seed stage this may be the CEO or CTO wearing a second hat."
+            "description": "Defines product strategy, prioritizes roadmap, conducts user research, and writes specs. At seed stage this may be the CEO or CTO wearing a second hat. Gathers customer feedback through direct interviews and usage analytics."
           },
           {
             "title": "Full-Stack Engineer",
             "count": "2-4",
             "level": "IC",
             "reports_to": "CTO",
-            "description": "Builds features across the entire stack. Expected to own features end-to-end from database schema to UI. Works directly with the CEO/CTO on priorities."
+            "description": "Builds features across the entire stack. Expected to own features end-to-end from database schema to UI. Works directly with the CEO/CTO on priorities and frequently joins customer calls. Ships multiple times per day."
           },
           {
             "title": "Marketing Lead",
             "count": 1,
             "level": "Head",
             "reports_to": "CEO",
-            "description": "Owns brand, messaging, content, and demand generation. Often runs paid acquisition, social media, and PR. May be a fractional or part-time hire at this stage."
+            "description": "Owns brand, messaging, content, and demand generation. Often runs paid acquisition, social media, and PR. May be a fractional or part-time hire at this stage. Builds the foundational marketing infrastructure (website, analytics, email tool) that will scale later."
           },
           {
             "title": "Sales Lead",
             "count": 1,
             "level": "Head",
             "reports_to": "CEO",
-            "description": "Owns the sales process from pipeline generation through close. Handles early customer relationships and feeds product feedback into roadmap. May also serve as customer support."
+            "description": "Owns the sales process from pipeline generation through close. Handles early customer relationships and feeds product feedback into roadmap. May also serve as customer support during early stages. Builds the initial sales playbook and CRM setup."
+          },
+          {
+            "title": "Designer / Design Lead",
+            "count": "0-1",
+            "level": "IC",
+            "reports_to": "CEO",
+            "description": "Owns product design, user experience, and brand visual identity. Creates mockups, prototypes, and design system foundations. Often a part-time or contractor role at seed stage."
           }
         ]
       }
@@ -67,9 +74,17 @@
       "CEO and CTO meet daily for a 15-minute sync to align on product, hiring, and fundraising priorities.",
       "Everyone attends a weekly all-hands standup — no information silos are tolerated at this stage.",
       "Marketing and Sales sit together (often the same person) to ensure messaging consistency from first touch through close.",
-      "Every engineer has a direct line to customer feedback — engineers join sales calls regularly.",
-      "Decision-making is consultative but ultimately the CEO decides. The motto is 'disagree and commit.'"
+      "Every engineer has a direct line to customer feedback — engineers join sales calls regularly to understand user pain points.",
+      "Decision-making is consultative but ultimately the CEO decides. The motto is 'disagree and commit.'",
+      "All team members share the on-call rotation for production incidents and customer support — there are no silos.",
+      "The founding team shares cap table understanding and meets with legal counsel jointly for fundraising documentation."
     ],
-    "org_chart_text": "CEO/Founder\n├── CTO/Co-Founder\n│   └── Full-Stack Engineers (2-4)\n├── Product Lead (may be CEO or CTO dual hat)\n├── Marketing Lead\n└── Sales Lead"
+    "org_chart_text": "CEO/Founder\n├── CTO/Co-Founder\n│   └── Full-Stack Engineers (2-4)\n├── Product Lead (may be CEO or CTO dual hat)\n├── Marketing Lead\n├── Sales Lead\n└── Designer (frac/contract)"
+  },
+  "culture_notes": {
+    "type": "Founder-Led / High-Velocity",
+    "traits": ["Extreme ownership — everyone owns outcomes, not tasks", "Comfort with ambiguity — priorities change weekly", "Radical transparency — all metrics shared with everyone", "Speed over polish — 'good enough' ships today", "Resourcefulness — no budget for tools or headcount"],
+    "challenges": ["Founder burnout is the #1 failure mode", "No institutional knowledge — everything is in people's heads", "Hiring mistakes are amplified — one bad hire in a team of 8 is catastrophic", "Product-market fit uncertainty creates emotional whiplash", "Co-founder conflict is existential — alignment must be maintained proactively"],
+    "best_practices": ["Write everything down from day one — Notion/Documentation repo", "Establish co-founder communication rhythms: weekly 1:1s + monthly alignment", "Run a simple OKR or SMART goal system even at 3 people", "Invest in the cap table properly — fix it later is expensive", "Build a personal board of advisors — the loneliness of the founder is real"]
   }
 }

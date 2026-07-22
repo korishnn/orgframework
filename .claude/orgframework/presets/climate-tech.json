@@ -1,0 +1,87 @@
+{
+  "preset": "climate-tech",
+  "version": "1.0",
+  "name": "Climate Tech Startup",
+  "description": "Organization structure for a climate technology company — balancing mission-driven impact with commercial viability. Covers the intersection of scientific/engineering rigor, regulatory affairs (carbon markets, ESG reporting), grant funding alongside venture capital, and the unique talent dynamics of the climate sector. Designed for seed to Series C climate tech companies (5-200 people) working on carbon accounting, clean energy, sustainable agriculture, carbon removal, or climate analytics.",
+  "applicability": { "regions": ["na", "emea", "apac"], "industries": ["climate", "technology", "energy"], "stages": ["startup", "scaleup"] },
+  "headcount_range": "50-2000",
+  "org_structure": {
+    "overview": "Climate tech companies operate at the intersection of hard science/engineering, regulatory navigation, and commercial software. The org must balance: scientific credibility (you need PhDs who understand carbon cycles) with software velocity (you need engineers who ship fast), and mission impact with revenue growth. The structure reflects three pillars: Science & Methodology (who ensures the climate math is correct), Product & Engineering (who builds the software), and Regulatory & Markets (who navigates carbon markets, ESG frameworks, and policy). The CEO typically has a climate/technical background and the culture is values-driven with a strong mission orientation.",
+    "departments": [
+      {
+        "name": "Executive / Leadership",
+        "description": "Sets the company's climate mission, commercial strategy, and scientific integrity standards. The CEO often has deep climate expertise and leads both the commercial and mission dimensions.",
+        "headcount": "2-5",
+        "reports_to": "Board of Directors",
+        "roles": [
+          { "title": "Chief Executive Officer (CEO)", "count": 1, "level": "Executive", "reports_to": "Board", "description": "Sets company vision, mission, and strategy. Leads fundraising (VC + grants), board relationships, and public positioning on climate." },
+          { "title": "Chief Science Officer / Head of Methodology", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Ensures scientific integrity of climate models, carbon calculations, and methodologies. The face of the company's climate expertise." },
+          { "title": "Chief Technology Officer (CTO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads product and engineering. Balances scientific requirements with software scalability." },
+          { "title": "Chief Revenue Officer (CRO)", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Leads enterprise sales, partnerships, and go-to-market for climate solutions." },
+          { "title": "COO / Head of Operations", "count": "0-1", "level": "Executive", "reports_to": "CEO", "description": "Manages regulatory affairs, carbon market operations, and cross-functional execution." }
+        ]
+      },
+      {
+        "name": "Science & Methodology",
+        "description": "The intellectual core of the climate tech company. This team develops and validates the scientific methodologies, models, and calculations that underpin the product. They ensure the company's climate claims are defensible and credible.",
+        "headcount": "5-25",
+        "reports_to": "Chief Science Officer",
+        "roles": [
+          { "title": "Lead Climate Scientist", "count": 1, "level": "Senior", "reports_to": "Chief Science Officer", "description": "Leads scientific research, methodology development, and peer review. Ensures the company's approach aligns with climate science best practices." },
+          { "title": "Carbon Accounting Specialist", "count": "2-8", "level": "Professional", "reports_to": "Lead Climate Scientist", "description": "Develops and maintains carbon footprint calculation methodologies (Scope 1, 2, 3). Ensures methodology aligns with GHG Protocol and regulatory frameworks." },
+          { "title": "Climate Data Scientist", "count": "2-8", "level": "Professional", "reports_to": "Lead Climate Scientist", "description": "Analyzes climate data, builds models for carbon sequestration, emission factors, and climate impact projections. Works with satellite imagery, IoT sensor data, and public datasets." },
+          { "title": "Methodology Reviewer / Quality Assurance", "count": "1-3", "level": "Professional", "reports_to": "Lead Climate Scientist", "description": "Reviews all methodologies for scientific rigor, conducts third-party verification readiness, manages peer review processes." },
+          { "title": "Research Associate", "count": "0-5", "level": "Entry", "reports_to": "Lead Climate Scientist", "description": "Supports scientific research — literature reviews, data collection, model validation, and documentation of methodologies." }
+        ]
+      },
+      {
+        "name": "Product & Engineering",
+        "description": "Builds the software platform that delivers climate solutions to customers. Must translate complex climate science into usable product experiences while maintaining data integrity and audit readiness.",
+        "headcount": "10-60",
+        "reports_to": "CTO",
+        "roles": [
+          { "title": "VP Engineering", "count": "0-1", "level": "Senior", "reports_to": "CTO", "description": "Leads engineering organization, sets technical standards, manages platform architecture, and oversees delivery." },
+          { "title": "Engineering Manager", "count": "1-5", "level": "Senior", "reports_to": "VP Engineering", "description": "Leads engineering squads — data platform, customer app, analytics, API." },
+          { "title": "Full-Stack / Product Engineer", "count": "3-20", "level": "Professional", "reports_to": "Engineering Manager", "description": "Builds customer-facing features — dashboards, reporting, data visualization, onboarding flows." },
+          { "title": "Data Platform Engineer", "count": "2-10", "level": "Professional", "reports_to": "Engineering Manager", "description": "Builds data pipelines for emission factor ingestion, customer data processing, and reporting outputs. Ensures audit trail and data lineage." },
+          { "title": "Product Manager", "count": "2-6", "level": "Professional", "reports_to": "VP Engineering / CTO", "description": "Defines product features, prioritizes roadmap, bridges science team and engineering team, manages customer feedback." },
+          { "title": "UX Designer", "count": "1-4", "level": "Professional", "reports_to": "VP Engineering", "description": "Designs intuitive experiences for complex climate data — emissions dashboards, reduction planning tools, regulatory report builders." }
+        ]
+      },
+      {
+        "name": "Regulatory & Markets",
+        "description": "Navigates the complex regulatory landscape for climate — carbon markets, ESG reporting frameworks, evolving climate disclosure regulations, and carbon credit verification standards.",
+        "headcount": "3-10",
+        "reports_to": "COO / CEO",
+        "roles": [
+          { "title": "Head of Regulatory Affairs", "count": 1, "level": "Senior", "reports_to": "COO / CEO", "description": "Leads regulatory strategy, monitors emerging climate regulations (SEC climate rules, EU CSRD, UK SDR), and ensures product compliance." },
+          { "title": "Carbon Markets Specialist", "count": "1-3", "level": "Professional", "reports_to": "Head of Regulatory Affairs", "description": "Manages relationships with carbon registries (Verra, Gold Standard, ACR), carbon credit verification processes, and market intelligence." },
+          { "title": "ESG / Sustainability Analyst", "count": "1-3", "level": "Professional", "reports_to": "Head of Regulatory Affairs", "description": "Analyzes ESG reporting frameworks (SASB, GRI, TCFD, CDP), ensures product supports customer ESG reporting needs, monitors standards evolution." },
+          { "title": "Policy Analyst", "count": "0-2", "level": "Professional", "reports_to": "Head of Regulatory Affairs", "description": "Tracks climate policy developments across key markets (EU, US, UK, Asia), advises product team on policy-driven feature requirements." }
+        ]
+      },
+      {
+        "name": "Go-to-Market (Sales & Partnerships)",
+        "description": "Sells climate solutions to enterprises, governments, and institutions. Sales cycles are often long — driven by regulatory deadlines, budget cycles, and multi-stakeholder procurement processes.",
+        "headcount": "5-30",
+        "reports_to": "CRO",
+        "roles": [
+          { "title": "VP Sales", "count": "0-1", "level": "Senior", "reports_to": "CRO", "description": "Leads enterprise sales team, sets sales strategy, manages key accounts and partnerships." },
+          { "title": "Enterprise Account Executive", "count": "2-10", "level": "Professional", "reports_to": "VP Sales", "description": "Owns enterprise relationships — sustainability, finance, and procurement stakeholders. Long sales cycles (6-18 months)." },
+          { "title": "Solutions Engineer / Sales Engineer", "count": "1-5", "level": "Professional", "reports_to": "VP Sales", "description": "Technical pre-sales — demos, proof-of-concepts, data integration assessment, and technical validation with customer teams." },
+          { "title": "Customer Success Manager (Climate)", "count": "2-8", "level": "Professional", "reports_to": "VP Sales / CRO", "description": "Manages customer onboarding, adoption, and retention. Helps customers interpret their climate data and maximize value from the platform." },
+          { "title": "Partnerships Manager", "count": "1-3", "level": "Professional", "reports_to": "CRO", "description": "Builds partnerships with consultancies, carbon registries, ESG rating agencies, and climate data providers." }
+        ]
+      }
+    ],
+    "key_relationships": [
+      "Science & Methodology defines the carbon calculation models → Product & Engineering implements them → Regulatory & Markets ensures compliance. All three must align on every feature.",
+      "Sales cycles are heavily driven by regulation — the Regulatory team's intelligence on upcoming rules directly informs the Sales team's pipeline priorities.",
+      "Carbon credit verification requires scientific methodology approval AND registry relationship management — Science and Regulatory teams collaborate closely on this.",
+      "Product Managers sit between Science and Engineering — they translate scientific models into product requirements and prioritize features based on market demand.",
+      "Customer Success must understand climate data deeply enough to guide non-expert customers — they receive training from the Science team.",
+      "The company's credibility depends on scientific integrity — the Science team has the authority to veto product features or marketing claims that are scientifically unsound."
+    ],
+    "org_chart_text": "CEO\n├── Chief Science Officer\n│     ├── Lead Climate Scientist\n│     │     ├── Carbon Accounting Specialists\n│     │     ├── Climate Data Scientists\n│     │     └── Research Associates\n│     └── Methodology QA / Verification Lead\n│\n├── CTO\n│     └── VP Engineering\n│           ├── Data Platform Squad\n│           │     ├── Data Platform Engineers\n│           │     └── Data Engineers (pipelines)\n│           ├── Product Squad\n│           │     ├── Product Engineers\n│           │     ├── Product Managers\n│           │     └── UX Designers\n│           └── Platform / API Squad\n│                 ├── Backend Engineers\n│                 └── API Engineers\n│\n├── CRO\n│     ├── VP Sales\n│     │     ├── Enterprise AEs\n│     │     └── Solutions Engineers\n│     ├── Customer Success\n│     └── Partnerships\n│\n├── COO / Head of Operations\n│     ├── Head of Regulatory Affairs\n│     │     ├── Carbon Markets Specialist\n│     │     ├── ESG/Sustainability Analyst\n│     │     └── Policy Analyst\n│     ├── People / HR\n│     ├── Finance\n│     └── Legal\n└── [Marketing / Communications]\n      └── Climate Content & Communications\n\nNote: Science team has veto power over climate claims.\nRegulatory timeline dictates product roadmap.\nMission and commercial goals are equally weighted."
+  }
+}

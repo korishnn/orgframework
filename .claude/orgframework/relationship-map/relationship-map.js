@@ -1,57 +1,196 @@
 #!/usr/bin/env node
 // relationship-map.js — Build and query role relationship graph from styles/*
-// Usage: node bin/relationship-map.js <role-id>  (find all connections for a role)
-//        node bin/relationship-map.js --all        (list all relationships)
-//        node bin/relationship-map.js --stats      (most connected roles)
+// Usage: node .claude/orgframework/relationship-map/relationship-map.js <role-id>
+//        node .claude/orgframework/relationship-map/relationship-map.js --all
+//        node .claude/orgframework/relationship-map/relationship-map.js --stats
+//        node .claude/orgframework/relationship-map/relationship-map.js --validate
 
 import { readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { getStylesDir } from '../lib/paths.js';
+import { tryCatch, Result } from '../lib/errors.js';
+import { createCache } from '../lib/cache.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const STYLES_DIR = join(__dirname, '..', '.claude', 'orgframework', 'styles');
+const STYLES_DIR = getStylesDir();
 
-// Build relationship graph from all role files
-function buildGraph() {
-  const files = readdirSync(STYLES_DIR).filter(f => f.endsWith('.md'));
-  const graph = {};
+// ── TTL Cache ─────────────────────────────────────────────────────────
+const graphCache = createCache(60_000);
 
-  for (const f of files) {
-    const roleId = f.replace('.md', '');
-    const content = readFileSync(join(STYLES_DIR, f), 'utf-8');
-    const connections = [];
-
-    // Extract "Collaborates with" references
-    const collabMatch = content.match(/Collaborates with:?\s*(.+)/i) ||
-                        content.match(/- Collaborates with:?\s*(.+)/i);
-    if (collabMatch) {
-      const refs = collabMatch[1].split(',').map(s => s.trim()).filter(Boolean);
-      for (const ref of refs) {
-        // Extract role IDs from references
-        const roleIds = ref.match(/[a-z]+-[a-z0-9-]+/g);
-        if (roleIds) connections.push(...roleIds);
-      }
-    }
-
-    // Extract "Reports to" references
-    const reportsMatch = content.match(/Reports to:?\s*(.+)/i) ||
-                         content.match(/- Reports to:?\s*(.+)/i);
-    if (reportsMatch) {
-      const refs = reportsMatch[1].split(',').map(s => s.trim()).filter(Boolean);
-      for (const ref of refs) {
-        const roleIds = ref.match(/[a-z]+-[a-z0-9-]+/g);
-        if (roleIds) connections.push(...roleIds.map(r => `${r} (reports_to)`));
-      }
-    }
-
-    graph[roleId] = connections;
-  }
-
-  return graph;
+/**
+ * Clear the cached graph. Call when the styles directory changes.
+ */
+export function clearCache() {
+  graphCache.clear();
 }
 
-function findConnections(graph, roleId) {
+// ── Enhanced Relationship Extraction ───────────────────────────────────
+
+/**
+ * Extract relationship references from a role markdown file's content.
+ * Supports multiple heading formats and inline markers.
+ * @param {string} content - The full markdown content of a role file
+ * @returns {{ collaboratesWith: string[], reportsTo: string[] }}
+ */
+function extractRelationships(content) {
+  /** @type {string[]} */
+  const collaboratesWith = [];
+  /** @type {string[]} */
+  const reportsTo = [];
+
+  // Helper to extract role IDs from a text string
+  function extractRoleIds(/** @type {string} */ text) {
+    return text.match(/[a-z]+-[a-z0-9-]+/g) || [];
+  }
+
+  // Try multiple formats for "Collaborates with" / "Works with"
+  const collabPatterns = [
+    /Collaborates with:?\s*(.+)/i,
+    /- Collaborates with:?\s*(.+)/i,
+    /## Cross-Functional Relationships/i,
+    /## Dependencies/i,
+    /\*\*Works with:\*\*\s*(.+)/i,
+    /\*\*Collaborates with:\*\*\s*(.+)/i,
+  ];
+
+  for (const pattern of collabPatterns) {
+    const match = content.match(pattern);
+    if (match) {
+      // If it's a section heading (## ...), get bullet items until next heading
+      if (pattern.source.startsWith('##')) {
+        const sectionEnd = content.indexOf('##', (match.index || 0) + 1);
+        const section = content.slice(match.index, sectionEnd >= 0 ? sectionEnd : undefined);
+        const bulletItems = section.split('\n')
+          .filter(l => l.trim().startsWith('-'))
+          .map(l => l.replace(/^-\s*/, '').trim());
+        for (const item of bulletItems) {
+          collaboratesWith.push(...extractRoleIds(item));
+        }
+      } else {
+        // Inline format: "Collaborates with: role-a, role-b"
+        const refs = match[1].split(',').map(s => s.trim()).filter(Boolean);
+        for (const ref of refs) {
+          collaboratesWith.push(...extractRoleIds(ref));
+        }
+      }
+      break; // First match wins
+    }
+  }
+
+  // Try multiple formats for "Reports to"
+  const reportsPatterns = [
+    /Reports to:?\s*(.+)/i,
+    /- Reports to:?\s*(.+)/i,
+    /\*\*Reports to:\*\*\s*(.+)/i,
+    /Reports To:?\s*(.+)/,
+  ];
+
+  for (const pattern of reportsPatterns) {
+    const match = content.match(pattern);
+    if (match) {
+      const refs = match[1].split(',').map(s => s.trim()).filter(Boolean);
+      for (const ref of refs) {
+        reportsTo.push(...extractRoleIds(ref));
+      }
+      break;
+    }
+  }
+
+  return { collaboratesWith, reportsTo };
+}
+
+/**
+ * Build a relationship graph from all role markdown files.
+ * @returns {import('../lib/errors.js').Result<Record<string, string[]>, Error>}
+ */
+export function buildGraph() {
+  // Check cache first
+  const cached = graphCache.get();
+  if (cached) return Result.ok(cached);
+
+  return tryCatch(() => {
+    const files = readdirSync(STYLES_DIR).filter(f => f.endsWith('.md'));
+    /** @type {Record<string, string[]>} */
+    const graph = {};
+    /** @type {Set<string>} */
+    const allRoleIds = new Set();
+
+    // First pass: collect all role IDs
+    for (const f of files) {
+      allRoleIds.add(f.replace('.md', ''));
+    }
+
+    // Second pass: extract relationships
+    for (const f of files) {
+      const roleId = f.replace('.md', '');
+      const content = readFileSync(join(STYLES_DIR, f), 'utf-8');
+      const { collaboratesWith, reportsTo } = extractRelationships(content);
+
+      /** @type {string[]} */
+      const connections = [];
+
+      // Add collaborator references
+      for (const ref of collaboratesWith) {
+        connections.push(ref);
+      }
+
+      // Add reports_to references with marker
+      for (const ref of reportsTo) {
+        connections.push(`${ref} (reports_to)`);
+      }
+
+      graph[roleId] = connections;
+    }
+
+    graphCache.set(graph);
+    return graph;
+  });
+}
+
+/**
+ * Validate the graph — report roles with zero connections and dangling references.
+ * @param {Record<string, string[]>} graph
+ * @returns {{ disconnected: string[], danglingRefs: Array<{ from: string, ref: string }>, totalEdges: number, avgConnections: number }}
+ */
+export function validateGraph(graph) {
+  /** @type {string[]} */
+  const disconnected = [];
+  /** @type {Array<{ from: string, ref: string }>} */
+  const danglingRefs = [];
+  let totalEdges = 0;
+
+  const allRoleIds = new Set(Object.keys(graph));
+
+  for (const [node, connections] of Object.entries(graph)) {
+    if (connections.length === 0) {
+      disconnected.push(node);
+    }
+    totalEdges += connections.length;
+    for (const conn of connections) {
+      const refRole = conn.replace(/\s*\(reports_to\)/, '');
+      if (!allRoleIds.has(refRole)) {
+        danglingRefs.push({ from: node, ref: refRole });
+      }
+    }
+  }
+
+  const roleCount = Object.keys(graph).length;
+  return {
+    disconnected,
+    danglingRefs,
+    totalEdges,
+    avgConnections: roleCount > 0 ? Math.round((totalEdges / roleCount) * 10) / 10 : 0,
+  };
+}
+
+/**
+ * Find all direct and reverse connections for a role.
+ * @param {Record<string, string[]>} graph - The relationship graph
+ * @param {string} roleId - Role identifier
+ * @returns {{ roleId: string, collaborates_with: number, direct: string[], reverse_connections: number, reverse: string[] }}
+ */
+export function findConnections(graph, roleId) {
   const direct = graph[roleId] || [];
+  /** @type {string[]} */
   const reverse = [];
   for (const [node, connections] of Object.entries(graph)) {
     if (node !== roleId && connections.some(c => c.includes(roleId))) {
@@ -61,12 +200,17 @@ function findConnections(graph, roleId) {
   return { roleId, collaborates_with: direct.length, direct, reverse_connections: reverse.length, reverse };
 }
 
-function findMostConnected(graph, topN = 20) {
+/**
+ * Find the most connected roles in the graph.
+ * @param {Record<string, string[]>} graph - The relationship graph
+ * @param {number} [topN=20] - Number of results
+ * @returns {Array<{role: string, outbound: number, inbound: number, total: number}>}
+ */
+export function findMostConnected(graph, topN = 20) {
+  /** @type {Array<{role: string, outbound: number, inbound: number, total: number}>} */
   const scores = [];
   for (const [node, connections] of Object.entries(graph)) {
-    // Count unique connections (excluding "reports_to" markers)
     const unique = new Set(connections.map(c => c.replace(/\s*\(reports_to\)/, '')));
-    // Count reverse references
     let reverseCount = 0;
     for (const [other, otherConns] of Object.entries(graph)) {
       if (other !== node && otherConns.some(c => c.includes(node))) reverseCount++;
@@ -76,37 +220,4 @@ function findMostConnected(graph, topN = 20) {
   return scores.sort((a, b) => b.total - a.total).slice(0, topN);
 }
 
-// CLI
-const arg = process.argv[2];
-if (arg) {
-  const graph = buildGraph();
-  if (arg === '--all') {
-    console.log(`Total roles in graph: ${Object.keys(graph).length}`);
-    console.log('First 10:', Object.keys(graph).slice(0, 10).join(', '));
-  } else if (arg === '--stats') {
-    const top = findMostConnected(graph);
-    console.log('Most connected roles:\n');
-    console.log('  Rank | Role                           | Outbound | Inbound | Total');
-    console.log('  ' + '─'.repeat(70));
-    top.forEach((r, i) => {
-      console.log(`  ${String(i + 1).padStart(3)} | ${r.role.padEnd(32)} | ${String(r.outbound).padStart(7)} | ${String(r.inbound).padStart(6)} | ${r.total}`);
-    });
-    console.log(`\n  Total unique role relationships mapped: ${Object.values(graph).reduce((s, c) => s + c.length, 0)}`);
-  } else {
-    const result = findConnections(graph, arg);
-    console.log(`\n  Role: ${result.roleId}`);
-    console.log(`  Direct collaborations: ${result.collaborates_with}`);
-    console.log(`  Reverse references:    ${result.reverse_connections}`);
-    console.log(`\n  Collaborates with:`);
-    result.direct.forEach(r => console.log(`    ${r.includes('(reports_to)') ? `→ ${r.replace(' (reports_to)', '')} (reports to)` : `  ${r}`}`));
-    if (result.reverse.length > 0) {
-      console.log(`\n  Referenced by:`);
-      result.reverse.forEach(r => console.log(`    ${r}`));
-    }
-  }
-} else {
-  console.log('Usage:');
-  console.log('  node bin/relationship-map.js <role-id>    Find connections for a role');
-  console.log('  node bin/relationship-map.js --all        List all roles in graph');
-  console.log('  node bin/relationship-map.js --stats      Show most connected roles');
-}
+// ── CLI is in bin/cli/relationship-map.js ──────────────────────────

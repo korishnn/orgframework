@@ -8,7 +8,7 @@
     "industries": ["fintech"],
     "stages": ["startup", "scaleup", "enterprise"]
   },
-  "headcount_range": "10-500+",
+  "headcount_range": "100-5000+",
   "org_structure": {
     "overview": "Fintech orgs are defined by the tension between speed and safety. The philosophy is 'compliance as a product enabler, not a blocker' — regulatory and risk functions are embedded in product teams rather than isolated in a separate silo that gates releases. The second line of defense (Risk, Compliance, Legal) has independence and authority, including the ability to stop a product launch. The third line (Internal Audit) reports independently to the board audit committee. Key functions unique to fintech include: KYC/AML operations, fraud detection and prevention, payments/financial operations (finops), and regulatory reporting. Technology teams must include deep security architecture and often require dedicated regulatory engineering (RegEng) to build compliance into the platform.",
     "departments": [

@@ -91,7 +91,7 @@
 - **Legal (lgl-privacy):** Privacy compliance for growth experiments, consent requirements for behavioral tracking, compliance for referral program mechanics
 
 ## Regional Nuances
-- **NA:** PLG is a mature and well-established model with sophisticated experimentation culture. Growth roles are highly valued with significant compensation ($140K-$250K+). Strong emphasis on data rigor and statistical methodology. Reforge and similar growth education programs are standard.
+- **NA:** PLG is a mature and well-established model with sophisticated experimentation culture. Growth roles are highly valued with significant compensation ($1400K-$2500K+). Strong emphasis on data rigor and statistical methodology. Reforge and similar growth education programs are standard.
 - **EMEA:** PLG is growing with strong adoption in SaaS hubs (London, Berlin, Amsterdam). Privacy regulations (GDPR) significantly constrain growth experiments — tracking limitations, consent requirements, and data minimization affect funnel analysis and personalization. Growth roles less established than NA.
 - **APAC:** Mobile-first PLG is dominant in many markets (India, Southeast Asia). WhatsApp and other messaging-based growth mechanics are common. Social commerce and referral-based growth are powerful. Lower tolerance for email-heavy growth strategies. Fast growth cadence in high-growth markets.
 - **LATAM:** PLG is emerging with growing experimentation culture in Brazil and Mexico. Mobile-dominant markets require mobile-first growth strategies. Social media and WhatsApp-based growth channels are powerful. Lower disposable income affects freemium and pricing strategies. Cash-based and local payment methods affect monetization growth.

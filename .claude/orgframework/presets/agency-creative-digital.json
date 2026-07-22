@@ -4,7 +4,7 @@
   "name": "Creative / Digital Agency",
   "description": "Organization structure for a creative, digital, or advertising agency operating on a client service model. Covers the dual structure of Account/Client Services (managing client relationships) and Creative/Production (delivering the work). Includes strategy and planning, creative direction, design and copywriting, production and project management, finance, and new business development. Designed for agencies of 10-300 people serving multiple clients across campaigns, branding, digital products, and content.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["advertising", "marketing", "creative-services", "digital-services"], "stages": ["startup", "growth", "operational", "mature"] },
-  "headcount_range": "10-300",
+  "headcount_range": "100-3000",
   "org_structure": {
     "overview": "Creative agencies operate on a client service model where Account/Client Services teams manage client relationships, scope, and expectations while Creative and Production teams execute the work. The agency is typically organized into departments (Account, Creative, Strategy, Production, Finance, New Business) but staff are assembled into cross-functional project teams for each client or campaign. The agency model is relationship-driven: Account Directors own the client relationship, Creative Directors own the creative vision, and Project Managers keep everything on time and on budget. Agencies must balance high-quality creative output with profitability, making resource management and scope control critical. New business (pitching and winning new clients) is a continuous priority that cuts across all departments.",
     "departments": [

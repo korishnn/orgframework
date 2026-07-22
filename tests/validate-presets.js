@@ -1,13 +1,18 @@
 #!/usr/bin/env node
 // validate-presets.js — Verify all preset files have valid structure
 
-import { existsSync, readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { readFileSync, readdirSync } from 'fs';
+import { join } from 'path';
+import { getRootDir, getDataPath } from './lib/utils.js';
+import Ajv from 'ajv';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
-const PRESETS_DIR = join(ROOT, '.claude', 'orgframework', 'presets');
+const ROOT = getRootDir();
+const PRESETS_DIR = getDataPath('presets');
+
+// Load JSON Schema
+const presetSchema = JSON.parse(readFileSync(join(ROOT, 'tests', 'schemas', 'preset.schema.json'), 'utf-8'));
+const ajv = new Ajv();
+const validatePreset = ajv.compile(presetSchema);
 
 let errors = 0;
 const files = readdirSync(PRESETS_DIR).filter(f => f.endsWith('.json'));
@@ -19,6 +24,13 @@ for (const f of files) {
     const data = JSON.parse(readFileSync(join(PRESETS_DIR, f), 'utf-8'));
     const id = data.preset || f.replace('.json', '');
     let fileErrors = 0;
+
+    if (!validatePreset(data)) {
+      for (const err of validatePreset.errors) {
+        console.log(`  ✗ ${f}: schema ${err.instancePath} ${err.message}`);
+        fileErrors++;
+      }
+    }
 
     if (!data.preset) { console.log(`✗ ${f}: missing preset field`); fileErrors++; }
     if (!data.name) { console.log(`✗ ${f}: missing name`); fileErrors++; }
@@ -52,9 +64,6 @@ for (const f of files) {
 }
 
 console.log(`\nAll presets have a matching JSON file.`);
-
-// Check against index.json — just verify consistency
-const index = JSON.parse(readFileSync(join(ROOT, '.claude', 'orgframework', 'index.json'), 'utf-8'));
 
 const totalDepartments = files.reduce((sum, f) => {
   try {

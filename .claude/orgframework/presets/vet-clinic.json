@@ -4,7 +4,7 @@
   "name": "Veterinary Clinic / Animal Hospital",
   "description": "Small animal or mixed-animal veterinary practice providing wellness care, medical treatment, surgery, dentistry, and emergency services for companion animals and/or livestock. Suitable for solo vet practices, multi-vet animal hospitals, and corporate-owned veterinary chains.",
   "applicability": { "regions": ["na", "emea", "apac", "latam"], "industries": ["healthcare", "veterinary"], "stages": ["startup", "growth", "enterprise"] },
-  "headcount_range": "3-30",
+  "headcount_range": "30-300",
   "org_structure": {
     "overview": "The veterinary clinic is organized around the medical team (veterinarians, vet technicians, assistants) providing compassionate care for animals, with strong front-office and client-relations support. The practice manager oversees business operations while the medical director or lead veterinarian sets clinical standards. The model typically includes exam-room consultations, in-house laboratory, digital radiography, surgical suite, pharmacy/dispensary, and hospitalization/kennel areas. Revenue comes from exam fees, procedures, diagnostics, pharmacy, and retail (pet food, preventatives). Scheduling must accommodate both appointments and same-day urgent visits.",
     "departments": [
