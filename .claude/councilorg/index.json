@@ -1,6 +1,6 @@
 {
   "version": "5.0.0",
-  "philosophy": "537 hand-crafted reference roles spanning multiple domains of human work. Each role includes responsibilities, competencies, career progression, cross-functional relationships, and regional/industry variations. These are reference material — the AI constructs custom org structures for each request, using these roles as inspiration rather than prescription.",
+  "philosophy": "555 hand-crafted reference roles spanning multiple domains of human work. Each role includes responsibilities, competencies, career progression, cross-functional relationships, and regional/industry variations. These are reference material — the AI constructs custom org structures for each request, using these roles as inspiration rather than prescription.",
   "philosophy_v3": "LLM Council + organizational intelligence. The skill simulates a multi-perspective council that deliberates on every org design. Divergence is a feature — alternatives are always presented. Truth emerges from productive disagreement.",
   "regions": {
     "default": "na",

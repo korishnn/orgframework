@@ -57,10 +57,9 @@ function resolveImpact(titleLower) {
  * @param {string} titleLower - Lowercase role title
  * @param {string} [level] - Role level from preset
  * @param {number} [count] - Headcount for this role
- * @param {string} [_dept] - Department name
- * @returns {{ urgency: string, coverage: string, timeframe: string, risk: string }}
+  * @returns {{ urgency: string, coverage: string, timeframe: string, risk: string }}
  */
-function computeEnhancedImpact(titleLower, level, count, _dept) {
+function computeEnhancedImpact(titleLower, level, count) {
   // Start with the base fuzzy match
   const base = resolveImpact(titleLower);
   let urgency = base.urgency;
@@ -114,7 +113,7 @@ export function simulateVacancy(presetName, vacantRoleTitle) {
   if (!foundRole) return Result.fail(`Role "${vacantRoleTitle}" not found in ${presetName} preset.`);
 
   // Resolve impact data
-  const impact = computeEnhancedImpact(titleLower, foundRole.level, foundRole.count, foundDept?.name);
+  const impact = computeEnhancedImpact(titleLower, foundRole.level, foundRole.count);
 
   // Find potential coverage from same department
   const deptRoles = foundDept?.roles || [];
