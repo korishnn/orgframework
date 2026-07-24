@@ -3,8 +3,8 @@ import { describe, it, expect } from 'vitest';
 import { createCouncilSession, advanceRound, recordProposal, recordCritique, recordFinalPosition, generateDivergenceNote, COUNCIL_MEMBERS } from '../../.claude/councilorg/council/orchestrator.js';
 
 describe('COUNCIL_MEMBERS', () => {
-  it('has exactly 8 members', () => {
-    expect(COUNCIL_MEMBERS).toHaveLength(8);
+  it('has exactly 10 members', () => {
+    expect(COUNCIL_MEMBERS).toHaveLength(10);
   });
 
   it('each member has required fields', () => {
@@ -24,7 +24,7 @@ describe('createCouncilSession()', () => {
     const session = createCouncilSession({ request: 'test' });
     expect(session.context.request).toBe('test');
     expect(session.context.depth).toBe('default');
-    expect(session.members).toHaveLength(8);
+    expect(session.members).toHaveLength(10);
     expect(session.currentRound).toBe('proposal');
     expect(session.startedAt).toBeDefined();
   });
@@ -110,7 +110,7 @@ describe('generateDivergenceNote()', () => {
   it('generates divergence note with default depth', () => {
     const session = createCouncilSession({ request: 'test' });
     const note = generateDivergenceNote(session);
-    expect(note.council_members).toBe(8);
+    expect(note.council_members).toBe(10);
     expect(note.dissenting_opinions).toBe(0);
     expect(note.assumptions).toBeDefined();
     expect(note.what_would_change).toBeDefined();

@@ -8,7 +8,7 @@ Powered by an **LLM Council** architecture. Every org design is stress-tested by
 
 ## Council Architecture
 
-When invoked without `@fast`, the system spins up a virtual council of 8 perspectives. The council deliberates in two rounds (three with `@deep`):
+When invoked without `@fast`, the system spins up a virtual council of 10 perspectives (8 core + 2 Devil's Advocates). The council deliberates in two rounds (three with `@deep`):
 
 | Council Member | Signature Question |
 |---|---|
@@ -20,6 +20,8 @@ When invoked without `@fast`, the system spins up a virtual council of 8 perspec
 | **The Regulatory Hawk** | "Which regulator knocks on our door first?" |
 | **The Talent Scout** | "Can we hire these people, here, now?" |
 | **The Systems Architect** | "What system architecture does this org produce?" (Conway's Law) |
+| **The Devil's Advocate — Red Team** | "If I wanted this org to fail, how would I exploit its structure?" |
+| **The Devil's Advocate — Worst Case** | "What is the absolute worst outcome and what sequence of events leads there?" |
 
 **Council rounds:**
 1. **Proposal** — Each member gives initial take (1-2 sentences)

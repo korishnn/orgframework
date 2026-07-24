@@ -1,9 +1,9 @@
 This is for Claude Code
 # CouncilOrg 5.0.0 — The Organizational Intelligence Engine
 
-**555 roles · 35 presets · 6 crisis templates · 8 council perspectives · 14 guidance additions · compensation data · region/industry/stage profiles**
+**555 roles · 35 presets · 6 crisis templates · 10 council perspectives · 14 guidance additions · compensation data · region/industry/stage profiles**
 
-Powered by an **LLM Council** architecture. Every org design is stress-tested by a simulated council of 80 organizational perspectives — the Strategist, Operator, Controller, Culture Keeper, Pessimist, Regulatory Hawk, Talent Scout, and Systems Architect — before delivery. Divergence is a feature: you get alternatives, not dogma.
+Powered by an **LLM Council** architecture. Every org design is stress-tested by a simulated council of **10 perspectives** — 8 core members plus 2 Devil's Advocates — before delivery. Divergence is a feature: you get alternatives, not dogma.
 
 ```bash
 /councilorg we're a 50-person fintech in Berlin expanding to Brazil

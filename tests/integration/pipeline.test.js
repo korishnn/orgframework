@@ -110,7 +110,7 @@ describe('Full pipeline: council + relationship map + role-to-task', () => {
       depth: 'default'
     });
     expect(session.currentRound).toBe('proposal');
-    expect(session.members.length).toBe(8);
+    expect(session.members.length).toBe(10);
 
     // advanceRound returns the prompt for the NEXT round
     const r1 = advanceRound(session);
