@@ -151,7 +151,7 @@ export function advanceRound(session) {
 
   if (nextRound === 'proposal') {
     prompt = `# LLM Council — Proposal Round\n\n` +
-      `Context: "${session.context.request}"\n` +
+      `Context: "${session.context.request.replace(/"/g, '\\"').replace(/\n/g, '\\n')}"\n` +
       `Region: ${session.context.region} | Industry: ${session.context.industry} | Stage: ${session.context.stage}\n\n` +
       `Each council member provides their initial assessment of the appropriate org structure.\n\n` +
       COUNCIL_MEMBERS.map(m =>
