@@ -93,6 +93,16 @@ export const COUNCIL_MEMBERS = [
 // ── Council State Machine ─────────────────────────────────────────────
 
 /**
+ * Sanitize user-controlled strings for safe prompt interpolation.
+ * Escapes backslash, double-quotes, and newlines to prevent prompt injection.
+ * @param {string} str - The user-controlled input to sanitize
+ * @returns {string} Sanitized string safe for prompt template interpolation
+ */
+function sanitizePrompt(str) {
+  return String(str).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
+}
+
+/**
  * @typedef {'proposal' | 'critique' | 'synthesis' | 'complete'} CouncilRound
  * @typedef {{ id: string, name: string, proposal: string|null, critiques: string[], final_position: string|null }} CouncilMemberState
  * @typedef {{ request: string, region: string, industry: string, stage: string, preset: string|null, depth: 'fast'|'default'|'deep' }} CouncilContext
@@ -151,8 +161,8 @@ export function advanceRound(session) {
 
   if (nextRound === 'proposal') {
     prompt = `# LLM Council — Proposal Round\n\n` +
-      `Context: "${session.context.request.replace(/"/g, '\\"').replace(/\n/g, '\\n')}"\n` +
-      `Region: ${session.context.region} | Industry: ${session.context.industry} | Stage: ${session.context.stage}\n\n` +
+      `Context: "${sanitizePrompt(session.context.request)}"\n` +
+      `Region: ${sanitizePrompt(session.context.region)} | Industry: ${sanitizePrompt(session.context.industry)} | Stage: ${sanitizePrompt(session.context.stage)}\n\n` +
       `Each council member provides their initial assessment of the appropriate org structure.\n\n` +
       COUNCIL_MEMBERS.map(m =>
         `## ${m.name}\n${m.prompt}\n\n**Signature question:** ${m.signature}\n`
@@ -162,7 +172,7 @@ export function advanceRound(session) {
   if (nextRound === 'critique') {
     const proposals = session.members
       .filter(m => m.proposal)
-      .map(m => `  - ${m.name}: "${m.proposal}"`)
+      .map(m => `  - ${m.name}: "${sanitizePrompt(m.proposal)}"`)
       .join('\n');
 
     prompt = `# LLM Council — Critique Round\n\n` +
@@ -179,7 +189,7 @@ export function advanceRound(session) {
 
   if (nextRound === 'synthesis') {
     const critiques = session.members
-      .map(m => `  - ${m.name}: ${m.critiques.length > 0 ? '"' + m.critiques[m.critiques.length - 1] + '"' : 'No critique recorded'}`)
+      .map(m => `  - ${m.name}: ${m.critiques.length > 0 ? '"' + sanitizePrompt(m.critiques[m.critiques.length - 1]) + '"' : 'No critique recorded'}`)
       .join('\n');
 
     prompt = `# LLM Council — Synthesis Round (Deep Deliberation)\n\n` +
