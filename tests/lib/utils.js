@@ -1,4 +1,4 @@
-// tests/lib/utils.js — Shared test utilities for orgframework
+// tests/lib/utils.js — Shared test utilities for councilorg
 // Provides consistent project root resolution and file helpers.
 
 import { existsSync, readdirSync } from 'fs';
@@ -16,17 +16,17 @@ export function getRootDir() {
 }
 
 /**
- * Return the absolute path to a file or directory under .claude/orgframework/.
- * @param {string} subpath — relative path inside .claude/orgframework (e.g. "index.json")
+ * Return the absolute path to a file or directory under .claude/councilorg/.
+ * @param {string} subpath — relative path inside .claude/councilorg (e.g. "index.json")
  */
 export function getDataPath(subpath) {
-  return join(PROJECT_ROOT, '.claude', 'orgframework', subpath);
+  return join(PROJECT_ROOT, '.claude', 'councilorg', subpath);
 }
 
 /**
- * Count files with a given extension in a directory under .claude/orgframework/.
+ * Count files with a given extension in a directory under .claude/councilorg/.
  * Returns 0 if the directory does not exist.
- * @param {string} dir — subdirectory name inside .claude/orgframework
+ * @param {string} dir — subdirectory name inside .claude/councilorg
  * @param {string} ext — file extension to filter by (e.g. ".json", ".md")
  */
 export function countFiles(dir, ext) {

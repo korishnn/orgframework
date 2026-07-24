@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // bin/cli/relationship-map.js — CLI entry for relationship-map/relationship-map.js
-import { buildGraph, validateGraph, findConnections, findMostConnected } from '../../.claude/orgframework/relationship-map/relationship-map.js';
+import { buildGraph, validateGraph, findConnections, findMostConnected } from '../../.claude/councilorg/relationship-map/relationship-map.js';
 
 const arg = process.argv[2];
 if (arg === '--help' || arg === '-h') {

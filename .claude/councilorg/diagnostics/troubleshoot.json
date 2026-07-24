@@ -83,9 +83,9 @@
   },
 
   "diagnostic_commands": {
-    "/orgframework diagnose": "Run self-diagnostic: check issues_log, adaptations, and current detection accuracy",
-    "/orgframework reset-adaptations": "Clear all learned adaptations and start fresh",
-    "/orgframework show-adaptations": "Display the current adaptation profile and learned preferences",
-    "/orgframework feedback <message>": "Explicitly provide improvement feedback"
+    "/councilorg diagnose": "Run self-diagnostic: check issues_log, adaptations, and current detection accuracy",
+    "/councilorg reset-adaptations": "Clear all learned adaptations and start fresh",
+    "/councilorg show-adaptations": "Display the current adaptation profile and learned preferences",
+    "/councilorg feedback <message>": "Explicitly provide improvement feedback"
   }
 }

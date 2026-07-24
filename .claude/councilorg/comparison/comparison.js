@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // comparison.js — Compare two org structures and output structured diff
-// Usage: node .claude/orgframework/comparison/comparison.js <preset-a.json> <preset-b.json>
+// Usage: node .claude/councilorg/comparison/comparison.js <preset-a.json> <preset-b.json>
 
 import { Result, ErrorCode } from '../lib/errors.js';
 

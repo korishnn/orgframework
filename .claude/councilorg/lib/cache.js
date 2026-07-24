@@ -1,4 +1,4 @@
-// lib/cache.js — Shared TTL cache utility for orgframework engine modules
+// lib/cache.js — Shared TTL cache utility for councilorg engine modules
 // Replaces duplicated cache patterns across similarity/search.js and relationship-map/relationship-map.js.
 
 /**

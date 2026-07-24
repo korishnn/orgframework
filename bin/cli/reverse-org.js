@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // bin/cli/reverse-org.js — CLI entry for reverse-org/designer.js
-import { readJson } from '../../.claude/orgframework/lib/fs.js';
-import { designReverseOrg } from '../../.claude/orgframework/reverse-org/designer.js';
+import { readJson } from '../../.claude/councilorg/lib/fs.js';
+import { designReverseOrg } from '../../.claude/councilorg/reverse-org/designer.js';
 
 const arg = process.argv[2];
 if (arg === '--help' || arg === '-h' || !arg) {
-  console.log('Usage: node .claude/orgframework/reverse-org/designer.js <json-file>');
+  console.log('Usage: node .claude/councilorg/reverse-org/designer.js <json-file>');
   console.log('');
   console.log('Design an org structure bottom-up from an existing headcount list.');
   console.log('');

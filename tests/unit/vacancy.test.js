@@ -1,6 +1,6 @@
 // tests/unit/vacancy.test.js — Unit tests for simulateVacancy()
 import { describe, it, expect } from 'vitest';
-import { simulateVacancy } from '../../.claude/orgframework/vacancy/simulator.js';
+import { simulateVacancy } from '../../.claude/councilorg/vacancy/simulator.js';
 
 describe('simulateVacancy()', () => {
   it('returns fail for missing arguments', () => {

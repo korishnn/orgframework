@@ -1,6 +1,6 @@
 // tests/unit/relationship-map.test.js — Unit tests for relationship-map.js
 import { describe, it, expect } from 'vitest';
-import { buildGraph, findConnections, findMostConnected } from '../../.claude/orgframework/relationship-map/relationship-map.js';
+import { buildGraph, findConnections, findMostConnected } from '../../.claude/councilorg/relationship-map/relationship-map.js';
 
 describe('buildGraph()', () => {
   it('builds a graph with role entries', () => {

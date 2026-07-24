@@ -1,4 +1,4 @@
-// lib/paths.js — Shared path resolution for orgframework modules
+// lib/paths.js — Shared path resolution for councilorg modules
 // Replaces duplicate `__dirname` boilerplate across all engine modules.
 
 import { join, dirname } from 'path';
@@ -8,15 +8,15 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ORG_ROOT = join(__dirname, '..');
 
 /**
- * Return the absolute path to the orgframework data root (.claude/orgframework).
+ * Return the absolute path to the councilorg data root (.claude/councilorg).
  */
 export function getOrgRoot() {
   return ORG_ROOT;
 }
 
 /**
- * Return the absolute path to a file or directory under .claude/orgframework/.
- * @param {string} subpath - Relative path inside .claude/orgframework (e.g. "styles" or "index.json")
+ * Return the absolute path to a file or directory under .claude/councilorg/.
+ * @param {string} subpath - Relative path inside .claude/councilorg (e.g. "styles" or "index.json")
  */
 export function getDataPath(subpath) {
   return join(ORG_ROOT, subpath);
@@ -52,8 +52,8 @@ export function getDefinitionsPath() {
 
 /**
  * Return the absolute path to the project root (where package.json lives).
- * Navigates two levels up from ORG_ROOT (.claude/orgframework/):
- *   .claude/orgframework/ → .claude/ → project root
+ * Navigates two levels up from ORG_ROOT (.claude/councilorg/):
+ *   .claude/councilorg/ → .claude/ → project root
  */
 export function getProjectRoot() {
   return join(ORG_ROOT, '..', '..');

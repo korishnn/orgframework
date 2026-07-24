@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // vacancy.js — Simulate what happens when a key role goes vacant
-// node .claude/orgframework/vacancy/simulator.js <preset> <role-id>
+// node .claude/councilorg/vacancy/simulator.js <preset> <role-id>
 
 import { Result } from '../lib/errors.js';
 import { readPresetFile, readDataFile } from '../lib/fs.js';

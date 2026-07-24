@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // bin/cli/similarity.js — CLI entry for similarity/search.js
-import { findSimilar } from '../../.claude/orgframework/similarity/search.js';
+import { findSimilar } from '../../.claude/councilorg/similarity/search.js';
 
 const arg = process.argv[2];
 if (arg === '--help' || arg === '-h') {
-  console.log('Usage: node .claude/orgframework/similarity/search.js <role-id>');
+  console.log('Usage: node .claude/councilorg/similarity/search.js <role-id>');
   console.log('');
   console.log('Find roles similar to a given role using text overlap scoring.');
   process.exit(0);
@@ -29,7 +29,7 @@ if (arg) {
   });
 } else {
   console.error('Error: A role ID is required.');
-  console.error('Usage: node .claude/orgframework/similarity/search.js <role-id>');
-  console.error('Example: node .claude/orgframework/similarity/search.js eng-backend');
+  console.error('Usage: node .claude/councilorg/similarity/search.js <role-id>');
+  console.error('Example: node .claude/councilorg/similarity/search.js eng-backend');
   process.exit(1);
 }

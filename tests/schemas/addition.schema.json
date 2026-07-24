@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://orgframework.dev/schemas/addition.schema.json",
+  "$id": "https://councilorg.dev/schemas/addition.schema.json",
   "title": "Guidance Addition",
   "description": "Schema for entries in additions.json",
   "type": "object",

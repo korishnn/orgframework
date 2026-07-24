@@ -1,4 +1,4 @@
-# orgframework — Next 10 Recommendations
+# CouncilOrg — Next 10 Recommendations
 
 ## Already Built (v4.2)
 - 1. **Org Chart Visualizer** — Mermaid.js diagrams from any structure

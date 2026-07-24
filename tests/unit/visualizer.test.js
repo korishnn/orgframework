@@ -1,6 +1,6 @@
 // tests/unit/visualizer.test.js — Unit tests for visualizer/generate.js
 import { describe, it, expect } from 'vitest';
-import { generateOrgChart, generateFromPreset } from '../../.claude/orgframework/visualizer/generate.js';
+import { generateOrgChart, generateFromPreset } from '../../.claude/councilorg/visualizer/generate.js';
 
 describe('generateOrgChart()', () => {
   it('returns fail for null input', () => {

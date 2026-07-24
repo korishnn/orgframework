@@ -1,5 +1,5 @@
 {
-  "name": "orgframework",
+  "name": "councilorg",
   "version": "5.0.0",
   "description": "555 reference roles + 35 org presets + LLM Council architecture. Organizational design engine for Claude Code.",
   "keywords": [
@@ -16,10 +16,10 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/korishnn/orgframework"
+    "url": "https://github.com/korishnn/councilorg"
   },
   "bin": {
-    "orgframework": "bin/install.sh"
+    "councilorg": "bin/install.sh"
   },
   "files": [
     "bin/",
@@ -30,17 +30,17 @@
     "LICENSE"
   ],
   "exports": {
-    "./reverse-org": "./.claude/orgframework/reverse-org/designer.js",
-    "./vacancy": "./.claude/orgframework/vacancy/simulator.js",
-    "./similarity": "./.claude/orgframework/similarity/search.js",
-    "./role-to-task": "./.claude/orgframework/role-to-task/generate.js",
-    "./comparison": "./.claude/orgframework/comparison/comparison.js",
-    "./visualizer": "./.claude/orgframework/visualizer/generate.js",
-    "./relationship-map": "./.claude/orgframework/relationship-map/relationship-map.js",
+    "./reverse-org": "./.claude/councilorg/reverse-org/designer.js",
+    "./vacancy": "./.claude/councilorg/vacancy/simulator.js",
+    "./similarity": "./.claude/councilorg/similarity/search.js",
+    "./role-to-task": "./.claude/councilorg/role-to-task/generate.js",
+    "./comparison": "./.claude/councilorg/comparison/comparison.js",
+    "./visualizer": "./.claude/councilorg/visualizer/generate.js",
+    "./relationship-map": "./.claude/councilorg/relationship-map/relationship-map.js",
     "./diagnose": "./bin/diagnose.js"
   },
   "scripts": {
-    "test": "vitest run",
+    "test": "node --experimental-vm-modules ./node_modules/vitest/vitest.mjs run",
     "test:watch": "vitest",
     "test:validate": "node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
     "test:unit": "vitest run",

@@ -1,6 +1,6 @@
 // tests/unit/comparison.test.js — Unit tests for compareStructures()
 import { describe, it, expect } from 'vitest';
-import { compareStructures } from '../../.claude/orgframework/comparison/comparison.js';
+import { compareStructures } from '../../.claude/councilorg/comparison/comparison.js';
 
 const smallOrg = {
   departments: [

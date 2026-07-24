@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// diagnose.js — Self-diagnostic for the orgframework adaptive system
+// diagnose.js — Self-diagnostic for the councilorg adaptive system
 // Run: node bin/diagnose.js
 
 import { existsSync, readFileSync, readdirSync, statSync } from 'fs';
@@ -9,16 +9,16 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const STYLES_DIR = join(ROOT, '.claude', 'orgframework', 'styles');
-const PRESETS_DIR = join(ROOT, '.claude', 'orgframework', 'presets');
-const ADAPT_PATH = join(ROOT, '.claude', 'orgframework', 'adaptations', 'profile.json');
-const TROUBLESHOOT_PATH = join(ROOT, '.claude', 'orgframework', 'diagnostics', 'troubleshoot.json');
-const ADDITIONS_PATH = join(ROOT, '.claude', 'orgframework', 'additions.json');
+const STYLES_DIR = join(ROOT, '.claude', 'councilorg', 'styles');
+const PRESETS_DIR = join(ROOT, '.claude', 'councilorg', 'presets');
+const ADAPT_PATH = join(ROOT, '.claude', 'councilorg', 'adaptations', 'profile.json');
+const TROUBLESHOOT_PATH = join(ROOT, '.claude', 'councilorg', 'diagnostics', 'troubleshoot.json');
+const ADDITIONS_PATH = join(ROOT, '.claude', 'councilorg', 'additions.json');
 
 const SEP = '─'.repeat(56);
 
 console.log(`\n${SEP}`);
-console.log('  orgframework — Self Diagnosis');
+console.log('  councilorg — Self Diagnosis');
 console.log(`${SEP}\n`);
 
 // ─── System Health ────────────────────────────────────────────────────
@@ -29,9 +29,9 @@ const checks = [
   { name: 'Reference Roles', path: STYLES_DIR, type: 'dir', fileExt: '.md' },
   { name: 'Role Definitions', path: STYLES_DIR, type: 'dir', fileExt: '.md' },
   { name: 'Presets', path: PRESETS_DIR, type: 'dir', fileExt: '.json' },
-  { name: 'Regions', path: join(ROOT, '.claude', 'orgframework', 'regions'), type: 'dir', fileExt: '.json' },
-  { name: 'Industries', path: join(ROOT, '.claude', 'orgframework', 'industries'), type: 'dir', fileExt: '.json' },
-  { name: 'Stages', path: join(ROOT, '.claude', 'orgframework', 'stages'), type: 'dir', fileExt: '.json' },
+  { name: 'Regions', path: join(ROOT, '.claude', 'councilorg', 'regions'), type: 'dir', fileExt: '.json' },
+  { name: 'Industries', path: join(ROOT, '.claude', 'councilorg', 'industries'), type: 'dir', fileExt: '.json' },
+  { name: 'Stages', path: join(ROOT, '.claude', 'councilorg', 'stages'), type: 'dir', fileExt: '.json' },
   { name: 'Adaptations', path: ADAPT_PATH, type: 'file' },
   { name: 'Troubleshoot', path: TROUBLESHOOT_PATH, type: 'file' },
   { name: 'Additions', path: ADDITIONS_PATH, type: 'file' },

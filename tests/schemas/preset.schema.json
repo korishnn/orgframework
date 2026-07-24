@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://orgframework.dev/schemas/preset.schema.json",
+  "$id": "https://councilorg.dev/schemas/preset.schema.json",
   "title": "Org Preset",
-  "description": "Schema for orgframework preset JSON files",
+  "description": "Schema for councilorg preset JSON files",
   "type": "object",
   "required": ["preset", "name", "description", "applicability", "headcount_range", "org_structure"],
   "properties": {

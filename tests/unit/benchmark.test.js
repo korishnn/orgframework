@@ -1,8 +1,8 @@
 // tests/unit/benchmark.test.js — Performance assertions for indexing and search
 // Verifies that caching and indexing strategies meet latency targets.
 import { describe, it, expect } from 'vitest';
-import { buildIndex, findSimilar } from '../../.claude/orgframework/similarity/search.js';
-import { buildGraph, clearCache as clearGraphCache } from '../../.claude/orgframework/relationship-map/relationship-map.js';
+import { buildIndex, findSimilar } from '../../.claude/councilorg/similarity/search.js';
+import { buildGraph, clearCache as clearGraphCache } from '../../.claude/councilorg/relationship-map/relationship-map.js';
 
 const BUILD_INDEX_TIMEOUT_MS = 500;
 const FIND_SIMILAR_TIMEOUT_MS = 100;

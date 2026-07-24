@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // org-chart.mermaid.js — Generate Mermaid.js org chart diagrams from any structure
-// Usage: node .claude/orgframework/visualizer/generate.js <preset-json-path>
+// Usage: node .claude/councilorg/visualizer/generate.js <preset-json-path>
 
 import { existsSync } from 'fs';
 import { Result } from '../lib/errors.js';

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// bin/orgframework.js — Unified CLI entrypoint for orgframework engine modules
-// Usage: node bin/orgframework.js <command> [options]
+// bin/councilorg.js — Unified CLI entrypoint for councilorg engine modules
+// Usage: node bin/councilorg.js <command> [options]
 
 const COMMANDS = {
   search:     { desc: 'Find roles similar to a given role',              path: './cli/similarity.js' },
@@ -16,13 +16,13 @@ const COMMANDS = {
 
 const cmd = process.argv[2];
 if (!cmd || cmd === '--help' || cmd === '-h') {
-  console.log('\n  orgframework — Unified CLI\n');
-  console.log('  Usage: node bin/orgframework.js <command> [options]\n');
+  console.log('\n  councilorg — Unified CLI\n');
+  console.log('  Usage: node bin/councilorg.js <command> [options]\n');
   console.log('  Commands:\n');
   for (const [name, info] of Object.entries(COMMANDS)) {
     console.log(`    ${name.padEnd(15)} ${info.desc}`);
   }
-  console.log('\n  For command-specific help: node bin/orgframework.js <command> --help\n');
+  console.log('\n  For command-specific help: node bin/councilorg.js <command> --help\n');
   process.exit(cmd ? 0 : 1);
 }
 
@@ -35,7 +35,7 @@ const command = COMMANDS[cmd];
 if (!command) {
   console.error(`\n  Unknown command: "${cmd}"`);
   console.error('  Available commands: ' + Object.keys(COMMANDS).join(', '));
-  console.error('  Run: node bin/orgframework.js --help\n');
+  console.error('  Run: node bin/councilorg.js --help\n');
   process.exit(1);
 }
 

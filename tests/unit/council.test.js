@@ -1,6 +1,6 @@
 // tests/unit/council.test.js — Unit tests for council/orchestrator.js
 import { describe, it, expect } from 'vitest';
-import { createCouncilSession, advanceRound, recordProposal, recordCritique, recordFinalPosition, generateDivergenceNote, COUNCIL_MEMBERS } from '../../.claude/orgframework/council/orchestrator.js';
+import { createCouncilSession, advanceRound, recordProposal, recordCritique, recordFinalPosition, generateDivergenceNote, COUNCIL_MEMBERS } from '../../.claude/councilorg/council/orchestrator.js';
 
 describe('COUNCIL_MEMBERS', () => {
   it('has exactly 8 members', () => {

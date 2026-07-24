@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // bin/cli/comparison.js — CLI entry for comparison.js
-import { readJson } from '../../.claude/orgframework/lib/fs.js';
-import { compareStructures } from '../../.claude/orgframework/comparison/comparison.js';
+import { readJson } from '../../.claude/councilorg/lib/fs.js';
+import { compareStructures } from '../../.claude/councilorg/comparison/comparison.js';
 
 const arg = process.argv[2];
 if (arg === '--help' || arg === '-h' || !arg) {
-  console.log('Usage: node .claude/orgframework/comparison/comparison.js <preset-a.json> <preset-b.json>');
+  console.log('Usage: node .claude/councilorg/comparison/comparison.js <preset-a.json> <preset-b.json>');
   console.log('');
   console.log('Compare two org structure preset files and output a structured diff.');
   process.exit(arg ? 0 : 1);
@@ -14,7 +14,7 @@ if (arg === '--help' || arg === '-h' || !arg) {
 const [pathA, pathB] = process.argv.slice(2);
 if (!pathA || !pathB) {
   console.error('Error: Two preset file paths are required.');
-  console.error('Usage: node .claude/orgframework/comparison/comparison.js <preset-a.json> <preset-b.json>');
+  console.error('Usage: node .claude/councilorg/comparison/comparison.js <preset-a.json> <preset-b.json>');
   process.exit(1);
 }
 

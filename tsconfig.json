@@ -14,18 +14,18 @@
     "types": ["node"]
   },
   "include": [
-    ".claude/orgframework/lib/types.js",
-    ".claude/orgframework/lib/errors.js",
-    ".claude/orgframework/lib/paths.js",
-    ".claude/orgframework/lib/constants.js",
-    ".claude/orgframework/similarity/search.js",
-    ".claude/orgframework/vacancy/simulator.js",
-    ".claude/orgframework/comparison/comparison.js",
-    ".claude/orgframework/reverse-org/designer.js",
-    ".claude/orgframework/visualizer/generate.js",
-    ".claude/orgframework/relationship-map/relationship-map.js",
-    ".claude/orgframework/council/orchestrator.js",
-    ".claude/orgframework/role-to-task/generate.js"
+    ".claude/councilorg/lib/types.js",
+    ".claude/councilorg/lib/errors.js",
+    ".claude/councilorg/lib/paths.js",
+    ".claude/councilorg/lib/constants.js",
+    ".claude/councilorg/similarity/search.js",
+    ".claude/councilorg/vacancy/simulator.js",
+    ".claude/councilorg/comparison/comparison.js",
+    ".claude/councilorg/reverse-org/designer.js",
+    ".claude/councilorg/visualizer/generate.js",
+    ".claude/councilorg/relationship-map/relationship-map.js",
+    ".claude/councilorg/council/orchestrator.js",
+    ".claude/councilorg/role-to-task/generate.js"
   ],
   "exclude": [
     "node_modules"

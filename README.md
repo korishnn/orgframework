@@ -1,24 +1,24 @@
 This is for Claude Code
-# orgframework 5.0.0 — The Organizational Intelligence Engine
+# CouncilOrg 5.0.0 — The Organizational Intelligence Engine
 
 **555 roles · 35 presets · 6 crisis templates · 8 council perspectives · 14 guidance additions · compensation data · region/industry/stage profiles**
 
 Powered by an **LLM Council** architecture. Every org design is stress-tested by a simulated council of 80 organizational perspectives — the Strategist, Operator, Controller, Culture Keeper, Pessimist, Regulatory Hawk, Talent Scout, and Systems Architect — before delivery. Divergence is a feature: you get alternatives, not dogma.
 
 ```bash
-/orgframework we're a 50-person fintech in Berlin expanding to Brazil
-/orgframework @deep design a respiratory therapy department for a regional hospital
-/orgframework @simulate hypergrowth our Series B SaaS is about to double headcount
-/orgframework @alternatives @fintech @emea what's our org structure as a payments scaleup
-/orgframework @dao we're launching a decentralized protocol, design the governance
-/orgframework @ai-native our startup is building with 10 humans and 20 AI agents
+/councilorg we're a 50-person fintech in Berlin expanding to Brazil
+/councilorg @deep design a respiratory therapy department for a regional hospital
+/councilorg @simulate hypergrowth our Series B SaaS is about to double headcount
+/councilorg @alternatives @fintech @emea what's our org structure as a payments scaleup
+/councilorg @dao we're launching a decentralized protocol, design the governance
+/councilorg @ai-native our startup is building with 10 humans and 20 AI agents
 ```
 
 ---
 
-## What is orgframework 5.0.0?
+## What is councilorg 5.0.0?
 
-orgframework is a **reference library AND organizational intelligence engine** for Claude Code. It helps Claude build better organizational structures by combining:
+councilorg is a **reference library AND organizational intelligence engine** for Claude Code. It helps Claude build better organizational structures by combining:
 
 - **555 hand-written roles** — each with responsibilities, KPIs, career paths, tools, cross-functional relationships, and regional/industry variations
 - **35 org presets** — complete org structures for every scenario (Series A SaaS, hospital system, fintech, restaurant kitchen, AI lab, DAO, climate tech, human-AI hybrid, and more)
@@ -84,10 +84,10 @@ AI/ML ops engineer, prompt engineer, AI ethicist, remote culture manager, neurod
 
 ```bash
 # 1. Install into your Claude Code project
-bash path/to/orgframework/bin/install.sh
+bash path/to/councilorg/bin/install.sh
 
 # 2. Use it in Claude Code
-/orgframework we're a 300-person Series A SaaS company in Berlin, what's my org structure
+/councilorg we're a 300-person Series A SaaS company in Berlin, what's my org structure
 ```
 
 ### Shortcodes
@@ -112,9 +112,9 @@ bash path/to/orgframework/bin/install.sh
 `@dao` `@ai-native`
 
 ```bash
-/orgframework @fintech @emea @scaleup @deep we're expanding our payments team
-/orgframework @simulate hypergrowth @fast we're a 2000-person SaaS about to hire 1000 more
-/orgframework @alternatives design our 400-person product org
+/councilorg @fintech @emea @scaleup @deep we're expanding our payments team
+/councilorg @simulate hypergrowth @fast we're a 2000-person SaaS about to hire 1000 more
+/councilorg @alternatives design our 400-person product org
 ```
 
 ---
@@ -125,21 +125,21 @@ bash path/to/orgframework/bin/install.sh
 
 ```bash
 # Clone the repo somewhere
-git clone https://github.com/korishnn/orgframework.git
+git clone https://github.com/korishnn/councilorg.git
 
 # Install into your project (from project root)
-bash path/to/orgframework/bin/install.sh
+bash path/to/councilorg/bin/install.sh
 
 # Or install into a specific directory
-bash path/to/orgframework/bin/install.sh /path/to/your/project
+bash path/to/councilorg/bin/install.sh /path/to/your/project
 ```
 
-This copies all roles, presets, and profiles into `.claude/orgframework/` and the skill definition into `.claude/skills/orgframework/`.
+This copies all roles, presets, and profiles into `.claude/councilorg/` and the skill definition into `.claude/skills/councilorg/`.
 
 ### Verify installation
 
 ```bash
-node path/to/orgframework/bin/diagnose.js
+node path/to/councilorg/bin/diagnose.js
 ```
 
 Should show all components present and healthy.
@@ -151,62 +151,62 @@ Should show all components present and healthy.
 ### General org design
 
 ```bash
-/orgframework I need to hire a senior backend engineer in Berlin
-/orgframework what does my Series A SaaS org look like with 250 people
-/orgframework design the management structure for a 2000-person manufacturing plant
-/orgframework we're launching a new product line, what's the team structure
+/councilorg I need to hire a senior backend engineer in Berlin
+/councilorg what does my Series A SaaS org look like with 250 people
+/councilorg design the management structure for a 2000-person manufacturing plant
+/councilorg we're launching a new product line, what's the team structure
 ```
 
 ### Industry-specific
 
 ```bash
-/orgframework design the compliance structure for a UK fintech
-/orgframework what departments does a hospital need for respiratory therapy
-/orgframework org structure for an ecommerce company during Black Friday
+/councilorg design the compliance structure for a UK fintech
+/councilorg what departments does a hospital need for respiratory therapy
+/councilorg org structure for an ecommerce company during Black Friday
 ```
 
 ### International expansion
 
 ```bash
-/orgframework US company expanding to Japan — what's the org plan
-/orgframework we're opening a Brazil office from Berlin
+/councilorg US company expanding to Japan — what's the org plan
+/councilorg we're opening a Brazil office from Berlin
 ```
 
 ### Crisis response
 
 ```bash
-/orgframework we just had a data breach — what's the command structure
-/orgframework our CTO is leaving suddenly, what's the transition plan
+/councilorg we just had a data breach — what's the command structure
+/councilorg our CTO is leaving suddenly, what's the transition plan
 ```
 
 ### Diagnostics and troubleshooting
 
 ```bash
-/orgframework diagnose    # Show system health and learned preferences
-/orgframework debug       # Show what was detected from your input
-/orgframework reset       # Clear learned preferences
+/councilorg diagnose    # Show system health and learned preferences
+/councilorg debug       # Show what was detected from your input
+/councilorg reset       # Clear learned preferences
 ```
 
 ### Advanced examples
 
 ```bash
 # Full council deliberation with stress simulation
-/orgframework @deep @simulate hypergrowth @fintech we're a 500-person payments startup
+/councilorg @deep @simulate hypergrowth @fintech we're a 500-person payments startup
 
 # Team topology mapping
-/orgframework @topologies here's our current team structure
+/councilorg @topologies here's our current team structure
 
 # Conway law analysis
-/orgframework @conway we have 3 backend teams and a platform team, predict our architecture
+/councilorg @conway we have 3 backend teams and a platform team, predict our architecture
 
 # Burnout and succession risk assessment
-/orgframework @burnout @succession analyze our current org [paste org chart]
+/councilorg @burnout @succession analyze our current org [paste org chart]
 
 # AI-native org design
-/orgframework @ai-native @fast design a 200-person AI-first startup
+/councilorg @ai-native @fast design a 200-person AI-first startup
 
 # DAO governance design
-/orgframework @dao we're launching a DeFi protocol with 50 founders and a token
+/councilorg @dao we're launching a DeFi protocol with 50 founders and a token
 ```
 
 ---
@@ -215,7 +215,7 @@ Should show all components present and healthy.
 
 ### Reference roles
 
-**555 hand-written markdown files** in `.claude/orgframework/styles/`. Each covers one real-world role with:
+**555 hand-written markdown files** in `.claude/councilorg/styles/`. Each covers one real-world role with:
 
 | Field | What it contains |
 |---|---|
@@ -271,7 +271,7 @@ Should show all components present and healthy.
 
 ### Org presets
 
-**35 complete org structure templates** in `.claude/orgframework/presets/`. Each is a JSON file containing departments, roles with headcount, reporting lines, key cross-functional relationships, and an org chart.
+**35 complete org structure templates** in `.claude/councilorg/presets/`. Each is a JSON file containing departments, roles with headcount, reporting lines, key cross-functional relationships, and an org chart.
 
 | Preset | Headcount | Best for |
 |---|---|---|
@@ -314,7 +314,7 @@ Should show all components present and healthy.
 
 ### Crisis templates
 
-**6 crisis command structures** in `.claude/orgframework/crisis/`. Each defines a clear chain of command, roles, responsibilities, and escalation paths for a specific crisis type:
+**6 crisis command structures** in `.claude/councilorg/crisis/`. Each defines a clear chain of command, roles, responsibilities, and escalation paths for a specific crisis type:
 
 | Template | Crisis scenario |
 |---|---|
@@ -327,7 +327,7 @@ Should show all components present and healthy.
 
 ### Compensation data
 
-**500+ roles with salary bands** in `.claude/orgframework/compensation/bands.json`. Forty regions (NA, EMEA, APAC, LATAM), four levels (junior, mid, senior, lead). NA figures are total comp (base + bonus + equity); other regions vary by market norms.
+**500+ roles with salary bands** in `.claude/councilorg/compensation/bands.json`. Forty regions (NA, EMEA, APAC, LATAM), four levels (junior, mid, senior, lead). NA figures are total comp (base + bonus + equity); other regions vary by market norms.
 
 ```json
 "eng-backend": {
@@ -340,7 +340,7 @@ Should show all components present and healthy.
 
 ### Region profiles
 
-40 profiles in `.claude/orgframework/regions/`. Each covers employment laws, cultural norms, benefits expectations, currency, and reporting standards for that region.
+40 profiles in `.claude/councilorg/regions/`. Each covers employment laws, cultural norms, benefits expectations, currency, and reporting standards for that region.
 
 | Region | Key characteristics |
 |---|---|
@@ -351,7 +351,7 @@ Should show all components present and healthy.
 
 ### Industry profiles
 
-**80 profiles** in `.claude/orgframework/industries/`. Each covers the metrics, regulatory framework, and operational patterns specific to that vertical.
+**80 profiles** in `.claude/councilorg/industries/`. Each covers the metrics, regulatory framework, and operational patterns specific to that vertical.
 
 | Industry | Key metrics | Regulatory context |
 |---|---|---|
@@ -366,7 +366,7 @@ Should show all components present and healthy.
 
 ### Stage profiles
 
-30 profiles in `.claude/orgframework/stages/`. Each adjusts org depth, decision-making speed, specialization level, and compensation philosophy.
+30 profiles in `.claude/councilorg/stages/`. Each adjusts org depth, decision-making speed, specialization level, and compensation philosophy.
 
 | Stage | Org style | Comp approach |
 |---|---|---|
@@ -376,7 +376,7 @@ Should show all components present and healthy.
 
 ### Guidance additions
 
-**14 guidance additions** in `.claude/orgframework/` topic `.guidance.md` files — these are structured prompts that tell Claude how to think about org design for specific dimensions:
+**14 guidance additions** in `.claude/councilorg/` topic `.guidance.md` files — these are structured prompts that tell Claude how to think about org design for specific dimensions:
 
 | Addition | What it does |
 |---|---|
@@ -410,12 +410,12 @@ Should show all components present and healthy.
 ### Directory layout
 
 ```
-orgframework/
+councilorg/
 ├── .claude/
 │   ├── skills/
-│   │   └── orgframework/
+│   │   └── councilorg/
 │   │       └── SKILL.md                  # Skill definition for Claude Code
-│   └── orgframework/
+│   └── councilorg/
 │       ├── index.json                    # Master index and configuration (v50)
 │       ├── *.guidance.md                # 14 guidance additions
 │       ├── styles/                       # 555 role files
@@ -472,7 +472,7 @@ orgframework/
 
 ### How it works
 
-When a user runs `/orgframework <request>` in Claude Code:
+When a user runs `/councilorg <request>` in Claude Code:
 
 ```
 User: "we're a 500-person fintech in Berlin expanding to Brazil"
@@ -656,7 +656,7 @@ The system automatically detects these from your natural language input:
 
 Use `@` shortcodes to override auto-detection:
 ```
-/orgframework @emea @fintech @scaleup what's our Q3 hiring plan
+/councilorg @emea @fintech @scaleup what's our Q3 hiring plan
 ```
 
 ---
@@ -665,7 +665,7 @@ Use `@` shortcodes to override auto-detection:
 
 **Input:**
 ```
-/orgframework we're a 50-person fintech in Berlin expanding to Brazil
+/councilorg we're a 50-person fintech in Berlin expanding to Brazil
 ```
 
 **What happens:**
@@ -731,9 +731,9 @@ What would change this: If BCB licensing takes >12 months, consider partnership 
 
 ## Why 10,000+ People Should Star This
 
-**orgframework 5.0.0 is not just another org chart generator. It's an organizational intelligence engine.**
+**councilorg 5.0.0 is not just another org chart generator. It's an organizational intelligence engine.**
 
-Most org design tools give you a template and say "fill this in." orgframework 5.0.0:
+Most org design tools give you a template and say "fill this in." councilorg 5.0.0:
 1. **Convenes 8 perspectives** that debate, critique, and stress-test every design
 2. **Runs failure simulations** before you hire your first person
 3. **Generates divergent alternatives** — 30 different philosophical approaches to the same problem
@@ -763,14 +763,14 @@ Validates:
 
 ### Adding a role
 
-1. Create a new `.md` file in `.claude/orgframework/styles/`
+1. Create a new `.md` file in `.claude/councilorg/styles/`
 2. Follow the existing format (summary, responsibilities, competencies, KPIs, career path, cross-functional relationships, regional nuances, industry variations)
 3. Add the role ID to `reference_roles` array in `index.json`
 4. Run `npm test` to verify
 
 ### Adding a preset
 
-1. Create a new `.json` file in `.claude/orgframework/presets/`
+1. Create a new `.json` file in `.claude/councilorg/presets/`
 2. Follow the preset format (metadata, applicability, departments with roles, key relationships, org chart text)
 3. Run `npm test` to verify
 
@@ -827,13 +827,13 @@ bash bin/install.sh /path/to/project
 **Requirements:** Node.js >= 18 (ESM modules).
 
 **Project structure:**
-- `.claude/orgframework/` — All data (roles, presets, profiles, engines)
-- `.claude/skills/orgframework/SKILL.md` — The LLM Council instruction set
+- `.claude/councilorg/` — All data (roles, presets, profiles, engines)
+- `.claude/skills/councilorg/SKILL.md` — The LLM Council instruction set
 - `bin/` — Installers and diagnostic tool
 - `tests/` — Validation scripts with JSON Schema checking
 - `tests/schemas/` — JSON Schema definitions for data validation
 
-**Adding a new preset:** Create a JSON file in `.claude/orgframework/presets/` matching the schema at `tests/schemas/preset.schema.json`, then run `npm test` to verify.
+**Adding a new preset:** Create a JSON file in `.claude/councilorg/presets/` matching the schema at `tests/schemas/preset.schema.json`, then run `npm test` to verify.
 
 ---
 

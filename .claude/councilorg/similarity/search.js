@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // similarity.js — Find roles similar to a given role using text overlap scoring
-// Usage: node .claude/orgframework/similarity/search.js <role-id>
+// Usage: node .claude/councilorg/similarity/search.js <role-id>
 
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';

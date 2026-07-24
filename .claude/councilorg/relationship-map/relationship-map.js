@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // relationship-map.js — Build and query role relationship graph from styles/*
-// Usage: node .claude/orgframework/relationship-map/relationship-map.js <role-id>
-//        node .claude/orgframework/relationship-map/relationship-map.js --all
-//        node .claude/orgframework/relationship-map/relationship-map.js --stats
-//        node .claude/orgframework/relationship-map/relationship-map.js --validate
+// Usage: node .claude/councilorg/relationship-map/relationship-map.js <role-id>
+//        node .claude/councilorg/relationship-map/relationship-map.js --all
+//        node .claude/councilorg/relationship-map/relationship-map.js --stats
+//        node .claude/councilorg/relationship-map/relationship-map.js --validate
 
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';

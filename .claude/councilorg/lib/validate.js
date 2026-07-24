@@ -1,4 +1,4 @@
-// lib/validate.js — Runtime input validation for orgframework engine modules
+// lib/validate.js — Runtime input validation for councilorg engine modules
 // Uses JSON Schemas from tests/schemas/ for structured error messages.
 
 import { createRequire } from 'node:module';

@@ -1,15 +1,15 @@
-// tests/integration/pipeline.test.js — Integration tests for orgframework
+// tests/integration/pipeline.test.js — Integration tests for councilorg
 // Exercises full pipeline flows that span multiple engine modules.
 import { describe, it, expect, beforeAll } from 'vitest';
 import { existsSync, readFileSync } from 'fs';
-import { findSimilar } from '../../.claude/orgframework/similarity/search.js';
-import { compareStructures } from '../../.claude/orgframework/comparison/comparison.js';
-import { generateOrgChart } from '../../.claude/orgframework/visualizer/generate.js';
-import { simulateVacancy } from '../../.claude/orgframework/vacancy/simulator.js';
-import { designReverseOrg } from '../../.claude/orgframework/reverse-org/designer.js';
-import { createCouncilSession, advanceRound, computeSpanOfControl } from '../../.claude/orgframework/council/orchestrator.js';
-import { buildGraph, findConnections } from '../../.claude/orgframework/relationship-map/relationship-map.js';
-import { generateTaskPrompt } from '../../.claude/orgframework/role-to-task/generate.js';
+import { findSimilar } from '../../.claude/councilorg/similarity/search.js';
+import { compareStructures } from '../../.claude/councilorg/comparison/comparison.js';
+import { generateOrgChart } from '../../.claude/councilorg/visualizer/generate.js';
+import { simulateVacancy } from '../../.claude/councilorg/vacancy/simulator.js';
+import { designReverseOrg } from '../../.claude/councilorg/reverse-org/designer.js';
+import { createCouncilSession, advanceRound, computeSpanOfControl } from '../../.claude/councilorg/council/orchestrator.js';
+import { buildGraph, findConnections } from '../../.claude/councilorg/relationship-map/relationship-map.js';
+import { generateTaskPrompt } from '../../.claude/councilorg/role-to-task/generate.js';
 import { getDataPath } from '../lib/utils.js';
 
 /** @type {any} */

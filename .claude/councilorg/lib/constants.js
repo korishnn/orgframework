@@ -1,4 +1,4 @@
-// lib/constants.js — Shared constants for orgframework engine modules
+// lib/constants.js — Shared constants for councilorg engine modules
 // Centralizes magic numbers and thresholds so they can be tuned in one place.
 
 /**

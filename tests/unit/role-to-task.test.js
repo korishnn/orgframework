@@ -1,6 +1,6 @@
 // tests/unit/role-to-task.test.js — Unit tests for role-to-task/generate.js
 import { describe, it, expect } from 'vitest';
-import { generateTaskPrompt } from '../../.claude/orgframework/role-to-task/generate.js';
+import { generateTaskPrompt } from '../../.claude/councilorg/role-to-task/generate.js';
 
 describe('generateTaskPrompt()', () => {
   it('returns fail for nonexistent role', () => {

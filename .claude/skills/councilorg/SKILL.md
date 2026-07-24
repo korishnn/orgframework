@@ -1,4 +1,4 @@
-# orgframework 5.0.0 — The Organizational Intelligence Engine
+# CouncilOrg 5.0.0 — The Organizational Intelligence Engine
 
 **555 roles · 35 presets · 6 crisis templates · 8 council perspectives · 8 engines · 14 guidance additions**
 
@@ -67,7 +67,7 @@ Every council deliberation ends with a **Divergence Note** — what assumptions 
 
 **Truth emerges from productive disagreement.**
 
-orgframework v3 does not give you one "optimal" org chart. It facilitates a multi-perspective deliberation on your organizational question — then presents the converged structure with every dissenting note preserved. You see not just *what* was designed, but *why*, *what was argued*, and *what would change the answer*.
+councilorg v3 does not give you one "optimal" org chart. It facilitates a multi-perspective deliberation on your organizational question — then presents the converged structure with every dissenting note preserved. You see not just *what* was designed, but *why*, *what was argued*, and *what would change the answer*.
 
 The 555 roles are reference material — inspiration, not prescription. The 35 presets are starting points, not answers. Every council deliberation is grounded in your specific context: region, industry, stage, and culture.
 
@@ -110,29 +110,29 @@ The 555 roles are reference material — inspiration, not prescription. The 35 p
 ## Usage
 
 ```
-/orgframework <your request>
+/councilorg <your request>
 ```
 
 Examples:
-- `/orgframework we're a 50-person fintech in Berlin expanding to Brazil`
-- `/orgframework @deep design a hospital respiratory therapy department`
-- `/orgframework @simulate hypergrowth we're a Series B SaaS about to double headcount`
-- `/orgframework @alternatives @fintech @emea what's our org structure as a payments scaleup`
-- `/orgframework @conflicts here's our current org chart [paste]`
-- `/orgframework @dao we're launching a decentralized protocol, design the governance`
-- `/orgframework @ai-native our startup is building with 10 humans and 20 AI agents`
+- `/councilorg we're a 50-person fintech in Berlin expanding to Brazil`
+- `/councilorg @deep design a hospital respiratory therapy department`
+- `/councilorg @simulate hypergrowth we're a Series B SaaS about to double headcount`
+- `/councilorg @alternatives @fintech @emea what's our org structure as a payments scaleup`
+- `/councilorg @conflicts here's our current org chart [paste]`
+- `/councilorg @dao we're launching a decentralized protocol, design the governance`
+- `/councilorg @ai-native our startup is building with 10 humans and 20 AI agents`
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/korishnn/orgframework.git
+git clone https://github.com/korishnn/councilorg.git
 cd your-project
-bash path/to/orgframework/bin/install.sh
+bash path/to/councilorg/bin/install.sh
 ```
 
-Then in Claude Code: `/orgframework <your request>`
+Then in Claude Code: `/councilorg <your request>`
 
 ---
 
@@ -146,7 +146,7 @@ npm test
 
 ## The v3 Difference
 
-orgframework v2 was a reference library. **v3 is an organizational intelligence engine.**
+councilorg v2 was a reference library. **v3 is an organizational intelligence engine.**
 
 - **v2:** "Here's an org chart for a fintech in Berlin."
 - **v3:** "I've convened 8 perspectives on your Berlin fintech org. The Strategist suggests this structure for your 3-year pan-European expansion. The Regulatory Hawk flags BaFin compliance requirements. The Culture Keeper warns that this span of control may reduce psychological safety. The Pessimist notes that your Head of Compliance is a single point of failure. Here's the converged recommendation — and here are two alternatives if you deprioritize speed for stability."

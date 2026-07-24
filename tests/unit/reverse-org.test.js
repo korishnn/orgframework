@@ -1,6 +1,6 @@
 // tests/unit/reverse-org.test.js — Unit tests for designReverseOrg()
 import { describe, it, expect } from 'vitest';
-import { designReverseOrg } from '../../.claude/orgframework/reverse-org/designer.js';
+import { designReverseOrg } from '../../.claude/councilorg/reverse-org/designer.js';
 
 describe('designReverseOrg()', () => {
   it('returns fail for empty array', () => {

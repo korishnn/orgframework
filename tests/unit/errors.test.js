@@ -1,6 +1,6 @@
 // tests/unit/errors.test.js — Unit tests for lib/errors.js
 import { describe, it, expect } from 'vitest';
-import { Result, ErrorCode, tryCatch, tryReadJson } from '../../.claude/orgframework/lib/errors.js';
+import { Result, ErrorCode, tryCatch, tryReadJson } from '../../.claude/councilorg/lib/errors.js';
 
 describe('ErrorCode', () => {
   it('defines standard error codes', () => {

@@ -1,4 +1,4 @@
-// lib/types.js — Shared type definitions for orgframework engine modules
+// lib/types.js — Shared type definitions for councilorg engine modules
 // This file provides no runtime exports; it exists only for TypeScript/JSDoc type checking.
 
 /**

@@ -1,8 +1,8 @@
-# orgframework Architecture
+# CouncilOrg Architecture
 
 ## Overview
 
-orgframework is an **Organizational Intelligence Engine** for Claude Code. It combines:
+councilorg is an **Organizational Intelligence Engine** for Claude Code. It combines:
 - **545 hand-written reference roles** with responsibilities, KPIs, career paths, and relationships
 - **35 org presets** with complete department/role structures for common scenarios
 - **An LLM Council deliberation engine** that stress-tests every org design from 8 perspectives

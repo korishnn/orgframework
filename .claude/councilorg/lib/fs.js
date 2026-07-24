@@ -1,4 +1,4 @@
-// lib/fs.js — Shared filesystem utilities for orgframework engine modules
+// lib/fs.js — Shared filesystem utilities for councilorg engine modules
 // Centralizes file I/O patterns so every module doesn't repeat tryCatch+readFileSync+JSON.parse.
 
 import { readFileSync, existsSync } from 'fs';
@@ -39,8 +39,8 @@ export function readPresetFile(presetName) {
 }
 
 /**
- * Read a JSON data file from a subpath under .claude/orgframework/.
- * @param {string} subpath - Relative path inside .claude/orgframework (e.g. "regions/na.json")
+ * Read a JSON data file from a subpath under .claude/councilorg/.
+ * @param {string} subpath - Relative path inside .claude/councilorg (e.g. "regions/na.json")
  * @returns {import('./errors.js').Result<any, Error>}
  */
 export function readDataFile(subpath) {

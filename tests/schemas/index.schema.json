@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://orgframework.dev/schemas/index.schema.json",
+  "$id": "https://councilorg.dev/schemas/index.schema.json",
   "title": "Org Framework Index",
   "description": "Schema for the main index.json file",
   "type": "object",

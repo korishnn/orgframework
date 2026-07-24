@@ -1,6 +1,6 @@
 // tests/unit/similarity.test.js — Unit tests for findSimilar()
 import { describe, it, expect } from 'vitest';
-import { findSimilar, buildIndex } from '../../.claude/orgframework/similarity/search.js';
+import { findSimilar, buildIndex } from '../../.claude/councilorg/similarity/search.js';
 
 describe('findSimilar()', () => {
   it('returns fail for unknown role', () => {

@@ -55,6 +55,6 @@ Between sessions, the system should improve:
 
 ## Diagnostic Commands
 
-`/orgframework diagnose` — Run a self-check and report what the system has learned about the user
-`/orgframework reset` — Clear session adaptations and start fresh
-`/orgframework debug` — Show what the system detected (region, industry, stage, preset) and why
+`/councilorg diagnose` — Run a self-check and report what the system has learned about the user
+`/councilorg reset` — Clear session adaptations and start fresh
+`/councilorg debug` — Show what the system detected (region, industry, stage, preset) and why

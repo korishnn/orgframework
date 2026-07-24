@@ -10,7 +10,7 @@ export default defineConfig({
     provider: 'v8',
     enabled: true,
     reportsDirectory: './coverage',
-    include: ['.claude/orgframework/**/*.js'],
+    include: ['.claude/councilorg/**/*.js'],
     exclude: ['node_modules'],
     thresholds: {
       lines: 80,

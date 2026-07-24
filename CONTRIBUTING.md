@@ -1,10 +1,10 @@
-# Contributing to orgframework
+# Contributing to councilorg
 
 ## Getting Started
 
 ```bash
 git clone <repo>
-cd orgframework
+cd councilorg
 npm install
 ```
 
@@ -23,8 +23,8 @@ npm install
 ## Project Structure
 
 ```
-orgframework/
-  .claude/orgframework/        # Core data and engines
+councilorg/
+  .claude/councilorg/        # Core data and engines
     lib/                       # Shared utilities (errors.js, paths.js, constants.js)
     styles/*.md                # Reference role definitions (545 roles)
     presets/*.json             # Org structure templates (35 presets)
@@ -47,20 +47,20 @@ orgframework/
 
 ## Adding a New Role
 
-1. Create a new `.md` file in `.claude/orgframework/styles/`
+1. Create a new `.md` file in `.claude/councilorg/styles/`
 2. Use the v3 template format (see any existing role for reference)
 3. Add the role ID to `index.json` under `reference_roles`
 4. Run `npm run test:validate` to verify
 
 ## Adding a New Preset
 
-1. Create a new `.json` file in `.claude/orgframework/presets/`
+1. Create a new `.json` file in `.claude/councilorg/presets/`
 2. Follow the preset schema (see `tests/schemas/preset.schema.json`)
 3. Run `npm run test:validate` to verify
 
 ## Adding a New Engine Module
 
-1. Create a directory under `.claude/orgframework/`
+1. Create a directory under `.claude/councilorg/`
 2. Create your module as an ESM `.js` file
 3. Import shared utilities from `lib/errors.js` and `lib/paths.js`
 4. Add `--help` CLI support following the pattern in existing engines

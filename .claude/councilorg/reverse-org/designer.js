@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // reverse-org.js — Bottom-up org designer from existing headcount
-// Usage: node .claude/orgframework/reverse-org/designer.js <json-file>
+// Usage: node .claude/councilorg/reverse-org/designer.js <json-file>
 // JSON format: { "people": [{ "title": "Backend Engineer", "count": 5 }, ...] }
 
 import { Result } from '../lib/errors.js';

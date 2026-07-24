@@ -212,7 +212,7 @@
       "id": "systems-integration",
       "name": "Systems Integration Hub",
       "tokens": "~55",
-      "description": "Unified access to all orgframework systems — visualizer, comparison, relationship map, compensation, maturity, expansion, hiring, and diagnostics",
+      "description": "Unified access to all councilorg systems — visualizer, comparison, relationship map, compensation, maturity, expansion, hiring, and diagnostics",
       "rules": {
         "available_systems": {
           "visualizer": "Generate Mermaid.js org charts from any structure — use generate.js with a preset or custom structure. Multiple templates (hierarchical, functional, squad, matrix, board).",

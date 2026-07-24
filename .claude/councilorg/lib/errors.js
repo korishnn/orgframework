@@ -1,4 +1,4 @@
-// lib/errors.js — Consistent error handling for orgframework engine modules
+// lib/errors.js — Consistent error handling for councilorg engine modules
 
 /**
  * Standard error codes for structured error handling.
