@@ -295,6 +295,18 @@
       "name": "The Systems Architect",
       "signature_question": "What system architecture does this org produce?",
       "focus": "Conway's Law, team topology, coupling, cohesion, platform design"
+    },
+    {
+      "id": "devils-advocate-red",
+      "name": "The Devil's Advocate — Red Team",
+      "signature_question": "If I wanted this org to fail, how would I exploit its structure?",
+      "focus": "Adversarial thinking, structural vulnerabilities, attack surfaces, blind spots"
+    },
+    {
+      "id": "devils-advocate-worst",
+      "name": "The Devil's Advocate — Worst Case",
+      "signature_question": "What is the absolute worst outcome and what sequence of events leads there?",
+      "focus": "Cascade failures, correlated risks, extinction-level events, Murphy's Law enforcement"
     }
   ],
   "simulation_scenarios": [
