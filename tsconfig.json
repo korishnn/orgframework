@@ -25,7 +25,11 @@
     ".claude/councilorg/visualizer/generate.js",
     ".claude/councilorg/relationship-map/relationship-map.js",
     ".claude/councilorg/council/orchestrator.js",
-    ".claude/councilorg/role-to-task/generate.js"
+    ".claude/councilorg/role-to-task/generate.js",
+    "bin/councilorg.js",
+    "bin/diagnose.js",
+    "bin/install.js",
+    "bin/cli/*.js"
   ],
   "exclude": [
     "node_modules"

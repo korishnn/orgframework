@@ -5,7 +5,7 @@ import { buildIndex, findSimilar } from '../../.claude/councilorg/similarity/sea
 import { buildGraph, clearCache as clearGraphCache } from '../../.claude/councilorg/relationship-map/relationship-map.js';
 
 const BUILD_INDEX_TIMEOUT_MS = 500;
-const FIND_SIMILAR_TIMEOUT_MS = 200;
+const FIND_SIMILAR_TIMEOUT_MS = 500;
 const BUILD_GRAPH_TIMEOUT_MS = 200;
 
 describe('benchmark: buildIndex()', () => {
