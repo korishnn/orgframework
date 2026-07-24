@@ -53,12 +53,6 @@ export class Result {
     return /** @type {Result<never, E>} */ (new Result(false, null, error));
   }
 
-  /** Create a failed Result with a structured error code.
-   * @template E
-   * @param {string} code - One of ErrorCode values
-   * @param {E} error - Error message or Error object
-   * @returns {Result<never, E>}
-   */
   /**
    * Create a failed Result with a structured error code.
    * @param {string} code - One of ErrorCode values

@@ -398,7 +398,7 @@ function deriveDefaultBands() {
           .replace(/[,\s$]/g, '') // strip commas, spaces, dollar signs
           .replace(/(\d+(?:\.\d+)?)K/gi, (_, n) => String(Number(n) * 1000))
           .replace(/(\d+(?:\.\d+)?)M/gi, (_, n) => String(Number(n) * 1000000));
-        const parts = normalizedRange.replace(/[^0-9.-]/g, ' ').trim().split(/\s+/).map(Number);
+        const parts = normalizedRange.replace(/[^0-9.-]/g, ' ').trim().split(/[\s-]+/).map(Number);
         const midpoint = parts.length >= 2 ? Math.round((parts[0] + parts[1]) / 2) : parts[0];
         if (isNaN(midpoint)) continue;
 
