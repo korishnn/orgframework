@@ -4,8 +4,9 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const stylesDir = join(__dirname, '.claude/councilorg/styles');
-const indexFile = join(__dirname, '.claude/councilorg/index.json');
+const ROOT = join(__dirname, '..');
+const stylesDir = join(ROOT, '.claude/councilorg/styles');
+const indexFile = join(ROOT, '.claude/councilorg/index.json');
 
 // Get all role files
 const actualRoles = readdirSync(stylesDir)

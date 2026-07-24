@@ -24,3 +24,5 @@ jobs:
         run: npm run test:validate
       - name: Lint with ESLint
         run: npm run lint
+      - name: Type-check with TypeScript
+        run: npm run typecheck

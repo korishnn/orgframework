@@ -24,13 +24,15 @@ export async function validate(schemaName, data) {
     try {
       const { default: Ajv } = await import('ajv');
       const schemaResult = readDataFile(`../../tests/schemas/${schemaName}.schema.json`);
-      if (schemaResult.isFail) return Result.ok(data); // skip if schema file not found
+      if (schemaResult.isFail) {
+        return Result.fail(`Schema file not found: ${schemaName}.schema.json`);
+      }
 
       const ajv = new Ajv();
       validateFn = ajv.compile(schemaResult.value);
       compiledCache.set(schemaName, validateFn);
-    } catch {
-      return Result.ok(data); // skip validation on error (graceful degradation)
+    } catch (err) {
+      return Result.fail(`Validation setup error: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 
@@ -58,13 +60,15 @@ export function validateSync(schemaName, data) {
     try {
       const Ajv = _require('ajv').default || _require('ajv');
       const schemaResult = readDataFile(`../../tests/schemas/${schemaName}.schema.json`);
-      if (schemaResult.isFail) return Result.ok(data);
+      if (schemaResult.isFail) {
+        return Result.fail(`Schema file not found: ${schemaName}.schema.json`);
+      }
 
       const ajv = new Ajv();
       validateFn = ajv.compile(schemaResult.value);
       compiledCache.set(schemaName, validateFn);
-    } catch {
-      return Result.ok(data);
+    } catch (err) {
+      return Result.fail(`Validation setup error: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 

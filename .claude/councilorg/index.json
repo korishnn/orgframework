@@ -308,16 +308,6 @@
     "ai_augmentation"
   ],
   "deprecated_roles": [
-    "sport-nutritionist-sports",
-    "sci-data-scientist-rd",
-    "govt-budget-analyst-govt",
-    "govt-paramedic-govt",
-    "hlth-nurse-practitioner",
-    "hlth-marriage-counselor",
-    "sec-ethical-hacker",
-    "edu-flight-instructor",
-    "cre-qa-tester",
-    "govt-tax-examiner"
   ],
   "reference_roles": [
     "acad-anthropologist",

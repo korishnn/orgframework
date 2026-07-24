@@ -25,7 +25,7 @@ export const COUNCIL_MEMBERS = [
     prompt: 'You are The Operator. Your role is to evaluate whether the structure enables efficient execution. Consider: Who owns each decision? Where do handoffs happen? What will get stuck in committee? Can the work actually get done without excessive coordination overhead?'
   },
   {
-    id: 'controller',
+    id: 'financial-controller',
     name: 'The Financial Controller',
     signature: 'What does this cost and is it sustainable?',
     focus: 'Cost of structure, headcount ROI, compensation, span efficiency, budget constraints',
@@ -393,8 +393,12 @@ function deriveDefaultBands() {
         const naRange = levelData?.na;
         if (typeof naRange !== 'string') continue;
 
-        // Parse range like "800K-1200K" → midpoint 1000K
-        const parts = naRange.replace(/[^0-9.-]/g, ' ').trim().split(/\s+/).map(Number);
+        // Parse range like "800K-1200K" or "$1.2M-$1.8M" to midpoint
+        const normalizedRange = naRange
+          .replace(/[,\s$]/g, '') // strip commas, spaces, dollar signs
+          .replace(/(\d+(?:\.\d+)?)K/gi, (_, n) => String(Number(n) * 1000))
+          .replace(/(\d+(?:\.\d+)?)M/gi, (_, n) => String(Number(n) * 1000000));
+        const parts = normalizedRange.replace(/[^0-9.-]/g, ' ').trim().split(/\s+/).map(Number);
         const midpoint = parts.length >= 2 ? Math.round((parts[0] + parts[1]) / 2) : parts[0];
         if (isNaN(midpoint)) continue;
 
