@@ -3,7 +3,7 @@
 ## Overview
 
 councilorg is an **Organizational Intelligence Engine** for Claude Code. It combines:
-- **545 hand-written reference roles** with responsibilities, KPIs, career paths, and relationships
+- **555 hand-written reference roles** with responsibilities, KPIs, career paths, and relationships
 - **35 org presets** with complete department/role structures for common scenarios
 - **An LLM Council deliberation engine** that stress-tests every org design from 8 perspectives
 - **Analysis engines** for similarity, vacancy simulation, comparison, visualization, and relationship mapping
@@ -74,7 +74,7 @@ User Request
 
 | Directory | Count | Format | Purpose |
 |---|---|---|---|
-| `styles/` | 545 | `.md` | Reference role definitions |
+| `styles/` | 555 | `.md` | Reference role definitions |
 | `presets/` | 35 | `.json` | Complete org structure templates |
 | `regions/` | 4 | `.json` | Regional context (NA, EMEA, APAC, LATAM) |
 | `industries/` | 5 | `.json` | Industry profiles |

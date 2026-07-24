@@ -26,7 +26,7 @@ npm install
 councilorg/
   .claude/councilorg/        # Core data and engines
     lib/                       # Shared utilities (errors.js, paths.js, constants.js)
-    styles/*.md                # Reference role definitions (545 roles)
+    styles/*.md                # Reference role definitions (555 roles)
     presets/*.json             # Org structure templates (35 presets)
     similarity/                # Role similarity search engine
     vacancy/                   # Role vacancy simulator
