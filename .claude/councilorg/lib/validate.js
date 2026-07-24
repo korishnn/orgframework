@@ -1,8 +1,10 @@
 // lib/validate.js — Runtime input validation for councilorg engine modules
 // Uses JSON Schemas from tests/schemas/ for structured error messages.
 
+import { join } from 'path';
 import { createRequire } from 'node:module';
 import { readDataFile } from './fs.js';
+import { getProjectRoot } from './paths.js';
 import { Result } from './errors.js';
 
 const _require = createRequire(import.meta.url);
@@ -23,7 +25,7 @@ export async function validate(schemaName, data) {
   if (!validateFn) {
     try {
       const { default: Ajv } = await import('ajv');
-      const schemaResult = readDataFile(`../../tests/schemas/${schemaName}.schema.json`);
+      const schemaResult = readDataFile(join(getProjectRoot(), 'tests', 'schemas', `${schemaName}.schema.json`));
       if (schemaResult.isFail) {
         return Result.fail(`Schema file not found: ${schemaName}.schema.json`);
       }
@@ -59,7 +61,7 @@ export function validateSync(schemaName, data) {
   if (!validateFn) {
     try {
       const Ajv = _require('ajv').default || _require('ajv');
-      const schemaResult = readDataFile(`../../tests/schemas/${schemaName}.schema.json`);
+      const schemaResult = readDataFile(join(getProjectRoot(), 'tests', 'schemas', `${schemaName}.schema.json`));
       if (schemaResult.isFail) {
         return Result.fail(`Schema file not found: ${schemaName}.schema.json`);
       }

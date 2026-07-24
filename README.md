@@ -24,7 +24,7 @@ councilorg is a **reference library AND organizational intelligence engine** for
 - **35 org presets** — complete org structures for every scenario (Series A SaaS, hospital system, fintech, restaurant kitchen, AI lab, DAO, climate tech, human-AI hybrid, and more)
 - **6 crisis templates** — pre-built command structures for breach, layoff, acquisition, founder departure, PR crisis, regulatory investigation
 - **The LLM Council** — 8 perspectives that debate every org design (with 100-member candidate pool in config)
-- **8 analysis engines** — similarity, vacancy simulation, comparison, reverse-org, visualization, council, relationship mapping, role-to-task
+- **9 analysis engines** — similarity, vacancy simulation, comparison, reverse-org, visualization, council, relationship mapping, role-to-task, diagnostics
 - **Compensation data** — salary bands for 500+ roles across 4 regions
 - **Region/industry/stage profiles** — laws, norms, metrics, and patterns that shape org design
 
@@ -785,7 +785,7 @@ The repo includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that ru
 - [x] 555 hand-written reference roles across 300+ domains
 - [x] 35 org presets for common and emerging structures
 - [x] 6 crisis command templates
-- [x] 8 analysis engines
+- [x] 9 analysis engines
 - [x] Compensation bands for 500+ roles across 40 regions
 - [x] Region/industry/stage adaptation profiles (80 industries including Web3, Climate, AI Labs)
 - [x] Cross-region expansion playbooks

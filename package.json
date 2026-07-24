@@ -37,6 +37,7 @@
     "./comparison": "./.claude/councilorg/comparison/comparison.js",
     "./visualizer": "./.claude/councilorg/visualizer/generate.js",
     "./relationship-map": "./.claude/councilorg/relationship-map/relationship-map.js",
+    "./council": "./.claude/councilorg/council/orchestrator.js",
     "./diagnose": "./bin/diagnose.js"
   },
   "scripts": {

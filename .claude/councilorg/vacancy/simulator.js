@@ -35,7 +35,7 @@ function resolveImpact(titleLower) {
 
   // Try prefix/keyword matching
   for (const [key, impact] of Object.entries(roleImpact)) {
-    if (titleLower.includes(key) || key.includes(titleLower)) return impact;
+    if (new RegExp('\\b' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(titleLower)) return impact;
   }
 
   // Default fallback based on level hints in the title

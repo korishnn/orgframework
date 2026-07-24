@@ -14,6 +14,12 @@ const actualRoles = readdirSync(stylesDir)
   .map(f => f.replace('.md', ''))
   .sort();
 
+// Safety check: ensure we found files before writing
+if (actualRoles.length === 0) {
+  console.error('ERROR: No role files found — aborting write to prevent data loss');
+  process.exit(1);
+}
+
 // Read, update, write index
 const index = JSON.parse(readFileSync(indexFile, 'utf-8'));
 const oldCount = index.reference_roles.length;
