@@ -41,6 +41,7 @@
   },
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/vitest/vitest.mjs run",
+    "test:coverage": "node --experimental-vm-modules ./node_modules/vitest/vitest.mjs run --coverage",
     "test:watch": "vitest",
     "test:validate": "node tests/validate-roles.js && node tests/validate-presets.js && node tests/validate-index.js",
     "test:unit": "vitest run",
