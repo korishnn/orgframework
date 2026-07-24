@@ -99,7 +99,7 @@ export const COUNCIL_MEMBERS = [
  * @returns {string} Sanitized string safe for prompt template interpolation
  */
 function sanitizePrompt(str) {
-  return String(str).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
+  return String(str).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '\\r');
 }
 
 /**
